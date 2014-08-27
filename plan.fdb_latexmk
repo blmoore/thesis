@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex plan"] 1409153949 "plan.aux" "plan.bbl" "plan" 1409153949
-  "./thesis2.bst" 1409153269 25861 2864dd4132c499330da770fad4d9b01e ""
+["bibtex plan"] 1409157008 "plan.aux" "plan.bbl" "plan" 1409157011
+  "./thesis.bst" 1409156722 30934 87eac898aa8540652b7f4f7fecc9d77e ""
   "/Users/benmoore/Documents/customrefs.bib" 1401807991 526 4766bc46eda66dc604a4c07c3b24d05a ""
-  "/Users/benmoore/Documents/library.bib" 1409153932 466490 7483653283837c9e5aed0d709baba3d9 ""
-  "plan.aux" 1409153802 3546 09b1f72256fb9c07ce15391f00ec0a96 ""
-  "plan.bcf" 1409153561 90306 009938da8309fc53ba5eb3e533eb9f33 ""
+  "/Users/benmoore/Documents/library.bib" 1409154386 466490 1fe931719a57929a75fa0e69f65be63b ""
+  "plan.aux" 1409157010 3938 79c7c1c28adf4963e17e13e741741aea ""
+  "plan.bcf" 0 -1 0 ""
   (generated)
   "plan.bbl"
   "plan.blg"
-["pdflatex"] 1409153699 "plan.tex" "plan.pdf" "plan" 1409153949
+["pdflatex"] 1409157009 "plan.tex" "plan.pdf" "plan" 1409157011
   "/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/iwona/rm-iwona-sc.enc" 1276043435 2387 0973feb615a096fe23fa9f08bea7fb72 ""
   "/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/iwona/rm-iwona.enc" 1276043435 1962 cace5a3042b67248932d50e41975d81a ""
@@ -114,14 +114,14 @@
   "/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1401025944 1445653 26a0aacf3d70032b1ec192e8c7792117 ""
   "/usr/local/texlive/2014/texmf-var/web2c/pdftex/pdflatex.fmt" 1403187858 3832012 c8fc72bc96fabfd8d00a9976b17e8473 ""
   "/usr/local/texlive/2014/texmf.cnf" 1401025936 577 a59edbde8d3a8c549d0eeaab1739e2ff ""
-  "plan.aux" 1409153802 3546 09b1f72256fb9c07ce15391f00ec0a96 ""
-  "plan.bbl" 1409153949 338 9b88e38269bc4f360fb701bf6b3e4c31 "bibtex plan"
-  "plan.out" 1409153802 896 b54a59dab6f75d67f4bb6b19243a5436 ""
-  "plan.tex" 1409153948 7746 7615134a8a811b093925ce8436cca051 ""
+  "plan.aux" 1409157010 3938 79c7c1c28adf4963e17e13e741741aea ""
+  "plan.bbl" 1409157009 1294 191c8f3a2111521fa9cf93e59636355a "bibtex plan"
+  "plan.out" 1409157010 896 b54a59dab6f75d67f4bb6b19243a5436 ""
+  "plan.tex" 1409157003 7820 89ddcfcfb9c95a6d296547259c27be8b ""
   (generated)
   "plan.bcf"
-  "plan.run.xml"
   "plan.aux"
+  "plan.run.xml"
   "plan.out"
   "plan.log"
   "plan.pdf"

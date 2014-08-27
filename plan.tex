@@ -4,8 +4,9 @@
 \usepackage{arsclassica}    % fancy layout
 \usepackage[english]{babel}\addto{\captionsenglish}{\renewcommand{\bibname}{References}}
 \usepackage{caption}        % figure captions
-\usepackage{natbib}  % bibliography style
-\bibliographystyle{thesis2}
+\usepackage[square,numbers,super,sort&compress]{natbib}  % bibliography style
+%\usepackage{}
+\bibliographystyle{thesis}
 % end preamble
 
 \begin{document}
@@ -14,12 +15,12 @@
 \section{Introduction}\label{introduction}
 
 Need to introduce the seminal studies of genome organisation,
-particularly those using C methods (Lieberman-Aiden, Dixon, older 3C
-stuff etc.). Detail the fractal globule model of genome organisation, as
-well as counter theories like strings, binders and switches (SBS).
-There's also growing computational literature in calling domains,
-sub-domains (e.g.~Bing Ren's D.I. + HMM, but also alternating domains,
-breakpoint algorithm etc.).
+particularly those using C methods (\citealt{Lieberman2011},
+\citealt{Dixon2012}, older 3C stuff etc.). Detail the fractal globule
+model of genome organisation, as well as counter theories like strings,
+binders and switches (SBS). There's also growing computational
+literature in calling domains, sub-domains (e.g.~Bing Ren's D.I. + HMM,
+but also alternating domains, breakpoint algorithm etc.).
 
 Also mention the criticisms of C methods --- see references mention by
 Wendy (PLOS ONE) --- and caveats of processing the data (biases,
@@ -59,7 +60,7 @@ methods section. Things to cover include:
 \subsection{\textbf{Early stuff:} Modelling transcription and
 chromatin}\label{early-stuff-modelling-transcription-and-chromatin}
 
-I replicated the work of \citet{Dong2012} in modelling of
+I replicated the work of \citealt{Dong2012} in modelling of
 transcriptional output based on a large set of ENCODE features. I
 extended their work by adding new features, and dissected the ``best
 bin'' approach to discover where (relative to a gene) influential

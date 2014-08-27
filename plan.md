@@ -6,7 +6,7 @@
 
 <!--Introduction should be ~20 pages, can be largely based on existing references from reports and the paper. -->
 
-Need to introduce the seminal studies of genome organisation, particularly those using C methods (Lieberman-Aiden, Dixon, older 3C stuff etc.). Detail the fractal globule model of genome organisation, as well as counter theories like strings, binders and switches (SBS). There's also growing computational literature in calling domains, sub-domains (e.g. Bing Ren's D.I. + HMM, but also alternating domains, breakpoint algorithm etc.).
+Need to introduce the seminal studies of genome organisation, particularly those using C methods (\citealt{Lieberman2011}, \citealt{Dixon2012}, older 3C stuff etc.). Detail the fractal globule model of genome organisation, as well as counter theories like strings, binders and switches (SBS). There's also growing computational literature in calling domains, sub-domains (e.g. Bing Ren's D.I. + HMM, but also alternating domains, breakpoint algorithm etc.).
 
 Also mention the criticisms of C methods — see references mention by Wendy (PLOS ONE) — and caveats of processing the data (biases, normalisation etc., start with Yaffe and Tanay biases, ICE, others).
 
@@ -30,7 +30,7 @@ I already have some text for this from first year report and the paper methods s
 
 ## **Early stuff:** Modelling transcription and chromatin
 
-I replicated the work of \citet{Dong2012} in modelling of transcriptional output based on a large set of ENCODE features. I extended their work by adding new features, and dissected the "best bin" approach to discover where (relative to a gene) influential variables correlated best with expression.
+I replicated the work of \citealt{Dong2012} in modelling of transcriptional output based on a large set of ENCODE features. I extended their work by adding new features, and dissected the "best bin" approach to discover where (relative to a gene) influential variables correlated best with expression.
 
 We then applied the same approach to modelling a different set of data: the A / B compartment profiles reported in Lieberman-Aiden _et al._ (2009). Noting that Hi-C datasets were available for the three tier 1 ENCODE cell lines, I applied this modelling approach to each in turn, with their own corpus of ENCODE features.
 
