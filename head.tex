@@ -1,12 +1,23 @@
 \documentclass[a4paper,10pt,oneside]{book}
 
-% begin preamble
+% packages 
 \usepackage{arsclassica}    % fancy layout
 \usepackage[english]{babel}\addto{\captionsenglish}{\renewcommand{\bibname}{References}}
-\usepackage{caption}        % figure captions
+\usepackage{caption}         % figure captions
 \usepackage[square,numbers,super,sort&compress]{natbib}  % bibliography style
-%\usepackage{}
+\usepackage[cc]{titlepic}    % enable logo on title page
+\usepackage{graphicx}       % logo related
+
+% bibliography
 \bibliographystyle{thesis}
-% end preamble
+
+% title setup
+\title{ \vspace{3.5in} Unravelling higher order genome organisation {\small [working
+    title]} \\ \vspace{2em} {\large Thesis plan} }
+\author{Benjamin L. Moore}
+\titlepic{\vspace{2in} \includegraphics[width=\textwidth]{/Users/benmoore/hvl/1yrReport/figs/igmm.png}}
 
 \begin{document}
+
+\maketitle
+
