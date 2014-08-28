@@ -4,7 +4,7 @@
 %%
 %% The original source files were:
 %%
-%% merlin.mbs  (with options: `ay,nat,seq-no,vonx,nm-rvx,jnrlst,nmlm,x10,x0,m9,keyxyr,dt-beg,yr-par,yrp-x,note-yr,vol-bf,volp-sp,num-xser,pre-pub,isbn,in-col,pp,ed,xedn,and-xcom,xand,etal-xc,etal-it,nfss,')
+%% merlin.mbs  (with options: `ay,nat,seq-no,vonx,nm-rvx,jnrlst,nmlm,x10,x0,m9,keyxyr,dt-beg,note-yr,vol-bf,volp-sp,num-xser,pre-pub,isbn,in-col,pp,ed,xedn,and-xcom,xand,etal-xc,etal-it,nfss,')
 %% ----------------------------------------
 %% ***  ***
 %% 
@@ -148,7 +148,7 @@ FUNCTION {add.blank}
 
 FUNCTION {date.block}
 {
-  add.blank
+  new.block
 }
 
 FUNCTION {not}
@@ -692,8 +692,6 @@ FUNCTION {format.date}
     'skip$
   if$
   extra.label *
-  before.all 'output.state :=
-  " (" swap$ * ")" *
 }
 FUNCTION {format.btitle}
 { title "title" bibinfo.check

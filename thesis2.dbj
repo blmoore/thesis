@@ -254,8 +254,8 @@ End of customized bst file
 %>>REVERSED DATE (if including month)
 %>>DATE FORMAT (if non author-year citations)
 %<<DATE FORMAT (if author-year citations)
-    %: (def) Year plain without any brackets
-% yr-par,%: Year in parentheses as (1993)
+%    %: (def) Year plain without any brackets
+ yr-par,%: Year in parentheses as (1993)
 % yr-brk,%: Year in brackets as [1993]
 % yr-col,%: Year preceded by colon as `: 1993'
 % yr-per,%: Year preceded by period as `. 1993'
@@ -274,11 +274,11 @@ End of customized bst file
 %>>REVERSED DATE (if including month)
 %>>DATE FORMAT (if author-year citations)
 %<<DATE PUNCTUATION (if date not at end)
-    %: (def) Date with standard block punctuation (comma or period)
+%    %: (def) Date with standard block punctuation (comma or period)
 % yrp-col,%: Colon after date as 1994:
 % yrp-semi,%: Semi-colon after date as 1994;
 % yrp-per,%: Period after date even when blocks use commas
-% yrp-x,%: No punct. after date 
+ yrp-x,%: No punct. after date 
 %------\ans=*(==)-------
 %<<BLANK AFTER DATE:
     %: (def) Space after date and punctuation

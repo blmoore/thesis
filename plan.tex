@@ -1,20 +1,21 @@
 \documentclass[a4paper,10pt,oneside]{book}
 
-% begin preamble
+% packages 
 \usepackage{arsclassica}    % fancy layout
 \usepackage[english]{babel}\addto{\captionsenglish}{\renewcommand{\bibname}{References}}
 \usepackage{caption}         % figure captions
-\usepackage[square,numbers,super,sort&compress]{natbib}  % bibliography style
+\usepackage[square,numbers,super,sort&compress]{natbib}  % bibliography stylemet
 \usepackage[cc]{titlepic}    % enable logo on title page
 \usepackage{graphicx}       % logo related
 
-%\usepackage{}
+% bibliography
 \bibliographystyle{thesis}
-% end preamble
-\title{ \vspace{3.5in} Unravelling higher order genome organisation {\small [working
-    title]} \\ \vspace{2em} {\large Thesis plan} }
+
+% title setup
+\title{ \vspace{3in} Unravelling higher order genome organisation {\small [working
+    title]} \\ \vspace{2em} {\large {\bf Thesis plan}} }
 \author{Benjamin L. Moore}
-\titlepic{\vspace{2in} \includegraphics[width=\textwidth]{/Users/benmoore/hvl/1yrReport/figs/igmm.png}}
+\titlepic{\vspace{2.2in} \includegraphics[width=\textwidth]{/Users/benmoore/hvl/1yrReport/figs/igmm.png}}
 
 \begin{document}
 
@@ -28,13 +29,13 @@ particularly those using C methods (\citet{Lieberman2011},
 the fractal globule\citep{Lieberman2011} model of genome organisation,
 as well as counter theories like strings, binders and switches
 (SBS)\citep{Barbieri2012}. There's also growing computational literature
-in calling domains, sub-domains (e.g.~Bing Ren's D.I. +
+in calling domains and various sub-domains (e.g.~Bing Ren's D.I. +
 HMM\citep{Dixon2012}, but also alternative domains\citep{Filippova2014},
-breakpoint algorithm etc.).
+dynamic programming solutions\citep{Levy-Leduc2014} etc.).
 
 Also mention the criticisms of C
-methods\cite{Gavrilov2013, Gavrilov2013a} and caveats of processing the
-data (biases,\citep{Yaffe2011}
+methods\cite{Gavrilov2013, Gavrilov2013a} and discuss the intricacies of
+processing the data (biases,\citep{Yaffe2011}
 normalisation\citep{Imakaev2012, Hu2012, Hu2013} etc.).
 
 Machine learning has been successful at calling chromatin states
@@ -65,6 +66,8 @@ methods section. Things to cover include:
 \item
   Processing raw reads, mapping
 \item
+  ENCODE data processing, MACSv2 (do I mention this?)
+\item
   ICE, Hi-C normalisation
 \item
   Calling boundaries, HMMs
@@ -80,7 +83,7 @@ methods section. Things to cover include:
 
 \chapter{Results}
 
-Here each subsection would be a separate chapter.
+Here each section would be a separate chapter.
 
 \section{\textbf{Early stuff:} Modelling transcription and
 chromatin}\label{early-stuff-modelling-transcription-and-chromatin}
@@ -208,6 +211,37 @@ lab groups:
 
 Summarise key results and place into broader (particularly biological)
 context.
+
+Some points from the submitted manuscript:
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  We have shown that it is possible to construct comparable models
+  describing the features underlying higher order chromatin structure,
+  and that their predictive accuracy can be high.
+\item
+  Random Forest models summarised the important relationships among
+  these many variables, providing insights into the quantitative
+  contributions of locus level chromatin features to higher order
+  structures. Although certain features were notably more influential in
+  a particular cell type, the models shared overlapping constellations
+  of informative features, allowing the cross application of models
+  between cell types.
+\item
+  These models also allowed us to probe the features underlying regions
+  with variable higher order structure between cell types, revealing
+  enrichments of cell type specific enhancer activity, and suggesting
+  links between functional chromatin states and higher order domain
+  dynamics.
+\item
+  Chromatin boundaries, separating TADs and nuclear compartments at
+  different scales, also showed cell type specific enrichments of
+  various locus level chromatin features. Across cell types, the
+  complexity of boundary composition varies considerably so that only a
+  few features were seen consistently enriched or depleted at
+  boundaries.
+\end{itemize}
 
 \chapter{End material}
 

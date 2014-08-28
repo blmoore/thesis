@@ -5,9 +5,9 @@ Needs to be about ~10 chapters total. Write in markdown, use pandoc to output Wo
 
 <!--Introduction should be ~20 pages, can be largely based on existing references from reports and the paper. -->
 
-Need to introduce the seminal studies of genome organisation, particularly those using C methods (\citet{Lieberman2011}, \citet{Dixon2012}, older 3C stuff\citep{VanSteensel2010} etc.). Detail the fractal globule\citep{Lieberman2011} model of genome organisation, as well as counter theories like strings, binders and switches (SBS)\citep{Barbieri2012}. There's also growing computational literature in calling domains, sub-domains (e.g. Bing Ren's D.I. + HMM\citep{Dixon2012}, but also alternative domains\citep{Filippova2014}, breakpoint algorithm etc.).
+Need to introduce the seminal studies of genome organisation, particularly those using C methods (\citet{Lieberman2011}, \citet{Dixon2012}, older 3C stuff\citep{VanSteensel2010} etc.). Detail the fractal globule\citep{Lieberman2011} model of genome organisation, as well as counter theories like strings, binders and switches (SBS)\citep{Barbieri2012}. There's also growing computational literature in calling domains and various sub-domains (e.g. Bing Ren's D.I. + HMM\citep{Dixon2012}, but also alternative domains\citep{Filippova2014}, dynamic programming solutions\citep{Levy-Leduc2014} etc.).
 
-Also mention the criticisms of C methods\cite{Gavrilov2013, Gavrilov2013a} and caveats of processing the data (biases,\citep{Yaffe2011} normalisation\citep{Imakaev2012, Hu2012, Hu2013} etc.).
+Also mention the criticisms of C methods\cite{Gavrilov2013, Gavrilov2013a} and discuss the intricacies of processing the data (biases,\citep{Yaffe2011} normalisation\citep{Imakaev2012, Hu2012, Hu2013} etc.).
 
 Machine learning has been successful at calling chromatin states (`ChromHMM`, `SegWay`, others) and generally building models of complex biological phenomena. Explain how this type of computational approach has led to biological insights. with particular deference to ENCODE studies such as \citet{Dong2012}, as well as the most recent ENCODE papers.
 
@@ -20,6 +20,7 @@ Finally discuss the most recent and overlapping work published, such as that by 
 I already have some text for this from first year report and the paper methods section. Things to cover include:
 
 * Processing raw reads, mapping
+* ENCODE data processing, MACSv2 (do I mention this?)
 - ICE, Hi-C normalisation
 * Calling boundaries, HMMs
 - Modelling, random forests, variable importance
@@ -31,7 +32,7 @@ I already have some text for this from first year report and the paper methods s
 
 <!-- Chapters: ~20-25 pages, 10-15 figures. Some might be shorter, 10 pages and 5 figures. -->
 
-Here each subsection would be a separate chapter.
+Here each section would be a separate chapter.
 
 # **Early stuff:** Modelling transcription and chromatin
 
@@ -79,6 +80,13 @@ I've also analysed related C-methods data produced by researchers in wet lab gro
 \chapter{Discussion}
 
 Summarise key results and place into broader (particularly biological) context.
+
+Some points from the submitted manuscript:
+
+* We have shown that it is possible to construct comparable models describing the features underlying higher order chromatin structure, and that their predictive accuracy can be high.
+* Random Forest models summarised the important relationships among these many variables, providing insights into the quantitative contributions of locus level chromatin features to higher order structures. Although certain features were notably more influential in a particular cell type, the models shared overlapping constellations of informative features, allowing the cross application of models between cell types.
+* These models also allowed us to probe the features underlying regions with variable higher order structure between cell types, revealing enrichments of cell type specific enhancer activity, and suggesting links between functional chromatin states and higher order domain dynamics.
+* Chromatin boundaries, separating TADs and nuclear compartments at different scales, also showed cell type specific enrichments of various locus level chromatin features. Across cell types, the complexity of boundary composition varies considerably so that only a few features were seen consistently enriched or depleted at boundaries.
 
 \chapter{End material}
 
