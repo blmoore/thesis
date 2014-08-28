@@ -7,5 +7,6 @@ rm *.aux
 rm *.fls
 rm *.blg
 rm *.bcf
+rm *.out
 rm *.run.xml
 rm *.fdb_latemk
