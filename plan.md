@@ -7,7 +7,7 @@ Needs to be about ~10 chapters total. Write in markdown, use pandoc to output Wo
 
 Need to introduce the seminal studies of genome organisation, particularly those using C methods (\citet{Lieberman2011}, \citet{Dixon2012}, older 3C stuff\citep{VanSteensel2010} etc.). Detail the fractal globule\citep{Lieberman2011} model of genome organisation, as well as counter theories like strings, binders and switches (SBS)\citep{Barbieri2012}. There's also growing computational literature in calling domains and various sub-domains (e.g. Bing Ren's D.I. + HMM\citep{Dixon2012}, but also alternative domains\citep{Filippova2014}, dynamic programming solutions\citep{Levy-Leduc2014} etc.).
 
-Also mention the criticisms of C methods\cite{Gavrilov2013, Gavrilov2013a} and discuss the intricacies of processing the data (biases,\citep{Yaffe2011} normalisation\citep{Imakaev2012, Hu2012, Hu2013} etc.).
+Also mention the criticisms of C methods\cite{Gavrilov2013, Gavrilov2013a} and discuss the intricacies of processing the data (biases,\citep{Yaffe2011} normalisation\citep{Imakaev2012, Hu2012, Hu2013}, overcorrection\citep{Jin2013} etc.).
 
 Machine learning has been successful at calling chromatin states (`ChromHMM`, `SegWay`, others) and generally building models of complex biological phenomena. Explain how this type of computational approach has led to biological insights. with particular deference to ENCODE studies such as \citet{Dong2012}, as well as the most recent ENCODE papers.
 
@@ -57,7 +57,7 @@ The boundaries of TADs have previously been reported as bound by numerous factor
 
 We investigated the idea of "_super boundaries_" which were both TAD and compartment boundaries. It emerged that these boundaries, though present, did not display stark differences from non-overlapping TAD or compartment boundaries.
 
-We also found an agreement between A and B compartments with the long-known Giemsa stain bands. Both were previously known to correlated with patterns of high and low GC content ("isochores") and more recent work made a similar observation but did not quantitatively test the association ([cite Casey's student's thesis]).
+We also found an agreement between A and B compartments with the long-known Giemsa stain bands. Both were previously known to correlated with patterns of high and low GC content ("isochores") and more recent work made a similar observation but did not quantitatively test the association ([cite Casey's student's thesis]). This also hints at a linke between interphase genome organisation (i.e. that measured on average by Hi-C) and metaphase organisation, as assayed by Giemsa stain. This potentially contrasts with prominent research which found total structural rearrangement to a homogenous state during mitosis \cite{Naumova2013}.
 
 # Additional chapters from my next project
 
