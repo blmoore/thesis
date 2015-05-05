@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex methods"] 1409235474 "methods.aux" "methods.bbl" "methods" 1409235477
+["bibtex methods"] 1430841120 "methods.aux" "methods.bbl" "methods" 1430841122
   "../thesis.bst" 1409235336 30998 dfb5decdcc79da471931ca9f905377eb ""
-  "/Users/benmoore/Documents/customrefs.bib" 1409226109 784 3e4f1c6a4dd7670af40df34b4a4def6a ""
-  "/Users/benmoore/Documents/library.bib" 1409234541 483535 f2297862bf342f31f173ccd80d349e69 ""
-  "methods.aux" 1409235477 5202 d7b46da7e4fc1940120929747dafff43 ""
+  "/Users/benmoore/Documents/customrefs.bib" 1426768429 1335 76410ddee96ece781241de129edba458 ""
+  "/Users/benmoore/Documents/library.bib" 1426777241 534893 878d3cac1f106d1f1e3bd8c73250a5f8 ""
+  "methods.aux" 1430841122 5202 d7b46da7e4fc1940120929747dafff43 ""
   "methods.bcf" 0 -1 0 ""
   (generated)
   "methods.bbl"
   "methods.blg"
-["pdflatex"] 1409235475 "methods.tex" "methods.pdf" "methods" 1409235477
+["pdflatex"] 1430841120 "methods.tex" "methods.pdf" "methods" 1430841122
   "/Users/benmoore/hvl/1yrReport/figs/igmm.png" 1377015137 98317 6f8f6e589fe3be7acea1f72447ce8505 ""
   "/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/iwona/rm-iwona-sc.enc" 1276043435 2387 0973feb615a096fe23fa9f08bea7fb72 ""
@@ -129,12 +129,12 @@
   "/usr/local/texlive/2014/texmf.cnf" 1401025936 577 a59edbde8d3a8c549d0eeaab1739e2ff ""
   "arsclassica.sty" 1409053149 9461 439d0eb38e0f5dbd8ea8f27c80eb3ed1 ""
   "classicthesis.sty" 1409053149 31764 ec70328fe045d3ec4bcd458d94509f8f ""
-  "methods.aux" 1409235477 5202 d7b46da7e4fc1940120929747dafff43 ""
-  "methods.bbl" 1409235475 4053 e55a2301b1d4f5efb99ffc29cbf6b933 "bibtex methods"
-  "methods.out" 1409235477 960 83a162947c189ea2070af693c2dc1827 ""
-  "methods.tex" 1409235469 7083 f13cb3e53b800fbc2eaa6422e9c610c7 ""
+  "methods.aux" 1430841122 5202 d7b46da7e4fc1940120929747dafff43 ""
+  "methods.bbl" 1430841120 4053 e55a2301b1d4f5efb99ffc29cbf6b933 "bibtex methods"
+  "methods.out" 1430841122 960 83a162947c189ea2070af693c2dc1827 ""
+  "methods.tex" 1430841115 7106 58bc6d48d5d2e52b23c66a293d484d49 ""
   (generated)
   "methods.aux"
   "methods.log"
-  "methods.pdf"
   "methods.out"
+  "methods.pdf"
