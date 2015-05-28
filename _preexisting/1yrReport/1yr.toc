@@ -1,0 +1,28 @@
+\select@language {english}
+\contentsline {chapter}{Abstract}{2}
+\contentsline {chapter}{Glossary}{3}
+\contentsline {chapter}{\numberline {1}Introduction}{4}
+\contentsline {chapter}{\numberline {2}Methods}{6}
+\contentsline {section}{\numberline {2.1}Input data}{7}
+\contentsline {subsection}{\numberline {2.1.1}Eigenvectors}{7}
+\contentsline {subsection}{\numberline {2.1.2}Locus-level features}{8}
+\contentsline {section}{\numberline {2.2}Modelling}{8}
+\contentsline {subsection}{\numberline {2.2.1}Random Forest}{8}
+\contentsline {subsection}{\numberline {2.2.2}Graphical lasso}{8}
+\contentsline {section}{\numberline {2.3}Analysis}{9}
+\contentsline {subsection}{\numberline {2.3.1}Model performance}{9}
+\contentsline {subsection}{\numberline {2.3.2}Stratification by variability}{9}
+\contentsline {subsection}{\numberline {2.3.3}Nuclear positioning of chromatin compartments}{10}
+\contentsline {chapter}{\numberline {3}Results}{11}
+\contentsline {section}{\numberline {3.1}Concordant compartmentalisation across cell types}{11}
+\contentsline {section}{\numberline {3.2}Accurate models of higher-order structure}{12}
+\contentsline {section}{\numberline {3.3}Parsimonious models highlight common features}{12}
+\contentsline {section}{\numberline {3.4} Invariant regions of higher order structure are better described by locus-level features}{14}
+\contentsline {section}{\numberline {3.5}Models differ between cell types}{16}
+\contentsline {section}{\numberline {3.6}Models generalise to unseen chromosomes}{16}
+\contentsline {chapter}{\numberline {4}Discussion}{18}
+\contentsline {section}{\numberline {4.1} Relationship between locus-level chromatin features and higher order structure}{18}
+\contentsline {section}{\numberline {4.2}Implications for models of genome topology}{19}
+\contentsline {section}{\numberline {4.3}Caveats}{19}
+\contentsline {chapter}{\numberline {5}Conclusion}{20}
+\contentsline {chapter}{\numberline {6}Additional figures}{21}

@@ -21,135 +21,85 @@
 
 \maketitle
 
-\chapter{Methods}
+\chapter{Introduction}
+\section{Genome organisation}
 
-\section{Input data}\label{input-data}
+It's oft-stated that the DNA within each human cell would extend for two metres fully straightened. Instead that same length of DNA packs into a cell nucleus with a diameter in the order of micrometers ($\mu$m).
 
-Some more stuff here.
+\subsection{C-methods and Hi-C}
 
-\subsection{Hi-C data}\label{hi-c-data}
+Classical studies of chromosome conformation relied on microscopy techniques to visualise nuclear architecture. These techniques led to the discovery of ``chromosome territories", regions of the nucleus wherein distinct chromosomes were thought to occupy. Finer details of chromatin organisation, such as the proposed 30 nm fibre, were also introduced through microscopy-based techniques. 
 
-Raw Hi-C reads were downloaded from three published datasets through
-GEO\citep{Barrett2013} or the SRA\citep{Leinonen2011a} with identifiers:
-GSE35156 (H1 hESC), GSE18199 (K562) and SRX030113 (GM12878). These
-paired reads were mapped independently to theand mapped to the genome
-(hg19/GRCh37). Mapping was performed using the \texttt{hiclib} software
-package\citep{Imakaev2012} and \texttt{bowtie2}\citep{Langmead2012} with
-the \texttt{-{}-very-sensitive} flag. Mapped reads were then binned into
-contact maps and iteratively corrected\citep{Imakaev2012}. The
-\texttt{hiclib} software was also used for eigenvector expansion of each
-intrachromosomal contact map, performed independently on each chromosome
-arm.
+With the advent DNA sequencing technology, new experimental methods emerged. Chromosome conformation capture (3C), introduced by Dekker \emph{et al.}\cite{Dekker2002} was the first sequencing-based method of measuring chromosome conformation. The method uses formaldehyde to cross-link nuclear proteins in place, trapping genomic regions that were physically co-located through bound proteins, then to apply a frequent restriction enzyme to shear the sample into fragments. Next, under dilute conditions, DNA fragments are ligated together. The dilute conditions favour ligations between fixed fragments, with the aim of generating hybrid fragments form two genomic regions which were close together in the original preparation. Cross-linking can then be reversed and, in the case of the original 3C method, measured by quantitative PCR using pre-designed primers for your fragments of interest. The end result is a relative measure of interaction frequency between any two regions of interest, in theory directly proportional to their distance in three-dimensional space.
 
-\subsection{Locus-level features}\label{locus-level-features}
+The rapid advancement of sequencing, allowed the original 3C method to be further developed, first through microarray technology, then using high-throughput sequencing. Two protocols were proposed for a 3C-inspired one-to-many assay\cite{Zhao2006, Simonis2006} (both named 4C), whereby interactions were measured for a specific viewpoint fragment against all other restriction fragments genome-wide. The same year a many-to-many assay (5C) allowed measurements for all restriction fragments within a specified region.\cite{Dostie2006} 
 
-Genome-wide ChIP-seq datasets for: 22 DNA binding proteins and 10
-histone marks were made available by the ENCODE
-consortium\citep{Dunham2012, Boyle2014} along with DNase I
-hypersensitivity and H2A.z occupancy, for each of the Tier 1 ENCODE cell
-lines used in this work: H1 hESC, K562 and GM12878. These data were
-pre-processed using MACSv2\citep{Zhang2008} to produce fold-change
-relative to input chromatin. GC content was also calculated and used in
-the featureset.
+The final step was an all-versus-all assay, capable of assaying pairwise interaction frequencies between all restriction fragments of a genome. This assay was published by Lieberman Aiden \emph{et al.}\cite{Lieberman2009} and named Hi-C. The Hi-C method added biotin tagging to pull-down only ligated fragments for sequencing. At the time of publication, resolution of Hi-C data for analysis was limited by sequencing depth, given the huge number of restriction fragments produced by a 6-cutter enzyme (HindIII and NcoI were used in \cite{Lieberman2009}) but the falling costs of sequencing and proven utility of the assay meant subsequent Hi-C papers incrementally increased their sequencing depth, to a point where analysis could be performed at the level of individual restriction fragments, genome-wide.\cite{Dixon2012,  Selvaraj2013a, Jin2013, Rao2014}
 
-\section{Modelling}\label{modelling}
+\subsection{Hi-C variants}
 
-\subsection{Random Forest}\label{sec:rf}
+The interaction maps produced by Hi-C were noticed to exhibit several inherent biases. Fragment properties, such as their length, GC content and mappability, were confounding interaction frequency estimates and therefore needed to be normalised-away before subsequent analysis.\cite{Yaffe2011} A range of statistical techniques were developed to correct for these latent variables\cite{Imakaev2012, Dekker2013, Hu2012, Li2014}
 
-Random Forest regression\citep{Breiman2001a} was used as implemented in
-the R package \texttt{randomForest}.\citep{Liaw2002} Parameters of
-$mtry = \frac{n}{3} = 12$ and $ntrees = 200$ were assumed as they
-approximate the defaults and are known to be largely
-insensitive.\citep{Hastie2001}
+Tethered chromosome capture (TCC)\cite{Kalhor2012} was the first attempt to increase the signal to noise ratio of Hi-C contacts. In this method, ligations take place on a fixed surface, with the aim of preventing spurious ligations between fragments in solution which were not cross-linked.
 
-Variable importance within Random Forest regression models was measured
-using mean decrease in accuracy in the out-of-bag (OOB) sample. This
-represents the average difference (over the forest) between the accuracy
-of a tree with permuted and unpermuted versions of a given variable, in
-units of mean squared error (MSE).\citep{Cutler2007}
+Hi-C is a population-level assay, as the retrieved interaction counts are from a huge number of different cells. As well as building population-averaged models of genome structure, it is also of interest to probe cell-to-cell variability through single-cell approaches. The first single-cell Hi-C study\cite{Nagano2013} \ldots An obvious limitation of single-cell Hi-C assays is that a single restriction fragment can ligate to at most a single other fragment, meaning even if $100\%$ yield were to be achieved, any $n \times n$ interaction matrix could at most populate $\frac{n}{2}$ cells.
 
-\subsection{Model performance}\label{model-performance}
+Capture-C is another recent Hi-C derivative which attempts to address resolution problems associated with the genome-wide pairwise assay by enriching for promoter-enhancer interactions using \emph{a priori} selection.\cite{Mifsud2015} It could be said that Capture-C is to Hi-C as exome-capture sequencing is to a whole-genome approach.
 
-The effectiveness of the modelling approach was measured by four
-different metrics. Prediction accuracy was assessed by the Pearson
-correlation coefficient between the predicted and observed eigenvectors
-(determined by 10-fold cross-validation), and the root mean-squared
-error (RMSE) of the same data. Classification error, when predictions
-where thresholded into $A \geq 0; B < 0$, was also calculated using
-accuracy (\% correct classifications or True Positives) and area under
-the receiver operating characteristic (AUROC) curve. Together these give
-a comprehensive overview of the model performance, both in terms of
-regression accuracy of the continuous eigenvector, and in how that same
-model could be used to label discrete chromatin compartments.
+In-site Hi-C was a recent refinement of the Hi-C method, from the published of the original method.\cite{Rao2014} The principle difference is that fixation and ligation now happen in place, within intact cell nuclei.
 
-For cross-application of cell type specific models, a single Random
-Forest regression model was learned from all 1 Mb bins for a given cell
-type. This was then used to predict all bins from each of the other two
-cell types.
+\subsection{Chromosome compartments}
 
-\section{Variable regions}\label{variable-regions}
+At lower resolution, Lieberman-Aiden \emph{et
+  al.}\cite{Lieberman2009} identified ``A'' and ``B'' nuclear compartments,
+made up of regions of between 1 and 5 megabases which showed properties typical
+of euchromatin and heterochromatin, respectively. The combination
+of these two insights has lead to a model of higher order chromatin
+structure whereby groups of TADs assemble into alternating A and B
+compartments, reflecting broadly active and inactive chromosomal
+regions.\cite{Dekker2013} \\
 
-\subsection{Stratification by
-variability}\label{stratification-by-variability}
+\subsection{Topological domains}
 
-Median absolute deviation (MAD) was chosen as a robust measure of the
-variability in a given 1 Mb block between the three primary cell types
-used in this work: H1, K562 and GM12878. Blocks were ranked by this
-measure and split into thirds that represented ``low'' variability (the
-third of blocks with the lowest MAD), ``mid'' and ``high'' variability.
-Each subgroup was then independently modelled using the
-previously-described Random Forest approach.
+A high-profile example of computational analyses leading to new
+biological insight can be found in Dixon \emph{et al.}\cite{Dixon2012}
+wherein the authors characterised ``topological domains'' (also known
+as topological associating domains or TADs), a
+megabase-scale feature of genome organisation conserved between human
+and mice.
 
-``Flipped'' regions are those whose compartment state differs in one
-cell type relative to the other two. For example, if a 1 Mb bin was
-classified as ``open'' in H1 hESC and ``closed'' in both K562 and
-GM12878, this is said to be a ``flipped'' compartment (to open).
+\section{Machine learning in genomics}
 
-\subsection{Enhancer enrichment}\label{enhancer-enrichment}
+The link between epigenomic features and local chromatin state has been
+analysed computationally in a number of publications, notably in
+developing the
+Hidden Markov Model-based ChromHMM\cite{Ernst2012} algorithm which predicts states such as active promoters and enhancers, using a
+range of histone marks and other underlying features.\cite{Ernst2011} Similarly a Random Forest-based
+algorithm was recently developed to predict enhancers from histone
+modification data.\cite{Rajagopal2013} At the opposite end of the
+spectrum, theoretical mechanistic models of chromatin folding such as the
+``strings and binders switch'' model\cite{Barbieri2012} and the ``fractal
+globule'' model\cite{Lieberman2011, Mirny2011, Grosberg1988a} have both produced simulated data
+that reflects empirical 3C observations and potentially describe the polymer
+dynamics of chromatin folding. However few studies have spanned all of
+these levels of chromatin structure and nuclear organisation, and it is not yet known how locus-level chromatin features may
+be related to higher order genome organisation. \\
 
-Enhancer annotations were collected from the ChromHMM / SegWay combined
-annotations in each cell type.\citep{Hoffman2013} Enhancers were
-considered ``shared'' if there was an overlapping enhancer annotation in
-either of the two other cell types, and labelled as ``tissue-specific''
-otherwise.
+\subsection{ENCODE}
 
-\section{Boundaries}\label{boundaries}
+The recent comprehensive ChIP-seq datasets
+produced by the ENCODE consortium\cite{Dunham2012} combined with Hi-C
+genome-wide contact maps in a number of human cell
+types\cite{Dixon2012, Lieberman2011, Kalhor2012} present a remarkable
+opportunity to investigate the relationships between local
+chromatin features and higher order structure. In this work, a
+machine-learning approach was employed to model the
+compartmental characteristics of large genomic regions based on their
+aggregate levels of various histone marks and DNA binding
+proteins. Dissection of the resulting models was then used as a
+means of gleaning biological insights into the basis of higher order
+structure and of highlighting important differences between cell types.
 
-\subsection{TADs}\label{tads}
-
-TAD boundaries were called using the software provided in
-\citet{Dixon2012} using their recommended parameters. For the generation
-of boundary profiles, the same parameters were used: input features were
-averaged into 40 kb bins spanning $\pm500$ kb from the boundary centre.
-
-\subsection{Compartments}\label{sec:compartments}
-
-Compartment boundaries were called by first training a two-state hidden
-Markov model (HMM) on the compartment eigenvector and then using the
-Viterbi algorithm to predict the most likely state sequence that
-produced the observed values. The point at which transitions occurred
-between states was taken as a boundary which was then extended $\pm 1.5$
-Mb to give a 3 Mb window in which a boundary was though to occur.
-
-To test for the enrichment or depletion of a chromatin feature over a
-given boundary, a two tailed Mann-Whitney test was used to compare the
-boundary bin with the ten outermost bins of the window (5 from either
-side). The significance level at ￼$\alpha = 0.01$ was then
-Bonferonni-adjusted for multiple testing correction, and results with
-\emph{p}-values exceeding this threshold were deemed significantly
-enriched or depleted at a given boundary.
-
-\section{Giemsa band comparison}\label{giemsa-band-comparison}
-
-Cytogenic band data and Giemsa stain results were downloaded from the
-UCSC genome browser (table \texttt{cytoBandIdeo}). The genomic
-co-ordinates are an approximation of cytogenic band data inferred from a
-large number of FISH experiments.\citep{Furey2003}
-
-To compare G-band boundaries with our compartment data, we allowed for a
-$\pm 500$ kb inaccuracy in G-band boundary. For each G-band boundary,
-the minimum absolute distance to any compartment or TAD boundary was
-calculated for each cell type. To generate a null model, \ldots
 
 
 \begin{small}
