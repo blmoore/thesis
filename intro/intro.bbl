@@ -1,0 +1,161 @@
+\begin{thebibliography}{24}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Dekker \emph{et~al.}(2002)Dekker, Rippe, Dekker and
+  Kleckner}]{Dekker2002}
+Dekker J, Rippe K, Dekker M, Kleckner N (2002) {Capturing chromosome
+  conformation.}
+\newblock \emph{Science (New York, N.Y.)}, \textbf{295}(February): 1306--1311.
+
+\bibitem[{Zhao \emph{et~al.}(2006)Zhao, Tavoosidana, Sj\"{o}linder,
+  G\"{o}nd\"{o}r, Mariano, Wang, Kanduri, Lezcano, Sandhu
+  \emph{et~al.}}]{Zhao2006}
+Zhao Z, Tavoosidana G, Sj\"{o}linder M, G\"{o}nd\"{o}r A, Mariano P, Wang S,
+  Kanduri C, Lezcano M, Sandhu KS, \emph{et~al.} (2006) {Circular chromosome
+  conformation capture (4C) uncovers extensive networks of epigenetically
+  regulated intra- and interchromosomal interactions.}
+\newblock \emph{Nature genetics}, \textbf{38}(11): 1341--1347.
+
+\bibitem[{Simonis \emph{et~al.}(2006)Simonis, Klous, Splinter, Moshkin,
+  Willemsen, de~Wit, van Steensel and de~Laat}]{Simonis2006}
+Simonis M, Klous P, Splinter E, Moshkin Y, Willemsen R, de~Wit E, van Steensel
+  B, de~Laat W (2006) {Nuclear organization of active and inactive chromatin
+  domains uncovered by chromosome conformation capture-on-chip (4C).}
+\newblock \emph{Nature genetics}, \textbf{38}(11): 1348--1354.
+
+\bibitem[{Dostie \emph{et~al.}(2006)Dostie, Richmond, Arnaout, Selzer, Lee,
+  Honan, Rubio, Krumm, Lamb \emph{et~al.}}]{Dostie2006}
+Dostie J, Richmond Ta, Arnaout Ra, Selzer RR, Lee WL, Honan Ta, Rubio ED, Krumm
+  A, Lamb J, \emph{et~al.} (2006) {Chromosome Conformation Capture Carbon Copy
+  (5C): A massively parallel solution for mapping interactions between genomic
+  elements}.
+\newblock \emph{Genome Research}, \textbf{16}(10): 1299--1309.
+
+\bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
+  Williams, Imakaev, Ragoczy, Telling, Amit, Lajoie, Sabo
+  \emph{et~al.}}]{Lieberman2009}
+Lieberman-Aiden E, van Berkum NL, Williams L, Imakaev M, Ragoczy T, Telling A,
+  Amit I, Lajoie BR, Sabo PJ, \emph{et~al.} (2009) {Comprehensive mapping of
+  long-range interactions reveals folding principles of the human genome.}
+\newblock \emph{Science}, \textbf{326}(5950): 289--93.
+
+\bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
+  and Ren}]{Dixon2012}
+Dixon JR, Selvaraj S, Yue F, Kim A, Li Y, Shen Y, Hu M, Liu JS, Ren B (2012)
+  {Topological domains in mammalian genomes identified by analysis of chromatin
+  interactions.}
+\newblock \emph{Nature}, \textbf{485}(7398): 376--80.
+
+\bibitem[{Selvaraj \emph{et~al.}(2013)Selvaraj, {R Dixon}, Bansal and
+  Ren}]{Selvaraj2013a}
+Selvaraj S, {R Dixon} J, Bansal V, Ren B (2013) {Whole-genome haplotype
+  reconstruction using proximity-ligation and shotgun sequencing.}
+\newblock \emph{Nature biotechnology}, \textbf{31}(12): 1111--8.
+
+\bibitem[{Jin \emph{et~al.}(2013)Jin, Li, Dixon, Selvaraj, Ye, Lee, Yen,
+  Schmitt, Espinoza and Ren}]{Jin2013}
+Jin F, Li Y, Dixon JR, Selvaraj S, Ye Z, Lee AY, Yen Ca, Schmitt AD, Espinoza
+  CA, Ren B (2013) {A high-resolution map of the three-dimensional chromatin
+  interactome in human cells.}
+\newblock \emph{Nature}, \textbf{503}(7475): 290--4.
+
+\bibitem[{Rao \emph{et~al.}(2014)Rao, Huntley, Durand, Stamenova, Bochkov,
+  Robinson, Sanborn, Machol, Omer \emph{et~al.}}]{Rao2014}
+Rao S, Huntley M, Durand N, Stamenova E, Bochkov I, Robinson J, Sanborn A,
+  Machol I, Omer A, \emph{et~al.} (2014) {A 3D Map of the Human Genome at
+  Kilobase Resolution Reveals Principles of Chromatin Looping}.
+\newblock \emph{Cell}, \textbf{159}(7): 1665--1680.
+
+\bibitem[{Yaffe and Tanay(2011)}]{Yaffe2011}
+Yaffe E, Tanay A (2011) {Probabilistic modeling of Hi-C contact maps eliminates
+  systematic biases to characterize global chromosomal architecture.}
+\newblock \emph{Nature genetics}, \textbf{43}(11): 1059--65.
+
+\bibitem[{Imakaev \emph{et~al.}(2012)Imakaev, Fudenberg, McCord, Naumova,
+  Goloborodko, Lajoie, Dekker and Mirny}]{Imakaev2012}
+Imakaev M, Fudenberg G, McCord RP, Naumova N, Goloborodko A, Lajoie BR, Dekker
+  J, Mirny LA (2012) {Iterative correction of Hi-C data reveals hallmarks of
+  chromosome organization.}
+\newblock \emph{Nature methods}, \textbf{9}(10): 999--1003.
+
+\bibitem[{Dekker \emph{et~al.}(2013)Dekker, Marti-Renom and Mirny}]{Dekker2013}
+Dekker J, Marti-Renom Ma, Mirny La (2013) {Exploring the three-dimensional
+  organization of genomes: interpreting chromatin interaction data.}
+\newblock \emph{Nature reviews. Genetics}, \textbf{14}(6): 390--403.
+
+\bibitem[{Hu \emph{et~al.}(2012)Hu, Deng, Selvaraj, Qin, Ren and Liu}]{Hu2012}
+Hu M, Deng K, Selvaraj S, Qin Z, Ren B, Liu JS (2012) {HiCNorm: removing biases
+  in Hi-C data via Poisson regression.}
+\newblock \emph{Bioinformatics (Oxford, England)}, \textbf{28}(23): 3131--3.
+
+\bibitem[{Li \emph{et~al.}(2014)Li, Gong, Li, Alber and Zhou}]{Li2014}
+Li W, Gong K, Li Q, Alber F, Zhou XJ (2014) {Hi-Corrector: a fast, scalable and
+  memory-efficient package for normalizing large-scale Hi-C data.}
+\newblock \emph{Bioinformatics (Oxford, England)}, (November): 1--3.
+
+\bibitem[{Kalhor \emph{et~al.}(2012)Kalhor, Tjong, Jayathilaka, Alber and
+  Chen}]{Kalhor2012}
+Kalhor R, Tjong H, Jayathilaka N, Alber F, Chen L (2012) {Genome architectures
+  revealed by tethered chromosome conformation capture and population-based
+  modeling.}
+\newblock \emph{Nature biotechnology}, \textbf{30}(1): 90--8.
+
+\bibitem[{Nagano \emph{et~al.}(2013)Nagano, Lubling, Stevens, Schoenfelder,
+  Yaffe, Dean, Laue, Tanay and Fraser}]{Nagano2013}
+Nagano T, Lubling Y, Stevens TJ, Schoenfelder S, Yaffe E, Dean W, Laue ED,
+  Tanay A, Fraser P (2013) {Single-cell Hi-C reveals cell-to-cell variability
+  in chromosome structure.}
+\newblock \emph{Nature}, \textbf{502}(7469): 59--64.
+
+\bibitem[{Mifsud \emph{et~al.}(2015)Mifsud, Tavares-Cadete, Young, Sugar,
+  Schoenfelder, Ferreira, Wingett, Andrews, Grey \emph{et~al.}}]{Mifsud2015}
+Mifsud B, Tavares-Cadete F, Young AN, Sugar R, Schoenfelder S, Ferreira L,
+  Wingett SW, Andrews S, Grey W, \emph{et~al.} (2015) {Mapping long-range
+  promoter contacts in human cells with high-resolution capture Hi-C}.
+\newblock \emph{Nature Genetics}, (April): 1--12.
+
+\bibitem[{Ernst and Kellis(2012)}]{Ernst2012}
+Ernst J, Kellis M (2012) {ChromHMM: automating chromatin-state discovery and
+  characterization.}
+\newblock \emph{Nature methods}, \textbf{9}(3): 215--6.
+
+\bibitem[{Ernst \emph{et~al.}(2011)Ernst, Kheradpour, Mikkelsen, Shoresh, Ward,
+  Epstein, Zhang, Wang, Issner \emph{et~al.}}]{Ernst2011}
+Ernst J, Kheradpour P, Mikkelsen TS, Shoresh N, Ward LD, Epstein CB, Zhang X,
+  Wang L, Issner R, \emph{et~al.} (2011) {Mapping and analysis of chromatin
+  state dynamics in nine human cell types.}
+\newblock \emph{Nature}, \textbf{473}(7345): 43--9.
+
+\bibitem[{Rajagopal \emph{et~al.}(2013)Rajagopal, Xie, Li, Wagner, Wang,
+  Stamatoyannopoulos, Ernst, Kellis and Ren}]{Rajagopal2013}
+Rajagopal N, Xie W, Li Y, Wagner U, Wang W, Stamatoyannopoulos J, Ernst J,
+  Kellis M, Ren B (2013) {RFECS: a random-forest based algorithm for enhancer
+  identification from chromatin state.}
+\newblock \emph{PLoS computational biology}, \textbf{9}(3): e1002968.
+
+\bibitem[{Barbieri \emph{et~al.}(2012)Barbieri, Chotalia, Fraser, Lavitas,
+  Dostie, Pombo and Nicodemi}]{Barbieri2012}
+Barbieri M, Chotalia M, Fraser J, Lavitas LM, Dostie J, Pombo A, Nicodemi M
+  (2012) {Complexity of chromatin folding is captured by the strings and
+  binders switch model.}
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, \textbf{109}(40): 16173--8.
+
+\bibitem[{Mirny(2011)}]{Mirny2011}
+Mirny La (2011) {The fractal globule as a model of chromatin architecture in
+  the cell.}
+\newblock \emph{Chromosome research : an international journal on the
+  molecular, supramolecular and evolutionary aspects of chromosome biology},
+  \textbf{19}(1): 37--51.
+
+\bibitem[{Grosberg \emph{et~al.}(1988)Grosberg, Nechaev and
+  Shakhnovich}]{Grosberg1988a}
+Grosberg AY, Nechaev S, Shakhnovich E (1988) {The role of topological
+  constraints in the kinetics of collapse of macromolecules}.
+\newblock \emph{Journal de Physique}, \textbf{49}(12): 2095--2100.
+
+\bibitem[{ENCODE(2012)}]{Dunham2012}
+ENCODE (2012) {An integrated encyclopedia of DNA elements in the human genome.}
+\newblock \emph{Nature}, \textbf{489}(7414): 57--74.
+
+\end{thebibliography}
