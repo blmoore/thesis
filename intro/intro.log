@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.6.19)  28 MAY 2015 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.6.19)  1 JUN 2015 17:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -639,30 +639,27 @@ l.42
       [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 53--61
-
- []
-
 LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <7.6> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 82.
+(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 79.
+
 
 Package natbib Warning: Citation `Lieberman2011' on page 2 undefined on input l
-ine 82.
+ine 79.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--87
+Underfull \hbox (badness 10000) in paragraph at lines 70--84
 
  []
 
 LaTeX Font Info:    Font shape `OT1/pplj/m/sl' in size <10> not available
-(Font)              Font shape `OT1/pplj/m/it' tried instead on input line 87.
+(Font)              Font shape `OT1/pplj/m/it' tried instead on input line 84.
 Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/pplj/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
 [2]
 
 Package natbib Warning: Citation `Lieberman2011' on page 3 undefined on input l
-ine 93.
+ine 90.
 
 (./intro.bbl [3]
 LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <9> not available
@@ -673,22 +670,22 @@ LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <9> not available
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
 [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
  (./intro.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
 Package rerunfilecheck Info: File `intro.out' has not changed.
 (rerunfilecheck)             Checksum: 29AC1327AB082A6965515F26A4A8293C;569.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
- 11490 strings out of 493117
- 175129 string characters out of 6135433
+ 11497 strings out of 493117
+ 175179 string characters out of 6135433
  320714 words of memory out of 5000000
  14387 multiletter control sequences out of 15000+600000
- 73051 words of font info for 344 fonts, out of 8000000 for 9000
+ 73372 words of font info for 349 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,7n,50p,1126b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
@@ -702,10 +699,10 @@ ts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
 alatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino
 /uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplri8
 a.pfb>
-Output written on intro.pdf (6 pages, 186430 bytes).
+Output written on intro.pdf (6 pages, 187002 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
+ 170 PDF objects out of 1000 (max. 8388607)
+ 150 compressed objects within 2 object streams
  39 named destinations out of 1000 (max. 500000)
  57414 words of extra memory for PDF output out of 61914 (max. 10000000)
 
