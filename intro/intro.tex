@@ -44,7 +44,7 @@ Tethered chromosome capture (TCC)\cite{Kalhor2012} was the first attempt to incr
 
 Hi-C is a population-level assay, as the retrieved interaction counts are from a huge number of different cells. As well as building population-averaged models of genome structure, it is also of interest to probe cell-to-cell variability through single-cell approaches. The first single-cell Hi-C study\cite{Nagano2013} \ldots An obvious limitation of single-cell Hi-C assays is that a single restriction fragment can ligate to at most a single other fragment, meaning even if $100\%$ yield were to be achieved, any $n \times n$ interaction matrix could at most populate $\frac{n}{2}$ cells.
 
-Capture-C is another recent Hi-C derivative which attempts to address resolution problems associated with the genome-wide pairwise assay by enriching for promoter-enhancer interactions using \emph{a priori} selection.\cite{Mifsud2015} It could be said that Capture-C is to Hi-C as exome-capture sequencing is to a whole-genome approach.
+Capture-C is another recent Hi-C derivative which attempts to address resolution problems associated with the genome-wide pairwise assay by enriching for promoter-enhancer interactions using \emph{a priori} selection.\cite{Mifsud2015} It could be said that Capture-C is to Hi-C as exome-capture sequencing is to a whole-genome approach. 
 
 In-site Hi-C was a recent refinement of the Hi-C method, from the published of the original method.\cite{Rao2014} The principle difference is that fixation and ligation now happen in place, within intact cell nuclei.
 
@@ -52,18 +52,37 @@ In-site Hi-C was a recent refinement of the Hi-C method, from the published of t
 
 In the paper describing the Hi-C technique,\cite{Lieberman2009}  Lieberman-Aiden \emph{et
   al.} described low-resolution structures they name  ``A'' and ``B'' nuclear compartments. These are regions with a median size of around 5 megabases which showed properties typical
-of euchromatin and heterochromatin, respectively. A compartments were observed through 3D-FISH to be centrally-positioned in the nucleus and  ChIP-seq data showed several hallmarks of transcriptional activity. B compartments, conversely, were heterochromatic and lamina-associated regions, with little transcription and repressive histone modifications such as H3k9me3.\cite{Lieberman2009}
+of euchromatin and heterochromatin, respectively. A compartments were observed through 3D-FISH to be centrally-positioned in the nucleus and  ChIP-seq data showed several hallmarks of transcriptional activity. B compartments, conversely, were heterochromatic and lamina-associated regions, with little transcription and repressive histone modifications such as H3k9me3.\cite{Lieberman2009} As expected from positioning data, the co-location of compartment types is also visible in their contact maps. \\
 
-Nuclear these compartments were identified through a continuous eigenvector profile, derived from a normalised Hi-C contact matrix.\cite{Lieberman2009} Importantly, this measure holds more information than a simple two-state classification, rather the continuous values can be interpreted as relative levels of compaction or activity.\cite{Dekker2013, Imakaev2012}
+{\color{red} Figure: correlation matrix of contacts with eigenvector profile} \\
+
+These compartments were identified through a continuous eigenvector profile, derived from a normalised Hi-C contact matrix.\cite{Lieberman2009} Importantly, this measure holds more information than a simple two-state classification, rather the continuous values can be interpreted as relative levels of compaction or activity.\cite{Dekker2013, Imakaev2012}
 
 \subsection{Topological domains}
 
-A high-profile example of computational analyses leading to new
-biological insight can be found in Dixon \emph{et al.}\cite{Dixon2012}
-wherein the authors characterised ``topological domains'' (also known
-as topological associating domains or TADs), a
-megabase-scale feature of genome organisation conserved between human
-and mice.
+The falling cost of high-throughput sequencing enabled increasingly deep sequencing of Hi-C experiments. Sequencing is the main resolution-limiting resource for this assay, as to increase the analysis resolution and maintain the level of coverage requires an exponential increase in the total amount of sequencing required.\cite{Lieberman2009}
+
+In experiments totalling around two billion total sequencing reads, Dixon \emph{et al.}\cite{Dixon2012} produced Hi-C contact maps in human and mouse cell lines at 40 kb resolution. The authors noticed smaller domains they designated "topological associative domains" (or TADs) which were observable as self-interacting, off-diagonal blocks of higher-than-expected self-interaction frequency. They defined a domain calling algorithm based on the directional bias of a genomic region's contacts, and used a Hidden Markov Model to infer blocks of strongly up- or downstream-biased, reasoning that domain boundaries are present when a strongly upstream biased region is adjacent to a region of opposite bias. These boundaries themselves were investigated and were found to display suggestive functional enrichments for DNA binding proteins including CTCF, long thought to act as an insulator of chromatin state.
+
+Dixon \emph{et al.}\cite{Dixon2012} also performed some comparative analysis, reporting large and significant overlap of domain boundary positions both within species and between human and mouse cell lines.
+
+\subsection{Other proposed structures}
+
+Filippova \emph{et al.}\cite{Filippova2014} developed a tuneable algorithm which identifies "alternative topological domains".
+
+Recent high-resolution studies have been able to resolve ever-smaller levels of sub-structure. Rao \emph{et al.}\cite{Rao2014} refined the concept of chromosome compartments to "sub-compartments", dividing simple A/B divisions into a total of 5 subtypes. The authors were also able to identify "contact domains" of median size 185 kb, many of which were associated with identifiable individual looping events.\cite{Rao2014} The authors also suggest that previously-observed large TADs may be the result of insufficient sequencing; that is, not all boundaries could be detected using 40 kb binned contact maps thus multiple contact domains were unintentionally combined into large domains.
+
+\section{Models of chromatin organisation}
+
+Theoretical mechanistic models of chromatin folding such as the
+``strings and binders switch'' model\cite{Barbieri2012} and the ``fractal
+globule'' model\cite{Lieberman2011, Mirny2011, Grosberg1988a} have both produced simulated data
+that reflects empirical C-method observations and potentially describe the polymer
+dynamics of chromatin folding.
+
+\subsection{Fractal globule}
+
+\subsection{Strings, binders and switches}
 
 \section{Machine learning in genomics}
 
@@ -72,13 +91,8 @@ analysed computationally in a number of publications, notably in
 developing the
 Hidden Markov Model-based ChromHMM\cite{Ernst2012} algorithm which predicts states such as active promoters and enhancers, using a
 range of histone marks and other underlying features.\cite{Ernst2011} Similarly a Random Forest-based
-algorithm was recently developed to predict enhancers from histone
-modification data.\cite{Rajagopal2013} At the opposite end of the
-spectrum, theoretical mechanistic models of chromatin folding such as the
-``strings and binders switch'' model\cite{Barbieri2012} and the ``fractal
-globule'' model\cite{Lieberman2011, Mirny2011, Grosberg1988a} have both produced simulated data
-that reflects empirical 3C observations and potentially describe the polymer
-dynamics of chromatin folding. However few studies have spanned all of
+algorithm was developed to predict enhancers from histone
+modification data.\cite{Rajagopal2013} However few studies have spanned all of
 these levels of chromatin structure and nuclear organisation, and it is not yet known how locus-level chromatin features may
 be related to higher order genome organisation. \\
 
@@ -97,7 +111,7 @@ proteins. Dissection of the resulting models was then used as a
 means of gleaning biological insights into the basis of higher order
 structure and of highlighting important differences between cell types.
 
-
+\section{Aims}
 
 \begin{small}
 \bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
