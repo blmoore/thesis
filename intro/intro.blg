@@ -8,45 +8,45 @@ Warning--I didn't find a database entry for "Lieberman2011"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--there's a number but no volume in Li2014
 Warning--there's a number but no volume in Mifsud2015
-You've used 24 entries,
+You've used 25 entries,
             3024 wiz_defined-function locations,
-            790 strings with 11758 characters,
-and the built_in function-call counts, 37724 in all, are:
-= -- 3945
-> -- 1224
+            795 strings with 11955 characters,
+and the built_in function-call counts, 38846 in all, are:
+= -- 4061
+> -- 1255
 < -- 4
-+ -- 888
-- -- 313
-* -- 2852
-:= -- 4033
-add.period$ -- 48
-call.type$ -- 24
-change.case$ -- 120
-chr.to.int$ -- 25
-cite$ -- 26
-duplicate$ -- 3920
-empty$ -- 2674
-format.name$ -- 384
-if$ -- 7763
++ -- 910
+- -- 321
+* -- 2936
+:= -- 4159
+add.period$ -- 50
+call.type$ -- 25
+change.case$ -- 125
+chr.to.int$ -- 26
+cite$ -- 27
+duplicate$ -- 4041
+empty$ -- 2756
+format.name$ -- 395
+if$ -- 7993
 int.to.chr$ -- 1
-int.to.str$ -- 25
-missing$ -- 322
-newline$ -- 100
-num.names$ -- 72
-pop$ -- 1910
+int.to.str$ -- 26
+missing$ -- 333
+newline$ -- 104
+num.names$ -- 75
+pop$ -- 1970
 preamble$ -- 1
-purify$ -- 96
+purify$ -- 100
 quote$ -- 0
-skip$ -- 649
+skip$ -- 667
 stack$ -- 0
-substring$ -- 4757
-swap$ -- 860
+substring$ -- 4885
+swap$ -- 887
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 144
+type$ -- 150
 warning$ -- 2
-while$ -- 251
+while$ -- 258
 width$ -- 0
-write$ -- 291
+write$ -- 303
 (There were 3 warnings)
