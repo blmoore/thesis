@@ -1,4 +1,4 @@
-\begin{thebibliography}{14}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Barrett \emph{et~al.}(2013)Barrett, Wilhite, Ledoux, Evangelista,
@@ -24,6 +24,28 @@ Imakaev M, Fudenberg G, McCord RP, Naumova N, Goloborodko A, Lajoie BR, Dekker
 Langmead B, Salzberg SL (2012) {Fast gapped-read alignment with Bowtie 2.}
 \newblock \emph{Nature methods}, \textbf{9}(4): 357--9.
 
+\bibitem[{Kalhor \emph{et~al.}(2012)Kalhor, Tjong, Jayathilaka, Alber and
+  Chen}]{Kalhor2012}
+Kalhor R, Tjong H, Jayathilaka N, Alber F, Chen L (2012) {Genome architectures
+  revealed by tethered chromosome conformation capture and population-based
+  modeling.}
+\newblock \emph{Nature biotechnology}, \textbf{30}(1): 90--8.
+
+\bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
+  and Ren}]{Dixon2012}
+Dixon JR, Selvaraj S, Yue F, Kim A, Li Y, Shen Y, Hu M, Liu JS, Ren B (2012)
+  {Topological domains in mammalian genomes identified by analysis of chromatin
+  interactions.}
+\newblock \emph{Nature}, \textbf{485}(7398): 376--80.
+
+\bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
+  Williams, Imakaev, Ragoczy, Telling, Amit, Lajoie, Sabo
+  \emph{et~al.}}]{Lieberman2009}
+Lieberman-Aiden E, van Berkum NL, Williams L, Imakaev M, Ragoczy T, Telling A,
+  Amit I, Lajoie BR, Sabo PJ, \emph{et~al.} (2009) {Comprehensive mapping of
+  long-range interactions reveals folding principles of the human genome.}
+\newblock \emph{Science}, \textbf{326}(5950): 289--93.
+
 \bibitem[{ENCODE(2012)}]{Dunham2012}
 ENCODE (2012) {An integrated encyclopedia of DNA elements in the human genome.}
 \newblock \emph{Nature}, \textbf{489}(7414): 57--74.
@@ -42,13 +64,38 @@ Zhang Y, Liu T, Meyer Ca, Eeckhoute J, Johnson DS, Bernstein BE, Nusbaum C,
   (MACS).}
 \newblock \emph{Genome biology}, \textbf{9}(9): R137.
 
-\bibitem[{Breiman(2001)}]{Breiman2001a}
-Breiman L (2001) {Random Forests}.
+\bibitem[{Breiman(2001{\natexlab{a}})}]{Breiman2001a}
+Breiman L (2001{\natexlab{a}}) {Random Forests}.
 \newblock \emph{Machine learning}, \textbf{45}(1): 5--32.
 
 \bibitem[{Liaw and Wiener(2002)}]{Liaw2002}
 Liaw A, Wiener M (2002) {Classification and Regression by randomForest}.
 \newblock \emph{R News}, \textbf{2}(December): 18--22.
+
+\bibitem[{Svetnik \emph{et~al.}(2003)Svetnik, Liaw, Tong, Culberson, Sheridan
+  and Feuston}]{Svetnik2003}
+Svetnik V, Liaw A, Tong C, Culberson JC, Sheridan RP, Feuston BP (2003) {Random
+  forest: a classification and regression tool for compound classification and
+  QSAR modeling.}
+\newblock \emph{Journal of chemical information and computer sciences},
+  \textbf{43}(6): 1947--58.
+
+\bibitem[{Cutler \emph{et~al.}(2007)Cutler, Edwards, Beard, Cutler, Hess,
+  Gibson and Lawler}]{Cutler2007}
+Cutler DR, Edwards TC, Beard KH, Cutler A, Hess KT, Gibson J, Lawler JJ (2007)
+  {Random forests for classification in ecology.}
+\newblock \emph{Ecology}, \textbf{88}(11): 2783--92.
+
+\bibitem[{Dasgupta \emph{et~al.}(2011)Dasgupta, Sun, K\"{o}nig, Bailey-Wilson
+  and Malley}]{Dasgupta2012}
+Dasgupta A, Sun YV, K\"{o}nig IR, Bailey-Wilson JE, Malley JD (2011) {Brief
+  review of regression-based and machine learning methods in genetic
+  epidemiology: the Genetic Analysis Workshop 17 experience.}
+\newblock \emph{Genetic epidemiology}, \textbf{35 Suppl 1}(Suppl 1): S5--11.
+
+\bibitem[{Breiman(2001{\natexlab{b}})}]{Breiman2001b}
+Breiman L (2001{\natexlab{b}}) {Statistical Modeling: The Two Cultures}.
+\newblock \emph{Statistical Science}, \textbf{16}(3): 199--231.
 
 \bibitem[{Hastie \emph{et~al.}(2009)Hastie, Tibshirani and
   Friedman}]{Hastie2001}
@@ -57,11 +104,16 @@ Hastie T, Tibshirani R, Friedman J (2009) \emph{{Elements of Statistical
 \newblock Springer, 2 edition.
 \newblock ISBN 978-0-387-84858-7.
 
-\bibitem[{Cutler \emph{et~al.}(2007)Cutler, Edwards, Beard, Cutler, Hess,
-  Gibson and Lawler}]{Cutler2007}
-Cutler DR, Edwards TC, Beard KH, Cutler A, Hess KT, Gibson J, Lawler JJ (2007)
-  {Random forests for classification in ecology.}
-\newblock \emph{Ecology}, \textbf{88}(11): 2783--92.
+\bibitem[{Friedman \emph{et~al.}(2008)Friedman, Hastie and
+  Tibshirani}]{Friedman2008}
+Friedman J, Hastie T, Tibshirani R (2008) {Sparse inverse covariance estimation
+  with the graphical lasso.}
+\newblock \emph{Biostatistics (Oxford, England)}, \textbf{9}(3): 432--41.
+
+\bibitem[{Mazumder and Hastie(2012)}]{Mazumder2012}
+Mazumder R, Hastie T (2012) {The graphical lasso: New insights and
+  alternatives}.
+\newblock \emph{Electronic Journal of Statistics}, pp. 1--21.
 
 \bibitem[{Hoffman \emph{et~al.}(2013)Hoffman, Ernst, Wilder, Kundaje, Harris,
   Libbrecht, Giardine, Ellenbogen, Bilmes \emph{et~al.}}]{Hoffman2013}
@@ -70,16 +122,37 @@ Hoffman MM, Ernst J, Wilder SP, Kundaje A, Harris RS, Libbrecht M, Giardine B,
   chromatin elements from ENCODE data.}
 \newblock \emph{Nucleic acids research}, \textbf{41}(2): 827--41.
 
-\bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
-  and Ren}]{Dixon2012}
-Dixon JR, Selvaraj S, Yue F, Kim A, Li Y, Shen Y, Hu M, Liu JS, Ren B (2012)
-  {Topological domains in mammalian genomes identified by analysis of chromatin
-  interactions.}
-\newblock \emph{Nature}, \textbf{485}(7398): 376--80.
-
 \bibitem[{Furey(2003)}]{Furey2003}
 Furey TS (2003) {Integration of the cytogenetic map with the draft human genome
   sequence}.
 \newblock \emph{Human Molecular Genetics}, \textbf{12}(9): 1037--1044.
+
+\bibitem[{Boyle \emph{et~al.}(2001)Boyle, Gilchrist, Bridger, Mahy, Ellis and
+  Bickmore}]{Boyle2001}
+Boyle S, Gilchrist S, Bridger JM, Mahy NL, Ellis Ja, Bickmore Wa (2001) {The
+  spatial organization of human chromosomes within the nuclei of normal and
+  emerin-mutant cells.}
+\newblock \emph{Human molecular genetics}, \textbf{10}(3): 211--9.
+
+\bibitem[{Chambers \emph{et~al.}(2013)Chambers, Bickmore and
+  Semple}]{Chambers2013}
+Chambers EV, Bickmore Wa, Semple CA (2013) {Divergence of mammalian higher
+  order chromatin structure is associated with developmental loci.}
+\newblock \emph{PLoS computational biology}, \textbf{9}(4): e1003017.
+
+\bibitem[{de~Wit \emph{et~al.}(2013)de~Wit, Bouwman, Zhu, Klous, Splinter,
+  Verstegen, Krijger, Festuccia, Nora \emph{et~al.}}]{DeWit2013}
+de~Wit E, Bouwman BaM, Zhu Y, Klous P, Splinter E, Verstegen MJaM, Krijger PHL,
+  Festuccia N, Nora EP, \emph{et~al.} (2013) {The pluripotent genome in three
+  dimensions is shaped around pluripotency factors.}
+\newblock \emph{Nature}, pp. 1--7.
+
+\bibitem[{Tanabe \emph{et~al.}(2002)Tanabe, M\"{u}ller, Neusser, von Hase,
+  Calcagno, Cremer, Solovei, Cremer and Cremer}]{Tanabe2002}
+Tanabe H, M\"{u}ller S, Neusser M, von Hase J, Calcagno E, Cremer M, Solovei I,
+  Cremer C, Cremer T (2002) {Evolutionary conservation of chromosome territory
+  arrangements in cell nuclei from higher primates.}
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, \textbf{99}(7): 4424--9.
 
 \end{thebibliography}
