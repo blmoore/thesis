@@ -8,6 +8,17 @@
 \usepackage[cc]{titlepic}    % enable logo on title page
 \usepackage{graphicx}       % logo related
 
+\usepackage{bm} % bold math
+\usepackage{amsmath} % underset
+\usepackage{hyperref} % urls
+
+% attempt to adj. typography: old style numbers, drop below line
+%\usepackage[% 
+%  rm={oldstyle=false},% 
+%  sf={oldstyle=false},% 
+%  tt={oldstyle=false,proportional=false,monowidth}% 
+%]{libertine} 
+
 % bibliography
 \bibliographystyle{../thesis}
 
@@ -41,6 +52,27 @@ contact maps and iteratively corrected\citep{Imakaev2012}. The
 intrachromosomal contact map, performed independently on each chromosome
 arm.
 
+% Table describing source, read depth, citation
+
+\begin{table}[h]
+\centering
+\caption{{\bf Public Hi-C data used in this work.} }
+\label{my-label}
+\begin{tabular}{lllr}
+{\bf Cell line} & {\bf Total reads} & {\bf Accession} & {\bf Citation}\\
+\hline
+Gm12878 & 31$\times10^{6}$ & \href{http://www.ncbi.nlm.nih.gov/sra/SRX030113[accn]}{SRX030113} & \citenum{Kalhor2012} \\
+H1 hESC & 331$\times10^{6}$ & \href{http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35156}{GSE35156} &\citenum{Dixon2012} \\
+K562 & 36$\times10^{6}$ &  \href{http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18199}{GSE18199}  & \citenum{Lieberman2009} \\
+\hline
+Cortex & 373$\times10^{6}$ & \href{http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35156}{GSE35156}& \citenum{Dixon2012} \\
+mESC & 476$\times10^{6}$ & \href{http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35156}{GSE35156}&\citenum{Dixon2012} \\
+\hline
+IMR90 & 355$\times10^{6}$ &\href{http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35156}{GSE35156} &\citenum{Dixon2012} 
+\end{tabular}
+\end{table}
+
+
 \subsection{Locus-level features}\label{locus-level-features}
 
 Genome-wide ChIP-seq datasets for: 22 DNA binding proteins and 10
@@ -52,6 +84,58 @@ pre-processed using MACSv2\citep{Zhang2008} to produce fold-change
 relative to input chromatin. GC content was also calculated and used in
 the featureset.
 
+%\begin{table}[h]
+%\centering
+%\caption{ ChIP-seq and other public datasets used in this work. }
+%\label{my-label}
+%\begin{tabular}{llr}
+%  & {\bf Description} & {\bf Citation}\\
+%\hline
+%% histone modifications
+%H3K27ac&&\\
+%H3K27me3&&\\
+%H3K36me3&&\\
+%H3K4me1&&\\
+%H3K4me2&&\\ 
+%H3K4me3&&\\
+%H3K79me2&&\\
+%H3K9ac&&\\
+%H3K9me3&&\\
+%H4K20me1&&\\
+%
+%\hline
+%% DNA binding proteins
+%ATF3 & & \\
+%CEBPB&&\\
+%CHD1&&\\
+%CHD2&&\\
+%CMYC&&\\
+%CTCF&&\\
+%EGR1&&\\
+%EZH2&&\\
+%GABP&&\\
+%JUND&&\\
+%MAX&&\\
+%MXI1&&\\
+%NRSF&&\\
+%POL2&&\\
+%P300&&\\
+%RAD21&&\\
+%SIX5&&\\
+%SP1&&\\
+%TAF1&&\\
+%TBP&&\\
+%YY1&&\\
+%ZNF143&&\\
+%
+%\hline
+%% GC
+%
+%GC & Base composition calculated from \texttt{hg19} sequence & This work \\
+%
+%\end{tabular}
+%\end{table}
+
 \subsection{Clustering input features}
 
 To quantify collinearity of input features, correlation matrices built from genome-wide vectors of input feature measures were build and hierarchicaly clustered. The "significance" of observed clustering was assessed using sub- and super-sampled bootstrapping, with stable clusters deemed significant. The \texttt{pvclust} R package
@@ -60,17 +144,32 @@ To quantify collinearity of input features, correlation matrices built from geno
 
 \subsection{Random Forest}\label{sec:rf}
 
-Random Forest regression\citep{Breiman2001a} was used as implemented in
-the R package \texttt{randomForest}.\citep{Liaw2002} Parameters of
-$mtry = \frac{n}{3} = 12$ and $ntrees = 200$ were assumed as they
-approximate the defaults and are known to be largely
-insensitive.\citep{Hastie2001}
+Random Forest (RF) regression,\cite{Breiman2001a}  was used
+as implemented in the R package \texttt{randomForest}.\cite{Liaw2002}
+The RF algorithm makes use of a collective of regression trees (size $ntrees$), each built from a
+bootstrapped sample of the training set. In growing each tree, a small
+number of variables ($mtry$) is tested at each bifurcation node, and that which minimises the
+variance in child node subsets is selected at a specific
+threshold. Having trained a group of trees, these can then be used as
+predictive tools by inputting a vector of features to each tree and
+averaging the output leaf node value across the forest. RF regression
+was used as it is known to be one of the most powerful regression
+methods developed to date,\cite{Svetnik2003, Cutler2007} typically
+providing low bias and low variance predictions without the need for
+variable selection.\cite{Dasgupta2012}
+Additionally the RF method represents an example of ``algorithmic
+modelling''\cite{Breiman2001b} in that it makes no assumptions about the
+underlying data model.
+Parameters of $mtry = \frac{n}{3}$ (where $n$ is the number of input features) and $ntrees =
+200$ were assumed as they are known to be
+largely insensitive;\cite{Dasgupta2012, Hastie2001} this was verified
+with the dataset used in this work (Fig. \ref{fig:rfparam}). \\
 
 Variable importance within Random Forest regression models was measured
 using mean decrease in accuracy in the out-of-bag (OOB) sample. This
 represents the average difference (over the forest) between the accuracy
 of a tree with permuted and unpermuted versions of a given variable, in
-units of mean squared error (MSE).\citep{Cutler2007}
+units of mean squared error (MSE).\citep{Cutler2007, Dasgupta2012}
 
 \subsection{Model performance}\label{model-performance}
 
@@ -96,6 +195,33 @@ cell types.
 Linear regression was used as a baseline for comparison with more complicated approaches such as Random Forest. If the same modelling accuracy could be achieved with simple multiple linear regression, this would be a faster and more interpretable modelling framework.
 
 Partial least squares regression was also used to model compartment profiles. This method is well-suited to highly correlated inputs.
+
+\subsection{Graphical lasso}
+Regularised models made use of the Graphical LASSO\cite{Friedman2008}
+(least absolute shrinkage and selection operator) as a method of
+$L_1$-norm based
+regularisation, implemented via the \texttt{glasso} R package. The
+graphical lasso provides tuneable regularisation which is
+capable of feature selection via minimising regression parameters to
+0. It was chosen in this case due to the multicollinearity of the
+featureset, the algorithm's fast speed of
+execution and the intuitiveness a graphical model
+presents.\cite{Friedman2008} \\
+
+More specifically, the graphical lasso regulates the number of 0s in
+the inverse covariance matrix, $\bm{\Theta}=\bm{\Sigma}^{-1}$, also known as the
+precision matrix. Then if element $\theta_{ij}=0$, the variables $X_i$ and $X_j$ can be said to be
+conditionally independent, given the remaining
+variables.\cite{Mazumder2012} The algorithm minimises a negative
+log-likelihood (Eqn. \ref{eq:glasso}\cite{Mazumder2012}) given the tuning parameter $\lambda$, which was tuned
+in this case to leave a small number of variables ($<10$)
+directly dependent on the eigenvector data. \\
+\begin{equation} \label{eq:glasso}
+\underset{\bm{\Theta}\prec\bm{0}}{\mathrm{minimise}}~f(\bm{\Theta}) :=
+-\log\det(\bm{\Theta}) + \mathrm{tr}(\bm{\mathrm{S}\Theta}) + \lambda
+\lVert\bm{\Theta}\rVert_1
+\end{equation}
+
 
 \section{Variable regions}\label{variable-regions}
 
@@ -167,6 +293,25 @@ $\pm 500$ kb inaccuracy in G-band boundary. For each G-band boundary,
 the minimum absolute distance to any compartment or TAD boundary was
 calculated for each cell type. To generate a null model, \ldots
 
+\section{Nuclear positioning}
+Previously published data  on chromosome positioning preference within
+the nucleus was used to label each chromosome as ``inner'', ``middle''
+or ``outer''.\cite{Boyle2001} Chromosomes whose DAPI hybridisation
+signals were significantly enriched ($p\leq 2\times10^{-2}$) in the inner nuclear shell, as
+defined by Boyle \emph{et al.}\cite{Boyle2001}, made up the ``inner''
+group and included chromosomes 1 and 16. Similarly the ``outer'' group
+had enriched signals ($p\leq 5\times10^{-3}$) in the outer shell relative to the inner nuclear
+shell and included chromosomes 2, 3, 11-13 and 18. The remaining
+chromosomes in our filtered dataset, 6, 14 and 15, were assigned to
+the ``middle'' group and showed no significant to either inner or
+outer nuclear shells ($p \geq 0.1$).\cite{Boyle2001} The significance
+of the difference in distribution of eigenvectors in the inner
+versus outer shell was determined by a one-sided Kolmogorov-Smirnov (K-S)
+test, with the alternative hypothesis that the empirical cumulative
+density function of the inner chromosome eigenvectors $F_{inner}$
+is greater-than or equal-to $F_{outer}$. This chromosomal positioning data was measured in lymphoblastoid
+cells though nuclear architecture is though to be largely conserved
+between cell types\cite{Chambers2013, DeWit2013} and even higher primates.\cite{Tanabe2002}
 
 \begin{small}
 \bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
