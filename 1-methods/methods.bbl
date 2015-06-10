@@ -1,0 +1,85 @@
+\begin{thebibliography}{14}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Barrett \emph{et~al.}(2013)Barrett, Wilhite, Ledoux, Evangelista,
+  Kim, Tomashevsky, Marshall, Phillippy, Sherman \emph{et~al.}}]{Barrett2013}
+Barrett T, Wilhite SE, Ledoux P, Evangelista C, Kim IF, Tomashevsky M, Marshall
+  Ka, Phillippy KH, Sherman PM, \emph{et~al.} (2013) {NCBI GEO: archive for
+  functional genomics data sets--update.}
+\newblock \emph{Nucleic acids research}, \textbf{41}(Database issue): D991--5.
+
+\bibitem[{Leinonen \emph{et~al.}(2011)Leinonen, Sugawara and
+  Shumway}]{Leinonen2011a}
+Leinonen R, Sugawara H, Shumway M (2011) {The sequence read archive.}
+\newblock \emph{Nucleic acids research}, \textbf{39}(Database issue): D19--21.
+
+\bibitem[{Imakaev \emph{et~al.}(2012)Imakaev, Fudenberg, McCord, Naumova,
+  Goloborodko, Lajoie, Dekker and Mirny}]{Imakaev2012}
+Imakaev M, Fudenberg G, McCord RP, Naumova N, Goloborodko A, Lajoie BR, Dekker
+  J, Mirny LA (2012) {Iterative correction of Hi-C data reveals hallmarks of
+  chromosome organization.}
+\newblock \emph{Nature methods}, \textbf{9}(10): 999--1003.
+
+\bibitem[{Langmead and Salzberg(2012)}]{Langmead2012}
+Langmead B, Salzberg SL (2012) {Fast gapped-read alignment with Bowtie 2.}
+\newblock \emph{Nature methods}, \textbf{9}(4): 357--9.
+
+\bibitem[{ENCODE(2012)}]{Dunham2012}
+ENCODE (2012) {An integrated encyclopedia of DNA elements in the human genome.}
+\newblock \emph{Nature}, \textbf{489}(7414): 57--74.
+
+\bibitem[{Boyle \emph{et~al.}(2014)Boyle, Araya, Brdlik, Cayting, Cheng, Cheng,
+  Gardner, Hillier, Janette \emph{et~al.}}]{Boyle2014}
+Boyle AP, Araya CL, Brdlik C, Cayting P, Cheng C, Cheng Y, Gardner K, Hillier
+  LW, Janette J, \emph{et~al.} (2014) {Comparative analysis of regulatory
+  information and circuits across distant species}.
+\newblock \emph{Nature}, \textbf{512}(7515): 453--456.
+
+\bibitem[{Zhang \emph{et~al.}(2008)Zhang, Liu, Meyer, Eeckhoute, Johnson,
+  Bernstein, Nusbaum, Myers, Brown \emph{et~al.}}]{Zhang2008}
+Zhang Y, Liu T, Meyer Ca, Eeckhoute J, Johnson DS, Bernstein BE, Nusbaum C,
+  Myers RM, Brown M, \emph{et~al.} (2008) {Model-based analysis of ChIP-Seq
+  (MACS).}
+\newblock \emph{Genome biology}, \textbf{9}(9): R137.
+
+\bibitem[{Breiman(2001)}]{Breiman2001a}
+Breiman L (2001) {Random Forests}.
+\newblock \emph{Machine learning}, \textbf{45}(1): 5--32.
+
+\bibitem[{Liaw and Wiener(2002)}]{Liaw2002}
+Liaw A, Wiener M (2002) {Classification and Regression by randomForest}.
+\newblock \emph{R News}, \textbf{2}(December): 18--22.
+
+\bibitem[{Hastie \emph{et~al.}(2009)Hastie, Tibshirani and
+  Friedman}]{Hastie2001}
+Hastie T, Tibshirani R, Friedman J (2009) \emph{{Elements of Statistical
+  Learning: Data Mining, Inference, and Prediction}}.
+\newblock Springer, 2 edition.
+\newblock ISBN 978-0-387-84858-7.
+
+\bibitem[{Cutler \emph{et~al.}(2007)Cutler, Edwards, Beard, Cutler, Hess,
+  Gibson and Lawler}]{Cutler2007}
+Cutler DR, Edwards TC, Beard KH, Cutler A, Hess KT, Gibson J, Lawler JJ (2007)
+  {Random forests for classification in ecology.}
+\newblock \emph{Ecology}, \textbf{88}(11): 2783--92.
+
+\bibitem[{Hoffman \emph{et~al.}(2013)Hoffman, Ernst, Wilder, Kundaje, Harris,
+  Libbrecht, Giardine, Ellenbogen, Bilmes \emph{et~al.}}]{Hoffman2013}
+Hoffman MM, Ernst J, Wilder SP, Kundaje A, Harris RS, Libbrecht M, Giardine B,
+  Ellenbogen PM, Bilmes Ja, \emph{et~al.} (2013) {Integrative annotation of
+  chromatin elements from ENCODE data.}
+\newblock \emph{Nucleic acids research}, \textbf{41}(2): 827--41.
+
+\bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
+  and Ren}]{Dixon2012}
+Dixon JR, Selvaraj S, Yue F, Kim A, Li Y, Shen Y, Hu M, Liu JS, Ren B (2012)
+  {Topological domains in mammalian genomes identified by analysis of chromatin
+  interactions.}
+\newblock \emph{Nature}, \textbf{485}(7398): 376--80.
+
+\bibitem[{Furey(2003)}]{Furey2003}
+Furey TS (2003) {Integration of the cytogenetic map with the draft human genome
+  sequence}.
+\newblock \emph{Human Molecular Genetics}, \textbf{12}(9): 1037--1044.
+
+\end{thebibliography}

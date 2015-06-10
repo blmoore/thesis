@@ -52,6 +52,10 @@ pre-processed using MACSv2\citep{Zhang2008} to produce fold-change
 relative to input chromatin. GC content was also calculated and used in
 the featureset.
 
+\subsection{Clustering input features}
+
+To quantify collinearity of input features, correlation matrices built from genome-wide vectors of input feature measures were build and hierarchicaly clustered. The "significance" of observed clustering was assessed using sub- and super-sampled bootstrapping, with stable clusters deemed significant. The \texttt{pvclust} R package
+
 \section{Modelling}\label{modelling}
 
 \subsection{Random Forest}\label{sec:rf}
@@ -87,6 +91,12 @@ Forest regression model was learned from all 1 Mb bins for a given cell
 type. This was then used to predict all bins from each of the other two
 cell types.
 
+\subsection{Other modelling approaches}
+ 
+Linear regression was used as a baseline for comparison with more complicated approaches such as Random Forest. If the same modelling accuracy could be achieved with simple multiple linear regression, this would be a faster and more interpretable modelling framework.
+
+Partial least squares regression was also used to model compartment profiles. This method is well-suited to highly correlated inputs.
+
 \section{Variable regions}\label{variable-regions}
 
 \subsection{Stratification by
@@ -113,6 +123,8 @@ considered ``shared'' if there was an overlapping enhancer annotation in
 either of the two other cell types, and labelled as ``tissue-specific''
 otherwise.
 
+This was repeated for other chromatin states.
+
 \section{Boundaries}\label{boundaries}
 
 \subsection{TADs}\label{tads}
@@ -121,6 +133,8 @@ TAD boundaries were called using the software provided in
 \citet{Dixon2012} using their recommended parameters. For the generation
 of boundary profiles, the same parameters were used: input features were
 averaged into 40 kb bins spanning $\pm500$ kb from the boundary centre.
+
+To align boundaries between cells \ldots
 
 \subsection{Compartments}\label{sec:compartments}
 
@@ -134,10 +148,12 @@ Mb to give a 3 Mb window in which a boundary was though to occur.
 To test for the enrichment or depletion of a chromatin feature over a
 given boundary, a two tailed Mann-Whitney test was used to compare the
 boundary bin with the ten outermost bins of the window (5 from either
-side). The significance level at ￼$\alpha = 0.01$ was then
+side). The significance level at $\alpha = 0.01$ was then
 Bonferonni-adjusted for multiple testing correction, and results with
 \emph{p}-values exceeding this threshold were deemed significantly
 enriched or depleted at a given boundary.
+
+\subsection{MetaTADs}\label{sec:m-metatad}
 
 \section{Giemsa band comparison}\label{giemsa-band-comparison}
 
