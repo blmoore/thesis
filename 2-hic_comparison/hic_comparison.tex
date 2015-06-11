@@ -62,19 +62,57 @@ After uniformly reprocessing each Hi-C dataset and calling compartment eigenvect
 \includegraphics[width=1.2\textwidth]{figs/wiggles.pdf}
 \captionsetup{width=\textwidth}
 \caption{
-{\bf Compartment profiles are well-correlated between human cell types, genome-wide}
+{\bf Compartment profiles are observably well-correlated between human cell types and across all chromosomes.}
 Caption
 }\label{fig:wiggles}
 \end{center}
 \end{figure} 
 
-This close correspondence also validates our approach of combining these different datasets, and suggests our uniform pipeline is successfully accounting for differences in sequencing depth, and other batch effects that could be observable.
+This close correspondence also validates our approach of combining these different datasets, and suggests our uniform pipeline is successfully accounting for differences in sequencing depth and other batch effects. The precise correlations of these independent measures are in the interval $R = [.75, .8]$ (Fig. \ref{fig:compactor}; Pearson correlation coefficients, PCC).
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=.5\textwidth]{figs/compartment_corr.png}
+\captionsetup{width=\textwidth}
+\caption{
+{\bf Compartment eigenvectors are well-correlated between human cell types}
+Megabase resolution compartment eigenvector values are shown in a plot matrix. \emph{Upper triangle}: Pearson correlation coefficients between pairs, with $95\%$ confidence intervals (??); \emph{diagonal} Kernel density estimates of eigenvector values per cell type; \emph{lower triangle}: $x$-$y$ scatterplot of values.
+}\label{fig:compcor}
+\end{center}
+\end{figure} 
+
+\section{Domain calls}
+
+The continuous compartment eigenvector can be used as-is to classify A/B compartments, using positive and negative eigenvector values after first orientating the vector with respect to, for example, PolII Chip-seq data.\cite{Kalhor2012} However, given the definition of compartments as generally broad and alternating domains along a chromosome, often matching other large domains of Lamin association, an improved classification method might penalise the calls of short compartment calls, which may be the result of noise.
+
+For this reason, instead of using raw eigenvector values we consider observed values as emissions from unobserved underlying states. This can be modelled through a Hidden Markov Model (HMM), whereby we first parameterise models of state and their transitions, then infer the most likely state sequence to have emitted our observed data. This unobserved two-state sequence is then used for compartment calls. 
+
+In practice, this acts to de-noise our compartment calls. Where single sign-changes along the series would have resulted in a single-block compartment, these may now be modelled as noisy emissions from a single unobserved state. An examplar region is showing in Fig 
+
+% figure showing raw eigs with hmm calls
+\begin{figure}
+\begin{center}
+\includegraphics[width=.5\textwidth]{figs/compartment_corr.png}
+\captionsetup{width=\textwidth}
+\caption{
+{\bf Compartment eigenvectors are well-correlated between human cell types}
+Megabase resolution compartment eigenvector values are shown in a plot matrix. \emph{Upper triangle}: Pearson correlation coefficients between pairs, with $95\%$ confidence intervals (??); \emph{diagonal} Kernel density estimates of eigenvector values per cell type; \emph{lower triangle}: $x$-$y$ scatterplot of values.
+}\label{fig:compcor}
+\end{center}
+\end{figure} 
+
+% figure showing size distributions of Hi-C domains
 
 \section{Variable regions}
 % investigate those regions which are "flipped"
 
+Despite the vast majority of the genome being in matched chromatin compartments, there are also regions of disagreement. Reasons for observable differences include technical errors and bias, but also more interesting functional explanations, where cell-type specific activation or repression is reflected in changes in higher order structure.
 
-\section{Domain calls}
+
+
+
+
+
 
 
 % fig 1.

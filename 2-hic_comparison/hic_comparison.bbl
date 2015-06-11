@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{6}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
@@ -33,5 +33,12 @@ Rao S, Huntley M, Durand N, Stamenova E, Bochkov I, Robinson J, Sanborn A,
 \bibitem[{ENCODE(2012)}]{Dunham2012}
 ENCODE (2012) {An integrated encyclopedia of DNA elements in the human genome.}
 \newblock \emph{Nature}, \textbf{489}(7414): 57--74.
+
+\bibitem[{Kalhor \emph{et~al.}(2012)Kalhor, Tjong, Jayathilaka, Alber and
+  Chen}]{Kalhor2012}
+Kalhor R, Tjong H, Jayathilaka N, Alber F, Chen L (2012) {Genome architectures
+  revealed by tethered chromosome conformation capture and population-based
+  modeling.}
+\newblock \emph{Nature biotechnology}, \textbf{30}(1): 90--8.
 
 \end{thebibliography}
