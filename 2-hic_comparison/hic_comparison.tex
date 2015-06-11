@@ -24,14 +24,69 @@
 
 \maketitle
 
-\chapter{Predictive modelling of transcription}
+\chapter{Reanalysis of Hi-C datasets}
 
-\section{Preliminary data}
+\section{Introduction}
 
-\ifstandalone
+Since the initial publication of the Hi-C technique in 2009,\cite{Lieberman2009} there has been rapid advancement of both the technique itself and the resolution at which interaction frequencies have been analysed. From the proof-of-concept analysis at 1 megabase (Mb) and 100 killable (kb) resolution,\cite{Lieberman2009} subsequent experiments achieved first 40 kb\cite{Dixon2012}, then 10 kb\cite{Jin2013} and most recently 1 kb\cite{Rao2014}, enabling bona fide fragment-level analysis for the first time.
+
+% timeline: 
+% Lieberman Aiden 2009       1 Mb (30 M reads)
+% Dixon 2012                       40 kb (300 M reads)
+% Jin 2013                        5-10 kb ()
+% Rao 2014                           1 kb
+
+Such rapid progression in the field has resulted in a wide variety of public Hi-C datasets being available, albeit with differing qualities. With proper correction and at a suitable resolution, these interaction frequencies can be compared and contrasted within and between species.
+
+In this work I uniformly reprocessed publicly-available human Hi-C datasets, in order to address fundamental questions about the stability of higher order genome organisation within cell populations from the same species. Previously Hi-C studies have compared two samples per species, such as K562 against GM06990\cite{Lieberman2009} or IMR90 against GM12878.\cite{Dixon2012} Here I make use of three Hi-C datasets corresponding to extensively-studied human cell lines: K562, GM12878 and H1 hESC. Together these make up the "Tier 1" cell lines studied by the ENCODE consortium,\cite{Dunham2012} hence have huge amounts of matched ChIP-seq and histone modification data available. 
+
+By combinatorial reanalysis of these cell-matched datasets, I can investigate t
+
+% Table: description of cell lines
+
+\section{Hi-C reprocessing}
+
+Each Hi-C dataset used in this work was reprocessed using the same pipeline from raw sequencing reads. In each case, experiments used the same HindIII restriction enzyme.
+
+% Pipeline:
+% 1. iterative mapping
+% 2. 
+
+\section{Compartment profiles}
+% how well do compartments correlate
+
+After uniformly reprocessing each Hi-C dataset and calling compartment eigenvector profiles (see \emph{Methods}), we can compare these between three human cell lines. Compartment profiles have a visibly high-correspondence (Fig. \ref{fig:wiggles}), despite the variable sources of both sample material and experimental data.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=1.2\textwidth]{figs/wiggles.pdf}
+\captionsetup{width=\textwidth}
+\caption{
+{\bf Compartment profiles are well-correlated between human cell types, genome-wide}
+Caption
+}\label{fig:wiggles}
+\end{center}
+\end{figure} 
+
+This close correspondence also validates our approach of combining these different datasets, and suggests our uniform pipeline is successfully accounting for differences in sequencing depth, and other batch effects that could be observable.
+
+\section{Variable regions}
+% investigate those regions which are "flipped"
+
+
+\section{Domain calls}
+
+
+% fig 1.
+
+\section{Nuclear positioning}
+
+
+
+%\ifstandalone
 \begin{small}
 \bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
 \end{small}
-\fi
+%\fi
 
 \end{document}
