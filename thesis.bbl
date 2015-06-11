@@ -1,0 +1,405 @@
+\begin{thebibliography}{64}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Dekker \emph{et~al.}(2002)Dekker, Rippe, Dekker and
+  Kleckner}]{Dekker2002}
+Dekker J, Rippe K, Dekker M, Kleckner N (2002) {Capturing chromosome
+  conformation.}
+\newblock \emph{Science (New York, N.Y.)}, \textbf{295}(February): 1306--1311.
+
+\bibitem[{Zhao \emph{et~al.}(2006)Zhao, Tavoosidana, Sj\"{o}linder,
+  G\"{o}nd\"{o}r, Mariano, Wang, Kanduri, Lezcano, Sandhu
+  \emph{et~al.}}]{Zhao2006}
+Zhao Z, Tavoosidana G, Sj\"{o}linder M, G\"{o}nd\"{o}r A, Mariano P, Wang S,
+  Kanduri C, Lezcano M, Sandhu KS, \emph{et~al.} (2006) {Circular chromosome
+  conformation capture (4C) uncovers extensive networks of epigenetically
+  regulated intra- and interchromosomal interactions.}
+\newblock \emph{Nature genetics}, \textbf{38}(11): 1341--1347.
+
+\bibitem[{Simonis \emph{et~al.}(2006)Simonis, Klous, Splinter, Moshkin,
+  Willemsen, de~Wit, van Steensel and de~Laat}]{Simonis2006}
+Simonis M, Klous P, Splinter E, Moshkin Y, Willemsen R, de~Wit E, van Steensel
+  B, de~Laat W (2006) {Nuclear organization of active and inactive chromatin
+  domains uncovered by chromosome conformation capture-on-chip (4C).}
+\newblock \emph{Nature genetics}, \textbf{38}(11): 1348--1354.
+
+\bibitem[{Dostie \emph{et~al.}(2006)Dostie, Richmond, Arnaout, Selzer, Lee,
+  Honan, Rubio, Krumm, Lamb \emph{et~al.}}]{Dostie2006}
+Dostie J, Richmond Ta, Arnaout Ra, Selzer RR, Lee WL, Honan Ta, Rubio ED, Krumm
+  A, Lamb J, \emph{et~al.} (2006) {Chromosome Conformation Capture Carbon Copy
+  (5C): A massively parallel solution for mapping interactions between genomic
+  elements}.
+\newblock \emph{Genome Research}, \textbf{16}(10): 1299--1309.
+
+\bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
+  Williams, Imakaev, Ragoczy, Telling, Amit, Lajoie, Sabo
+  \emph{et~al.}}]{Lieberman2009}
+Lieberman-Aiden E, van Berkum NL, Williams L, Imakaev M, Ragoczy T, Telling A,
+  Amit I, Lajoie BR, Sabo PJ, \emph{et~al.} (2009) {Comprehensive mapping of
+  long-range interactions reveals folding principles of the human genome.}
+\newblock \emph{Science}, \textbf{326}(5950): 289--93.
+
+\bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
+  and Ren}]{Dixon2012}
+Dixon JR, Selvaraj S, Yue F, Kim A, Li Y, Shen Y, Hu M, Liu JS, Ren B (2012)
+  {Topological domains in mammalian genomes identified by analysis of chromatin
+  interactions.}
+\newblock \emph{Nature}, \textbf{485}(7398): 376--80.
+
+\bibitem[{Selvaraj \emph{et~al.}(2013)Selvaraj, {R Dixon}, Bansal and
+  Ren}]{Selvaraj2013a}
+Selvaraj S, {R Dixon} J, Bansal V, Ren B (2013) {Whole-genome haplotype
+  reconstruction using proximity-ligation and shotgun sequencing.}
+\newblock \emph{Nature biotechnology}, \textbf{31}(12): 1111--8.
+
+\bibitem[{Jin \emph{et~al.}(2013)Jin, Li, Dixon, Selvaraj, Ye, Lee, Yen,
+  Schmitt, Espinoza and Ren}]{Jin2013}
+Jin F, Li Y, Dixon JR, Selvaraj S, Ye Z, Lee AY, Yen Ca, Schmitt AD, Espinoza
+  CA, Ren B (2013) {A high-resolution map of the three-dimensional chromatin
+  interactome in human cells.}
+\newblock \emph{Nature}, \textbf{503}(7475): 290--4.
+
+\bibitem[{Rao \emph{et~al.}(2014)Rao, Huntley, Durand, Stamenova, Bochkov,
+  Robinson, Sanborn, Machol, Omer \emph{et~al.}}]{Rao2014}
+Rao S, Huntley M, Durand N, Stamenova E, Bochkov I, Robinson J, Sanborn A,
+  Machol I, Omer A, \emph{et~al.} (2014) {A 3D Map of the Human Genome at
+  Kilobase Resolution Reveals Principles of Chromatin Looping}.
+\newblock \emph{Cell}, \textbf{159}(7): 1665--1680.
+
+\bibitem[{Yaffe and Tanay(2011)}]{Yaffe2011}
+Yaffe E, Tanay A (2011) {Probabilistic modeling of Hi-C contact maps eliminates
+  systematic biases to characterize global chromosomal architecture.}
+\newblock \emph{Nature genetics}, \textbf{43}(11): 1059--65.
+
+\bibitem[{Imakaev \emph{et~al.}(2012)Imakaev, Fudenberg, McCord, Naumova,
+  Goloborodko, Lajoie, Dekker and Mirny}]{Imakaev2012}
+Imakaev M, Fudenberg G, McCord RP, Naumova N, Goloborodko A, Lajoie BR, Dekker
+  J, Mirny LA (2012) {Iterative correction of Hi-C data reveals hallmarks of
+  chromosome organization.}
+\newblock \emph{Nature methods}, \textbf{9}(10): 999--1003.
+
+\bibitem[{Dekker \emph{et~al.}(2013)Dekker, Marti-Renom and Mirny}]{Dekker2013}
+Dekker J, Marti-Renom Ma, Mirny La (2013) {Exploring the three-dimensional
+  organization of genomes: interpreting chromatin interaction data.}
+\newblock \emph{Nature reviews. Genetics}, \textbf{14}(6): 390--403.
+
+\bibitem[{Hu \emph{et~al.}(2012)Hu, Deng, Selvaraj, Qin, Ren and Liu}]{Hu2012}
+Hu M, Deng K, Selvaraj S, Qin Z, Ren B, Liu JS (2012) {HiCNorm: removing biases
+  in Hi-C data via Poisson regression.}
+\newblock \emph{Bioinformatics (Oxford, England)}, \textbf{28}(23): 3131--3.
+
+\bibitem[{Li \emph{et~al.}(2014)Li, Gong, Li, Alber and Zhou}]{Li2014}
+Li W, Gong K, Li Q, Alber F, Zhou XJ (2014) {Hi-Corrector: a fast, scalable and
+  memory-efficient package for normalizing large-scale Hi-C data.}
+\newblock \emph{Bioinformatics (Oxford, England)}, (November): 1--3.
+
+\bibitem[{Kalhor \emph{et~al.}(2012)Kalhor, Tjong, Jayathilaka, Alber and
+  Chen}]{Kalhor2012}
+Kalhor R, Tjong H, Jayathilaka N, Alber F, Chen L (2012) {Genome architectures
+  revealed by tethered chromosome conformation capture and population-based
+  modeling.}
+\newblock \emph{Nature biotechnology}, \textbf{30}(1): 90--8.
+
+\bibitem[{Nagano \emph{et~al.}(2013)Nagano, Lubling, Stevens, Schoenfelder,
+  Yaffe, Dean, Laue, Tanay and Fraser}]{Nagano2013}
+Nagano T, Lubling Y, Stevens TJ, Schoenfelder S, Yaffe E, Dean W, Laue ED,
+  Tanay A, Fraser P (2013) {Single-cell Hi-C reveals cell-to-cell variability
+  in chromosome structure.}
+\newblock \emph{Nature}, \textbf{502}(7469): 59--64.
+
+\bibitem[{Mifsud \emph{et~al.}(2015)Mifsud, Tavares-Cadete, Young, Sugar,
+  Schoenfelder, Ferreira, Wingett, Andrews, Grey \emph{et~al.}}]{Mifsud2015}
+Mifsud B, Tavares-Cadete F, Young AN, Sugar R, Schoenfelder S, Ferreira L,
+  Wingett SW, Andrews S, Grey W, \emph{et~al.} (2015) {Mapping long-range
+  promoter contacts in human cells with high-resolution capture Hi-C}.
+\newblock \emph{Nature Genetics}, (April): 1--12.
+
+\bibitem[{Filippova \emph{et~al.}(2014)Filippova, Patro, Duggal and
+  Kingsford}]{Filippova2014}
+Filippova D, Patro R, Duggal G, Kingsford C (2014) {Identification of
+  alternative topological domains in chromatin.}
+\newblock \emph{Algorithms for molecular biology : AMB}, \textbf{9}: 14.
+
+\bibitem[{Barbieri \emph{et~al.}(2012)Barbieri, Chotalia, Fraser, Lavitas,
+  Dostie, Pombo and Nicodemi}]{Barbieri2012}
+Barbieri M, Chotalia M, Fraser J, Lavitas LM, Dostie J, Pombo A, Nicodemi M
+  (2012) {Complexity of chromatin folding is captured by the strings and
+  binders switch model.}
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, \textbf{109}(40): 16173--8.
+
+\bibitem[{Mirny(2011)}]{Mirny2011}
+Mirny La (2011) {The fractal globule as a model of chromatin architecture in
+  the cell.}
+\newblock \emph{Chromosome research : an international journal on the
+  molecular, supramolecular and evolutionary aspects of chromosome biology},
+  \textbf{19}(1): 37--51.
+
+\bibitem[{Grosberg \emph{et~al.}(1988)Grosberg, Nechaev and
+  Shakhnovich}]{Grosberg1988a}
+Grosberg AY, Nechaev S, Shakhnovich E (1988) {The role of topological
+  constraints in the kinetics of collapse of macromolecules}.
+\newblock \emph{Journal de Physique}, \textbf{49}(12): 2095--2100.
+
+\bibitem[{Ernst and Kellis(2012)}]{Ernst2012}
+Ernst J, Kellis M (2012) {ChromHMM: automating chromatin-state discovery and
+  characterization.}
+\newblock \emph{Nature methods}, \textbf{9}(3): 215--6.
+
+\bibitem[{Ernst \emph{et~al.}(2011)Ernst, Kheradpour, Mikkelsen, Shoresh, Ward,
+  Epstein, Zhang, Wang, Issner \emph{et~al.}}]{Ernst2011}
+Ernst J, Kheradpour P, Mikkelsen TS, Shoresh N, Ward LD, Epstein CB, Zhang X,
+  Wang L, Issner R, \emph{et~al.} (2011) {Mapping and analysis of chromatin
+  state dynamics in nine human cell types.}
+\newblock \emph{Nature}, \textbf{473}(7345): 43--9.
+
+\bibitem[{Rajagopal \emph{et~al.}(2013)Rajagopal, Xie, Li, Wagner, Wang,
+  Stamatoyannopoulos, Ernst, Kellis and Ren}]{Rajagopal2013}
+Rajagopal N, Xie W, Li Y, Wagner U, Wang W, Stamatoyannopoulos J, Ernst J,
+  Kellis M, Ren B (2013) {RFECS: a random-forest based algorithm for enhancer
+  identification from chromatin state.}
+\newblock \emph{PLoS computational biology}, \textbf{9}(3): e1002968.
+
+\bibitem[{ENCODE(2012)}]{Dunham2012}
+ENCODE (2012) {An integrated encyclopedia of DNA elements in the human genome.}
+\newblock \emph{Nature}, \textbf{489}(7414): 57--74.
+
+\bibitem[{Barrett \emph{et~al.}(2013)Barrett, Wilhite, Ledoux, Evangelista,
+  Kim, Tomashevsky, Marshall, Phillippy, Sherman \emph{et~al.}}]{Barrett2013}
+Barrett T, Wilhite SE, Ledoux P, Evangelista C, Kim IF, Tomashevsky M, Marshall
+  Ka, Phillippy KH, Sherman PM, \emph{et~al.} (2013) {NCBI GEO: archive for
+  functional genomics data sets--update.}
+\newblock \emph{Nucleic acids research}, \textbf{41}(Database issue): D991--5.
+
+\bibitem[{Leinonen \emph{et~al.}(2011)Leinonen, Sugawara and
+  Shumway}]{Leinonen2011a}
+Leinonen R, Sugawara H, Shumway M (2011) {The sequence read archive.}
+\newblock \emph{Nucleic acids research}, \textbf{39}(Database issue): D19--21.
+
+\bibitem[{Langmead and Salzberg(2012)}]{Langmead2012}
+Langmead B, Salzberg SL (2012) {Fast gapped-read alignment with Bowtie 2.}
+\newblock \emph{Nature methods}, \textbf{9}(4): 357--9.
+
+\bibitem[{Boyle \emph{et~al.}(2014)Boyle, Araya, Brdlik, Cayting, Cheng, Cheng,
+  Gardner, Hillier, Janette \emph{et~al.}}]{Boyle2014}
+Boyle AP, Araya CL, Brdlik C, Cayting P, Cheng C, Cheng Y, Gardner K, Hillier
+  LW, Janette J, \emph{et~al.} (2014) {Comparative analysis of regulatory
+  information and circuits across distant species}.
+\newblock \emph{Nature}, \textbf{512}(7515): 453--456.
+
+\bibitem[{Zhang \emph{et~al.}(2008)Zhang, Liu, Meyer, Eeckhoute, Johnson,
+  Bernstein, Nusbaum, Myers, Brown \emph{et~al.}}]{Zhang2008}
+Zhang Y, Liu T, Meyer Ca, Eeckhoute J, Johnson DS, Bernstein BE, Nusbaum C,
+  Myers RM, Brown M, \emph{et~al.} (2008) {Model-based analysis of ChIP-Seq
+  (MACS).}
+\newblock \emph{Genome biology}, \textbf{9}(9): R137.
+
+\bibitem[{Breiman(2001{\natexlab{a}})}]{Breiman2001a}
+Breiman L (2001{\natexlab{a}}) {Random Forests}.
+\newblock \emph{Machine learning}, \textbf{45}(1): 5--32.
+
+\bibitem[{Liaw and Wiener(2002)}]{Liaw2002}
+Liaw A, Wiener M (2002) {Classification and Regression by randomForest}.
+\newblock \emph{R News}, \textbf{2}(December): 18--22.
+
+\bibitem[{Svetnik \emph{et~al.}(2003)Svetnik, Liaw, Tong, Culberson, Sheridan
+  and Feuston}]{Svetnik2003}
+Svetnik V, Liaw A, Tong C, Culberson JC, Sheridan RP, Feuston BP (2003) {Random
+  forest: a classification and regression tool for compound classification and
+  QSAR modeling.}
+\newblock \emph{Journal of chemical information and computer sciences},
+  \textbf{43}(6): 1947--58.
+
+\bibitem[{Cutler \emph{et~al.}(2007)Cutler, Edwards, Beard, Cutler, Hess,
+  Gibson and Lawler}]{Cutler2007}
+Cutler DR, Edwards TC, Beard KH, Cutler A, Hess KT, Gibson J, Lawler JJ (2007)
+  {Random forests for classification in ecology.}
+\newblock \emph{Ecology}, \textbf{88}(11): 2783--92.
+
+\bibitem[{D\'{\i}az-Uriarte and {Alvarez de Andr\'{e}s}(2006)}]{Diaz2006}
+D\'{\i}az-Uriarte R, {Alvarez de Andr\'{e}s} S (2006) {Gene selection and
+  classification of microarray data using random forest.}
+\newblock \emph{BMC bioinformatics}, \textbf{7}: 3.
+
+\bibitem[{Dasgupta \emph{et~al.}(2011)Dasgupta, Sun, K\"{o}nig, Bailey-Wilson
+  and Malley}]{Dasgupta2012}
+Dasgupta A, Sun YV, K\"{o}nig IR, Bailey-Wilson JE, Malley JD (2011) {Brief
+  review of regression-based and machine learning methods in genetic
+  epidemiology: the Genetic Analysis Workshop 17 experience.}
+\newblock \emph{Genetic epidemiology}, \textbf{35 Suppl 1}(Suppl 1): S5--11.
+
+\bibitem[{Breiman(2001{\natexlab{b}})}]{Breiman2001b}
+Breiman L (2001{\natexlab{b}}) {Statistical Modeling: The Two Cultures}.
+\newblock \emph{Statistical Science}, \textbf{16}(3): 199--231.
+
+\bibitem[{Hastie \emph{et~al.}(2009)Hastie, Tibshirani and
+  Friedman}]{Hastie2001}
+Hastie T, Tibshirani R, Friedman J (2009) \emph{{Elements of Statistical
+  Learning: Data Mining, Inference, and Prediction}}.
+\newblock Springer, 2 edition.
+\newblock ISBN 978-0-387-84858-7.
+
+\bibitem[{Friedman \emph{et~al.}(2008)Friedman, Hastie and
+  Tibshirani}]{Friedman2008}
+Friedman J, Hastie T, Tibshirani R (2008) {Sparse inverse covariance estimation
+  with the graphical lasso.}
+\newblock \emph{Biostatistics (Oxford, England)}, \textbf{9}(3): 432--41.
+
+\bibitem[{Mazumder and Hastie(2012)}]{Mazumder2012}
+Mazumder R, Hastie T (2012) {The graphical lasso: New insights and
+  alternatives}.
+\newblock \emph{Electronic Journal of Statistics}, pp. 1--21.
+
+\bibitem[{Hoffman \emph{et~al.}(2013)Hoffman, Ernst, Wilder, Kundaje, Harris,
+  Libbrecht, Giardine, Ellenbogen, Bilmes \emph{et~al.}}]{Hoffman2013}
+Hoffman MM, Ernst J, Wilder SP, Kundaje A, Harris RS, Libbrecht M, Giardine B,
+  Ellenbogen PM, Bilmes Ja, \emph{et~al.} (2013) {Integrative annotation of
+  chromatin elements from ENCODE data.}
+\newblock \emph{Nucleic acids research}, \textbf{41}(2): 827--41.
+
+\bibitem[{Furey(2003)}]{Furey2003}
+Furey TS (2003) {Integration of the cytogenetic map with the draft human genome
+  sequence}.
+\newblock \emph{Human Molecular Genetics}, \textbf{12}(9): 1037--1044.
+
+\bibitem[{Boyle \emph{et~al.}(2001)Boyle, Gilchrist, Bridger, Mahy, Ellis and
+  Bickmore}]{Boyle2001}
+Boyle S, Gilchrist S, Bridger JM, Mahy NL, Ellis Ja, Bickmore Wa (2001) {The
+  spatial organization of human chromosomes within the nuclei of normal and
+  emerin-mutant cells.}
+\newblock \emph{Human molecular genetics}, \textbf{10}(3): 211--9.
+
+\bibitem[{Chambers \emph{et~al.}(2013)Chambers, Bickmore and
+  Semple}]{Chambers2013}
+Chambers EV, Bickmore Wa, Semple CA (2013) {Divergence of mammalian higher
+  order chromatin structure is associated with developmental loci.}
+\newblock \emph{PLoS computational biology}, \textbf{9}(4): e1003017.
+
+\bibitem[{de~Wit \emph{et~al.}(2013)de~Wit, Bouwman, Zhu, Klous, Splinter,
+  Verstegen, Krijger, Festuccia, Nora \emph{et~al.}}]{DeWit2013}
+de~Wit E, Bouwman BaM, Zhu Y, Klous P, Splinter E, Verstegen MJaM, Krijger PHL,
+  Festuccia N, Nora EP, \emph{et~al.} (2013) {The pluripotent genome in three
+  dimensions is shaped around pluripotency factors.}
+\newblock \emph{Nature}, pp. 1--7.
+
+\bibitem[{Tanabe \emph{et~al.}(2002)Tanabe, M\"{u}ller, Neusser, von Hase,
+  Calcagno, Cremer, Solovei, Cremer and Cremer}]{Tanabe2002}
+Tanabe H, M\"{u}ller S, Neusser M, von Hase J, Calcagno E, Cremer M, Solovei I,
+  Cremer C, Cremer T (2002) {Evolutionary conservation of chromosome territory
+  arrangements in cell nuclei from higher primates.}
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, \textbf{99}(7): 4424--9.
+
+\bibitem[{Gerstein \emph{et~al.}(2012)Gerstein, Kundaje, Hariharan, Landt, Yan,
+  Cheng, Mu, Khurana, Rozowsky \emph{et~al.}}]{Gerstein2012}
+Gerstein MB, Kundaje A, Hariharan M, Landt SG, Yan Kk, Cheng C, Mu XJ, Khurana
+  E, Rozowsky J, \emph{et~al.} (2012) {Architecture of the human regulatory
+  network derived from ENCODE data.}
+\newblock \emph{Nature}, \textbf{489}(7414): 91--100.
+
+\bibitem[{Bernstein \emph{et~al.}(2010)Bernstein, Stamatoyannopoulos, Costello,
+  Ren, Milosavljevic, Meissner, Kellis, Marra, Beaudet
+  \emph{et~al.}}]{Bernstein2010}
+Bernstein BE, Stamatoyannopoulos Ja, Costello JF, Ren B, Milosavljevic A,
+  Meissner A, Kellis M, Marra Ma, Beaudet AL, \emph{et~al.} (2010) {The NIH
+  Roadmap Epigenomics Mapping Consortium.}
+\newblock \emph{Nature biotechnology}, \textbf{28}(10): 1045--8.
+
+\bibitem[{Nikolov and Fischle(2012)}]{Nikolov2012}
+Nikolov M, Fischle W (2012) {Systematic analysis of histone modification
+  readout.}
+\newblock \emph{Molecular bioSystems}, \textbf{Advance Ac}.
+
+\bibitem[{Sajan and Hawkins(2012)}]{Sajan2012}
+Sajan SA, Hawkins RD (2012) {Methods for identifying higher-order chromatin
+  structure.}
+\newblock \emph{Annual review of genomics and human genetics}, \textbf{13}:
+  59--82.
+
+\bibitem[{Henikoff and Shilatifard(2011)}]{Henikoff2011}
+Henikoff S, Shilatifard A (2011) {Histone modification: cause or cog?}
+\newblock \emph{Trends in genetics : TIG}, \textbf{27}(10): 389--96.
+
+\bibitem[{Li and Reinberg(2011)}]{Li2011}
+Li G, Reinberg D (2011) {Chromatin higher-order structures and gene
+  regulation.}
+\newblock \emph{Current opinion in genetics \& development}, \textbf{21}(2):
+  175--86.
+
+\bibitem[{Tippmann \emph{et~al.}(2012)Tippmann, Ivanek, Gaidatzis, Sch\"{o}ler,
+  Hoerner, van Nimwegen, Stadler, Stadler and Sch\"{u}beler}]{Tippmann2012}
+Tippmann SC, Ivanek R, Gaidatzis D, Sch\"{o}ler A, Hoerner L, van Nimwegen E,
+  Stadler PF, Stadler MB, Sch\"{u}beler D (2012) {Chromatin measurements reveal
+  contributions of synthesis and decay to steady-state mRNA levels.}
+\newblock \emph{Molecular systems biology}, \textbf{8}(593): 593.
+
+\bibitem[{McLeay \emph{et~al.}(2012)McLeay, Lesluyes, {Cuellar Partida} and
+  Bailey}]{McLeay2012a}
+McLeay RC, Lesluyes T, {Cuellar Partida} G, Bailey TL (2012) {Genome-wide in
+  silico prediction of gene expression.}
+\newblock \emph{Bioinformatics}, \textbf{28}(21): 2789--96.
+
+\bibitem[{Dong \emph{et~al.}(2012)Dong, Greven, Kundaje, Djebali, Brown, Cheng,
+  Gingeras, Gerstein, Guig\'{o} \emph{et~al.}}]{Dong2012}
+Dong X, Greven MC, Kundaje A, Djebali S, Brown JB, Cheng C, Gingeras TR,
+  Gerstein M, Guig\'{o} R, \emph{et~al.} (2012) {Modeling gene expression using
+  chromatin features in various cellular contexts.}
+\newblock \emph{Genome biology}, \textbf{13}(9): R53.
+
+\bibitem[{Shiraki \emph{et~al.}(2003)Shiraki, Kondo, Katayama, Waki, Kasukawa,
+  Kawaji, Kodzius, Watahiki, Nakamura \emph{et~al.}}]{Shiraki2003}
+Shiraki T, Kondo S, Katayama S, Waki K, Kasukawa T, Kawaji H, Kodzius R,
+  Watahiki A, Nakamura M, \emph{et~al.} (2003) {Cap analysis gene expression
+  for high-throughput analysis of transcriptional starting point and
+  identification of promoter usage.}
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, \textbf{100}(26): 15776--81.
+
+\bibitem[{Kodzius \emph{et~al.}(2006)Kodzius, Kojima, Nishiyori, Nakamura,
+  Fukuda, Tagami, Sasaki, Imamura, Kai \emph{et~al.}}]{Kodzius2006}
+Kodzius R, Kojima M, Nishiyori H, Nakamura M, Fukuda S, Tagami M, Sasaki D,
+  Imamura K, Kai C, \emph{et~al.} (2006) {CAGE: cap analysis of gene
+  expression.}
+\newblock \emph{Nature methods}, \textbf{3}(3): 211--22.
+
+\bibitem[{{RIKEN Omics Science Center}(2012)}]{fantom5}
+{RIKEN Omics Science Center} (2012) {FANTOM5}.
+\newblock \emph{http://fantom.gsc.riken.jp/}.
+
+\bibitem[{Ryba \emph{et~al.}(2010)Ryba, Hiratani, Lu, Itoh, Kulik, Zhang,
+  Schulz, Robins, Dalton and Gilbert}]{Ryba2010}
+Ryba T, Hiratani I, Lu J, Itoh M, Kulik M, Zhang J, Schulz TC, Robins AJ,
+  Dalton S, Gilbert DM (2010) {Evolutionarily conserved replication timing
+  profiles predict long-range chromatin interactions and distinguish closely
+  related cell types.}
+\newblock \emph{Genome research}, \textbf{20}(6): 761--70.
+
+\bibitem[{Zuber and Strimmer(2011)}]{Zuber2011}
+Zuber V, Strimmer K (2011) {High-Dimensional Regression and Variable Selection
+  Using CAR Scores}.
+\newblock \emph{Statistical Applications in Genetics and Molecular Biology},
+  \textbf{10}(1): 1--27.
+
+\bibitem[{Kolasinska-Zwierz \emph{et~al.}(2009)Kolasinska-Zwierz, Down,
+  Latorre, Liu, Liu and Ahringer}]{Kolasinska-Zwierz2009}
+Kolasinska-Zwierz P, Down T, Latorre I, Liu T, Liu XS, Ahringer J (2009)
+  {Differential chromatin marking of introns and expressed exons by H3K36me3.}
+\newblock \emph{Nature genetics}, \textbf{41}(3): 376--81.
+
+\bibitem[{Schaft(2003)}]{Schaft2003}
+Schaft D (2003) {The histone 3 lysine 36 methyltransferase, SET2, is involved
+  in transcriptional elongation}.
+\newblock \emph{Nucleic Acids Research}, \textbf{31}(10): 2475--2482.
+
+\bibitem[{Breiman(2001{\natexlab{c}})}]{Breiman2001}
+Breiman L (2001{\natexlab{c}}) {Random forests}.
+\newblock \emph{Machine learning}, \textbf{45}: 5--32.
+
+\bibitem[{Karli\'{c} \emph{et~al.}(2010)Karli\'{c}, Chung, Lasserre, Vlahovicek
+  and Vingron}]{Karlic2010}
+Karli\'{c} R, Chung Hr, Lasserre J, Vlahovicek K, Vingron M (2010) {Histone
+  modification levels are predictive for gene expression.}
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, \textbf{107}(7): 2926--31.
+
+\end{thebibliography}

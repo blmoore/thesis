@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{26}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Barrett \emph{et~al.}(2013)Barrett, Wilhite, Ledoux, Evangelista,
@@ -85,6 +85,11 @@ Svetnik V, Liaw A, Tong C, Culberson JC, Sheridan RP, Feuston BP (2003) {Random
 Cutler DR, Edwards TC, Beard KH, Cutler A, Hess KT, Gibson J, Lawler JJ (2007)
   {Random forests for classification in ecology.}
 \newblock \emph{Ecology}, \textbf{88}(11): 2783--92.
+
+\bibitem[{D\'{\i}az-Uriarte and {Alvarez de Andr\'{e}s}(2006)}]{Diaz2006}
+D\'{\i}az-Uriarte R, {Alvarez de Andr\'{e}s} S (2006) {Gene selection and
+  classification of microarray data using random forest.}
+\newblock \emph{BMC bioinformatics}, \textbf{7}: 3.
 
 \bibitem[{Dasgupta \emph{et~al.}(2011)Dasgupta, Sun, K\"{o}nig, Bailey-Wilson
   and Malley}]{Dasgupta2012}

@@ -11,6 +11,7 @@
 \usepackage{bm} % bold math
 \usepackage{amsmath} % underset
 \usepackage{hyperref} % urls
+\usepackage{standalone}
 
 % attempt to adj. typography: old style numbers, drop below line
 %\usepackage[% 
@@ -156,7 +157,7 @@ averaging the output leaf node value across the forest. RF regression
 was used as it is known to be one of the most powerful regression
 methods developed to date,\cite{Svetnik2003, Cutler2007} typically
 providing low bias and low variance predictions without the need for
-variable selection.\cite{Dasgupta2012}
+variable selection.\cite{Diaz2006, Dasgupta2012}
 Additionally the RF method represents an example of ``algorithmic
 modelling''\cite{Breiman2001b} in that it makes no assumptions about the
 underlying data model.
@@ -313,8 +314,10 @@ is greater-than or equal-to $F_{outer}$. This chromosomal positioning data was m
 cells though nuclear architecture is though to be largely conserved
 between cell types\cite{Chambers2013, DeWit2013} and even higher primates.\cite{Tanabe2002}
 
+\ifstandalone
 \begin{small}
 \bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
 \end{small}
+\fi
 
 \end{document}

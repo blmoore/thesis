@@ -7,13 +7,17 @@
 \usepackage[square,numbers,super,sort&compress]{natbib}  % bibliography style
 \usepackage[cc]{titlepic}    % enable logo on title page
 \usepackage{graphicx}       % logo related
+\usepackage{standalone}
+
+\usepackage{bm}
+\usepackage{amsmath}
 
 % bibliography
-\bibliographystyle{../thesis}
+\bibliographystyle{thesis}
 
 % title setup
 \title{ \vspace{3in} Unravelling higher order genome organisation {\small [working
-    title]} \\ \vspace{2em} {\large {\bf Introduction}} }
+    title]} \\ \vspace{2em} }
 \author{Benjamin L. Moore}
 \titlepic{\vspace{2.2in} \includegraphics[width=\textwidth]{/Users/benmoore/hvl/1yrReport/figs/igmm.png}}
 
@@ -21,12 +25,31 @@
 
 \maketitle
 
-\chapter{Predictive modelling of transcription and chromatin organisation}
+\tableofcontents
 
-Hello
+% Intro
+\include{0-intro/intro}
 
-\begin{small}
-\bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
-\end{small}
+% Methods
+\input{1-methods/methods}
+
+% Results
+\input{2-hic_comparison/hic_comparison}
+
+\input{3-predictive_modelling/predictive_modelling.tex}
+
+\input{4-boundaries/boundaries.tex}
+
+%\input{5-comparative/comparative.tex}
+
+\input{6-shh/shh.tex}
+
+%Discussion
+\input{7-discussion/discussion.tex}
+
+% References (grabbed from includes)
+%\begin{small}
+%\bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
+%\end{small}
 
 \end{document}
