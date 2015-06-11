@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt,oneside]{book}
+\documentclass[a4paper,10pt,oneside]{book}
 
 % packages 
 \usepackage{arsclassica}    % fancy layout
@@ -7,6 +7,8 @@
 \usepackage[square,numbers,super,sort&compress]{natbib}  % bibliography style
 \usepackage[cc]{titlepic}    % enable logo on title page
 \usepackage{graphicx}       % logo related
+
+\usepackage{standalone}
 
 % bibliography
 \bibliographystyle{../thesis}
@@ -21,24 +23,14 @@
 
 \maketitle
 
-\chapter{Modelling chromatin organisation}
+\chapter{Predictive modelling of transcription and chromatin organisation}
 
-\section{Introduction}
+Hello
 
-\section{Comparison of higher order organisation}
-
-\subsection{Domain comparison}
-
-\section{Integrative modelling}
-
-\subsection{Cross-application}
-
-\subsection{Variable importance}
-
-% Correlated input features
-
+\ifstandalone
 \begin{small}
 \bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
 \end{small}
+\fi
 
 \end{document}

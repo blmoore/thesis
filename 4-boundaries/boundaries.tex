@@ -8,6 +8,8 @@
 \usepackage[cc]{titlepic}    % enable logo on title page
 \usepackage{graphicx}       % logo related
 
+\usepackage{standalone}
+
 % bibliography
 \bibliographystyle{../thesis}
 
@@ -25,8 +27,10 @@
 
 Hello
 
+\ifstandalone
 \begin{small}
 \bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
 \end{small}
+\fi
 
 \end{document}

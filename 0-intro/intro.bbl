@@ -120,25 +120,6 @@ Filippova D, Patro R, Duggal G, Kingsford C (2014) {Identification of
   alternative topological domains in chromatin.}
 \newblock \emph{Algorithms for molecular biology : AMB}, \textbf{9}: 14.
 
-\bibitem[{Ernst and Kellis(2012)}]{Ernst2012}
-Ernst J, Kellis M (2012) {ChromHMM: automating chromatin-state discovery and
-  characterization.}
-\newblock \emph{Nature methods}, \textbf{9}(3): 215--6.
-
-\bibitem[{Ernst \emph{et~al.}(2011)Ernst, Kheradpour, Mikkelsen, Shoresh, Ward,
-  Epstein, Zhang, Wang, Issner \emph{et~al.}}]{Ernst2011}
-Ernst J, Kheradpour P, Mikkelsen TS, Shoresh N, Ward LD, Epstein CB, Zhang X,
-  Wang L, Issner R, \emph{et~al.} (2011) {Mapping and analysis of chromatin
-  state dynamics in nine human cell types.}
-\newblock \emph{Nature}, \textbf{473}(7345): 43--9.
-
-\bibitem[{Rajagopal \emph{et~al.}(2013)Rajagopal, Xie, Li, Wagner, Wang,
-  Stamatoyannopoulos, Ernst, Kellis and Ren}]{Rajagopal2013}
-Rajagopal N, Xie W, Li Y, Wagner U, Wang W, Stamatoyannopoulos J, Ernst J,
-  Kellis M, Ren B (2013) {RFECS: a random-forest based algorithm for enhancer
-  identification from chromatin state.}
-\newblock \emph{PLoS computational biology}, \textbf{9}(3): e1002968.
-
 \bibitem[{Barbieri \emph{et~al.}(2012)Barbieri, Chotalia, Fraser, Lavitas,
   Dostie, Pombo and Nicodemi}]{Barbieri2012}
 Barbieri M, Chotalia M, Fraser J, Lavitas LM, Dostie J, Pombo A, Nicodemi M
@@ -159,6 +140,25 @@ Mirny La (2011) {The fractal globule as a model of chromatin architecture in
 Grosberg AY, Nechaev S, Shakhnovich E (1988) {The role of topological
   constraints in the kinetics of collapse of macromolecules}.
 \newblock \emph{Journal de Physique}, \textbf{49}(12): 2095--2100.
+
+\bibitem[{Ernst and Kellis(2012)}]{Ernst2012}
+Ernst J, Kellis M (2012) {ChromHMM: automating chromatin-state discovery and
+  characterization.}
+\newblock \emph{Nature methods}, \textbf{9}(3): 215--6.
+
+\bibitem[{Ernst \emph{et~al.}(2011)Ernst, Kheradpour, Mikkelsen, Shoresh, Ward,
+  Epstein, Zhang, Wang, Issner \emph{et~al.}}]{Ernst2011}
+Ernst J, Kheradpour P, Mikkelsen TS, Shoresh N, Ward LD, Epstein CB, Zhang X,
+  Wang L, Issner R, \emph{et~al.} (2011) {Mapping and analysis of chromatin
+  state dynamics in nine human cell types.}
+\newblock \emph{Nature}, \textbf{473}(7345): 43--9.
+
+\bibitem[{Rajagopal \emph{et~al.}(2013)Rajagopal, Xie, Li, Wagner, Wang,
+  Stamatoyannopoulos, Ernst, Kellis and Ren}]{Rajagopal2013}
+Rajagopal N, Xie W, Li Y, Wagner U, Wang W, Stamatoyannopoulos J, Ernst J,
+  Kellis M, Ren B (2013) {RFECS: a random-forest based algorithm for enhancer
+  identification from chromatin state.}
+\newblock \emph{PLoS computational biology}, \textbf{9}(3): e1002968.
 
 \bibitem[{ENCODE(2012)}]{Dunham2012}
 ENCODE (2012) {An integrated encyclopedia of DNA elements in the human genome.}

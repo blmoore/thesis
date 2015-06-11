@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+The style file: thesis.bst
+A level-1 auxiliary file: 0-intro/intro.aux
+Database file #1: /Users/benmoore/Documents/library.bib
+Database file #2: /Users/benmoore/Documents/customrefs.bib
+Warning--I didn't find a database entry for "Lieberman2011"
+Warning--I didn't find a database entry for "Chambers2012"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--there's a number but no volume in Li2014
+Warning--there's a number but no volume in Mifsud2015
+You've used 64 entries,
+            3024 wiz_defined-function locations,
+            1036 strings with 22445 characters,
+and the built_in function-call counts, 93739 in all, are:
+= -- 9873
+> -- 2844
+< -- 21
++ -- 2052
+- -- 727
+* -- 7048
+:= -- 10076
+add.period$ -- 129
+call.type$ -- 64
+change.case$ -- 320
+chr.to.int$ -- 65
+cite$ -- 66
+duplicate$ -- 9854
+empty$ -- 6716
+format.name$ -- 924
+if$ -- 19310
+int.to.chr$ -- 3
+int.to.str$ -- 65
+missing$ -- 804
+newline$ -- 261
+num.names$ -- 192
+pop$ -- 4711
+preamble$ -- 1
+purify$ -- 256
+quote$ -- 0
+skip$ -- 1641
+stack$ -- 0
+substring$ -- 11801
+swap$ -- 2149
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 382
+warning$ -- 2
+while$ -- 608
+width$ -- 0
+write$ -- 772
+(There were 4 warnings)

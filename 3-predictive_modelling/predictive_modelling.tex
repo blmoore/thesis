@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt,oneside]{book}
+\documentclass[a4paper,11pt,oneside]{book}
 
 % packages 
 \usepackage{arsclassica}    % fancy layout
@@ -7,14 +7,15 @@
 \usepackage[square,numbers,super,sort&compress]{natbib}  % bibliography style
 \usepackage[cc]{titlepic}    % enable logo on title page
 \usepackage{graphicx}       % logo related
-\usepackage{float} 
+
+\usepackage{standalone}
 
 % bibliography
 \bibliographystyle{../thesis}
 
 % title setup
 \title{ \vspace{3in} Unravelling higher order genome organisation {\small [working
-    title]} \\ \vspace{2em} {\large {\bf Introduction}} }
+    title]} \\ \vspace{2em} {\large {\bf Results 2} Predictive modelling } }
 \author{Benjamin L. Moore}
 \titlepic{\vspace{2.2in} \includegraphics[width=\textwidth]{/Users/benmoore/hvl/1yrReport/figs/igmm.png}}
 
@@ -22,7 +23,8 @@
 
 \maketitle
 
-\chapter{Predictive modelling of transcription}
+\chapter{Integrative modelling as a tool to explore biological systems}
+\vspace{2em}
 
 \section{Introduction}
 Large-scale chromatin data has recently been produced by multiple
@@ -98,7 +100,9 @@ simple single-point response and move towards a more complete
 understanding of the drivers of transcriptional flux.
 
 
-\section{Preliminary data}
+
+\section{Reproducing Dong \emph{et al.} }
+
 Following on from Dong \emph{et al.},\cite{Dong2012} I first
 reimplemented the published ENCODE modelling framework to ensure I could
 replicate their results. In doing so I was also able to analyse the
@@ -108,9 +112,9 @@ predicting its expression level) added little additional accuracy relative to a 
 linear regression model 
 (Fig. \ref{fig:TwoStepvsSimple}). \\
 
-\begin{figure}[H]
-\begin{center} \vspace{-24pt}
-\includegraphics[width=.7\textwidth]{r1_fig/improvedDongPlot.pdf}
+\begin{figure}
+\begin{center}
+\includegraphics[width=.7\textwidth]{figs/improvedDongPlot.pdf}
 \captionsetup{width=\textwidth}
 \caption{Comparison of classification-regression model (\emph{upper})
   with simple linear regression model (\emph{lower}) recalculated following Dong
@@ -143,9 +147,9 @@ the simple regression model, an increase in accuracy of almost $13\%$,
 relative to simply taking the average value across all
 bins.\cite{Dong2012} \\
 
-\begin{figure}[H]
+\begin{figure}
 \begin{center}
-\includegraphics[width=\textwidth]{r1_fig/Dong_relImp_Horiz.pdf}
+\includegraphics[width=\textwidth]{figs/Dong_relImp_Horiz.pdf}
 \captionsetup{width=.9\textwidth}
 \caption{Relative importance metrics for variables in both the
   classification (\emph{left}) and regression (\emph{right}) stages of
@@ -193,7 +197,7 @@ other cell lines.\cite{Lieberman2011}
 \section{Modelling FANTOM5 CAGE timecourse data}
 Using unpublished FANTOM5 data and the approach established above, I next attempted to model gene
 expression at timepoint zero ($t_0$) of a differentiation timecourse of Human
-H1 embryonic stem cells (H1hESC) to CD34+ hematopoietic stem
+H1 embryonic stem cells (H1 hESC) to CD34+ hematopoietic stem
 cells. \\
 
 % How did I do this?:
@@ -212,19 +216,19 @@ regions. \\
 
 Next I retrieved a number of genome-wide histone modification datasets
 from the ENCODE and
-NIH Roadmap consortia which were measured in H1hESC cells, taking these to be
+NIH Roadmap consortia which were measured in H1 hESC cells, taking these to be
 reflections of the chromatin state $t_0$. I implemented the
 previously-described `bestbin' strategy\cite{Dong2012} to objectively
-select the most-correlated binned signal for each chromatin
+select the most-correlated binned signal for each chromatinH1 hESC
 mark. Additionally, I analysed the stability of chosen bestbins by
 calculating them on 200 sets of 1000 randomly selected TSS samples (with each sample
 representing approximately $8\%$ of the dataset) and the result is
 shown in Figure \ref{fig:bestbin}. \\
 
-\begin{figure}[H]
+\begin{figure}
 \begin{center} 
-\includegraphics[width=.9\textwidth]{r1_fig/bestbinSummary.pdf}
-\captionsetup{width=.9\textwidth}
+\includegraphics[width=.9\textwidth]{figs/bestbinSummary.pdf}
+\captionsetup{width=\textwidth}
 \caption{Distributions of bestbin locations relative to the
   TSS. Bestbins were selected for normalised ChIP-seq
   signal intensities for 10 histone marks, the
@@ -245,30 +249,16 @@ mark's bestbin is consistently the whole gene measurement and this
 mark is known to be enriched in actively transcribed
 exons.\cite{Tippmann2012, Kolasinska-Zwierz2009, Schaft2003} \\
 
-Having matched a variety of genome-wide H1hESC chromatin datasets
+Having matched a variety of genome-wide H1 hESC chromatin datasets
 to the FANTOM5 timecourse expression data, I then built a regression
 model using a Random Forest (RF) approach.\cite{Breiman2001} This method outperforms a simple
 linear model in my initial comparisons and is able to capture non-linear relationships as well
-as interactions without them being explicitly specified.\cite{Diaz2006} RF works by
-building an ensemble of decision trees which each perform a succession
-of binary partitions aimed at maximising the separation between elements
-of the child nodes.\cite{Svetnik2003} Crucially, each branchpoint uses a random subset
-(size $mtry$) of the
-available predictors and each tree is fitted to a bootstrapped sample of
-the training set, allowing the model to
-be fitted without variable selection or risk of
-overfitting.\cite{Diaz2006, Dasgupta2012} Having grown a large number ($ntrees$)
-of these
-trees, continuous dependant variables (gene expression in
-this case) can be predicted by averaging the leaf-node classifications
-over all trees. A criticism of RF is that the model itself is less interpretable than
-a simple linear model, so for this reason linear models as well as
-other regression techniques will continue to be considered in future applications.  \\
+as interactions without them being explicitly specified.\cite{Diaz2006} \\
 
-\begin{figure}[H]
+\begin{figure}
 \begin{center} 
-\includegraphics[width=.9\textwidth]{r1_fig/RandomForest_10CV_50d.pdf}
-\captionsetup{width=.9\textwidth} 
+\includegraphics[width=.9\textwidth]{figs/RandomForest_10CV_50d.pdf}
+\captionsetup{width=\textwidth} 
 \caption{Evaluation of RF model predictions ($x$-axis) against an independent
   test set ($y$-axis). The distributions of predicted and empirical
   expression values are shown opposite their
@@ -297,7 +287,7 @@ but it is roughly equal to their median test set correlation of
 $0.83$.\cite{Dong2012} The RMSEs, when normalised by the range of
 observed values, compare more favourably ($0.11$, compared with Dong \emph{et al.}'s: $0.14$). A possible explanation for this decrease in
 accuracy is that while both chromatin data and expression timecourse
-were measured in H1hESC cells, the experiments took place at
+were measured in H1 hESC cells, the experiments took place at
 different institutes and likely using differing protocols and cell cultures. For comparison, a previous study using chromatin
 measurements from a number of different sources to predict expression
 in a matched cell-type reported a predictive correlation of 0.77.\cite{Karlic2010} Additionally, Dong \emph{et al.} implemented a pseudocount
@@ -327,8 +317,20 @@ more interesting variation or alternatively genes that remain invariant
 throughout the timecourse could be filtered out of the dataset. 
 
 
+\subsection{Dissecting the  \emph{best bin} approach}
+
+\section{Modelling higher order chromatin}
+
+\subsection{Cross-application}
+
+\subsection{Variable importance}
+
+\subsection{Correlating input features}
+
+\ifstandalone
 \begin{small}
 \bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
 \end{small}
+\fi
 
 \end{document}
