@@ -52,6 +52,8 @@ Each Hi-C dataset used in this work was reprocessed using the same pipeline from
 % 1. iterative mapping
 % 2. 
 
+% figure showing contact maps, before and after (split cell type?)
+
 \section{Compartment profiles}
 % how well do compartments correlate
 
@@ -87,17 +89,17 @@ The continuous compartment eigenvector can be used as-is to classify A/B compart
 
 For this reason, instead of using raw eigenvector values we consider observed values as emissions from unobserved underlying states. This can be modelled through a Hidden Markov Model (HMM), whereby we first parameterise models of state and their transitions, then infer the most likely state sequence to have emitted our observed data. This unobserved two-state sequence is then used for compartment calls. 
 
-In practice, this acts to de-noise our compartment calls. Where single sign-changes along the series would have resulted in a single-block compartment, these may now be modelled as noisy emissions from a single unobserved state. An examplar region is showing in Fig 
+In practice, this acts to de-noise our compartment calls. Where single sign-changes along the series would have resulted in a single-block compartment, these may now be modelled as noisy emissions from a single unobserved state. An examplar region is showing in Fig. \ref{fig:denoise}.
 
 % figure showing raw eigs with hmm calls
 \begin{figure}
 \begin{center}
-\includegraphics[width=.5\textwidth]{figs/compartment_corr.png}
+\includegraphics[width=.9\textwidth]{figs/hmm_denoise.pdf}
 \captionsetup{width=\textwidth}
 \caption{
-{\bf Compartment eigenvectors are well-correlated between human cell types}
-Megabase resolution compartment eigenvector values are shown in a plot matrix. \emph{Upper triangle}: Pearson correlation coefficients between pairs, with $95\%$ confidence intervals (??); \emph{diagonal} Kernel density estimates of eigenvector values per cell type; \emph{lower triangle}: $x$-$y$ scatterplot of values.
-}\label{fig:compcor}
+{\bf ??}
+placeholder 
+}\label{fig:denoise}
 \end{center}
 \end{figure} 
 
@@ -121,10 +123,10 @@ Despite the vast majority of the genome being in matched chromatin compartments,
 
 
 
-%\ifstandalone
+\ifstandalone
 \begin{small}
 \bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
 \end{small}
-%\fi
+\fi
 
 \end{document}

@@ -33,17 +33,22 @@
 \contentsline {subsection}{\numberline {2.4.3}MetaTADs}{10}{subsection.2.4.3}
 \contentsline {section}{\numberline {2.5}Giemsa band comparison}{10}{section.2.5}
 \contentsline {section}{\numberline {2.6}Nuclear positioning}{10}{section.2.6}
-\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Predictive modelling of transcription}}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Preliminary data}{11}{section.3.1}
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Integrative modelling as a tool to explore biological systems}}{12}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{12}{section.4.1}
-\contentsline {section}{\numberline {4.2}Reproducing Dong \emph {et al.} }{13}{section.4.2}
-\contentsline {section}{\numberline {4.3}Modelling FANTOM5 CAGE timecourse data}{15}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Dissecting the \emph {best bin} approach}{17}{subsection.4.3.1}
-\contentsline {section}{\numberline {4.4}Modelling higher order chromatin}{17}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Cross-application}{17}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Variable importance}{17}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Correlating input features}{17}{subsection.4.4.3}
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Predictive modelling of transcription and chromatin organisation}}{18}{chapter.5}
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Predictive modelling of transcription and chromatin organisation}}{19}{chapter.6}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Predictive modelling of transcription and chromatin organisation}}{20}{chapter.7}
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Reanalysis of Hi-C datasets}}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Hi-C reprocessing}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}Compartment profiles}{11}{section.3.3}
+\contentsline {section}{\numberline {3.4}Domain calls}{11}{section.3.4}
+\contentsline {section}{\numberline {3.5}Variable regions}{14}{section.3.5}
+\contentsline {section}{\numberline {3.6}Nuclear positioning}{14}{section.3.6}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Integrative modelling as a tool to explore biological systems}}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{15}{section.4.1}
+\contentsline {section}{\numberline {4.2}Reproducing Dong \emph {et al.} }{16}{section.4.2}
+\contentsline {section}{\numberline {4.3}Modelling FANTOM5 CAGE timecourse data}{18}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Dissecting the \emph {best bin} approach}{20}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}Modelling higher order chromatin}{20}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Cross-application}{20}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Variable importance}{20}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Correlating input features}{20}{subsection.4.4.3}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Predictive modelling of transcription and chromatin organisation}}{21}{chapter.5}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Predictive modelling of transcription and chromatin organisation}}{22}{chapter.6}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Predictive modelling of transcription and chromatin organisation}}{23}{chapter.7}
