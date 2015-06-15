@@ -28,7 +28,7 @@
 
 It's oft-stated that the DNA within each human cell would extend for two metres fully extended. Instead that same length of DNA packs into a cell nucleus with a diameter in the order of micrometers ($\mu$m). This is achieved through a complex organisation hierarchy, ranging from how chromosomes are arranged in the nucleus, down to how DNA is wrapped around nucleosomes.
 
-Briefly, DNA exists mostly as a left-handed double-helix of hydrogen bonded purines and pyrimidines. These in turn are wrapped around histone octamers, proteins with tuneable DNA packing properties. These wrapped histones can be thought of as "beads on a string" which can exist as reasonably 
+Briefly, DNA exists mostly as a left-handed double-helix of hydrogen bonded purines and pyrimidines. These in turn are wrapped around histone octamers, proteins with tuneable DNA packing properties. These wrapped histones have been visualised as "beads on a string" by microscopy under high-salt conditions (??), and \emph{in vivo} are thought to exist generally as a 30 nanometre fibre.
 
 \subsection{C-methods and Hi-C}
 
@@ -80,19 +80,27 @@ Recent high-resolution studies have been able to resolve ever-smaller levels of 
 
 Theoretical mechanistic models of chromatin folding such as the
 ``strings and binders switch'' model\cite{Barbieri2012} and the ``fractal
-globule'' model\cite{Lieberman2011, Mirny2011, Grosberg1988a} have both produced simulated data
+globule'' model\cite{Lieberman2009, Mirny2011, Grosberg1988a} have both produced simulated data
 that reflects empirical C-method observations and potentially describe the polymer
 dynamics of chromatin folding.
 
 \subsection{Fractal globule}
+Lieberman Aiden \emph{ et al.}\cite{Lieberman 2009} tested a number of theoretical models of genome folding to see which best explained the observed power-law scaling between distance and observed contact frequency.  The authors sought to distinguish two previously-described models of genome organisation: the "Fractal globule" and "equilibrium globule". The authors found that a theoretical fractal globule, embodying a fractal scale-independent self-similar organisation, better fit the observed data than an equilibrium globule null model where simulated polymer folding was allowed to proceed unchecked.
+
+The fractal globule model was noted for its appealing functional properties. Under the fractal model, the polymer folds are knot-free hence could facilitate local dynamics of repression and activation without wider disruption. Despite the appeal of this model, the authors were careful to state that while their simulations show good agreement with observed data, this does not preclude other organisational models from having similar or greater explanatory power.\cite{Lieberman 2009}
 
 \subsection{Strings, binders and switches}
 
 \section{Criticisms of C-methods}
 
+% For
+% in Lieberman: s^{1/3}  == sclaing observed in 3D FISH (500 kb < 2 Mb)
+
 Compare / contrast C-methods and FISH, Bickmore lab papers.
 
 \section{Machine learning in genomics}
+
+Machine learning offers a powerful framework for understanding complex datasets, such as those produced in large-scale genomics studies.\cite{Libbrecht2015} Problems in the field such as gene prediction and inferring regulatory networks can be approached by employing a learning algorithm, either in a supervised way based on a known truth set, or through unsupervised methods aimed at pattern detection or clustering. If a successful predictive model can be built, it can then be dissected to explore statistical rules which may impart novel biological insight.
 
 The link between epigenomic features and local chromatin state has been
 analysed computationally in a number of publications, notably in
@@ -109,7 +117,7 @@ be related to higher order genome organisation. \\
 The recent comprehensive ChIP-seq datasets
 produced by the ENCODE consortium\cite{Dunham2012} combined with Hi-C
 genome-wide contact maps in a number of human cell
-types\cite{Dixon2012, Lieberman2011, Kalhor2012} present a remarkable
+types\cite{Dixon2012, Lieberman2009, Kalhor2012} present a remarkable
 opportunity to investigate the relationships between local
 chromatin features and higher order structure. In this work, a
 machine-learning approach was employed to model the
@@ -121,10 +129,10 @@ structure and of highlighting important differences between cell types.
 
 \section{Aims}
 
-\ifstandalone
+%\ifstandalone
 \begin{small}
 \bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
 \end{small}
-\fi
+%\fi
 
 \end{document}
