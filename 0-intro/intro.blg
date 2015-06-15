@@ -2,58 +2,50 @@ This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: intro.aux
 The style file: ../thesis.bst
-White space in argument---line 60 of file intro.aux
- : \citation{Lieberman
- :                     2009}
-I'm skipping whatever remains of this command
-White space in argument---line 61 of file intro.aux
- : \citation{Lieberman
- :                     2009}
-I'm skipping whatever remains of this command
 Database file #1: /Users/benmoore/Documents/library.bib
 Database file #2: /Users/benmoore/Documents/customrefs.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--there's a number but no volume in Li2014
 Warning--there's a number but no volume in Mifsud2015
-You've used 26 entries,
+You've used 27 entries,
             3024 wiz_defined-function locations,
-            799 strings with 12091 characters,
-and the built_in function-call counts, 39691 in all, are:
-= -- 4149
-> -- 1270
-< -- 5
-+ -- 920
-- -- 325
-* -- 3002
-:= -- 4260
-add.period$ -- 52
-call.type$ -- 26
-change.case$ -- 130
-chr.to.int$ -- 27
-cite$ -- 28
-duplicate$ -- 4125
-empty$ -- 2823
-format.name$ -- 404
-if$ -- 8165
+            806 strings with 12260 characters,
+and the built_in function-call counts, 40554 in all, are:
+= -- 4239
+> -- 1285
+< -- 6
++ -- 930
+- -- 329
+* -- 3070
+:= -- 4363
+add.period$ -- 54
+call.type$ -- 27
+change.case$ -- 135
+chr.to.int$ -- 28
+cite$ -- 29
+duplicate$ -- 4209
+empty$ -- 2892
+format.name$ -- 413
+if$ -- 8341
 int.to.chr$ -- 1
-int.to.str$ -- 27
-missing$ -- 342
-newline$ -- 108
-num.names$ -- 78
-pop$ -- 2006
+int.to.str$ -- 28
+missing$ -- 351
+newline$ -- 112
+num.names$ -- 81
+pop$ -- 2042
 preamble$ -- 1
-purify$ -- 104
+purify$ -- 108
 quote$ -- 0
-skip$ -- 681
+skip$ -- 695
 stack$ -- 0
-substring$ -- 4981
-swap$ -- 914
+substring$ -- 5083
+swap$ -- 941
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 156
+type$ -- 162
 warning$ -- 2
-while$ -- 264
+while$ -- 270
 width$ -- 0
-write$ -- 315
-(There were 2 error messages)
+write$ -- 327
+(There were 2 warnings)

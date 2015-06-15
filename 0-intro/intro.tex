@@ -48,7 +48,7 @@ Tethered chromosome capture (TCC)\cite{Kalhor2012} was the first attempt to incr
 
 Hi-C is a population-level assay, as the retrieved interaction counts are from a huge number of different cells. As well as building population-averaged models of genome structure, it is also of interest to probe cell-to-cell variability through single-cell approaches. The first single-cell Hi-C study\cite{Nagano2013} \ldots An obvious limitation of single-cell Hi-C assays is that a single restriction fragment can ligate to at most a single other fragment, meaning even if $100\%$ yield were to be achieved, any $n \times n$ interaction matrix could at most populate $\frac{n}{2}$ cells.
 
-Capture-C is another recent Hi-C derivative which attempts to address resolution problems associated with the genome-wide pairwise assay by enriching for promoter-enhancer interactions using \emph{a priori} selection.\cite{Mifsud2015} It could be said that Capture-C is to Hi-C as exome-capture sequencing is to a whole-genome approach. 
+Capture-C is another recent Hi-C derivative which attempts to address resolution problems associated with the genome-wide pairwise assay by enriching for promoter-enhancer interactions using \emph{a priori} selection.\cite{Mifsud2015} It could be said that Capture-C is to Hi-C as exome-capture sequencing is to a whole-genome approach. Indeed, a suggestion in the original Hi-C paper was that resolution could be improved by either increased sequencing or instead hybrid capture.\cite{Lieberman2009}
 
 In-site Hi-C was a recent refinement of the Hi-C method, from the published of the original method.\cite{Rao2014} The principle difference is that fixation and ligation now happen in place, within intact cell nuclei.
 
@@ -76,7 +76,7 @@ Filippova \emph{et al.}\cite{Filippova2014} developed a tuneable algorithm which
 
 Recent high-resolution studies have been able to resolve ever-smaller levels of sub-structure. Rao \emph{et al.}\cite{Rao2014} refined the concept of chromosome compartments to "sub-compartments", dividing simple A/B divisions into a total of 5 subtypes. The authors were also able to identify "contact domains" of median size 185 kb, many of which were associated with identifiable individual looping events.\cite{Rao2014} The authors also suggest that previously-observed large TADs may be the result of insufficient sequencing; that is, not all boundaries could be detected using 40 kb binned contact maps thus multiple contact domains were unintentionally combined into large domains.
 
-\section{Models of chromatin organisation}
+\section{Models of chromatin folding}
 
 Theoretical mechanistic models of chromatin folding such as the
 ``strings and binders switch'' model\cite{Barbieri2012} and the ``fractal
@@ -85,22 +85,26 @@ that reflects empirical C-method observations and potentially describe the polym
 dynamics of chromatin folding.
 
 \subsection{Fractal globule}
-Lieberman Aiden \emph{ et al.}\cite{Lieberman 2009} tested a number of theoretical models of genome folding to see which best explained the observed power-law scaling between distance and observed contact frequency.  The authors sought to distinguish two previously-described models of genome organisation: the "Fractal globule" and "equilibrium globule". The authors found that a theoretical fractal globule, embodying a fractal scale-independent self-similar organisation, better fit the observed data than an equilibrium globule null model where simulated polymer folding was allowed to proceed unchecked.
+Lieberman Aiden \emph{ et al.}\cite{Lieberman2009} tested a number of theoretical models of genome folding to see which best explained the observed power-law scaling between distance and observed contact frequency ($IF =  1 / dist^{-\alpha}$ where $\alpha \approx 1.08$).  The authors sought to distinguish two previously-described models of genome organisation: the "fractal globule" and "equilibrium globule". The authors found that a theoretical fractal globule, embodying scale-independent self-similar aggregate folding, better fit the observed data than an equilibrium globule null model where simulated polymer folding was allowed to proceed unchecked.
 
-The fractal globule model was noted for its appealing functional properties. Under the fractal model, the polymer folds are knot-free hence could facilitate local dynamics of repression and activation without wider disruption. Despite the appeal of this model, the authors were careful to state that while their simulations show good agreement with observed data, this does not preclude other organisational models from having similar or greater explanatory power.\cite{Lieberman 2009}
+The fractal globule model was noted for its appealing functional properties. Under this model, for example, the polymer folds are knot-free hence could facilitate local dynamics of repression and activation without wider disruption. Despite this appeal, the authors were careful to state that while their simulations show good agreement with observed data, this does not preclude other organisational models from having similar or greater explanatory power.\cite{Lieberman2009}
 
-\subsection{Strings, binders and switches}
+\subsection{Strings and binders switch}
+
+Subsequent modelling techniques integrated known biological phenomena as well as polymer models. This formed the basis of Barbieri \emph{et al.}'s\cite{Barbieri2012} ``strings and binders switch" (SBS) model, where the authors simulated polymer folding in the presence of DNA binding factors, such as the known genome organiser CCCTC-binding factor (CTCF).\cite{Phillips2009} This organisational model was developed in an attempt to consolidate global Hi-C measures of contact scaling with C-based experiments on smaller regions and FISH studies, which found a range of scaling parameters. The authors also explore the different values of $\alpha$ between cell lines and even chromosomes, and find that their mechanistic model can explain each case using variable concentrations of binders which causes phase-switching between open and compacted chromatin, with fractal globule existing at the phase transition boundary.
+
+This model offers broad explanatory power for a range of observed power law coefficients ($\alpha$) and from simple underpinnings, but critics point out that simulations were performed on a polymer composed of just 500 monomers.
 
 \section{Criticisms of C-methods}
 
-% For
-% in Lieberman: s^{1/3}  == sclaing observed in 3D FISH (500 kb < 2 Mb)
+% For 
+% in Lieberman: s^{1/3}  == scaling observed in 3D FISH (500 kb < 2 Mb)
 
 Compare / contrast C-methods and FISH, Bickmore lab papers.
 
 \section{Machine learning in genomics}
 
-Machine learning offers a powerful framework for understanding complex datasets, such as those produced in large-scale genomics studies.\cite{Libbrecht2015} Problems in the field such as gene prediction and inferring regulatory networks can be approached by employing a learning algorithm, either in a supervised way based on a known truth set, or through unsupervised methods aimed at pattern detection or clustering. If a successful predictive model can be built, it can then be dissected to explore statistical rules which may impart novel biological insight.
+Machine learning offers a powerful framework for understanding complex datasets, such as those produced in large-scale genomics studies.\cite{Libbrecht2015} Problems in the field such as gene prediction and inferring regulatory networks can be approached by employing a learning algorithm, either in a supervised way based on a known truth set, or through unsupervised methods aimed at pattern detection or clustering. If a successful predictive model can be built, it can then be dissected to explore statistical rules which may impart novel biological insight. As a toy example, learning a highly-accurate model of enhancer prediction could itself identify novel epigenetic marks indicative of enhancers, generating testable hypotheses about how 
 
 The link between epigenomic features and local chromatin state has been
 analysed computationally in a number of publications, notably in
