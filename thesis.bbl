@@ -1,5 +1,15 @@
-\begin{thebibliography}{64}
+\begin{thebibliography}{68}
 \providecommand{\natexlab}[1]{#1}
+
+\bibitem[{de~Wit and de~Laat(2012)}]{DeWit2012}
+de~Wit E, de~Laat W (2012) {A decade of 3C technologies: insights into nuclear
+  organization.}
+\newblock \emph{Genes \& development}, \textbf{26}(1): 11--24.
+
+\bibitem[{van Steensel and Dekker(2010)}]{VanSteensel2010}
+van Steensel B, Dekker J (2010) {Genomics tools for unraveling chromosome
+  architecture.}
+\newblock \emph{Nature biotechnology}, \textbf{28}(10): 1089--1095.
 
 \bibitem[{Dekker \emph{et~al.}(2002)Dekker, Rippe, Dekker and
   Kleckner}]{Dekker2002}
@@ -140,6 +150,15 @@ Mirny La (2011) {The fractal globule as a model of chromatin architecture in
 Grosberg AY, Nechaev S, Shakhnovich E (1988) {The role of topological
   constraints in the kinetics of collapse of macromolecules}.
 \newblock \emph{Journal de Physique}, \textbf{49}(12): 2095--2100.
+
+\bibitem[{Phillips and Corces(2009)}]{Phillips2009}
+Phillips JE, Corces VG (2009) {CTCF: Master Weaver of the Genome}.
+\newblock \emph{Cell}, \textbf{137}(7): 1194--1211.
+
+\bibitem[{Libbrecht and Noble(2015)}]{Libbrecht2015}
+Libbrecht MW, Noble WS (2015) {Machine learning applications in genetics and
+  genomics}.
+\newblock \emph{Nature Reviews Genetics}, \textbf{16}(6): 321--332.
 
 \bibitem[{Ernst and Kellis(2012)}]{Ernst2012}
 Ernst J, Kellis M (2012) {ChromHMM: automating chromatin-state discovery and
