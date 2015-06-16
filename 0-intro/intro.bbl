@@ -1,5 +1,15 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
+
+\bibitem[{de~Wit and de~Laat(2012)}]{DeWit2012}
+de~Wit E, de~Laat W (2012) {A decade of 3C technologies: insights into nuclear
+  organization.}
+\newblock \emph{Genes \& development}, \textbf{26}(1): 11--24.
+
+\bibitem[{van Steensel and Dekker(2010)}]{VanSteensel2010}
+van Steensel B, Dekker J (2010) {Genomics tools for unraveling chromosome
+  architecture.}
+\newblock \emph{Nature biotechnology}, \textbf{28}(10): 1089--1095.
 
 \bibitem[{Dekker \emph{et~al.}(2002)Dekker, Rippe, Dekker and
   Kleckner}]{Dekker2002}

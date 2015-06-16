@@ -5,50 +5,50 @@ The style file: thesis.bst
 A level-1 auxiliary file: 0-intro/intro.aux
 Database file #1: /Users/benmoore/Documents/library.bib
 Database file #2: /Users/benmoore/Documents/customrefs.bib
-Warning--I didn't find a database entry for "Lieberman2011"
 Warning--I didn't find a database entry for "Chambers2012"
+Warning--I didn't find a database entry for "Lieberman2011"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--there's a number but no volume in Li2014
 Warning--there's a number but no volume in Mifsud2015
-You've used 64 entries,
+You've used 68 entries,
             3024 wiz_defined-function locations,
-            1036 strings with 22445 characters,
-and the built_in function-call counts, 93739 in all, are:
-= -- 9873
-> -- 2844
-< -- 21
-+ -- 2052
-- -- 727
-* -- 7048
-:= -- 10076
-add.period$ -- 129
-call.type$ -- 64
-change.case$ -- 320
-chr.to.int$ -- 65
-cite$ -- 66
-duplicate$ -- 9854
-empty$ -- 6716
-format.name$ -- 924
-if$ -- 19310
+            1060 strings with 23047 characters,
+and the built_in function-call counts, 97123 in all, are:
+= -- 10225
+> -- 2904
+< -- 25
++ -- 2092
+- -- 743
+* -- 7313
+:= -- 10481
+add.period$ -- 137
+call.type$ -- 68
+change.case$ -- 340
+chr.to.int$ -- 69
+cite$ -- 70
+duplicate$ -- 10188
+empty$ -- 6985
+format.name$ -- 960
+if$ -- 19999
 int.to.chr$ -- 3
-int.to.str$ -- 65
-missing$ -- 804
-newline$ -- 261
-num.names$ -- 192
-pop$ -- 4711
+int.to.str$ -- 69
+missing$ -- 840
+newline$ -- 277
+num.names$ -- 204
+pop$ -- 4854
 preamble$ -- 1
-purify$ -- 256
+purify$ -- 272
 quote$ -- 0
-skip$ -- 1641
+skip$ -- 1697
 stack$ -- 0
-substring$ -- 11801
-swap$ -- 2149
+substring$ -- 12188
+swap$ -- 2257
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 382
+type$ -- 406
 warning$ -- 2
-while$ -- 608
+while$ -- 632
 width$ -- 0
-write$ -- 772
+write$ -- 820
 (There were 4 warnings)
