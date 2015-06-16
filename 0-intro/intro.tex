@@ -38,6 +38,8 @@ With the advent DNA sequencing technology, new experimental methods emerged. Chr
 
 The rapid advancement of sequencing, allowed the original 3C method to be further developed, first through microarray technology, then using high-throughput sequencing. Two protocols were proposed for a 3C-inspired one-to-many assay\cite{Zhao2006, Simonis2006} (both named 4C), whereby interactions were measured for a specific ``viewpoint" fragment against all other restriction fragments genome-wide. The same year a many-to-many assay (5C) allowed measurements for all restriction fragments within a specified region.\cite{Dostie2006} 
 
+% C-methods cartoon
+
 The final step was an all-versus-all assay, capable of assaying pairwise interaction frequencies between all restriction fragments of a genome. This assay was published by Lieberman Aiden \emph{et al.}\cite{Lieberman2009} and named Hi-C. The Hi-C method added biotin tagging to pull-down only ligated fragments for sequencing. At the time of publication, resolution of Hi-C data for analysis was limited by sequencing depth, given the huge number of restriction fragments produced by a 6-cutter enzyme (HindIII and NcoI were used in \cite{Lieberman2009}) but the falling costs of sequencing and proven utility of the assay meant subsequent Hi-C papers incrementally increased their sequencing depth, to a point where analysis could be performed at the level of individual restriction fragments, genome-wide.\cite{Dixon2012,  Selvaraj2013a, Jin2013, Rao2014}
 
 \subsection{Hi-C variants}
@@ -62,7 +64,15 @@ In the paper describing the Hi-C technique,\cite{Lieberman2009}  Lieberman-Aiden
   al.} described low-resolution structures they name  ``A'' and ``B'' nuclear compartments. These are regions with a median size of around 5 megabases which showed properties typical
 of euchromatin and heterochromatin, respectively. A compartments were observed through 3D-FISH to be centrally-positioned in the nucleus and  ChIP-seq data showed several hallmarks of transcriptional activity. B compartments, conversely, were heterochromatic and lamina-associated regions, with little transcription and repressive histone modifications such as H3k9me3.\cite{Lieberman2009, DeWit2012} As expected from positioning data, the co-location of compartment types is also visible in their contact maps. \\
 
-{\color{red} Figure: correlation matrix of contacts with eigenvector profile} \\
+\begin{figure}
+\begin{center}
+\includegraphics[width=.75\textwidth]{figs/eigcalc.png}
+\captionsetup{width=\textwidth}
+\caption{ {\bf Calculation of A/B compartments from Hi-C correlation matrices.} 
+ Placeholder figure.
+}\label{fig:eigcalc}
+\end{center}
+\end{figure} 
 
 These compartments were identified through a continuous eigenvector profile, derived from a normalised Hi-C contact matrix.\cite{Lieberman2009} Importantly, this measure holds more information than a simple two-state classification, rather the continuous values can be interpreted as relative levels of compaction or activity.\cite{Dekker2013, Imakaev2012}
 
@@ -71,6 +81,8 @@ These compartments were identified through a continuous eigenvector profile, der
 The falling cost of high-throughput sequencing enabled increasingly deep sequencing of Hi-C experiments. Sequencing is the main resolution-limiting resource for this assay, as to increase the analysis resolution and maintain the level of coverage requires an exponential increase in the total amount of sequencing required.\cite{Lieberman2009}
 
 In experiments totalling around two billion total sequencing reads, Dixon \emph{et al.}\cite{Dixon2012} produced Hi-C contact maps in human and mouse cell lines at 40 kb resolution. The authors noticed smaller domains they designated "topological associative domains" (or TADs) which were observable as self-interacting, off-diagonal blocks of higher-than-expected self-interaction frequency. They defined a domain calling algorithm based on the directional bias of a genomic region's contacts, and used a Hidden Markov Model to infer blocks of strongly up- or downstream-biased, reasoning that domain boundaries are present when a strongly upstream biased region is adjacent to a region of opposite bias. These boundaries themselves were investigated and were found to display suggestive functional enrichments for DNA binding proteins including CTCF, long thought to act as an insulator of chromatin state.
+
+% schematic of TAD calling algorithm ?
 
 Dixon \emph{et al.}\cite{Dixon2012} also performed some comparative analysis, reporting large and significant overlap of domain boundary positions both within species and between human and mouse cell lines.
 
@@ -93,6 +105,8 @@ dynamics of chromatin folding.
 \subsection{Fractal globule}
 Lieberman Aiden \emph{ et al.}\cite{Lieberman2009} tested a number of theoretical models of genome folding to see which best explained the observed power-law scaling between distance and observed contact frequency ($IF =  1 / dist^{-\alpha}$ where $\alpha \approx 1.08$).  The authors sought to distinguish two previously-described models of genome organisation: the "fractal globule" and "equilibrium globule". The authors found that a theoretical fractal globule, embodying scale-independent self-similar aggregate folding, better fit the observed data than an equilibrium globule null model where simulated polymer folding was allowed to proceed unchecked.
 
+% cartoon of fractal globule ?
+
 The fractal globule model was noted for its appealing functional properties. Under this model, for example, the polymer folds are knot-free hence could facilitate local dynamics of repression and activation without wider disruption. Despite this appeal, the authors were careful to state that while their simulations show good agreement with observed data, this does not preclude other organisational models from having similar or greater explanatory power.\cite{Lieberman2009}
 
 \subsection{Strings and binders switch}
@@ -100,6 +114,10 @@ The fractal globule model was noted for its appealing functional properties. Und
 Subsequent modelling techniques integrated known biological phenomena as well as polymer models. This formed the basis of Barbieri \emph{et al.}'s\cite{Barbieri2012} ``strings and binders switch" (SBS) model, where the authors simulated polymer folding in the presence of DNA binding factors, such as the known genome organiser CCCTC-binding factor (CTCF).\cite{Phillips2009} This organisational model was developed in an attempt to consolidate global Hi-C measures of contact scaling with C-based experiments on smaller regions and FISH studies, which found a range of scaling parameters. The authors also explore the different values of $\alpha$ between cell lines and even chromosomes, and find that their mechanistic model can explain each case using variable concentrations of binders which causes phase-switching between open and compacted chromatin, with fractal globule existing at the phase transition boundary.
 
 This model offers broad explanatory power for a range of observed power law coefficients ($\alpha$) and from simple underpinnings, but critics point out that simulations were performed on a polymer composed of just 500 monomers.
+
+\subsection{Looping}
+
+
 
 \section{Criticisms of C-methods}
 
@@ -140,6 +158,8 @@ aggregate levels of various histone marks and DNA binding
 proteins. Dissection of the resulting models was then used as a
 means of gleaning biological insights into the basis of higher order
 structure and of highlighting important differences between cell types.
+
+% machine learning schematic for (e.g.) chromHMM ?
 
 \section{Aims}
 
