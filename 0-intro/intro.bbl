@@ -1,5 +1,11 @@
-\begin{thebibliography}{35}
+\begin{thebibliography}{36}
 \providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
+Pombo A, Dillon N (2015) {Three-dimensional genome architecture: players and
+  mechanisms}.
+\newblock \emph{Nature Reviews Molecular Cell Biology}, \textbf{16}(4):
+  245--257.
 
 \bibitem[{Naumova \emph{et~al.}(2013)Naumova, Imakaev, Fudenberg, Zhan, Lajoie,
   Mirny and Dekker}]{Naumova2013}
