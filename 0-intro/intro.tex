@@ -74,10 +74,10 @@ of euchromatin and heterochromatin, respectively. A compartments were observed t
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=.85\textwidth]{figs/eigcalc.pdf}
+\includegraphics[width=.75\textwidth]{figs/eigcalc.png}
 \captionsetup{width=\textwidth}
-\caption{ {\bf Calculation of A/B compartments from Hi-C  matrices.} 
-First \emph{observed} interaction frequencies (O) are averaged across their diagonals, to give a distance-normalised \emph{expected} matrix (E). The Pearson correlation of the O/E matrix then can undergo eigenvector expansion, and that eigenvector $\mathbf{v}$ with the largest eigenvalue, $\lambda$, will reflect A/B compartmentalisation.\cite{Lieberman2009}
+\caption{ {\bf Derivation of A/B compartment profile from Hi-C data.} 
+Observed interaction frequencies (O) are averaged along super-diagonals to give a distance-normalised expected matrix (E). The Pearson correlation of the O/E matrix then can undergo eigenvector expansion; in most cases eigenvector $\mathbf{v}$ with the largest eigenvalue, $\lambda$, then reflects A/B compartmentalisation.\cite{Lieberman2009}
 }\label{fig:eigcalc}
 \end{center}
 \end{figure} 
@@ -92,10 +92,9 @@ In experiments totalling around two billion total sequencing reads, Dixon \emph{
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=.88\textwidth]{figs/di_example.png}
+\includegraphics[width=.5\textwidth]{figs/di_example.png}
 \captionsetup{width=1.2\textwidth}
-\caption{ {\bf Topological domain calling algorithm. } 
-Overview of Dixon \emph{et al.}'s\cite{Dixon2012} pipeline for calling topological associating domains (TADs). First a directionality index (DI) is calculated for each bin based on the ratio of upstream:downstream contacts. Secondly a Hidden Markov Model (HMM) is used to infer the most likely state sequence that emitted the DI variable. Finally a simple rule is applied whereby a run of high-confidence upstream-biased state calls marks the end of a domain. New domains begin with any subsequent downstream-biased state. Gaps between TAD calls can be observed, and as labelled border regions up to a size threshold of 400 kb, whereafter those regions are unclassified.\cite{Dixon2012}
+\caption{ {\bf Dixon \emph{et al.}\cite{Dixon2012} pipeline for calling topological associating domains (TADs).} First a directionality index (DI) is calculated for each bin based on the ratio of upstream:downstream contacts. Secondly a Hidden Markov Model (HMM) is used to infer the most likely state sequence that emitted the DI variable. Finally a simple rule is applied whereby a run of high-confidence upstream-biased state calls marks the end of a domain. New domains begin with any subsequent downstream-biased state. Gaps between TAD calls can be observed, and as labelled border regions up to a size threshold of 400 kb, whereafter those regions are unclassified.\cite{Dixon2012}
 }\label{fig:dicalc}
 \end{center}
 \end{figure} 
