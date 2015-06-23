@@ -11,7 +11,8 @@
 \contentsline {subsection}{\numberline {1.2.1}Fractal globule}{8}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}Strings and binders switch}{8}{subsection.1.2.2}
 \contentsline {subsection}{\numberline {1.2.3}Looping}{8}{subsection.1.2.3}
-\contentsline {section}{\numberline {1.3}Criticisms of C-methods}{8}{section.1.3}
+\contentsline {subsection}{\numberline {1.2.4}Cell cycle changes}{8}{subsection.1.2.4}
+\contentsline {section}{\numberline {1.3}Criticisms of C-methods}{9}{section.1.3}
 \contentsline {section}{\numberline {1.4}Machine learning in genomics}{9}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}ENCODE}{9}{subsection.1.4.1}
 \contentsline {section}{\numberline {1.5}Aims}{10}{section.1.5}
@@ -50,6 +51,19 @@
 \contentsline {subsection}{\numberline {4.4.1}Cross-application}{24}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Variable importance}{24}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Correlating input features}{24}{subsection.4.4.3}
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Predictive modelling of transcription and chromatin organisation}}{25}{chapter.5}
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Predictive modelling of transcription and chromatin organisation}}{26}{chapter.6}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Predictive modelling of transcription and chromatin organisation}}{27}{chapter.7}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Chromatin domain boundaries}}{25}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{25}{section.5.1}
+\contentsline {section}{\numberline {5.2}TAD and compartment boundaries}{26}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}CTCF and YY1}{26}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}De novo boundary prediction}{26}{section.5.3}
+\contentsline {section}{\numberline {5.4}MetaTAD boundaries}{26}{section.5.4}
+\contentsline {section}{\numberline {5.5}Other boundaries}{26}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Giemsa bands}{26}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Superboundaries}{26}{subsection.5.5.2}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {4C and 5C analysis}}{27}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{27}{section.6.1}
+\contentsline {section}{\numberline {6.2}4C of the ZRS enhancer}{27}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}3D modelling}{27}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.3}5C in the HoxD region}{27}{section.6.3}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{28}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclusion}{29}{section.7.1}
