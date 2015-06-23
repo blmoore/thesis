@@ -15,7 +15,7 @@
 
 % title setup
 \title{ \vspace{3in} Unravelling higher order genome organisation {\small [working
-    title]} \\ \vspace{2em} {\large {\bf Introduction}} }
+    title]} \\ \vspace{2em} {\large {\bf Results 3: Domain boundaries}} }
 \author{Benjamin L. Moore}
 \titlepic{\vspace{2.2in} \includegraphics[width=\textwidth]{/Users/benmoore/hvl/1yrReport/figs/igmm.png}}
 
@@ -23,14 +23,43 @@
 
 \maketitle
 
-\chapter{Predictive modelling of transcription and chromatin organisation}
+\chapter{Chromatin domain boundaries}
 
-Hello
+\section{Introduction}
 
-\ifstandalone
+Multiple studies have defined chromatin domains of different types, for example: chromosome compartments;\cite{Lieberman2009} topological associating domains (TADs);\cite{Dixon2012} contact and loop domains;\cite{Rao2014} physical domains;\cite{Sexton2012, Hou2012} and others.\cite{Filippova2014} The existence of these domains necessitates "boundary regions" either between consecutive domains or bookending more sparsely-positioned domains, however the functional relevance of said boundary regions is still open to debate.
+
+In their study of topological domains, Dixon \emph{et al.} identified average enrichments over TAD boundary regions in both human and mouse for various features including CTCF and Pol2.\cite{Dixon2012} Boundaries were also enriched for signs of active transcription, such as with the histone modification H3k36me3. These results, coupled with an observable enrichment for promoters at domain boundaries, have lead to the theory that boundaries may act as an additional layer of transcriptional control,\cite{Sexton2015} however an alternative theory could be that looping between enhancer elements and promoters results in an observable boundary through C-method experiments.\cite{Rao2014} Another non-exclusive explanation is that if chromatin domains represent co-regulatory regions,\cite{LeDily2014, Nora2013} boundaries themselves could be mere side-effects and as such of limited biological interest.
+
+An obvious experiment to resolve these opposing theories would be to delete a predicted boundary region and test for local changes in both contacts and expression. Such an experiment was performed on a region of the human X-chromosome containing the genes encoding the dosage-compensation long non-coding RNAs Xist and Tsix, which are separated by a TAD boundary.\cite{Nora2012} This study found that while histone modifications within the body of a TAD could be removed without affecting the structure, deletion of a boundary did have an effect and lead to increased intradomain contacts.\cite{Nora2012} Surpsingingly however, this effect was not total and some observable barrier remained, lending evidence that TADs may be centrally constrained, rather than by their borders.\cite{Nora2012} 
+
+A second experiment used CRISPR genome editing to link TAD boundary changes with limb development disorders,\cite{Lupianez2015} indicating that boundary changes could provide an underlying explanation for pathogenic non-coding structural variants.\cite{Ren2015} Similarly, domain boundaries on X-chromosomes were found to be weakened following the disruption of condensation binding sites.\cite{Crane2015} Together these studies suggest a complex scenario whereby TAD boundaries are an important structural feature, yet do not fully explain domain partitioning.
+
+Computational analysis of boundaries has emerged during the time this work was completed. Border "strength", here defined by the ratio of total intra:inter-domain contacts, was found to correlate with increased occupancy of a combination of bound architectural proteins.\cite{VanBortle2014}
+
+Many questions remain about chromatin boundaries. For example, are the observed enrichments persistent across cell types and how do they compare across organisation strata, such as compartments and TADs? Through computational analysis of the set of boundaries re-called from published datasets, we can investigate these questions and probe boundary enrichments across a broad array of locus-level chromatin features.
+
+\section{TAD and compartment boundaries}
+
+\subsection{CTCF and YY1}
+
+\section{De novo boundary prediction}
+
+\section{MetaTAD boundaries}
+
+\section{Other boundaries}
+
+\subsection{Giemsa bands}
+
+\subsection{Superboundaries}
+
+Thus far compartment and TAD boundaries have been considered separately, however it is of interest to consider how these boundary regions interact across scales. Open questions remain about the co-occurence of these two boundary regions, and whether 
+
+
+%\ifstandalone
 \begin{small}
 \bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
 \end{small}
-\fi
+%\fi
 
 \end{document}
