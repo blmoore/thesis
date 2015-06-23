@@ -1,5 +1,17 @@
-\begin{thebibliography}{68}
+\begin{thebibliography}{75}
 \providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
+Pombo A, Dillon N (2015) {Three-dimensional genome architecture: players and
+  mechanisms}.
+\newblock \emph{Nature Reviews Molecular Cell Biology}, \textbf{16}(4):
+  245--257.
+
+\bibitem[{Naumova \emph{et~al.}(2013)Naumova, Imakaev, Fudenberg, Zhan, Lajoie,
+  Mirny and Dekker}]{Naumova2013}
+Naumova N, Imakaev M, Fudenberg G, Zhan Y, Lajoie BR, Mirny La, Dekker J (2013)
+  {Organization of the mitotic chromosome.}
+\newblock \emph{Science (New York, N.Y.)}, \textbf{342}(6161): 948--53.
 
 \bibitem[{de~Wit and de~Laat(2012)}]{DeWit2012}
 de~Wit E, de~Laat W (2012) {A decade of 3C technologies: insights into nuclear
@@ -81,6 +93,11 @@ Yaffe E, Tanay A (2011) {Probabilistic modeling of Hi-C contact maps eliminates
   systematic biases to characterize global chromosomal architecture.}
 \newblock \emph{Nature genetics}, \textbf{43}(11): 1059--65.
 
+\bibitem[{Hu \emph{et~al.}(2013)Hu, Deng, Qin and Liu}]{Hu2013}
+Hu M, Deng K, Qin Z, Liu JS (2013) {Understanding spatial organizations of
+  chromosomes via statistical analysis of Hi-C data}.
+\newblock \emph{Quantitative Biology}, \textbf{1}(2): 156--174.
+
 \bibitem[{Imakaev \emph{et~al.}(2012)Imakaev, Fudenberg, McCord, Naumova,
   Goloborodko, Lajoie, Dekker and Mirny}]{Imakaev2012}
 Imakaev M, Fudenberg G, McCord RP, Naumova N, Goloborodko A, Lajoie BR, Dekker
@@ -130,6 +147,13 @@ Filippova D, Patro R, Duggal G, Kingsford C (2014) {Identification of
   alternative topological domains in chromatin.}
 \newblock \emph{Algorithms for molecular biology : AMB}, \textbf{9}: 14.
 
+\bibitem[{Sexton \emph{et~al.}(2012)Sexton, Yaffe, Kenigsberg, Bantignies,
+  Leblanc, Hoichman, Parrinello, Tanay and Cavalli}]{Sexton2012}
+Sexton T, Yaffe E, Kenigsberg E, Bantignies F, Leblanc B, Hoichman M,
+  Parrinello H, Tanay A, Cavalli G (2012) {Three-dimensional folding and
+  functional organization principles of the Drosophila genome.}
+\newblock \emph{Cell}, \textbf{148}(3): 458--72.
+
 \bibitem[{Barbieri \emph{et~al.}(2012)Barbieri, Chotalia, Fraser, Lavitas,
   Dostie, Pombo and Nicodemi}]{Barbieri2012}
 Barbieri M, Chotalia M, Fraser J, Lavitas LM, Dostie J, Pombo A, Nicodemi M
@@ -154,6 +178,23 @@ Grosberg AY, Nechaev S, Shakhnovich E (1988) {The role of topological
 \bibitem[{Phillips and Corces(2009)}]{Phillips2009}
 Phillips JE, Corces VG (2009) {CTCF: Master Weaver of the Genome}.
 \newblock \emph{Cell}, \textbf{137}(7): 1194--1211.
+
+\bibitem[{Williamson \emph{et~al.}(2014)Williamson, Berlivet, Eskeland, Boyle,
+  Illingworth, Paquette and Bickmore}]{Williamson2014}
+Williamson I, Berlivet S, Eskeland R, Boyle S, Illingworth RS, Paquette D,
+  Bickmore WA (2014) {Spatial genome organization: contrasting views from
+  chromosome conformation capture and fluorescence in situ hybridization}.
+\newblock pp. 2778--2791.
+
+\bibitem[{Shavit \emph{et~al.}(2014)Shavit, Hamey and Lio'}]{Shavit2014}
+Shavit Y, Hamey FK, Lio' P (2014) {FisHiCal: an R package for iterative
+  FISH-based calibration of Hi-C data.}
+\newblock \emph{Bioinformatics (Oxford, England)}, pp. btu491--.
+
+\bibitem[{Gavrilov \emph{et~al.}(2013)Gavrilov, Golov and Razin}]{Gavrilov2013}
+Gavrilov Aa, Golov AK, Razin SV (2013) {Actual ligation frequencies in the
+  chromosome conformation capture procedure.}
+\newblock \emph{PloS one}, \textbf{8}(3): e60403.
 
 \bibitem[{Libbrecht and Noble(2015)}]{Libbrecht2015}
 Libbrecht MW, Noble WS (2015) {Machine learning applications in genetics and
