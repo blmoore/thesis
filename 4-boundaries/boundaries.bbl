@@ -1,0 +1,98 @@
+\begin{thebibliography}{14}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
+  Williams, Imakaev, Ragoczy, Telling, Amit, Lajoie, Sabo
+  \emph{et~al.}}]{Lieberman2009}
+Lieberman-Aiden E, van Berkum NL, Williams L, Imakaev M, Ragoczy T, Telling A,
+  Amit I, Lajoie BR, Sabo PJ, \emph{et~al.} (2009) {Comprehensive mapping of
+  long-range interactions reveals folding principles of the human genome.}
+\newblock \emph{Science}, \textbf{326}(5950): 289--93.
+
+\bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
+  and Ren}]{Dixon2012}
+Dixon JR, Selvaraj S, Yue F, Kim A, Li Y, Shen Y, Hu M, Liu JS, Ren B (2012)
+  {Topological domains in mammalian genomes identified by analysis of chromatin
+  interactions.}
+\newblock \emph{Nature}, \textbf{485}(7398): 376--80.
+
+\bibitem[{Rao \emph{et~al.}(2014)Rao, Huntley, Durand, Stamenova, Bochkov,
+  Robinson, Sanborn, Machol, Omer \emph{et~al.}}]{Rao2014}
+Rao S, Huntley M, Durand N, Stamenova E, Bochkov I, Robinson J, Sanborn A,
+  Machol I, Omer A, \emph{et~al.} (2014) {A 3D Map of the Human Genome at
+  Kilobase Resolution Reveals Principles of Chromatin Looping}.
+\newblock \emph{Cell}, \textbf{159}(7): 1665--1680.
+
+\bibitem[{Sexton \emph{et~al.}(2012)Sexton, Yaffe, Kenigsberg, Bantignies,
+  Leblanc, Hoichman, Parrinello, Tanay and Cavalli}]{Sexton2012}
+Sexton T, Yaffe E, Kenigsberg E, Bantignies F, Leblanc B, Hoichman M,
+  Parrinello H, Tanay A, Cavalli G (2012) {Three-dimensional folding and
+  functional organization principles of the Drosophila genome.}
+\newblock \emph{Cell}, \textbf{148}(3): 458--72.
+
+\bibitem[{Hou \emph{et~al.}(2012)Hou, Li, Qin and Corces}]{Hou2012}
+Hou C, Li L, Qin ZS, Corces VG (2012) {Gene Density, Transcription, and
+  Insulators Contribute to the Partition of the Drosophila Genome into Physical
+  Domains}.
+\newblock \emph{Molecular Cell}, \textbf{48}(3): 471--484.
+
+\bibitem[{Filippova \emph{et~al.}(2014)Filippova, Patro, Duggal and
+  Kingsford}]{Filippova2014}
+Filippova D, Patro R, Duggal G, Kingsford C (2014) {Identification of
+  alternative topological domains in chromatin.}
+\newblock \emph{Algorithms for molecular biology : AMB}, \textbf{9}: 14.
+
+\bibitem[{Sexton and Cavalli(2015)}]{Sexton2015}
+Sexton T, Cavalli G (2015) {Review The Role of Chromosome Domains in Shaping
+  the Functional Genome}.
+\newblock \emph{Cell}, \textbf{160}(6): 1049--1059.
+
+\bibitem[{{Le Dily} \emph{et~al.}(2014){Le Dily}, Bau, Pohl, Vicent, Serra,
+  Soronellas, Castellano, Wright, Ballare \emph{et~al.}}]{LeDily2014}
+{Le Dily} F, Bau D, Pohl a, Vicent GP, Serra F, Soronellas D, Castellano G,
+  Wright RHG, Ballare C, \emph{et~al.} (2014) {Distinct structural transitions
+  of chromatin topological domains correlate with coordinated hormone-induced
+  gene regulation}.
+\newblock \emph{Genes \& Development}, \textbf{28}(19): 2151--2162.
+
+\bibitem[{Nora \emph{et~al.}(2013)Nora, Dekker and Heard}]{Nora2013}
+Nora EP, Dekker J, Heard E (2013) {Segmental folding of chromosomes: A basis
+  for structural and regulatory chromosomal neighborhoods?}
+\newblock \emph{BioEssays}, \textbf{35}(9): 818--828.
+
+\bibitem[{Nora \emph{et~al.}(2012)Nora, Lajoie, Schulz, Giorgetti, Okamoto,
+  Servant, Piolot, van Berkum, Meisig \emph{et~al.}}]{Nora2012}
+Nora EP, Lajoie BR, Schulz EG, Giorgetti L, Okamoto I, Servant N, Piolot T, van
+  Berkum NL, Meisig J, \emph{et~al.} (2012) {Spatial partitioning of the
+  regulatory landscape of the X-inactivation centre.}
+\newblock \emph{Nature}, \textbf{485}(7398): 381--5.
+
+\bibitem[{Lupi\'{a}\~{n}ez \emph{et~al.}(2015)Lupi\'{a}\~{n}ez, Kraft,
+  Heinrich, Krawitz, Brancati, Klopocki, Horn, Kayserili, Opitz
+  \emph{et~al.}}]{Lupianez2015}
+Lupi\'{a}\~{n}ez D, Kraft K, Heinrich V, Krawitz P, Brancati F, Klopocki E,
+  Horn D, Kayserili H, Opitz J, \emph{et~al.} (2015) {Disruptions of
+  Topological Chromatin Domains Cause Pathogenic Rewiring of Gene-Enhancer
+  Interactions}.
+\newblock \emph{Cell}, pp. 1012--1025.
+
+\bibitem[{Ren and Dixon(2015)}]{Ren2015}
+Ren B, Dixon J (2015) {A CRISPR Connection between Chromatin Topology and
+  Genetic Disorders}.
+\newblock \emph{Cell}, \textbf{161}(5): 955--957.
+
+\bibitem[{Crane \emph{et~al.}(2015)Crane, Bian, McCord, Lajoie, Wheeler,
+  Ralston, Uzawa, Dekker and Meyer}]{Crane2015}
+Crane E, Bian Q, McCord RP, Lajoie BR, Wheeler BS, Ralston EJ, Uzawa S, Dekker
+  J, Meyer BJ (2015) {Condensin-driven remodelling of X chromosome topology
+  during dosage compensation}.
+\newblock \emph{Nature}.
+
+\bibitem[{{Van Bortle} \emph{et~al.}(2014){Van Bortle}, Nichols, Li, Ong,
+  Takenaka, Qin and Corces}]{VanBortle2014}
+{Van Bortle} K, Nichols MH, Li L, Ong CT, Takenaka N, Qin ZS, Corces VG (2014)
+  {Insulator function and topological domain border strength scale with
+  architectural protein occupancy.}
+\newblock \emph{Genome biology}, \textbf{15}(5): R82.
+
+\end{thebibliography}

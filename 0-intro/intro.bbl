@@ -1,4 +1,4 @@
-\begin{thebibliography}{36}
+\begin{thebibliography}{37}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -140,6 +140,12 @@ Mifsud B, Tavares-Cadete F, Young AN, Sugar R, Schoenfelder S, Ferreira L,
   Wingett SW, Andrews S, Grey W, \emph{et~al.} (2015) {Mapping long-range
   promoter contacts in human cells with high-resolution capture Hi-C}.
 \newblock \emph{Nature Genetics}, (April): 1--12.
+
+\bibitem[{Tanay and Cavalli(2013)}]{Tanay2013}
+Tanay A, Cavalli G (2013) {Chromosomal domains: epigenetic contexts and
+  functional implications of genomic compartmentalization.}
+\newblock \emph{Current opinion in genetics \& development}, \textbf{23}(2):
+  197--203.
 
 \bibitem[{Filippova \emph{et~al.}(2014)Filippova, Patro, Duggal and
   Kingsford}]{Filippova2014}
