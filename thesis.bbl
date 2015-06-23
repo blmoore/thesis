@@ -1,4 +1,4 @@
-\begin{thebibliography}{75}
+\begin{thebibliography}{90}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -140,6 +140,12 @@ Mifsud B, Tavares-Cadete F, Young AN, Sugar R, Schoenfelder S, Ferreira L,
   Wingett SW, Andrews S, Grey W, \emph{et~al.} (2015) {Mapping long-range
   promoter contacts in human cells with high-resolution capture Hi-C}.
 \newblock \emph{Nature Genetics}, (April): 1--12.
+
+\bibitem[{Tanay and Cavalli(2013)}]{Tanay2013}
+Tanay A, Cavalli G (2013) {Chromosomal domains: epigenetic contexts and
+  functional implications of genomic compartmentalization.}
+\newblock \emph{Current opinion in genetics \& development}, \textbf{23}(2):
+  197--203.
 
 \bibitem[{Filippova \emph{et~al.}(2014)Filippova, Patro, Duggal and
   Kingsford}]{Filippova2014}
@@ -461,5 +467,97 @@ Karli\'{c} R, Chung Hr, Lasserre J, Vlahovicek K, Vingron M (2010) {Histone
   modification levels are predictive for gene expression.}
 \newblock \emph{Proceedings of the National Academy of Sciences of the United
   States of America}, \textbf{107}(7): 2926--31.
+
+\bibitem[{Hou \emph{et~al.}(2012)Hou, Li, Qin and Corces}]{Hou2012}
+Hou C, Li L, Qin ZS, Corces VG (2012) {Gene Density, Transcription, and
+  Insulators Contribute to the Partition of the Drosophila Genome into Physical
+  Domains}.
+\newblock \emph{Molecular Cell}, \textbf{48}(3): 471--484.
+
+\bibitem[{Sexton and Cavalli(2015)}]{Sexton2015}
+Sexton T, Cavalli G (2015) {Review The Role of Chromosome Domains in Shaping
+  the Functional Genome}.
+\newblock \emph{Cell}, \textbf{160}(6): 1049--1059.
+
+\bibitem[{{Le Dily} \emph{et~al.}(2014){Le Dily}, Bau, Pohl, Vicent, Serra,
+  Soronellas, Castellano, Wright, Ballare \emph{et~al.}}]{LeDily2014}
+{Le Dily} F, Bau D, Pohl a, Vicent GP, Serra F, Soronellas D, Castellano G,
+  Wright RHG, Ballare C, \emph{et~al.} (2014) {Distinct structural transitions
+  of chromatin topological domains correlate with coordinated hormone-induced
+  gene regulation}.
+\newblock \emph{Genes \& Development}, \textbf{28}(19): 2151--2162.
+
+\bibitem[{Nora \emph{et~al.}(2013)Nora, Dekker and Heard}]{Nora2013}
+Nora EP, Dekker J, Heard E (2013) {Segmental folding of chromosomes: A basis
+  for structural and regulatory chromosomal neighborhoods?}
+\newblock \emph{BioEssays}, \textbf{35}(9): 818--828.
+
+\bibitem[{Nora \emph{et~al.}(2012)Nora, Lajoie, Schulz, Giorgetti, Okamoto,
+  Servant, Piolot, van Berkum, Meisig \emph{et~al.}}]{Nora2012}
+Nora EP, Lajoie BR, Schulz EG, Giorgetti L, Okamoto I, Servant N, Piolot T, van
+  Berkum NL, Meisig J, \emph{et~al.} (2012) {Spatial partitioning of the
+  regulatory landscape of the X-inactivation centre.}
+\newblock \emph{Nature}, \textbf{485}(7398): 381--5.
+
+\bibitem[{Lupi\'{a}\~{n}ez \emph{et~al.}(2015)Lupi\'{a}\~{n}ez, Kraft,
+  Heinrich, Krawitz, Brancati, Klopocki, Horn, Kayserili, Opitz
+  \emph{et~al.}}]{Lupianez2015}
+Lupi\'{a}\~{n}ez D, Kraft K, Heinrich V, Krawitz P, Brancati F, Klopocki E,
+  Horn D, Kayserili H, Opitz J, \emph{et~al.} (2015) {Disruptions of
+  Topological Chromatin Domains Cause Pathogenic Rewiring of Gene-Enhancer
+  Interactions}.
+\newblock \emph{Cell}, pp. 1012--1025.
+
+\bibitem[{Ren and Dixon(2015)}]{Ren2015}
+Ren B, Dixon J (2015) {A CRISPR Connection between Chromatin Topology and
+  Genetic Disorders}.
+\newblock \emph{Cell}, \textbf{161}(5): 955--957.
+
+\bibitem[{Crane \emph{et~al.}(2015)Crane, Bian, McCord, Lajoie, Wheeler,
+  Ralston, Uzawa, Dekker and Meyer}]{Crane2015}
+Crane E, Bian Q, McCord RP, Lajoie BR, Wheeler BS, Ralston EJ, Uzawa S, Dekker
+  J, Meyer BJ (2015) {Condensin-driven remodelling of X chromosome topology
+  during dosage compensation}.
+\newblock \emph{Nature}.
+
+\bibitem[{{Van Bortle} \emph{et~al.}(2014){Van Bortle}, Nichols, Li, Ong,
+  Takenaka, Qin and Corces}]{VanBortle2014}
+{Van Bortle} K, Nichols MH, Li L, Ong CT, Takenaka N, Qin ZS, Corces VG (2014)
+  {Insulator function and topological domain border strength scale with
+  architectural protein occupancy.}
+\newblock \emph{Genome biology}, \textbf{15}(5): R82.
+
+\bibitem[{Ram \emph{et~al.}(2011)Ram, Goren, Amit, Shoresh, Yosef, Ernst,
+  Kellis, Gymrek, Issner \emph{et~al.}}]{Ram2011}
+Ram O, Goren A, Amit I, Shoresh N, Yosef N, Ernst J, Kellis M, Gymrek M, Issner
+  R, \emph{et~al.} (2011) {Combinatorial patterning of chromatin regulators
+  uncovered by genome-wide location analysis in human cells.}
+\newblock \emph{Cell}, \textbf{147}(7): 1628--39.
+
+\bibitem[{Zwang \emph{et~al.}(2012)Zwang, Oren and Yarden}]{Zwang2012}
+Zwang Y, Oren M, Yarden Y (2012) {Consistency test of the cell cycle: roles for
+  p53 and EGR1.}
+\newblock \emph{Cancer research}, \textbf{72}(5): 1051--4.
+
+\bibitem[{M\"{u}ller-Tidow \emph{et~al.}(2010)M\"{u}ller-Tidow, Klein, Hascher,
+  Isken, Tickenbrock, Thoennissen, Agrawal-Singh, Tschanter, Disselhoff
+  \emph{et~al.}}]{Muller-Tidow2010}
+M\"{u}ller-Tidow C, Klein HU, Hascher A, Isken F, Tickenbrock L, Thoennissen N,
+  Agrawal-Singh S, Tschanter P, Disselhoff C, \emph{et~al.} (2010) {Profiling
+  of histone H3 lysine 9 trimethylation levels predicts transcription factor
+  activity and survival in acute myeloid leukemia.}
+\newblock \emph{Blood}, \textbf{116}(18): 3564--71.
+
+\bibitem[{Hagmeyer \emph{et~al.}(1996)Hagmeyer, Duyndam, Angel, de~Groot,
+  Verlaan, Elfferich, van~der Eb and Zantema}]{Hagmeyer1996}
+Hagmeyer BM, Duyndam MC, Angel P, de~Groot RP, Verlaan M, Elfferich P, van~der
+  Eb A, Zantema A (1996) {Altered AP-1/ATF complexes in
+  adenovirus-E1-transformed cells due to EIA-dependent induction of ATF3.}
+\newblock \emph{Oncogene}, \textbf{12}: 1025--1032.
+
+\bibitem[{Ong and Corces(2014)}]{Ong2014}
+Ong CT, Corces VG (2014) {CTCF: an architectural protein bridging genome
+  topology and function.}
+\newblock \emph{Nature reviews. Genetics}, \textbf{15}(4): 234--46.
 
 \end{thebibliography}

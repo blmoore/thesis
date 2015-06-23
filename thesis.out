@@ -9,45 +9,59 @@
 \BOOKMARK [2][-]{subsection.1.2.1}{1.2.1 Fractal globule}{section.1.2}% 9
 \BOOKMARK [2][-]{subsection.1.2.2}{1.2.2 Strings and binders switch}{section.1.2}% 10
 \BOOKMARK [2][-]{subsection.1.2.3}{1.2.3 Looping}{section.1.2}% 11
-\BOOKMARK [1][-]{section.1.3}{1.3 Criticisms of C-methods}{chapter.1}% 12
-\BOOKMARK [1][-]{section.1.4}{1.4 Machine learning in genomics}{chapter.1}% 13
-\BOOKMARK [2][-]{subsection.1.4.1}{1.4.1 ENCODE}{section.1.4}% 14
-\BOOKMARK [1][-]{section.1.5}{1.5 Aims}{chapter.1}% 15
-\BOOKMARK [0][]{chapter.2}{2 Methods}{}% 16
-\BOOKMARK [1][-]{section.2.1}{2.1 Input data}{chapter.2}% 17
-\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Hi-C data}{section.2.1}% 18
-\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Locus-level features}{section.2.1}% 19
-\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Clustering input features}{section.2.1}% 20
-\BOOKMARK [1][-]{section.2.2}{2.2 Modelling}{chapter.2}% 21
-\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Random Forest}{section.2.2}% 22
-\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Model performance}{section.2.2}% 23
-\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Other modelling approaches}{section.2.2}% 24
-\BOOKMARK [2][-]{subsection.2.2.4}{2.2.4 Graphical lasso}{section.2.2}% 25
-\BOOKMARK [1][-]{section.2.3}{2.3 Variable regions}{chapter.2}% 26
-\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Stratification by variability}{section.2.3}% 27
-\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Enhancer enrichment}{section.2.3}% 28
-\BOOKMARK [1][-]{section.2.4}{2.4 Boundaries}{chapter.2}% 29
-\BOOKMARK [2][-]{subsection.2.4.1}{2.4.1 TADs}{section.2.4}% 30
-\BOOKMARK [2][-]{subsection.2.4.2}{2.4.2 Compartments}{section.2.4}% 31
-\BOOKMARK [2][-]{subsection.2.4.3}{2.4.3 MetaTADs}{section.2.4}% 32
-\BOOKMARK [1][-]{section.2.5}{2.5 Giemsa band comparison}{chapter.2}% 33
-\BOOKMARK [1][-]{section.2.6}{2.6 Nuclear positioning}{chapter.2}% 34
-\BOOKMARK [0][]{chapter.3}{3 Reanalysis of Hi-C datasets}{}% 35
-\BOOKMARK [1][-]{section.3.1}{3.1 Introduction}{chapter.3}% 36
-\BOOKMARK [1][-]{section.3.2}{3.2 Hi-C reprocessing}{chapter.3}% 37
-\BOOKMARK [1][-]{section.3.3}{3.3 Compartment profiles}{chapter.3}% 38
-\BOOKMARK [1][-]{section.3.4}{3.4 Domain calls}{chapter.3}% 39
-\BOOKMARK [1][-]{section.3.5}{3.5 Variable regions}{chapter.3}% 40
-\BOOKMARK [1][-]{section.3.6}{3.6 Nuclear positioning}{chapter.3}% 41
-\BOOKMARK [0][]{chapter.4}{4 Integrative modelling as a tool to explore biological systems}{}% 42
-\BOOKMARK [1][-]{section.4.1}{4.1 Introduction}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.2}{4.2 Reproducing Dong et al. }{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.3}{4.3 Modelling FANTOM5 CAGE timecourse data}{chapter.4}% 45
-\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Dissecting the best bin approach}{section.4.3}% 46
-\BOOKMARK [1][-]{section.4.4}{4.4 Modelling higher order chromatin}{chapter.4}% 47
-\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 Cross-application}{section.4.4}% 48
-\BOOKMARK [2][-]{subsection.4.4.2}{4.4.2 Variable importance}{section.4.4}% 49
-\BOOKMARK [2][-]{subsection.4.4.3}{4.4.3 Correlating input features}{section.4.4}% 50
-\BOOKMARK [0][]{chapter.5}{5 Predictive modelling of transcription and chromatin organisation}{}% 51
-\BOOKMARK [0][]{chapter.6}{6 Predictive modelling of transcription and chromatin organisation}{}% 52
-\BOOKMARK [0][]{chapter.7}{7 Predictive modelling of transcription and chromatin organisation}{}% 53
+\BOOKMARK [2][-]{subsection.1.2.4}{1.2.4 Cell cycle changes}{section.1.2}% 12
+\BOOKMARK [1][-]{section.1.3}{1.3 Criticisms of C-methods}{chapter.1}% 13
+\BOOKMARK [1][-]{section.1.4}{1.4 Machine learning in genomics}{chapter.1}% 14
+\BOOKMARK [2][-]{subsection.1.4.1}{1.4.1 ENCODE}{section.1.4}% 15
+\BOOKMARK [1][-]{section.1.5}{1.5 Aims}{chapter.1}% 16
+\BOOKMARK [0][]{chapter.2}{2 Methods}{}% 17
+\BOOKMARK [1][-]{section.2.1}{2.1 Input data}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Hi-C data}{section.2.1}% 19
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Locus-level features}{section.2.1}% 20
+\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Clustering input features}{section.2.1}% 21
+\BOOKMARK [1][-]{section.2.2}{2.2 Modelling}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Random Forest}{section.2.2}% 23
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Model performance}{section.2.2}% 24
+\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Other modelling approaches}{section.2.2}% 25
+\BOOKMARK [2][-]{subsection.2.2.4}{2.2.4 Graphical lasso}{section.2.2}% 26
+\BOOKMARK [1][-]{section.2.3}{2.3 Variable regions}{chapter.2}% 27
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Stratification by variability}{section.2.3}% 28
+\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Enhancer enrichment}{section.2.3}% 29
+\BOOKMARK [1][-]{section.2.4}{2.4 Boundaries}{chapter.2}% 30
+\BOOKMARK [2][-]{subsection.2.4.1}{2.4.1 TADs}{section.2.4}% 31
+\BOOKMARK [2][-]{subsection.2.4.2}{2.4.2 Compartments}{section.2.4}% 32
+\BOOKMARK [2][-]{subsection.2.4.3}{2.4.3 MetaTADs}{section.2.4}% 33
+\BOOKMARK [1][-]{section.2.5}{2.5 Giemsa band comparison}{chapter.2}% 34
+\BOOKMARK [1][-]{section.2.6}{2.6 Nuclear positioning}{chapter.2}% 35
+\BOOKMARK [0][]{chapter.3}{3 Reanalysis of Hi-C datasets}{}% 36
+\BOOKMARK [1][-]{section.3.1}{3.1 Introduction}{chapter.3}% 37
+\BOOKMARK [1][-]{section.3.2}{3.2 Hi-C reprocessing}{chapter.3}% 38
+\BOOKMARK [1][-]{section.3.3}{3.3 Compartment profiles}{chapter.3}% 39
+\BOOKMARK [1][-]{section.3.4}{3.4 Domain calls}{chapter.3}% 40
+\BOOKMARK [1][-]{section.3.5}{3.5 Variable regions}{chapter.3}% 41
+\BOOKMARK [1][-]{section.3.6}{3.6 Nuclear positioning}{chapter.3}% 42
+\BOOKMARK [0][]{chapter.4}{4 Integrative modelling as a tool to explore biological systems}{}% 43
+\BOOKMARK [1][-]{section.4.1}{4.1 Introduction}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.2}{4.2 Reproducing Dong et al. }{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.3}{4.3 Modelling FANTOM5 CAGE timecourse data}{chapter.4}% 46
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Dissecting the best bin approach}{section.4.3}% 47
+\BOOKMARK [1][-]{section.4.4}{4.4 Modelling higher order chromatin}{chapter.4}% 48
+\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 Cross-application}{section.4.4}% 49
+\BOOKMARK [2][-]{subsection.4.4.2}{4.4.2 Variable importance}{section.4.4}% 50
+\BOOKMARK [2][-]{subsection.4.4.3}{4.4.3 Correlating input features}{section.4.4}% 51
+\BOOKMARK [0][]{chapter.5}{5 Chromatin domain boundaries}{}% 52
+\BOOKMARK [1][-]{section.5.1}{5.1 Introduction}{chapter.5}% 53
+\BOOKMARK [1][-]{section.5.2}{5.2 TAD and compartment boundaries}{chapter.5}% 54
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 CTCF and YY1}{section.5.2}% 55
+\BOOKMARK [1][-]{section.5.3}{5.3 De novo boundary prediction}{chapter.5}% 56
+\BOOKMARK [1][-]{section.5.4}{5.4 MetaTAD boundaries}{chapter.5}% 57
+\BOOKMARK [1][-]{section.5.5}{5.5 Other boundaries}{chapter.5}% 58
+\BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 Giemsa bands}{section.5.5}% 59
+\BOOKMARK [2][-]{subsection.5.5.2}{5.5.2 Superboundaries}{section.5.5}% 60
+\BOOKMARK [0][]{chapter.6}{6 4C and 5C analysis}{}% 61
+\BOOKMARK [1][-]{section.6.1}{6.1 Introduction}{chapter.6}% 62
+\BOOKMARK [1][-]{section.6.2}{6.2 4C of the ZRS enhancer}{chapter.6}% 63
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 3D modelling}{section.6.2}% 64
+\BOOKMARK [1][-]{section.6.3}{6.3 5C in the HoxD region}{chapter.6}% 65
+\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 66
+\BOOKMARK [1][-]{section.7.1}{7.1 Conclusion}{chapter.7}% 67

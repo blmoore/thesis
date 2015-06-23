@@ -11,45 +11,45 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--there's a number but no volume in Li2014
 Warning--there's a number but no volume in Mifsud2015
 Warning--empty journal in Williamson2014
-You've used 75 entries,
+You've used 90 entries,
             3024 wiz_defined-function locations,
-            1102 strings with 24553 characters,
-and the built_in function-call counts, 106701 in all, are:
-= -- 11237
-> -- 3177
-< -- 28
-+ -- 2288
-- -- 813
-* -- 8020
-:= -- 11513
-add.period$ -- 151
-call.type$ -- 75
-change.case$ -- 375
-chr.to.int$ -- 76
-cite$ -- 78
-duplicate$ -- 11175
-empty$ -- 7675
-format.name$ -- 1053
-if$ -- 21993
+            1196 strings with 29120 characters,
+and the built_in function-call counts, 129759 in all, are:
+= -- 13667
+> -- 3898
+< -- 33
++ -- 2810
+- -- 997
+* -- 9756
+:= -- 13977
+add.period$ -- 181
+call.type$ -- 90
+change.case$ -- 450
+chr.to.int$ -- 91
+cite$ -- 93
+duplicate$ -- 13578
+empty$ -- 9313
+format.name$ -- 1290
+if$ -- 26754
 int.to.chr$ -- 3
-int.to.str$ -- 76
-missing$ -- 922
-newline$ -- 305
-num.names$ -- 225
-pop$ -- 5345
+int.to.str$ -- 91
+missing$ -- 1116
+newline$ -- 365
+num.names$ -- 270
+pop$ -- 6488
 preamble$ -- 1
-purify$ -- 300
+purify$ -- 360
 quote$ -- 0
-skip$ -- 1875
+skip$ -- 2305
 stack$ -- 0
-substring$ -- 13370
-swap$ -- 2498
-text.length$ -- 4
+substring$ -- 16287
+swap$ -- 3021
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 448
+type$ -- 538
 warning$ -- 3
-while$ -- 696
+while$ -- 846
 width$ -- 0
-write$ -- 903
+write$ -- 1082
 (There were 5 warnings)
