@@ -35,30 +35,19 @@
 
 \chapter{Methods}
 
-\section{Input data}\label{input-data}
+\section{Hi-C data}
 
-Some more stuff here.
+\subsection{Mapping}
 
-\subsection{Hi-C data}\label{hi-c-data}
-
-Raw Hi-C reads were downloaded from three published datasets through
-GEO\citep{Barrett2013} or the SRA\citep{Leinonen2011a} with identifiers:
+Raw Hi-C reads were downloaded from published datasets (Table \ref{hictable}) through
+the Gene Expression Omnibus (GEO)\citep{Barrett2013} or the Short Read Archive (SRA)\citep{Leinonen2011a} with identifiers:
 GSE35156 (H1 hESC), GSE18199 (K562) and SRX030113 (GM12878). These
-paired reads were mapped independently to theand mapped to the genome
-(hg19/GRCh37). Mapping was performed using the \texttt{hiclib} software
-package\citep{Imakaev2012} and \texttt{bowtie2}\citep{Langmead2012} with
-the \texttt{-{}-very-sensitive} flag. Mapped reads were then binned into
-contact maps and iteratively corrected\citep{Imakaev2012}. The
-\texttt{hiclib} software was also used for eigenvector expansion of each
-intrachromosomal contact map, performed independently on each chromosome
-arm.
+paired reads were mapped independently to a reference genome: hg19/GRCh37 for human data, and mm10/GRCm38 for mouse. 
 
-% Table describing source, read depth, citation
-
-\begin{table}[h]
+\begin{table}
 \centering
 \caption{{\bf Public Hi-C data used in this work.} }
-\label{my-label}
+\label{hictable}
 \begin{tabular}{lllr}
 {\bf Cell line} & {\bf Total reads} & {\bf Accession} & {\bf Citation}\\
 \hline
@@ -73,8 +62,32 @@ IMR90 & 355$\times10^{6}$ &\href{http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?a
 \end{tabular}
 \end{table}
 
+Mapping was performed using the \texttt{hiclib} software
+package\citep{Imakaev2012} and \texttt{bowtie2}\citep{Langmead2012} with
+the \texttt{-{}-very-sensitive} flag. An iterative mapping approach was used to maximise the number of aligning fragments.\cite{Imakaev2012} Each fragment end was aligned first using short terminal sub-sequences. Those unmapped or with ambiguous mapping were then taken forward into the next iteration and extended until the entire fragment end had been aligned. Those remaining pairs with one or more unmapped ends were discarded.
 
-\subsection{Locus-level features}\label{locus-level-features}
+\subsection{Filtering}
+
+After mapping, interactions are first aggregated into restriction fragments then by regular binning of various resolutions (particularly 40 kb, 100 kb and 1 Mb). Several filters were applied at this stage, with the following cases removed:\cite{Imakaev2012} 
+\begin{itemize}
+\item Reads directly adjacent to a restriction enzyme site (within 5 bp)
+\item Identical read pairs (presumed PCR duplicates)
+\item Very large restriction fragments ($>100$ kb) which are likely from a repetitive or poorly-assembled region
+\item Extremely over-represented fragments (top $.05\%$) which may throw-off eigenvector derivation
+\end{itemize}
+
+\subsection{Correction}
+
+Iterative correction and eigenvector expansion (ICE) is an approach to normalisation and processing Hi-C data, implemented as software library written in \texttt{python}.\citep{Imakaev2012} The iterative correction algorithm performs matrix balancing with the aim of generating a doubly stochastic matrix from raw interaction counts. That is, such that symmetric matrix $\mathbf{A}$ has both row and columns of equal sum. In practice, this effectively enforces "equal visibility" of each fragment, correcting for previously-described biases in interaction recovery such as GC-content and fragment length\cite{Yaffe2011} but without explicitly modelling these latent variables. This procedure is thus converting actual interaction counts into normalised interaction frequencies (IF), and to relative rather than absolute quantities. Scaling of IFs permits comparison of Hi-C experiments with very different sequencing depths (as is the case in this work, see Table \ref{hictable}).
+
+\subsection{Eigenvector calculation}
+Additional functionality provided by ICE is the eigenvector expansion of normalised contact maps. Eigenvectors from observed/expected matrices were chosen for consistency with Lieberman Aiden \emph{et al.},\cite{Lieberman2009} as opposed to the related eigenvectors calculated in Imakaev \emph{et al.}\cite{Imakaev2012} The details of this procedure are described in section \ref{sec:compartments}. 
+
+Importantly, the first two principle components (PCs) were calculated, and that with the highest absolute Spearman correlation with GC content is taken to reflect A/B compartmentalisation. PC eigenvectors were then orientated to positively correlate with GC, ensuring positive values reflected A compartments and \emph{vice versa}. Another subtlety is the calculation of eigenvectors per chromosome arm as opposed to per chromosome, this prevents issues with some meta- and submetacentric chromosomes where the first principle component indicated chromosome arms.\cite{Lieberman2009, Imakaev2012} 
+
+Eigenvector expansion was performed on both 1 Mb and 100 kb matrices.
+
+\section{ENCODE features}\label{locus-level-features}
 
 Genome-wide ChIP-seq datasets for: 22 DNA binding proteins and 10
 histone marks were made available by the ENCODE
