@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{27}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Barrett \emph{et~al.}(2013)Barrett, Wilhite, Ledoux, Evangelista,
@@ -12,17 +12,6 @@ Barrett T, Wilhite SE, Ledoux P, Evangelista C, Kim IF, Tomashevsky M, Marshall
   Shumway}]{Leinonen2011a}
 Leinonen R, Sugawara H, Shumway M (2011) {The sequence read archive.}
 \newblock \emph{Nucleic acids research}, \textbf{39}(Database issue): D19--21.
-
-\bibitem[{Imakaev \emph{et~al.}(2012)Imakaev, Fudenberg, McCord, Naumova,
-  Goloborodko, Lajoie, Dekker and Mirny}]{Imakaev2012}
-Imakaev M, Fudenberg G, McCord RP, Naumova N, Goloborodko A, Lajoie BR, Dekker
-  J, Mirny LA (2012) {Iterative correction of Hi-C data reveals hallmarks of
-  chromosome organization.}
-\newblock \emph{Nature methods}, \textbf{9}(10): 999--1003.
-
-\bibitem[{Langmead and Salzberg(2012)}]{Langmead2012}
-Langmead B, Salzberg SL (2012) {Fast gapped-read alignment with Bowtie 2.}
-\newblock \emph{Nature methods}, \textbf{9}(4): 357--9.
 
 \bibitem[{Kalhor \emph{et~al.}(2012)Kalhor, Tjong, Jayathilaka, Alber and
   Chen}]{Kalhor2012}
@@ -45,6 +34,22 @@ Lieberman-Aiden E, van Berkum NL, Williams L, Imakaev M, Ragoczy T, Telling A,
   Amit I, Lajoie BR, Sabo PJ, \emph{et~al.} (2009) {Comprehensive mapping of
   long-range interactions reveals folding principles of the human genome.}
 \newblock \emph{Science}, \textbf{326}(5950): 289--93.
+
+\bibitem[{Imakaev \emph{et~al.}(2012)Imakaev, Fudenberg, McCord, Naumova,
+  Goloborodko, Lajoie, Dekker and Mirny}]{Imakaev2012}
+Imakaev M, Fudenberg G, McCord RP, Naumova N, Goloborodko A, Lajoie BR, Dekker
+  J, Mirny LA (2012) {Iterative correction of Hi-C data reveals hallmarks of
+  chromosome organization.}
+\newblock \emph{Nature methods}, \textbf{9}(10): 999--1003.
+
+\bibitem[{Langmead and Salzberg(2012)}]{Langmead2012}
+Langmead B, Salzberg SL (2012) {Fast gapped-read alignment with Bowtie 2.}
+\newblock \emph{Nature methods}, \textbf{9}(4): 357--9.
+
+\bibitem[{Yaffe and Tanay(2011)}]{Yaffe2011}
+Yaffe E, Tanay A (2011) {Probabilistic modeling of Hi-C contact maps eliminates
+  systematic biases to characterize global chromosomal architecture.}
+\newblock \emph{Nature genetics}, \textbf{43}(11): 1059--65.
 
 \bibitem[{ENCODE(2012)}]{Dunham2012}
 ENCODE (2012) {An integrated encyclopedia of DNA elements in the human genome.}
