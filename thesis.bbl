@@ -1,4 +1,4 @@
-\begin{thebibliography}{90}
+\begin{thebibliography}{92}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -260,6 +260,11 @@ Zhang Y, Liu T, Meyer Ca, Eeckhoute J, Johnson DS, Bernstein BE, Nusbaum C,
   (MACS).}
 \newblock \emph{Genome biology}, \textbf{9}(9): R137.
 
+\bibitem[{Suzuki and Shimodaira(2006)}]{Suzuki2006a}
+Suzuki R, Shimodaira H (2006) {Pvclust: an R package for assessing the
+  uncertainty in hierarchical clustering.}
+\newblock \emph{Bioinformatics (Oxford, England)}, \textbf{22}(12): 1540--2.
+
 \bibitem[{Breiman(2001{\natexlab{a}})}]{Breiman2001a}
 Breiman L (2001{\natexlab{a}}) {Random Forests}.
 \newblock \emph{Machine learning}, \textbf{45}(1): 5--32.
@@ -304,6 +309,10 @@ Hastie T, Tibshirani R, Friedman J (2009) \emph{{Elements of Statistical
   Learning: Data Mining, Inference, and Prediction}}.
 \newblock Springer, 2 edition.
 \newblock ISBN 978-0-387-84858-7.
+
+\bibitem[{Tobias(1995)}]{Tobias1995}
+Tobias RD (1995) {An Introduction to Partial Least Squares Regression}.
+\newblock \emph{Proc. Ann. SAS Users Group Int. Conf. 20th}, pp. 1250--1257.
 
 \bibitem[{Friedman \emph{et~al.}(2008)Friedman, Hastie and
   Tibshirani}]{Friedman2008}
