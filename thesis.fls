@@ -161,6 +161,8 @@ INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/tools/array.sty
 INPUT thesis.aux
 INPUT thesis.aux
 INPUT 0-intro/intro.aux
@@ -377,6 +379,13 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplb9o.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplbj8r.tfm
+INPUT figs/randforests.pdf
+INPUT ./figs/randforests.pdf
+INPUT ./figs/randforests.pdf
+INPUT figs/rfparams.pdf
+INPUT ./figs/rfparams.pdf
+INPUT ./figs/rfparams.pdf
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmb7t.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmb7t.vf
@@ -403,7 +412,6 @@ INPUT figs/improvedDongPlot.pdf
 INPUT ./figs/improvedDongPlot.pdf
 INPUT ./figs/improvedDongPlot.pdf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/nowacki/iwona/rm-iwonari.tfm
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
@@ -436,8 +444,8 @@ INPUT 0-intro/intro.aux
 INPUT 0-intro/intro.aux
 INPUT ./thesis.out
 INPUT ./thesis.out
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/iwona/rm-iwona.enc
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/iwona/rm-iwona.enc
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/iwona/rm-iwona-sc.enc
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
@@ -447,6 +455,7 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/mathpazo/fplmb.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/nowacki/iwona/iwonab.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/nowacki/iwona/iwonari.pfb
