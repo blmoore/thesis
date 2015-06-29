@@ -1,4 +1,4 @@
-\begin{thebibliography}{92}
+\begin{thebibliography}{95}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -325,6 +325,12 @@ Mazumder R, Hastie T (2012) {The graphical lasso: New insights and
   alternatives}.
 \newblock \emph{Electronic Journal of Statistics}, pp. 1--21.
 
+\bibitem[{Hoffman \emph{et~al.}(2012)Hoffman, Buske, Wang, Weng, Bilmes and
+  Noble}]{Hoffman2012}
+Hoffman MM, Buske OJ, Wang J, Weng Z, Bilmes Ja, Noble WS (2012) {Unsupervised
+  pattern discovery in human chromatin structure through genomic segmentation}.
+\newblock \emph{Nature Methods}, \textbf{9}(5): 473--476.
+
 \bibitem[{Hoffman \emph{et~al.}(2013)Hoffman, Ernst, Wilder, Kundaje, Harris,
   Libbrecht, Giardine, Ellenbogen, Bilmes \emph{et~al.}}]{Hoffman2013}
 Hoffman MM, Ernst J, Wilder SP, Kundaje A, Harris RS, Libbrecht M, Giardine B,
@@ -364,6 +370,18 @@ Tanabe H, M\"{u}ller S, Neusser M, von Hase J, Calcagno E, Cremer M, Solovei I,
   arrangements in cell nuclei from higher primates.}
 \newblock \emph{Proceedings of the National Academy of Sciences of the United
   States of America}, \textbf{99}(7): 4424--9.
+
+\bibitem[{Ashburner \emph{et~al.}(2000)Ashburner, Ball, Blake, Botstein,
+  Butler, Cherry, Davis, Dolinski, Dwight \emph{et~al.}}]{Ashburner2000}
+Ashburner M, Ball Ca, Blake Ja, Botstein D, Butler H, Cherry JM, Davis aP,
+  Dolinski K, Dwight SS, \emph{et~al.} (2000) {Gene ontology: tool for the
+  unification of biology. The Gene Ontology Consortium.}
+\newblock \emph{Nature genetics}, \textbf{25}(1): 25--29.
+
+\bibitem[{Huang and Lempicki(2008)}]{Huang2008}
+Huang BDW, Lempicki R (2008) {Systematic and integrative analysis of large gene
+  lists using DAVID bioinformatics resources}.
+\newblock \emph{Nature protocols}, (301): 1--43.
 
 \bibitem[{Gerstein \emph{et~al.}(2012)Gerstein, Kundaje, Hariharan, Landt, Yan,
   Cheng, Mu, Khurana, Rozowsky \emph{et~al.}}]{Gerstein2012}
