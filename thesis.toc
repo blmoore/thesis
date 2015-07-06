@@ -49,26 +49,31 @@
 \contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Integrative modelling as a tool to explore biological systems}}{22}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{22}{section.4.1}
 \contentsline {section}{\numberline {4.2}Reproducing Dong \emph {et al.} }{23}{section.4.2}
-\contentsline {section}{\numberline {4.3}Modelling FANTOM5 CAGE timecourse data}{25}{section.4.3}
+\contentsline {section}{\numberline {4.3}Modelling FANTOM5 CAGE timecourse data}{24}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Dissecting the \emph {best bin} approach}{27}{subsection.4.3.1}
 \contentsline {section}{\numberline {4.4}Modelling higher order chromatin}{27}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Cross-application}{27}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Variable importance}{27}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Correlating input features}{27}{subsection.4.4.3}
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Chromatin domain boundaries}}{28}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{28}{section.5.1}
-\contentsline {section}{\numberline {5.2}TAD and compartment boundaries}{29}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}CTCF and YY1}{29}{subsection.5.2.1}
-\contentsline {section}{\numberline {5.3}De novo boundary prediction}{29}{section.5.3}
-\contentsline {section}{\numberline {5.4}MetaTAD boundaries}{29}{section.5.4}
-\contentsline {section}{\numberline {5.5}Other boundaries}{29}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Giemsa bands}{29}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Superboundaries}{29}{subsection.5.5.2}
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {4C and 5C analysis}}{30}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{30}{section.6.1}
-\contentsline {section}{\numberline {6.2}4C of the ZRS enhancer}{30}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}3D modelling}{30}{subsection.6.2.1}
-\contentsline {section}{\numberline {6.3}5C in the HoxD region}{30}{section.6.3}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{31}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclusion}{32}{section.7.1}
-\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Appendices}}{34}{chapter.8}
+\contentsline {subsection}{\numberline {4.4.1}Predictive model}{27}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Cross-application}{27}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Variable importance}{29}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Importance of resolution}{29}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}Other modelling approaches}{29}{subsection.4.4.5}
+\contentsline {subsection}{\numberline {4.4.6}Non-independence}{29}{subsection.4.4.6}
+\contentsline {subsection}{\numberline {4.4.7}Correlating input features}{29}{subsection.4.4.7}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Chromatin domain boundaries}}{32}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{32}{section.5.1}
+\contentsline {section}{\numberline {5.2}TAD and compartment boundaries}{33}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}CTCF and YY1}{33}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Repeats}{33}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}De novo boundary prediction}{33}{section.5.3}
+\contentsline {section}{\numberline {5.4}MetaTAD boundaries}{33}{section.5.4}
+\contentsline {section}{\numberline {5.5}Other boundaries}{33}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Giemsa bands}{33}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Superboundaries}{33}{subsection.5.5.2}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {4C and 5C analysis}}{34}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{34}{section.6.1}
+\contentsline {section}{\numberline {6.2}4C of the ZRS enhancer}{34}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}3D modelling}{34}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.3}5C in the HoxD region}{34}{section.6.3}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{35}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclusion}{36}{section.7.1}
+\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Appendices}}{38}{chapter.8}
