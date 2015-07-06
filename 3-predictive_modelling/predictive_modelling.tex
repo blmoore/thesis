@@ -48,7 +48,7 @@ between locus-level factors and higher-order organisation of
 chromatin, while known the be an important factor in
 transcription, remains poorly understood mechanisatically.\cite{Li2011} 
 % Colin's sentence:
-However, the recent flood of data from high throughput sequencing technologies have provided fascinating new glimpses of the ways chromatin and transcription are functionally related.\\
+However, the recent flood of data from high throughput sequencing technologies have provided fascinating new glimpses of the ways chromatin and transcription are functionally related.
 
 Recent studies have shown convincingly that local chromatin state
 measurements can accurately predict expression levels of genes on a
@@ -69,7 +69,7 @@ study used a similar regression modelling approach to chromatin
 and transcription factor data and again
 concluded that models built with histone modifications and chromatin
 accessibility data were almost as accurate as those which also
-included binding data for 12 transcription factors.\cite{McLeay2012a} \\
+included binding data for 12 transcription factors.\cite{McLeay2012a} 
 
 A recent key study from the ENCODE consortium used chromatin (ChIP-seq) datasets to predict gene expression in a range
 of cell types as measured by a variety of experimental techniques.\cite{Dong2012} The authors here developed a
@@ -87,7 +87,7 @@ analysis of gene expression (CAGE) as the
 technology, relative to RNA-Seq and RNA-PET, which produced the most
 predictable expression response. CAGE uses 5$^\prime$ capped transcripts to
 generate short, specific tags which precisely identify TSS positions as well as
-quantifying the abundance of a given transcript.\cite{Shiraki2003, Kodzius2006}\\
+quantifying the abundance of a given transcript.\cite{Shiraki2003, Kodzius2006}
 
 These recent publications highlight the importance and relevance of
 advancing our understanding of chromatin biology through a model-based
@@ -99,8 +99,6 @@ position to investigate how chromatin influences transcription beyond a
 simple single-point response and move towards a more complete
 understanding of the drivers of transcriptional flux.
 
-
-
 \section{Reproducing Dong \emph{et al.} }
 
 Following on from Dong \emph{et al.},\cite{Dong2012} I first
@@ -110,7 +108,7 @@ strengths and caveats of their approach; surprisingly the two-step classificatio
 then regression (firstly assessing a gene as `on' or `off' and then
 predicting its expression level) added little additional accuracy relative to a simple
 linear regression model 
-(Fig. \ref{fig:TwoStepvsSimple}). \\
+(Fig. \ref{fig:TwoStepvsSimple}). 
 
 \begin{figure}
 \begin{center}
@@ -145,7 +143,7 @@ taken forward for the full model. This was shown to raise
 the correlation (between predicted and observed expression) by 0.1 in
 the simple regression model, an increase in accuracy of almost $13\%$,
 relative to simply taking the average value across all
-bins.\cite{Dong2012} \\
+bins.\cite{Dong2012} 
 
 \begin{figure}
 \begin{center}
@@ -198,7 +196,7 @@ other cell lines.\cite{Lieberman2011}
 Using unpublished FANTOM5 data and the approach established above, I next attempted to model gene
 expression at timepoint zero ($t_0$) of a differentiation timecourse of Human
 H1 embryonic stem cells (H1 hESC) to CD34+ hematopoietic stem
-cells. \\
+cells.
 
 % How did I do this?:
 % 1) Take robustly mapped CAGE clusters -> Entrez Gene IDs
@@ -212,7 +210,7 @@ expression level of its mapped gene. I then compared these to Ensembl
 TSS annotations (v69) and
 discarded those tag clusters centered on a point $>50$ bp from an annotated
 TSS associated with the mapped Entrez Gene ID, thereby removing enhancers and other non-genic transcribed
-regions. \\
+regions.
 
 Next I retrieved a number of genome-wide histone modification datasets
 from the ENCODE and
@@ -223,7 +221,7 @@ select the most-correlated binned signal for each chromatinH1 hESC
 mark. Additionally, I analysed the stability of chosen bestbins by
 calculating them on 200 sets of 1000 randomly selected TSS samples (with each sample
 representing approximately $8\%$ of the dataset) and the result is
-shown in Figure \ref{fig:bestbin}. \\
+shown in Figure \ref{fig:bestbin}.
 
 \begin{figure}
 \begin{center} 
@@ -247,17 +245,17 @@ relative to a TSS for each chromatin factor (Fig. \ref{fig:bestbin}). Furthermor
 bestbins match known biological mechanisms; for example the H3K36me3
 mark's bestbin is consistently the whole gene measurement and this
 mark is known to be enriched in actively transcribed
-exons.\cite{Tippmann2012, Kolasinska-Zwierz2009, Schaft2003} \\
+exons.\cite{Tippmann2012, Kolasinska-Zwierz2009, Schaft2003} 
 
 Having matched a variety of genome-wide H1 hESC chromatin datasets
 to the FANTOM5 timecourse expression data, I then built a regression
 model using a Random Forest (RF) approach.\cite{Breiman2001} This method outperforms a simple
 linear model in my initial comparisons and is able to capture non-linear relationships as well
-as interactions without them being explicitly specified.\cite{Diaz2006} \\
+as interactions without them being explicitly specified.\cite{Diaz2006}
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=.9\textwidth]{figs/RandomForest_10CV_50d.pdf}
+\includegraphics[width=.6\textwidth]{figs/RandomForest_10CV_50d.pdf}
 \captionsetup{width=\textwidth} 
 \caption{Evaluation of RF model predictions ($x$-axis) against an independent
   test set ($y$-axis). The distributions of predicted and empirical
@@ -279,7 +277,7 @@ significant correlation with measured CAGE levels ($ r = 0.845\pm
 $p < 2 \times 10^{-15}$), and the model is able to explain around
 $71\%$ of the variance in the expression response (for comparison a
 linear model resulted in $r = 0.825 \pm 3.2 \times 10^{-5}$; $t_{10868} = 152.2$,
-$p < 2 \times 10^{-15}$). \\
+$p < 2 \times 10^{-15}$).
 
 This result is worse than that of Dong \emph{et al.}
 who achieved cross-validated correlation coefficients of up to $0.9$,
@@ -301,7 +299,7 @@ increase in correlation using their classification-regression approach
 but with the model implemented herein (Fig. \ref{fig:model}) this approach gave no obvious advantage (for
 example, $r
 = 0.834 \pm 0.007$, $\textrm{RMSE} = 1.77$ when applied to the same test and
-training data used in Fig. \ref{fig:model}). \\
+training data used in Fig. \ref{fig:model}).
 
 Having built a reasonable model of $t_0$ expression, the next stage of
 this preliminary analysis was to consider successive timepoints. In the
@@ -316,17 +314,86 @@ expression timepoint it was trained or tested on. In future analyses, higher-res
 more interesting variation or alternatively genes that remain invariant
 throughout the timecourse could be filtered out of the dataset. 
 
-
 \subsection{Dissecting the  \emph{best bin} approach}
 
 \section{Modelling higher order chromatin}
 
+Accurate predictive modelling of transcription in a variety of cell types offered several novel insights into the internal between histone modifications and transcription factors with transcriptional machinery, and advanced a quantitative explanation of the degree to which correlated features are informative. It is of interest then, to test whether this approach can be applied to other data, such as the reprocessed higher order chromatin data assembled in this work (Chapter 1).
+
+Previous publications have identified several correlates which track compartment eigenvector profiles to varying degrees,\cite{Lieberman2009, Imakaev2012} yet to date these relationships have not been quantitively investigated. The above-described modelling framework offers a statistical approach to understanding the drivers of these observed correlations.
+
+\subsection{Predictive model}
+
+We build Random Forest regression models (see Methods XX) to predict compartment eigenvector profiles genome-wide in three human cell types. Models were found to have high predictive accuracy, comparable to that achieved by Dong \emph{et al.}\cite{Dong2012} in the prediction of transcription.
+
 \subsection{Cross-application}
+
+High predictive accuracy on cell type specific models could be the result of ``over-fitting". In machine-learning, over-fitting refers to the point at which parameters are being optimised to capture noise within a feature set, as well as signal, thereby giving an overoptimistic model performance which would not generalise to another featureset with different noise profiles.
+
+To test if over-fitting was causing our high observed accuracy, we cross-applied models learnt in one cell type to unseen input data from each of the other two cell types under study. If predictive accuracy is a lot lower on unseen data, this lends evidence to the idea that our models may be overfitted to their respective cell types. Conversely, it could be the case that biologically-distinct mechanisms are in place that differ between cell types, preventing a simple cross-application.
+
+\begin{figure}
+\begin{center} 
+\includegraphics[width=.6\textwidth]{figs/xapp.pdf}
+\captionsetup{width=\textwidth} 
+\caption{ {\bf Models of higher order chromatin structure learned in one cell type can be cross-applied to two others }
+ Each model, trained in one cell type, was applied to the chromatin feature datasets from the other two cell types. (A) The GM12878 model achieved high accuracy when applied to K562 features (PCC $= 0.76$), as did the reciprocal cross (PCC $= 0.75$). (B) In each case, predictive accuracy decreased on cross-application but there remains significant agreement between predicted and empirical values. Acc., accuracy; AUROC, area under the receiver operating characteristic curve; PCC, Pearson correlation coefficient; RMSE, root mean-squared error.
+}\label{fig:xapp}
+\end{center} 
+\end{figure} 
+
+We found cross-application between cell types was possible and with similarly-high levels of accuracy (Fig. \ref{fig:xapp}). This gives good evidence not only that are models are not overfitting to cell-type specific noise, but also that there exist broad rules linking chromatin conformation and locus-level feature aggregation. The cross-application suggests there exists enough commonalities for compartment profile predictions to transcend the cell-type specific biology inherent to an embryonic stem cell or differentiated lymphoblast.
 
 \subsection{Variable importance}
 
 
 % figure showing e.g. how individual var regresses against eigen (Egr1compare.pdf)
+
+\subsection{Importance of resolution}
+
+Thus far models were built at 1 Mb resolution, but if we are capturing true biological relationships we would expect these to hold at higher or lower resolution. To test this, models leaned at 1 Mb resolution were applied to feature sets binned at 100 kb, an order of magnitude higher resolution.
+
+\begin{figure}
+\begin{center} 
+\includegraphics[width=.6\textwidth]{figs/100kb.pdf}
+\captionsetup{width=\textwidth} 
+\caption{ {\bf Models learned at 1 Mb resolution can be applied to higher resolution datasets. }
+Despite having been trained on low resolution training sets, the Random Forest models generated can successfully predict compartment eigenvectors at higher resolution (100 kb, a $10\times$ zoom). Eigenvectors at a higher resolution than this do not necessarily reflect A/B compartmentalisation.
+}\label{fig:100kb}
+\end{center} 
+\end{figure} 
+
+Model accuracy when applied to higher resolution input features proved to be similarly high, with empirical PCC being $88$ to $95\%$ as high as that at 1 Mb native resolution (Fig. \ref{fig:100kb}).
+
+Note however, there is some indirect leakage between test and training set when 100 kb bins have been used in aggregate in learning the 1 Mb models. Nevertheless, sustained accuracy is evidence that our models are not resolution-sensitive, and could likely be applied to higher resolutions than the 1 Mb predominantly used in this work.
+
+\subsection{Other modelling approaches}
+
+Random Forest (RF) was \emph{a priori} chosen as an appropriate and powerful modelling tool for this work. Other methods could have been used and should be compared. Here we compare our RF approach with two other options: multiple linear regression and partial least squares regression.
+
+\begin{figure}
+\begin{center} 
+\includegraphics[width=1.2\textwidth]{figs/diffmethods.pdf}
+\captionsetup{width=1.2\textwidth} 
+\caption{ {\bf Comparison of Random Forest performance with other modelling approaches. }
+Heatmaps show the Pearson correlation coefficient between predicted and observed compartment eigenvectors genome-wide for three regression techniques: multiple linear regression (LM), Random Forest (RF) and partial least squares (PLS). Cell type specific predictions were assessed using cross-validation (LM and PLS) and OOB estimates (RF), while cross-applied models were learnt from the full dataset of the training cell type. For PLS, the optimal number of components was also selected using cross-validation. Cell type specific models (heatmap diagonal) can be learnt with similar success via each method (mean PCC for cell type specific models: LM 0.787, RF 0.790, PLS 0.750) but on cross-application RF and PLS prove much more generalisable (mean PCC over cross-applications: LM 0.139, RF 0.689, PLS 0.641).
+}\label{fig:diffmethods}
+\end{center} 
+\end{figure} 
+
+Our results confirm RF as a suitable and powerful approach for modelling our relationships of interest in this work (Fig. \ref{fig:diffmethods}), with both the highest cell-type specific performance (PCC between predicted and observed $=0.790$) and on cross-applications (mean PCC $= 0.689$). 
+
+Multiple linear regression imposes linear relationships between features and predictions and allows for simple, normally-distributed errors. Surprisingly, this simple approach is capable of accurate cell-type specific predictions (mean PCC $= 0.787$), likely due to the high raw correlation between the inputs and dependent variable. However this simple approach fails to cross-apply between cell types (mean PCC $=0.139$) indicating a problems with overfitting. This can be remedied through variable selection procedures, however a strength of the RF approach is that this step is not necessary, and pre-selection of model variables may result in a sub-optimal end result (ref XX).
+
+Partial least squares regression
+
+\subsection{Non-independence}
+
+% use n-1, n-2, ... as predictors for bin N
+
+As recognised through our use of Hidden Markov Models (Methods XX), consecutive bins along a chromosome are non-independent yet thus far predictive models have not considered this inter-dependence. 
+
+This is for two reasons: firstly non independence could be thought of as an artefact of bin-sizing (we have elected to use regular, fixed binning beneath the scale of compartments themselves whereas another approach could use variable bin sizes, for example per compartment, TAD or restriction fragment); secondly using information of a bin's surroundings may obscure by proxy the chromatin features which would otherwise prove predictive. As an example, knowing that bin $x_{i-1}$ and bin $x_{i+1}$ are in compartment state A would allow us with high confidence to predict the state of bin $x_i$, but without learning anything of any region's relationships with their histone modifications and bound factors.
 
 \subsection{Correlating input features}
 
