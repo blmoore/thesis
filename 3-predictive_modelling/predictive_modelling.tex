@@ -346,6 +346,29 @@ We found cross-application between cell types was possible and with similarly-hi
 
 \subsection{Variable importance}
 
+\begin{figure}
+\begin{center} 
+\includegraphics[width=\textwidth]{figs/varimp.pdf}
+\captionsetup{width=\textwidth} 
+\caption{ {\bf Variable importance per cell type specific model. }
+Placeholder
+}\label{fig:varimp}
+\end{center} 
+\end{figure} 
+
+Having built accurate predictive models, we next dissect the relative variable contributions made from our range of input features and compare these across cell types. An overview on the top 10 most highly-ranked features in cell type specific models shows some agreement but also substantial differences between cell types (Fig. \ref{figs:varimp})
+
+Only one input feature, H3k9me3, is present in the top 10 most important variables of each model. Under the assumption that variables are ranked independently, the probability of drawing the same variable in each case is low (${\frac{10}{36}}^3 \approx 0.02$) however the probability of any one variable appearing in each ranking 
+
+\begin{figure}
+\begin{center} 
+\includegraphics[width=\textwidth]{figs/varimp_diff.pdf}
+\captionsetup{width=\textwidth} 
+\caption{ {\bf Variable importance per cell type specific model. }
+Placeholder
+}\label{fig:varimp_diff}
+\end{center} 
+\end{figure} 
 
 % figure showing e.g. how individual var regresses against eigen (Egr1compare.pdf)
 
@@ -376,16 +399,30 @@ Random Forest (RF) was \emph{a priori} chosen as an appropriate and powerful mod
 \includegraphics[width=1.2\textwidth]{figs/diffmethods.pdf}
 \captionsetup{width=1.2\textwidth} 
 \caption{ {\bf Comparison of Random Forest performance with other modelling approaches. }
-Heatmaps show the Pearson correlation coefficient between predicted and observed compartment eigenvectors genome-wide for three regression techniques: multiple linear regression (LM), Random Forest (RF) and partial least squares (PLS). Cell type specific predictions were assessed using cross-validation (LM and PLS) and OOB estimates (RF), while cross-applied models were learnt from the full dataset of the training cell type. For PLS, the optimal number of components was also selected using cross-validation. Cell type specific models (heatmap diagonal) can be learnt with similar success via each method (mean PCC for cell type specific models: LM 0.787, RF 0.790, PLS 0.750) but on cross-application RF and PLS prove much more generalisable (mean PCC over cross-applications: LM 0.139, RF 0.689, PLS 0.641).
+Heatmaps show the Pearson correlation coefficient between predicted and observed compartment eigenvectors genome-wide for three regression techniques: multiple linear regression (LM), Random Forest (RF) and partial least squares (PLS). Results are summarised in Table \ref{tab:diffmethods}.
 }\label{fig:diffmethods}
 \end{center} 
 \end{figure} 
 
 Our results confirm RF as a suitable and powerful approach for modelling our relationships of interest in this work (Fig. \ref{fig:diffmethods}), with both the highest cell-type specific performance (PCC between predicted and observed $=0.790$) and on cross-applications (mean PCC $= 0.689$). 
 
-Multiple linear regression imposes linear relationships between features and predictions and allows for simple, normally-distributed errors. Surprisingly, this simple approach is capable of accurate cell-type specific predictions (mean PCC $= 0.787$), likely due to the high raw correlation between the inputs and dependent variable. However this simple approach fails to cross-apply between cell types (mean PCC $=0.139$) indicating a problems with overfitting. This can be remedied through variable selection procedures, however a strength of the RF approach is that this step is not necessary, and pre-selection of model variables may result in a sub-optimal end result (ref XX).
+Multiple linear regression assumes linear relationships between model parameters and input features and allows for simple, normally-distributed errors. Surprisingly, this simple approach is capable of accurate cell-type specific predictions (mean PCC $= 0.787$), likely due to the high raw correlation between the inputs and dependent variable. However this simple approach fails to cross-apply between cell types (mean PCC $=0.139$) indicating a problems with overfitting. This can be remedied through variable selection procedures, however a strength of the RF approach is that this step is not necessary, and pre-selection of model variables may result in a sub-optimal end result (ref XX).
 
-Partial least squares regression
+Partial least squares regression is another technique which used dimensionality reduction to engineer a lower-dimension orthogonal feature set. Hence this method is well-suited to multi collinear inputs, such as our feature set. As expected, PLS regression provides highly accurate cell type specific predictions (mean PCC $=0.750) and during cross-application (mean PCC $=0.641), though in both cases produces slightly inferior results to RF models (Fig. \ref{fig:diffmethods}).
+
+\begin{table}
+\centering
+\caption{ {\bf Performance comparison of different modelling techniques. }
+ Comparison of mean Pearson correlation coefficient between predicted and observed compartment eigenvectors for three different modelling approaches: LM: linear regression; RF: Random Forest regression; PLS: partial least squares regression. Correlations were averaged per cell type over three cell types (cell type specific) and in the six possible crosses (cross-application) shown in Fig. \ref{fig:diffmethods}.
+}
+\label{tab:diffmethods}
+\begin{tabular}{r|ccc}
+& {\bf LM} & {\bf RF} & {\bf PLS} \\
+\hline
+Cell type specific  &  0.787 & 0.790 & 0.750 \\
+Cross-application  & 0.139 & 0.689 & 0.641
+\end{tabular}
+\end{table}
 
 \subsection{Non-independence}
 
