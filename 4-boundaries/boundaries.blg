@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: boundaries.aux
+The style file: ../thesis.bst
+Database file #1: /Users/benmoore/Documents/library.bib
+Database file #2: /Users/benmoore/Documents/customrefs.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--there's a number but no volume in Tarailo-Graovac2009
+You've used 29 entries,
+            3024 wiz_defined-function locations,
+            813 strings with 13680 characters,
+and the built_in function-call counts, 47806 in all, are:
+= -- 5032
+> -- 1547
+< -- 8
++ -- 1124
+- -- 395
+* -- 3574
+:= -- 5061
+add.period$ -- 58
+call.type$ -- 29
+change.case$ -- 145
+chr.to.int$ -- 30
+cite$ -- 30
+duplicate$ -- 5037
+empty$ -- 3366
+format.name$ -- 481
+if$ -- 9873
+int.to.chr$ -- 1
+int.to.str$ -- 30
+missing$ -- 394
+newline$ -- 120
+num.names$ -- 87
+pop$ -- 2432
+preamble$ -- 1
+purify$ -- 116
+quote$ -- 0
+skip$ -- 870
+stack$ -- 0
+substring$ -- 6088
+swap$ -- 1045
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 174
+warning$ -- 1
+while$ -- 305
+width$ -- 0
+write$ -- 350
+(There was 1 warning)

@@ -1,0 +1,195 @@
+\begin{thebibliography}{29}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
+  Williams, Imakaev, Ragoczy, Telling, Amit, Lajoie, Sabo
+  \emph{et~al.}}]{Lieberman2009}
+Lieberman-Aiden E, van Berkum NL, Williams L, Imakaev M, Ragoczy T, Telling A,
+  Amit I, Lajoie BR, Sabo PJ, \emph{et~al.} (2009) {Comprehensive mapping of
+  long-range interactions reveals folding principles of the human genome.}
+\newblock \emph{Science}, \textbf{326}(5950): 289--93.
+
+\bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
+  and Ren}]{Dixon2012}
+Dixon JR, Selvaraj S, Yue F, Kim A, Li Y, Shen Y, Hu M, Liu JS, Ren B (2012)
+  {Topological domains in mammalian genomes identified by analysis of chromatin
+  interactions.}
+\newblock \emph{Nature}, \textbf{485}(7398): 376--80.
+
+\bibitem[{Rao \emph{et~al.}(2014)Rao, Huntley, Durand, Stamenova, Bochkov,
+  Robinson, Sanborn, Machol, Omer \emph{et~al.}}]{Rao2014}
+Rao S, Huntley M, Durand N, Stamenova E, Bochkov I, Robinson J, Sanborn A,
+  Machol I, Omer A, \emph{et~al.} (2014) {A 3D Map of the Human Genome at
+  Kilobase Resolution Reveals Principles of Chromatin Looping}.
+\newblock \emph{Cell}, \textbf{159}(7): 1665--1680.
+
+\bibitem[{Sexton \emph{et~al.}(2012)Sexton, Yaffe, Kenigsberg, Bantignies,
+  Leblanc, Hoichman, Parrinello, Tanay and Cavalli}]{Sexton2012}
+Sexton T, Yaffe E, Kenigsberg E, Bantignies F, Leblanc B, Hoichman M,
+  Parrinello H, Tanay A, Cavalli G (2012) {Three-dimensional folding and
+  functional organization principles of the Drosophila genome.}
+\newblock \emph{Cell}, \textbf{148}(3): 458--72.
+
+\bibitem[{Hou \emph{et~al.}(2012)Hou, Li, Qin and Corces}]{Hou2012}
+Hou C, Li L, Qin ZS, Corces VG (2012) {Gene Density, Transcription, and
+  Insulators Contribute to the Partition of the Drosophila Genome into Physical
+  Domains}.
+\newblock \emph{Molecular Cell}, \textbf{48}(3): 471--484.
+
+\bibitem[{Filippova \emph{et~al.}(2014)Filippova, Patro, Duggal and
+  Kingsford}]{Filippova2014}
+Filippova D, Patro R, Duggal G, Kingsford C (2014) {Identification of
+  alternative topological domains in chromatin.}
+\newblock \emph{Algorithms for molecular biology : AMB}, \textbf{9}: 14.
+
+\bibitem[{Sexton and Cavalli(2015)}]{Sexton2015}
+Sexton T, Cavalli G (2015) {Review The Role of Chromosome Domains in Shaping
+  the Functional Genome}.
+\newblock \emph{Cell}, \textbf{160}(6): 1049--1059.
+
+\bibitem[{{Le Dily} \emph{et~al.}(2014){Le Dily}, Bau, Pohl, Vicent, Serra,
+  Soronellas, Castellano, Wright, Ballare \emph{et~al.}}]{LeDily2014}
+{Le Dily} F, Bau D, Pohl a, Vicent GP, Serra F, Soronellas D, Castellano G,
+  Wright RHG, Ballare C, \emph{et~al.} (2014) {Distinct structural transitions
+  of chromatin topological domains correlate with coordinated hormone-induced
+  gene regulation}.
+\newblock \emph{Genes \& Development}, \textbf{28}(19): 2151--2162.
+
+\bibitem[{Nora \emph{et~al.}(2013)Nora, Dekker and Heard}]{Nora2013}
+Nora EP, Dekker J, Heard E (2013) {Segmental folding of chromosomes: A basis
+  for structural and regulatory chromosomal neighborhoods?}
+\newblock \emph{BioEssays}, \textbf{35}(9): 818--828.
+
+\bibitem[{Nora \emph{et~al.}(2012)Nora, Lajoie, Schulz, Giorgetti, Okamoto,
+  Servant, Piolot, van Berkum, Meisig \emph{et~al.}}]{Nora2012}
+Nora EP, Lajoie BR, Schulz EG, Giorgetti L, Okamoto I, Servant N, Piolot T, van
+  Berkum NL, Meisig J, \emph{et~al.} (2012) {Spatial partitioning of the
+  regulatory landscape of the X-inactivation centre.}
+\newblock \emph{Nature}, \textbf{485}(7398): 381--5.
+
+\bibitem[{Lupi\'{a}\~{n}ez \emph{et~al.}(2015)Lupi\'{a}\~{n}ez, Kraft,
+  Heinrich, Krawitz, Brancati, Klopocki, Horn, Kayserili, Opitz
+  \emph{et~al.}}]{Lupianez2015}
+Lupi\'{a}\~{n}ez D, Kraft K, Heinrich V, Krawitz P, Brancati F, Klopocki E,
+  Horn D, Kayserili H, Opitz J, \emph{et~al.} (2015) {Disruptions of
+  Topological Chromatin Domains Cause Pathogenic Rewiring of Gene-Enhancer
+  Interactions}.
+\newblock \emph{Cell}, pp. 1012--1025.
+
+\bibitem[{Ren and Dixon(2015)}]{Ren2015}
+Ren B, Dixon J (2015) {A CRISPR Connection between Chromatin Topology and
+  Genetic Disorders}.
+\newblock \emph{Cell}, \textbf{161}(5): 955--957.
+
+\bibitem[{Crane \emph{et~al.}(2015)Crane, Bian, McCord, Lajoie, Wheeler,
+  Ralston, Uzawa, Dekker and Meyer}]{Crane2015}
+Crane E, Bian Q, McCord RP, Lajoie BR, Wheeler BS, Ralston EJ, Uzawa S, Dekker
+  J, Meyer BJ (2015) {Condensin-driven remodelling of X chromosome topology
+  during dosage compensation}.
+\newblock \emph{Nature}.
+
+\bibitem[{{Van Bortle} \emph{et~al.}(2014){Van Bortle}, Nichols, Li, Ong,
+  Takenaka, Qin and Corces}]{VanBortle2014}
+{Van Bortle} K, Nichols MH, Li L, Ong CT, Takenaka N, Qin ZS, Corces VG (2014)
+  {Insulator function and topological domain border strength scale with
+  architectural protein occupancy.}
+\newblock \emph{Genome biology}, \textbf{15}(5): R82.
+
+\bibitem[{Evertts \emph{et~al.}(2013)Evertts, Manning, Wang, Dyson, Garcia and
+  Coller}]{Evertts2013}
+Evertts AG, Manning AL, Wang X, Dyson NJ, Garcia Ba, Coller Ha (2013) {H4K20
+  methylation regulates quiescence and chromatin compaction.}
+\newblock \emph{Molecular biology of the cell}, \textbf{24}(19): 3025--37.
+
+\bibitem[{Onder \emph{et~al.}(2012)Onder, Kara, Cherry, Sinha, Zhu, Bernt,
+  Cahan, Marcarci, Unternaehrer \emph{et~al.}}]{Onder2012}
+Onder TT, Kara N, Cherry A, Sinha AU, Zhu N, Bernt KM, Cahan P, Marcarci BO,
+  Unternaehrer J, \emph{et~al.} (2012) {Chromatin-modifying enzymes as
+  modulators of reprogramming.}
+\newblock \emph{Nature}, \textbf{483}(7391): 598--602.
+
+\bibitem[{Chai \emph{et~al.}(2013)Chai, Nagarajan, Kim, Lee and
+  Choi}]{Chai2013}
+Chai X, Nagarajan S, Kim K, Lee K, Choi JK (2013) {Regulation of the boundaries
+  of accessible chromatin.}
+\newblock \emph{PLoS genetics}, \textbf{9}(9): e1003778.
+
+\bibitem[{Ku \emph{et~al.}(2012)Ku, Jaffe, Koche, Rheinbay, Endoh, Koseki, Carr
+  and Bernstein}]{Ku2012}
+Ku M, Jaffe JD, Koche RP, Rheinbay E, Endoh M, Koseki H, Carr SA, Bernstein BE
+  (2012) {H2A.Z landscapes and dual modifications in pluripotent and
+  multipotent stem cells underlie complex genome regulatory functions.}
+\newblock \emph{Genome biology}, \textbf{13}(10): R85.
+
+\bibitem[{Zuin \emph{et~al.}(2013)Zuin, Dixon, van~der Reijden, Ye, Kolovos,
+  Brouwer, van~de Corput, van~de Werken, Knoch \emph{et~al.}}]{Zuin2013}
+Zuin J, Dixon JR, van~der Reijden MIJa, Ye Z, Kolovos P, Brouwer RWW, van~de
+  Corput MPC, van~de Werken HJG, Knoch Ta, \emph{et~al.} (2013) {Cohesin and
+  CTCF differentially affect chromatin architecture and gene expression in
+  human cells.}
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, pp. 1--6.
+
+\bibitem[{Atchison(2014)}]{Atchison2014}
+Atchison ML (2014) {Function of YY1 in Long-Distance DNA Interactions.}
+\newblock \emph{Frontiers in immunology}, \textbf{5}(February): 45.
+
+\bibitem[{Schwalie \emph{et~al.}(2013)Schwalie, Ward, Cain, Faure, Gilad, Odom
+  and Flicek}]{Schwalie2013}
+Schwalie PC, Ward MC, Cain CE, Faure AJ, Gilad Y, Odom DT, Flicek P (2013)
+  {Co-binding by YY1 identifies the transcriptionally active, highly conserved
+  set of CTCF-bound regions in primate genomes.}
+\newblock \emph{Genome biology}, \textbf{14}(12): R148.
+
+\bibitem[{ENCODE(2012)}]{Dunham2012}
+ENCODE (2012) {An integrated encyclopedia of DNA elements in the human genome.}
+\newblock \emph{Nature}, \textbf{489}(7414): 57--74.
+
+\bibitem[{Seitan \emph{et~al.}(2013)Seitan, Faure, Zhan, McCord, Lajoie,
+  Ing-Simmons, Lenhard, Giorgetti, Heard \emph{et~al.}}]{Seitan2013}
+Seitan VC, Faure AJ, Zhan Y, McCord RP, Lajoie BR, Ing-Simmons E, Lenhard B,
+  Giorgetti L, Heard E, \emph{et~al.} (2013) {Cohesin-based chromatin
+  interactions enable regulated gene expression within preexisting
+  architectural compartments.}
+\newblock \emph{Genome research}, \textbf{23}(12): 2066--77.
+
+\bibitem[{Phillips-Cremins \emph{et~al.}(2013)Phillips-Cremins, Sauria, Sanyal,
+  Gerasimova, Lajoie, Bell, Ong, Hookway, Guo
+  \emph{et~al.}}]{Phillips-Cremins2013}
+Phillips-Cremins JE, Sauria MEG, Sanyal A, Gerasimova TI, Lajoie BR, Bell JSK,
+  Ong CT, Hookway Ta, Guo C, \emph{et~al.} (2013) {Architectural Protein
+  Subclasses Shape 3D Organization of Genomes during Lineage Commitment.}
+\newblock \emph{Cell}, \textbf{153}(6): 1281--95.
+
+\bibitem[{Lunyak \emph{et~al.}(2007)Lunyak, Prefontaine, N\'{u}\~{n}ez, Cramer,
+  Ju, Ohgi, Hutt, Roy, Garc\'{\i}a-D\'{\i}az \emph{et~al.}}]{Lunyak2007}
+Lunyak VV, Prefontaine GG, N\'{u}\~{n}ez E, Cramer T, Ju BG, Ohgi KA, Hutt K,
+  Roy R, Garc\'{\i}a-D\'{\i}az A, \emph{et~al.} (2007) {Developmentally
+  regulated activation of a SINE B2 repeat as a domain boundary in
+  organogenesis.}
+\newblock \emph{Science (New York, N.Y.)}, \textbf{317}(5835): 248--251.
+
+\bibitem[{Schmidt \emph{et~al.}(2012)Schmidt, Schwalie, Wilson, Ballester,
+  Gonalves, Kutter, Brown, Marshall, Flicek and Odom}]{Schmidt2012}
+Schmidt D, Schwalie PC, Wilson MD, Ballester B, Gonalves A, Kutter C, Brown GD,
+  Marshall A, Flicek P, Odom DT (2012) {Waves of retrotransposon expansion
+  remodel genome organization and CTCF binding in multiple mammalian lineages}.
+\newblock \emph{Cell}, \textbf{148}(1-2): 335--348.
+
+\bibitem[{Tarailo-Graovac and Chen(2009)}]{Tarailo-Graovac2009}
+Tarailo-Graovac M, Chen N (2009) {Using RepeatMasker to identify repetitive
+  elements in genomic sequences}.
+\newblock \emph{Current Protocols in Bioinformatics}, (SUPPL. 25).
+
+\bibitem[{Naumova \emph{et~al.}(2013)Naumova, Imakaev, Fudenberg, Zhan, Lajoie,
+  Mirny and Dekker}]{Naumova2013}
+Naumova N, Imakaev M, Fudenberg G, Zhan Y, Lajoie BR, Mirny La, Dekker J (2013)
+  {Organization of the mitotic chromosome.}
+\newblock \emph{Science (New York, N.Y.)}, \textbf{342}(6161): 948--53.
+
+\bibitem[{Furey(2003)}]{Furey2003}
+Furey TS (2003) {Integration of the cytogenetic map with the draft human genome
+  sequence}.
+\newblock \emph{Human Molecular Genetics}, \textbf{12}(9): 1037--1044.
+
+\end{thebibliography}
