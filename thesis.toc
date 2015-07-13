@@ -65,17 +65,17 @@
 \contentsline {subsection}{\numberline {5.2.1}CTCF and YY1}{38}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Repeats}{39}{subsection.5.2.2}
 \contentsline {section}{\numberline {5.3}De novo boundary prediction}{39}{section.5.3}
-\contentsline {section}{\numberline {5.4}MetaTAD boundaries}{39}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Lamin associated domains}{40}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Boundaries over a time series}{40}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}Other boundaries}{40}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Giemsa bands}{40}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Superboundaries}{42}{subsection.5.5.2}
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {4C and 5C analysis}}{45}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{45}{section.6.1}
-\contentsline {section}{\numberline {6.2}4C of the ZRS enhancer}{45}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}3D modelling}{45}{subsection.6.2.1}
-\contentsline {section}{\numberline {6.3}5C in the HoxD region}{45}{section.6.3}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{46}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclusion}{47}{section.7.1}
-\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Appendices}}{49}{chapter.8}
+\contentsline {section}{\numberline {5.4}MetaTAD boundaries}{42}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Lamin associated domains}{42}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Boundaries over a time series}{42}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Other boundaries}{42}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Giemsa bands}{42}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Superboundaries}{45}{subsection.5.5.2}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {4C and 5C analysis}}{47}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{47}{section.6.1}
+\contentsline {section}{\numberline {6.2}4C of the ZRS enhancer}{47}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}3D modelling}{47}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.3}5C in the HoxD region}{47}{section.6.3}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{48}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclusion}{49}{section.7.1}
+\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Appendices}}{51}{chapter.8}
