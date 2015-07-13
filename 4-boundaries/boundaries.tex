@@ -164,13 +164,51 @@ influences of CTCF and cohesin in organizing chromatin structure.\cite{Zuin2013,
 
 % Schwalie: These observations suggest that with respect to transcriptional activity, YY1 is the functionally dominant factor at co-bound locations.
 
-\subsection{Repeats}
+\subsection{Repeats}\label{sec:repeats}
 
 Dixon \emph{et al}.'s study of TAD boundaries identified short interspersed element (SINE) repeats as being enriched over domain boundaries and suggested roles for these repeats in altering genome organisation, in line with prior evidence.\cite{Dixon2012, Lunyak2007} Interestingly, SINE elements are thought to be responsible for spreading CTCF binding sites through mammalian genomes\cite{Schmidt2012} (thought not in primates\cite{Schwalie2013}). Analysis of recent high-resolution Hi-C data again reported a SINE B2 link with CTCF loops in mice.\cite{Rao2014} Together these results suggest repeats could be a key component in the makeup of domain boundaries.
 
-To investigate this, we used the \texttt{RepeatMasker}\cite{Tarailo-Graovac2009} software package to call repeat classes and families in the \texttt{hg19} and \texttt{mm10} genome assemblies.
+To investigate this, we used the \texttt{RepeatMasker}\cite{Tarailo-Graovac2009} software package to call repeat classes and families in the \texttt{hg19} and \texttt{mm10} genome assemblies. Counts for each annotated feature were then average over boundaries as described previously (Methods XX).
 
-% New stuff on repeat classes and boundaries over TAD + compartments, per cell type
+\begin{figure}
+\begin{center} 
+\includegraphics[width=.88\textwidth]{figs/rep_classprofiles.pdf}
+\captionsetup{width=\textwidth}
+\caption{ {\bf Repeat class average-o-grams over all TAD and compartment boundaries.}
+RepeatMasker repeat annotations are counted per 50 kb for 1 Mb either side of each TAD and compartment boundaries. The mean count genome-wide is plotted with $\pm 95\%$ confidence intervals.
+}\label{fig:rep_classprofiles}
+\end{center}
+\end{figure} 
+
+At the level of repeat class, we corroborate the findings of \citet{Dixon2012} that the majority of repeat classes show no enrichment or depletion at TAD boundaries, and we find that this also holds for compartment boundaries (Fig. \ref{fig:rep_classprofiles}). A notable exception is the short interspersed element (SINE) repeat class which appears to be enriched at TAD boundaries in each cell type. Testing the significance of this observed peak confirms this to be the case, with SINEs significantly enriched at TAD boundaries in each cell type, and borderline significant enrichments can also be observed at compartment boundaries (Fig. \ref{fig:rep_classbubble}).
+
+\begin{figure}
+\begin{center} 
+\includegraphics[width=.9\textwidth]{figs/rep_classbubble.pdf}
+\captionsetup{width=\textwidth}
+\caption{ {\bf Significance and effect sizes of repeat class enrichments/depletions over boundaries.}
+Boundary profiles (Fig. \ref{fig:rep_classprofiles}) were tested for enrichment or depletion of each factor at the boundary bin relative to peripheral non-boundary bins (see Methods XX). Bubble area is proportional to the raw effect size of an enrichment or depletion. The Bonferroni-corrected significance threshold is highlighted with a dashed line.
+}\label{fig:rep_classbubble}
+\end{center}
+\end{figure} 
+
+Repeat class profiles also suggest LINEs may be depleted over TAD boundaries and DNA repeats may be enriched at both boundary types (Fig. \ref{fig:rep_classprofiles}), however statistically these observations do not surpass our pre-defined significance threshold ($\alpha = 0.05$) after multiple testing correction (Fig. \ref{fig:rep_classbubble}).
+
+Repeat classes can be broken into smaller repeat families. \citet{Dixon2012} reported that the Alu (or B1 in mouse) repeat families are enriched over TAD boundaries. Again we can reproduce this finding and extend it to compartment boundaries (Fig. \ref{fig:rep_fambubble}). 
+
+\begin{figure}
+\begin{center} 
+\makebox[\textwidth][c]{ 
+\includegraphics[width=1.6\textwidth]{figs/rep_fambubble.pdf}
+}
+\captionsetup{width=\textwidth}
+\caption{ {\bf Significance and effect sizes of repeat family enrichments/depletions over boundaries.}
+As per Fig. \ref{fig:rep_classbubble} but for a higher resolution repeat classification.
+}\label{fig:rep_fambubble}
+\end{center}
+\end{figure} 
+
+% Figure: profiles of those significant + suggestive from all repeat family profiles
 
 \section{De novo boundary prediction}
 
@@ -200,7 +238,7 @@ My contribution to this work was to explore these newly-described metaTAD struct
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=.9\textwidth]{figs/mt_laminperm.pdf}
+\includegraphics[width=.9\textwidth]{figs/mt_laminperm.png}
 \captionsetup{width=\textwidth}
 \caption{ {\bf MetaTADs align with lain associated domains.}
 Heatmaps of LaminB1 association microarray probe intensity values over MetaTAD boundaries (from domains of size 10 -- 40 Mb) and TAD boundaries, are displayed alongside examples of circularly-permuted boundaries. $42.6\%$ of MetaTAD boundaries (10 -- 40 Mb) had an absolute linear regression coefficient $>.05$ of lamin association intensities, indicating a boundary transition (versus $15.8\%$ expectation from 1000 circular permutations, $p < 1 \times 10^{-4}$). TAD boundaries were also significantly more associated with lamin association transitions (Observed: $11.8\%$, Expected: $9.5\%$; empirical p-value: $p < 1 \times 10^{-4}$). Profiles are shown $\pm450$ kb from each boundary.
@@ -225,7 +263,9 @@ CAGE-defined active TSS (CTSS) were counted per 50 kb bin across each TAD and Me
 \subsection{Giemsa bands}
 
 % text (colin's?) from pre-submission old manuscript draft
-A recent analysis of Hi-C datasets examined the hierarchy of nuclear compartment and TAD organisation in human HeLa cells across the cell cycle. They found that interphase and metaphase chromatin structure are highly distinct, such that the TADs and compartments observed here are effectively abolished in metaphase.\cite{Naumova2013} This raises the question of how the structural organization seen in (and often shared between) interphase cells is inherited through the cell cycle.Human Giemsa metaphase banding (G-band) pattern data have been integrated with the human genome assembly, and although such data are widely used, they are also necessarily of low resolution.\cite{Furey2003} These G-band patterns are constant over human cell types at metaphase, but all traces of interphase higher order structure were reported to be absent at metaphase.\cite{Naumova2013} We would therefore expect no agreement between metaphase G-bands and the patterns of interphase TADs and A/B nuclear compartments defined here, over all three cell types. 
+A recent analysis of Hi-C datasets examined the hierarchy of nuclear compartment and TAD organisation in human HeLa cells across the cell cycle. They found that interphase and metaphase chromatin structure are highly distinct, such that the TADs and compartments observed here are effectively abolished in metaphase.\cite{Naumova2013} This raises the question of how the structural organization seen in (and often shared between) interphase cells is inherited through the cell cycle.
+
+Human Giemsa metaphase banding (G-band) pattern data have been integrated with the human genome assembly, and although such data are widely used, they are also necessarily of low resolution.\cite{Furey2003} These G-band patterns are constant over human cell types at metaphase, but all traces of interphase higher order structure were reported to be absent at metaphase.\cite{Naumova2013} We would therefore expect no agreement between metaphase G-bands and the patterns of interphase TADs and A/B nuclear compartments defined here, over all three cell types. 
 
 We examined the genome wide similarity of all interphase domain structure boundaries to metaphase G-band boundaries, relative to an expected distribution derived by permutation (see Methods) (Figure S9). There is a significant, though extremely modest, excess of compartment boundaries within close proximity of G-band boundaries, such that $13.90\%$ of compartment boundaries are within 500 kb of a G-band boundary (expectation = $10.50\%$, K-S test: D $= 0.076$, p $< 3 \times10^{-12}$). This is seen for compartment boundaries calculated for all three cell types independently. The genome wide overlap of compartment A and B regions with particular G-band classes is nonrandom, and suggests much greater correspondence. Regions assigned to compartment A are significantly over-represented within lighter staining (especially G-negative) bands, while compartment B regions are over-represented in the most darkly staining (G-positive) bands. Approximately $40\%$ of the genome jointly occupies interphase compartment A as well as gneg/gpos25 metaphase G-bands, or occupies the interphase B compartment as well as gpos75/gpos100 at metaphase. Again, the same trends are seen significantly across all three cell types. This agreement is not unexpected given the broad differences in G-negative and G-positive bands, with contrasting gene density, GC content and replication timing\cite{Furey2003} that is strongly reminiscent of the contrasts between interphase A and B compartments,\cite{Lieberman2009} but to our knowledge has not been directly studied before. These data suggest that across the genome most fine structure, reflected in domain boundaries, is not well preserved between interphase and metaphase. However there is evidence for conservation of broader structural categories across a substantial fraction of the genome, which may reflect broad similarities in the degree of compaction seen at many regions across the cell cycle.
 
