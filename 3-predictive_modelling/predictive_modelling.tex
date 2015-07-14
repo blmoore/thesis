@@ -112,7 +112,7 @@ linear regression model
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=.7\textwidth]{figs/improvedDongPlot.pdf}
+\includegraphics[width=.7\textwidth]{figs/improvedDongPlot.png}
 \captionsetup{width=\textwidth}
 \caption{Comparison of classification-regression model (\emph{upper})
   with simple linear regression model (\emph{lower}) recalculated following Dong
@@ -314,8 +314,6 @@ expression timepoint it was trained or tested on. In future analyses, higher-res
 more interesting variation or alternatively genes that remain invariant
 throughout the timecourse could be filtered out of the dataset. 
 
-\subsection{Dissecting the  \emph{best bin} approach}
-
 \section{Modelling higher order chromatin}
 
 Accurate predictive modelling of transcription in a variety of cell types offered several novel insights into the internal between histone modifications and transcription factors with transcriptional machinery, and advanced a quantitative explanation of the degree to which correlated features are informative. It is of interest then, to test whether this approach can be applied to other data, such as the reprocessed higher order chromatin data assembled in this work (Chapter 1).
@@ -324,7 +322,22 @@ Previous publications have identified several correlates which track compartment
 
 \subsection{Predictive model}
 
-We build Random Forest regression models (see Methods XX) to predict compartment eigenvector profiles genome-wide in three human cell types. Models were found to have high predictive accuracy, comparable to that achieved by Dong \emph{et al.}\cite{Dong2012} in the prediction of transcription.
+We built Random Forest regression models (see Methods XX) to predict compartment eigenvector profiles genome-wide in three human cell types. Models were found to have high predictive accuracy, with Pearson correlation between predicted and observed compartment eigenvectors in the range of 0.82--0.75 (Fig. \ref{fig:modelres}), comparable to that achieved by Dong \emph{et al.}\cite{Dong2012} in the prediction of transcription.
+
+\begin{figure}
+\begin{center} 
+\makebox[\textwidth][c]{ 
+\includegraphics[width=1.3\textwidth]{figs/modelres.png}
+}
+\captionsetup{width=\textwidth} 
+\caption{ {\bf Model predictions (Predicted eig) are compared to observed values (Empirical eig).}  Pearson correlation coefficient (PCC) and root mean-squared error (RMSE) report the degree of success of the regression model, whereas accuracy (Acc.) and area under the receiver operating characteristic (AUROC) give the classification accuracy of binarized outcomes.
+}\label{fig:modelres}
+\end{center} 
+\end{figure} 
+
+Our predictive models were also assessed in terms of classification performance, i.e. did the model correctly assign each block to an active "A" or inactive "B" compartment. As with regression, our Random Forest models achieved high classification accuracy with upwards of $80\%$ of the all genomic bins correctly assigned in each cell type (Fig. \ref{fig:modelres}). 
+
+This predictive performance underlines the strong connection between locus-level features and higher order chromatin structure previously noted by \citet{Lieberman2009} Given such highly-predictive models can be generated, it is then of interest to dissect said models in an attempt to understand the nature of this captured relationship.
 
 \subsection{Cross-application}
 
@@ -356,9 +369,9 @@ Placeholder
 \end{center} 
 \end{figure} 
 
-Having built accurate predictive models, we next dissect the relative variable contributions made from our range of input features and compare these across cell types. An overview on the top 10 most highly-ranked features in cell type specific models shows some agreement but also substantial differences between cell types (Fig. \ref{figs:varimp})
+Having built accurate predictive models, we next dissect the relative variable contributions made from our range of input features and compare these across cell types. An overview on the top 10 most highly-ranked features in cell type specific models shows some agreement but also substantial differences between cell types (Fig. \ref{fig:varimp})
 
-Only one input feature, H3k9me3, is present in the top 10 most important variables of each model. Under the assumption that variables are ranked independently, the probability of drawing the same variable in each case is low (${\frac{10}{36}}^3 \approx 0.02$) however the probability of any one variable appearing in each ranking 
+Only one input feature, H3k9me3, is present in the top 10 most important variables of each model. Under the assumption that variables are ranked independently in each cell type, the probability of drawing at least one of the same variables in each would be expected by chance (simulated $p$-value of $0.6$). Similarly, the overlaps between pairs of cell types is within the range of expectation (probability of 7 or more variables appearing in exactly two sets: $0.39$).
 
 \begin{figure}
 \begin{center} 
@@ -434,10 +447,10 @@ This is for two reasons: firstly non independence could be thought of as an arte
 
 \subsection{Correlating input features}
 
-\ifstandalone
+%\ifstandalone
 \begin{small}
 \bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
 \end{small}
-\fi
+%\fi
 
 \end{document}
