@@ -1,4 +1,4 @@
-\begin{thebibliography}{107}
+\begin{thebibliography}{110}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -494,6 +494,23 @@ Karli\'{c} R, Chung Hr, Lasserre J, Vlahovicek K, Vingron M (2010) {Histone
   modification levels are predictive for gene expression.}
 \newblock \emph{Proceedings of the National Academy of Sciences of the United
   States of America}, \textbf{107}(7): 2926--31.
+
+\bibitem[{Viz\'{a}n \emph{et~al.}(2014)Viz\'{a}n, Beringer, Ballar\'{e} and {Di
+  Croce}}]{Vizan2014}
+Viz\'{a}n P, Beringer M, Ballar\'{e} C, {Di Croce} L (2014) {Role of
+  PRC2-associated factors in stem cells and disease}.
+\newblock \emph{FEBS Journal}, \textbf{282}: n/a--n/a.
+
+\bibitem[{Creyghton \emph{et~al.}(2008)Creyghton, Markoulaki, Levine, Hanna,
+  Lodato, Sha, Young, Jaenisch and Boyer}]{Creyghton2008}
+Creyghton MP, Markoulaki S, Levine SS, Hanna J, Lodato Ma, Sha K, Young Ra,
+  Jaenisch R, Boyer La (2008) {H2AZ Is Enriched at Polycomb Complex Target
+  Genes in ES Cells and Is Necessary for Lineage Commitment}.
+\newblock \emph{Cell}, \textbf{135}(4): 649--661.
+
+\bibitem[{Deb \emph{et~al.}(2014)Deb, Singh and Gupta}]{Deb2014}
+Deb G, Singh AK, Gupta S (2014) {EZH2: Not EZHY (Easy) to Deal.}
+\newblock \emph{Molecular cancer research : MCR}, \textbf{12}(5): 639--53.
 
 \bibitem[{Hou \emph{et~al.}(2012)Hou, Li, Qin and Corces}]{Hou2012}
 Hou C, Li L, Qin ZS, Corces VG (2012) {Gene Density, Transcription, and
