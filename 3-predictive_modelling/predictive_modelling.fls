@@ -361,12 +361,12 @@ INPUT figs/diffmethods.pdf
 INPUT ./figs/diffmethods.pdf
 INPUT ./figs/diffmethods.pdf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplb9o.tfm
+INPUT predictive_modelling.bbl
+INPUT predictive_modelling.bbl
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplb9o.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplbj8r.tfm
-INPUT predictive_modelling.bbl
-INPUT predictive_modelling.bbl
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm

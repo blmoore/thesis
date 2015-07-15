@@ -371,7 +371,10 @@ Variable importance for each Random Forest model was measured in terms of percen
 
 Having built accurate predictive models, we next dissect the relative variable contributions made from our range of input features and compare these across cell types. An overview on the top 10 most highly-ranked features in cell type specific models shows some agreement but also substantial differences between cell types (Fig. \ref{fig:varimp})
 
-Only one input feature, H3k9me3, is present in the top 10 most important variables of each model (Fig. \ref{fig:top10venn}). H3k9me3 is one of the few features to be negatively correlated with compartment eigenvectors (Fig XX). Of those shared between two cell type models, H3k27me3 is also a repressive mark and deposited by polycomb repressive complex 2 (PRC2)\cite{Vizan2014} while H2A.Z is a histone variant again linked to polycomb-regulated genes and essential for embryonic development.\cite{Creyghton2008} Furthermore EZH2, the catalytic subunit of PRC2,\cite{Deb2014} is also included in the feature set but only highly ranked in the GM12878 cell type model. These biological relationships between variables may help explain the observed differences between models: different representatives of correlated clusters of input variables may be being selected in each model (see Section \ref{sec:corrinputs}).
+Only one input feature, H3k9me3, is present in the top 10 most important variables of each model (Fig. \ref{fig:top10venn}). H3k9me3 is one of the few features to be negatively correlated with compartment eigenvectors (Fig XX). Of those shared between two cell type models, H3k27me3 is also a repressive mark and deposited by polycomb repressive complex 2 (PRC2)\cite{Vizan2014} while H2A.Z is a histone variant again linked to polycomb-regulated genes and essential for embryonic development.\cite{Creyghton2008} Furthermore EZH2, the catalytic subunit of PRC2,\cite{Deb2014} is also included in the feature set but only highly ranked in the GM12878 cell type model. As another example, MYC and MAX are found in the top 10 influential variables in H1 hESC, while MXI1 is found to be an informative variable in GM12878. This is in keeping with recent results suggesting MYC
+binds open chromatin as a transcriptional amplifier in embryonic stem
+cells,\cite{Nie2012, Kieffer-Kwon2013a} with MAX and MXI1 long being
+known as antagonistic co-regulators of MYC.\cite{Zervos1993} These biological relationships between variables may help explain the observed differences between models: different representatives of correlated clusters of input variables may be being selected in each model (see Section \ref{sec:corrinputs}).
 
 \begin{figure}
 \begin{center} 
@@ -383,7 +386,7 @@ Venn diagram illustrating intersections between sets of ten most influential var
 \end{center} 
 \end{figure} 
 
-To asses the significance of observed intersections (Fig. \ref{fig:top10venn}), the variable selection process could be modelled with, for example, a multivariate hypergeometric distribution or via simulation. Simulation was used here for simplicity: each intersection was calculated under $10,000$ variables draws with uniform distribution and empirical $p$-values were then calculated accordingly. Under the assumption that variables are ranked independently in each cell type, drawing at least one variable in all three cell types would be expected by chance (simulated $p$-value of $0.6$). Similarly, the overlaps between pairs of cell types is within the range of expectation (probability of 7 or more variables appearing in exactly two sets: $0.39$). Hence these data suggest the top 10 most influential variables are not significantly more alike across the three cell-type specific models than expected by chance, however ten is an arbitrary cutoff, and many of the rankings are based on small differences in variable importance, thus could be unstable between multiple generations of stochastic Random Forest models.
+To asses the significance of observed intersections (Fig. \ref{fig:top10venn}), the variable selection process could be modelled with, for example, a multivariate hypergeometric distribution or via simulation. Simulation was used here for simplicity: each intersection was calculated under $10,000$ variables draws with uniform distribution and empirical $p$-values were then calculated accordingly. Under the assumption that variables are ranked independently in each cell type, drawing at least one variable in all three cell types would be expected by chance ($p = 0.6$). Similarly, the overlaps between pairs of cell types is within the range of expectation (probability of 7 or more variables appearing in exactly two sets: $0.39$). Hence these data suggest the top 10 most influential variables are not significantly more alike across the three cell-type specific models than expected by chance, however ten is an arbitrary cutoff, and many of the rankings are based on small differences in variable importance, thus could be unstable between multiple generations of stochastic Random Forest models.
 
 \begin{figure}
 \begin{center} 
@@ -397,11 +400,21 @@ Placeholder
 \end{center} 
 \end{figure} 
 
-In addition to rankings, raw variable importance metrics can be compared between cell-type specific models (Fig. \ref{fig:varimp_diff}).
+In addition to rankings, raw variable importance metrics can be compared between cell-type specific models (Fig. \ref{fig:varimp_diff}). This shows that variables such as CTCF have a relatively small but highly consistent variable importance across the three cell type specific models, whereas other features like ATF3 are highly influential in one cell type but not the other two. Absolute differences in these figures should not be over interpreted and will be affected to some degree by data quality, eigenvector calculation and other sources of noise. Nevertheless there are observations which may reflect biological phenomena, such as the higher relative importance of P300 in both hematopoietic cell line models, potentially reflecting its activity as a histone acetyl transferase that regulates hematopoiesis\cite{Sun2015} and a noted involvement with CTCF in chromatin looping.\cite{Handoko2011}
 
 % figure showing e.g. how individual var regresses against eigen (Egr1compare.pdf)
 
-\subsection{Importance of resolution}
+\subsection{Correlating input features}\label{sec:corrinputs}
+
+\section{Parsimonious models}
+
+\subsection{$L_1$ regularisation}
+
+\subsection{Brute force subsampling}
+
+\section{Other modelling considerations}
+
+\subsection{Resolution}
 
 Thus far models were built at 1 Mb resolution, but if we are capturing true biological relationships we would expect these to hold at higher or lower resolution. To test this, models leaned at 1 Mb resolution were applied to feature sets binned at 100 kb, an order of magnitude higher resolution.
 
@@ -461,12 +474,10 @@ As recognised through our use of Hidden Markov Models (Methods XX), consecutive 
 
 This is for two reasons: firstly non independence could be thought of as an artefact of bin-sizing (we have elected to use regular, fixed binning beneath the scale of compartments themselves whereas another approach could use variable bin sizes, for example per compartment, TAD or restriction fragment); secondly using information of a bin's surroundings may obscure by proxy the chromatin features which would otherwise prove predictive. As an example, knowing that bin $x_{i-1}$ and bin $x_{i+1}$ are in compartment state A would allow us with high confidence to predict the state of bin $x_i$, but without learning anything of any region's relationships with their histone modifications and bound factors.
 
-\subsection{Correlating input features}\label{sec:corrinputs}
-
-\ifstandalone
+%\ifstandalone
 \begin{small}
 \bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
 \end{small}
-\fi
+%\fi
 
 \end{document}
