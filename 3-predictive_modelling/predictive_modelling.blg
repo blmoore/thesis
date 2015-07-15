@@ -7,45 +7,45 @@ Database file #2: /Users/benmoore/Documents/customrefs.bib
 Warning--I didn't find a database entry for "Chambers2012"
 Warning--I didn't find a database entry for "Lieberman2011"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 26 entries,
+You've used 31 entries,
             3024 wiz_defined-function locations,
-            800 strings with 12485 characters,
-and the built_in function-call counts, 39559 in all, are:
-= -- 4202
-> -- 1190
+            835 strings with 14387 characters,
+and the built_in function-call counts, 47664 in all, are:
+= -- 5026
+> -- 1489
 < -- 9
-+ -- 860
-- -- 305
-* -- 2965
-:= -- 4218
-add.period$ -- 52
-call.type$ -- 26
-change.case$ -- 130
-chr.to.int$ -- 27
-cite$ -- 26
-duplicate$ -- 4201
-empty$ -- 2816
-format.name$ -- 388
-if$ -- 8150
++ -- 1078
+- -- 381
+* -- 3581
+:= -- 5094
+add.period$ -- 62
+call.type$ -- 31
+change.case$ -- 155
+chr.to.int$ -- 32
+cite$ -- 31
+duplicate$ -- 5028
+empty$ -- 3381
+format.name$ -- 479
+if$ -- 9815
 int.to.chr$ -- 1
-int.to.str$ -- 27
-missing$ -- 331
-newline$ -- 108
-num.names$ -- 78
-pop$ -- 2018
+int.to.str$ -- 32
+missing$ -- 404
+newline$ -- 128
+num.names$ -- 93
+pop$ -- 2398
 preamble$ -- 1
-purify$ -- 104
+purify$ -- 124
 quote$ -- 0
-skip$ -- 680
+skip$ -- 854
 stack$ -- 0
-substring$ -- 5059
-swap$ -- 868
+substring$ -- 6028
+swap$ -- 1062
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 156
+type$ -- 186
 warning$ -- 0
-while$ -- 249
+while$ -- 307
 width$ -- 0
-write$ -- 314
+write$ -- 374
 (There were 2 warnings)
