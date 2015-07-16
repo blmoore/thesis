@@ -52,27 +52,31 @@
 \BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 Predictive model}{section.4.4}% 52
 \BOOKMARK [2][-]{subsection.4.4.2}{4.4.2 Cross-application}{section.4.4}% 53
 \BOOKMARK [2][-]{subsection.4.4.3}{4.4.3 Variable importance}{section.4.4}% 54
-\BOOKMARK [2][-]{subsection.4.4.4}{4.4.4 Importance of resolution}{section.4.4}% 55
-\BOOKMARK [2][-]{subsection.4.4.5}{4.4.5 Other modelling approaches}{section.4.4}% 56
-\BOOKMARK [2][-]{subsection.4.4.6}{4.4.6 Non-independence}{section.4.4}% 57
-\BOOKMARK [2][-]{subsection.4.4.7}{4.4.7 Correlating input features}{section.4.4}% 58
-\BOOKMARK [0][]{chapter.5}{5 Chromatin domain boundaries}{}% 59
-\BOOKMARK [1][-]{section.5.1}{5.1 Introduction}{chapter.5}% 60
-\BOOKMARK [1][-]{section.5.2}{5.2 TAD and compartment boundaries}{chapter.5}% 61
-\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 CTCF and YY1}{section.5.2}% 62
-\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Repeats}{section.5.2}% 63
-\BOOKMARK [1][-]{section.5.3}{5.3 De novo boundary prediction}{chapter.5}% 64
-\BOOKMARK [1][-]{section.5.4}{5.4 MetaTAD boundaries}{chapter.5}% 65
-\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 Lamin associated domains}{section.5.4}% 66
-\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Boundaries over a time series}{section.5.4}% 67
-\BOOKMARK [1][-]{section.5.5}{5.5 Other boundaries}{chapter.5}% 68
-\BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 Giemsa bands}{section.5.5}% 69
-\BOOKMARK [2][-]{subsection.5.5.2}{5.5.2 Superboundaries}{section.5.5}% 70
-\BOOKMARK [0][]{chapter.6}{6 4C and 5C analysis}{}% 71
-\BOOKMARK [1][-]{section.6.1}{6.1 Introduction}{chapter.6}% 72
-\BOOKMARK [1][-]{section.6.2}{6.2 4C of the ZRS enhancer}{chapter.6}% 73
-\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 3D modelling}{section.6.2}% 74
-\BOOKMARK [1][-]{section.6.3}{6.3 5C in the HoxD region}{chapter.6}% 75
-\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 76
-\BOOKMARK [1][-]{section.7.1}{7.1 Conclusion}{chapter.7}% 77
-\BOOKMARK [0][]{chapter.8}{8 Appendices}{}% 78
+\BOOKMARK [2][-]{subsection.4.4.4}{4.4.4 Correlating input features}{section.4.4}% 55
+\BOOKMARK [1][-]{section.4.5}{4.5 Parsimonious models}{chapter.4}% 56
+\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1 L1 regularisation}{section.4.5}% 57
+\BOOKMARK [2][-]{subsection.4.5.2}{4.5.2 Brute force subsampling}{section.4.5}% 58
+\BOOKMARK [1][-]{section.4.6}{4.6 Other modelling considerations}{chapter.4}% 59
+\BOOKMARK [2][-]{subsection.4.6.1}{4.6.1 Resolution}{section.4.6}% 60
+\BOOKMARK [2][-]{subsection.4.6.2}{4.6.2 Other modelling approaches}{section.4.6}% 61
+\BOOKMARK [2][-]{subsection.4.6.3}{4.6.3 Non-independence}{section.4.6}% 62
+\BOOKMARK [0][]{chapter.5}{5 Chromatin domain boundaries}{}% 63
+\BOOKMARK [1][-]{section.5.1}{5.1 Introduction}{chapter.5}% 64
+\BOOKMARK [1][-]{section.5.2}{5.2 TAD and compartment boundaries}{chapter.5}% 65
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 CTCF and YY1}{section.5.2}% 66
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Repeats}{section.5.2}% 67
+\BOOKMARK [1][-]{section.5.3}{5.3 De novo boundary prediction}{chapter.5}% 68
+\BOOKMARK [1][-]{section.5.4}{5.4 MetaTAD boundaries}{chapter.5}% 69
+\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 Lamin associated domains}{section.5.4}% 70
+\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Boundaries over a time series}{section.5.4}% 71
+\BOOKMARK [1][-]{section.5.5}{5.5 Other boundaries}{chapter.5}% 72
+\BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 Giemsa bands}{section.5.5}% 73
+\BOOKMARK [2][-]{subsection.5.5.2}{5.5.2 Superboundaries}{section.5.5}% 74
+\BOOKMARK [0][]{chapter.6}{6 4C and 5C analysis}{}% 75
+\BOOKMARK [1][-]{section.6.1}{6.1 Introduction}{chapter.6}% 76
+\BOOKMARK [1][-]{section.6.2}{6.2 4C of the ZRS enhancer}{chapter.6}% 77
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 3D modelling}{section.6.2}% 78
+\BOOKMARK [1][-]{section.6.3}{6.3 5C in the HoxD region}{chapter.6}% 79
+\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 80
+\BOOKMARK [1][-]{section.7.1}{7.1 Conclusion}{chapter.7}% 81
+\BOOKMARK [0][]{chapter.8}{8 Appendices}{}% 82

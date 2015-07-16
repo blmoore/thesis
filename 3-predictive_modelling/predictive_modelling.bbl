@@ -1,4 +1,4 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Gerstein \emph{et~al.}(2012)Gerstein, Kundaje, Hariharan, Landt, Yan,
@@ -147,11 +147,11 @@ Imakaev M, Fudenberg G, McCord RP, Naumova N, Goloborodko A, Lajoie BR, Dekker
   chromosome organization.}
 \newblock \emph{Nature methods}, \textbf{9}(10): 999--1003.
 
-\bibitem[{Viz\'{a}n \emph{et~al.}(2014)Viz\'{a}n, Beringer, Ballar\'{e} and {Di
-  Croce}}]{Vizan2014}
-Viz\'{a}n P, Beringer M, Ballar\'{e} C, {Di Croce} L (2014) {Role of
-  PRC2-associated factors in stem cells and disease}.
-\newblock \emph{FEBS Journal}, \textbf{282}: n/a--n/a.
+\bibitem[{Beringer \emph{et~al.}(2015)Beringer, Ballar, Croce and
+  Viz}]{Vizan2014}
+Beringer M, Ballar C, Croce LD, Viz P (2015) {Role of PRC2-associated factors
+  in stem cells and disease}.
+\newblock \textbf{282}: 1723--1735.
 
 \bibitem[{Creyghton \emph{et~al.}(2008)Creyghton, Markoulaki, Levine, Hanna,
   Lodato, Sha, Young, Jaenisch and Boyer}]{Creyghton2008}
@@ -194,5 +194,10 @@ Handoko L, Xu H, Li G, Ngan CY, Chew E, Schnapp M, Lee CWH, Ye C, Ping JLH,
   \emph{et~al.} (2011) {CTCF-mediated functional chromatin interactome in
   pluripotent cells.}
 \newblock \emph{Nature genetics}, \textbf{43}(7): 630--8.
+
+\bibitem[{Suzuki and Shimodaira(2006)}]{Suzuki2006a}
+Suzuki R, Shimodaira H (2006) {Pvclust: an R package for assessing the
+  uncertainty in hierarchical clustering.}
+\newblock \emph{Bioinformatics (Oxford, England)}, \textbf{22}(12): 1540--2.
 
 \end{thebibliography}

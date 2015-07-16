@@ -7,45 +7,46 @@ Database file #2: /Users/benmoore/Documents/customrefs.bib
 Warning--I didn't find a database entry for "Chambers2012"
 Warning--I didn't find a database entry for "Lieberman2011"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 31 entries,
+Warning--empty journal in Vizan2014
+You've used 32 entries,
             3024 wiz_defined-function locations,
-            835 strings with 14387 characters,
-and the built_in function-call counts, 47664 in all, are:
-= -- 5026
-> -- 1489
-< -- 9
-+ -- 1078
-- -- 381
-* -- 3581
-:= -- 5094
-add.period$ -- 62
-call.type$ -- 31
-change.case$ -- 155
-chr.to.int$ -- 32
-cite$ -- 31
-duplicate$ -- 5028
-empty$ -- 3381
-format.name$ -- 479
-if$ -- 9815
+            841 strings with 14547 characters,
+and the built_in function-call counts, 48304 in all, are:
+= -- 5084
+> -- 1504
+< -- 10
++ -- 1088
+- -- 385
+* -- 3633
+:= -- 5180
+add.period$ -- 64
+call.type$ -- 32
+change.case$ -- 160
+chr.to.int$ -- 33
+cite$ -- 33
+duplicate$ -- 5081
+empty$ -- 3433
+format.name$ -- 488
+if$ -- 9942
 int.to.chr$ -- 1
-int.to.str$ -- 32
-missing$ -- 404
-newline$ -- 128
-num.names$ -- 93
-pop$ -- 2398
+int.to.str$ -- 33
+missing$ -- 413
+newline$ -- 132
+num.names$ -- 96
+pop$ -- 2422
 preamble$ -- 1
-purify$ -- 124
+purify$ -- 128
 quote$ -- 0
-skip$ -- 854
+skip$ -- 868
 stack$ -- 0
-substring$ -- 6028
-swap$ -- 1062
+substring$ -- 6082
+swap$ -- 1087
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 186
-warning$ -- 0
-while$ -- 307
+type$ -- 192
+warning$ -- 1
+while$ -- 313
 width$ -- 0
-write$ -- 374
-(There were 2 warnings)
+write$ -- 385
+(There were 3 warnings)
