@@ -10,6 +10,8 @@
 
 \usepackage{standalone}
 
+\captionsetup{format=plain}
+
 % bibliography
 \bibliographystyle{../thesis}
 
@@ -371,7 +373,7 @@ Variable importance for each Random Forest model was measured in terms of percen
 
 Having built accurate predictive models, we next dissect the relative variable contributions made from our range of input features and compare these across cell types. An overview on the top 10 most highly-ranked features in cell type specific models shows some agreement but also substantial differences between cell types (Fig. \ref{fig:varimp})
 
-Only one input feature, H3k9me3, is present in the top 10 most important variables of each model (Fig. \ref{fig:top10venn}). H3k9me3 is one of the few features to be negatively correlated with compartment eigenvectors (Fig XX). Of those shared between two cell type models, H3k27me3 is also a repressive mark and deposited by polycomb repressive complex 2 (PRC2)\cite{Vizan2014} while H2A.Z is a histone variant again linked to polycomb-regulated genes and essential for embryonic development.\cite{Creyghton2008} Furthermore EZH2, the catalytic subunit of PRC2,\cite{Deb2014} is also included in the feature set but only highly ranked in the GM12878 cell type model. As another example, MYC and MAX are found in the top 10 influential variables in H1 hESC, while MXI1 is found to be an informative variable in GM12878. This is in keeping with recent results suggesting MYC
+Only one input feature, H3k9me3, is present in the top 10 most important variables of each model (Fig. \ref{fig:top10venn}). H3k9me3 is one of the few features to be negatively correlated with compartment eigenvectors (e.g. Fig. \ref{fig:h1feats}). Of those shared between two cell type models, H3k27me3 is also a repressive mark and deposited by polycomb repressive complex 2 (PRC2)\cite{Vizan2014} while H2A.Z is a histone variant again linked to polycomb-regulated genes and essential for embryonic development.\cite{Creyghton2008} Furthermore EZH2, the catalytic subunit of PRC2,\cite{Deb2014} is also included in the feature set but only highly ranked in the GM12878 cell type model. As another example, MYC and MAX are found in the top 10 influential variables in H1 hESC, while MXI1 is found to be an informative variable in GM12878. This is in keeping with recent results suggesting MYC
 binds open chromatin as a transcriptional amplifier in embryonic stem
 cells,\cite{Nie2012, Kieffer-Kwon2013a} with MAX and MXI1 long being
 known as antagonistic co-regulators of MYC.\cite{Zervos1993} These biological relationships between variables may help explain the observed differences between models: different representatives of correlated clusters of input variables may be being selected in each model (see Section \ref{sec:corrinputs}).
@@ -394,8 +396,8 @@ To asses the significance of observed intersections (Fig. \ref{fig:top10venn}), 
 \includegraphics[width=1.2\textwidth]{figs/varimp_diff.pdf}
 }
 \captionsetup{width=\textwidth} 
-\caption{ {\bf Variable importance per cell type specific model. }
-Placeholder
+\caption{ {\bf Comparison of variable importance between three cell type specific Random Forest models. }
+Variable importance for each Random Forest model was measured in terms of percentage increase in mean squared error when permuted (Methods XX). Results are shown sorted by mean variable importance (\emph{left}) and by largest absolute difference in pairwise comparisons (\emph{right}).
 }\label{fig:varimp_diff}
 \end{center} 
 \end{figure} 
@@ -403,10 +405,37 @@ Placeholder
 In addition to rankings, raw variable importance metrics can be compared between cell-type specific models (Fig. \ref{fig:varimp_diff}). This shows that variables such as CTCF have a relatively small but highly consistent variable importance across the three cell type specific models, whereas other features like ATF3 are highly influential in one cell type but not the other two. Absolute differences in these figures should not be over interpreted and will be affected to some degree by data quality, eigenvector calculation and other sources of noise. Nevertheless there are observations which may reflect biological phenomena, such as the higher relative importance of P300 in both hematopoietic cell line models, potentially reflecting its activity as a histone acetyl transferase that regulates hematopoiesis\cite{Sun2015} and a noted involvement with CTCF in chromatin looping.\cite{Handoko2011}
 
 % figure showing e.g. how individual var regresses against eigen (Egr1compare.pdf)
+\begin{figure}
+\begin{center} 
+\includegraphics[width=\textwidth]{figs/h1feats.pdf}
+\captionsetup{width=\textwidth} 
+\caption{ {\bf Correlations of individual features with compartment eigenvector in the H1 hESC cell type. }
+Two-dimensional kernel density estimates show the density of points in a scatterplot of compartment eigenvector ($x$-axis) against each input feature individually ($y$-axes). Features with a PCC against eigenvector of above or below $0.1$ are coloured as positive or negative, respectively.
+}\label{fig:h1feats}
+\end{center} 
+\end{figure} 
 
 \subsection{Correlating input features}\label{sec:corrinputs}
 
+We have an \emph{a priori} expectation of multicollinearity in our feature set, for example between those that each broadly correlate with transcriptional activity (including POL2, H3K36me3, GC content). To explore these relationships, we performed unsupervised clustering of our feature sets in each cell type (Fig. \ref{fig:feat map}).
+
+\begin{figure}
+\begin{center} 
+\includegraphics[width=.775\textwidth]{figs/featmap}
+\captionsetup{width=\textwidth} 
+\caption{ {\bf Correlation heatmaps of the 35 features used to model compartment eigenvectors. }
+The Pearson correlation coefficient (PCC) of genome-wide 1 Mb bins of each feature were pairwise correlated with each other. The features were also clustered using hierarchal clustering. The “significance” of these clusters was determined through multi-scale bootstrap resampling, with those clusters that were stable across different sizes of resampling deemed significant, as implemented in the \texttt{pvclust} R package.\cite{Suzuki2006a}
+}\label{fig:featmap}
+\end{center} 
+\end{figure} 
+
+We found as expected pervasive multicollinearity across our feature sets, with the majority of input variables in each model falling into a persistent "active" cluster containing regions with high DNase hypersensitivity, POL2 binding and histone modifications H3K36me3 as well as GC content (Fig. \ref{fig:feat map}). 
+
+Outliers are also present. H3K9me3, noted for high variable importance in each model (Fig. \ref{fig:varimp}) and the only feature ranked within the top 10 in each model (Fig. \ref{fig:top10venn}) is a clear outgroup in the H1 hESC and GM12878 correlation heatmaps, and in K562 forms a stable cluster only with the P300 transcription factor (Fig. \ref{fig:featmap}). This suggests H3K9me3 is providing orthogonal information to many of the other input variables, and likely explains its high variable importance.
+
 \section{Parsimonious models}
+
+Strongly predictive models can be useful tools to reason about a complex system, however from a researcher's perspective there also exists a trade-off between predictive power and parsimony. Namely simpler models with fewer inputs may be more interpretable and of wider utility, for example in cell types with less ChIP-seq data available than those used in this work. For this reason we explore parsimonious models with reduced feature sets, with an aim to build simpler models of chromatin state while retaining, if possible, similar levels of predictive accuracy.
 
 \subsection{$L_1$ regularisation}
 
@@ -416,7 +445,7 @@ In addition to rankings, raw variable importance metrics can be compared between
 
 \subsection{Resolution}
 
-Thus far models were built at 1 Mb resolution, but if we are capturing true biological relationships we would expect these to hold at higher or lower resolution. To test this, models leaned at 1 Mb resolution were applied to feature sets binned at 100 kb, an order of magnitude higher resolution.
+Thus far models were built at 1 Mb resolution, but if we are capturing true biological relationships we would expect these to hold at higher or lower resolutions. To test this, models leaned at 1 Mb resolution were applied to feature sets binned at 100 kb, an order of magnitude higher resolution.
 
 \begin{figure}
 \begin{center} 
@@ -474,10 +503,10 @@ As recognised through our use of Hidden Markov Models (Methods XX), consecutive 
 
 This is for two reasons: firstly non independence could be thought of as an artefact of bin-sizing (we have elected to use regular, fixed binning beneath the scale of compartments themselves whereas another approach could use variable bin sizes, for example per compartment, TAD or restriction fragment); secondly using information of a bin's surroundings may obscure by proxy the chromatin features which would otherwise prove predictive. As an example, knowing that bin $x_{i-1}$ and bin $x_{i+1}$ are in compartment state A would allow us with high confidence to predict the state of bin $x_i$, but without learning anything of any region's relationships with their histone modifications and bound factors.
 
-%\ifstandalone
+\ifstandalone
 \begin{small}
 \bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
 \end{small}
-%\fi
+\fi
 
 \end{document}
