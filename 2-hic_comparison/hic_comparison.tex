@@ -164,6 +164,26 @@ Placeholder
 
 \section{Nuclear positioning}
 
+Chromosome positioning within the nucleus is known to reflect gene density, with the most gene-dense chromosomes occupying the centre of the nucleus in human cells.\cite{Bickmore2013} \citet{Kalhor2012} used a Hi-C variant to recreate probability density maps of chromosome positions which again reflected this feature of higher order chromatin organisation, and also reported active regions were more diffuse than inactive. A testable expectation with the eigenvector data used in this work is that active A compartments are enriched in the central nucleus of our human cell types, and B compartments are preferentially located in the nuclear periphery.
+
+To test this, published data on chromosome positioning preference within
+the nucleus was used to label chromosomes as ``central'' or 
+or ``edge''.\cite{Boyle2001} Chromosomes whose DAPI hybridisation
+signals were significantly enriched ($p\leq 2\times10^{-2}$) in the inner nuclear shell, as
+defined by \citet{Boyle2001}, made up the ``central''
+group and included chromosomes 1, 16, 17, 19 and 22. Similarly the ``edge'' group
+had enriched signals ($p\leq 5\times10^{-3}$) in the outer shell relative to the inner nuclear
+shell and included chromosomes 2, 3, 4, 7, 8, 11, 13 and 18. The remaining
+chromosomes showed no significant preference to either inner or
+outer nuclear shells at $\alpha = 0.05$.\cite{Boyle2001} 
+
+We found that positive eigenvectors (reflecting A compartments) did show a modest relative enrichment in centrally-positioned chromosomes relative to those located at the nuclear periphery (Fig. \ref{fig:nucpos}). The significance
+of the difference in distribution of eigenvectors in the central
+and edge of the nucleus was determined by a two-sided Kolmogorov-Smirnov (K-S)
+test, with the null hypothesis that there is no difference between the empirical cumulative
+density functions of the central chromosome eigenvectors ($F_{central}$)
+and peripheral ($F_{edge}$). The difference was found to be statistically significant in each cell type ($H_0: F_{edge} = F_{central}$; GM12878: $D = 0.11$, $p < 6 \times 10^{-4}$; H1 hESC: $D = 0.12$, $p < 8 \times 10^{-8}$; K562: $D = 0.10$, $p < 5 \times 10^{-3}$)
+
 \begin{figure}
 \begin{center} 
 \includegraphics[width=\textwidth]{figs/nucpos.pdf}
@@ -175,10 +195,10 @@ Kernel density estimates showing peripheral chromosomes have a greater proportio
 \end{figure} 
 
 
-\ifstandalone
+%\ifstandalone
 \begin{small}
 \bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
 \end{small}
-\fi
+%\fi
 
 \end{document}
