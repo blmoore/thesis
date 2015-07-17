@@ -77,11 +77,15 @@
 \BOOKMARK [1][-]{section.5.5}{5.5 Other boundaries}{chapter.5}% 77
 \BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 Giemsa bands}{section.5.5}% 78
 \BOOKMARK [2][-]{subsection.5.5.2}{5.5.2 Superboundaries}{section.5.5}% 79
-\BOOKMARK [0][]{chapter.6}{6 4C and 5C analysis}{}% 80
+\BOOKMARK [0][]{chapter.6}{6 Local chromatin conformation}{}% 80
 \BOOKMARK [1][-]{section.6.1}{6.1 Introduction}{chapter.6}% 81
 \BOOKMARK [1][-]{section.6.2}{6.2 4C of the ZRS enhancer}{chapter.6}% 82
-\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 3D modelling}{section.6.2}% 83
-\BOOKMARK [1][-]{section.6.3}{6.3 5C in the HoxD region}{chapter.6}% 84
-\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 85
-\BOOKMARK [1][-]{section.7.1}{7.1 Conclusion}{chapter.7}% 86
-\BOOKMARK [0][]{chapter.8}{8 Appendices}{}% 87
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Assay diagnostics}{section.6.2}% 83
+\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 3D modelling}{section.6.2}% 84
+\BOOKMARK [2][-]{subsection.6.2.3}{6.2.3 4C / Hi-C comparison}{section.6.2}% 85
+\BOOKMARK [1][-]{section.6.3}{6.3 5C in the HoxD region}{chapter.6}% 86
+\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 Differential contacts}{section.6.3}% 87
+\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 5C / Hi-C comparison}{section.6.3}% 88
+\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 89
+\BOOKMARK [1][-]{section.7.1}{7.1 Conclusion}{chapter.7}% 90
+\BOOKMARK [0][]{chapter.8}{8 Appendices}{}% 91
