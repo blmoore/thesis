@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
@@ -40,5 +40,12 @@ Kalhor R, Tjong H, Jayathilaka N, Alber F, Chen L (2012) {Genome architectures
   revealed by tethered chromosome conformation capture and population-based
   modeling.}
 \newblock \emph{Nature biotechnology}, \textbf{30}(1): 90--8.
+
+\bibitem[{Boyle \emph{et~al.}(2001)Boyle, Gilchrist, Bridger, Mahy, Ellis and
+  Bickmore}]{Boyle2001}
+Boyle S, Gilchrist S, Bridger JM, Mahy NL, Ellis Ja, Bickmore Wa (2001) {The
+  spatial organization of human chromosomes within the nuclei of normal and
+  emerin-mutant cells.}
+\newblock \emph{Human molecular genetics}, \textbf{10}(3): 211--9.
 
 \end{thebibliography}
