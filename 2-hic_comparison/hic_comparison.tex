@@ -88,31 +88,38 @@ Megabase resolution compartment eigenvector values are shown in a plot matrix. \
 
 \section{Domain calls}
 
+\subsection{Compartments}
+
 The continuous compartment eigenvector can be used as-is to classify A/B compartments, using positive and negative eigenvector values after first orientating the vector with respect to, for example, PolII Chip-seq data.\cite{Kalhor2012} However, given the definition of compartments as generally broad and alternating domains along a chromosome, often matching other large domains of Lamin association, an improved classification method might penalise the calls of short compartment calls, which may be the result of noise.
 
 For this reason, instead of using raw eigenvector values we consider observed values as emissions from unobserved underlying states. This can be modelled through a Hidden Markov Model (HMM), whereby we first parameterise models of state and their transitions, then infer the most likely state sequence to have emitted our observed data. This unobserved two-state sequence is then used for compartment calls (see Methods \ref{sec:eigs}). 
 
-In practice, this acts to de-noise our compartment calls. Where single sign-changes along the series would have resulted in a single-block compartment, these may now be modelled as noisy emissions from a single unobserved state. An examplar region is showing in Fig. \ref{fig:denoise}.
+In practice, this acts to de-noise our compartment calls. Where single sign-changes along the series would have resulted in a single-block compartment, these may now be modelled as noisy emissions from a single unobserved state. An examplar region is showing in Fig. \ref{fig:denoise}. This shows an approximately 50 Mb region from chromosome 8 with eigenvector data from the H1 hESC cell line. A simple thresholding method in this region calls a total of $12$ regions, whereas our HMM method finds only $6$ larger regions in the same window.The disparity is caused by very short and single-bin compartments being disfavoured by the HMM-based method (Fig. \ref{fig:denoise}). 
 
 % figure showing raw eigs with hmm calls
 \begin{figure}
 \begin{center}
-\includegraphics[width=.9\textwidth]{figs/hmm_denoise.pdf}
+\includegraphics[width=.9\textwidth]{figs/hmm_calls.png}
 \captionsetup{width=\textwidth}
-\caption{
-{\bf ??}
-placeholder 
+\caption{ {\bf Compartment calls by simple thresholding method or context-aware HMMs.}
+Chromosome compartments have previously been called through simple thresholding at $0$,\cite{Lieberman2009} in this work we also use an HMM-based method to call unobserved states that have emitted our noisy observed values (\emph{right}).
 }\label{fig:denoise}
 \end{center}
 \end{figure} 
 
+
 % figure showing size distributions of Hi-C domains
+
+
+\subsection{TADs}
+
 
 \section{Variable regions}
 % investigate those regions which are "flipped"
 
 Despite the vast majority of the genome being in matched chromatin compartments, there are also regions of disagreement. Reasons for observable differences include technical errors and bias, but also more interesting functional explanations, where cell-type specific activation or repression is reflected in changes in higher order structure.
 
+To conservatively call regions of variable structure (RVS), we used HMM-called compartment states and selected those which were 
 
 
 
@@ -126,10 +133,10 @@ Despite the vast majority of the genome being in matched chromatin compartments,
 
 
 
-\ifstandalone
+%\ifstandalone
 \begin{small}
 \bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
 \end{small}
-\fi
+%\fi
 
 \end{document}

@@ -1,4 +1,44 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{6}
 \providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
+  Williams, Imakaev, Ragoczy, Telling, Amit, Lajoie, Sabo
+  \emph{et~al.}}]{Lieberman2009}
+Lieberman-Aiden E, van Berkum NL, Williams L, Imakaev M, Ragoczy T, Telling A,
+  Amit I, Lajoie BR, Sabo PJ, \emph{et~al.} (2009) {Comprehensive mapping of
+  long-range interactions reveals folding principles of the human genome.}
+\newblock \emph{Science}, \textbf{326}(5950): 289--93.
+
+\bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
+  and Ren}]{Dixon2012}
+Dixon JR, Selvaraj S, Yue F, Kim A, Li Y, Shen Y, Hu M, Liu JS, Ren B (2012)
+  {Topological domains in mammalian genomes identified by analysis of chromatin
+  interactions.}
+\newblock \emph{Nature}, \textbf{485}(7398): 376--80.
+
+\bibitem[{Jin \emph{et~al.}(2013)Jin, Li, Dixon, Selvaraj, Ye, Lee, Yen,
+  Schmitt, Espinoza and Ren}]{Jin2013}
+Jin F, Li Y, Dixon JR, Selvaraj S, Ye Z, Lee AY, Yen Ca, Schmitt AD, Espinoza
+  CA, Ren B (2013) {A high-resolution map of the three-dimensional chromatin
+  interactome in human cells.}
+\newblock \emph{Nature}, \textbf{503}(7475): 290--4.
+
+\bibitem[{Rao \emph{et~al.}(2014)Rao, Huntley, Durand, Stamenova, Bochkov,
+  Robinson, Sanborn, Machol, Omer \emph{et~al.}}]{Rao2014}
+Rao S, Huntley M, Durand N, Stamenova E, Bochkov I, Robinson J, Sanborn A,
+  Machol I, Omer A, \emph{et~al.} (2014) {A 3D Map of the Human Genome at
+  Kilobase Resolution Reveals Principles of Chromatin Looping}.
+\newblock \emph{Cell}, \textbf{159}(7): 1665--1680.
+
+\bibitem[{ENCODE(2012)}]{Dunham2012}
+ENCODE (2012) {An integrated encyclopedia of DNA elements in the human genome.}
+\newblock \emph{Nature}, \textbf{489}(7414): 57--74.
+
+\bibitem[{Kalhor \emph{et~al.}(2012)Kalhor, Tjong, Jayathilaka, Alber and
+  Chen}]{Kalhor2012}
+Kalhor R, Tjong H, Jayathilaka N, Alber F, Chen L (2012) {Genome architectures
+  revealed by tethered chromosome conformation capture and population-based
+  modeling.}
+\newblock \emph{Nature biotechnology}, \textbf{30}(1): 90--8.
 
 \end{thebibliography}
