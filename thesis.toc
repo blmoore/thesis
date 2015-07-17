@@ -59,7 +59,7 @@
 \contentsline {subsection}{\numberline {4.4.2}Cross-application}{30}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Between-cell variability}{31}{subsection.4.4.3}
 \contentsline {subsection}{\numberline {4.4.4}Variable importance}{31}{subsection.4.4.4}
-\contentsline {subsection}{\numberline {4.4.5}Correlating input features}{32}{subsection.4.4.5}
+\contentsline {subsection}{\numberline {4.4.5}Correlating input features}{34}{subsection.4.4.5}
 \contentsline {section}{\numberline {4.5}Parsimonious models}{36}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}$L_1$ regularisation}{36}{subsection.4.5.1}
 \contentsline {subsection}{\numberline {4.5.2}Brute force subsampling}{36}{subsection.4.5.2}

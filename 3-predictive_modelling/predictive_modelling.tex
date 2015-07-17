@@ -361,9 +361,19 @@ We found cross-application between cell types was possible and with similarly-hi
 
 \subsection{Between-cell variability}
  
- % text on predicting variable regions ??
+\begin{figure}
+\begin{center} 
+\includegraphics[width=.6\textwidth]{figs/stratmod.pdf}
+\captionsetup{width=\textwidth} 
+\caption{ {\bf Genomic regions that vary across cell types are modelled less successfully than static regions. }
+Genome-wide compartment eigenvectors were partitioned into thirds according to their median absolute deviation (MAD) across the three cell types under study. Models were fit independently to each third, and the modelling accuracy is compared.
+}\label{fig:stratmod}
+\end{center} 
+\end{figure} 
  
-Given much of the higher order chromatin organisation is conserved between the three cell types used in this work (Fig. \ref{fig:compcor}), a testable hypothesis is that these conserved regions are drivers of cross-applicability between cell types. Conversely, genomic regions which vary most across the cell types in our dataset
+Given much of the higher order chromatin organisation is conserved between the three cell types used in this work (Fig. \ref{fig:compcor}), a testable hypothesis is that these conserved regions are drivers of cross-applicability between cell types. Conversely, genomic regions which vary most across the cell types in our dataset should be more difficult to predict.
+
+Indeed we found the most variable regions across cell types were then most difficult to predict through our Random Forest modelling framework (Fig. \ref{fig:stratmod}). In each cell type, the third of the genome with the most consistent compartment eigenvectors across cell types could then most accurately be modelled in that cell type, and conversely the most variable third shown significantly depleted predictability (Fig. \ref{fig:stratmod}). This latter result suggests these variable regions could either be those which are noisiest, where the eigenvector is least capturing compartment structure, or where cell-type specific biology is influencing compartment structure in each case, in ways not captured by out input feature set and low resolution modelling pipeline.
 
 \subsection{Variable importance}
 
@@ -394,7 +404,7 @@ Venn diagram illustrating intersections between sets of ten most influential var
 \end{center} 
 \end{figure} 
 
-To asses the significance of observed intersections (Fig. \ref{fig:top10venn}), the variable selection process could be modelled with, for example, a multivariate hypergeometric distribution or via simulation. Simulation was used here for simplicity: each intersection was calculated under $10,000$ variables draws with uniform distribution and empirical $p$-values were then calculated accordingly. Under the assumption that variables are ranked independently in each cell type, drawing at least one variable in all three cell types would be expected by chance ($p = 0.6$). Similarly, the overlaps between pairs of cell types is within the range of expectation (probability of 7 or more variables appearing in exactly two sets: $0.39$). Hence these data suggest the top 10 most influential variables are not significantly more alike across the three cell-type specific models than expected by chance, however ten is an arbitrary cutoff, and many of the rankings are based on small differences in variable importance, thus could be unstable between multiple generations of stochastic Random Forest models.
+To assess the significance of observed intersections (Fig. \ref{fig:top10venn}), the variable selection process could be modelled with, for example, a multivariate hypergeometric distribution or via simulation. Simulation was used here for simplicity: each intersection was calculated under $10,000$ variables draws with uniform distribution and empirical $p$-values were then calculated accordingly. Under the assumption that variables are ranked independently in each cell type, drawing at least one variable in all three cell types would be expected by chance ($p = 0.6$). Similarly, the overlaps between pairs of cell types is within the range of expectation (probability of 7 or more variables appearing in exactly two sets: $0.39$). Hence these data suggest the top 10 most influential variables are not significantly more alike across the three cell-type specific models than expected by chance, however ten is an arbitrary cutoff, and many of the rankings are based on small differences in variable importance, thus could be unstable between multiple generations of stochastic Random Forest models.
 
 \begin{figure}
 \begin{center} 

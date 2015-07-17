@@ -457,6 +457,9 @@ INPUT ./figs/modelres.pdf
 INPUT figs/xapp.pdf
 INPUT ./figs/xapp.pdf
 INPUT ./figs/xapp.pdf
+INPUT figs/stratmod.pdf
+INPUT ./figs/stratmod.pdf
+INPUT ./figs/stratmod.pdf
 INPUT figs/varimp.pdf
 INPUT ./figs/varimp.pdf
 INPUT ./figs/varimp.pdf
