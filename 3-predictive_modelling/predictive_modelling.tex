@@ -359,6 +359,12 @@ To test if over-fitting was causing our high observed accuracy, we cross-applied
 
 We found cross-application between cell types was possible and with similarly-high levels of accuracy (Fig. \ref{fig:xapp}). This gives good evidence not only that are models are not overfitting to cell-type specific noise, but also that there exist broad rules linking chromatin conformation and locus-level feature aggregation. The cross-application suggests there exists enough commonalities for compartment profile predictions to transcend the cell-type specific biology inherent to an embryonic stem cell or differentiated lymphoblast.
 
+\subsection{Between-cell variability}
+ 
+ % text on predicting variable regions ??
+ 
+Given much of the higher order chromatin organisation is conserved between the three cell types used in this work (Fig. \ref{fig:compcor}), a testable hypothesis is that these conserved regions are drivers of cross-applicability between cell types. Conversely, genomic regions which vary most across the cell types in our dataset
+
 \subsection{Variable importance}
 
 \begin{figure}
@@ -414,6 +420,7 @@ Two-dimensional kernel density estimates show the density of points in a scatter
 }\label{fig:h1feats}
 \end{center} 
 \end{figure} 
+
 
 \subsection{Correlating input features}\label{sec:corrinputs}
 

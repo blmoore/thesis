@@ -5,12 +5,13 @@
 \BOOKMARK [1][-]{section.1.4}{1.4 Modelling higher order chromatin}{chapter.1}% 5
 \BOOKMARK [2][-]{subsection.1.4.1}{1.4.1 Predictive model}{section.1.4}% 6
 \BOOKMARK [2][-]{subsection.1.4.2}{1.4.2 Cross-application}{section.1.4}% 7
-\BOOKMARK [2][-]{subsection.1.4.3}{1.4.3 Variable importance}{section.1.4}% 8
-\BOOKMARK [2][-]{subsection.1.4.4}{1.4.4 Correlating input features}{section.1.4}% 9
-\BOOKMARK [1][-]{section.1.5}{1.5 Parsimonious models}{chapter.1}% 10
-\BOOKMARK [2][-]{subsection.1.5.1}{1.5.1 L1 regularisation}{section.1.5}% 11
-\BOOKMARK [2][-]{subsection.1.5.2}{1.5.2 Brute force subsampling}{section.1.5}% 12
-\BOOKMARK [1][-]{section.1.6}{1.6 Other modelling considerations}{chapter.1}% 13
-\BOOKMARK [2][-]{subsection.1.6.1}{1.6.1 Resolution}{section.1.6}% 14
-\BOOKMARK [2][-]{subsection.1.6.2}{1.6.2 Other modelling approaches}{section.1.6}% 15
-\BOOKMARK [2][-]{subsection.1.6.3}{1.6.3 Non-independence}{section.1.6}% 16
+\BOOKMARK [2][-]{subsection.1.4.3}{1.4.3 Between-cell variability}{section.1.4}% 8
+\BOOKMARK [2][-]{subsection.1.4.4}{1.4.4 Variable importance}{section.1.4}% 9
+\BOOKMARK [2][-]{subsection.1.4.5}{1.4.5 Correlating input features}{section.1.4}% 10
+\BOOKMARK [1][-]{section.1.5}{1.5 Parsimonious models}{chapter.1}% 11
+\BOOKMARK [2][-]{subsection.1.5.1}{1.5.1 L1 regularisation}{section.1.5}% 12
+\BOOKMARK [2][-]{subsection.1.5.2}{1.5.2 Brute force subsampling}{section.1.5}% 13
+\BOOKMARK [1][-]{section.1.6}{1.6 Other modelling considerations}{chapter.1}% 14
+\BOOKMARK [2][-]{subsection.1.6.1}{1.6.1 Resolution}{section.1.6}% 15
+\BOOKMARK [2][-]{subsection.1.6.2}{1.6.2 Other modelling approaches}{section.1.6}% 16
+\BOOKMARK [2][-]{subsection.1.6.3}{1.6.3 Non-independence}{section.1.6}% 17
