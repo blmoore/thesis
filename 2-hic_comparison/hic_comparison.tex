@@ -43,7 +43,7 @@ Such rapid progression in the field has resulted in a wide variety of public Hi-
 
 In this work I uniformly reprocessed publicly-available human Hi-C datasets, in order to address fundamental questions about the stability of higher order genome organisation within cell populations from the same species. Previously Hi-C studies have compared two samples per species, such as K562 against GM06990\cite{Lieberman2009} or IMR90 against GM12878.\cite{Dixon2012} Here I make use of three Hi-C datasets corresponding to extensively-studied human cell lines: K562, GM12878 and H1 hESC. Together these make up the "Tier 1" cell lines studied by the ENCODE consortium,\cite{Dunham2012} hence have huge amounts of matched ChIP-seq and histone modification data available. 
 
-By combinatorial reanalysis of these cell-matched datasets, I can investigate t
+By combinatorial reanalysis of these cell-matched datasets, I can investigate the relationships between higher order chromatin structure and locus-level chromatin features.
 
 % Table: description of cell lines
 
@@ -64,7 +64,9 @@ After uniformly reprocessing each Hi-C dataset and calling compartment eigenvect
 
 \begin{figure}
 \begin{center}
+\makebox[\textwidth][c]{ 
 \includegraphics[width=1.2\textwidth]{figs/wiggles.pdf}
+}
 \captionsetup{width=\textwidth}
 \caption{
 {\bf Compartment profiles are observably well-correlated between human cell types and across all chromosomes.}
@@ -81,7 +83,7 @@ This close correspondence also validates our approach of combining these differe
 \captionsetup{width=\textwidth}
 \caption{
 {\bf Compartment eigenvectors are well-correlated between human cell types}
-Megabase resolution compartment eigenvector values are shown in a plot matrix. \emph{Upper triangle}: Pearson correlation coefficients between pairs, with $95\%$ confidence intervals (??); \emph{diagonal} Kernel density estimates of eigenvector values per cell type; \emph{lower triangle}: $x$-$y$ scatterplot of values.
+Megabase resolution compartment eigenvector values are shown in a plot matrix. \emph{Upper triangle}: Pearson correlation coefficients between pairs, with $95\%$ confidence intervals; \emph{diagonal} Kernel density estimates of eigenvector values per cell type; \emph{lower triangle}: $x$-$y$ scatterplot of values.
 }\label{fig:compcor}
 \end{center}
 \end{figure} 
@@ -113,30 +115,70 @@ Chromosome compartments have previously been called through simple thresholding 
 
 \subsection{TADs}
 
+\begin{figure}
+\begin{center} 
+\makebox[\textwidth][c]{ 
+\includegraphics[width=1.2\textwidth]{figs/blowout.png}
+}
+\captionsetup{width=\textwidth} 
+\caption{ {\bf Regions of variable structure alter their long-range contacts. }
+The eigenvector compartment profile is shown for chromosome 2 for three human cell types (\emph{left}).  At higher resolution, the zoomed region illustrates conservation of topological domains (TADs) over 20 Mb of the same chromosome.
+}\label{fig:blowout}
+\end{center} 
+\end{figure} 
+
 
 \section{Variable regions}
 % investigate those regions which are "flipped"
 
 Despite the vast majority of the genome being in matched chromatin compartments, there are also regions of disagreement. Reasons for observable differences include technical errors and bias, but also more interesting functional explanations, where cell-type specific activation or repression is reflected in changes in higher order structure.
 
-To conservatively call regions of variable structure (RVS), we used HMM-called compartment states and selected those which were 
+To conservatively call regions of variable structure (RVS), we used HMM-called compartment states and selected those which were either: i) open in one cell type and closed in both others or ii) closed in one cell type and open in both others. This left sets of RVS which could be considered as "flipped open" or "flipped closed" in a given cell type.
 
-
-
-
-
-
+\begin{figure}
+\begin{center} 
+\includegraphics[width=.9\textwidth]{figs/examplervs.png}
+\captionsetup{width=\textwidth} 
+\caption{ {\bf Regions of variable structure alter their long-range contacts. }
+Placeholder
+}\label{fig:flippedegs}
+\end{center} 
+\end{figure} 
 
 % fig 1.
+\subsection{Chromatin state enrichment}
+
+
+\subsection{Contact changes}
+
+\begin{figure}
+\begin{center} 
+\includegraphics[width=.9\textwidth]{figs/longrange.pdf}
+\captionsetup{width=\textwidth} 
+\caption{ {\bf Regions of variable structure alter their long-range contacts. }
+Placeholder
+}\label{fig:longrange}
+\end{center} 
+\end{figure} 
+
 
 \section{Nuclear positioning}
 
+\begin{figure}
+\begin{center} 
+\includegraphics[width=\textwidth]{figs/nucpos.pdf}
+\captionsetup{width=\textwidth} 
+\caption{ {\bf Nuclear positioning of chromosomes relative to compartment eigenvectors. }
+Kernel density estimates showing peripheral chromosomes have a greater proportion of B compartments (negative eigenvectors) relative to centrally-position chromosomes. Positioning data from \citet{Boyle2001} (Methods XX).
+}\label{fig:nucpos}
+\end{center} 
+\end{figure} 
 
 
-%\ifstandalone
+\ifstandalone
 \begin{small}
 \bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
 \end{small}
-%\fi
+\fi
 
 \end{document}
