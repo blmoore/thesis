@@ -1,4 +1,4 @@
-\begin{thebibliography}{115}
+\begin{thebibliography}{116}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -382,6 +382,11 @@ Ashburner M, Ball Ca, Blake Ja, Botstein D, Butler H, Cherry JM, Davis aP,
 Huang BDW, Lempicki R (2008) {Systematic and integrative analysis of large gene
   lists using DAVID bioinformatics resources}.
 \newblock \emph{Nature protocols}, (301): 1--43.
+
+\bibitem[{Bickmore(2013)}]{Bickmore2013}
+Bickmore Wa (2013) {The spatial organization of the human genome.}
+\newblock \emph{Annual review of genomics and human genetics}, \textbf{14}:
+  67--84.
 
 \bibitem[{Gerstein \emph{et~al.}(2012)Gerstein, Kundaje, Hariharan, Landt, Yan,
   Cheng, Mu, Khurana, Rozowsky \emph{et~al.}}]{Gerstein2012}

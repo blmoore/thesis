@@ -79,7 +79,7 @@ Our findings confirmed the previously reported peaks (CTCF and POL2) and dip (H3
 \includegraphics[width=\textwidth]{figs/boundarysummary.pdf}
 \captionsetup{width=\textwidth}
 \caption{ {\bf Compartment and TAD boundary enrichment summary in three human cell types.}
-Placeholder
+(A) Selected profiles for locus-level features are shown for TAD boundaries (CTCF, H3K9me3 and POL2) and compartment boundaries (H2A.Z, H3K4me2 and YY1), as a mean normalized ChIP-seq signal relative to input chromatin per bin ($\pm1$ standard error). TAD boundaries were examined over $40$ kb bins over the $1$ Mb flanking each boundary; compartment boundaries were examined over 100-kb bins over $3$ Mb. (B) The significance of enrichment or depletion ($-\log_{10}(p)$ two-tailed Mann--Whitney test) of a feature was calculated as the boundary bin relative to the ten most peripheral bins (five either side). Points are scaled by the absolute mean difference in signal over the boundary relative to the mean of peripheral bins. ChIP-seq, chromatin immunoprecipitation sequencing; TAD, topological domain.
 }\label{fig:boundarysummary}
 \end{center}
 \end{figure} 
@@ -142,7 +142,13 @@ associated with compartment boundaries often spanning more than 1 Mb.
 \includegraphics[width=1.2\textwidth]{figs/ctcfyy1.pdf}
 \captionsetup{width=\textwidth}
 \caption{ {\bf Distinct enrichments of CTCF and YY1 boundaries.}
-Placeholder
+TAD boundary feature enrichments are shown (as in Fig. \ref{fig:boundarysummary}) for boundaries
+split into classes based on specific enrichments: CTCF and YY1 groups are
+those boundaries with at least one ENCODE region peak\cite{Dunham2012} for
+their respective features, while CTCF + YY1 is the group of boundaries which had one or more
+overlapping peaks for these two factors. Boundaries in the “none” group has neither
+a CTCF or YY1 region peak called (but can still
+be enriched for their respective features in terms of raw signal). 
 }\label{fig:ctcfyy1}
 \end{center}
 \end{figure} 

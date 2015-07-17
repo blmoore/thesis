@@ -524,6 +524,15 @@ INPUT ./figs/gb_ideo.pdf
 INPUT ./figs/gb_ideo.pdf
 INPUT 6-shh/shh.tex
 INPUT 6-shh/shh.tex
+INPUT figs/5cfc.pdf
+INPUT ./figs/5cfc.pdf
+INPUT ./figs/5cfc.pdf
+INPUT figs/5cdiff.pdf
+INPUT ./figs/5cdiff.pdf
+INPUT ./figs/5cdiff.pdf
+INPUT figs/5chic.pdf
+INPUT ./figs/5chic.pdf
+INPUT ./figs/5chic.pdf
 INPUT 7-discussion/discussion.tex
 INPUT 7-discussion/discussion.tex
 INPUT 8-appendix/appendix.tex
