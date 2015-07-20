@@ -26,12 +26,16 @@
 
 \maketitle
 
+\chapter*{Abstract}
+Recent technological advances have given insights into how genomes are folded in three-dimensions, however many open questions remain about the functional importance of this structure, its variability and its relationships with other features of the genomic and epigenomic landscape. In this work we combine Hi-C datasets describing physical genomic contacts with a large and diverse array of chromatin data derived at a much finer scale, including for example levels of bound transcription factors, histone modifications and expression data. These data are then brought together in a quantitative and rigorous way, through a predictive modelling framework and applied statistical analyses.First we compare higher order chromatin organisation across a variety of human cell types and find pervasive conservation of chromatin organisation at multiple scales. Beyond this we identify structurally variable regions that are enhancer-rich and contain loci of known cell-type specific function. We find broad aspects of higher order chromatin organisation, such as chromosome compartments, to be highly predictable in a variety of human cell types. We dissect these models and find them to be generalisable to novel cell types, due to fundamental biological rules linking compartments with key activating and repressive signals. These models describe the strong interconnectedness between locus-level enrichments and depletions of local marks and bound factors with much broader compartmentalisation of large chromosomal regions.Finally, boundary regions are investigated in terms of chromatin marks and co-localisation with other known nuclear structures. We find boundary complexity to vary between cell types and link TAD aggregations to previously described lamin-associated domains, as well as exploring the concept of super-boundaries that span multiple levels of organisation. Together these analyses lend evidence to the idea of higher order genome organisation that is largely fixed between cell types, yet one that can selectively vary locally, based on the activation or repression of key loci.
+
+
 \chapter{Introduction}
 \section{Genome organisation}
-
-It's oft-stated that the DNA within each human cell would extend for two metres fully extended. Instead that same length of DNA packs into a cell nucleus with a diameter in the order of micrometers ($\mu$m). This is achieved through a complex organisation hierarchy, ranging from how chromosomes are arranged in the nucleus, down to how DNA is wrapped around nucleosomes.\cite{Pombo2015}
-
-Briefly, DNA exists mostly as a left-handed double-helix of hydrogen bonded purines and pyrimidines. These in turn are wrapped around histone octamers, proteins with tuneable DNA packing properties. These wrapped histones can be visualised as "beads on a string" in transcriptionally active regions, and possibly as a more-compact 30 nanometre fibre, though this is disputed.\cite{Naumova2013} %citations therein
+%
+%It's oft-stated that the DNA within each human cell would extend for two metres fully extended. Instead that same length of DNA packs into a cell nucleus with a diameter in the order of micrometers ($\mu$m). This is achieved through a complex organisation hierarchy, ranging from how chromosomes are arranged in the nucleus, down to how DNA is wrapped around nucleosomes.\cite{Pombo2015}
+%
+%Briefly, DNA exists mostly as a left-handed double-helix of hydrogen bonded purines and pyrimidines. These in turn are wrapped around histone octamers, proteins with tuneable DNA packing properties. These wrapped histones can be visualised as "beads on a string" in transcriptionally active regions, and possibly as a more-compact 30 nanometre fibre, though this is disputed.\cite{Naumova2013} %citations therein
 
 \subsection{C-methods and Hi-C}
 
@@ -73,7 +77,7 @@ In-site Hi-C was a recent refinement of the Hi-C method, from the published of t
 
 In the paper describing the Hi-C technique,\cite{Lieberman2009}  Lieberman-Aiden \emph{et
   al.} described low-resolution structures they name  ``A'' and ``B'' nuclear compartments. These are regions with a median size of around 5 megabases which showed properties typical
-of euchromatin and heterochromatin, respectively. A compartments were observed through 3D-FISH to be centrally-positioned in the nucleus and  ChIP-seq data showed several hallmarks of transcriptional activity. B compartments, conversely, were heterochromatic and lamina-associated regions, with little transcription and repressive histone modifications such as H3k9me3.\cite{Lieberman2009, DeWit2012} As expected from positioning data, the co-location of compartment types is also visible in their contact maps. \\
+of euchromatin and heterochromatin, respectively. A compartments were observed through 3D-FISH to be centrally-positioned in the nucleus and  ChIP-seq data showed several hallmarks of transcriptional activity. B compartments, conversely, were heterochromatic and lamina-associated regions, with little transcription and repressive histone modifications such as H3k9me3.\cite{Lieberman2009, DeWit2012} As expected from positioning data, the co-location of compartment types is also visible in their contact maps. 
 
 \begin{figure}
 \begin{center}

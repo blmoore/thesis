@@ -127,6 +127,43 @@ The eigenvector compartment profile is shown for chromosome 2 for three human ce
 \end{center} 
 \end{figure} 
 
+\section{Domain epigenetics}
+
+The use of well-studied human cell types allows intersection with publicly-available epigenomics datasets, such as those produce by the ENCODE consortium.\cite{Dunham2012} In total, 35 cell-matched ChIP-seq datasets were available for all three of the tier 1 ENCODE cell lines: GM12878, H1 hESC and K562 (see Methods XX). Domain calls from our reprocessed 
+
+\subsection{A/B compartments}
+
+The overwhelming majority of intersected chromatin features are significantly enriched in active A compartments relative to B compartments (Fig. \ref{fig:compencode}). This is expected, A compartments represent the actively-transcribed and accessible portions of the genome, and have previously been shown to positively correlate with many of the features shown.\cite{Lieberman2009, Dekker2013}
+
+\begin{figure}
+\begin{center}
+\makebox[\textwidth][c]{ 
+\includegraphics[width=1.4\textwidth]{figs/compartment_encode.pdf}
+}
+\captionsetup{width=\textwidth}
+\caption{ {\bf The chromatin signatures of A/B compartments. }
+Notched boxplots summarise the distribution of each feature over 1 Mb bins in open (A) and closed (B) compartments genome-wide.
+}\label{fig:compencode}
+\end{center}
+\end{figure} 
+
+Exceptions to this rule are few. However the repressive histone modification H3k9me3 is found more often in B compartments in two cell types, as is the P300 transcription factor (Fig. \ref{fig:compencode}). Also of note is the histone variant H2A.Z which is significantly enriched in A compartments in GM12878 and K562, but this relationship is reversed in the embryonic stem cell line (Fig. \ref{fig:compencode}). Recent evidence suggests specialised roles for H2A.Z in regulating both repression and activation during embryonic stem cell differentiation, acting as a ``general facilitator''.\cite{Hu2013b} Additionally H2A.Z has been reported to mark histone octamers for depletion, thereby permitting gene activation during differentiation.\cite{Li2012} Potentially, then, the H2A.Z enrichment in B compartments could be driven by regions soon to be de-repressed as the stem cell differentiates.
+
+\subsection{TAD classes}
+
+Unlike compartments, initially TAD were not observably correlated with blocks of chromatin features (e.g.\citenum{Dixon2012}). Later studies have linked TADs with such enrichments, first in \emph{Drosophila}\cite{Sexton2012} and later in human cells, where it was argued TADs are merely a low-resolution window to smaller "sub-compartments", bearing similar active and inactive marks to their much-larger namesakes.\cite{Rao2014}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=.9\textwidth]{figs/tads_encode.pdf}
+\captionsetup{width=\textwidth}
+\caption{ {\bf TADs reflect epigenetic domains. }
+Following the Drosophila results of \citet{Sexton2012}, clustering of TAD domains by mean log2 signal of 34 ENCODE features distinguishes “null”, “active” and polycomb-associated (PcG) domains, as well as reflecting the encompassing A/B compartments.
+}\label{fig:tadencode}
+\end{center}
+\end{figure} 
+
+Here we look for evidence of the \citet{Sexton2012} characterisation of TADs called in our human cell types.
 
 \section{Variable regions}
 % investigate those regions which are "flipped"
@@ -139,8 +176,8 @@ To conservatively call regions of variable structure (RVS), we used HMM-called c
 \begin{center} 
 \includegraphics[width=.9\textwidth]{figs/examplervs.png}
 \captionsetup{width=\textwidth} 
-\caption{ {\bf Regions of variable structure alter their long-range contacts. }
-Placeholder
+\caption{ {\bf Structurally variable regions indicate cell type specific biology. } 
+Regions occupying the active A nuclear compartment in one cell type, but the repressive B compartment in the other two, were selected and ranked by the number of predicted active enhancers. Examples of particular interest from the top 5 regions per cell type are shown: (A) the chr5:158-159 Mb region which occupies the open A compartment in GM12878 cells, (B) the chr20:21-22 Mb region which is open in H1 hESC, (C) the chr8: 106-107 Mb region which is open in K562. Displayed tracks are: known (UCSC) genes, compartment eigenvectors, chromHMM/Segway combined chromatin state predictions, open chromatin FAIRE peaks, and H3K27ac signal.  
 }\label{fig:flippedegs}
 \end{center} 
 \end{figure} 
@@ -150,6 +187,8 @@ Placeholder
 
 
 \subsection{Contact changes}
+
+A defining characteristic of active A compartment regions is a preferential bias in contacting other A compartment regions.\cite{Lieberman2009} However, it is not clear whether cell-type-specific transitions in higher-order structure are solely compartment-level phenomena, or involve other structural strata. We therefore examined the genome-wide contact profiles of each region of variable cell-type-specific chromatin structure in detail. If these cell-type-specific structures are mediated by finer-scale structural levels (such as TADs) we might expect to see predominantly short-range contacts in their underlying contact profile. Instead, we found that variable regions preferentially interact with other A compartment regions in the cell types in which they are active (\ref{fig:long-range}), but not in the other cell types in which they are inactive. This supports the idea that these cell-type-specific regions are undergoing compartment-level transitions, disproportionately mediated by the formation of long-range contacts, while also not precluding additional changes at lower levels such as TADs.
 
 \begin{figure}
 \begin{center} 
@@ -195,10 +234,10 @@ Kernel density estimates showing peripheral chromosomes have a greater proportio
 \end{figure} 
 
 
-\ifstandalone
+%\ifstandalone
 \begin{small}
 \bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
 \end{small}
-\fi
+%\fi
 
 \end{document}
