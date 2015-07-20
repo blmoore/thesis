@@ -3,6 +3,10 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: thesis.bst
 A level-1 auxiliary file: 0-intro/intro.aux
+Illegal, another \bibdata command---line 523 of file thesis.aux
+ : \bibdata
+ :         {/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
+I'm skipping whatever remains of this command
 Database file #1: /Users/benmoore/Documents/library.bib
 Database file #2: /Users/benmoore/Documents/customrefs.bib
 Warning--I didn't find a database entry for "Chambers2012"
@@ -14,45 +18,45 @@ Warning--empty journal in Williamson2014
 Warning--there's a number but no volume in Huang2008
 Warning--empty journal in Vizan2014
 Warning--there's a number but no volume in Tarailo-Graovac2009
-You've used 116 entries,
+You've used 117 entries,
             3024 wiz_defined-function locations,
-            1358 strings with 36826 characters,
-and the built_in function-call counts, 169977 in all, are:
-= -- 17876
-> -- 5192
-< -- 41
-+ -- 3748
-- -- 1327
-* -- 12768
-:= -- 18282
-add.period$ -- 233
-call.type$ -- 116
-change.case$ -- 580
-chr.to.int$ -- 117
-cite$ -- 122
-duplicate$ -- 17784
-empty$ -- 12162
-format.name$ -- 1698
-if$ -- 35052
-int.to.chr$ -- 3
-int.to.str$ -- 117
-missing$ -- 1458
-newline$ -- 469
-num.names$ -- 348
-pop$ -- 8492
+            1364 strings with 37277 characters,
+and the built_in function-call counts, 172848 in all, are:
+= -- 18168
+> -- 5321
+< -- 40
++ -- 3843
+- -- 1359
+* -- 12986
+:= -- 18571
+add.period$ -- 235
+call.type$ -- 117
+change.case$ -- 585
+chr.to.int$ -- 118
+cite$ -- 123
+duplicate$ -- 18074
+empty$ -- 12349
+format.name$ -- 1731
+if$ -- 35646
+int.to.chr$ -- 4
+int.to.str$ -- 118
+missing$ -- 1481
+newline$ -- 473
+num.names$ -- 351
+pop$ -- 8658
 preamble$ -- 1
-purify$ -- 464
+purify$ -- 468
 quote$ -- 0
-skip$ -- 3063
+skip$ -- 3103
 stack$ -- 0
-substring$ -- 21319
-swap$ -- 3934
+substring$ -- 21685
+swap$ -- 3991
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 694
+type$ -- 700
 warning$ -- 6
-while$ -- 1111
+while$ -- 1131
 width$ -- 0
-write$ -- 1393
-(There were 8 warnings)
+write$ -- 1405
+(There was 1 error message)
