@@ -182,9 +182,9 @@ Regions occupying the active A nuclear compartment in one cell type, but the rep
 % fig 1.
 \subsection{Chromatin state enrichment}
 
-Given our conservative definition of RVS (Section \ref{sec:variableregions}), such notable changes between transcriptionally permissive and repressive environments might be expected to be associated with cell-type-specific biology, such as functional chromatin states. To test this, we used predicted chromatin state annotations integrated from two machine learning algorithms, ChromHMM\cite{Ernst2012} and SegWay\cite{Hoffman2012, Hoffman2013} (Methods XX).
+Given our conservative definition of RVS (Section \ref{sec:variableregions}), such notable changes between transcriptionally permissive and repressive environments might be expected to be associated with cell-type-specific biology, such as functional chromatin states. To test this, we used consensus predicted chromatin state annotations, built from two machine learning algorithms, ChromHMM\cite{Ernst2012} and SegWay\cite{Hoffman2012, Hoffman2013}, and tested for enrichment or depletion in our set of RVS (Methods XX).
 
-This indeed seems to be the case, with regions occupying altered compartments showing corresponding changes in enhancer activity. Regions undergoing a B to A compartment transition, to a relatively transcriptionally permissive structure, were enriched for cell-type-specific enhancers in the two derived cell types used in this study but not in the ESC line, which would not be expected to have lineage-specific enhancer contacts active in its pluripotent state (Figure 4B). The same pattern was not seen for enhancers shared between two or more of the cell types under study. We observed a similar enrichment for cell-type-specific transcription (Additional file 1: Figure S8) but not for several other chromatin states including promoter activity (Additional file 1: Figure S9).
+We found that RVS show a striking enrichment for cell-type specific enhancers in both of our derived cell lines, but not in embryonic stem cells (Fig. \ref{fig:enhancerstates}). This observation can be explained as the undifferentiated cell type would not be expected to have lineage-specific enhancer contacts active in its pluripotent state. The same pattern was not seen for enhancers shared between two or more of the cell types under study. We observed a similar enrichment for cell-type-specific transcription but not for several other chromatin states including promoter activity (Fig. \ref{fig:stateenrich}).
 
 \begin{figure}
 \begin{center}
@@ -195,6 +195,8 @@ Numbers of predicted enhancer states (cell type specific or shared between two o
 }\label{fig:enhancerstates}
 \end{center}
 \end{figure} 
+
+Together these state enrichments suggest the identified RVS reflect regions of cell-type specific biology, with heightened enhancer and transcriptional activity in their active cell type Fig. \ref{fig:stateenrich}). Combined with the observed large-scale concordance of higher order chromatin organisation between cell types (Figs. \ref{fig:wiggles}, \ref{fig:blowout}), these results reinforce a model of organisation whereby chromatin organisation is largely conserved and static across cell types, but also permits local flexibility in order to activate or repress regions of biological importance to a given cell type.
 
 \begin{figure}
 \begin{center}
