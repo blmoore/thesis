@@ -1,6 +1,76 @@
 \begin{thebibliography}{117}
 \providecommand{\natexlab}[1]{#1}
 
+\bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
+  Williams, Imakaev, Ragoczy, Telling, Amit, Lajoie, Sabo
+  \emph{et~al.}}]{Lieberman2009}
+Lieberman-Aiden E, van Berkum NL, Williams L, Imakaev M, Ragoczy T, Telling A,
+  Amit I, Lajoie BR, Sabo PJ, \emph{et~al.} (2009) {Comprehensive mapping of
+  long-range interactions reveals folding principles of the human genome.}
+\newblock \emph{Science}, \textbf{326}(5950): 289--93.
+
+\bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
+  and Ren}]{Dixon2012}
+Dixon JR, Selvaraj S, Yue F, Kim A, Li Y, Shen Y, Hu M, Liu JS, Ren B (2012)
+  {Topological domains in mammalian genomes identified by analysis of chromatin
+  interactions.}
+\newblock \emph{Nature}, \textbf{485}(7398): 376--80.
+
+\bibitem[{Breiman(2001{\natexlab{a}})}]{Breiman2001a}
+Breiman L (2001{\natexlab{a}}) {Random Forests}.
+\newblock \emph{Machine learning}, \textbf{45}(1): 5--32.
+
+\bibitem[{Hastie \emph{et~al.}(2009)Hastie, Tibshirani and
+  Friedman}]{Hastie2001}
+Hastie T, Tibshirani R, Friedman J (2009) \emph{{Elements of Statistical
+  Learning: Data Mining, Inference, and Prediction}}.
+\newblock Springer, 2 edition.
+\newblock ISBN 978-0-387-84858-7.
+
+\bibitem[{Sexton \emph{et~al.}(2012)Sexton, Yaffe, Kenigsberg, Bantignies,
+  Leblanc, Hoichman, Parrinello, Tanay and Cavalli}]{Sexton2012}
+Sexton T, Yaffe E, Kenigsberg E, Bantignies F, Leblanc B, Hoichman M,
+  Parrinello H, Tanay A, Cavalli G (2012) {Three-dimensional folding and
+  functional organization principles of the Drosophila genome.}
+\newblock \emph{Cell}, \textbf{148}(3): 458--72.
+
+\bibitem[{Boyle \emph{et~al.}(2001)Boyle, Gilchrist, Bridger, Mahy, Ellis and
+  Bickmore}]{Boyle2001}
+Boyle S, Gilchrist S, Bridger JM, Mahy NL, Ellis Ja, Bickmore Wa (2001) {The
+  spatial organization of human chromosomes within the nuclei of normal and
+  emerin-mutant cells.}
+\newblock \emph{Human molecular genetics}, \textbf{10}(3): 211--9.
+
+\bibitem[{Dong \emph{et~al.}(2012)Dong, Greven, Kundaje, Djebali, Brown, Cheng,
+  Gingeras, Gerstein, Guig\'{o} \emph{et~al.}}]{Dong2012}
+Dong X, Greven MC, Kundaje A, Djebali S, Brown JB, Cheng C, Gingeras TR,
+  Gerstein M, Guig\'{o} R, \emph{et~al.} (2012) {Modeling gene expression using
+  chromatin features in various cellular contexts.}
+\newblock \emph{Genome biology}, \textbf{13}(9): R53.
+
+\bibitem[{Ryba \emph{et~al.}(2010)Ryba, Hiratani, Lu, Itoh, Kulik, Zhang,
+  Schulz, Robins, Dalton and Gilbert}]{Ryba2010}
+Ryba T, Hiratani I, Lu J, Itoh M, Kulik M, Zhang J, Schulz TC, Robins AJ,
+  Dalton S, Gilbert DM (2010) {Evolutionarily conserved replication timing
+  profiles predict long-range chromatin interactions and distinguish closely
+  related cell types.}
+\newblock \emph{Genome research}, \textbf{20}(6): 761--70.
+
+\bibitem[{Zuber and Strimmer(2011)}]{Zuber2011}
+Zuber V, Strimmer K (2011) {High-Dimensional Regression and Variable Selection
+  Using CAR Scores}.
+\newblock \emph{Statistical Applications in Genetics and Molecular Biology},
+  \textbf{10}(1): 1--27.
+
+\bibitem[{Suzuki and Shimodaira(2006)}]{Suzuki2006a}
+Suzuki R, Shimodaira H (2006) {Pvclust: an R package for assessing the
+  uncertainty in hierarchical clustering.}
+\newblock \emph{Bioinformatics (Oxford, England)}, \textbf{22}(12): 1540--2.
+
+\bibitem[{ENCODE(2012)}]{Dunham2012}
+ENCODE (2012) {An integrated encyclopedia of DNA elements in the human genome.}
+\newblock \emph{Nature}, \textbf{489}(7414): 57--74.
+
 \bibitem[{de~Wit and de~Laat(2012)}]{DeWit2012}
 de~Wit E, de~Laat W (2012) {A decade of 3C technologies: insights into nuclear
   organization.}
@@ -40,21 +110,6 @@ Dostie J, Richmond Ta, Arnaout Ra, Selzer RR, Lee WL, Honan Ta, Rubio ED, Krumm
   (5C): A massively parallel solution for mapping interactions between genomic
   elements}.
 \newblock \emph{Genome Research}, \textbf{16}(10): 1299--1309.
-
-\bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
-  Williams, Imakaev, Ragoczy, Telling, Amit, Lajoie, Sabo
-  \emph{et~al.}}]{Lieberman2009}
-Lieberman-Aiden E, van Berkum NL, Williams L, Imakaev M, Ragoczy T, Telling A,
-  Amit I, Lajoie BR, Sabo PJ, \emph{et~al.} (2009) {Comprehensive mapping of
-  long-range interactions reveals folding principles of the human genome.}
-\newblock \emph{Science}, \textbf{326}(5950): 289--93.
-
-\bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
-  and Ren}]{Dixon2012}
-Dixon JR, Selvaraj S, Yue F, Kim A, Li Y, Shen Y, Hu M, Liu JS, Ren B (2012)
-  {Topological domains in mammalian genomes identified by analysis of chromatin
-  interactions.}
-\newblock \emph{Nature}, \textbf{485}(7398): 376--80.
 
 \bibitem[{Selvaraj \emph{et~al.}(2013)Selvaraj, {R Dixon}, Bansal and
   Ren}]{Selvaraj2013a}
@@ -147,13 +202,6 @@ Filippova D, Patro R, Duggal G, Kingsford C (2014) {Identification of
   alternative topological domains in chromatin.}
 \newblock \emph{Algorithms for molecular biology : AMB}, \textbf{9}: 14.
 
-\bibitem[{Sexton \emph{et~al.}(2012)Sexton, Yaffe, Kenigsberg, Bantignies,
-  Leblanc, Hoichman, Parrinello, Tanay and Cavalli}]{Sexton2012}
-Sexton T, Yaffe E, Kenigsberg E, Bantignies F, Leblanc B, Hoichman M,
-  Parrinello H, Tanay A, Cavalli G (2012) {Three-dimensional folding and
-  functional organization principles of the Drosophila genome.}
-\newblock \emph{Cell}, \textbf{148}(3): 458--72.
-
 \bibitem[{Barbieri \emph{et~al.}(2012)Barbieri, Chotalia, Fraser, Lavitas,
   Dostie, Pombo and Nicodemi}]{Barbieri2012}
 Barbieri M, Chotalia M, Fraser J, Lavitas LM, Dostie J, Pombo A, Nicodemi M
@@ -220,10 +268,6 @@ Rajagopal N, Xie W, Li Y, Wagner U, Wang W, Stamatoyannopoulos J, Ernst J,
   identification from chromatin state.}
 \newblock \emph{PLoS computational biology}, \textbf{9}(3): e1002968.
 
-\bibitem[{ENCODE(2012)}]{Dunham2012}
-ENCODE (2012) {An integrated encyclopedia of DNA elements in the human genome.}
-\newblock \emph{Nature}, \textbf{489}(7414): 57--74.
-
 \bibitem[{Barrett \emph{et~al.}(2013)Barrett, Wilhite, Ledoux, Evangelista,
   Kim, Tomashevsky, Marshall, Phillippy, Sherman \emph{et~al.}}]{Barrett2013}
 Barrett T, Wilhite SE, Ledoux P, Evangelista C, Kim IF, Tomashevsky M, Marshall
@@ -253,15 +297,6 @@ Zhang Y, Liu T, Meyer Ca, Eeckhoute J, Johnson DS, Bernstein BE, Nusbaum C,
   Myers RM, Brown M, \emph{et~al.} (2008) {Model-based analysis of ChIP-Seq
   (MACS).}
 \newblock \emph{Genome biology}, \textbf{9}(9): R137.
-
-\bibitem[{Suzuki and Shimodaira(2006)}]{Suzuki2006a}
-Suzuki R, Shimodaira H (2006) {Pvclust: an R package for assessing the
-  uncertainty in hierarchical clustering.}
-\newblock \emph{Bioinformatics (Oxford, England)}, \textbf{22}(12): 1540--2.
-
-\bibitem[{Breiman(2001{\natexlab{a}})}]{Breiman2001a}
-Breiman L (2001{\natexlab{a}}) {Random Forests}.
-\newblock \emph{Machine learning}, \textbf{45}(1): 5--32.
 
 \bibitem[{Liaw and Wiener(2002)}]{Liaw2002}
 Liaw A, Wiener M (2002) {Classification and Regression by randomForest}.
@@ -297,13 +332,6 @@ Dasgupta A, Sun YV, K\"{o}nig IR, Bailey-Wilson JE, Malley JD (2011) {Brief
 Breiman L (2001{\natexlab{b}}) {Statistical Modeling: The Two Cultures}.
 \newblock \emph{Statistical Science}, \textbf{16}(3): 199--231.
 
-\bibitem[{Hastie \emph{et~al.}(2009)Hastie, Tibshirani and
-  Friedman}]{Hastie2001}
-Hastie T, Tibshirani R, Friedman J (2009) \emph{{Elements of Statistical
-  Learning: Data Mining, Inference, and Prediction}}.
-\newblock Springer, 2 edition.
-\newblock ISBN 978-0-387-84858-7.
-
 \bibitem[{Tobias(1995)}]{Tobias1995}
 Tobias RD (1995) {An Introduction to Partial Least Squares Regression}.
 \newblock \emph{Proc. Ann. SAS Users Group Int. Conf. 20th}, pp. 1250--1257.
@@ -336,13 +364,6 @@ Hoffman MM, Ernst J, Wilder SP, Kundaje A, Harris RS, Libbrecht M, Giardine B,
 Furey TS (2003) {Integration of the cytogenetic map with the draft human genome
   sequence}.
 \newblock \emph{Human Molecular Genetics}, \textbf{12}(9): 1037--1044.
-
-\bibitem[{Boyle \emph{et~al.}(2001)Boyle, Gilchrist, Bridger, Mahy, Ellis and
-  Bickmore}]{Boyle2001}
-Boyle S, Gilchrist S, Bridger JM, Mahy NL, Ellis Ja, Bickmore Wa (2001) {The
-  spatial organization of human chromosomes within the nuclei of normal and
-  emerin-mutant cells.}
-\newblock \emph{Human molecular genetics}, \textbf{10}(3): 211--9.
 
 \bibitem[{Chambers \emph{et~al.}(2013)Chambers, Bickmore and
   Semple}]{Chambers2013}
@@ -446,13 +467,6 @@ McLeay RC, Lesluyes T, {Cuellar Partida} G, Bailey TL (2012) {Genome-wide in
   silico prediction of gene expression.}
 \newblock \emph{Bioinformatics}, \textbf{28}(21): 2789--96.
 
-\bibitem[{Dong \emph{et~al.}(2012)Dong, Greven, Kundaje, Djebali, Brown, Cheng,
-  Gingeras, Gerstein, Guig\'{o} \emph{et~al.}}]{Dong2012}
-Dong X, Greven MC, Kundaje A, Djebali S, Brown JB, Cheng C, Gingeras TR,
-  Gerstein M, Guig\'{o} R, \emph{et~al.} (2012) {Modeling gene expression using
-  chromatin features in various cellular contexts.}
-\newblock \emph{Genome biology}, \textbf{13}(9): R53.
-
 \bibitem[{Shiraki \emph{et~al.}(2003)Shiraki, Kondo, Katayama, Waki, Kasukawa,
   Kawaji, Kodzius, Watahiki, Nakamura \emph{et~al.}}]{Shiraki2003}
 Shiraki T, Kondo S, Katayama S, Waki K, Kasukawa T, Kawaji H, Kodzius R,
@@ -472,20 +486,6 @@ Kodzius R, Kojima M, Nishiyori H, Nakamura M, Fukuda S, Tagami M, Sasaki D,
 \bibitem[{{RIKEN Omics Science Center}(2012)}]{fantom5}
 {RIKEN Omics Science Center} (2012) {FANTOM5}.
 \newblock \emph{http://fantom.gsc.riken.jp/}.
-
-\bibitem[{Ryba \emph{et~al.}(2010)Ryba, Hiratani, Lu, Itoh, Kulik, Zhang,
-  Schulz, Robins, Dalton and Gilbert}]{Ryba2010}
-Ryba T, Hiratani I, Lu J, Itoh M, Kulik M, Zhang J, Schulz TC, Robins AJ,
-  Dalton S, Gilbert DM (2010) {Evolutionarily conserved replication timing
-  profiles predict long-range chromatin interactions and distinguish closely
-  related cell types.}
-\newblock \emph{Genome research}, \textbf{20}(6): 761--70.
-
-\bibitem[{Zuber and Strimmer(2011)}]{Zuber2011}
-Zuber V, Strimmer K (2011) {High-Dimensional Regression and Variable Selection
-  Using CAR Scores}.
-\newblock \emph{Statistical Applications in Genetics and Molecular Biology},
-  \textbf{10}(1): 1--27.
 
 \bibitem[{Kolasinska-Zwierz \emph{et~al.}(2009)Kolasinska-Zwierz, Down,
   Latorre, Liu, Liu and Ahringer}]{Kolasinska-Zwierz2009}
