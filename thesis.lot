@@ -6,8 +6,11 @@
 \contentsline {table}{\numberline {2}{\ignorespaces ChIP-seq and other public datasets used in this work. \relax }}{22}{table.caption.11}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3}{\ignorespaces {\bf Performance comparison of different modelling techniques. } Comparison of mean Pearson correlation coefficient between predicted and observed compartment eigenvectors for three different modelling approaches: LM: linear regression; RF: Random Forest regression; PLS: partial least squares regression. Correlations were averaged per cell type over three cell types (cell type specific) and in the six possible crosses (cross-application) shown in Fig. \ref {fig:diffmethods}. \relax }}{52}{table.caption.37}
+\contentsline {table}{\numberline {3}{\ignorespaces {\bf Performance comparison of different modelling techniques. } Comparison of mean Pearson correlation coefficient between predicted and observed compartment eigenvectors for three different modelling approaches: LM: linear regression; RF: Random Forest regression; PLS: partial least squares regression. Correlations were averaged per cell type over three cell types (cell type specific) and in the six possible crosses (cross-application) shown in Fig. \ref {fig:diffmethods}. \relax }}{53}{table.caption.39}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {A1}{\ignorespaces Gm12878 functional enrichments in regions of variable structure. }}{76}{table.8.1}
+\contentsline {table}{\numberline {A2}{\ignorespaces H1 hESC functional enrichments in regions of variable structure. }}{77}{table.8.2}
+\contentsline {table}{\numberline {A3}{\ignorespaces K562 functional enrichments in regions of variable structure. }}{78}{table.8.3}
