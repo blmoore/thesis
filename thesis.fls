@@ -178,6 +178,10 @@ INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/pdfpages/pppdftex.def
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/pdfpages/pppdftex.def
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/tools/longtable.sty
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/tools/longtable.sty
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT thesis.aux
 INPUT thesis.aux
 INPUT 0-intro/intro.aux
@@ -199,6 +203,8 @@ INPUT /usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 INPUT /usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-ppl.cfg
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -447,6 +453,12 @@ INPUT ./figs/tads_encode.pdf
 INPUT figs/examplervs.png
 INPUT ./figs/examplervs.png
 INPUT ./figs/examplervs.png
+INPUT figs/enhancerstates.pdf
+INPUT ./figs/enhancerstates.pdf
+INPUT ./figs/enhancerstates.pdf
+INPUT figs/stateenrich.pdf
+INPUT ./figs/stateenrich.pdf
+INPUT ./figs/stateenrich.pdf
 INPUT figs/longrange.pdf
 INPUT ./figs/longrange.pdf
 INPUT ./figs/longrange.pdf
@@ -562,6 +574,10 @@ INPUT 7-discussion/discussion.tex
 INPUT 7-discussion/discussion.tex
 INPUT 8-appendix/appendix.tex
 INPUT 8-appendix/appendix.tex
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT figs/genome_biol.pdf
 INPUT figs/genome_biol.pdf
 INPUT ./figs/genome_biol.pdf

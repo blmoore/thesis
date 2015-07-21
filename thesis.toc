@@ -56,48 +56,48 @@
 \contentsline {subsection}{\numberline {3.5.2}TAD classes}{33}{subsection.3.5.2}
 \contentsline {section}{\numberline {3.6}Variable regions}{33}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Chromatin state enrichment}{33}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Gene ontology enrichment}{33}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Contact changes}{33}{subsection.3.6.3}
-\contentsline {section}{\numberline {3.7}Nuclear positioning}{33}{section.3.7}
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Integrative modelling as a tool to explore biological systems}}{38}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{38}{section.4.1}
-\contentsline {section}{\numberline {4.2}Reproducing Dong \emph {et al.} }{39}{section.4.2}
-\contentsline {section}{\numberline {4.3}Modelling FANTOM5 CAGE timecourse data}{40}{section.4.3}
-\contentsline {section}{\numberline {4.4}Modelling higher order chromatin}{43}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Predictive model}{43}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Cross-application}{44}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Between-cell variability}{45}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Variable importance}{45}{subsection.4.4.4}
-\contentsline {subsection}{\numberline {4.4.5}Correlating input features}{48}{subsection.4.4.5}
-\contentsline {section}{\numberline {4.5}Parsimonious models}{50}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}$L_1$ regularisation}{50}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Brute force subsampling}{50}{subsection.4.5.2}
-\contentsline {section}{\numberline {4.6}Technical considerations}{50}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Resolution}{50}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Other modelling approaches}{50}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}Non-independence}{52}{subsection.4.6.3}
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Chromatin domain boundaries}}{53}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{53}{section.5.1}
-\contentsline {section}{\numberline {5.2}TAD and compartment boundaries}{54}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}CTCF and YY1}{58}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Repeats}{58}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}De novo boundary prediction}{61}{section.5.3}
-\contentsline {section}{\numberline {5.4}MetaTAD boundaries}{62}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Lamin associated domains}{62}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Boundaries over a time series}{62}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}Other boundaries}{62}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Giemsa bands}{62}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Superboundaries}{67}{subsection.5.5.2}
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Local chromatin conformation}}{68}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{68}{section.6.1}
-\contentsline {section}{\numberline {6.2}4C of the ZRS enhancer}{68}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Assay diagnostics}{68}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}4C / Hi-C comparison}{68}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}3D modelling}{68}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}5C in the HoxD region}{68}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Differential contacts}{68}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{68}{subsection.6.3.2}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{71}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclusion}{72}{section.7.1}
-\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Appendices}}{74}{chapter.8}
-\contentsline {chapter}{References}{89}{chapter.8}
+\contentsline {subsection}{\numberline {3.6.2}Gene ontology enrichment}{37}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Contact changes}{37}{subsection.3.6.3}
+\contentsline {section}{\numberline {3.7}Nuclear positioning}{37}{section.3.7}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Integrative modelling as a tool to explore biological systems}}{39}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{39}{section.4.1}
+\contentsline {section}{\numberline {4.2}Reproducing Dong \emph {et al.} }{40}{section.4.2}
+\contentsline {section}{\numberline {4.3}Modelling FANTOM5 CAGE timecourse data}{41}{section.4.3}
+\contentsline {section}{\numberline {4.4}Modelling higher order chromatin}{44}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Predictive model}{44}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Cross-application}{45}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Between-cell variability}{46}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Variable importance}{46}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}Correlating input features}{49}{subsection.4.4.5}
+\contentsline {section}{\numberline {4.5}Parsimonious models}{51}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}$L_1$ regularisation}{51}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Brute force subsampling}{51}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Technical considerations}{51}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Resolution}{51}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Other modelling approaches}{51}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Non-independence}{53}{subsection.4.6.3}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Chromatin domain boundaries}}{54}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{54}{section.5.1}
+\contentsline {section}{\numberline {5.2}TAD and compartment boundaries}{55}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}CTCF and YY1}{59}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Repeats}{59}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}De novo boundary prediction}{62}{section.5.3}
+\contentsline {section}{\numberline {5.4}MetaTAD boundaries}{63}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Lamin associated domains}{63}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Boundaries over a time series}{63}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Other boundaries}{63}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Giemsa bands}{63}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Superboundaries}{68}{subsection.5.5.2}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Local chromatin conformation}}{69}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{69}{section.6.1}
+\contentsline {section}{\numberline {6.2}4C of the ZRS enhancer}{69}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Assay diagnostics}{69}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}4C / Hi-C comparison}{69}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}3D modelling}{69}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}5C in the HoxD region}{69}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Differential contacts}{69}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{69}{subsection.6.3.2}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{72}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclusion}{73}{section.7.1}
+\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Appendices}}{75}{chapter.8}
+\contentsline {chapter}{References}{93}{table.8.3}
