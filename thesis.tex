@@ -12,6 +12,9 @@
 \usepackage{bm}
 \usepackage{amsmath}
 
+% used in into
+\usepackage{acronym}
+
 % used in methods
 \usepackage{array}
 \usepackage{booktabs}
@@ -38,6 +41,42 @@
 \maketitle
 
 \tableofcontents
+\clearpage
+
+% list of figures
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+\clearpage
+
+% list of tables
+\addcontentsline{toc}{chapter}{\listtablename}
+\listoftables
+\clearpage
+
+% ---------- Acronyms ---------- %
+\addcontentsline{toc}{chapter}{List of Acronyms}
+\chapter*{List of acronyms}
+% this is auto-populated from csv (above)
+\begin{acronym}[chromatin] % give longest one to fix width
+\acro{3C}{Chromsome conformation capture (derivatives: 4C, 5C, Hi-C)}
+\acro{AUROC}{Area under the receiver operating characteristic}
+\acro{ChIP-Seq}{Chromatin immunoprecipitation following by high-throughput sequencing}
+\acro{ESC}{Embryonic stem cell}
+\acro{FISH}{Flurorescent \emph{in-situ} hybridisation}
+\acro{GO}{Gene ontology}
+\acro{Hi-C}{High-throughput version of a 3C experiment}
+\acro{HMM}{Hidden Markov Model}
+\acro{ICE}{Iterative correction and eigenvector expansion}
+\acro{IF}{Interaction frequency}
+\acro{MAD}{Median absolute deviation}
+\acro{MSE}{Mean squared error}
+\acro{OOB}{Out-of-bag}
+\acro{PCC}{Pearson correlation coefficient}
+\acro{PLS}{Partial least squares}
+\acro{RF}{Random Forest}
+\acro{RMSE}{Root mean-squared error}
+\acro{TAD}{Topologically-associating domains}
+\end{acronym}
 
 % ---------- Intro ---------- %
 \include{0-intro/intro}
@@ -65,6 +104,7 @@
 
 % References (grabbed from includes)
 \begin{small}
+\addcontentsline{toc}{chapter}{References}
 \bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
 \end{small}
 
