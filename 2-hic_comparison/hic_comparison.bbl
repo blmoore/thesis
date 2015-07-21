@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
@@ -66,6 +66,24 @@ Sexton T, Yaffe E, Kenigsberg E, Bantignies F, Leblanc B, Hoichman M,
   Parrinello H, Tanay A, Cavalli G (2012) {Three-dimensional folding and
   functional organization principles of the Drosophila genome.}
 \newblock \emph{Cell}, \textbf{148}(3): 458--72.
+
+\bibitem[{Ernst and Kellis(2012)}]{Ernst2012}
+Ernst J, Kellis M (2012) {ChromHMM: automating chromatin-state discovery and
+  characterization.}
+\newblock \emph{Nature methods}, \textbf{9}(3): 215--6.
+
+\bibitem[{Hoffman \emph{et~al.}(2012)Hoffman, Buske, Wang, Weng, Bilmes and
+  Noble}]{Hoffman2012}
+Hoffman MM, Buske OJ, Wang J, Weng Z, Bilmes Ja, Noble WS (2012) {Unsupervised
+  pattern discovery in human chromatin structure through genomic segmentation}.
+\newblock \emph{Nature Methods}, \textbf{9}(5): 473--476.
+
+\bibitem[{Hoffman \emph{et~al.}(2013)Hoffman, Ernst, Wilder, Kundaje, Harris,
+  Libbrecht, Giardine, Ellenbogen, Bilmes \emph{et~al.}}]{Hoffman2013}
+Hoffman MM, Ernst J, Wilder SP, Kundaje A, Harris RS, Libbrecht M, Giardine B,
+  Ellenbogen PM, Bilmes Ja, \emph{et~al.} (2013) {Integrative annotation of
+  chromatin elements from ENCODE data.}
+\newblock \emph{Nucleic acids research}, \textbf{41}(2): 827--41.
 
 \bibitem[{Bickmore(2013)}]{Bickmore2013}
 Bickmore Wa (2013) {The spatial organization of the human genome.}
