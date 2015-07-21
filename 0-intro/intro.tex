@@ -16,9 +16,6 @@
 % bibliography
 \bibliographystyle{../thesis}
 
-% intro only ::
-\usepackage{acronym}
-
 % title setup
 \title{ \vspace{3in} Unravelling higher order genome organisation {\small [working
     title]} \\ \vspace{2em} {\large {\bf Introduction}} }
@@ -28,29 +25,6 @@
 \begin{document}
 
 \maketitle
-
-\chapter*{List of acronyms}
-% this is auto-populated from csv (above)
-\begin{acronym}[chromatin] % give longest one to fix width
-\acro{3C}{Chromsome conformation capture (derivatives: 4C, 5C, Hi-C)}
-\acro{AUROC}{Area under the receiver operating characteristic}
-\acro{ChIP-Seq}{Chromatin immunoprecipitation following by high-throughput sequencing}
-\acro{ESC}{Embryonic stem cell}
-\acro{FISH}{Flurorescent \emph{in-situ} hybridisation}
-\acro{GO}{Gene ontology}
-\acro{Hi-C}{High-throughput version of a 3C experiment}
-\acro{HMM}{Hidden Markov Model}
-\acro{ICE}{Iterative correction and eigenvector expansion}
-\acro{IF}{Interaction frequency}
-\acro{MAD}{Median absolute deviation}
-\acro{MSE}{Mean squared error}
-\acro{OOB}{Out-of-bag}
-\acro{PCC}{Pearson correlation coefficient}
-\acro{PLS}{Partial least squares}
-\acro{RF}{Random Forest}
-\acro{RMSE}{Root mean-squared error}
-\acro{TAD}{Topologically-associating domains}
-\end{acronym}
 
 \chapter*{Abstract}
 Recent technological advances have given insights into how genomes are folded in three-dimensions, however many open questions remain about the functional importance of this structure, its variability and its relationships with other features of the genomic and epigenomic landscape. In this work we combine Hi-C datasets describing physical genomic contacts with a large and diverse array of chromatin data derived at a much finer scale, including for example levels of bound transcription factors, histone modifications and expression data. These data are then brought together in a quantitative and rigorous way, through a predictive modelling framework and applied statistical analyses.
