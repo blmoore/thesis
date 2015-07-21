@@ -207,7 +207,6 @@ INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplr9o.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplr9o.tfm
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplr9o.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplr9t.tfm
@@ -257,10 +256,6 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplr9o.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplrc8r.tfm
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplr9o.vf
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplrc8r.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplr9o.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/iwona/ot1iwona.fd
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/iwona/ot1iwona.fd
@@ -302,7 +297,6 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/zplmb7y.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/zplmb7t.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/zplmb7t.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/zplmb7t.tfm
-OUTPUT thesis.toc
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplri9o.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplri9o.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
@@ -314,6 +308,7 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
+OUTPUT thesis.toc
 INPUT thesis.lof
 INPUT thesis.lof
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplb9o.tfm
@@ -356,6 +351,7 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/nowacki/iwona/rm-iwonar.tfm
 INPUT figs/hic.png
 INPUT ./figs/hic.png
 INPUT ./figs/hic.png
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplr9o.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/nowacki/iwona/rm-iwonar.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/nowacki/iwona/rm-iwonab.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplb9o.tfm
@@ -378,6 +374,10 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplb9o.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplbj8r.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplr9o.vf
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplrc8r.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplri9o.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
@@ -453,8 +453,6 @@ INPUT ./figs/longrange.pdf
 INPUT figs/nucpos.pdf
 INPUT ./figs/nucpos.pdf
 INPUT ./figs/nucpos.pdf
-INPUT thesis.bbl
-INPUT thesis.bbl
 INPUT 3-predictive_modelling/predictive_modelling.tex
 INPUT 3-predictive_modelling/predictive_modelling.tex
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/nowacki/iwona/rm-iwonari.tfm
@@ -681,8 +679,8 @@ INPUT 0-intro/intro.aux
 INPUT 0-intro/intro.aux
 INPUT ./thesis.out
 INPUT ./thesis.out
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/iwona/rm-iwona.enc
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/iwona/rm-iwona.enc
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/iwona/rm-iwona-sc.enc
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
