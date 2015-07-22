@@ -5,44 +5,46 @@ The style file: ../thesis.bst
 Database file #1: /Users/benmoore/Documents/library.bib
 Database file #2: /Users/benmoore/Documents/customrefs.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 15 entries,
+Warning--there's a number but no volume in Huang2008
+You've used 18 entries,
             3024 wiz_defined-function locations,
-            722 strings with 8990 characters,
-and the built_in function-call counts, 23578 in all, are:
-= -- 2453
-> -- 785
-< -- 3
-+ -- 570
-- -- 201
-* -- 1775
-:= -- 2529
-add.period$ -- 30
-call.type$ -- 15
-change.case$ -- 75
-chr.to.int$ -- 16
-cite$ -- 15
-duplicate$ -- 2440
-empty$ -- 1663
-format.name$ -- 243
-if$ -- 4849
+            744 strings with 9568 characters,
+and the built_in function-call counts, 26580 in all, are:
+= -- 2767
+> -- 854
+< -- 4
++ -- 620
+- -- 219
+* -- 2006
+:= -- 2873
+add.period$ -- 36
+call.type$ -- 18
+change.case$ -- 90
+chr.to.int$ -- 19
+cite$ -- 19
+duplicate$ -- 2750
+empty$ -- 1891
+format.name$ -- 272
+if$ -- 5460
 int.to.chr$ -- 1
-int.to.str$ -- 16
-missing$ -- 205
-newline$ -- 64
-num.names$ -- 45
-pop$ -- 1207
+int.to.str$ -- 19
+missing$ -- 234
+newline$ -- 76
+num.names$ -- 54
+pop$ -- 1351
 preamble$ -- 1
-purify$ -- 60
+purify$ -- 72
 quote$ -- 0
-skip$ -- 401
+skip$ -- 448
 stack$ -- 0
-substring$ -- 2943
-swap$ -- 540
+substring$ -- 3293
+swap$ -- 624
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 90
-warning$ -- 0
-while$ -- 160
+type$ -- 108
+warning$ -- 1
+while$ -- 181
 width$ -- 0
-write$ -- 183
+write$ -- 219
+(There was 1 warning)

@@ -1,4 +1,4 @@
-\begin{thebibliography}{117}
+\begin{thebibliography}{119}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
@@ -412,6 +412,17 @@ Li Z, Gadue P, Chen K, Jiao Y, Tuteja G, Schug J, Li W, Kaestner KH (2012)
   {Foxa2 and H2A.Z mediate nucleosome depletion during embryonic stem cell
   differentiation}.
 \newblock \emph{Cell}, \textbf{151}(7): 1608--1616.
+
+\bibitem[{Huang \emph{et~al.}(2009)Huang, Sherman and Lempicki}]{Huang2009}
+Huang DW, Sherman BT, Lempicki Ra (2009) {Bioinformatics enrichment tools:
+  paths toward the comprehensive functional analysis of large gene lists.}
+\newblock \emph{Nucleic acids research}, \textbf{37}(1): 1--13.
+
+\bibitem[{Lozzio \emph{et~al.}(1981)Lozzio, Lozzio, Bamberger and
+  Feliu}]{lozzio1981}
+Lozzio BB, Lozzio CB, Bamberger EG, Feliu AS (1981) A multipotential leukemia
+  cell line (k-562) of human origin.
+\newblock \emph{Experimental Biology and Medicine}, \textbf{166}(4): 546--550.
 
 \bibitem[{Bickmore(2013)}]{Bickmore2013}
 Bickmore Wa (2013) {The spatial organization of the human genome.}

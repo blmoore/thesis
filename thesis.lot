@@ -6,11 +6,11 @@
 \contentsline {table}{\numberline {2}{\ignorespaces ChIP-seq and other public datasets used in this work. \relax }}{21}{table.caption.11}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3}{\ignorespaces {\bf Performance comparison of different modelling techniques. } Comparison of mean Pearson correlation coefficient between predicted and observed compartment eigenvectors for three different modelling approaches: LM: linear regression; RF: Random Forest regression; PLS: partial least squares regression. Correlations were averaged per cell type over three cell types (cell type specific) and in the six possible crosses (cross-application) shown in Fig. \ref {fig:diffmethods}. \relax }}{54}{table.caption.42}
+\contentsline {table}{\numberline {3}{\ignorespaces {\bf Performance comparison of different modelling techniques. } Comparison of mean Pearson correlation coefficient between predicted and observed compartment eigenvectors for three different modelling approaches: LM: linear regression; RF: Random Forest regression; PLS: partial least squares regression. Correlations were averaged per cell type over three cell types (cell type specific) and in the six possible crosses (cross-application) shown in Fig. \ref {fig:diffmethods}. \relax }}{55}{table.caption.42}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A1}{\ignorespaces Gm12878 functional enrichments in regions of variable structure. }}{77}{table.8.1}
-\contentsline {table}{\numberline {A2}{\ignorespaces H1 hESC functional enrichments in regions of variable structure. }}{78}{table.8.2}
-\contentsline {table}{\numberline {A3}{\ignorespaces K562 functional enrichments in regions of variable structure. }}{79}{table.8.3}
+\contentsline {table}{\numberline {A1}{\ignorespaces Gm12878 functional enrichments in regions of variable structure. }}{78}{table.8.1}
+\contentsline {table}{\numberline {A2}{\ignorespaces H1 hESC functional enrichments in regions of variable structure. }}{79}{table.8.2}
+\contentsline {table}{\numberline {A3}{\ignorespaces K562 functional enrichments in regions of variable structure. }}{80}{table.8.3}
