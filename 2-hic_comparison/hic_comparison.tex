@@ -48,13 +48,21 @@ By combinatorial reanalysis of these cell-matched datasets, I can investigate th
 
 \section{Hi-C reprocessing}
 
-Each Hi-C dataset used in this work was reprocessed using the same pipeline from raw sequencing reads (Methods XX). In each case, experiments used the same HindIII restriction enzyme.
+Each Hi-C dataset used in this work was reprocessed using the same pipeline from raw sequencing reads (Methods \ref{methods:hic}). Briefly, raw sequencing reads were sourced from three different publications (\citet{Lieberman2009}, \citet{Dixon2012} and \citet{Kalhor2012}). These reads were mapped to human genome build \texttt{hg19} using an iterative mapping procedure that maximised the number of uniquely mappable reads from each sample (Methods \ref{methods:mapping}). 
 
-% Pipeline:
-% 1. iterative mapping
-% 2. 
+Next a filtering step was applied, which removed those fragment pairs that were likely artifactual or erroneous (Methods \ref{filtering}). A correction step was then applied, whereby biases such as mappability and GC content were removed to give each fragment equal visibility (Methods \ref{methods:correction}). Overall these steps produced comparable maps of interaction frequency in different cell types, despite their differing origins (Fig. \ref{fig:hicnorm}).
 
 % figure showing contact maps, before and after (split cell type?)
+\begin{figure}
+\begin{center}
+\includegraphics[width=.8\textwidth]{figs/hicnorm.png}
+\captionsetup{width=\textwidth}
+\caption[Iterative correction converts raw counts to normalised interaction frequencies.]{
+{\bf Iterative correction converts raw counts to normalised interaction frequencies. }
+The sample with highest sequencing depth (H1 hESC) is shown alongside that with much lower sequencing (K562) both before and after iterative correction and normalisation procedures were applied (Methods \ref{methods:hic}) for a 10 Mb section of human chromosome 18. Fill gradients are on a $\log_{10}$ scale.
+}\label{fig:hicnorm}
+\end{center}
+\end{figure} 
 
 \section{Compartment profiles}
 % how well do compartments correlate
