@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
@@ -84,6 +84,22 @@ Hoffman MM, Ernst J, Wilder SP, Kundaje A, Harris RS, Libbrecht M, Giardine B,
   Ellenbogen PM, Bilmes Ja, \emph{et~al.} (2013) {Integrative annotation of
   chromatin elements from ENCODE data.}
 \newblock \emph{Nucleic acids research}, \textbf{41}(2): 827--41.
+
+\bibitem[{Huang and Lempicki(2008)}]{Huang2008}
+Huang BDW, Lempicki R (2008) {Systematic and integrative analysis of large gene
+  lists using DAVID bioinformatics resources}.
+\newblock \emph{Nature protocols}, (301): 1--43.
+
+\bibitem[{Huang \emph{et~al.}(2009)Huang, Sherman and Lempicki}]{Huang2009}
+Huang DW, Sherman BT, Lempicki Ra (2009) {Bioinformatics enrichment tools:
+  paths toward the comprehensive functional analysis of large gene lists.}
+\newblock \emph{Nucleic acids research}, \textbf{37}(1): 1--13.
+
+\bibitem[{Lozzio \emph{et~al.}(1981)Lozzio, Lozzio, Bamberger and
+  Feliu}]{lozzio1981}
+Lozzio BB, Lozzio CB, Bamberger EG, Feliu AS (1981) A multipotential leukemia
+  cell line (k-562) of human origin.
+\newblock \emph{Experimental Biology and Medicine}, \textbf{166}(4): 546--550.
 
 \bibitem[{Bickmore(2013)}]{Bickmore2013}
 Bickmore Wa (2013) {The spatial organization of the human genome.}
