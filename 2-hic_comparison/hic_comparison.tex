@@ -59,7 +59,7 @@ Next a filtering step was applied, which removed those fragment pairs that were 
 \captionsetup{width=\textwidth}
 \caption[Iterative correction converts raw counts to normalised interaction frequencies.]{
 {\bf Iterative correction converts raw counts to normalised interaction frequencies. }
-The sample with highest sequencing depth (H1 hESC) is shown alongside that with much lower sequencing (K562) both before and after iterative correction and normalisation procedures were applied (Methods \ref{methods:hic}) for a 10 Mb section of human chromosome 18. Fill gradients are on a $\log_{10}$ scale.
+The sample with highest sequencing depth (H1 hESC) is shown alongside that with much lower sequencing (K562) both before and after iterative correction and normalisation procedures were applied (Methods \ref{methods:hic}) at 40 kb resolution for a 10 Mb section of human chromosome 18. Fill gradients are on a $\log_{10}$ scale.
 }\label{fig:hicnorm}
 \end{center}
 \end{figure} 
@@ -105,7 +105,7 @@ The continuous compartment eigenvector can be used as-is to classify A/B compart
 
 For this reason, instead of using raw eigenvector values we consider observed values as emissions from unobserved underlying states. This can be modelled through a Hidden Markov Model (HMM), whereby we first parameterise models of state and their transitions, then infer the most likely state sequence to have emitted our observed data. This unobserved two-state sequence is then used for compartment calls (see Methods \ref{sec:eigs}). 
 
-In practice, this acts to de-noise our compartment calls. Where single sign-changes along the series would have resulted in a single-block compartment, these may now be modelled as noisy emissions from a single unobserved state. An examplar region is showing in Fig. \ref{fig:denoise}. This shows an approximately 50 Mb region from chromosome 8 with eigenvector data from the H1 hESC cell line. A simple thresholding method in this region calls a total of $12$ regions, whereas our HMM method finds only $6$ larger regions in the same window.The disparity is caused by very short and single-bin compartments being disfavoured by the HMM-based method (Fig. \ref{fig:denoise}). 
+In practice, this acts to de-noise our compartment calls. Where single sign-changes along the series would have resulted in a single-block compartment, these may now be modelled as noisy emissions from a single unobserved state. An examplar region is showing in Fig. \ref{fig:denoise}. This shows an approximately 50 Mb region from chromosome 8 with eigenvector data from the H1 hESC cell line. A simple thresholding method in this region calls a total of $12$ regions, whereas our HMM method finds only $6$ larger regions in the same window. The disparity is caused by very short and single-bin compartments being disfavoured by the HMM-based method (Fig. \ref{fig:denoise}). 
 
 % figure showing raw eigs with hmm calls
 \begin{figure}
@@ -122,13 +122,40 @@ Chromosome compartments have previously been called through simple thresholding 
 % figure showing size distributions of Hi-C domains
 \subsection{TADs}
 
+Topological associating domains (TADs) are self-interacting blocks of the genome first described by \citet{Dixon2012}. We applied the original TAD calling method without modification, which uses a measure of the directional contact bias of a fragment (Section \ref{intro:tads} and Fig. \ref{fig:dicalc}).
+
+% figure with number of tads per cell type
+\begin{figure}
+\begin{center} 
+\includegraphics[width=\textwidth]{figs/ntads.pdf}
+\captionsetup{width=\textwidth} 
+\caption[The number of called TADs per cell type under study.]{ {\bf The number of called TADs per cell type under study. }
+A greater number of TADs were called in H1 hESC ($2,897$ total) than in GM12878 ($1,925$) or K562 ($1,677$), due to the difference in sequencing depths in each experiment when matrices were binned at 40 kb resolution.
+}\label{fig:ntads}
+\end{center} 
+\end{figure} 
+
+The \citet{Dixon2012} method of calling TADs relies on the detection of boundaries,\cite{Rao2014} thus is affected by sequencing depth: experiments with sparser contact matrices may not contain enough for a sufficiently high degree of bias to allow a boundary call. This is evident in our datasets even after normalisation, with the deeply-sequenced H1 hESC cell type having approximately $50\%$ more TADs called than in the GM12878 cell type (Fig. \ref{fig:ntads}). This effect could have been mitigated by down-sampling reads in the H1 cell type, but at a cost of reducing the quality of the best dataset under study. Instead this disparity should just be noted as a potential cofounder in downstream TAD analysis; at lower-resolution such as that used to calculate compartment eigenvectors (1 Mb) this sensitivity to sequencing depth is not evident (Figs. \ref{fig:wiggles}, \ref{fig:compcor}).
+
+Despite differing numbers, there is still detectable levels of conservation of TADs between cell types (Fig. \ref{fig:bounddist}). Genome-wide, $33\%$ of all H1 TAD boundaries have a matching boundary in GM12878 in the same or an adjacent 40 kb bin (K562: $31\%$, null model: $18\%$; K--S test: $D=0.26$, $p\approx0$). To illustrate this conservation with a real example, a 20 Mb region of chromosome 2 is pictured (Fig. \ref{fig:blowout}), highlighting the conservation between both TADs and compartment calls across the three cell types and at multiple scales: from chromosome-wide 1 Mb compartment eigenvectors, to TADs with individual boundaries resolved to 40 kb.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=.45\textwidth]{figs/taddist.pdf}
+\captionsetup{width=\textwidth}
+\caption[TAD boundaries are shared between cell types. ]{ {\bf TAD boundaries are shared between cell types. }
+The empirical cumulative density functions (ECDF) of distances between H1 TADs and those called in GM12878 and K562 are shown. These distances were compared with a null distribution calculated from randomly placed boundaries allocated at a matched resolution.
+}\label{fig:bounddist}
+\end{center}
+\end{figure} 
+
 \begin{figure}
 \begin{center} 
 \makebox[\textwidth][c]{ 
 \includegraphics[width=1.2\textwidth]{figs/blowout.png}
 }
 \captionsetup{width=\textwidth} 
-\caption{ {\bf Regions of variable structure alter their long-range contacts. }
+\caption[Concordance of chromatin structure at multiple scales over three human cell types.]{ {\bf Concordance of chromatin structure at multiple scales over three human cell types. }
 The eigenvector compartment profile is shown for chromosome 2 for three human cell types (\emph{left}).  At higher resolution, the zoomed region illustrates conservation of topological domains (TADs) over 20 Mb of the same chromosome.
 }\label{fig:blowout}
 \end{center} 
@@ -136,7 +163,7 @@ The eigenvector compartment profile is shown for chromosome 2 for three human ce
 
 \section{Domain epigenetics}
 
-The use of well-studied human cell types allows intersection with publicly-available epigenomics datasets, such as those produce by the ENCODE consortium.\cite{Dunham2012} In total, 35 cell-matched ChIP-seq datasets were available for all three of the tier 1 ENCODE cell lines: GM12878, H1 hESC and K562 (see Methods XX). 
+The use of well-studied human cell types allows intersection with publicly-available epigenomics datasets, such as those produce by the ENCODE consortium.\cite{Dunham2012} In total, 35 cell-matched ChIP-seq datasets were available for all three of the tier 1 ENCODE cell lines: GM12878, H1 hESC and K562 (see Methods \ref{methods:encode}). 
 
 \subsection{A/B compartments}
 
@@ -148,7 +175,7 @@ The overwhelming majority of intersected chromatin features are significantly en
 \includegraphics[width=1.4\textwidth]{figs/compartment_encode.pdf}
 }
 \captionsetup{width=\textwidth}
-\caption{ {\bf The chromatin signatures of A/B compartments. }
+\caption[The chromatin signatures of A/B compartments.]{ {\bf The chromatin signatures of A/B compartments. }
 Notched boxplots summarise the distribution of each feature over 1 Mb bins in open (A) and closed (B) compartments genome-wide.
 }\label{fig:compencode}
 \end{center}
@@ -164,7 +191,7 @@ Unlike compartments, initially TAD were not observably correlated with blocks of
 \begin{center}
 \includegraphics[width=.9\textwidth]{figs/tads_encode.pdf}
 \captionsetup{width=\textwidth}
-\caption{ {\bf TADs reflect epigenetic domains. }
+\caption[TADs reflect epigenetic domains.]{ {\bf TADs reflect epigenetic domains. }
 Following the Drosophila results of \citet{Sexton2012}, clustering of TAD domains by mean log2 signal of 34 ENCODE features distinguishes “null”, “active” and polycomb-associated (PcG) domains, as well as reflecting the encompassing A/B compartments.
 }\label{fig:tadencode}
 \end{center}
@@ -230,7 +257,7 @@ CTCF: CTCF enriched element; T: transcribed region; R: repressed or low-activity
 
 \subsection{Contact changes}
 
-A defining characteristic of active A compartment regions is a preferential bias in contacting other A compartment regions.\cite{Lieberman2009} However, it is not clear whether cell-type-specific transitions in higher-order structure are solely compartment-level phenomena, or involve other structural strata. We therefore examined the genome-wide contact profiles of each region of variable cell-type-specific chromatin structure in detail. If these cell-type-specific structures are mediated by finer-scale structural levels (such as TADs) we might expect to see predominantly short-range contacts in their underlying contact profile. Instead, we found that variable regions preferentially interact with other A compartment regions in the cell types in which they are active (\ref{fig:long-range}), but not in the other cell types in which they are inactive. This supports the idea that these cell-type-specific regions are undergoing compartment-level transitions, disproportionately mediated by the formation of long-range contacts, while also not precluding additional changes at lower levels such as TADs.
+A defining characteristic of active A compartment regions is a preferential bias in contacting other A compartment regions.\cite{Lieberman2009} However, it is not clear whether cell-type-specific transitions in higher-order structure are solely compartment-level phenomena, or involve other structural strata. We therefore examined the genome-wide contact profiles of each region of variable cell-type-specific chromatin structure in detail. If these cell-type-specific structures are mediated by finer-scale structural levels (such as TADs) we might expect to see predominantly short-range contacts in their underlying contact profile. Instead, we found that variable regions preferentially interact with other A compartment regions in the cell types in which they are active (\ref{fig:longrange}), but not in the other cell types in which they are inactive. This supports the idea that these cell-type-specific regions are undergoing compartment-level transitions, disproportionately mediated by the formation of long-range contacts, while also not precluding additional changes at lower levels such as TADs.
 
 \begin{figure}
 \begin{center} 
@@ -273,7 +300,7 @@ and peripheral ($F_{edge}$). The difference was found to be statistically signif
 \begin{center} 
 \includegraphics[width=\textwidth]{figs/nucpos.pdf}
 \captionsetup{width=\textwidth} 
-\caption{ {\bf Nuclear positioning of chromosomes relative to compartment eigenvectors. }
+\caption[Nuclear positioning of chromosomes relative to compartment eigenvectors.]{ {\bf Nuclear positioning of chromosomes relative to compartment eigenvectors. }
 Kernel density estimates showing peripheral chromosomes have a greater proportion of B compartments (negative eigenvectors) relative to centrally-position chromosomes. Positioning data from \citet{Boyle2001} (Methods XX).
 }\label{fig:nucpos}
 \end{center} 

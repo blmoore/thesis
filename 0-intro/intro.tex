@@ -66,7 +66,7 @@ The final step was an all-versus-all assay, capable of assaying pairwise interac
 \end{center}
 \end{figure} 
 
-\subsection{Hi-C variants}
+\subsection{Hi-C variants}\label{sec:hicvar}
 
 The interaction maps produced by Hi-C were found to exhibit several inherent biases. Fragment properties, such as their length, GC content and mappability, were confounding interaction frequency estimates and therefore needed to be normalised-away before subsequent analysis.\cite{Yaffe2011, Hu2013} A range of statistical techniques were developed to correct for these latent variables,\cite{Imakaev2012, Dekker2013, Hu2012, Li2014} while experimentalists instead looked to improve on the experimental procedure itself.
 
@@ -82,7 +82,7 @@ Use of a cell population also averages away cell-cycle effects, with the vast ma
 
 In-site Hi-C was a recent refinement of the Hi-C method, from the published of the original method.\cite{Rao2014} The principle difference is that fixation and ligation now happen in place, within intact cell nuclei.
 
-\subsection{Chromosome compartments}\ref{sec:compartments}
+\subsection{Chromosome compartments}\label{sec:compartments}
 
 In the paper describing the Hi-C technique,\cite{Lieberman2009}  Lieberman-Aiden \emph{et
   al.} described low-resolution structures they name  ``A'' and ``B'' nuclear compartments. These are regions with a median size of around 5 megabases which showed properties typical
@@ -100,7 +100,7 @@ Observed interaction frequencies (O) are averaged along super-diagonals to give 
 
 These compartments were identified through a continuous eigenvector profile, derived from a normalised Hi-C contact matrix.\cite{Lieberman2009} Importantly, this measure holds more information than a simple two-state classification, rather the continuous values can be interpreted as relative levels of compaction or activity.\cite{Dekker2013, Imakaev2012}
 
-\subsection{Topological domains}
+\subsection{Topological domains}\label{intro:tads}
 
 The falling cost of high-throughput sequencing enabled increasingly deep sequencing of Hi-C experiments. Sequencing is the main resolution-limiting resource for this assay, as to increase the analysis resolution and maintain the level of coverage requires an exponential increase in the total amount of sequencing required.\cite{Lieberman2009, Tanay2013}
 
