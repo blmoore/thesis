@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{34}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Barrett \emph{et~al.}(2013)Barrett, Wilhite, Ledoux, Evangelista,
@@ -50,6 +50,13 @@ Langmead B, Salzberg SL (2012) {Fast gapped-read alignment with Bowtie 2.}
 Yaffe E, Tanay A (2011) {Probabilistic modeling of Hi-C contact maps eliminates
   systematic biases to characterize global chromosomal architecture.}
 \newblock \emph{Nature genetics}, \textbf{43}(11): 1059--65.
+
+\bibitem[{Rao \emph{et~al.}(2014)Rao, Huntley, Durand, Stamenova, Bochkov,
+  Robinson, Sanborn, Machol, Omer \emph{et~al.}}]{Rao2014}
+Rao S, Huntley M, Durand N, Stamenova E, Bochkov I, Robinson J, Sanborn A,
+  Machol I, Omer A, \emph{et~al.} (2014) {A 3D Map of the Human Genome at
+  Kilobase Resolution Reveals Principles of Chromatin Looping}.
+\newblock \emph{Cell}, \textbf{159}(7): 1665--1680.
 
 \bibitem[{ENCODE(2012)}]{Dunham2012}
 ENCODE (2012) {An integrated encyclopedia of DNA elements in the human genome.}
