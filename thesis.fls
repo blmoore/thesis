@@ -444,6 +444,12 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
 INPUT figs/hmm_calls.png
 INPUT ./figs/hmm_calls.png
 INPUT ./figs/hmm_calls.png
+INPUT figs/ntads.pdf
+INPUT ./figs/ntads.pdf
+INPUT ./figs/ntads.pdf
+INPUT figs/taddist.pdf
+INPUT ./figs/taddist.pdf
+INPUT ./figs/taddist.pdf
 INPUT figs/blowout.png
 INPUT ./figs/blowout.png
 INPUT ./figs/blowout.png
