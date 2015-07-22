@@ -30,7 +30,7 @@
 
 \section{Introduction}
 
-Since the initial publication of the Hi-C technique in 2009,\cite{Lieberman2009} there has been rapid advancement of both the technique itself and the resolution at which interaction frequencies have been analysed. From the proof-of-concept analysis at 1 megabase (Mb) and 100 killable (kb) resolution,\cite{Lieberman2009} subsequent experiments achieved first 40 kb\cite{Dixon2012}, then 10 kb\cite{Jin2013} and most recently 1 kb,\cite{Rao2014} enabling bona fide genome-wide fragment-level analysis for the first time.
+Since the initial publication of the Hi-C technique in 2009,\cite{Lieberman2009} there has been rapid advancement of both the technique itself and the resolution at which interaction frequencies have been analysed. From the proof-of-concept analysis at 1 megabase (Mb) and 100 kilobase (kb) resolution,\cite{Lieberman2009} subsequent experiments achieved first 40 kb\cite{Dixon2012}, then 10 kb\cite{Jin2013} and most recently 1 kb,\cite{Rao2014} enabling bona fide genome-wide fragment-level analysis for the first time.
 
 % timeline: 
 % Lieberman Aiden 2009       1 Mb (30 M reads)
@@ -199,6 +199,8 @@ Following the Drosophila results of \citet{Sexton2012}, clustering of TAD domain
 
 Here we look for evidence of the \citet{Sexton2012} characterisation of TADs called in our human cell types. We found that TADs called across the three cell types used in this work could be clustered into transcriptionally active (active), repressed heterochromatin (null) and polycomb-associated (PcG) domains, based on the patterns of DNase hypersensitivity, H3k9me3 and H3k27me3, respectively (Fig. \ref{fig:tadencode}). This analysis reveals that active compartments typically cover both active and PcG-associated TADs, while B compartments appear more homogeneous and are composed mostly of H3k9me3-enriched heterochromatin even when considering fine-grained TAD structures rather than megabase-sized genomic blocks.
 
+These findings also link with recent work that suggested TADs are windows unto ``sub-compartments"\cite{Rao2014} which more closely reflect the functional enrichments of compartments. However, in our data we did not find statistical support for the suggested 5 classes of sub-compartment; instead, an ensemble of algorithms for optimising the number of cluster centroids voted for two or three clusters of TADs (\emph{data not shown}). This is not wholly surprising as \citet{Rao2014} report sub-compartments only on extremely deep-sequenced samples, and at a scale below that of TADs.
+
 \section{Variable regions}\label{sec:variableregions}
 % investigate those regions which are "flipped"
 
@@ -254,6 +256,12 @@ CTCF: CTCF enriched element; T: transcribed region; R: repressed or low-activity
 \end{figure} 
 
 \subsection{Gene ontology enrichment}
+
+Specific examples of RVS highlight genes of interest (Fig. \ref{fig:flippedegs}) but should be coupled with statistical evidence prior to suggestions of a general trend. For this reason we used Gene Ontology (GO) terms to test for functional enrichment within open RVS per cell type. 
+
+Functional enrichments of genes found in RVS in each cell type were calculated using DAVID \cite{Huang2008, Huang2009} and filtered by false discovery rate (FDR $< .05$). This revealed slight enrichments for keywords "blood", "oxygen carrier" and "$\beta$ Haemoglobin" in the K562 cell type, a multipotent cell type which is known to show properties of an early erythrocyte, among others.\cite{lozzio1981} However, in the other two cell types we did not find significant enrichments across regions, except for artefacts caused by violations of the independence assumption used in GO term hypergeometric testing. Our RVS blocks were at least 1 Mb each so could contain more than one gene, thus enrichments were seen for those genes known to for paralogous clusters along a chromosome, such as olfactory receptors. The full results of these tests are given in the appendix (Tables \ref{tab:gmgo}, \ref{tab:h1go}, \ref{tab:k5go}).
+
+The size of RVS could also explain we do not capture the relationship hinted at by cherry-picked examples (Fig. \ref{fig:flippedegs}). Given regions contain multiple (often unrelated) genes, we can imagine a case where a cell type specific locus is activated and moves into a more central position, disturbing adjacent genes which remain in a repressed state. Thus the cell type specific signals contained within the sum of all RVS in a given cell type could be obscured by the noise of adjacent genes captured in these broad compartment transitions.
 
 \subsection{Contact changes}
 
