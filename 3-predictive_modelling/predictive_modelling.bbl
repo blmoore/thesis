@@ -1,12 +1,9 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{31}
 \providecommand{\natexlab}[1]{#1}
 
-\bibitem[{Gerstein \emph{et~al.}(2012)Gerstein, Kundaje, Hariharan, Landt, Yan,
-  Cheng, Mu, Khurana, Rozowsky \emph{et~al.}}]{Gerstein2012}
-Gerstein MB, Kundaje A, Hariharan M, Landt SG, Yan Kk, Cheng C, Mu XJ, Khurana
-  E, Rozowsky J, \emph{et~al.} (2012) {Architecture of the human regulatory
-  network derived from ENCODE data.}
-\newblock \emph{Nature}, \textbf{489}(7414): 91--100.
+\bibitem[{ENCODE(2012)}]{Dunham2012}
+ENCODE (2012) {An integrated encyclopedia of DNA elements in the human genome.}
+\newblock \emph{Nature}, \textbf{489}(7414): 57--74.
 
 \bibitem[{Bernstein \emph{et~al.}(2010)Bernstein, Stamatoyannopoulos, Costello,
   Ren, Milosavljevic, Meissner, Kellis, Marra, Beaudet
@@ -37,12 +34,6 @@ Ernst J, Kheradpour P, Mikkelsen TS, Shoresh N, Ward LD, Epstein CB, Zhang X,
 \bibitem[{Henikoff and Shilatifard(2011)}]{Henikoff2011}
 Henikoff S, Shilatifard A (2011) {Histone modification: cause or cog?}
 \newblock \emph{Trends in genetics : TIG}, \textbf{27}(10): 389--96.
-
-\bibitem[{Li and Reinberg(2011)}]{Li2011}
-Li G, Reinberg D (2011) {Chromatin higher-order structures and gene
-  regulation.}
-\newblock \emph{Current opinion in genetics \& development}, \textbf{21}(2):
-  175--86.
 
 \bibitem[{Tippmann \emph{et~al.}(2012)Tippmann, Ivanek, Gaidatzis, Sch\"{o}ler,
   Hoerner, van Nimwegen, Stadler, Stadler and Sch\"{u}beler}]{Tippmann2012}
@@ -80,9 +71,11 @@ Kodzius R, Kojima M, Nishiyori H, Nakamura M, Fukuda S, Tagami M, Sasaki D,
   expression.}
 \newblock \emph{Nature methods}, \textbf{3}(3): 211--22.
 
-\bibitem[{{RIKEN Omics Science Center}(2012)}]{fantom5}
-{RIKEN Omics Science Center} (2012) {FANTOM5}.
-\newblock \emph{http://fantom.gsc.riken.jp/}.
+\bibitem[{Zuber and Strimmer(2011)}]{Zuber2011}
+Zuber V, Strimmer K (2011) {High-Dimensional Regression and Variable Selection
+  Using CAR Scores}.
+\newblock \emph{Statistical Applications in Genetics and Molecular Biology},
+  \textbf{10}(1): 1--27.
 
 \bibitem[{Ryba \emph{et~al.}(2010)Ryba, Hiratani, Lu, Itoh, Kulik, Zhang,
   Schulz, Robins, Dalton and Gilbert}]{Ryba2010}
@@ -92,18 +85,15 @@ Ryba T, Hiratani I, Lu J, Itoh M, Kulik M, Zhang J, Schulz TC, Robins AJ,
   related cell types.}
 \newblock \emph{Genome research}, \textbf{20}(6): 761--70.
 
-\bibitem[{Zuber and Strimmer(2011)}]{Zuber2011}
-Zuber V, Strimmer K (2011) {High-Dimensional Regression and Variable Selection
-  Using CAR Scores}.
-\newblock \emph{Statistical Applications in Genetics and Molecular Biology},
-  \textbf{10}(1): 1--27.
+\bibitem[{Chambers \emph{et~al.}(2013)Chambers, Bickmore and
+  Semple}]{Chambers2013}
+Chambers EV, Bickmore Wa, Semple CA (2013) {Divergence of mammalian higher
+  order chromatin structure is associated with developmental loci.}
+\newblock \emph{PLoS computational biology}, \textbf{9}(4): e1003017.
 
-\bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
-  and Ren}]{Dixon2012}
-Dixon JR, Selvaraj S, Yue F, Kim A, Li Y, Shen Y, Hu M, Liu JS, Ren B (2012)
-  {Topological domains in mammalian genomes identified by analysis of chromatin
-  interactions.}
-\newblock \emph{Nature}, \textbf{485}(7398): 376--80.
+\bibitem[{{RIKEN Omics Science Center}(2012)}]{fantom5}
+{RIKEN Omics Science Center} (2012) {FANTOM5}.
+\newblock \emph{http://fantom.gsc.riken.jp/}.
 
 \bibitem[{Kolasinska-Zwierz \emph{et~al.}(2009)Kolasinska-Zwierz, Down,
   Latorre, Liu, Liu and Ahringer}]{Kolasinska-Zwierz2009}
