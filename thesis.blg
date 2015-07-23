@@ -5,8 +5,6 @@ The style file: thesis.bst
 A level-1 auxiliary file: 0-intro/intro.aux
 Database file #1: /Users/benmoore/Documents/library.bib
 Database file #2: /Users/benmoore/Documents/customrefs.bib
-Warning--I didn't find a database entry for "Chambers2012"
-Warning--I didn't find a database entry for "Lieberman2011"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--there's a number but no volume in Li2014
 Warning--there's a number but no volume in Mifsud2015
@@ -14,45 +12,45 @@ Warning--empty journal in Williamson2014
 Warning--there's a number but no volume in Huang2008
 Warning--empty journal in Vizan2014
 Warning--there's a number but no volume in Tarailo-Graovac2009
-You've used 119 entries,
+You've used 117 entries,
             3024 wiz_defined-function locations,
-            1378 strings with 37681 characters,
-and the built_in function-call counts, 175054 in all, are:
-= -- 18399
-> -- 5375
-< -- 40
-+ -- 3883
-- -- 1373
-* -- 13156
-:= -- 18818
-add.period$ -- 239
-call.type$ -- 119
-change.case$ -- 595
-chr.to.int$ -- 120
-cite$ -- 125
-duplicate$ -- 18304
-empty$ -- 12515
-format.name$ -- 1751
-if$ -- 36096
+            1364 strings with 36343 characters,
+and the built_in function-call counts, 172079 in all, are:
+= -- 18088
+> -- 5281
+< -- 39
++ -- 3815
+- -- 1349
+* -- 12930
+:= -- 18497
+add.period$ -- 235
+call.type$ -- 117
+change.case$ -- 585
+chr.to.int$ -- 118
+cite$ -- 123
+duplicate$ -- 17995
+empty$ -- 12303
+format.name$ -- 1719
+if$ -- 35484
 int.to.chr$ -- 4
-int.to.str$ -- 120
-missing$ -- 1502
-newline$ -- 481
-num.names$ -- 357
-pop$ -- 8766
+int.to.str$ -- 118
+missing$ -- 1476
+newline$ -- 473
+num.names$ -- 351
+pop$ -- 8627
 preamble$ -- 1
-purify$ -- 476
+purify$ -- 468
 quote$ -- 0
-skip$ -- 3137
+skip$ -- 3077
 stack$ -- 0
-substring$ -- 21951
-swap$ -- 4051
+substring$ -- 21582
+swap$ -- 3980
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 712
+type$ -- 700
 warning$ -- 6
-while$ -- 1146
+while$ -- 1126
 width$ -- 0
-write$ -- 1429
-(There were 8 warnings)
+write$ -- 1405
+(There were 6 warnings)
