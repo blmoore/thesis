@@ -421,7 +421,7 @@ Two-dimensional kernel density estimates show the density of points in a scatter
 
 \subsection{Correlating input features}\label{sec:corrinputs}
 
-We have an \emph{a priori} expectation of multicollinearity in our feature set, for example between those that each broadly correlate with transcriptional activity (including POL2, H3K36me3, GC content). To explore these relationships, we performed unsupervised clustering of our feature sets in each cell type (Fig. \ref{fig:feat map}).
+We have an \emph{a priori} expectation of multicollinearity in our feature set, for example between those that each broadly correlate with transcriptional activity (including POL2, H3K36me3, GC content). To explore these relationships, we performed unsupervised clustering of our feature sets in each cell type (Fig. \ref{fig:featmap}).
 
 \begin{figure}
 \begin{center} 
@@ -433,7 +433,7 @@ The Pearson correlation coefficient (PCC) of genome-wide 1 Mb bins of each featu
 \end{center} 
 \end{figure} 
 
-We found as expected pervasive multicollinearity across our feature sets, with the majority of input variables in each model falling into a persistent "active" cluster containing regions with high DNase hypersensitivity, POL2 binding and histone modifications H3K36me3 as well as GC content (Fig. \ref{fig:feat map}). 
+We found as expected pervasive multicollinearity across our feature sets, with the majority of input variables in each model falling into a persistent "active" cluster containing regions with high DNase hypersensitivity, POL2 binding and histone modifications H3K36me3 as well as GC content (Fig. \ref{fig:featmap}). 
 
 Outliers are also present. H3K9me3, noted for high variable importance in each model (Fig. \ref{fig:varimp}) and the only feature ranked within the top 10 in each model (Fig. \ref{fig:top10venn}) is a clear outgroup in the H1 hESC and GM12878 correlation heatmaps, and in K562 forms a stable cluster only with the P300 transcription factor (Fig. \ref{fig:featmap}). This suggests H3K9me3 is providing orthogonal information to many of the other input variables, and likely explains its high variable importance.
 
@@ -471,7 +471,9 @@ Random Forest (RF) was \emph{a priori} chosen as an appropriate and powerful mod
 
 \begin{figure}
 \begin{center} 
+\makebox[\textwidth][c]{ 
 \includegraphics[width=1.2\textwidth]{figs/diffmethods.pdf}
+}
 \captionsetup{width=1.2\textwidth} 
 \caption[Comparison of Random Forest performance with other modelling approaches.]{ {\bf Comparison of Random Forest performance with other modelling approaches. }
 Heatmaps show the Pearson correlation coefficient between predicted and observed compartment eigenvectors genome-wide for three regression techniques: multiple linear regression (LM), Random Forest (RF) and partial least squares (PLS). Results are summarised in Table \ref{tab:diffmethods}.
@@ -482,8 +484,6 @@ Heatmaps show the Pearson correlation coefficient between predicted and observed
 Our results confirm RF as a suitable and powerful approach for modelling our relationships of interest in this work (Fig. \ref{fig:diffmethods}), with both the highest cell-type specific performance (PCC between predicted and observed $=0.790$) and on cross-applications (mean PCC $= 0.689$). 
 
 Multiple linear regression assumes linear relationships between model parameters and input features and allows for simple, normally-distributed errors. Surprisingly, this simple approach is capable of accurate cell-type specific predictions (mean PCC $= 0.787$), likely due to the high raw correlation between the inputs and dependent variable. However this simple approach fails to cross-apply between cell types (mean PCC $=0.139$) indicating a problems with overfitting. This can be remedied through variable selection procedures, however a strength of the RF approach is that this step is not necessary, and pre-selection of model variables may result in a sub-optimal end result (ref XX).
-
-Partial least squares regression is another technique which used dimensionality reduction to engineer a lower-dimension orthogonal feature set. Hence this method is well-suited to multi collinear inputs, such as our feature set. As expected, PLS regression provides highly accurate cell type specific predictions (mean PCC $=0.750$) and during cross-application (mean PCC $=0.641$), though in both cases produces slightly inferior results to RF models (Fig. \ref{fig:diffmethods}).
 
 \begin{table}
 \centering
@@ -498,6 +498,22 @@ Cell type specific  &  0.787 & 0.790 & 0.750 \\
 Cross-application  & 0.139 & 0.689 & 0.641
 \end{tabular}
 \end{table}
+
+Partial least squares regression is another technique which used dimensionality reduction to engineer a lower-dimension orthogonal feature set. Hence this method is well-suited to multi collinear inputs, such as our feature set. As expected, PLS regression provides highly accurate cell type specific predictions (mean PCC $=0.750$) and during cross-application (mean PCC $=0.641$), though in both cases produces slightly inferior results to RF models (Fig. \ref{fig:diffmethods}).
+
+PLS uses a type of dimensionality reduction, which offers another way to explore the inter-relationships between our feature set. Plotting input features against these lower-dimension components can give a revelling insight beyond simple correlations (e.g. Fig. \ref{fig:featmap}). Figure \ref{fig:circor} shows a "circle of correlations", where features are plotted onto polar co-ordinates against the first two PLS components. Interpretation of this figure is that nearby variables in the scatterplot are positively correlated, and the vector length from the circle centre is proportional to said variable's representation in the model. Negatively correlated variables point in opposite directions while uncorrelated variables are orthogonal to each other.\cite{Abdi2010} We therefore see the known multicollinearity represented as groupings of overlapping variables in each cell type, with a smaller number of orthogonal and negatively correlated variables in each cell type (Fig. \ref{fig:circor}).
+
+\begin{figure}
+\begin{center} 
+\makebox[\textwidth][c]{ 
+\includegraphics[width=1.2\textwidth]{figs/corcirc.pdf}
+}
+\captionsetup{width=1\textwidth} 
+\caption[ Circle of correlations of variables compared with PLS axes. ]{ {\bf Circle of correlations of variables compared with PLS axes.  }
+Model variables are plotted against the first two axes used in PLS regression models per cell type. $Y$ represents our compartment eigenvector.
+}\label{fig:circor}
+\end{center} 
+\end{figure} 
 
 \subsection{Non-independence}
 

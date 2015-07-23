@@ -1,4 +1,4 @@
-\begin{thebibliography}{117}
+\begin{thebibliography}{118}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{ENCODE(2012)}]{Dunham2012}
@@ -554,6 +554,11 @@ Handoko L, Xu H, Li G, Ngan CY, Chew E, Schnapp M, Lee CWH, Ye C, Ping JLH,
   \emph{et~al.} (2011) {CTCF-mediated functional chromatin interactome in
   pluripotent cells.}
 \newblock \emph{Nature genetics}, \textbf{43}(7): 630--8.
+
+\bibitem[{Abdi and Williams(2010)}]{Abdi2010}
+Abdi H, Williams LJ (2010) {Principal component analysis}.
+\newblock \emph{Wiley Interdisciplinary Reviews: Computational Statistics},
+  \textbf{2}(4): 433--459.
 
 \bibitem[{Hou \emph{et~al.}(2012)Hou, Li, Qin and Corces}]{Hou2012}
 Hou C, Li L, Qin ZS, Corces VG (2012) {Gene Density, Transcription, and
