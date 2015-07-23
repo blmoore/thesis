@@ -1,52 +1,5 @@
-\begin{thebibliography}{119}
+\begin{thebibliography}{117}
 \providecommand{\natexlab}[1]{#1}
-
-\bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
-  Williams, Imakaev, Ragoczy, Telling, Amit, Lajoie, Sabo
-  \emph{et~al.}}]{Lieberman2009}
-Lieberman-Aiden E, van Berkum NL, Williams L, Imakaev M, Ragoczy T, Telling A,
-  Amit I, Lajoie BR, Sabo PJ, \emph{et~al.} (2009) {Comprehensive mapping of
-  long-range interactions reveals folding principles of the human genome.}
-\newblock \emph{Science}, \textbf{326}(5950): 289--93.
-
-\bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
-  and Ren}]{Dixon2012}
-Dixon JR, Selvaraj S, Yue F, Kim A, Li Y, Shen Y, Hu M, Liu JS, Ren B (2012)
-  {Topological domains in mammalian genomes identified by analysis of chromatin
-  interactions.}
-\newblock \emph{Nature}, \textbf{485}(7398): 376--80.
-
-\bibitem[{Breiman(2001{\natexlab{a}})}]{Breiman2001a}
-Breiman L (2001{\natexlab{a}}) {Random Forests}.
-\newblock \emph{Machine learning}, \textbf{45}(1): 5--32.
-
-\bibitem[{Hastie \emph{et~al.}(2009)Hastie, Tibshirani and
-  Friedman}]{Hastie2001}
-Hastie T, Tibshirani R, Friedman J (2009) \emph{{Elements of Statistical
-  Learning: Data Mining, Inference, and Prediction}}.
-\newblock Springer, 2 edition.
-\newblock ISBN 978-0-387-84858-7.
-
-\bibitem[{Dong \emph{et~al.}(2012)Dong, Greven, Kundaje, Djebali, Brown, Cheng,
-  Gingeras, Gerstein, Guig\'{o} \emph{et~al.}}]{Dong2012}
-Dong X, Greven MC, Kundaje A, Djebali S, Brown JB, Cheng C, Gingeras TR,
-  Gerstein M, Guig\'{o} R, \emph{et~al.} (2012) {Modeling gene expression using
-  chromatin features in various cellular contexts.}
-\newblock \emph{Genome biology}, \textbf{13}(9): R53.
-
-\bibitem[{Ryba \emph{et~al.}(2010)Ryba, Hiratani, Lu, Itoh, Kulik, Zhang,
-  Schulz, Robins, Dalton and Gilbert}]{Ryba2010}
-Ryba T, Hiratani I, Lu J, Itoh M, Kulik M, Zhang J, Schulz TC, Robins AJ,
-  Dalton S, Gilbert DM (2010) {Evolutionarily conserved replication timing
-  profiles predict long-range chromatin interactions and distinguish closely
-  related cell types.}
-\newblock \emph{Genome research}, \textbf{20}(6): 761--70.
-
-\bibitem[{Zuber and Strimmer(2011)}]{Zuber2011}
-Zuber V, Strimmer K (2011) {High-Dimensional Regression and Variable Selection
-  Using CAR Scores}.
-\newblock \emph{Statistical Applications in Genetics and Molecular Biology},
-  \textbf{10}(1): 1--27.
 
 \bibitem[{Suzuki and Shimodaira(2006)}]{Suzuki2006a}
 Suzuki R, Shimodaira H (2006) {Pvclust: an R package for assessing the
@@ -96,6 +49,21 @@ Dostie J, Richmond Ta, Arnaout Ra, Selzer RR, Lee WL, Honan Ta, Rubio ED, Krumm
   (5C): A massively parallel solution for mapping interactions between genomic
   elements}.
 \newblock \emph{Genome Research}, \textbf{16}(10): 1299--1309.
+
+\bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
+  Williams, Imakaev, Ragoczy, Telling, Amit, Lajoie, Sabo
+  \emph{et~al.}}]{Lieberman2009}
+Lieberman-Aiden E, van Berkum NL, Williams L, Imakaev M, Ragoczy T, Telling A,
+  Amit I, Lajoie BR, Sabo PJ, \emph{et~al.} (2009) {Comprehensive mapping of
+  long-range interactions reveals folding principles of the human genome.}
+\newblock \emph{Science}, \textbf{326}(5950): 289--93.
+
+\bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
+  and Ren}]{Dixon2012}
+Dixon JR, Selvaraj S, Yue F, Kim A, Li Y, Shen Y, Hu M, Liu JS, Ren B (2012)
+  {Topological domains in mammalian genomes identified by analysis of chromatin
+  interactions.}
+\newblock \emph{Nature}, \textbf{485}(7398): 376--80.
 
 \bibitem[{Selvaraj \emph{et~al.}(2013)Selvaraj, {R Dixon}, Bansal and
   Ren}]{Selvaraj2013a}
@@ -291,6 +259,10 @@ Zhang Y, Liu T, Meyer Ca, Eeckhoute J, Johnson DS, Bernstein BE, Nusbaum C,
   (MACS).}
 \newblock \emph{Genome biology}, \textbf{9}(9): R137.
 
+\bibitem[{Breiman(2001{\natexlab{a}})}]{Breiman2001a}
+Breiman L (2001{\natexlab{a}}) {Random Forests}.
+\newblock \emph{Machine learning}, \textbf{45}(1): 5--32.
+
 \bibitem[{Liaw and Wiener(2002)}]{Liaw2002}
 Liaw A, Wiener M (2002) {Classification and Regression by randomForest}.
 \newblock \emph{R News}, \textbf{2}(December): 18--22.
@@ -324,6 +296,13 @@ Dasgupta A, Sun YV, K\"{o}nig IR, Bailey-Wilson JE, Malley JD (2011) {Brief
 \bibitem[{Breiman(2001{\natexlab{b}})}]{Breiman2001b}
 Breiman L (2001{\natexlab{b}}) {Statistical Modeling: The Two Cultures}.
 \newblock \emph{Statistical Science}, \textbf{16}(3): 199--231.
+
+\bibitem[{Hastie \emph{et~al.}(2009)Hastie, Tibshirani and
+  Friedman}]{Hastie2001}
+Hastie T, Tibshirani R, Friedman J (2009) \emph{{Elements of Statistical
+  Learning: Data Mining, Inference, and Prediction}}.
+\newblock Springer, 2 edition.
+\newblock ISBN 978-0-387-84858-7.
 
 \bibitem[{Tobias(1995)}]{Tobias1995}
 Tobias RD (1995) {An Introduction to Partial Least Squares Regression}.
@@ -429,13 +408,6 @@ Bickmore Wa (2013) {The spatial organization of the human genome.}
 \newblock \emph{Annual review of genomics and human genetics}, \textbf{14}:
   67--84.
 
-\bibitem[{Gerstein \emph{et~al.}(2012)Gerstein, Kundaje, Hariharan, Landt, Yan,
-  Cheng, Mu, Khurana, Rozowsky \emph{et~al.}}]{Gerstein2012}
-Gerstein MB, Kundaje A, Hariharan M, Landt SG, Yan Kk, Cheng C, Mu XJ, Khurana
-  E, Rozowsky J, \emph{et~al.} (2012) {Architecture of the human regulatory
-  network derived from ENCODE data.}
-\newblock \emph{Nature}, \textbf{489}(7414): 91--100.
-
 \bibitem[{Bernstein \emph{et~al.}(2010)Bernstein, Stamatoyannopoulos, Costello,
   Ren, Milosavljevic, Meissner, Kellis, Marra, Beaudet
   \emph{et~al.}}]{Bernstein2010}
@@ -459,12 +431,6 @@ Sajan SA, Hawkins RD (2012) {Methods for identifying higher-order chromatin
 Henikoff S, Shilatifard A (2011) {Histone modification: cause or cog?}
 \newblock \emph{Trends in genetics : TIG}, \textbf{27}(10): 389--96.
 
-\bibitem[{Li and Reinberg(2011)}]{Li2011}
-Li G, Reinberg D (2011) {Chromatin higher-order structures and gene
-  regulation.}
-\newblock \emph{Current opinion in genetics \& development}, \textbf{21}(2):
-  175--86.
-
 \bibitem[{Tippmann \emph{et~al.}(2012)Tippmann, Ivanek, Gaidatzis, Sch\"{o}ler,
   Hoerner, van Nimwegen, Stadler, Stadler and Sch\"{u}beler}]{Tippmann2012}
 Tippmann SC, Ivanek R, Gaidatzis D, Sch\"{o}ler A, Hoerner L, van Nimwegen E,
@@ -477,6 +443,13 @@ Tippmann SC, Ivanek R, Gaidatzis D, Sch\"{o}ler A, Hoerner L, van Nimwegen E,
 McLeay RC, Lesluyes T, {Cuellar Partida} G, Bailey TL (2012) {Genome-wide in
   silico prediction of gene expression.}
 \newblock \emph{Bioinformatics}, \textbf{28}(21): 2789--96.
+
+\bibitem[{Dong \emph{et~al.}(2012)Dong, Greven, Kundaje, Djebali, Brown, Cheng,
+  Gingeras, Gerstein, Guig\'{o} \emph{et~al.}}]{Dong2012}
+Dong X, Greven MC, Kundaje A, Djebali S, Brown JB, Cheng C, Gingeras TR,
+  Gerstein M, Guig\'{o} R, \emph{et~al.} (2012) {Modeling gene expression using
+  chromatin features in various cellular contexts.}
+\newblock \emph{Genome biology}, \textbf{13}(9): R53.
 
 \bibitem[{Shiraki \emph{et~al.}(2003)Shiraki, Kondo, Katayama, Waki, Kasukawa,
   Kawaji, Kodzius, Watahiki, Nakamura \emph{et~al.}}]{Shiraki2003}
@@ -493,6 +466,20 @@ Kodzius R, Kojima M, Nishiyori H, Nakamura M, Fukuda S, Tagami M, Sasaki D,
   Imamura K, Kai C, \emph{et~al.} (2006) {CAGE: cap analysis of gene
   expression.}
 \newblock \emph{Nature methods}, \textbf{3}(3): 211--22.
+
+\bibitem[{Zuber and Strimmer(2011)}]{Zuber2011}
+Zuber V, Strimmer K (2011) {High-Dimensional Regression and Variable Selection
+  Using CAR Scores}.
+\newblock \emph{Statistical Applications in Genetics and Molecular Biology},
+  \textbf{10}(1): 1--27.
+
+\bibitem[{Ryba \emph{et~al.}(2010)Ryba, Hiratani, Lu, Itoh, Kulik, Zhang,
+  Schulz, Robins, Dalton and Gilbert}]{Ryba2010}
+Ryba T, Hiratani I, Lu J, Itoh M, Kulik M, Zhang J, Schulz TC, Robins AJ,
+  Dalton S, Gilbert DM (2010) {Evolutionarily conserved replication timing
+  profiles predict long-range chromatin interactions and distinguish closely
+  related cell types.}
+\newblock \emph{Genome research}, \textbf{20}(6): 761--70.
 
 \bibitem[{{RIKEN Omics Science Center}(2012)}]{fantom5}
 {RIKEN Omics Science Center} (2012) {FANTOM5}.
