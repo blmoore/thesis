@@ -4,49 +4,47 @@ The top-level auxiliary file: predictive_modelling.aux
 The style file: ../thesis.bst
 Database file #1: /Users/benmoore/Documents/library.bib
 Database file #2: /Users/benmoore/Documents/customrefs.bib
-Warning--I didn't find a database entry for "Chambers2012"
-Warning--I didn't find a database entry for "Lieberman2011"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty journal in Vizan2014
-You've used 32 entries,
+You've used 31 entries,
             3024 wiz_defined-function locations,
-            841 strings with 14547 characters,
-and the built_in function-call counts, 48304 in all, are:
-= -- 5084
-> -- 1504
+            829 strings with 13196 characters,
+and the built_in function-call counts, 45246 in all, are:
+= -- 4766
+> -- 1369
 < -- 10
-+ -- 1088
-- -- 385
-* -- 3633
-:= -- 5180
-add.period$ -- 64
-call.type$ -- 32
-change.case$ -- 160
-chr.to.int$ -- 33
-cite$ -- 33
-duplicate$ -- 5081
-empty$ -- 3433
-format.name$ -- 488
-if$ -- 9942
++ -- 988
+- -- 351
+* -- 3401
+:= -- 4874
+add.period$ -- 62
+call.type$ -- 31
+change.case$ -- 155
+chr.to.int$ -- 32
+cite$ -- 32
+duplicate$ -- 4768
+empty$ -- 3238
+format.name$ -- 447
+if$ -- 9310
 int.to.chr$ -- 1
-int.to.str$ -- 33
-missing$ -- 413
-newline$ -- 132
-num.names$ -- 96
-pop$ -- 2422
+int.to.str$ -- 32
+missing$ -- 389
+newline$ -- 128
+num.names$ -- 93
+pop$ -- 2260
 preamble$ -- 1
-purify$ -- 128
+purify$ -- 124
 quote$ -- 0
-skip$ -- 868
+skip$ -- 809
 stack$ -- 0
-substring$ -- 6082
-swap$ -- 1087
+substring$ -- 5697
+swap$ -- 1027
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 192
+type$ -- 186
 warning$ -- 1
-while$ -- 313
+while$ -- 291
 width$ -- 0
-write$ -- 385
-(There were 3 warnings)
+write$ -- 373
+(There was 1 warning)
