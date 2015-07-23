@@ -6,45 +6,45 @@ Database file #1: /Users/benmoore/Documents/library.bib
 Database file #2: /Users/benmoore/Documents/customrefs.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty journal in Vizan2014
-You've used 32 entries,
+You've used 33 entries,
             3024 wiz_defined-function locations,
-            836 strings with 13354 characters,
-and the built_in function-call counts, 46049 in all, are:
-= -- 4848
-> -- 1384
+            844 strings with 14269 characters,
+and the built_in function-call counts, 48211 in all, are:
+= -- 5075
+> -- 1463
 < -- 11
-+ -- 998
-- -- 355
-* -- 3464
-:= -- 4972
-add.period$ -- 64
-call.type$ -- 32
-change.case$ -- 160
-chr.to.int$ -- 33
-cite$ -- 33
-duplicate$ -- 4846
-empty$ -- 3302
-format.name$ -- 456
-if$ -- 9473
++ -- 1056
+- -- 375
+* -- 3627
+:= -- 5195
+add.period$ -- 66
+call.type$ -- 33
+change.case$ -- 165
+chr.to.int$ -- 34
+cite$ -- 34
+duplicate$ -- 5073
+empty$ -- 3450
+format.name$ -- 479
+if$ -- 9920
 int.to.chr$ -- 1
-int.to.str$ -- 33
-missing$ -- 398
-newline$ -- 132
-num.names$ -- 96
-pop$ -- 2293
+int.to.str$ -- 34
+missing$ -- 415
+newline$ -- 136
+num.names$ -- 99
+pop$ -- 2397
 preamble$ -- 1
-purify$ -- 128
+purify$ -- 132
 quote$ -- 0
-skip$ -- 823
+skip$ -- 869
 stack$ -- 0
-substring$ -- 5784
-swap$ -- 1054
+substring$ -- 6066
+swap$ -- 1098
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 192
+type$ -- 198
 warning$ -- 1
-while$ -- 297
+while$ -- 311
 width$ -- 0
-write$ -- 385
+write$ -- 397
 (There was 1 warning)

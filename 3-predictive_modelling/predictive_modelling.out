@@ -9,10 +9,11 @@
 \BOOKMARK [2][-]{subsection.1.4.3}{1.4.3 Between-cell variability}{section.1.4}% 9
 \BOOKMARK [2][-]{subsection.1.4.4}{1.4.4 Variable importance}{section.1.4}% 10
 \BOOKMARK [2][-]{subsection.1.4.5}{1.4.5 Correlating input features}{section.1.4}% 11
-\BOOKMARK [1][-]{section.1.5}{1.5 Parsimonious models}{chapter.1}% 12
-\BOOKMARK [2][-]{subsection.1.5.1}{1.5.1 L1 regularisation}{section.1.5}% 13
-\BOOKMARK [2][-]{subsection.1.5.2}{1.5.2 Brute force subsampling}{section.1.5}% 14
-\BOOKMARK [1][-]{section.1.6}{1.6 Technical considerations}{chapter.1}% 15
-\BOOKMARK [2][-]{subsection.1.6.1}{1.6.1 Resolution}{section.1.6}% 16
-\BOOKMARK [2][-]{subsection.1.6.2}{1.6.2 Other modelling approaches}{section.1.6}% 17
-\BOOKMARK [2][-]{subsection.1.6.3}{1.6.3 Non-independence}{section.1.6}% 18
+\BOOKMARK [1][-]{section.1.5}{1.5 Parsimonious models from expanded feature sets}{chapter.1}% 12
+\BOOKMARK [2][-]{subsection.1.5.1}{1.5.1 Full models}{section.1.5}% 13
+\BOOKMARK [2][-]{subsection.1.5.2}{1.5.2 BIC-penalised multiple linear regression}{section.1.5}% 14
+\BOOKMARK [2][-]{subsection.1.5.3}{1.5.3 Regularised Random Forest}{section.1.5}% 15
+\BOOKMARK [1][-]{section.1.6}{1.6 Technical considerations}{chapter.1}% 16
+\BOOKMARK [2][-]{subsection.1.6.1}{1.6.1 Resolution}{section.1.6}% 17
+\BOOKMARK [2][-]{subsection.1.6.2}{1.6.2 Other modelling approaches}{section.1.6}% 18
+\BOOKMARK [2][-]{subsection.1.6.3}{1.6.3 Non-independence}{section.1.6}% 19
