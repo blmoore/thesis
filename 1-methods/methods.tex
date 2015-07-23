@@ -141,7 +141,7 @@ To quantify collinearity of input features, correlation matrices built from geno
 \begin{center}
 \includegraphics[width=\textwidth]{figs/randforests.pdf}
 \captionsetup{width=\textwidth}
-\caption{ {\bf Random Forests overview. } 
+\caption[Random Forests overview.]{ {\bf Random Forests overview. } 
  Random Forests are an ensemble of bagged, de-correlated classification or regression trees first described by Breiman.\cite{Breiman2001a}
 }\label{fig:randforests}
 \end{center}
@@ -173,7 +173,7 @@ with the dataset used in this work (Fig. \ref{fig:rfparam}).
 \begin{center}
 \includegraphics[width=\textwidth]{figs/rfparams.pdf}
 \captionsetup{width=\textwidth}
-\caption{ {\bf Confirmatory Random Forest parameter optimisation. } 
+\caption[Random Forest parameters are largely insensitive.]{ {\bf Random Forest parameters are largely insensitive. } 
 Two user-facing Random Forest paramters are known to be insensitive over a broad range.\cite{Hastie2001} Optimisations for $ntrees$ (the number of trees in the forests) and $mtry$ (the number of features tested at each node) are shown for three different models, with typical values of 200 trees and $\frac{1}{3}$ of input variables highlighted.
 }\label{fig:rfparam}
 \end{center}
@@ -185,7 +185,7 @@ represents the average difference (over the forest) between the accuracy
 of a tree with permuted and unpermuted versions of a given variable (Fig. \ref{fig:randforests}), in
 units of mean squared error (MSE).\citep{Cutler2007, Dasgupta2012}
 
-\subsection{Model performance}\label{model-performance}
+\subsection{Model performance}\label{sec:modelperf}
 
 The effectiveness of the modelling approach was measured by four
 different metrics. Prediction accuracy was assessed by the Pearson
