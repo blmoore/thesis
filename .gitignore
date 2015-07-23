@@ -6,3 +6,5 @@ _theses/
 
 *.log
 *.rtf
+
+*.gz(busy)

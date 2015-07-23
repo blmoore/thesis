@@ -12,6 +12,9 @@
 \usepackage{bm}
 \usepackage{amsmath}
 
+% thesis only
+\usepackage{tocbibind}
+
 % used in into
 \usepackage{acronym}
 
@@ -39,19 +42,53 @@
 
 \begin{document}
 
+\frontmatter
+
 \maketitle
+\clearpage
+
+\addcontentsline{toc}{chapter}{Declaration}
+\chapter*{Declaration}
+
+\begin{quote}
+This thesis presents my own work, wherever the contributions of others were involved this is clearly indicated.
+\end{quote}
+
+\hfill ---Benjamin L. Moore (2015)
+
+\clearpage
+
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\chapter*{Acknowledgements}
+
+
+\clearpage
+
+% ---------- Abstract ---------- %
+\addcontentsline{toc}{chapter}{Abstract}
+\chapter*{Abstract}
+Recent technological advances underpinned by high throughput sequencing have given new insights into the three-dimensional structure of mammalian genomes. Chromatin conformation assays have been the critical development in this area, particularly Hi-C, which ascertains genome-wide patterns of intra and inter-chromosomal contacts. However many open questions remain concerning the functional relevance of such higher order structure, the extent to which it varies, and how it relates to other features of the genomic and epigenomic landscape.
+
+Current knowledge of nuclear architecture describes a hierarchical organisation ranging from small loops between individual loci, to megabase-sized self-interacting topological domains (TADs), encompassed within large multimegabase chromosome compartments. In parallel with the discovery of these strata, the ENCODE project has generated vast amounts of data through ChIP-seq, RNA-seq and other assays applied to a wide variety of cell types, forming a comprehensive bioinformatics resource.
+
+In this work we combine Hi-C datasets describing physical genomic contacts with a large and diverse array of chromatin features derived at a much finer scale in the same mammalian cell types. These features include levels of bound transcription factors, histone modifications and expression data. These data are then integrated in a statistically rigorous way, through a predictive modelling framework from the machine learning field. These studies were extended, within a collaborative project, to encompass a dataset of matched Hi-C and expression data collected over a murine neural differentiation timecourse.
+
+We compare higher order chromatin organisation across a variety of human cell types and find pervasive conservation of chromatin organisation at multiple scales. We also identify structurally variable regions between cell types, that are rich in active enhancers and contain loci of known cell-type specific function. We show that broad aspects of higher order chromatin organisation, such as nuclear compartment domains, can be accurately predicted in a variety of human cell types, using models based upon underlying chromatin features. We dissect these quantitative models and find them to be generalisable to novel cell types, presumably reflecting fundamental biological rules linking compartments with key activating and repressive signals. These models describe the strong interconnectedness between locus-level patterns of local histone modifications and bound factors, on the order of hundreds or thousands of basepairs, with much broader compartmentalisation of large, multi-megabase chromosomal regions.
+
+Finally, boundary regions are investigated in terms of chromatin features and co-localisation with other known nuclear structures, such as association with the nuclear lamina. We find boundary complexity to vary between cell types and link TAD aggregations to previously described lamin-associated domains, as well as exploring the concept of super-boundaries that span multiple levels of organisation. Together these analyses lend quantitative evidence to a model of higher order genome organisation that is largely stable between cell types, but can selectively vary locally, based on the activation or repression of key loci.
+
 \clearpage
 
 \tableofcontents
 \clearpage
 
 % list of figures
-\addcontentsline{toc}{chapter}{\listfigurename}
+%\addcontentsline{toc}{chapter}{\listfigurename}
 \listoffigures
 \clearpage
 
 % list of tables
-\addcontentsline{toc}{chapter}{\listtablename}
+%\addcontentsline{toc}{chapter}{\listtablename}
 \listoftables
 \clearpage
 
@@ -100,6 +137,9 @@ Moore BL, Aitken S and Semple CA (2015) Integrative modeling reveals the princip
 
 \clearpage
 
+% switch to actual page numbering
+\mainmatter
+
 % ---------- Intro ---------- %
 \include{0-intro/intro}
 
@@ -126,7 +166,7 @@ Moore BL, Aitken S and Semple CA (2015) Integrative modeling reveals the princip
 
 % References (grabbed from includes)
 \begin{small}
-\addcontentsline{toc}{chapter}{References}
+%\addcontentsline{toc}{chapter}{References}
 \bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
 \end{small}
 
