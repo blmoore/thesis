@@ -332,6 +332,9 @@ INPUT ./figs/100kb.pdf
 INPUT figs/diffmethods.pdf
 INPUT ./figs/diffmethods.pdf
 INPUT ./figs/diffmethods.pdf
+INPUT figs/corcirc.pdf
+INPUT ./figs/corcirc.pdf
+INPUT ./figs/corcirc.pdf
 INPUT predictive_modelling.bbl
 INPUT predictive_modelling.bbl
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
