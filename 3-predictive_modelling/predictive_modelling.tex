@@ -418,6 +418,7 @@ Two-dimensional kernel density estimates show the density of points in a scatter
 \end{center} 
 \end{figure} 
 
+% also consider looking at LOCAL variable importance
 
 \subsection{Correlating input features}\label{sec:corrinputs}
 
@@ -437,13 +438,23 @@ We found as expected pervasive multicollinearity across our feature sets, with t
 
 Outliers are also present. H3K9me3, noted for high variable importance in each model (Fig. \ref{fig:varimp}) and the only feature ranked within the top 10 in each model (Fig. \ref{fig:top10venn}) is a clear outgroup in the H1 hESC and GM12878 correlation heatmaps, and in K562 forms a stable cluster only with the P300 transcription factor (Fig. \ref{fig:featmap}). This suggests H3K9me3 is providing orthogonal information to many of the other input variables, and likely explains its high variable importance.
 
-\section{Parsimonious models}
+\section{Parsimonious models from expanded feature sets}
 
 Strongly predictive models can be useful tools to reason about a complex system, however from a researcher's perspective there also exists a trade-off between predictive power and parsimony. Namely simpler models with fewer inputs may be more interpretable and of wider utility, for example in cell types with less ChIP-seq data available than those used in this work. For this reason we explore parsimonious models with reduced feature sets, with an aim to build simpler models of chromatin state while retaining, if possible, similar levels of predictive accuracy.
 
-\subsection{$L_1$ regularisation}
+Additionally, the $35$ variables used thus far as model inputs are not the complete set available in each cell type, but only the subset of those assayed in all three cell types under study. The ENCODE consortium has produced a significantly greater number of datasets\cite{Dunham2012, Boyle2014} in each cell type which have thus far gone unused. In this section we'll explore models of higher order chromatin structure, in some cases built from over $100$ variables, and then also generate parsimonious models using optimal subsets guided by statistical techniques that penalising model complexity.
 
-\subsection{Brute force subsampling}
+\subsection{Full models}
+
+% Compare RF with previous
+
+\subsection{BIC-penalised multiple linear regression}
+i
+%\subsection{$L_1$ regularisation}
+
+\subsection{Regularised Random Forest}
+
+%\subsection{Brute force subsampling}
 
 \section{Technical considerations}
 
