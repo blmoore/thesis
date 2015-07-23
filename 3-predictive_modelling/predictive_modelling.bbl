@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{33}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{ENCODE(2012)}]{Dunham2012}
@@ -189,6 +189,13 @@ Handoko L, Xu H, Li G, Ngan CY, Chew E, Schnapp M, Lee CWH, Ye C, Ping JLH,
 Suzuki R, Shimodaira H (2006) {Pvclust: an R package for assessing the
   uncertainty in hierarchical clustering.}
 \newblock \emph{Bioinformatics (Oxford, England)}, \textbf{22}(12): 1540--2.
+
+\bibitem[{Boyle \emph{et~al.}(2014)Boyle, Araya, Brdlik, Cayting, Cheng, Cheng,
+  Gardner, Hillier, Janette \emph{et~al.}}]{Boyle2014}
+Boyle AP, Araya CL, Brdlik C, Cayting P, Cheng C, Cheng Y, Gardner K, Hillier
+  LW, Janette J, \emph{et~al.} (2014) {Comparative analysis of regulatory
+  information and circuits across distant species}.
+\newblock \emph{Nature}, \textbf{512}(7515): 453--456.
 
 \bibitem[{Abdi and Williams(2010)}]{Abdi2010}
 Abdi H, Williams LJ (2010) {Principal component analysis}.
