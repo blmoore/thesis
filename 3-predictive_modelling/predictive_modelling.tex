@@ -102,7 +102,7 @@ approach.
 %understanding of the drivers of transcriptional flux. 
 We can extend this approach to the related domain of nuclear architecture, in the hope of understanding the relationships between chromatin and higher order structure in the same way that chromatin features have been related to transcriptional output.
 
-\section{Reproducing Dong \emph{et al.} }
+\section{Reproducing Dong \emph{et al.} }\label{sec:reprodong}
 
 Following \citet{Dong2012}, we first
 reimplemented the published ENCODE modelling framework to 
@@ -196,23 +196,22 @@ cells.
 The first stage of the analysis was to map each CAGE cluster to a
 representative TSS. FANTOM5 robust gene mapping\cite{fantom5}
 provided corresponding Entrez Gene IDs for gene-associated CAGE
-clusters, and I selected the most expressed cluster to represent the
-expression level of its mapped gene. I then compared these to Ensembl
+clusters, and we selected the most expressed cluster to represent the
+expression level of its mapped gene. We then compared these to Ensembl
 TSS annotations (v69) and
 discarded those tag clusters centered on a point $>50$ bp from an annotated
 TSS associated with the mapped Entrez Gene ID, thereby removing enhancers and other non-genic transcribed
 regions.
 
-Next I retrieved a number of genome-wide histone modification datasets
+Next we retrieved a number of genome-wide histone modification datasets
 from the ENCODE and
 NIH Roadmap consortia which were measured in H1 hESC cells, taking these to be
 reflections of the chromatin state $t_0$. I implemented the
-previously-described `bestbin' strategy\cite{Dong2012} to objectively
-select the most-correlated binned signal for each chromatinH1 hESC
-mark. Additionally, I analysed the stability of chosen bestbins by
-calculating them on 200 sets of 1000 randomly selected TSS samples (with each sample
-representing approximately $8\%$ of the dataset) and the result is
-shown in Figure \ref{fig:bestbin}.
+previously-described `bestbin' strategy\cite{Dong2012} (Section \ref{sec:reprodong}) to objectively
+select the most-correlated binned signal for each chromatin H1 hESC
+mark. To explore this approach, we analysed the stability of chosen bestbins by
+calculating them on $200$ sets of $1000$ randomly selected TSS samples, with each sample
+representing approximately $8\%$ of the dataset (Fig. \ref{fig:bestbin}).
 
 \begin{figure}
 \begin{center} 
@@ -232,57 +231,53 @@ shown in Figure \ref{fig:bestbin}.
 \end{center}
 \end{figure} 
 
-This result shows that bestbin selections are often consistent, indicating there are predictably informative regions
-relative to a TSS for each chromatin factor (Fig. \ref{fig:bestbin}). Furthermore, the selected
+Figure \ref{fig:bestbin} shows that bestbin selections are often consistent, indicating there are predictably informative regions
+relative to a TSS for each chromatin factor. Furthermore, the selected
 bestbins match known biological mechanisms; for example the H3K36me3
 mark's bestbin is consistently the whole gene measurement and this
 mark is known to be enriched in actively transcribed
-exons.\cite{Tippmann2012, Kolasinska-Zwierz2009, Schaft2003} 
+exons.\cite{Tippmann2012, Kolasinska-Zwierz2009, Schaft2003} The negative control variable (ChIP-seq input) shows no strong location bias, as expected (Fig. \ref{fig:bestbin}).
 
 Having matched a variety of genome-wide H1 hESC chromatin datasets
-to the FANTOM5 timecourse expression data, I then built a regression
+to the FANTOM5 timecourse expression data, we then built a regression
 model using a Random Forest (RF) approach.\cite{Breiman2001} This method outperforms a simple
-linear model in my initial comparisons and is able to capture non-linear relationships as well
+linear model in initial comparisons and is able to capture non-linear relationships as well
 as interactions without them being explicitly specified.\cite{Diaz2006}
 
 \begin{figure}
 \begin{center} 
 \includegraphics[width=.6\textwidth]{figs/RandomForest_10CV_50d.pdf}
 \captionsetup{width=\textwidth} 
-\caption{Evaluation of RF model predictions ($x$-axis) against an independent
-  test set ($y$-axis). The distributions of predicted and empirical
+\caption[Random Forest predictions of FANTOM5 expression data.]{ {\bf Random Forest predictions of FANTOM5 expression data. } RF model predictions are plotted against their empirical values. The marginal distributions of predicted and empirical
   expression values are shown opposite their
   respective axes. Pearson's correlation coefficient ($r$) and the root
-  mean-squared error (RMSE) are also shown (\emph{inset}).
+  mean-squared error (RMSE) are shown (\emph{inset}).
 }\label{fig:model}
 \end{center} 
 \end{figure} 
 
 Figure \ref{fig:model} shows the resulting predictions of a
 preliminary RF model against the actual recorded expression over a
-test set of approximately 11000 TSS. This model was built with 15
+test set of approximately $11,000$ TSS. This model was built with $15$
 predictors including control ChIP-seq input, though some of these could be
-removed without loss of accuracy. The model predictions evluated with
+removed without loss of accuracy. The model predictions evaluated with
 10-fold cross validation show a
-significant correlation with measured CAGE levels ($ r = 0.845\pm
-1 \times 10^{-4}$; $t_{10868} = 164.4$,
-$p < 2 \times 10^{-15}$), and the model is able to explain around
+significant correlation with measured CAGE levels ($PCC = 0.845\pm
+1 \times 10^{-4}$, $p < 2 \times 10^{-15}$), and the model is able to explain around
 $71\%$ of the variance in the expression response (for comparison a
-linear model resulted in $r = 0.825 \pm 3.2 \times 10^{-5}$; $t_{10868} = 152.2$,
-$p < 2 \times 10^{-15}$).
-
-This result is worse than that of Dong \emph{et al.}
+linear model resulted in $PCC = 0.825 \pm 3.2 \times 10^{-5}$, $p < 2 \times 10^{-15}$). This result is worse than that of \citet{Dong2012}
 who achieved cross-validated correlation coefficients of up to $0.9$,
 but it is roughly equal to their median test set correlation of
 $0.83$.\cite{Dong2012} The RMSEs, when normalised by the range of
-observed values, compare more favourably ($0.11$, compared with Dong \emph{et al.}'s: $0.14$). A possible explanation for this decrease in
-accuracy is that while both chromatin data and expression timecourse
+observed values, compare more favourably ($0.11$, compared with Dong \emph{et al.}'s: $0.14$). 
+
+A possible explanation for our lower modelling accuracy relative to that of \citet{Dong2012} is that in our case, while both chromatin data and expression timecourse
 were measured in H1 hESC cells, the experiments took place at
-different institutes and likely using differing protocols and cell cultures. For comparison, a previous study using chromatin
+different institutes and using unstandardised protocols and cell cultures. For comparison, a previous study using chromatin
 measurements from a number of different sources to predict expression
-in a matched cell-type reported a predictive correlation of 0.77.\cite{Karlic2010} Additionally, Dong \emph{et al.} implemented a pseudocount
+in a matched cell-type reported a predictive correlation of 0.77.\cite{Karlic2010} The ENCODE consortium, on the other hand, went to some lengths to standardise protocols and minimise batch effects between samples.\cite{Dunham2012} Additionally, \citet{Dong2012} implemented a pseudocount
 optimisation step whereby an additional count added to each binned signal
-intensity prior to log transformation was optimised to maximise
+intensity prior to log transformation to maximise
 expression correlation. In the model presented above, a fixed
 psuedocount of $1$ was used to avoid introducing positive bias towards
 higher correlation. Another difference between the two approaches is
@@ -324,7 +319,7 @@ We built Random Forest regression models (Methods \ref{sec:rf}) to predict compa
 \includegraphics[width=1.3\textwidth]{figs/modelres.pdf}
 }
 \captionsetup{width=\textwidth} 
-\caption{ {\bf Compartment eigenvector model predictions are highly correlated with observed values.}  Pearson correlation coefficient (PCC) and root mean-squared error (RMSE) report the degree of success of the regression model, whereas accuracy (Acc.) and area under the receiver operating characteristic (AUROC) give the classification accuracy of binarized outcomes.
+\caption[Compartment eigenvector model predictions are highly correlated with observed values.]{ {\bf Compartment eigenvector model predictions are highly correlated with observed values.}  Pearson correlation coefficient (PCC) and root mean-squared error (RMSE) report the degree of success of the regression model, whereas accuracy (Acc.) and area under the receiver operating characteristic (AUROC) give the classification accuracy of binarized outcomes.
 }\label{fig:modelres}
 \end{center} 
 \end{figure} 
@@ -343,7 +338,7 @@ To test if over-fitting was causing our high observed accuracy, we cross-applied
 \begin{center} 
 \includegraphics[width=.7\textwidth]{figs/xapp.pdf}
 \captionsetup{width=\textwidth} 
-\caption{ {\bf Models of higher order chromatin structure learned in one cell type can be cross-applied to two others }
+\caption[ Models of higher order chromatin structure learned in one cell type can be cross-applied to others.]{ {\bf Models of higher order chromatin structure learned in one cell type can be cross-applied to others. }
  Each model, trained in one cell type, was applied to the chromatin feature datasets from the other two cell types. (A) The GM12878 model achieved high accuracy when applied to K562 features (PCC $= 0.76$), as did the reciprocal cross (PCC $= 0.75$). (B) In each case, predictive accuracy decreased on cross-application but there remains significant agreement between predicted and empirical values. Acc., accuracy; AUROC, area under the receiver operating characteristic curve; PCC, Pearson correlation coefficient; RMSE, root mean-squared error.
 }\label{fig:xapp}
 \end{center} 
@@ -357,7 +352,7 @@ We found cross-application between cell types was possible and with similarly-hi
 \begin{center} 
 \includegraphics[width=.6\textwidth]{figs/stratmod.pdf}
 \captionsetup{width=\textwidth} 
-\caption{ {\bf Genomic regions that vary across cell types are modelled less successfully than static regions. }
+\caption[Genomic regions that vary across cell types are modelled less successfully than static regions.]{ {\bf Genomic regions that vary across cell types are modelled less successfully than static regions. }
 Genome-wide compartment eigenvectors were partitioned into thirds according to their median absolute deviation (MAD) across the three cell types under study. Models were fit independently to each third, and the modelling accuracy is compared.
 }\label{fig:stratmod}
 \end{center} 
@@ -373,7 +368,7 @@ Indeed we found the most variable regions across cell types were then most diffi
 \begin{center} 
 \includegraphics[width=\textwidth]{figs/varimp.pdf}
 \captionsetup{width=\textwidth} 
-\caption{ {\bf Variable importance per cell type specific model. }
+\caption[Variable importance per cell type specific model.]{ {\bf Variable importance per cell type specific model. }
 Variable importance for each Random Forest model was measured in terms of percentage increase in mean squared error when permuted (Methods XX) and the top 10 ranking variables are shown for each model.
 }\label{fig:varimp}
 \end{center} 
@@ -390,7 +385,7 @@ known as antagonistic co-regulators of MYC.\cite{Zervos1993} These biological re
 \begin{center} 
 \includegraphics[width=.5\textwidth]{figs/top10venn.pdf}
 \captionsetup{width=\textwidth} 
-\caption{ {\bf Intersections of the top 10 ranked variables in the cell type specific models. }
+\caption[Intersections of the top 10 ranked variables in the cell type specific models.]{ {\bf Intersections of the top 10 ranked variables in the cell type specific models. }
 Venn diagram illustrating intersections between sets of ten most influential variables per cell type specific Random Forest regression model of compartment eigenvector (Fig. \ref{fig:varimp}).
 }\label{fig:top10venn}
 \end{center} 
@@ -404,7 +399,7 @@ To assess the significance of observed intersections (Fig. \ref{fig:top10venn}),
 \includegraphics[width=1.2\textwidth]{figs/varimp_diff.pdf}
 }
 \captionsetup{width=\textwidth} 
-\caption{ {\bf Comparison of variable importance between three cell type specific Random Forest models. }
+\caption[Comparison of variable importance between three cell type specific Random Forest models.]{ {\bf Comparison of variable importance between three cell type specific Random Forest models. }
 Variable importance for each Random Forest model was measured in terms of percentage increase in mean squared error when permuted (Methods XX). Results are shown sorted by mean variable importance (\emph{left}) and by largest absolute difference in pairwise comparisons (\emph{right}).
 }\label{fig:varimp_diff}
 \end{center} 
@@ -417,7 +412,7 @@ In addition to rankings, raw variable importance metrics can be compared between
 \begin{center} 
 \includegraphics[width=\textwidth]{figs/h1feats.pdf}
 \captionsetup{width=\textwidth} 
-\caption{ {\bf Correlations of individual features with compartment eigenvector in the H1 hESC cell type. }
+\caption[Correlations of individual features with compartment eigenvector in the H1 hESC cell type.]{ {\bf Correlations of individual features with compartment eigenvector in the H1 hESC cell type. }
 Two-dimensional kernel density estimates show the density of points in a scatterplot of compartment eigenvector ($x$-axis) against each input feature individually ($y$-axes). Features with a PCC against eigenvector of above or below $0.1$ are coloured as positive or negative, respectively.
 }\label{fig:h1feats}
 \end{center} 
@@ -432,7 +427,7 @@ We have an \emph{a priori} expectation of multicollinearity in our feature set, 
 \begin{center} 
 \includegraphics[width=.775\textwidth]{figs/featmap}
 \captionsetup{width=\textwidth} 
-\caption{ {\bf Correlation heatmaps of the 35 features used to model compartment eigenvectors. }
+\caption[Correlation heatmaps of the 35 features used to model compartment eigenvectors.]{ {\bf Correlation heatmaps of the 35 features used to model compartment eigenvectors. }
 The Pearson correlation coefficient (PCC) of genome-wide 1 Mb bins of each feature were pairwise correlated with each other. The features were also clustered using hierarchal clustering. The ÒsignificanceÓ of these clusters was determined through multi-scale bootstrap resampling, with those clusters that were stable across different sizes of resampling deemed significant, as implemented in the \texttt{pvclust} R package.\cite{Suzuki2006a}
 }\label{fig:featmap}
 \end{center} 
@@ -460,7 +455,7 @@ Thus far models were built at 1 Mb resolution, but if we are capturing true biol
 \begin{center} 
 \includegraphics[width=.6\textwidth]{figs/100kb.pdf}
 \captionsetup{width=\textwidth} 
-\caption{ {\bf Models learned at 1 Mb resolution can be applied to higher resolution datasets. }
+\caption[Models learned at 1 Mb resolution can be applied to higher resolution datasets.]{ {\bf Models learned at 1 Mb resolution can be applied to higher resolution datasets. }
 Despite having been trained on low resolution training sets, the Random Forest models generated can successfully predict compartment eigenvectors at higher resolution (100 kb, a $10\times$ zoom). Eigenvectors at a higher resolution than this do not necessarily reflect A/B compartmentalisation.
 }\label{fig:100kb}
 \end{center} 
@@ -478,7 +473,7 @@ Random Forest (RF) was \emph{a priori} chosen as an appropriate and powerful mod
 \begin{center} 
 \includegraphics[width=1.2\textwidth]{figs/diffmethods.pdf}
 \captionsetup{width=1.2\textwidth} 
-\caption{ {\bf Comparison of Random Forest performance with other modelling approaches. }
+\caption[Comparison of Random Forest performance with other modelling approaches.]{ {\bf Comparison of Random Forest performance with other modelling approaches. }
 Heatmaps show the Pearson correlation coefficient between predicted and observed compartment eigenvectors genome-wide for three regression techniques: multiple linear regression (LM), Random Forest (RF) and partial least squares (PLS). Results are summarised in Table \ref{tab:diffmethods}.
 }\label{fig:diffmethods}
 \end{center} 
@@ -492,7 +487,7 @@ Partial least squares regression is another technique which used dimensionality 
 
 \begin{table}
 \centering
-\caption{ {\bf Performance comparison of different modelling techniques. }
+\caption[Performance comparison of different modelling techniques.]{ {\bf Performance comparison of different modelling techniques. }
  Comparison of mean Pearson correlation coefficient between predicted and observed compartment eigenvectors for three different modelling approaches: LM: linear regression; RF: Random Forest regression; PLS: partial least squares regression. Correlations were averaged per cell type over three cell types (cell type specific) and in the six possible crosses (cross-application) shown in Fig. \ref{fig:diffmethods}.
 }
 \label{tab:diffmethods}
