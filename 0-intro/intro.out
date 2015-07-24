@@ -1,17 +1,16 @@
-\BOOKMARK [0][]{Doc-Start}{Abstract}{}% 1
-\BOOKMARK [0][]{chapter.1}{1 Introduction}{}% 2
-\BOOKMARK [1][-]{section.1.1}{1.1 Genome organisation}{chapter.1}% 3
-\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 C-methods and Hi-C}{section.1.1}% 4
-\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 Hi-C variants}{section.1.1}% 5
-\BOOKMARK [2][-]{subsection.1.1.3}{1.1.3 Chromosome compartments}{section.1.1}% 6
-\BOOKMARK [2][-]{subsection.1.1.4}{1.1.4 Topological domains}{section.1.1}% 7
-\BOOKMARK [2][-]{subsection.1.1.5}{1.1.5 Other proposed structures}{section.1.1}% 8
-\BOOKMARK [1][-]{section.1.2}{1.2 Models of chromatin folding}{chapter.1}% 9
-\BOOKMARK [2][-]{subsection.1.2.1}{1.2.1 Fractal globule}{section.1.2}% 10
-\BOOKMARK [2][-]{subsection.1.2.2}{1.2.2 Strings and binders switch}{section.1.2}% 11
-\BOOKMARK [2][-]{subsection.1.2.3}{1.2.3 Looping}{section.1.2}% 12
-\BOOKMARK [2][-]{subsection.1.2.4}{1.2.4 Cell cycle changes}{section.1.2}% 13
-\BOOKMARK [1][-]{section.1.3}{1.3 Criticisms of C-methods}{chapter.1}% 14
-\BOOKMARK [1][-]{section.1.4}{1.4 Machine learning in genomics}{chapter.1}% 15
-\BOOKMARK [2][-]{subsection.1.4.1}{1.4.1 ENCODE}{section.1.4}% 16
-\BOOKMARK [1][-]{section.1.5}{1.5 Aims}{chapter.1}% 17
+\BOOKMARK [0][]{chapter.1}{1 Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{1.1 Genome organisation}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 C-methods and Hi-C}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 Hi-C variants}{section.1.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.3}{1.1.3 Chromosome compartments}{section.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.4}{1.1.4 Topological domains}{section.1.1}% 6
+\BOOKMARK [2][-]{subsection.1.1.5}{1.1.5 Other proposed structures}{section.1.1}% 7
+\BOOKMARK [1][-]{section.1.2}{1.2 Models of chromatin folding}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.2.1}{1.2.1 Fractal globule}{section.1.2}% 9
+\BOOKMARK [2][-]{subsection.1.2.2}{1.2.2 Strings and binders switch}{section.1.2}% 10
+\BOOKMARK [2][-]{subsection.1.2.3}{1.2.3 Looping}{section.1.2}% 11
+\BOOKMARK [2][-]{subsection.1.2.4}{1.2.4 Cell cycle changes}{section.1.2}% 12
+\BOOKMARK [1][-]{section.1.3}{1.3 Criticisms of C-methods}{chapter.1}% 13
+\BOOKMARK [1][-]{section.1.4}{1.4 Machine learning in genomics}{chapter.1}% 14
+\BOOKMARK [2][-]{subsection.1.4.1}{1.4.1 ENCODE}{section.1.4}% 15
+\BOOKMARK [1][-]{section.1.5}{1.5 Aims}{chapter.1}% 16

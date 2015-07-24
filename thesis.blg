@@ -5,6 +5,7 @@ The style file: thesis.bst
 A level-1 auxiliary file: 0-intro/intro.aux
 Database file #1: /Users/benmoore/Documents/library.bib
 Database file #2: /Users/benmoore/Documents/customrefs.bib
+Warning--I didn't find a database entry for ""
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--there's a number but no volume in Li2014
 Warning--there's a number but no volume in Mifsud2015
@@ -12,45 +13,48 @@ Warning--empty journal in Williamson2014
 Warning--there's a number but no volume in Huang2008
 Warning--empty journal in Vizan2014
 Warning--there's a number but no volume in Tarailo-Graovac2009
-You've used 118 entries,
+Warning--there's a number but no volume in Anderson2014a
+Warning--empty journal in Hill2013a
+Warning--there's a number but no volume in Hill2013a
+You've used 124 entries,
             3024 wiz_defined-function locations,
-            1371 strings with 36501 characters,
-and the built_in function-call counts, 172882 in all, are:
-= -- 18170
-> -- 5296
+            1408 strings with 38087 characters,
+and the built_in function-call counts, 181327 in all, are:
+= -- 19054
+> -- 5556
 < -- 40
-+ -- 3825
-- -- 1353
-* -- 12993
-:= -- 18595
-add.period$ -- 237
-call.type$ -- 118
-change.case$ -- 590
-chr.to.int$ -- 119
-cite$ -- 124
-duplicate$ -- 18073
-empty$ -- 12367
-format.name$ -- 1728
-if$ -- 35647
-int.to.chr$ -- 4
-int.to.str$ -- 119
-missing$ -- 1485
-newline$ -- 477
-num.names$ -- 354
-pop$ -- 8660
++ -- 4012
+- -- 1419
+* -- 13636
+:= -- 19504
+add.period$ -- 249
+call.type$ -- 124
+change.case$ -- 620
+chr.to.int$ -- 125
+cite$ -- 133
+duplicate$ -- 18953
+empty$ -- 12972
+format.name$ -- 1812
+if$ -- 37382
+int.to.chr$ -- 5
+int.to.str$ -- 125
+missing$ -- 1557
+newline$ -- 501
+num.names$ -- 372
+pop$ -- 9112
 preamble$ -- 1
-purify$ -- 472
+purify$ -- 496
 quote$ -- 0
-skip$ -- 3091
+skip$ -- 3215
 stack$ -- 0
-substring$ -- 21669
-swap$ -- 4007
+substring$ -- 22720
+swap$ -- 4200
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 706
-warning$ -- 6
-while$ -- 1132
+type$ -- 742
+warning$ -- 9
+while$ -- 1186
 width$ -- 0
-write$ -- 1417
-(There were 6 warnings)
+write$ -- 1488
+(There were 10 warnings)
