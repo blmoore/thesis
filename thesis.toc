@@ -96,15 +96,15 @@
 \contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Local chromatin conformation}}{60}{chapter.6}
 \contentsline {section}{\numberline {6.1}Introduction}{60}{section.6.1}
 \contentsline {section}{\numberline {6.2}Local chromatin conformation at the SHH locus}{60}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Analysis of ZRS interactions}{60}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}4C / Hi-C comparison}{60}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Assay diagnostics}{61}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}3D modelling with 5C data}{61}{subsection.6.2.4}
-\contentsline {section}{\numberline {6.3}5C in the HoxD region}{61}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Differential contacts}{61}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{61}{subsection.6.3.2}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{64}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclusion}{65}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future research}{66}{section.7.2}
-\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{67}{chapter*.62}
-\contentsline {chapter}{References}{85}{chapter*.63}
+\contentsline {subsection}{\numberline {6.2.1}Analysis of ZRS interactions}{62}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}4C / Hi-C comparison}{62}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Assay diagnostics}{62}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}3D modelling with 5C data}{62}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}5C in the HoxD region}{62}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Differential contacts}{62}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{62}{subsection.6.3.2}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{65}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclusion}{66}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future research}{67}{section.7.2}
+\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{68}{chapter*.63}
+\contentsline {chapter}{References}{86}{chapter*.64}
