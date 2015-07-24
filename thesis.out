@@ -93,14 +93,16 @@
 \BOOKMARK [2][-]{subsection.5.5.2}{5.5.2 Superboundaries}{section.5.5}% 93
 \BOOKMARK [0][]{chapter.6}{6 Local chromatin conformation}{}% 94
 \BOOKMARK [1][-]{section.6.1}{6.1 Introduction}{chapter.6}% 95
-\BOOKMARK [1][-]{section.6.2}{6.2 Chromatin conformation at the SHH locus}{chapter.6}% 96
-\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Assay diagnostics}{section.6.2}% 97
+\BOOKMARK [1][-]{section.6.2}{6.2 Local chromatin conformation at the SHH locus}{chapter.6}% 96
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Analysis of ZRS interactions}{section.6.2}% 97
 \BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 4C / Hi-C comparison}{section.6.2}% 98
-\BOOKMARK [2][-]{subsection.6.2.3}{6.2.3 3D modelling with 5C data}{section.6.2}% 99
-\BOOKMARK [1][-]{section.6.3}{6.3 5C in the HoxD region}{chapter.6}% 100
-\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 Differential contacts}{section.6.3}% 101
-\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 5C / Hi-C comparison}{section.6.3}% 102
-\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 103
-\BOOKMARK [1][-]{section.7.1}{7.1 Conclusion}{chapter.7}% 104
-\BOOKMARK [0][]{chapter*.62}{Appendices}{}% 105
-\BOOKMARK [0][]{chapter*.63}{References}{}% 106
+\BOOKMARK [2][-]{subsection.6.2.3}{6.2.3 Assay diagnostics}{section.6.2}% 99
+\BOOKMARK [2][-]{subsection.6.2.4}{6.2.4 3D modelling with 5C data}{section.6.2}% 100
+\BOOKMARK [1][-]{section.6.3}{6.3 5C in the HoxD region}{chapter.6}% 101
+\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 Differential contacts}{section.6.3}% 102
+\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 5C / Hi-C comparison}{section.6.3}% 103
+\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 104
+\BOOKMARK [1][-]{section.7.1}{7.1 Conclusion}{chapter.7}% 105
+\BOOKMARK [1][-]{section.7.2}{7.2 Future research}{chapter.7}% 106
+\BOOKMARK [0][]{chapter*.62}{Appendices}{}% 107
+\BOOKMARK [0][]{chapter*.63}{References}{}% 108

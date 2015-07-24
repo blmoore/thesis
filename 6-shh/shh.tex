@@ -30,9 +30,9 @@
 
 The Hi-C assay provides a genome-wide overview of chromatin conformation, however this broad scope imposes resolution limits inherent to an all-vs-all assay. For a closer look at chromatin conformation within a region of interest, alternative C-based assays such as 3C, 4C and 5C can be employed alongside classical microscopy techniques like FISH.
 
-Here I discuss two collaborative projects involving the use of 4C-seq and 5C data to "zoom in" on two well-studied regions related to limb development: the ZRS enhancer and HoxD gene cluster.
+Here I discuss two collaborative projects involving the use of 4C and 5C data to "zoom in" on two well-studied regions related to limb development: the ZRS enhancer and HoxD gene cluster.
 
-\section{Chromatin conformation at the SHH locus}
+\section{Local chromatin conformation at the SHH locus}
 
 \begin{figure}
 \begin{center} 
@@ -52,17 +52,33 @@ My part in this collaboration was to analyse 3C-seq (also known as 4C) data reco
 
 % Adam sent a powerpoint he gave for section meeting, see also Prof Hill's publications
 
-\subsection{Assay diagnostics}
+\subsection{Analysis of ZRS interactions}
+
+% Conclusions: appears ZRS contacts become more targetted in TSA+ cells, before more diffuse. 
+% Maybe in contact all the time (supported by FISH data) but not engaging in specific contacts when non-expressing.
 
 \subsection{4C / Hi-C comparison}
 
+Hi-C data in mouse cells has been previously published,\cite{Dixon2012} so can be compared with this novel 4C data to give broader contextual information about chromatin conformation in the region under study.
+
+\subsection{Assay diagnostics}
+
+The 4C protocol used by our collaborators in this work was that of \citet{Stadhouders2013}. In it, the authors advise some statistical tests to ensure the quality of the experiment results. Among these were:\cite{Stadhouders2013}
+
+\begin{enumerate}
+\item Sequencing reads should be found to have high duplication rates of $95\%$ or greater.
+\item $50\%$ or more of all reads should map to the chromosome on which the bait region is located.
+\end{enumerate}
+
 \subsection{3D modelling with 5C data}
 
-All-vs-all contacts either genome-wide in the case of Hi-C, or locally with 5C, can be used to infer the shape of chromatin fibres in three-dimensions through a variety of methods (e.g. \cite{Hu2013a, }).
+All-vs-all contacts measured either genome-wide in the case of Hi-C, or over a defined region with 5C, can be used to infer the trajectory of chromatin fibres in three-dimensions through a variety of methods (e.g. \cite{Hu2013a, Varoquaux2014a, Lesne2014, Trieu2014, Peng2013}). 5C data was generated over this same SHH--ZRS region (Fig. \ref{fig:shhtad}) with the aim of developing a multi-point perspective on local chromatin conformation beyond that available from 4C data.
+
+We used this 5C experimental data in combination with a particular three-dimensional inference program  (\texttt{AutoChrom3D}\cite{Peng2013}) in an attempt to compare polymer trajectories in TSA treated and untreated 14fp mouse cells.
 
 \section{5C in the HoxD region}
 
-HoxD is another well-studied genetic system involved in limb development and under the control of known enhancers.
+HoxD is another well-studied genetic system involved in limb development and under the control of known enhancers. In this experiment, our collaborators were interested in the chromatin conformations of HoxD13 loci in both the anterior and posterior developing limb bud, particularly how and where the two differed. To this end, our collaborators performed 5C for two biological replicates in anterior and posterior limb bud cell lines, and my contribution was to call differential contacts between the two conditions.
 
 % files for this under iain on ext HD
 % relevant publications: http://dev.biologists.org/content/139/17/3157.full.pdf+html
@@ -77,7 +93,7 @@ HoxD is another well-studied genetic system involved in limb development and und
 \begin{center} 
 \includegraphics[width=\textwidth]{figs/5cfc.pdf}
 \captionsetup{width=\textwidth} 
-\caption{ {\bf Will we use this stuff? }
+\caption[Raw differences between anterior and posterior 5C interactions.]{ {\bf Raw differences between anterior and posterior 5C interactions. }
 Placeholder
 }\label{fig:5cfc}
 \end{center} 
