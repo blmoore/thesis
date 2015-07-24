@@ -73,12 +73,13 @@
 \contentsline {subsection}{\numberline {4.4.3}Between-cell variability}{35}{subsection.4.4.3}
 \contentsline {subsection}{\numberline {4.4.4}Variable importance}{36}{subsection.4.4.4}
 \contentsline {subsection}{\numberline {4.4.5}Correlating input features}{37}{subsection.4.4.5}
-\contentsline {section}{\numberline {4.5}Parsimonious models}{41}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}$L_1$ regularisation}{41}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Brute force subsampling}{41}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.5}Parsimonious models from expanded feature sets}{41}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Full models}{41}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}BIC-penalised multiple linear regression}{41}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Regularised Random Forest}{41}{subsection.4.5.3}
 \contentsline {section}{\numberline {4.6}Technical considerations}{41}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}Resolution}{41}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Other modelling approaches}{41}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.2}Other modelling approaches}{43}{subsection.4.6.2}
 \contentsline {subsection}{\numberline {4.6.3}Non-independence}{44}{subsection.4.6.3}
 \contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Chromatin domain boundaries}}{45}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{45}{section.5.1}
@@ -94,14 +95,14 @@
 \contentsline {subsection}{\numberline {5.5.2}Superboundaries}{59}{subsection.5.5.2}
 \contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Local chromatin conformation}}{60}{chapter.6}
 \contentsline {section}{\numberline {6.1}Introduction}{60}{section.6.1}
-\contentsline {section}{\numberline {6.2}4C of the ZRS enhancer}{60}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Assay diagnostics}{60}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}4C / Hi-C comparison}{60}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}3D modelling}{60}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}5C in the HoxD region}{60}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Differential contacts}{60}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{60}{subsection.6.3.2}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{63}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclusion}{64}{section.7.1}
-\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{66}{chapter*.61}
-\contentsline {chapter}{References}{84}{chapter*.62}
+\contentsline {section}{\numberline {6.2}Chromatin conformation at the SHH locus}{60}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Assay diagnostics}{61}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}4C / Hi-C comparison}{61}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}3D modelling with 5C data}{61}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}5C in the HoxD region}{61}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Differential contacts}{61}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{61}{subsection.6.3.2}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{64}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclusion}{65}{section.7.1}
+\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{67}{chapter*.62}
+\contentsline {chapter}{References}{85}{chapter*.63}
