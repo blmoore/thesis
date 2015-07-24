@@ -71,35 +71,36 @@
 \BOOKMARK [2][-]{subsection.4.4.3}{4.4.3 Between-cell variability}{section.4.4}% 71
 \BOOKMARK [2][-]{subsection.4.4.4}{4.4.4 Variable importance}{section.4.4}% 72
 \BOOKMARK [2][-]{subsection.4.4.5}{4.4.5 Correlating input features}{section.4.4}% 73
-\BOOKMARK [1][-]{section.4.5}{4.5 Parsimonious models}{chapter.4}% 74
-\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1 L1 regularisation}{section.4.5}% 75
-\BOOKMARK [2][-]{subsection.4.5.2}{4.5.2 Brute force subsampling}{section.4.5}% 76
-\BOOKMARK [1][-]{section.4.6}{4.6 Technical considerations}{chapter.4}% 77
-\BOOKMARK [2][-]{subsection.4.6.1}{4.6.1 Resolution}{section.4.6}% 78
-\BOOKMARK [2][-]{subsection.4.6.2}{4.6.2 Other modelling approaches}{section.4.6}% 79
-\BOOKMARK [2][-]{subsection.4.6.3}{4.6.3 Non-independence}{section.4.6}% 80
-\BOOKMARK [0][]{chapter.5}{5 Chromatin domain boundaries}{}% 81
-\BOOKMARK [1][-]{section.5.1}{5.1 Introduction}{chapter.5}% 82
-\BOOKMARK [1][-]{section.5.2}{5.2 TAD and compartment boundaries}{chapter.5}% 83
-\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 CTCF and YY1}{section.5.2}% 84
-\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Repeats}{section.5.2}% 85
-\BOOKMARK [1][-]{section.5.3}{5.3 De novo boundary prediction}{chapter.5}% 86
-\BOOKMARK [1][-]{section.5.4}{5.4 MetaTAD boundaries}{chapter.5}% 87
-\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 Lamin associated domains}{section.5.4}% 88
-\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Boundaries over a time series}{section.5.4}% 89
-\BOOKMARK [1][-]{section.5.5}{5.5 Other boundaries}{chapter.5}% 90
-\BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 Giemsa bands}{section.5.5}% 91
-\BOOKMARK [2][-]{subsection.5.5.2}{5.5.2 Superboundaries}{section.5.5}% 92
-\BOOKMARK [0][]{chapter.6}{6 Local chromatin conformation}{}% 93
-\BOOKMARK [1][-]{section.6.1}{6.1 Introduction}{chapter.6}% 94
-\BOOKMARK [1][-]{section.6.2}{6.2 4C of the ZRS enhancer}{chapter.6}% 95
-\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Assay diagnostics}{section.6.2}% 96
-\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 4C / Hi-C comparison}{section.6.2}% 97
-\BOOKMARK [2][-]{subsection.6.2.3}{6.2.3 3D modelling}{section.6.2}% 98
-\BOOKMARK [1][-]{section.6.3}{6.3 5C in the HoxD region}{chapter.6}% 99
-\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 Differential contacts}{section.6.3}% 100
-\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 5C / Hi-C comparison}{section.6.3}% 101
-\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 102
-\BOOKMARK [1][-]{section.7.1}{7.1 Conclusion}{chapter.7}% 103
-\BOOKMARK [0][]{chapter*.61}{Appendices}{}% 104
-\BOOKMARK [0][]{chapter*.62}{References}{}% 105
+\BOOKMARK [1][-]{section.4.5}{4.5 Parsimonious models from expanded feature sets}{chapter.4}% 74
+\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1 Full models}{section.4.5}% 75
+\BOOKMARK [2][-]{subsection.4.5.2}{4.5.2 BIC-penalised multiple linear regression}{section.4.5}% 76
+\BOOKMARK [2][-]{subsection.4.5.3}{4.5.3 Regularised Random Forest}{section.4.5}% 77
+\BOOKMARK [1][-]{section.4.6}{4.6 Technical considerations}{chapter.4}% 78
+\BOOKMARK [2][-]{subsection.4.6.1}{4.6.1 Resolution}{section.4.6}% 79
+\BOOKMARK [2][-]{subsection.4.6.2}{4.6.2 Other modelling approaches}{section.4.6}% 80
+\BOOKMARK [2][-]{subsection.4.6.3}{4.6.3 Non-independence}{section.4.6}% 81
+\BOOKMARK [0][]{chapter.5}{5 Chromatin domain boundaries}{}% 82
+\BOOKMARK [1][-]{section.5.1}{5.1 Introduction}{chapter.5}% 83
+\BOOKMARK [1][-]{section.5.2}{5.2 TAD and compartment boundaries}{chapter.5}% 84
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 CTCF and YY1}{section.5.2}% 85
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Repeats}{section.5.2}% 86
+\BOOKMARK [1][-]{section.5.3}{5.3 De novo boundary prediction}{chapter.5}% 87
+\BOOKMARK [1][-]{section.5.4}{5.4 MetaTAD boundaries}{chapter.5}% 88
+\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 Lamin associated domains}{section.5.4}% 89
+\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Boundaries over a time series}{section.5.4}% 90
+\BOOKMARK [1][-]{section.5.5}{5.5 Other boundaries}{chapter.5}% 91
+\BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 Giemsa bands}{section.5.5}% 92
+\BOOKMARK [2][-]{subsection.5.5.2}{5.5.2 Superboundaries}{section.5.5}% 93
+\BOOKMARK [0][]{chapter.6}{6 Local chromatin conformation}{}% 94
+\BOOKMARK [1][-]{section.6.1}{6.1 Introduction}{chapter.6}% 95
+\BOOKMARK [1][-]{section.6.2}{6.2 Chromatin conformation at the SHH locus}{chapter.6}% 96
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Assay diagnostics}{section.6.2}% 97
+\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 4C / Hi-C comparison}{section.6.2}% 98
+\BOOKMARK [2][-]{subsection.6.2.3}{6.2.3 3D modelling with 5C data}{section.6.2}% 99
+\BOOKMARK [1][-]{section.6.3}{6.3 5C in the HoxD region}{chapter.6}% 100
+\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 Differential contacts}{section.6.3}% 101
+\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 5C / Hi-C comparison}{section.6.3}% 102
+\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 103
+\BOOKMARK [1][-]{section.7.1}{7.1 Conclusion}{chapter.7}% 104
+\BOOKMARK [0][]{chapter*.62}{Appendices}{}% 105
+\BOOKMARK [0][]{chapter*.63}{References}{}% 106

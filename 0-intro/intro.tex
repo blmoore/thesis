@@ -9,6 +9,7 @@
 \usepackage{graphicx}       % logo related
 
 \usepackage{standalone}
+\standalonetrue
 
 % don't hang captions
 \captionsetup{format=plain}
@@ -148,6 +149,11 @@ The resolution of a Hi-C experiment has a hard-limit imposed by the choice of re
 % For 
 % in Lieberman: s^{1/3}  == scaling observed in 3D FISH (500 kb < 2 Mb)
 A key consideration with C-methods is that, when accurately stated, the assays are measuring ``the frequency at which sequences are ligated together by formaldehyde cross-linking",\cite{Williamson2014} which is then assumed to be a proxy for physical distance within the nucleus. This is a marked difference from aforementioned FISH methods, where the physical distance is observed directly, albeit through the addition of non-native probes. So strong is this assumption, that methods have been developed that use a known FISH distance to then calibrate genome-wide Hi-C distances,\cite{Shavit2014} yet it remains unclear to what extent these two methods are compatible.
+
+%Incidental contacts
+When interpreting C-methods data it should also be kept in mind that even verifiable contacts are by no-means functional. To elaborate, C-methods may find two regions to be strongly co-localised, but an understanding of the region may explain their co-localisation to be caused by mutual interaction with a nuclear lamina or nucleolus, for example, rather than any specific functional relationship between the two loci.\cite{Dekker2013} In addition, a functional enhancer--promoter interaction will necessarily constrain the contacts of other nearby regions, potentially causing highly-reproducible "bystander interactions"\cite{Dekker2013} that are nevertheless uninteresting form a functional perspective. 
+
+% something about polymer folding, unavoidable contacts between nearby regions? Refs in Dekker2013: http://www.nature.com/nrg/journal/v14/n6/full/nrg3454.html#ref24
 
 An additional and separate issue identified with C-methods, specifically 3C in this instance, emerges from reports that the observed ligation frequency is as low as $1\%$ of expected values in a model system,\cite{Gavrilov2013} potentially magnifying the relative influence of noise and artefacts.
 
