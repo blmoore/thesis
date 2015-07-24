@@ -565,7 +565,6 @@ INPUT 6-shh/shh.tex
 INPUT figs/shhtad.pdf
 INPUT ./figs/shhtad.pdf
 INPUT ./figs/shhtad.pdf
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplb9o.tfm
 INPUT figs/5cfc.pdf
 INPUT ./figs/5cfc.pdf
 INPUT ./figs/5cfc.pdf
@@ -577,8 +576,6 @@ INPUT ./figs/5chic.pdf
 INPUT ./figs/5chic.pdf
 INPUT 7-discussion/discussion.tex
 INPUT 7-discussion/discussion.tex
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplb9o.vf
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplbj8r.tfm
 INPUT 8-appendix/appendix.tex
 INPUT 8-appendix/appendix.tex
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf

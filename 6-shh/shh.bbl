@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{12}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
@@ -42,5 +42,44 @@ Lettice La, Hill AE, Devenney PS, Hill RE (2008) {Point mutations in a distant
   sonic hedgehog cis-regulator generate a variable regulatory output
   responsible for preaxial polydactyly}.
 \newblock \emph{Human Molecular Genetics}, \textbf{17}(7): 978--985.
+
+\bibitem[{Stadhouders \emph{et~al.}(2013)Stadhouders, Kolovos, Brouwer, Zuin,
+  van~den Heuvel, Kockx, Palstra, Wendt, Grosveld
+  \emph{et~al.}}]{Stadhouders2013}
+Stadhouders R, Kolovos P, Brouwer R, Zuin J, van~den Heuvel A, Kockx C, Palstra
+  RJ, Wendt KS, Grosveld F, \emph{et~al.} (2013) {Multiplexed chromosome
+  conformation capture sequencing for rapid genome-scale high-resolution
+  detection of long-range chromatin interactions.}
+\newblock \emph{Nature protocols}, \textbf{8}(3): 509--24.
+
+\bibitem[{Hu \emph{et~al.}(2013)Hu, Deng, Qin, Dixon, Selvaraj, Fang, Ren and
+  Liu}]{Hu2013a}
+Hu M, Deng K, Qin Z, Dixon J, Selvaraj S, Fang J, Ren B, Liu JS (2013)
+  {Bayesian inference of spatial organizations of chromosomes.}
+\newblock \emph{PLoS computational biology}, \textbf{9}(1): e1002893.
+
+\bibitem[{Varoquaux \emph{et~al.}(2014)Varoquaux, Ay, Noble and
+  Vert}]{Varoquaux2014a}
+Varoquaux N, Ay F, Noble WS, Vert Jp (2014) {A statistical approach for
+  inferring the 3D structure of the genome.}
+\newblock \emph{Bioinformatics (Oxford, England)}, \textbf{30}(12): i26--i33.
+
+\bibitem[{Lesne \emph{et~al.}(2014)Lesne, Riposo, Roger, Cournac and
+  Mozziconacci}]{Lesne2014}
+Lesne A, Riposo J, Roger P, Cournac A, Mozziconacci J (2014) {3D genome
+  reconstruction from chromosomal contacts.}
+\newblock \emph{Nature methods}, (september).
+
+\bibitem[{Trieu and Cheng(2014)}]{Trieu2014}
+Trieu T, Cheng J (2014) {Large-scale reconstruction of 3D structures of human
+  chromosomes from chromosomal contact data}.
+\newblock \emph{Nucleic Acids Research}, \textbf{42}(7): 1--11.
+
+\bibitem[{Peng \emph{et~al.}(2013)Peng, Fu, Dong, Deng, Li, Wang and
+  Zhang}]{Peng2013}
+Peng C, Fu LY, Dong PF, Deng ZL, Li JX, Wang XT, Zhang HY (2013) {The
+  sequencing bias relaxed characteristics of Hi-C derived data and implications
+  for chromatin 3D modeling}.
+\newblock \emph{Nucleic Acids Research}, \textbf{41}(19).
 
 \end{thebibliography}

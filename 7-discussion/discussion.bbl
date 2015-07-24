@@ -1,0 +1,80 @@
+\begin{thebibliography}{12}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Dong \emph{et~al.}(2012)Dong, Greven, Kundaje, Djebali, Brown, Cheng,
+  Gingeras, Gerstein, Guig\'{o} \emph{et~al.}}]{Dong2012}
+Dong X, Greven MC, Kundaje A, Djebali S, Brown JB, Cheng C, Gingeras TR,
+  Gerstein M, Guig\'{o} R, \emph{et~al.} (2012) {Modeling gene expression using
+  chromatin features in various cellular contexts.}
+\newblock \emph{Genome biology}, \textbf{13}(9): R53.
+
+\bibitem[{Chambers \emph{et~al.}(2013)Chambers, Bickmore and
+  Semple}]{Chambers2013}
+Chambers EV, Bickmore Wa, Semple CA (2013) {Divergence of mammalian higher
+  order chromatin structure is associated with developmental loci.}
+\newblock \emph{PLoS computational biology}, \textbf{9}(4): e1003017.
+
+\bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
+  and Ren}]{Dixon2012}
+Dixon JR, Selvaraj S, Yue F, Kim A, Li Y, Shen Y, Hu M, Liu JS, Ren B (2012)
+  {Topological domains in mammalian genomes identified by analysis of chromatin
+  interactions.}
+\newblock \emph{Nature}, \textbf{485}(7398): 376--80.
+
+\bibitem[{Ernst and Kellis(2012)}]{Ernst2012}
+Ernst J, Kellis M (2012) {ChromHMM: automating chromatin-state discovery and
+  characterization.}
+\newblock \emph{Nature methods}, \textbf{9}(3): 215--6.
+
+\bibitem[{Ram \emph{et~al.}(2011)Ram, Goren, Amit, Shoresh, Yosef, Ernst,
+  Kellis, Gymrek, Issner \emph{et~al.}}]{Ram2011}
+Ram O, Goren A, Amit I, Shoresh N, Yosef N, Ernst J, Kellis M, Gymrek M, Issner
+  R, \emph{et~al.} (2011) {Combinatorial patterning of chromatin regulators
+  uncovered by genome-wide location analysis in human cells.}
+\newblock \emph{Cell}, \textbf{147}(7): 1628--39.
+
+\bibitem[{ENCODE(2012)}]{Dunham2012}
+ENCODE (2012) {An integrated encyclopedia of DNA elements in the human genome.}
+\newblock \emph{Nature}, \textbf{489}(7414): 57--74.
+
+\bibitem[{Hoffman \emph{et~al.}(2013)Hoffman, Ernst, Wilder, Kundaje, Harris,
+  Libbrecht, Giardine, Ellenbogen, Bilmes \emph{et~al.}}]{Hoffman2013}
+Hoffman MM, Ernst J, Wilder SP, Kundaje A, Harris RS, Libbrecht M, Giardine B,
+  Ellenbogen PM, Bilmes Ja, \emph{et~al.} (2013) {Integrative annotation of
+  chromatin elements from ENCODE data.}
+\newblock \emph{Nucleic acids research}, \textbf{41}(2): 827--41.
+
+\bibitem[{Zwang \emph{et~al.}(2012)Zwang, Oren and Yarden}]{Zwang2012}
+Zwang Y, Oren M, Yarden Y (2012) {Consistency test of the cell cycle: roles for
+  p53 and EGR1.}
+\newblock \emph{Cancer research}, \textbf{72}(5): 1051--4.
+
+\bibitem[{M\"{u}ller-Tidow \emph{et~al.}(2010)M\"{u}ller-Tidow, Klein, Hascher,
+  Isken, Tickenbrock, Thoennissen, Agrawal-Singh, Tschanter, Disselhoff
+  \emph{et~al.}}]{Muller-Tidow2010}
+M\"{u}ller-Tidow C, Klein HU, Hascher A, Isken F, Tickenbrock L, Thoennissen N,
+  Agrawal-Singh S, Tschanter P, Disselhoff C, \emph{et~al.} (2010) {Profiling
+  of histone H3 lysine 9 trimethylation levels predicts transcription factor
+  activity and survival in acute myeloid leukemia.}
+\newblock \emph{Blood}, \textbf{116}(18): 3564--71.
+
+\bibitem[{Hagmeyer \emph{et~al.}(1996)Hagmeyer, Duyndam, Angel, de~Groot,
+  Verlaan, Elfferich, van~der Eb and Zantema}]{Hagmeyer1996}
+Hagmeyer BM, Duyndam MC, Angel P, de~Groot RP, Verlaan M, Elfferich P, van~der
+  Eb A, Zantema A (1996) {Altered AP-1/ATF complexes in
+  adenovirus-E1-transformed cells due to EIA-dependent induction of ATF3.}
+\newblock \emph{Oncogene}, \textbf{12}: 1025--1032.
+
+\bibitem[{Ong and Corces(2014)}]{Ong2014}
+Ong CT, Corces VG (2014) {CTCF: an architectural protein bridging genome
+  topology and function.}
+\newblock \emph{Nature reviews. Genetics}, \textbf{15}(4): 234--46.
+
+\bibitem[{Nora \emph{et~al.}(2012)Nora, Lajoie, Schulz, Giorgetti, Okamoto,
+  Servant, Piolot, van Berkum, Meisig \emph{et~al.}}]{Nora2012}
+Nora EP, Lajoie BR, Schulz EG, Giorgetti L, Okamoto I, Servant N, Piolot T, van
+  Berkum NL, Meisig J, \emph{et~al.} (2012) {Spatial partitioning of the
+  regulatory landscape of the X-inactivation centre.}
+\newblock \emph{Nature}, \textbf{485}(7398): 381--5.
+
+\end{thebibliography}
