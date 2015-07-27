@@ -150,6 +150,8 @@ INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/varwidth/varwidth.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/varwidth/varwidth.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/filemod/filemod-expmin.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/filemod/filemod-expmin.sty
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/multirow/multirow.sty
 INPUT predictive_modelling.aux
 INPUT predictive_modelling.aux
 OUTPUT predictive_modelling.aux

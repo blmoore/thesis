@@ -1,5 +1,6 @@
 \documentclass[a4paper,11pt,oneside]{book}
 
+%\PassOptionsToPackage{table,xcdraw}{xcolor}
 % packages 
 \usepackage{arsclassica}    % fancy layout
 \usepackage[english]{babel}\addto{\captionsenglish}{\renewcommand{\bibname}{References}}
@@ -15,6 +16,9 @@
 
 % bibliography
 \bibliographystyle{../thesis}
+
+%pred mod
+\usepackage{multirow}
 
 % title setup
 \title{ \vspace{3in} Unravelling higher order genome organisation {\small [working
@@ -455,6 +459,26 @@ i
 \subsection{Regularised Random Forest}
 
 %\subsection{Brute force subsampling}
+
+% Table of all
+
+\begin{table}[]
+\centering
+\caption[Performance comparison of full and optimised RF and ML models.]{ {\bf Performance comparison of full and optimised RF and ML models.}
+Placeholder
+}
+\label{tab:bicmodels}
+
+\makebox[\textwidth][c]{ 
+\begin{tabular}{llllllllll}
+\multirow{2}{*}{} & \multicolumn{3}{c}{GM$12878$} & \multicolumn{3}{c}{H$1$ hESC} & \multicolumn{3}{c}{K$562$} \\ \cline{2-10} 
+ & \multicolumn{1}{|c|}{n} & \multicolumn{1}{c}{LM} & \multicolumn{1}{c|}{RF} & \multicolumn{1}{c|}{n} & \multicolumn{1}{c}{LM} & \multicolumn{1}{c|}{RF} & \multicolumn{1}{c|}{n} & \multicolumn{1}{c}{LM} & \multicolumn{1}{c|}{RF} \\ \hline
+\multicolumn{1}{|l|}{All features} & 115 & .836 & \multicolumn{1}{l|}{.828} & 71 & .744 & \multicolumn{1}{l|}{.755} & 187 & .811 & \multicolumn{1}{l|}{.813} \\
+\multicolumn{1}{|l|}{Optimal subset} & 21 & .840 & \multicolumn{1}{l|}{XXX} & 28 & .746 & \multicolumn{1}{l|}{XXX} & 37 & .819 & \multicolumn{1}{l|}{XXX} \\
+\multicolumn{1}{|l|}{Matched subset} & 35 & .827 & \multicolumn{1}{l|}{.823} & 35 & .740 & \multicolumn{1}{l|}{.747} & 35 & .796 & \multicolumn{1}{l|}{.799} \\ \hline
+\end{tabular}
+}
+\end{table}
 
 \section{Technical considerations}
 
