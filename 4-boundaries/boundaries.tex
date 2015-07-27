@@ -9,6 +9,7 @@
 \usepackage{graphicx}       % logo related
 
 \usepackage{standalone}
+\standalonetrue
 
 % don't hang captions
 \captionsetup{format=plain}
@@ -24,7 +25,7 @@
 
 \begin{document}
 
-\maketitle
+%\maketitle
 
 \chapter{Chromatin domain boundaries}
 
@@ -54,7 +55,7 @@ We derived TAD boundaries according to established methods (see Methods XX) for 
 	\includegraphics[width=1.2\textwidth]{figs/alltads.pdf}
 }
 \captionsetup{width=1.2\textwidth}
-\caption{ {\bf TAD boundary enrichments and depletions.}
+\caption[TAD boundary enrichments and depletions.]{ {\bf TAD boundary enrichments and depletions.}
 36 features were averaged over 1 Mb windows centred on TAD boundaries genome-wide ($25 \times 40$ kb bins). Ribbons represent $95\%$ confidence intervals of the mean at each position.
 }\label{fig:alltads}
 \end{center}
@@ -66,7 +67,7 @@ We derived TAD boundaries according to established methods (see Methods XX) for 
 	\includegraphics[width=1.2\textwidth]{figs/allcompartments.pdf}
 }
 \captionsetup{width=1.2\textwidth}
-\caption{ {\bf Compartment boundary enrichments and depletions.}
+\caption[Compartment boundary enrichments and depletions.]{ {\bf Compartment boundary enrichments and depletions.}
 36 features were averaged over 3 Mb windows centred on compartment boundaries genome-wide ($30 \times 100$ kb bins). Ribbons represent $95\%$ confidence intervals of the mean at each position.
 }\label{fig:allcompartments}
 \end{center}
@@ -78,7 +79,7 @@ Our findings confirmed the previously reported peaks (CTCF and POL2) and dip (H3
 \begin{center} 
 \includegraphics[width=\textwidth]{figs/boundarysummary.pdf}
 \captionsetup{width=\textwidth}
-\caption{ {\bf Compartment and TAD boundary enrichment summary in three human cell types.}
+\caption[Compartment and TAD boundary enrichment summary in three human cell types.]{ {\bf Compartment and TAD boundary enrichment summary in three human cell types.}
 (A) Selected profiles for locus-level features are shown for TAD boundaries (CTCF, H3K9me3 and POL2) and compartment boundaries (H2A.Z, H3K4me2 and YY1), as a mean normalized ChIP-seq signal relative to input chromatin per bin ($\pm1$ standard error). TAD boundaries were examined over $40$ kb bins over the $1$ Mb flanking each boundary; compartment boundaries were examined over 100-kb bins over $3$ Mb. (B) The significance of enrichment or depletion ($-\log_{10}(p)$ two-tailed Mann--Whitney test) of a feature was calculated as the boundary bin relative to the ten most peripheral bins (five either side). Points are scaled by the absolute mean difference in signal over the boundary relative to the mean of peripheral bins. ChIP-seq, chromatin immunoprecipitation sequencing; TAD, topological domain.
 }\label{fig:boundarysummary}
 \end{center}
@@ -141,7 +142,7 @@ associated with compartment boundaries often spanning more than 1 Mb.
 \begin{center} 
 \includegraphics[width=1.2\textwidth]{figs/ctcfyy1.pdf}
 \captionsetup{width=\textwidth}
-\caption{ {\bf Distinct enrichments of CTCF and YY1 boundaries.}
+\caption[Distinct enrichments of CTCF and YY1 boundaries.]{ {\bf Distinct enrichments of CTCF and YY1 boundaries.}
 TAD boundary feature enrichments are shown (as in Fig. \ref{fig:boundarysummary}) for boundaries
 split into classes based on specific enrichments: CTCF and YY1 groups are
 those boundaries with at least one ENCODE region peak\cite{Dunham2012} for
@@ -183,7 +184,7 @@ To investigate this, we used the \texttt{RepeatMasker}\cite{Tarailo-Graovac2009}
 \begin{center} 
 \includegraphics[width=.88\textwidth]{figs/rep_classprofiles.pdf}
 \captionsetup{width=\textwidth}
-\caption{ {\bf Repeat class average-o-grams over all TAD and compartment boundaries.}
+\caption[Repeat class average-o-grams over all TAD and compartment boundaries.]{ {\bf Repeat class average-o-grams over all TAD and compartment boundaries.}
 RepeatMasker repeat annotations are counted per 50 kb for 1 Mb either side of each TAD and compartment boundaries. The mean count genome-wide is plotted with $\pm 95\%$ confidence intervals.
 }\label{fig:rep_classprofiles}
 \end{center}
@@ -195,7 +196,7 @@ At the level of repeat class, we corroborate the findings of \citet{Dixon2012} t
 \begin{center} 
 \includegraphics[width=.9\textwidth]{figs/rep_classbubble.pdf}
 \captionsetup{width=\textwidth}
-\caption{ {\bf Significance and effect sizes of repeat class enrichments/depletions over boundaries.}
+\caption[Significance and effect sizes of repeat class enrichments/depletions over boundaries.]{ {\bf Significance and effect sizes of repeat class enrichments/depletions over boundaries.}
 Boundary profiles (Fig. \ref{fig:rep_classprofiles}) were tested for enrichment or depletion of each factor at the boundary bin relative to peripheral non-boundary bins (see Methods XX). Bubble area is proportional to the raw effect size of an enrichment or depletion. The Bonferroni-corrected significance threshold is highlighted with a dashed line.
 }\label{fig:rep_classbubble}
 \end{center}
@@ -211,7 +212,7 @@ Repeat classes can be broken into smaller repeat families. \citet{Dixon2012} rep
 \includegraphics[width=1.6\textwidth]{figs/rep_fambubble.pdf}
 }
 \captionsetup{width=\textwidth}
-\caption{ {\bf Significance and effect sizes of repeat family enrichments/depletions over boundaries.}
+\caption[Significance and effect sizes of repeat family enrichments/depletions over boundaries.]{ {\bf Significance and effect sizes of repeat family enrichments/depletions over boundaries.}
 As per Fig. \ref{fig:rep_classbubble} but for a higher resolution repeat classification.
 }\label{fig:rep_fambubble}
 \end{center}
@@ -225,13 +226,13 @@ We have shown TAD and compartment domain boundaries to be well-marked by a varie
 
 We attempted to model TAD boundaries in a variety of ways: firstly a using a class-balanced classification framework and secondly through indirect models of directionality index and the downstream domain-caller HMM state.\cite{Dixon2012}
 
-\section{MetaTAD boundaries}
+\section{MetaTAD boundaries}\label{sec:metatads}
 
 \begin{figure}
 \begin{center} 
 \includegraphics[width=.9\textwidth]{figs/mt_feats.pdf}
 \captionsetup{width=\textwidth}
-\caption{ {\bf Large metaTADs show greater enrichments for an array of boundary features.}
+\caption[Large metaTADs show greater enrichments for an array of boundary features.]{ {\bf Large metaTADs show greater enrichments for an array of boundary features.}
 Genome-wide profiles of epigenomic features and gene densities averaged over all TAD and metaTAD (10 -- 40 Mb) boundaries (ribbons show $95\%$ confidence intervals of the mean).
 }\label{fig:mtfeats}
 \end{center}
@@ -249,7 +250,7 @@ My contribution to this work was to explore these newly-described metaTAD struct
 \begin{center} 
 \includegraphics[width=.9\textwidth]{figs/mt_laminperm.png}
 \captionsetup{width=\textwidth}
-\caption{ {\bf MetaTADs align with lain associated domains.}
+\caption[MetaTADs align with lain associated domains.]{ {\bf MetaTADs align with lain associated domains.}
 Heatmaps of LaminB1 association microarray probe intensity values over MetaTAD boundaries (from domains of size 10 -- 40 Mb) and TAD boundaries, are displayed alongside examples of circularly-permuted boundaries. $42.6\%$ of MetaTAD boundaries (10 -- 40 Mb) had an absolute linear regression coefficient $>.05$ of lamin association intensities, indicating a boundary transition (versus $15.8\%$ expectation from 1000 circular permutations, $p < 1 \times 10^{-4}$). TAD boundaries were also significantly more associated with lamin association transitions (Observed: $11.8\%$, Expected: $9.5\%$; empirical p-value: $p < 1 \times 10^{-4}$). Profiles are shown $\pm450$ kb from each boundary.
 }\label{fig:mtlamin}
 \end{center}
@@ -261,7 +262,7 @@ Heatmaps of LaminB1 association microarray probe intensity values over MetaTAD b
 \begin{center} 
 \includegraphics[width=.9\textwidth]{figs/mt_ts.pdf}
 \captionsetup{width=\textwidth}
-\caption{ {\bf Observed enrichments persist over a time series.}
+\caption[Observed enrichments persist over a time series.]{ {\bf Observed enrichments persist over a time series.}
 CAGE-defined active TSS (CTSS) were counted per 50 kb bin across each TAD and MetaTAD (10 -- 40 Mb) boundary and averaged (ribbons show $95\%$ confidence intervals of the mean). Gene densities refer to mean counts of annotated genes per bin, with an overlap of at least 250 bp. Peak heights suggest modestly stronger enrichments at MetaTAD boundaries relative to TAD boundaries. 
 }\label{fig:mtts}
 \end{center}
@@ -282,7 +283,7 @@ We examined the genome wide similarity of all interphase domain structure bounda
 \begin{center} 
 \includegraphics[width=.7\textwidth]{figs/gbands.pdf}
 \captionsetup{width=\textwidth}
-\caption{ {\bf Giemsa =-stain bands correspond to A/B compartments.}
+\caption[ Giemsa--stain bands correspond to A/B compartments.]{ {\bf Giemsa--stain bands correspond to A/B compartments.}
 Placeholder
 }\label{fig:gbands}
 \end{center}
@@ -294,7 +295,7 @@ Placeholder
 \includegraphics[width=1.2\textwidth]{figs/gb_ideo.pdf}
 }
 \captionsetup{width=\textwidth}
-\caption{ {\bf Genome-wide agreement between Giemsa bands and A/B compartments in the Gm12878 cell type}
+\caption[Genome-wide agreement between Giemsa bands and A/B compartments in the Gm12878 cell type.]{ {\bf Genome-wide agreement between Giemsa bands and A/B compartments in the Gm12878 cell type.}
 Placeholder
 }\label{fig:gbands2}
 \end{center}
