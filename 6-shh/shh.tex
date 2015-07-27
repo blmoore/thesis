@@ -35,7 +35,7 @@ The Hi-C assay provides a genome-wide overview of chromatin conformation, howeve
 
 Here I discuss two collaborative projects involving the use of 4C and 5C data to "zoom in" on two well-studied regions related to limb development: the ZRS enhancer and HoxD gene cluster.
 
-\section{Local chromatin conformation at the SHH locus}
+\section{Chromatin conformation at the SHH locus}
 
 \begin{figure}
 \begin{center} 
@@ -51,7 +51,7 @@ Anterior-posterior patterning in the developing limb is regulated in mammals by 
 
 Collaborators have developed a model system which allows inducible SHH expression in a non-expressing 14fp cell line derived from the developing limb bud. Application of trichostatin A (TSA) then leads to detectable SHH expression, and increased levels of the histone activation mark H3K27ac at the ZRS (\emph{unpublished data}). However, the question remains whether this TSA treatment is fundamentally altering local chromatin structure, that is, bringing together the ZRS enhancer with its target SHH promoter, or whether ZRS and SHH are in contact in both the active and non-expressing cell lines and SHH expression is blocked through other means. Analysis of the region through FISH implies similar levels of compaction in SHH expressing and non-expressing cells (\emph{data not shown}), suggesting the latter explanation.
 
-My part in this collaboration was to analyse 3C-seq (also known as 4C) data recorded by our collaboratoes for the SHH--ZRS region in mouse. Additionally, the 4C procedure was adapted for specific in-house sequencing instruments (Ion Torrent Ion Proton\textsuperscript{TM} sequenced as opposed to Illumina\textsuperscript{TM} technology) and as such required diagnostics to confirm the experimental data was accurate. 
+My part in this collaboration was to analyse 3C-seq (also known as 4C) data recorded by our collaborators for the SHH--ZRS region in mouse. Additionally, the 4C procedure\cite{Stadhouders2013} was adapted for specific in-house sequencing instruments (Ion Torrent Ion Proton\textsuperscript{TM} sequenced as opposed to Illumina\textsuperscript{TM} technology) and as such required diagnostics to confirm the experimental data was accurate. 
 
 % Adam sent a powerpoint he gave for section meeting, see also Prof Hill's publications
 
@@ -66,6 +66,10 @@ My part in this collaboration was to analyse 3C-seq (also known as 4C) data reco
 }\label{fig:ssharc}
 \end{center} 
 \end{figure} 
+
+4C experiments were performed by collaborators using the ZRS region as a bait sequence, or "viewpoint", such that it contacts were measured with all other HindIII restriction fragments genome-wide. 4C was performed in both untreated and non-SHH expressing cells (\emph{TSA--}) and in cells treated with TSA, thereby causing SHH expression (\emph{TSA+}). 
+
+The first stage in analysing these contacts is to convert observed raw sequencing reads to normalised frequencies (Methods XX).
 
 % Conclusions: appears ZRS contacts become more targetted in TSA+ cells, before more diffuse. 
 % Maybe in contact all the time (supported by FISH data) but not engaging in specific contacts when non-expressing.
