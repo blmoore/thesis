@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{48}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Barrett \emph{et~al.}(2013)Barrett, Wilhite, Ledoux, Evangelista,
@@ -130,17 +130,6 @@ Hastie T, Tibshirani R, Friedman J (2009) \emph{{Elements of Statistical
 Tobias RD (1995) {An Introduction to Partial Least Squares Regression}.
 \newblock \emph{Proc. Ann. SAS Users Group Int. Conf. 20th}, pp. 1250--1257.
 
-\bibitem[{Friedman \emph{et~al.}(2008)Friedman, Hastie and
-  Tibshirani}]{Friedman2008}
-Friedman J, Hastie T, Tibshirani R (2008) {Sparse inverse covariance estimation
-  with the graphical lasso.}
-\newblock \emph{Biostatistics (Oxford, England)}, \textbf{9}(3): 432--41.
-
-\bibitem[{Mazumder and Hastie(2012)}]{Mazumder2012}
-Mazumder R, Hastie T (2012) {The graphical lasso: New insights and
-  alternatives}.
-\newblock \emph{Electronic Journal of Statistics}, pp. 1--21.
-
 \bibitem[{Ernst \emph{et~al.}(2011)Ernst, Kheradpour, Mikkelsen, Shoresh, Ward,
   Epstein, Zhang, Wang, Issner \emph{et~al.}}]{Ernst2011}
 Ernst J, Kheradpour P, Mikkelsen TS, Shoresh N, Ward LD, Epstein CB, Zhang X,
@@ -160,6 +149,18 @@ Hoffman MM, Ernst J, Wilder SP, Kundaje A, Harris RS, Libbrecht M, Giardine B,
   Ellenbogen PM, Bilmes Ja, \emph{et~al.} (2013) {Integrative annotation of
   chromatin elements from ENCODE data.}
 \newblock \emph{Nucleic acids research}, \textbf{41}(2): 827--41.
+
+\bibitem[{Ashburner \emph{et~al.}(2000)Ashburner, Ball, Blake, Botstein,
+  Butler, Cherry, Davis, Dolinski, Dwight \emph{et~al.}}]{Ashburner2000}
+Ashburner M, Ball Ca, Blake Ja, Botstein D, Butler H, Cherry JM, Davis aP,
+  Dolinski K, Dwight SS, \emph{et~al.} (2000) {Gene ontology: tool for the
+  unification of biology. The Gene Ontology Consortium.}
+\newblock \emph{Nature genetics}, \textbf{25}(1): 25--29.
+
+\bibitem[{Huang and Lempicki(2008)}]{Huang2008}
+Huang BDW, Lempicki R (2008) {Systematic and integrative analysis of large gene
+  lists using DAVID bioinformatics resources}.
+\newblock \emph{Nature protocols}, (301): 1--43.
 
 \bibitem[{Furey(2003)}]{Furey2003}
 Furey TS (2003) {Integration of the cytogenetic map with the draft human genome
@@ -194,16 +195,96 @@ Tanabe H, M\"{u}ller S, Neusser M, von Hase J, Calcagno E, Cremer M, Solovei I,
 \newblock \emph{Proceedings of the National Academy of Sciences of the United
   States of America}, \textbf{99}(7): 4424--9.
 
-\bibitem[{Ashburner \emph{et~al.}(2000)Ashburner, Ball, Blake, Botstein,
-  Butler, Cherry, Davis, Dolinski, Dwight \emph{et~al.}}]{Ashburner2000}
-Ashburner M, Ball Ca, Blake Ja, Botstein D, Butler H, Cherry JM, Davis aP,
-  Dolinski K, Dwight SS, \emph{et~al.} (2000) {Gene ontology: tool for the
-  unification of biology. The Gene Ontology Consortium.}
-\newblock \emph{Nature genetics}, \textbf{25}(1): 25--29.
+\bibitem[{Stadhouders \emph{et~al.}(2013)Stadhouders, Kolovos, Brouwer, Zuin,
+  van~den Heuvel, Kockx, Palstra, Wendt, Grosveld
+  \emph{et~al.}}]{Stadhouders2013}
+Stadhouders R, Kolovos P, Brouwer R, Zuin J, van~den Heuvel A, Kockx C, Palstra
+  RJ, Wendt KS, Grosveld F, \emph{et~al.} (2013) {Multiplexed chromosome
+  conformation capture sequencing for rapid genome-scale high-resolution
+  detection of long-range chromatin interactions.}
+\newblock \emph{Nature protocols}, \textbf{8}(3): 509--24.
 
-\bibitem[{Huang and Lempicki(2008)}]{Huang2008}
-Huang BDW, Lempicki R (2008) {Systematic and integrative analysis of large gene
-  lists using DAVID bioinformatics resources}.
-\newblock \emph{Nature protocols}, (301): 1--43.
+\bibitem[{Thongjuea \emph{et~al.}(2013)Thongjuea, Stadhouders, Grosveld, Soler
+  and Lenhard}]{Thongjuea2013}
+Thongjuea S, Stadhouders R, Grosveld FG, Soler E, Lenhard B (2013) {R3Cseq: An
+  R/Bioconductor package for the discovery of long-range genomic interactions
+  from chromosome conformation capture and next-generation sequencing data}.
+\newblock \emph{Nucleic Acids Research}, \textbf{41}(13): 1--12.
+
+\bibitem[{Gentleman \emph{et~al.}(2004)Gentleman, Gentleman, Carey, Carey,
+  Bates, Bates, Bolstad, Bolstad, Dettling \emph{et~al.}}]{Gentleman2004}
+Gentleman RC, Gentleman RC, Carey VJ, Carey VJ, Bates DM, Bates DM, Bolstad B,
+  Bolstad B, Dettling M, \emph{et~al.} (2004) {Bioconductor: open software
+  development for computational biology and bioinformatics.}
+\newblock \emph{Genome biology}, \textbf{5}(10): R80.
+
+\bibitem[{Huber \emph{et~al.}(2015)Huber, Carey, Gentleman, Anders, Carlson,
+  Carvalho, Bravo, Davis, Gatto \emph{et~al.}}]{Huber2015}
+Huber W, Carey VJ, Gentleman R, Anders S, Carlson M, Carvalho BS, Bravo HC,
+  Davis S, Gatto L, \emph{et~al.} (2015) {Orchestrating high-throughput genomic
+  analysis with Bioconductor}.
+\newblock \emph{Nature Publishing Group}, \textbf{12}(2): 115--121.
+
+\bibitem[{Ihaka and Gentleman(1996)}]{Ihaka1996}
+Ihaka R, Gentleman R (1996) {R: A Language for Data Analysis and Graphics}.
+
+\bibitem[{Balwierz \emph{et~al.}(2009)Balwierz, Carninci, Daub, Kawai,
+  Hayashizaki, {Van Belle}, Beisel and van Nimwegen}]{Balwierz2009}
+Balwierz PJ, Carninci P, Daub CO, Kawai J, Hayashizaki Y, {Van Belle} W, Beisel
+  C, van Nimwegen E (2009) {Methods for analyzing deep sequencing expression
+  data: constructing the human and mouse promoterome with deepCAGE data.}
+\newblock \emph{Genome biology}, \textbf{10}(7): R79.
+
+\bibitem[{Ay \emph{et~al.}(2014)Ay, Bailey and Noble}]{Ay2014}
+Ay F, Bailey TL, Noble WS (2014) {Statistical confidence estimation for Hi-C
+  data reveals regulatory chromatin contacts}.
+\newblock \emph{Genome Research}.
+
+\bibitem[{Wickham(2009)}]{ggplot2}
+Wickham H (2009) \emph{ggplot2: elegant graphics for data analysis}.
+\newblock Springer New York.
+\newblock ISBN 978-0-387-98140-6.
+
+\bibitem[{Wickham and Francois(2015)}]{dplyr}
+Wickham H, Francois R (2015) \emph{dplyr: A Grammar of Data Manipulation}.
+\newblock R package version 0.4.2.
+
+\bibitem[{Van~Rossum(1995)}]{rossum1995}
+Van~Rossum G (1995) \emph{Python reference manual}.
+
+\bibitem[{Quinlan and Hall(2010)}]{Quinlan2010}
+Quinlan AR, Hall IM (2010) {BEDTools: A flexible suite of utilities for
+  comparing genomic features}.
+\newblock \emph{Bioinformatics}, \textbf{26}(6): 841--842.
+
+\bibitem[{Li \emph{et~al.}(2009)Li, Handsaker, Wysoker, Fennell, Ruan, Homer,
+  Marth, Abecasis and Durbin}]{Li2009}
+Li H, Handsaker B, Wysoker A, Fennell T, Ruan J, Homer N, Marth G, Abecasis G,
+  Durbin R (2009) {The Sequence Alignment/Map format and SAMtools}.
+\newblock \emph{Bioinformatics}, \textbf{25}(16): 2078--2079.
+
+\bibitem[{Kent \emph{et~al.}(2010)Kent, Zweig, Barber, Hinrichs and
+  Karolchik}]{Kent2010}
+Kent WJ, Zweig aS, Barber G, Hinrichs aS, Karolchik D (2010) {BigWig and
+  BigBed: Enabling browsing of large distributed datasets}.
+\newblock \emph{Bioinformatics}, \textbf{26}(17): 2204--2207.
+
+\bibitem[{Kent \emph{et~al.}(2002)Kent, Sugnet, Furey, Roskin, Pringle, Zahler
+  and Haussler}]{Kent2002}
+Kent WJ, Sugnet CW, Furey TS, Roskin KM, Pringle TH, Zahler AM, Haussler D
+  (2002) {The Human Genome Browser at UCSC The Human Genome Browser at UCSC}.
+\newblock \emph{Genome Research}, pp. 996--1006.
+
+\bibitem[{Raney \emph{et~al.}(2014)Raney, Dreszer, Barber, Clawson, Fujita,
+  Wang, Nguyen, Paten, Zweig \emph{et~al.}}]{Raney2014}
+Raney BJ, Dreszer TR, Barber GP, Clawson H, Fujita Pa, Wang T, Nguyen N, Paten
+  B, Zweig AS, \emph{et~al.} (2014) {Track data hubs enable visualization of
+  user-defined genome-wide annotations on the UCSC Genome Browser}.
+\newblock \emph{Bioinformatics}, \textbf{30}(7): 1003--1005.
+
+\bibitem[{Kuhn \emph{et~al.}(2013)Kuhn, Haussler and {James Kent}}]{Kuhn2013a}
+Kuhn RM, Haussler D, {James Kent} W (2013) {The UCSC genome browser and
+  associated tools}.
+\newblock \emph{Briefings in Bioinformatics}, \textbf{14}(2): 144--161.
 
 \end{thebibliography}

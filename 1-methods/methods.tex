@@ -50,7 +50,7 @@ paired reads were mapped independently to a reference genome: hg19/GRCh37 for hu
 
 \begin{table}
 \centering
-\caption{{\bf Public Hi-C data used in this work.} }
+\caption[Public Hi-C data used in this work.]{ {\bf Public Hi-C data used in this work.} }
 \label{hictable}
 \begin{tabular}{lllr}
 {\bf Cell line} & {\bf Total reads} & {\bf Accession} & {\bf Citation}\\
@@ -211,31 +211,31 @@ Linear regression was used as a baseline for comparison with more complicated ap
 
 Partial least squares (PLS) regression was also used to model compartment profiles. PLS regression is well-suited to highly correlated inputs, employing a dimensionality reduction step to help address this redundancy, yet lacks the interpretability of a multiple linear regression. Similar to RF, PLS regression is aimed at building highly-predictive models rather than understanding singular relationships between a predictor and independent variable.\cite{Tobias1995} The \texttt{plsdepot} R implementation of PLS regression was used in this work.
 
-\subsection{Graphical lasso}
-Regularised models made use of the Graphical LASSO\cite{Friedman2008}
-(least absolute shrinkage and selection operator) as a method of
-$L_1$-norm based
-regularisation, implemented via the \texttt{glasso} R package. The
-graphical lasso provides tuneable regularisation which is
-capable of feature selection via minimising regression parameters to
-0. It was chosen in this case due to the multicollinearity of the
-featureset, the algorithm's fast speed of
-execution and the intuitiveness a graphical model
-presents.\cite{Friedman2008} 
-
-More specifically, the graphical lasso regulates the number of 0s in
-the inverse covariance matrix, $\bm{\Theta}=\bm{\Sigma}^{-1}$, also known as the
-precision matrix. Then if element $\theta_{ij}=0$, the variables $X_i$ and $X_j$ can be said to be
-conditionally independent, given the remaining
-variables.\cite{Mazumder2012} The algorithm minimises a negative
-log-likelihood (Eqn. \ref{eq:glasso}\cite{Mazumder2012}) given the tuning parameter $\lambda$, which was tuned
-in this case to leave a small number of variables ($<10$)
-directly dependent on the eigenvector data. \\
-\begin{equation} \label{eq:glasso}
-\underset{\bm{\Theta}\prec\bm{0}}{\mathrm{minimise}}~f(\bm{\Theta}) :=
--\log\det(\bm{\Theta}) + \mathrm{tr}(\bm{\mathrm{S}\Theta}) + \lambda
-\lVert\bm{\Theta}\rVert_1
-\end{equation}
+%\subsection{Graphical lasso}
+%Regularised models made use of the Graphical LASSO\cite{Friedman2008}
+%(least absolute shrinkage and selection operator) as a method of
+%$L_1$-norm based
+%regularisation, implemented via the \texttt{glasso} R package. The
+%graphical lasso provides tuneable regularisation which is
+%capable of feature selection via minimising regression parameters to
+%0. It was chosen in this case due to the multicollinearity of the
+%featureset, the algorithm's fast speed of
+%execution and the intuitiveness a graphical model
+%presents.\cite{Friedman2008} 
+%
+%More specifically, the graphical lasso regulates the number of 0s in
+%the inverse covariance matrix, $\bm{\Theta}=\bm{\Sigma}^{-1}$, also known as the
+%precision matrix. Then if element $\theta_{ij}=0$, the variables $X_i$ and $X_j$ can be said to be
+%conditionally independent, given the remaining
+%variables.\cite{Mazumder2012} The algorithm minimises a negative
+%log-likelihood (Eqn. \ref{eq:glasso}\cite{Mazumder2012}) given the tuning parameter $\lambda$, which was tuned
+%in this case to leave a small number of variables ($<10$)
+%directly dependent on the eigenvector data. \\
+%\begin{equation} \label{eq:glasso}
+%\underset{\bm{\Theta}\prec\bm{0}}{\mathrm{minimise}}~f(\bm{\Theta}) :=
+%-\log\det(\bm{\Theta}) + \mathrm{tr}(\bm{\mathrm{S}\Theta}) + \lambda
+%\lVert\bm{\Theta}\rVert_1
+%\end{equation}
 
 \section{Variable regions}\label{variable-regions}
 
@@ -275,6 +275,11 @@ Short, discrete state predictions such as enhancers were
 considered ``shared'' if there was an overlapping enhancer annotation in
 either of the two other cell types, and labelled as ``tissue-specific''
 otherwise. This was repeated for each of the called chromatin states.
+
+\subsection{Gene ontology analysis}
+
+Variable regions (section \ref{sec:variable}) were tested for functional enrichments using Gene Ontology (GO) annotations.\cite{Ashburner2000} The DAVID tool\cite{Huang2008} was used to compare GO terms for genes located in variable compartments with a background set of genes within all annotated compartments.
+
 
 \section{Boundaries}\label{boundaries}
 
@@ -344,10 +349,37 @@ is greater-than or equal-to $F_{outer}$. This chromosomal positioning data was m
 cells though nuclear architecture is though to be largely conserved
 between cell types\cite{Chambers2013, DeWit2013} and even higher primates.\cite{Tanabe2002}
 
-\section{Gene ontology analysis}
+\section{4C analysis}\label{methods:4c}
 
-Variable regions (section \ref{sec:variable}) were tested for functional enrichments using Gene Ontology (GO) annotations.\cite{Ashburner2000} The DAVID tool\cite{Huang2008} was used to compare GO terms for genes located in variable compartments with a background set of genes within all annotated compartments.
+The experimental protocol used by our collaborators to generate 3C-seq data (also known as 4C) recommends the \texttt{r3Cseq} R package,\cite{Stadhouders2013, Thongjuea2013} part of the bioconductor repository\cite{Gentleman2004, Huber2015} for the R programming environment.\cite{Ihaka1996}
 
+This package functions both to produces normalised interaction frequencies which are comparable between experiments, and to assign statistical significance to any identified contacts, thereby reporting regions that co-localise to a greater degree than expected by their genomic proximity alone.
+
+\subsection{Normalisation}
+
+The normalisation procedure is adapted from a previous method for normalising deepCAGE data between samples.\cite{Balwierz2009} In short, the reverse-cumulative distribution of read counts per restriction fragment is fit to a power-law model; this effectively encodes the \emph{a priori} expectation of exponential decay of the number of contacts as distance increases from the viewpoint. Transformed read counts per million (RPM) can then be retrieved from a standardised reverse cumulative distribution, parametrised with the empirical coefficient, $\alpha = -1.35$.\cite{Thongjuea2013}
+
+This normalisation procedure has the effect of making the output RPM value independent of the original experiment's sequencing depth and, more importantly, acts to reduces the impact of artefacts and errors by enforcing the expected power-law relationship of restriction fragment read counts.
+
+\subsection{Significance estimation}
+
+The \texttt{r3Cseq} package\cite{Thongjuea2013} also attempts to assign a measure of significance to observed contact frequencies. This is done through a simple method of background estimation based on observed values. The justification for this non-independent estimate of background signal is that a relatively small proportion of observed contacts are expected to be significantly enriched, thus won't unduly perturb an average signal.\cite{Thongjuea2013} An improved method that avoids this assumption has since been developed where a background model was iteratively fitted, with outlier removal at each revision.\cite{Ay2014}
+
+Here a non-parametric cubic smooth spline is fit to normalised read count data using a heuristic smoothing parameter. This model then provides an expected level of interaction at a given distance from the viewpoint in \emph{cis}. From this, it is simple to calculate a $Z$score as:
+
+\begin{equation}
+Z = \frac{[obs - exp]}{SD()}
+\end{equation}
+
+\subsection{3--D modelling}\label{methods:3dmodelling}
+
+\section{5C analysis}\label{methods:5c}
+
+\section{Scripts and other analyses}
+
+Much of this work has been performed by writing custom scripts in the R programming language.\cite{Ihaka1996} Code for the majority of analyses described in this thesis are available through a public git repository hosted on \texttt{github} at \href{https://github.com/blmoore/3dgenome}{github.com/blmoore/3dgenome} (instructions on how to reproduce analyses and figures are included therein). A special mention goes to the packages of Hadley Wickham which are used throughout, especially \texttt{ggplot2}\cite{ggplot2} and \texttt{dplyr}\cite{dplyr}.
+
+The programming language python\cite{rossum1995} was also employed to a lesser-extent, as were command--line tools such as \texttt{bedtools}\cite{Quinlan2010} and \texttt{SAMtools}\cite{Li2009}. Additionally command-line \texttt{BigWig*} tools\cite{Kent2010} were used, as well as the UCSC genome browser associated data tracks.\cite{Kent2002, Raney2014, Kuhn2013a}.
 
 \ifstandalone
 \begin{small}
