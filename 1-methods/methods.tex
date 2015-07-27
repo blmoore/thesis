@@ -355,21 +355,25 @@ The experimental protocol used by our collaborators to generate 3C-seq data (als
 
 This package functions both to produces normalised interaction frequencies which are comparable between experiments, and to assign statistical significance to any identified contacts, thereby reporting regions that co-localise to a greater degree than expected by their genomic proximity alone.
 
-\subsection{Normalisation}
+\subsection{Normalisation}\label{methods:4cnorm}
 
 The normalisation procedure is adapted from a previous method for normalising deepCAGE data between samples.\cite{Balwierz2009} In short, the reverse-cumulative distribution of read counts per restriction fragment is fit to a power-law model; this effectively encodes the \emph{a priori} expectation of exponential decay of the number of contacts as distance increases from the viewpoint. Transformed read counts per million (RPM) can then be retrieved from a standardised reverse cumulative distribution, parametrised with the empirical coefficient, $\alpha = -1.35$.\cite{Thongjuea2013}
 
 This normalisation procedure has the effect of making the output RPM value independent of the original experiment's sequencing depth and, more importantly, acts to reduces the impact of artefacts and errors by enforcing the expected power-law relationship of restriction fragment read counts.
 
-\subsection{Significance estimation}
+\subsection{Significance estimation}\label{methods:4csignif}
 
 The \texttt{r3Cseq} package\cite{Thongjuea2013} also attempts to assign a measure of significance to observed contact frequencies. This is done through a simple method of background estimation based on observed values. The justification for this non-independent estimate of background signal is that a relatively small proportion of observed contacts are expected to be significantly enriched, thus won't unduly perturb an average signal.\cite{Thongjuea2013} An improved method that avoids this assumption has since been developed where a background model was iteratively fitted, with outlier removal at each revision.\cite{Ay2014}
 
-Here a non-parametric cubic smooth spline is fit to normalised read count data using a heuristic smoothing parameter. This model then provides an expected level of interaction at a given distance from the viewpoint in \emph{cis}. From this, it is simple to calculate a $Z$score as:
+Here a non-parametric cubic smooth spline is fit to normalised read count data using a heuristic smoothing parameter. This model then provides an expected level of interaction at a given distance from the viewpoint in \emph{cis}. From this, it is simple to calculate a $Z$--score as:
 
-\begin{equation}
-Z = \frac{[obs - exp]}{SD()}
+\begin{equation}\label{form:r3cseq}
+Z = \frac{(O-E)}{\sigma}
 \end{equation}
+
+\noindent Where $\sigma$ is the standard deviation of residuals from the observed ($O$), expected ($E$) difference. This $Z$-score can then be converted to a $p$-value which in turn is corrected for multiple testing using bootstrapped estimates of false-discovery rate (FDR) $q$-values\cite{Storey2004} (as implemented in the \texttt{qvalue} R package\cite{qvalue}). This $Z$--test approach assumes a normally-distributed test statistic, an assumption that typically does not hold on 4C data where interactions distal to the viewpoint are increasingly sparse, however this approach and variants thereof have been applied in a variety 4C and 5C analyses (e.g. \cite{Simonis2006, Sanyal2012, Splinter2012, Gao2013, Dixon2015}).
+
+While we are mostly concerned with these \emph{cis} interactions, \texttt{r3Cseq} also offers significance testing for \emph{trans} interactions between the viewpoint and restriction fragments on different chromosomes. Here instead of distance scaling, the expected ($E$) terms in eqn. \ref{form:r3cseq} are genome-wide averages excluding regions $\pm$ 100 kb around the viewpoint.\cite{Thongjuea2013} This means the absolute values of normalised RPMs reported for \emph{trans} interactions are in practice upscaled, being equivalent to experimental RPMs less the most deeply-sequenced regions, i.e. the viewpoint and immediately adjacent regions.
 
 \subsection{3--D modelling}\label{methods:3dmodelling}
 

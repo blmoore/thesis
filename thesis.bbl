@@ -1,4 +1,4 @@
-\begin{thebibliography}{142}
+\begin{thebibliography}{148}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{de~Wit and de~Laat(2012)}]{DeWit2012}
@@ -410,6 +410,43 @@ Balwierz PJ, Carninci P, Daub CO, Kawai J, Hayashizaki Y, {Van Belle} W, Beisel
 Ay F, Bailey TL, Noble WS (2014) {Statistical confidence estimation for Hi-C
   data reveals regulatory chromatin contacts}.
 \newblock \emph{Genome Research}.
+
+\bibitem[{Storey \emph{et~al.}(2004)Storey, Taylor and Siegmund}]{Storey2004}
+Storey JD, Taylor JE, Siegmund D (2004) {Strong control, conservative point
+  estimation and simultaneous conservative consistency of false discovery
+  rates: A unified approach}.
+\newblock \emph{Journal of the Royal Statistical Society. Series B: Statistical
+  Methodology}, \textbf{66}(1): 187--205.
+
+\bibitem[{Storey(2015)}]{qvalue}
+Storey J (2015) \emph{qvalue: Q-value estimation for false discovery rate
+  control}.
+\newblock R package version 2.0.0.
+
+\bibitem[{Sanyal \emph{et~al.}(2012)Sanyal, Lajoie, Jain and
+  Dekker}]{Sanyal2012}
+Sanyal A, Lajoie BR, Jain G, Dekker J (2012) {The long-range interaction
+  landscape of gene promoters.}
+\newblock \emph{Nature}, \textbf{489}(7414): 109--13.
+
+\bibitem[{Splinter \emph{et~al.}(2012)Splinter, de~Wit, van~de Werken, Klous
+  and de~Laat}]{Splinter2012}
+Splinter E, de~Wit E, van~de Werken HJG, Klous P, de~Laat W (2012) {Determining
+  long-range chromatin interactions for selected genomic sites using 4C-seq
+  technology: From fixation to computation}.
+\newblock \emph{Methods}, \textbf{58}(3): 221--230.
+
+\bibitem[{Gao \emph{et~al.}(2013)Gao, Wei, Lu and Wang}]{Gao2013}
+Gao F, Wei Z, Lu W, Wang K (2013) {Comparative analysis of 4C-Seq data
+  generated from enzyme-based and sonication-based methods.}
+\newblock \emph{BMC genomics}, \textbf{14}(1): 345.
+
+\bibitem[{Dixon \emph{et~al.}(2015)Dixon, Jung, Selvaraj, Shen,
+  Antosiewicz-Bourget, Lee, Ye, Kim, Rajagopal \emph{et~al.}}]{Dixon2015}
+Dixon JR, Jung I, Selvaraj S, Shen Y, Antosiewicz-Bourget JE, Lee AY, Ye Z, Kim
+  A, Rajagopal N, \emph{et~al.} (2015) {Chromatin architecture reorganization
+  during stem cell differentiation}.
+\newblock \emph{Nature}, \textbf{518}(7539): 331--336.
 
 \bibitem[{Wickham(2009)}]{ggplot2}
 Wickham H (2009) \emph{ggplot2: elegant graphics for data analysis}.
