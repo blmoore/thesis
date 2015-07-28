@@ -35,7 +35,7 @@ The Hi-C assay provides a genome-wide overview of chromatin conformation, howeve
 
 Here I discuss two collaborative projects involving the use of 4C and 5C data to "zoom in" on two well-studied regions related to limb development: the ZRS enhancer and HoxD gene cluster.
 
-\section{Chromatin conformation at the SHH locus}
+\section{4C at the SHH locus}
 
 \begin{figure}
 \begin{center} 
@@ -70,6 +70,12 @@ My part in this collaboration was to analyse 3C-seq (also known as 4C) data reco
 4C experiments were performed by collaborators using the ZRS region as a bait sequence, or "viewpoint", such that it contacts were measured with all other HindIII restriction fragments genome-wide. 4C was performed in both untreated and non-SHH expressing cells (\emph{TSA--}) and in cells treated with TSA, thereby causing SHH expression (\emph{TSA+}). 
 
 The first stage in analysing these contacts is to convert observed raw sequencing reads to normalised frequencies (Methods \ref{methods:4cnorm}), these normalised values are then assigned significance scores in the form of $q$-values, with the aim of finding those significantly over-represented relative to expectation (Methods \ref{methods:4csignif}).
+
+The results of a comparison between TSA treated and untreated samples is shown in Figure \ref{fig:ssharc}. In it we see a striking and highly significant ZRS--SHH contact in the treated sample ($q$-value $ < 5 \times 10^{-10}$), with a weaker but still significant contact in the adjacent restriction fragment in the untreated sample ($q$-value $ < 5 \times 10^{-5}$). 
+
+We also see more broadly a much higher total number of significant contacts in the untreated sample around the viewpoint (Fig. \ref{fig:ssharc}, \emph{upper}). In the treated sample, only a few contacts cross the stringent $q$-value threshold, with the SHH--ZRS contact among the most significant in terms of both $q$-value and supporting number of reads (indicated by the thickness of the arc, Fig. \ref{fig:ssharc}, \emph{upper}).
+
+Existing multi-probe FISH data produced by our collaborators shows approximately equal levels of compaction in this region in both TSA treated and untreated cells (\emph{data not shown}). This information in combination with the 4C results reported here (Fig. \ref{fig:ssharc}) support a hypothesis that while both samples are held together in a TAD (Fig. \ref{fig:shhtad}) --- unavoidably inducing many contacts --- it is only in the treated sample where a highly-specific ZRS--SHH contact occurs and potentially is then bring about expression of the \emph{SHH} gene.
 
 % Conclusions: appears ZRS contacts become more targetted in TSA+ cells, before more diffuse. 
 % Maybe in contact all the time (supported by FISH data) but not engaging in specific contacts when non-expressing.
