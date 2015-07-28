@@ -1,4 +1,4 @@
-\begin{thebibliography}{148}
+\begin{thebibliography}{155}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{de~Wit and de~Laat(2012)}]{DeWit2012}
@@ -677,6 +677,37 @@ Handoko L, Xu H, Li G, Ngan CY, Chew E, Schnapp M, Lee CWH, Ye C, Ping JLH,
 Abdi H, Williams LJ (2010) {Principal component analysis}.
 \newblock \emph{Wiley Interdisciplinary Reviews: Computational Statistics},
   \textbf{2}(4): 433--459.
+
+\bibitem[{Mantel(1970)}]{Mantel1970}
+Mantel N (1970) {Why Stepdown Procedures in Variable Selection}.
+\newblock \emph{Technometrics}, \textbf{12}(3): 621--625.
+
+\bibitem[{Hurvich and Tsai(1990)}]{Hurvich1990}
+Hurvich CM, Tsai Cl (1990) {The Impact of Model Selection on Inference in
+  Linear Regression}.
+\newblock \emph{The American Statistician}, \textbf{44}(3): 214.
+
+\bibitem[{Tibshirani(1994)}]{Tibshirani1994}
+Tibshirani R (1994) {Regression Selection and Shrinkage via the Lasso}.
+
+\bibitem[{Guyon \emph{et~al.}(2003)Guyon, Weston, Barnhill and
+  Vapnik}]{Guyon2003}
+Guyon I, Weston J, Barnhill S, Vapnik V (2003) {An Introduction to Variable and
+  Feature Selection}.
+\newblock \emph{Journal of Machine Learning Research}, \textbf{3}: 1157--1182.
+
+\bibitem[{Kohavi and Kohavi(1997)}]{Kohavi1997a}
+Kohavi R, Kohavi R (1997) {Wrappers for feature subset selection}.
+\newblock \emph{Artificial Intelligence}, \textbf{97}(1-2): 273--324.
+
+\bibitem[{Deng and Runger(2012)}]{Deng2012}
+Deng H, Runger G (2012) {Feature selection via regularized trees}.
+\newblock In: \emph{Neural Networks (IJCNN), The 2012 International Joint
+  Conference on}. IEEE, pp. 1--8.
+
+\bibitem[{Deng(2013)}]{Deng2013}
+Deng H (2013) {Guided Random Forest in the RRF Package}.
+\newblock \emph{arXiv}, pp. 1--2.
 
 \bibitem[{Hou \emph{et~al.}(2012)Hou, Li, Qin and Corces}]{Hou2012}
 Hou C, Li L, Qin ZS, Corces VG (2012) {Gene Density, Transcription, and

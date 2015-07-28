@@ -5,6 +5,10 @@ The style file: thesis.bst
 A level-1 auxiliary file: 0-intro/intro.aux
 Database file #1: /Users/benmoore/Documents/library.bib
 Database file #2: /Users/benmoore/Documents/customrefs.bib
+Repeated entry---line 11 of file /Users/benmoore/Documents/customrefs.bib
+ : @inproceedings{deng2012
+ :                        ,
+I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--there's a number but no volume in Li2014
 Warning--there's a number but no volume in Mifsud2015
@@ -17,45 +21,45 @@ Warning--there's a number but no volume in Anderson2014a
 Warning--empty journal in Hill2013a
 Warning--there's a number but no volume in Hill2013a
 Warning--there's a number but no volume in Lesne2014
-You've used 148 entries,
+You've used 155 entries,
             3024 wiz_defined-function locations,
-            1541 strings with 44948 characters,
-and the built_in function-call counts, 213711 in all, are:
-= -- 22439
-> -- 6556
-< -- 46
-+ -- 4732
-- -- 1675
-* -- 16052
-:= -- 23036
-add.period$ -- 296
-call.type$ -- 148
-change.case$ -- 738
-chr.to.int$ -- 149
-cite$ -- 159
-duplicate$ -- 22348
-empty$ -- 15287
-format.name$ -- 2140
-if$ -- 44043
+            1593 strings with 45944 characters,
+and the built_in function-call counts, 218859 in all, are:
+= -- 22958
+> -- 6653
+< -- 54
++ -- 4796
+- -- 1701
+* -- 16421
+:= -- 23689
+add.period$ -- 310
+call.type$ -- 155
+change.case$ -- 775
+chr.to.int$ -- 156
+cite$ -- 166
+duplicate$ -- 22854
+empty$ -- 15700
+format.name$ -- 2187
+if$ -- 45101
 int.to.chr$ -- 5
-int.to.str$ -- 149
-missing$ -- 1838
-newline$ -- 596
-num.names$ -- 444
-pop$ -- 10765
+int.to.str$ -- 156
+missing$ -- 1895
+newline$ -- 623
+num.names$ -- 465
+pop$ -- 10985
 preamble$ -- 1
-purify$ -- 592
+purify$ -- 620
 quote$ -- 0
-skip$ -- 3803
+skip$ -- 3915
 stack$ -- 0
-substring$ -- 26677
-swap$ -- 4938
-text.length$ -- 7
+substring$ -- 27194
+swap$ -- 5099
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 882
+type$ -- 924
 warning$ -- 11
-while$ -- 1391
+while$ -- 1431
 width$ -- 0
-write$ -- 1768
-(There were 11 warnings)
+write$ -- 1850
+(There was 1 error message)
