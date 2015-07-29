@@ -1,4 +1,4 @@
-\begin{thebibliography}{36}
+\begin{thebibliography}{52}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{de~Wit and de~Laat(2012)}]{DeWit2012}
@@ -196,6 +196,11 @@ Gavrilov Aa, Golov AK, Razin SV (2013) {Actual ligation frequencies in the
   chromosome conformation capture procedure.}
 \newblock \emph{PloS one}, \textbf{8}(3): e60403.
 
+\bibitem[{Jordan and Mitchell(2015)}]{Jordan2015}
+Jordan MI, Mitchell TM (2015) {Machine learning: Trends, perspectives, and
+  prospects}.
+\newblock \emph{Science}, \textbf{349}(6245): 255--260.
+
 \bibitem[{Libbrecht and Noble(2015)}]{Libbrecht2015}
 Libbrecht MW, Noble WS (2015) {Machine learning applications in genetics and
   genomics}.
@@ -220,8 +225,102 @@ Rajagopal N, Xie W, Li Y, Wagner U, Wang W, Stamatoyannopoulos J, Ernst J,
   identification from chromatin state.}
 \newblock \emph{PLoS computational biology}, \textbf{9}(3): e1002968.
 
+\bibitem[{Feingold \emph{et~al.}(2004)Feingold, Good, Guyer, Kamholz, Liefer,
+  Wetterstrand, Collins, Gingeras, Kampa \emph{et~al.}}]{Feingold2004}
+Feingold E, Good P, Guyer M, Kamholz S, Liefer L, Wetterstrand K, Collins F,
+  Gingeras T, Kampa D, \emph{et~al.} (2004) {The ENCODE (ENCyclopedia of DNA
+  elements) Project}.
+
+\bibitem[{Qu and Fang(2013)}]{Qu2013}
+Qu H, Fang X (2013) {A Brief Review on the Human Encyclopedia of DNA Elements
+  (ENCODE) Project}.
+\newblock \emph{Genomics, Proteomics and Bioinformatics}, \textbf{11}(3):
+  135--141.
+
 \bibitem[{ENCODE(2012)}]{Dunham2012}
 ENCODE (2012) {An integrated encyclopedia of DNA elements in the human genome.}
 \newblock \emph{Nature}, \textbf{489}(7414): 57--74.
+
+\bibitem[{Myers \emph{et~al.}(2011)Myers, Stamatoyannopoulos, Snyder, Dunham,
+  Hardison, Bernstein, Gingeras, Kent, Birney \emph{et~al.}}]{Myers2011}
+Myers RM, Stamatoyannopoulos J, Snyder M, Dunham I, Hardison RC, Bernstein BE,
+  Gingeras TR, Kent WJ, Birney E, \emph{et~al.} (2011) {A user's guide to the
+  Encyclopedia of DNA elements (ENCODE)}.
+\newblock \emph{PLoS Biology}, \textbf{9}(4).
+
+\bibitem[{Landt and Marinov(2012)}]{Landt2012}
+Landt S, Marinov G (2012) {ChIP-seq guidelines and practices of the ENCODE and
+  modENCODE consortia}.
+\newblock \emph{Genome \ldots}, (Park 2009): 1813--1831.
+
+\bibitem[{Boyle \emph{et~al.}(2014)Boyle, Araya, Brdlik, Cayting, Cheng, Cheng,
+  Gardner, Hillier, Janette \emph{et~al.}}]{Boyle2014}
+Boyle AP, Araya CL, Brdlik C, Cayting P, Cheng C, Cheng Y, Gardner K, Hillier
+  LW, Janette J, \emph{et~al.} (2014) {Comparative analysis of regulatory
+  information and circuits across distant species}.
+\newblock \emph{Nature}, \textbf{512}(7515): 453--456.
+
+\bibitem[{Marinov \emph{et~al.}(2013)Marinov, Kundaje, Park and
+  Wold}]{Marinov2013}
+Marinov GK, Kundaje A, Park PJ, Wold BJ (2013) {Large-Scale Quality Analysis of
+  Published ChIP-seq Data.}
+\newblock \emph{G3 (Bethesda, Md.)}, \textbf{4}(February): 209--223.
+
+\bibitem[{Yue \emph{et~al.}(2014)Yue, Cheng, Breschi, Vierstra, Wu, Ryba,
+  Sandstrom, Ma, Davis \emph{et~al.}}]{Yue2014}
+Yue F, Cheng Y, Breschi A, Vierstra J, Wu W, Ryba T, Sandstrom R, Ma Z, Davis
+  C, \emph{et~al.} (2014) {A comparative encyclopedia of DNA elements in the
+  mouse genome}.
+\newblock \emph{Nature}, \textbf{515}(7527): 355--364.
+
+\bibitem[{Ho \emph{et~al.}(2014)Ho, Jung, Liu, Alver, Lee, Ikegami, Sohn,
+  Minoda, Tolstorukov \emph{et~al.}}]{Ho2014}
+Ho JWK, Jung YL, Liu T, Alver BH, Lee S, Ikegami K, Sohn KA, Minoda A,
+  Tolstorukov MY, \emph{et~al.} (2014) {Comparative analysis of metazoan
+  chromatin organization}.
+\newblock \emph{Nature}, \textbf{512}(7515): 449--452.
+
+\bibitem[{ENCODE DCC()}]{encodenews}
+ENCODE DCC (2015) Encode news, may 13 2015.
+\newblock \url{https://www.encodeproject.org/news/}.
+\newblock Accessed: 2015-07-29.
+
+\bibitem[{Hoffman \emph{et~al.}(2012)Hoffman, Buske, Wang, Weng, Bilmes and
+  Noble}]{Hoffman2012}
+Hoffman MM, Buske OJ, Wang J, Weng Z, Bilmes Ja, Noble WS (2012) {Unsupervised
+  pattern discovery in human chromatin structure through genomic segmentation}.
+\newblock \emph{Nature Methods}, \textbf{9}(5): 473--476.
+
+\bibitem[{Ernst and Kellis(2010)}]{Ernst2010a}
+Ernst J, Kellis M (2010) {Discovery and characterization of chromatin states
+  for systematic annotation of the human genome.}
+\newblock \emph{Nature biotechnology}, \textbf{28}(8): 817--825.
+
+\bibitem[{Hoffman \emph{et~al.}(2013)Hoffman, Ernst, Wilder, Kundaje, Harris,
+  Libbrecht, Giardine, Ellenbogen, Bilmes \emph{et~al.}}]{Hoffman2013}
+Hoffman MM, Ernst J, Wilder SP, Kundaje A, Harris RS, Libbrecht M, Giardine B,
+  Ellenbogen PM, Bilmes Ja, \emph{et~al.} (2013) {Integrative annotation of
+  chromatin elements from ENCODE data.}
+\newblock \emph{Nucleic acids research}, \textbf{41}(2): 827--41.
+
+\bibitem[{Cheng \emph{et~al.}(2011)Cheng, Yan, Yip, Rozowsky, Alexander, Shou
+  and Gerstein}]{Cheng2011}
+Cheng C, Yan Kk, Yip KY, Rozowsky J, Alexander R, Shou C, Gerstein M (2011) {A
+  statistical framework for modeling gene expression using chromatin features
+  and application to modENCODE datasets.}
+\newblock \emph{Genome biology}, \textbf{12}(2): R15.
+
+\bibitem[{Althammer \emph{et~al.}(2012)Althammer, Pag\`{e}s and
+  Eyras}]{Althammer2012}
+Althammer S, Pag\`{e}s A, Eyras E (2012) {Predictive models of gene regulation
+  from high-throughput epigenomics data.}
+\newblock \emph{Comparative and functional genomics}, \textbf{2012}: 1--13.
+
+\bibitem[{Dong \emph{et~al.}(2012)Dong, Greven, Kundaje, Djebali, Brown, Cheng,
+  Gingeras, Gerstein, Guig\'{o} \emph{et~al.}}]{Dong2012}
+Dong X, Greven MC, Kundaje A, Djebali S, Brown JB, Cheng C, Gingeras TR,
+  Gerstein M, Guig\'{o} R, \emph{et~al.} (2012) {Modeling gene expression using
+  chromatin features in various cellular contexts.}
+\newblock \emph{Genome biology}, \textbf{13}(9): R53.
 
 \end{thebibliography}

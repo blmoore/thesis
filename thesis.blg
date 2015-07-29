@@ -9,10 +9,13 @@ Repeated entry---line 11 of file /Users/benmoore/Documents/customrefs.bib
  : @inproceedings{deng2012
  :                        ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Deng2013"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--there's a number but no volume in Li2014
 Warning--there's a number but no volume in Mifsud2015
 Warning--empty journal in Williamson2014
+Warning--empty journal in Feingold2004
+Warning--there's a number but no volume in Landt2012
 Warning--there's a number but no volume in Huang2008
 Warning--missing publisher in rossum1995
 Warning--empty journal in Vizan2014
@@ -21,45 +24,45 @@ Warning--there's a number but no volume in Anderson2014a
 Warning--empty journal in Hill2013a
 Warning--there's a number but no volume in Hill2013a
 Warning--there's a number but no volume in Lesne2014
-You've used 155 entries,
+You've used 169 entries,
             3024 wiz_defined-function locations,
-            1593 strings with 45944 characters,
-and the built_in function-call counts, 218859 in all, are:
-= -- 22958
-> -- 6653
-< -- 54
-+ -- 4796
-- -- 1701
-* -- 16421
-:= -- 23689
-add.period$ -- 310
-call.type$ -- 155
-change.case$ -- 775
-chr.to.int$ -- 156
-cite$ -- 166
-duplicate$ -- 22854
-empty$ -- 15700
-format.name$ -- 2187
-if$ -- 45101
-int.to.chr$ -- 5
-int.to.str$ -- 156
-missing$ -- 1895
-newline$ -- 623
-num.names$ -- 465
-pop$ -- 10985
+            1678 strings with 63414 characters,
+and the built_in function-call counts, 238809 in all, are:
+= -- 25049
+> -- 7290
+< -- 56
++ -- 5259
+- -- 1863
+* -- 17933
+:= -- 25837
+add.period$ -- 338
+call.type$ -- 169
+change.case$ -- 846
+chr.to.int$ -- 170
+cite$ -- 182
+duplicate$ -- 24943
+empty$ -- 17111
+format.name$ -- 2398
+if$ -- 49202
+int.to.chr$ -- 6
+int.to.str$ -- 170
+missing$ -- 2066
+newline$ -- 679
+num.names$ -- 504
+pop$ -- 11996
 preamble$ -- 1
-purify$ -- 620
+purify$ -- 676
 quote$ -- 0
-skip$ -- 3915
+skip$ -- 4271
 stack$ -- 0
-substring$ -- 27194
-swap$ -- 5099
-text.length$ -- 9
+substring$ -- 29650
+swap$ -- 5545
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 924
-warning$ -- 11
-while$ -- 1431
+type$ -- 1008
+warning$ -- 13
+while$ -- 1555
 width$ -- 0
-write$ -- 1850
+write$ -- 2015
 (There was 1 error message)
