@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: plan.aux
+The style file: ../thesis.bst
+Database file #1: /Users/benmoore/Documents/library.bib
+Database file #2: /Users/benmoore/Documents/customrefs.bib
+Repeated entry---line 11 of file /Users/benmoore/Documents/customrefs.bib
+ : @inproceedings{deng2012
+ :                        ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Lieberman2011"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 23 entries,
+            3024 wiz_defined-function locations,
+            771 strings with 10185 characters,
+and the built_in function-call counts, 31952 in all, are:
+= -- 3314
+> -- 997
+< -- 6
++ -- 718
+- -- 255
+* -- 2426
+:= -- 3475
+add.period$ -- 47
+call.type$ -- 23
+change.case$ -- 117
+chr.to.int$ -- 24
+cite$ -- 23
+duplicate$ -- 3295
+empty$ -- 2297
+format.name$ -- 333
+if$ -- 6573
+int.to.chr$ -- 3
+int.to.str$ -- 24
+missing$ -- 286
+newline$ -- 96
+num.names$ -- 69
+pop$ -- 1655
+preamble$ -- 1
+purify$ -- 92
+quote$ -- 0
+skip$ -- 505
+stack$ -- 0
+substring$ -- 3894
+swap$ -- 773
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 138
+warning$ -- 0
+while$ -- 213
+width$ -- 0
+write$ -- 279
+(There was 1 error message)
