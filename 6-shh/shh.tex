@@ -11,6 +11,13 @@
 \usepackage{standalone}
 \standalonetrue
 
+% Margins for pretty version ::
+%\usepackage[pass]{geometry}
+% Margins for university regulations ::
+\usepackage[top=2cm, bottom=4cm, left=4cm, right=2.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
 % don't hang captions
 \captionsetup{format=plain}
 
@@ -39,7 +46,7 @@ Here I discuss two collaborative projects involving the use of 4C and 5C data to
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=.7\textwidth]{figs/shhtad.pdf}
+\includegraphics[width=3.5in]{figs/shhtad.pdf}
 \captionsetup{width=\textwidth} 
 \caption[SHH--ZRS contacts occur within a stable TAD.]{ {\bf SHH--ZRS contacts occur within a stable TAD. }
 An approximately 1 Mb region of the mouse genome is shown below a Hi-C contact map (derived from previously published data\cite{Dixon2012}). A clear TAD can be identified spanning from SHH to ZRS, dashed lines show TAD boundaries called by \citet{Dixon2012}. This figure was generated for \citet{Anderson2014a}.
@@ -59,7 +66,7 @@ My part in this collaboration was to analyse 3C-seq (also known as 4C) data reco
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=.8\textwidth]{figs/shharc_full.pdf}
+\includegraphics[width=5in]{figs/shharc_full.pdf}
 \captionsetup{width=\textwidth} 
 \caption[TSA treatment induces a strong ZRS--SHH interaction. ]{ {\bf TSA treatment induces a strong ZRS--SHH interaction. }
 4C interactions are shown as edges from source node (ZRS enhancer bait fragment) to targets along an approximately 2 Mb region of chromosome 5. Edge width is proportional to the number of interactions, only highly significant interactions are shown (FDR $q$-value $<5 \times 10 ^{-5}$). Zoomed region shows the number of interactions of the bait region with SHH in both treated and untreated samples. Each rectangle is a restriction fragment, coloured by FDR $q$-value indicating the significance of the interaction above expected levels.

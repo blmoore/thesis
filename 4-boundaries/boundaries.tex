@@ -8,6 +8,13 @@
 \usepackage[cc]{titlepic}    % enable logo on title page
 \usepackage{graphicx}       % logo related
 
+% Margins for pretty version ::
+%\usepackage[pass]{geometry}
+% Margins for university regulations ::
+\usepackage[top=2cm, bottom=4cm, left=4cm, right=2.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
 \usepackage{standalone}
 \standalonetrue
 
@@ -52,7 +59,7 @@ We derived TAD boundaries according to established methods (see Methods XX) for 
 \begin{figure}
 \begin{center} 
 \makebox[\textwidth][c]{ 
-	\includegraphics[width=1.2\textwidth]{figs/alltads.pdf}
+	\includegraphics[width=6.8in]{figs/alltads.pdf}
 }
 \captionsetup{width=1.2\textwidth}
 \caption[TAD boundary enrichments and depletions.]{ {\bf TAD boundary enrichments and depletions.}
@@ -64,7 +71,7 @@ We derived TAD boundaries according to established methods (see Methods XX) for 
 \begin{figure}
 \begin{center} 
 \makebox[\textwidth][c]{ 
-	\includegraphics[width=1.2\textwidth]{figs/allcompartments.pdf}
+	\includegraphics[width=6.8in]{figs/allcompartments.pdf}
 }
 \captionsetup{width=1.2\textwidth}
 \caption[Compartment boundary enrichments and depletions.]{ {\bf Compartment boundary enrichments and depletions.}
@@ -77,7 +84,7 @@ Our findings confirmed the previously reported peaks (CTCF and POL2) and dip (H3
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=\textwidth]{figs/boundarysummary.pdf}
+\includegraphics[width=5.5in]{figs/boundarysummary.pdf}
 \captionsetup{width=\textwidth}
 \caption[Compartment and TAD boundary enrichment summary in three human cell types.]{ {\bf Compartment and TAD boundary enrichment summary in three human cell types.}
 (A) Selected profiles for locus-level features are shown for TAD boundaries (CTCF, H3K9me3 and POL2) and compartment boundaries (H2A.Z, H3K4me2 and YY1), as a mean normalized ChIP-seq signal relative to input chromatin per bin ($\pm1$ standard error). TAD boundaries were examined over $40$ kb bins over the $1$ Mb flanking each boundary; compartment boundaries were examined over 100-kb bins over $3$ Mb. (B) The significance of enrichment or depletion ($-\log_{10}(p)$ two-tailed Mann--Whitney test) of a feature was calculated as the boundary bin relative to the ten most peripheral bins (five either side). Points are scaled by the absolute mean difference in signal over the boundary relative to the mean of peripheral bins. ChIP-seq, chromatin immunoprecipitation sequencing; TAD, topological domain.
@@ -140,7 +147,7 @@ associated with compartment boundaries often spanning more than 1 Mb.
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=1.2\textwidth]{figs/ctcfyy1.pdf}
+\includegraphics[width=5.8in]{figs/ctcfyy1.pdf}
 \captionsetup{width=\textwidth}
 \caption[Distinct enrichments of CTCF and YY1 boundaries.]{ {\bf Distinct enrichments of CTCF and YY1 boundaries.}
 TAD boundary feature enrichments are shown (as in Fig. \ref{fig:boundarysummary}) for boundaries
@@ -182,7 +189,7 @@ To investigate this, we used the \texttt{RepeatMasker}\cite{Tarailo-Graovac2009}
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=.88\textwidth]{figs/rep_classprofiles.pdf}
+\includegraphics[width=4in]{figs/rep_classprofiles.pdf}
 \captionsetup{width=\textwidth}
 \caption[Repeat class average-o-grams over all TAD and compartment boundaries.]{ {\bf Repeat class average-o-grams over all TAD and compartment boundaries.}
 RepeatMasker repeat annotations are counted per 50 kb for 1 Mb either side of each TAD and compartment boundaries. The mean count genome-wide is plotted with $\pm 95\%$ confidence intervals.
@@ -194,7 +201,7 @@ At the level of repeat class, we corroborate the findings of \citet{Dixon2012} t
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=.9\textwidth]{figs/rep_classbubble.pdf}
+\includegraphics[width=3.2in]{figs/rep_classbubble.pdf}
 \captionsetup{width=\textwidth}
 \caption[Significance and effect sizes of repeat class enrichments/depletions over boundaries.]{ {\bf Significance and effect sizes of repeat class enrichments/depletions over boundaries.}
 Boundary profiles (Fig. \ref{fig:rep_classprofiles}) were tested for enrichment or depletion of each factor at the boundary bin relative to peripheral non-boundary bins (see Methods XX). Bubble area is proportional to the raw effect size of an enrichment or depletion. The Bonferroni-corrected significance threshold is highlighted with a dashed line.
@@ -209,7 +216,7 @@ Repeat classes can be broken into smaller repeat families. \citet{Dixon2012} rep
 \begin{figure}
 \begin{center} 
 \makebox[\textwidth][c]{ 
-\includegraphics[width=1.6\textwidth]{figs/rep_fambubble.pdf}
+\includegraphics[width=7in]{figs/rep_fambubble.pdf}
 }
 \captionsetup{width=\textwidth}
 \caption[Significance and effect sizes of repeat family enrichments/depletions over boundaries.]{ {\bf Significance and effect sizes of repeat family enrichments/depletions over boundaries.}
@@ -230,7 +237,7 @@ We attempted to model TAD boundaries in a variety of ways: firstly a using a cla
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=.9\textwidth]{figs/mt_feats.pdf}
+\includegraphics[width=4.5in]{figs/mt_feats.pdf}
 \captionsetup{width=\textwidth}
 \caption[Large metaTADs show greater enrichments for an array of boundary features.]{ {\bf Large metaTADs show greater enrichments for an array of boundary features.}
 Genome-wide profiles of epigenomic features and gene densities averaged over all TAD and metaTAD (10 -- 40 Mb) boundaries (ribbons show $95\%$ confidence intervals of the mean).
@@ -248,7 +255,7 @@ My contribution to this work was to explore these newly-described metaTAD struct
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=.9\textwidth]{figs/mt_laminperm.png}
+\includegraphics[width=4.5in]{figs/mt_laminperm.png}
 \captionsetup{width=\textwidth}
 \caption[MetaTADs align with lain associated domains.]{ {\bf MetaTADs align with lain associated domains.}
 Heatmaps of LaminB1 association microarray probe intensity values over MetaTAD boundaries (from domains of size 10 -- 40 Mb) and TAD boundaries, are displayed alongside examples of circularly-permuted boundaries. $42.6\%$ of MetaTAD boundaries (10 -- 40 Mb) had an absolute linear regression coefficient $>.05$ of lamin association intensities, indicating a boundary transition (versus $15.8\%$ expectation from 1000 circular permutations, $p < 1 \times 10^{-4}$). TAD boundaries were also significantly more associated with lamin association transitions (Observed: $11.8\%$, Expected: $9.5\%$; empirical p-value: $p < 1 \times 10^{-4}$). Profiles are shown $\pm450$ kb from each boundary.
@@ -260,7 +267,7 @@ Heatmaps of LaminB1 association microarray probe intensity values over MetaTAD b
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=.9\textwidth]{figs/mt_ts.pdf}
+\includegraphics[width=4.5in]{figs/mt_ts.pdf}
 \captionsetup{width=\textwidth}
 \caption[Observed enrichments persist over a time series.]{ {\bf Observed enrichments persist over a time series.}
 CAGE-defined active TSS (CTSS) were counted per 50 kb bin across each TAD and MetaTAD (10 -- 40 Mb) boundary and averaged (ribbons show $95\%$ confidence intervals of the mean). Gene densities refer to mean counts of annotated genes per bin, with an overlap of at least 250 bp. Peak heights suggest modestly stronger enrichments at MetaTAD boundaries relative to TAD boundaries. 
@@ -281,7 +288,7 @@ We examined the genome wide similarity of all interphase domain structure bounda
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=.7\textwidth]{figs/gbands.pdf}
+\includegraphics[width=3.8in]{figs/gbands.pdf}
 \captionsetup{width=\textwidth}
 \caption[ Giemsa--stain bands correspond to A/B compartments.]{ {\bf Giemsa--stain bands correspond to A/B compartments.}
 Placeholder
@@ -292,7 +299,7 @@ Placeholder
 \begin{figure}
 \begin{center} 
 \makebox[\textwidth][c]{ 
-\includegraphics[width=1.2\textwidth]{figs/gb_ideo.pdf}
+\includegraphics[width=5.75in]{figs/gb_ideo.pdf}
 }
 \captionsetup{width=\textwidth}
 \caption[Genome-wide agreement between Giemsa bands and A/B compartments in the Gm12878 cell type.]{ {\bf Genome-wide agreement between Giemsa bands and A/B compartments in the Gm12878 cell type.}
