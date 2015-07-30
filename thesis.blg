@@ -4,13 +4,13 @@ The top-level auxiliary file: thesis.aux
 The style file: thesis.bst
 A level-1 auxiliary file: 0-intro/intro.aux
 Database file #1: /Users/benmoore/Documents/library.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Database file #2: /Users/benmoore/Documents/customrefs.bib
 Repeated entry---line 11 of file /Users/benmoore/Documents/customrefs.bib
  : @inproceedings{deng2012
  :                        ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Deng2013"
-Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--there's a number but no volume in Li2014
 Warning--there's a number but no volume in Mifsud2015
@@ -25,45 +25,45 @@ Warning--there's a number but no volume in Anderson2014a
 Warning--empty journal in Hill2013a
 Warning--there's a number but no volume in Hill2013a
 Warning--there's a number but no volume in Lesne2014
-You've used 178 entries,
+You've used 182 entries,
             3024 wiz_defined-function locations,
-            1738 strings with 65321 characters,
-and the built_in function-call counts, 248372 in all, are:
-= -- 26062
-> -- 7513
-< -- 61
-+ -- 5415
-- -- 1921
-* -- 18652
-:= -- 26916
-add.period$ -- 356
-call.type$ -- 178
-change.case$ -- 891
-chr.to.int$ -- 179
-cite$ -- 191
-duplicate$ -- 25939
-empty$ -- 17827
-format.name$ -- 2491
-if$ -- 51170
+            1764 strings with 66559 characters,
+and the built_in function-call counts, 254920 in all, are:
+= -- 26769
+> -- 7701
+< -- 62
++ -- 5551
+- -- 1969
+* -- 19149
+:= -- 27598
+add.period$ -- 364
+call.type$ -- 182
+change.case$ -- 911
+chr.to.int$ -- 183
+cite$ -- 195
+duplicate$ -- 26630
+empty$ -- 18296
+format.name$ -- 2553
+if$ -- 52523
 int.to.chr$ -- 6
-int.to.str$ -- 179
-missing$ -- 2154
-newline$ -- 715
-num.names$ -- 531
-pop$ -- 12467
+int.to.str$ -- 183
+missing$ -- 2206
+newline$ -- 731
+num.names$ -- 543
+pop$ -- 12819
 preamble$ -- 1
-purify$ -- 712
+purify$ -- 728
 quote$ -- 0
-skip$ -- 4435
+skip$ -- 4523
 stack$ -- 0
-substring$ -- 30788
-swap$ -- 5799
+substring$ -- 31670
+swap$ -- 5939
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1062
+type$ -- 1086
 warning$ -- 13
-while$ -- 1617
+while$ -- 1657
 width$ -- 0
-write$ -- 2122
+write$ -- 2170
 (There was 1 error message)

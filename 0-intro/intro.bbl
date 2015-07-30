@@ -1,4 +1,4 @@
-\begin{thebibliography}{64}
+\begin{thebibliography}{69}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{de~Wit and de~Laat(2012)}]{DeWit2012}
@@ -203,6 +203,12 @@ Blackwood EM, Kadonaga JT (1998) {Going the distance: a current view of
   enhancer action.}
 \newblock \emph{Science (New York, N.Y.)}, \textbf{281}(5373): 60--63.
 
+\bibitem[{Tolhuis \emph{et~al.}(2002)Tolhuis, Palstra, Splinter, Grosveld and
+  {De Laat}}]{Tolhuis2002}
+Tolhuis B, Palstra RJ, Splinter E, Grosveld F, {De Laat} W (2002) {Looping and
+  interaction between hypersensitive sites in the active ??-globin locus}.
+\newblock \emph{Molecular Cell}, \textbf{10}(6): 1453--1465.
+
 \bibitem[{van~de Corput \emph{et~al.}(2012)van~de Corput, de~Boer, Knoch, van
   Cappellen, Quintanilla, Ferrand and Grosveld}]{VandeCorput2012a}
 van~de Corput MPC, de~Boer E, Knoch Ta, van Cappellen Wa, Quintanilla a,
@@ -230,6 +236,34 @@ Ong CT, Corces VG (2014) {CTCF: an architectural protein bridging genome
 \bibitem[{Phillips and Corces(2009)}]{Phillips2009}
 Phillips JE, Corces VG (2009) {CTCF: Master Weaver of the Genome}.
 \newblock \emph{Cell}, \textbf{137}(7): 1194--1211.
+
+\bibitem[{Filippova \emph{et~al.}(1996)Filippova, Fagerlie, Klenova, Myers,
+  Dehner, Goodwin, Neiman, Collins and Lobanenkov}]{Filippova1996a}
+Filippova GN, Fagerlie S, Klenova EM, Myers C, Dehner Y, Goodwin G, Neiman PE,
+  Collins SJ, Lobanenkov VV (1996) {An exceptionally conserved transcriptional
+  repressor, CTCF, employs different combinations of zinc fingers to bind
+  diverged promoter sequences of avian and mammalian c-myc oncogenes.}
+\newblock \emph{Molecular and cellular biology}, \textbf{16}(6): 2802--2813.
+
+\bibitem[{Splinter \emph{et~al.}(2006)Splinter, Heath, Kooren, Palstra, Klous,
+  Grosveld, Galjart and {De Laat}}]{Splinter2006}
+Splinter E, Heath H, Kooren J, Palstra RJ, Klous P, Grosveld F, Galjart N, {De
+  Laat} W (2006) {CTCF mediates long-range chromatin looping and local histone
+  modification in the ??-globin locus}.
+\newblock \emph{Genes and Development}, \textbf{20}(17): 2349--2354.
+
+\bibitem[{Phillips-Cremins \emph{et~al.}(2013)Phillips-Cremins, Sauria, Sanyal,
+  Gerasimova, Lajoie, Bell, Ong, Hookway, Guo
+  \emph{et~al.}}]{Phillips-Cremins2013}
+Phillips-Cremins JE, Sauria MEG, Sanyal A, Gerasimova TI, Lajoie BR, Bell JSK,
+  Ong CT, Hookway Ta, Guo C, \emph{et~al.} (2013) {Architectural Protein
+  Subclasses Shape 3D Organization of Genomes during Lineage Commitment.}
+\newblock \emph{Cell}, \textbf{153}(6): 1281--95.
+
+\bibitem[{G\'{o}mez-D\'{\i}az and Corces(2014)}]{Gomez-Diaz2014}
+G\'{o}mez-D\'{\i}az E, Corces VG (2014) {Architectural proteins: regulators of
+  3D genome organization in cell fate}.
+\newblock \emph{Trends in Cell Biology}, \textbf{24}(11): 703--711.
 
 \bibitem[{Crane \emph{et~al.}(2015)Crane, Bian, McCord, Lajoie, Wheeler,
   Ralston, Uzawa, Dekker and Meyer}]{Crane2015}
