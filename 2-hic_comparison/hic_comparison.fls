@@ -151,6 +151,10 @@ INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/varwidth/varwidth.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/varwidth/varwidth.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/filemod/filemod-expmin.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/filemod/filemod-expmin.sty
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT hic_comparison.aux
 INPUT hic_comparison.aux
 OUTPUT hic_comparison.aux
@@ -295,9 +299,9 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplrij8r.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplri9o.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplr9o.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplrc8r.tfm
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplri9o.vf
 INPUT figs/taddist.pdf
 INPUT ./figs/taddist.pdf
 INPUT ./figs/taddist.pdf
@@ -327,8 +331,6 @@ INPUT ./figs/longrange.pdf
 INPUT figs/nucpos.pdf
 INPUT ./figs/nucpos.pdf
 INPUT ./figs/nucpos.pdf
-INPUT hic_comparison.bbl
-INPUT hic_comparison.bbl
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
@@ -336,6 +338,8 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
+INPUT hic_comparison.bbl
+INPUT hic_comparison.bbl
 INPUT hic_comparison.aux
 INPUT ./hic_comparison.out
 INPUT ./hic_comparison.out

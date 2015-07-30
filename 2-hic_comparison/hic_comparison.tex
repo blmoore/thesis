@@ -12,6 +12,13 @@
 \usepackage{standalone}
 \standalonetrue
 
+% Margins for pretty version ::
+%\usepackage[pass]{geometry}
+% Margins for university regulations ::
+\usepackage[top=2cm, bottom=4cm, left=4cm, right=2.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
 % don't hang captions
 \captionsetup{format=plain}
 
@@ -55,7 +62,7 @@ Next a filtering step was applied, which removed those fragment pairs that were 
 % figure showing contact maps, before and after (split cell type?)
 \begin{figure}
 \begin{center}
-\includegraphics[width=.8\textwidth]{figs/hicnorm.png}
+\includegraphics[width=4in]{figs/hicnorm.png}
 \captionsetup{width=\textwidth}
 \caption[Iterative correction converts raw counts to normalised interaction frequencies.]{
 {\bf Iterative correction converts raw counts to normalised interaction frequencies. }
@@ -74,7 +81,7 @@ After uniformly reprocessing each Hi-C dataset and calling compartment eigenvect
 \begin{figure}
 \begin{center}
 \makebox[\textwidth][c]{ 
-\includegraphics[width=1.2\textwidth]{figs/wiggles.pdf}
+\includegraphics[width=\textwidth]{figs/wiggles.pdf}
 }
 \captionsetup{width=\textwidth}
 \caption[Compartment profiles are observably well-correlated between human cell types and across all chromosomes]{
@@ -88,7 +95,7 @@ This close correspondence also validates our approach of combining these differe
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=.5\textwidth]{figs/compartment_corr.png}
+\includegraphics[width=3in]{figs/compartment_corr.png}
 \captionsetup{width=\textwidth}
 \caption[Compartment eigenvectors are highly correlated between human cell types]{
 {\bf Compartment eigenvectors are highly correlated between human cell types.}
@@ -110,7 +117,7 @@ In practice, this acts to de-noise our compartment calls. Where single sign-chan
 % figure showing raw eigs with hmm calls
 \begin{figure}
 \begin{center}
-\includegraphics[width=.9\textwidth]{figs/hmm_calls.png}
+\includegraphics[width=4.5in]{figs/hmm_calls.png}
 \captionsetup{width=\textwidth}
 \caption[Compartment calls by simple thresholding method or context-aware HMMs.]{ {\bf Compartment calls by simple thresholding method or context-aware HMMs.}
 Chromosome compartments have previously been called through simple thresholding at $0$,\cite{Lieberman2009} in this work we also use an HMM-based method to call unobserved states that have emitted our noisy observed values (\emph{right}).
@@ -127,7 +134,7 @@ Topological associating domains (TADs) are self-interacting blocks of the genome
 % figure with number of tads per cell type
 \begin{figure}
 \begin{center} 
-\includegraphics[width=\textwidth]{figs/ntads.pdf}
+\includegraphics[width=5in]{figs/ntads.pdf}
 \captionsetup{width=\textwidth} 
 \caption[The number of called TADs per cell type under study.]{ {\bf The number of called TADs per cell type under study. }
 A greater number of TADs were called in H1 hESC ($2,897$ total) than in GM12878 ($1,925$) or K562 ($1,677$), due to the difference in sequencing depths in each experiment when matrices were binned at 40 kb resolution.
@@ -141,7 +148,7 @@ Despite differing numbers, there is still detectable levels of conservation of T
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=.45\textwidth]{figs/taddist.pdf}
+\includegraphics[width=2.5in]{figs/taddist.pdf}
 \captionsetup{width=\textwidth}
 \caption[TAD boundaries are shared between cell types. ]{ {\bf TAD boundaries are shared between cell types. }
 The empirical cumulative density functions (ECDF) of distances between H1 TADs and those called in GM12878 and K562 are shown. These distances were compared with a null distribution calculated from randomly placed boundaries allocated at a matched resolution.
@@ -152,7 +159,7 @@ The empirical cumulative density functions (ECDF) of distances between H1 TADs a
 \begin{figure}
 \begin{center} 
 \makebox[\textwidth][c]{ 
-\includegraphics[width=1.2\textwidth]{figs/blowout.png}
+\includegraphics[width=\textwidth]{figs/blowout.png}
 }
 \captionsetup{width=\textwidth} 
 \caption[Concordance of chromatin structure at multiple scales over three human cell types.]{ {\bf Concordance of chromatin structure at multiple scales over three human cell types. }
@@ -172,7 +179,7 @@ The overwhelming majority of intersected chromatin features are significantly en
 \begin{figure}
 \begin{center}
 \makebox[\textwidth][c]{ 
-\includegraphics[width=1.4\textwidth]{figs/compartment_encode.pdf}
+\includegraphics[width=1.1\textwidth]{figs/compartment_encode.pdf}
 }
 \captionsetup{width=\textwidth}
 \caption[The chromatin signatures of A/B compartments.]{ {\bf The chromatin signatures of A/B compartments. }
@@ -189,7 +196,7 @@ Unlike compartments, initially TAD were not observably correlated with blocks of
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=.9\textwidth]{figs/tads_encode.pdf}
+\includegraphics[width=4.4in]{figs/tads_encode.pdf}
 \captionsetup{width=\textwidth}
 \caption[TADs reflect epigenetic domains.]{ {\bf TADs reflect epigenetic domains. }
 Following the Drosophila results of \citet{Sexton2012}, clustering of TAD domains by mean log2 signal of 34 ENCODE features distinguishes “null”, “active” and polycomb-associated (PcG) domains, as well as reflecting the encompassing A/B compartments.
@@ -210,7 +217,7 @@ To conservatively call regions of variable structure (RVS), we used HMM-called c
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=.9\textwidth]{figs/examplervs.png}
+\includegraphics[width=4.5in]{figs/examplervs.png}
 \captionsetup{width=\textwidth} 
 \caption[Structurally variable regions indicate cell type specific biology.]{ {\bf Structurally variable regions indicate cell type specific biology. } 
 Regions occupying the active A nuclear compartment in one cell type, but the repressive B compartment in the other two, were selected and ranked by the number of predicted active enhancers. Examples of particular interest from the top 5 regions per cell type are shown: (A) the chr5:158-159 Mb region which occupies the open A compartment in GM12878 cells, (B) the chr20:21-22 Mb region which is open in H1 hESC, (C) the chr8: 106-107 Mb region which is open in K562. Displayed tracks are: known (UCSC) genes, compartment eigenvectors, chromHMM/Segway combined chromatin state predictions, open chromatin FAIRE peaks, and H3K27ac signal.  
@@ -227,7 +234,7 @@ We found that RVS show a striking enrichment for cell-type specific enhancers in
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=.7\textwidth]{figs/enhancerstates.pdf}
+\includegraphics[width=3.5in]{figs/enhancerstates.pdf}
 \captionsetup{width=\textwidth}
 \caption[Regions of variable structure are enriched for cell type specific enhancers.]{ {\bf Regions of variable structure are enriched for cell type specific enhancers. }
 Numbers of predicted enhancer states (cell type specific or shared between two or more cell types) are shown for regions with altered (open or closed) and non-altered (none) compartments in each cell type.
@@ -240,7 +247,7 @@ Together these state enrichments suggest the identified RVS reflect regions of c
 \begin{figure}
 \begin{center}
 \makebox[\textwidth][c]{ 
-\includegraphics[width=1.2\textwidth]{figs/stateenrich.pdf}
+\includegraphics[width=1.1\textwidth]{figs/stateenrich.pdf}
 }
 \captionsetup{width=\textwidth}
 \caption[Distributions of features across all predicted chromatin states in regions of
@@ -269,7 +276,7 @@ A defining characteristic of active A compartment regions is a preferential bias
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=.9\textwidth]{figs/longrange.pdf}
+\includegraphics[width=5in]{figs/longrange.pdf}
 \captionsetup{width=\textwidth} 
 \caption[Regions of variable higher order structure change their genome-wide
 contact profiles to favour active compartments.]{ {\bf Regions of variable higher order structure change their genome-wide contact profiles to favour active compartments. }
@@ -306,7 +313,7 @@ and peripheral ($F_{edge}$). The difference was found to be statistically signif
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=\textwidth]{figs/nucpos.pdf}
+\includegraphics[width=5in]{figs/nucpos.pdf}
 \captionsetup{width=\textwidth} 
 \caption[Nuclear positioning of chromosomes relative to compartment eigenvectors.]{ {\bf Nuclear positioning of chromosomes relative to compartment eigenvectors. }
 Kernel density estimates showing peripheral chromosomes have a greater proportion of B compartments (negative eigenvectors) relative to centrally-position chromosomes. Positioning data from \citet{Boyle2001} (Methods XX).
