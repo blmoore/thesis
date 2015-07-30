@@ -11,10 +11,16 @@
 \usepackage{bm} % bold math
 \usepackage{amsmath} % underset
 \usepackage{hyperref} % urls
-\usepackage{standalone}
 \usepackage[]{algorithm2e}
 \usepackage{array}
 \usepackage{booktabs}
+
+% Margins for pretty version ::
+%\usepackage[pass]{geometry}
+% Margins for university regulations ::
+\usepackage[top=2cm, bottom=4cm, left=4cm, right=2.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
 
 % don't hang captions
 \captionsetup{format=plain}
@@ -22,6 +28,7 @@
 \newcolumntype{L}{>{\centering\arraybackslash}m{4cm}}
 \definecolor{light-gray}{gray}{0.95}
 
+\usepackage{standalone}
 \standalonetrue 
 
 % bibliography
@@ -139,7 +146,7 @@ To quantify collinearity of input features, correlation matrices built from geno
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=\textwidth]{figs/randforests.pdf}
+\includegraphics[width=4.5in]{figs/randforests.pdf}
 \captionsetup{width=\textwidth}
 \caption[Random Forests overview.]{ {\bf Random Forests overview. } 
  Random Forests are an ensemble of bagged, de-correlated classification or regression trees first described by Breiman.\cite{Breiman2001a}
@@ -171,7 +178,7 @@ with the dataset used in this work (Fig. \ref{fig:rfparam}).
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=\textwidth]{figs/rfparams.pdf}
+\includegraphics[width=5in]{figs/rfparams.pdf}
 \captionsetup{width=\textwidth}
 \caption[Random Forest parameters are largely insensitive.]{ {\bf Random Forest parameters are largely insensitive. } 
 Two user-facing Random Forest paramters are known to be insensitive over a broad range.\cite{Hastie2001} Optimisations for $ntrees$ (the number of trees in the forests) and $mtry$ (the number of features tested at each node) are shown for three different models, with typical values of 200 trees and $\frac{1}{3}$ of input variables highlighted.
