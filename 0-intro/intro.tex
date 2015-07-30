@@ -75,7 +75,7 @@ Capture-C is another recent Hi-C derivative which attempts to address resolution
 
 Use of a cell population also averages away cell-cycle effects, with the vast majority of results coming from cells during interphase (around $97\%$\cite{Naumova2013}). Naumova \emph{et al.}\cite{Naumova2013} looked to assay chromosome conformation specifically over different cell cycle stages, to better understand chromosome compaction during mitosis.
 
-In-site Hi-C was a recent refinement of the Hi-C method, from the published of the original method.\cite{Rao2014} The principle difference is that fixation and ligation now happen in place, within intact cell nuclei.
+\emph{In-situ} Hi-C was a recent refinement of the Hi-C method, from the published of the original method.\cite{Rao2014} The principle difference is that fixation and ligation now happen in place, within intact cell nuclei.
 
 \subsection{Chromosome compartments}\label{sec:compartments}
 
@@ -99,7 +99,7 @@ These compartments were identified through a continuous eigenvector profile, der
 
 The falling cost of high-throughput sequencing enabled increasingly deep sequencing of Hi-C experiments. Sequencing is the main resolution-limiting resource for this assay, as to increase the analysis resolution and maintain the level of coverage requires an exponential increase in the total amount of sequencing required.\cite{Lieberman2009, Tanay2013}
 
-In experiments totalling around two billion total sequencing reads, Dixon \emph{et al.}\cite{Dixon2012} produced Hi-C contact maps in human and mouse cell lines at 40 kb resolution. The authors noticed smaller domains they designated "topological associative domains" (or TADs) which were observable as self-interacting, off-diagonal blocks of higher-than-expected self-interaction frequency. They defined a domain calling algorithm based on the directional bias of a genomic region's contacts, and used a Hidden Markov Model to infer blocks of strongly up- or downstream-biased, reasoning that domain boundaries are present when a strongly upstream biased region is adjacent to a region of opposite bias (Fig. \ref{fig:dicalc}). These boundaries themselves were investigated and were found to display suggestive functional enrichments for DNA binding proteins including CTCF, long thought to act as an insulator of chromatin state.
+In experiments totalling around two billion total sequencing reads, Dixon \emph{et al.}\cite{Dixon2012} produced Hi-C contact maps in human and mouse cell lines at 40 kb resolution. The authors noticed smaller domains they designated "topological associative domains" (or TADs) which were observable as self-interacting, off-diagonal blocks of higher-than-expected self-interaction frequency. They defined a domain calling algorithm based on the directional bias of a genomic region's contacts, and used a Hidden Markov Model to infer blocks of strongly up- or downstream-biased, reasoning that domain boundaries are present when a strongly upstream biased region is adjacent to a region of opposite bias (Fig. \ref{fig:dicalc}). These boundaries themselves were investigated and were found to display suggestive functional enrichments for DNA binding proteins including CTCF, long thought to act as an insulator of chromatin state (Section \ref{intro:loops}).
 
 \begin{figure}
 \begin{center}
@@ -135,18 +135,27 @@ Lieberman Aiden \emph{ et al.}\cite{Lieberman2009} tested a number of theoretica
 
 The fractal globule model was noted for its appealing functional properties. Under this model, for example, the polymer folds are knot-free hence could facilitate local dynamics of repression and activation without wider disruption. Despite this appeal, the authors were careful to state that while their simulations show good agreement with observed data, this does not preclude other organisational models from having similar or greater explanatory power.\cite{Lieberman2009}
 
-\subsection{Strings and binders switch}
+\subsection{Strings and binders switch}\label{intro:sbs}
 
-Subsequent modelling techniques integrated known biological phenomena as well as polymer models. This formed the basis of Barbieri \emph{et al.}'s\cite{Barbieri2012} ``strings and binders switch" (SBS) model, where the authors simulated polymer folding in the presence of DNA binding factors, such as the known genome organiser CCCTC-binding factor (CTCF).\cite{Phillips2009} This organisational model was developed in an attempt to consolidate global Hi-C measures of contact scaling with C-based experiments on smaller regions and FISH studies, which found a range of scaling parameters. The authors also explore the different values of $\alpha$ between cell lines and even chromosomes, and find that their mechanistic model can explain each case using variable concentrations of binders which causes phase-switching between open and compacted chromatin, with fractal globule existing at the phase transition boundary.
+Subsequent modelling techniques integrated known biological phenomena as well as polymer models. This formed the basis of Barbieri \emph{et al.}'s\cite{Barbieri2012} ``strings and binders switch" (SBS) model, where the authors simulated polymer folding in the presence of DNA binding factors, such as the known genome organiser CTCF (Section \ref{intro:loops}). This organisational model was developed in an attempt to consolidate global Hi-C measures of contact scaling with C-based experiments on smaller regions and FISH studies, which found a range of scaling parameters. The authors also explore the different values of $\alpha$ between cell lines and even chromosomes, and find that their mechanistic model can explain each case using variable concentrations of binders which causes phase-switching between open and compacted chromatin, with fractal globule existing at the phase transition boundary.
 
-This model offers broad explanatory power for a range of observed power law coefficients ($\alpha$) and from simple underpinnings, but critics point out that simulations were performed on a polymer composed of just 500 monomers.
+This model offers broad explanatory power for a range of observed power law coefficients ($\alpha$) and from simple underpinnings, but critics point out that simulations were performed on a polymer composed of just 512 monomers so may not be broadly applicable.\cite{Dekker2013}
 
-\subsection{Looping}
+\subsection{Looping}\label{intro:loops}
+
+It has long been thought that enhancer elements are brought into proximity with the promoter(s) they're regulating; under this model, these contacts form a "loop" structure between two potentially distal loci.\cite{Kadauke2009a, Sexton2009} A model region, the $\beta$-globin locus and its locus control region (LCR) located 40-80 kb away,\cite{Dekker2013} has been studied since the early 1980s,\cite{Banerji1981, Engel2000, Blackwood1998} and is an interesting example of how enhancer elements can effect broader nuclear architecture. Current knowledge suggests the $\beta$-globin forms loops with the multiple distal \emph{cis}-enhancer elements which make up the LCR, together forming an active chromatin hub (ACH).\cite{VandeCorput2012a} Within such a hub, regulatory signals could be efficiently integrated to dictate the overall activity of the target locus.\cite{Pombo2015} It is now thought that the majority of active promoters are engaged with multiple, often cell type specific, regulatory looping events.\cite{Sanyal2012, Jin2013}
+
+A notable component of many long-range looping events is the CCCTC-binding transcription factor (CTCF),\cite{Ong2014, Phillips2009} already mentioned as a component of TAD boundaries (Section \ref{intro:tads}) and as a looping factor in the SBS model (Section \ref{intro:sbs}).
+
+% bring back around to Rao2014 via CTCF
+
+% Reviews: Ong2014, Philips2009
+
+%A more liberal definition of looping has been used to explain nuclear architecture at multiple scales: from DNA looping around histone octamers, to transcription factories bringing together multiple loci and finally to these distant contacts between enhancers and promoters, in the scale of megabases.\cite{Heermann2011}
 
 \subsection{Cell cycle changes}
 
-Chromosome structure has been assayed both through mitosis\cite{Naumova2013} and 
-Studies have also focused on the edge-case of chromatin structures on X-chromosomes. 
+Chromosome structure has been assayed both through mitosis\cite{Naumova2013} and studies have also focused on the edge-case of chromatin structures on X-chromosomes.\cite{Crane2015}
 
 \section{Criticisms of C-methods}
 
@@ -180,30 +189,29 @@ be related to higher order genome organisation. \\
 
 \subsection{ENCODE}
 
-The Encyclopaedia of DNA Elements (ENCODE) is a consortium project started over a decade ago with the ambitious aim of comprehensively cataloguing all functional elements in the human genome.\cite{Feingold2004, Qu2013, Dunham2012} This project involves huge amounts of data production from a diverse array of experimental methods, such as: ChIP-seq, DNase-seq, RNA-seq, CAGE, DNase-seq and ChiA-PET.\cite{Myers2011} Importantly these methods were applied to a range of human cell types, including many well-studied immortalised cell lines as well as primary cells and tissues, and according to standardised experimental methods\cite{Landt2012} coupled with statistical quality control\cite{Dunham2012, Boyle2014, Marinov2013} to ensure data is comparable between different data produces and of consistently-high accuracy. 
-
-Despite ENCODE's human-focus, there also exists spin-off projects aimed at building similar genomics resources for mouse\cite{Yue2014} and, more recently, \emph{Drosophila} and \emph{C. elegans}.\cite{Ho2014} Together these data sources offer an unparalleled resource for comparative and within-species genomics research, and as such have been used in at least 1200 publications to date.\cite{encodenews}
+The Encyclopaedia of DNA Elements (ENCODE) is a consortium project started over a decade ago with the ambitious aim of comprehensively cataloguing all functional elements in the human genome.\cite{Feingold2004, Qu2013, Dunham2012} This project involves huge amounts of data production from a diverse array of experimental methods, such as: ChIP-seq, DNase-seq, RNA-seq, CAGE, DNase-seq and ChiA-PET.\cite{Myers2011} Importantly these methods were applied to a range of human cell types, including many well-studied immortalised cell lines as well as primary cells and tissues, and according to standardised experimental methods\cite{Landt2012} coupled with statistical quality control\cite{Dunham2012, Boyle2014, Marinov2013} to ensure data is comparable between different data produces and of consistently-high accuracy. Despite ENCODE's human-focus, there also exists spin-off projects aimed at building similar genomics resources for mouse\cite{Yue2014} and, more recently, \emph{Drosophila} and \emph{C. elegans}.\cite{Ho2014} Together these data sources offer an unparalleled resource for comparative and within-species genomics research, and as such have been used in at least 1200 publications to date.\cite{encodenews}
 
 Data generated by ENCODE consortium members has a proven utility in genomics research. 
 % First SegWay, chromHMM, then predictive ML
-Notable two ENCODE-associated groups have released models which classify the human genome into discrete "chromatin states", such as actively transcribed regions or gene promoters. The first, named \texttt{SegWay}, trained a dynamic Bayesian network on  31 ENCODE-generated input variables and called an unsupervised 25-state genome segmentation in the ENCODE pilot region.\cite{Hoffman2012} Independently another chromatin state predictor named \texttt{ChromHMM} was developed.\cite{Ernst2011, Ernst2012} As the name suggests, this approach instead used multivariate Hidden Markov Models (HHMs) and has the capability to learn a single generative model over multiple cell types. Original runs of the model called 51 chromatin states using over 40 input features,\cite{Ernst2010a} but more recently these two methods were combined to call a consensus set of just 7 chromatin states.\cite{Hoffman2013} This discretisation of the chromatin landscape greatly helps interpretability, at the cost of simplifying the complex underlying data series, and is used for this reason later in this work (Section XX). 
+Notable two ENCODE-associated groups have released models which classify the human genome into discrete "chromatin states", such as actively transcribed regions or gene promoters. The first, named \texttt{SegWay}, trained a dynamic Bayesian network on  31 ENCODE-generated input variables and called an unsupervised 25-state genome segmentation in the ENCODE pilot region.\cite{Hoffman2012} Independently another chromatin state predictor named \texttt{ChromHMM} was developed.\cite{Ernst2011, Ernst2012} As the name suggests, this approach instead used multivariate Hidden Markov Models (HHMs) and has the capability to learn a single generative model over multiple cell types. Original runs of the model called 51 chromatin states using over 40 input features,\cite{Ernst2010a} but more recently these two methods were combined to call a consensus set of just 7 chromatin states.\cite{Hoffman2013} Since their publication, a study was able to experimentally validate many of these state predictions.\cite{Kwasnieski2014} This discretisation of the chromatin landscape greatly helps interpretability, at the cost of simplifying the complex underlying data series, and is used for this reason later in this work (Section XX). 
 
-More broadly, ENCODE data has been used by external researchers to generate input variables for machine learning-based predictive models which describe transcriptional output,\cite{Cheng2011} gene regulation,\cite{Althammer2012} and enhancer chromatin states\cite{Rajagopal2013} to name but a few. One such study in particular, that of \citet{Dong2012}, is reproduced and further analysed in this work (Section XX) and is used as a template for our own machine learning framework (Section XX). We also make use of ENCODE data in other chapters (e.g. \ref{chap:boundaries}) due to its comprehensive coverage of model human cell types and stringent data production guidelines referenced above.
+More broadly, ENCODE data has been used by external researchers to generate input variables for machine learning-based predictive models which describe transcriptional output,\cite{Cheng2011} gene regulation,\cite{Althammer2012} cell cycle-associated genes \cite{Cheng2013} and enhancer identification\cite{Rajagopal2013} to name but a few. One such study in particular, that of \citet{Dong2012}, is reproduced and further analysed in this work (Section XX) and is used as a template for our own machine learning framework applied in the context of higher order chromatin structure (Section XX). We also make use of ENCODE data in other chapters (e.g. \ref{chap:boundaries}) due to its comprehensive coverage of model human cell types and stringent data production guidelines referenced above.
 
+\subsection{Related work}
 
-The recent comprehensive ChIP-seq datasets
-produced by the ENCODE consortium\cite{Dunham2012} combined with Hi-C
-genome-wide contact maps in a number of human cell
-types\cite{Dixon2012, Lieberman2009, Kalhor2012} present a remarkable
-opportunity to investigate the relationships between local
-chromatin features and higher order structure.
-
-In this work, a machine-learning approach was employed to model the
-compartmental characteristics of large genomic regions based on their
-aggregate levels of various histone marks and DNA binding
-proteins. Dissection of the resulting models was then used as a
-means of gleaning biological insights into the basis of higher order
-structure and of highlighting important differences between cell types.
+%The recent comprehensive ChIP-seq datasets
+%produced by the ENCODE consortium\cite{Dunham2012} combined with Hi-C
+%genome-wide contact maps in a number of human cell
+%types\cite{Dixon2012, Lieberman2009, Kalhor2012} present a remarkable
+%opportunity to investigate the relationships between local
+%chromatin features and higher order structure.
+%
+%In this work, a machine-learning approach was employed to model the
+%compartmental characteristics of large genomic regions based on their
+%aggregate levels of various histone marks and DNA binding
+%proteins. Dissection of the resulting models was then used as a
+%means of gleaning biological insights into the basis of higher order
+%structure and of highlighting important differences between cell types.
 
 % machine learning schematic for (e.g.) chromHMM ?
 
