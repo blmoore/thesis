@@ -11,6 +11,13 @@
 \usepackage{standalone}
 \standalonetrue
 
+% Margins for pretty version ::
+%\usepackage[pass]{geometry}
+% Margins for university regulations ::
+\usepackage[top=2cm, bottom=4cm, left=4cm, right=2.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
 % don't hang captions
 \captionsetup{format=plain}
 
@@ -46,7 +53,7 @@ The final step was an all-versus-all assay, capable of assaying pairwise interac
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=\textwidth]{figs/hic.png}
+\includegraphics[width=4in]{figs/hic.png}
 \captionsetup{width=\textwidth}
 \caption[Steps in the Hi-C assay.]{ {\bf Steps in the Hi-C assay. } 
   Schematic of the Hi-C experimental procedure as described in Lieberman Aiden \emph{et al.}\cite{Lieberman2009}
@@ -96,8 +103,8 @@ In experiments totalling around two billion total sequencing reads, Dixon \emph{
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=.5\textwidth]{figs/di_example.png}
-\captionsetup{width=1.2\textwidth}
+\includegraphics[width=2.5in]{figs/di_example.png}
+\captionsetup{width=\textwidth}
 \caption[Dixon \emph{et al.} pipeline for calling topological associating domains (TADs).]{ {\bf Dixon \emph{et al.} pipeline for calling topological associating domains (TADs).} First a directionality index (DI) is calculated for each bin based on the ratio of upstream:downstream contacts. Secondly a Hidden Markov Model (HMM) is used to infer the most likely state sequence that emitted the DI variable. Finally a simple rule is applied whereby a run of high-confidence upstream-biased state calls marks the end of a domain. New domains begin with any subsequent downstream-biased state. Gaps between TAD calls can be observed, and as labelled border regions up to a size threshold of 400 kb, whereafter those regions are unclassified.\cite{Dixon2012}
 }\label{fig:dicalc}
 \end{center}

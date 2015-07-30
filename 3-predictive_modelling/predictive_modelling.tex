@@ -225,7 +225,7 @@ representing approximately $8\%$ of the dataset (Fig. \ref{fig:bestbin}).
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=.9\textwidth]{figs/bestbinSummary.pdf}
+\includegraphics[width=4.5in]{figs/bestbinSummary.pdf}
 \captionsetup{width=\textwidth}
 \caption[Distributions of bestbin locations relative to the
   TSS.]{ {\bf Distributions of bestbin locations relative to the
@@ -326,7 +326,7 @@ We built Random Forest regression models (Methods \ref{sec:rf}) to predict compa
 \begin{figure}
 \begin{center} 
 \makebox[\textwidth][c]{ 
-\includegraphics[width=1.3\textwidth]{figs/modelres.pdf}
+\includegraphics[width=1.1\textwidth]{figs/modelres.pdf}
 }
 \captionsetup{width=\textwidth} 
 \caption[Compartment eigenvector model predictions are highly correlated with observed values.]{ {\bf Compartment eigenvector model predictions are highly correlated with observed values.}  Pearson correlation coefficient (PCC) and root mean-squared error (RMSE) report the degree of success of the regression model, whereas accuracy (Acc.) and area under the receiver operating characteristic (AUROC) give the classification accuracy of binarized outcomes.
@@ -348,7 +348,7 @@ To test if over-fitting was causing our high observed accuracy, we cross-applied
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=.7\textwidth]{figs/xapp.pdf}
+\includegraphics[width=3.5in]{figs/xapp.pdf}
 \captionsetup{width=\textwidth} 
 \caption[ Models of higher order chromatin structure learned in one cell type can be cross-applied to others.]{ {\bf Models of higher order chromatin structure learned in one cell type can be cross-applied to others. }
  Each model, trained in one cell type, was applied to the chromatin feature datasets from the other two cell types. (A) The GM12878 model achieved high accuracy when applied to K562 features (PCC $= 0.76$), as did the reciprocal cross (PCC $= 0.75$). (B) In each case, predictive accuracy decreased on cross-application but there remains significant agreement between predicted and empirical values. Acc., accuracy; AUROC, area under the receiver operating characteristic curve; PCC, Pearson correlation coefficient; RMSE, root mean-squared error.
@@ -362,7 +362,7 @@ We found cross-application between cell types was possible and with similarly-hi
  
 \begin{figure}
 \begin{center} 
-\includegraphics[width=.6\textwidth]{figs/stratmod.pdf}
+\includegraphics[width=3.5in]{figs/stratmod.pdf}
 \captionsetup{width=\textwidth} 
 \caption[Genomic regions that vary across cell types are modelled less successfully than static regions.]{ {\bf Genomic regions that vary across cell types are modelled less successfully than static regions. }
 Genome-wide compartment eigenvectors were partitioned into thirds according to their median absolute deviation (MAD) across the three cell types under study. Models were fit independently to each third, and the modelling accuracy is compared.
@@ -408,7 +408,7 @@ To assess the significance of observed intersections (Fig. \ref{fig:top10venn}),
 \begin{figure}
 \begin{center} 
 \makebox[\textwidth][c]{ 
-\includegraphics[width=1.2\textwidth]{figs/varimp_diff.pdf}
+\includegraphics[width=1.1\textwidth]{figs/varimp_diff.pdf}
 }
 \captionsetup{width=\textwidth} 
 \caption[Comparison of variable importance between three cell type specific Random Forest models.]{ {\bf Comparison of variable importance between three cell type specific Random Forest models. }
@@ -422,7 +422,7 @@ In addition to rankings, raw variable importance metrics can be compared between
 % figure showing e.g. how individual var regresses against eigen (Egr1compare.pdf)
 \begin{figure}
 \begin{center} 
-\includegraphics[width=\textwidth]{figs/h1feats.pdf}
+\includegraphics[width=4.5in]{figs/h1feats.pdf}
 \captionsetup{width=\textwidth} 
 \caption[Correlations of individual features with compartment eigenvector in the H1 hESC cell type.]{ {\bf Correlations of individual features with compartment eigenvector in the H1 hESC cell type. }
 Two-dimensional kernel density estimates show the density of points in a scatterplot of compartment eigenvector ($x$-axis) against each input feature individually ($y$-axes). Features with a PCC against eigenvector of above or below $0.1$ are coloured as positive or negative, respectively.
@@ -438,7 +438,7 @@ We have an \emph{a priori} expectation of multicollinearity in our feature set, 
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=.775\textwidth]{figs/featmap}
+\includegraphics[width=3.6in]{figs/featmap}
 \captionsetup{width=\textwidth} 
 \caption[Correlation heatmaps of the 35 features used to model compartment eigenvectors.]{ {\bf Correlation heatmaps of the 35 features used to model compartment eigenvectors. }
 The Pearson correlation coefficient (PCC) of genome-wide 1 Mb bins of each feature were pairwise correlated with each other. The features were also clustered using hierarchal clustering. The “significance” of these clusters was determined through multi-scale bootstrap resampling, with those clusters that were stable across different sizes of resampling deemed significant, as implemented in the \texttt{pvclust} R package.\cite{Suzuki2006a}
@@ -458,7 +458,7 @@ Thus far models were built at 1 Mb resolution, but if we are capturing true biol
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=.6\textwidth]{figs/100kb.pdf}
+\includegraphics[width=3in]{figs/100kb.pdf}
 \captionsetup{width=\textwidth} 
 \caption[Models learned at 1 Mb resolution can be applied to higher resolution datasets.]{ {\bf Models learned at 1 Mb resolution can be applied to higher resolution datasets. }
 Despite having been trained on low resolution training sets, the Random Forest models generated can successfully predict compartment eigenvectors at higher resolution (100 kb, a $10\times$ zoom). Eigenvectors at a higher resolution than this do not necessarily reflect A/B compartmentalisation.
@@ -477,9 +477,9 @@ Random Forest (RF) was \emph{a priori} chosen as an appropriate and powerful mod
 \begin{figure}
 \begin{center} 
 \makebox[\textwidth][c]{ 
-\includegraphics[width=1.2\textwidth]{figs/diffmethods.pdf}
+\includegraphics[width=\textwidth]{figs/diffmethods.pdf}
 }
-\captionsetup{width=1.2\textwidth} 
+\captionsetup{width=\textwidth} 
 \caption[Comparison of Random Forest performance with other modelling approaches.]{ {\bf Comparison of Random Forest performance with other modelling approaches. }
 Heatmaps show the Pearson correlation coefficient between predicted and observed compartment eigenvectors genome-wide for three regression techniques: multiple linear regression (LM), Random Forest (RF) and partial least squares (PLS). Results are summarised in Table \ref{tab:diffmethods}.
 }\label{fig:diffmethods}
@@ -511,9 +511,9 @@ PLS uses a type of dimensionality reduction, which offers another way to explore
 \begin{figure}
 \begin{center} 
 \makebox[\textwidth][c]{ 
-\includegraphics[width=1.2\textwidth]{figs/corcirc.pdf}
+\includegraphics[width=1.1\textwidth]{figs/corcirc.pdf}
 }
-\captionsetup{width=1\textwidth} 
+\captionsetup{width=\textwidth} 
 \caption[ Circle of correlations of variables compared with PLS axes. ]{ {\bf Circle of correlations of variables compared with PLS axes.  }
 Model variables are plotted against the first two axes used in PLS regression models per cell type. $Y$ represents our compartment eigenvector.
 }\label{fig:circor}
