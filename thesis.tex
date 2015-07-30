@@ -45,9 +45,17 @@
 \bibliographystyle{thesis}
 
 % title setup
-\title{ \vspace{3in} Unravelling higher order chromatin organisation through statistical analysis \\ \vspace{2em} }
-\author{Benjamin L. Moore}
-\titlepic{\vspace{2.2in} \includegraphics[width=\textwidth]{/Users/benmoore/hvl/1yrReport/figs/igmm.png}}
+\title{ \vspace{3in} Unravelling higher order chromatin organisation through statistical analysis \\ \vspace{2em} 
+%\author{Benjamin L. Moore} 
+Benjamin L. Moore \\
+\date{} \vspace{3em}
+{\normalsize A thesis presented for the degree of \\ Doctor of Philosophy \\ 
+The University of Edinburgh \\ 2015 \\} \vspace{5em}
+%{\normalsize University of Edinburgh \\ The Institute of Genetics and Molecular Medicine \\ Western General Hospital \\
+%Edinburgh, EH4 2XU \\ United Kingdom \\}
+}
+
+%\titlepic{\vspace{1in} \includegraphics[width=\textwidth]{/Users/benmoore/hvl/1yrReport/figs/igmm.png}}
 
 \begin{document}
 
@@ -85,6 +93,13 @@ In this work we combine Hi-C datasets describing physical genomic contacts with 
 We compare higher order chromatin organisation across a variety of human cell types and find pervasive conservation of chromatin organisation at multiple scales. We also identify structurally variable regions between cell types, that are rich in active enhancers and contain loci of known cell-type specific function. We show that broad aspects of higher order chromatin organisation, such as nuclear compartment domains, can be accurately predicted in a variety of human cell types, using models based upon underlying chromatin features. We dissect these quantitative models and find them to be generalisable to novel cell types, presumably reflecting fundamental biological rules linking compartments with key activating and repressive signals. These models describe the strong interconnectedness between locus-level patterns of local histone modifications and bound factors, on the order of hundreds or thousands of basepairs, with much broader compartmentalisation of large, multi-megabase chromosomal regions.
 
 Finally, boundary regions are investigated in terms of chromatin features and co-localisation with other known nuclear structures, such as association with the nuclear lamina. We find boundary complexity to vary between cell types and link TAD aggregations to previously described lamin-associated domains, as well as exploring the concept of super-boundaries that span multiple levels of organisation. Together these analyses lend quantitative evidence to a model of higher order genome organisation that is largely stable between cell types, but can selectively vary locally, based on the activation or repression of key loci.
+
+\clearpage
+
+\addcontentsline{toc}{chapter}{Lay summary}
+\chapter*{Lay summary}
+
+Each human cell contains DNA that would extend for two metres if fully straightened. Instead, this same length of DNA is highly compacted into micrometre-sized cell nuclei. Recently experimental methods such as Hi-C have been developed which allow the inspection of this folded state, generating counts of how frequently chromosomal regions are interacting with each other. These counts can be statistically analysed to reveal different levels of structures, including loops between two distant locations, knot-like domains of self-interacting regions, and broad stretches of mostly active or inactive regions. In this work, we bring together Hi-C datasets from several different publications and combine these with a large number of chromatin datasets that quantify, for example, levels different DNA-binding proteins as well as modifications to DNA packing histone proteins. We used these datasets to build predictive models of active and inactive states across each human chromosome in three different cell types, and achieved high predictive accuracy. We then compare and contrast these models, and use them to identify the key features which define active and inactive states. We also analyse the boundaries between domains and compare these across cell types. We find the domains themselves are highly conserved between cell types, but observe different chromatin features marking domain boundaries. Further collaborative work involved analysis of boundaries from Hi-C data taken over successive time points, where boundary markings were found to persist as cells differentiate from stem cells.Overall we find the three-dimensional DNA structures within cells are highly similar even between human embryonic stem cells and cells derived from blood. Where there are differences, these areas tend to highlight biological activity specific to that cell type.
 
 \clearpage
 
