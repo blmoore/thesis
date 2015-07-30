@@ -3,11 +3,12 @@
 \contentsline {chapter}{Declaration}{i}{Doc-Start}
 \contentsline {chapter}{Acknowledgements}{ii}{chapter*.1}
 \contentsline {chapter}{Abstract}{iii}{chapter*.2}
-\contentsline {chapter}{Contents}{iv}{chapter*.4}
-\contentsline {chapter}{List of Figures}{vii}{chapter*.5}
-\contentsline {chapter}{List of Tables}{ix}{chapter*.6}
-\contentsline {chapter}{List of Acronyms}{x}{chapter*.6}
-\contentsline {chapter}{Published material}{xi}{chapter*.7}
+\contentsline {chapter}{Lay summary}{iv}{chapter*.3}
+\contentsline {chapter}{Contents}{v}{chapter*.5}
+\contentsline {chapter}{List of Figures}{viii}{chapter*.6}
+\contentsline {chapter}{List of Tables}{x}{chapter*.7}
+\contentsline {chapter}{List of Acronyms}{xi}{chapter*.7}
+\contentsline {chapter}{Published material}{xii}{chapter*.8}
 \contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Introduction}}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Genome organisation}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}C-methods and Hi-C}{1}{subsection.1.1.1}
@@ -111,5 +112,5 @@
 \contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{80}{chapter.7}
 \contentsline {section}{\numberline {7.1}Conclusion}{81}{section.7.1}
 \contentsline {section}{\numberline {7.2}Future research}{82}{section.7.2}
-\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{83}{chapter*.64}
-\contentsline {chapter}{References}{101}{chapter*.65}
+\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{83}{chapter*.65}
+\contentsline {chapter}{References}{101}{chapter*.66}
