@@ -130,6 +130,10 @@ Zuin J, Dixon JR, van~der Reijden MIJa, Ye Z, Kolovos P, Brouwer RWW, van~de
 \newblock \emph{Proceedings of the National Academy of Sciences of the United
   States of America}, pp. 1--6.
 
+\bibitem[{ENCODE(2012)}]{Dunham2012}
+ENCODE (2012) {An integrated encyclopedia of DNA elements in the human genome.}
+\newblock \emph{Nature}, \textbf{489}(7414): 57--74.
+
 \bibitem[{Atchison(2014)}]{Atchison2014}
 Atchison ML (2014) {Function of YY1 in Long-Distance DNA Interactions.}
 \newblock \emph{Frontiers in immunology}, \textbf{5}(February): 45.
@@ -140,10 +144,6 @@ Schwalie PC, Ward MC, Cain CE, Faure AJ, Gilad Y, Odom DT, Flicek P (2013)
   {Co-binding by YY1 identifies the transcriptionally active, highly conserved
   set of CTCF-bound regions in primate genomes.}
 \newblock \emph{Genome biology}, \textbf{14}(12): R148.
-
-\bibitem[{ENCODE(2012)}]{Dunham2012}
-ENCODE (2012) {An integrated encyclopedia of DNA elements in the human genome.}
-\newblock \emph{Nature}, \textbf{489}(7414): 57--74.
 
 \bibitem[{Seitan \emph{et~al.}(2013)Seitan, Faure, Zhan, McCord, Lajoie,
   Ing-Simmons, Lenhard, Giorgetti, Heard \emph{et~al.}}]{Seitan2013}
