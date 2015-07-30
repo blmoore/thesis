@@ -1,4 +1,4 @@
-\begin{thebibliography}{52}
+\begin{thebibliography}{64}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{de~Wit and de~Laat(2012)}]{DeWit2012}
@@ -175,9 +175,68 @@ Grosberg AY, Nechaev S, Shakhnovich E (1988) {The role of topological
   constraints in the kinetics of collapse of macromolecules}.
 \newblock \emph{Journal de Physique}, \textbf{49}(12): 2095--2100.
 
+\bibitem[{Kadauke and Blobel(2009)}]{Kadauke2009a}
+Kadauke S, Blobel Ga (2009) {Chromatin loops in gene regulation}.
+\newblock \emph{Biochimica et Biophysica Acta - Gene Regulatory Mechanisms},
+  \textbf{1789}(1): 17--25.
+
+\bibitem[{Sexton \emph{et~al.}(2009)Sexton, Bantignies and
+  Cavalli}]{Sexton2009}
+Sexton T, Bantignies F, Cavalli G (2009) {Genomic interactions: Chromatin loops
+  and gene meeting points in transcriptional regulation}.
+\newblock \emph{Seminars in Cell and Developmental Biology}, \textbf{20}(7):
+  849--855.
+
+\bibitem[{Banerji \emph{et~al.}(1981)Banerji, Rusconi and
+  Schaffner}]{Banerji1981}
+Banerji J, Rusconi S, Schaffner W (1981) {Expression of a beta-globin gene is
+  enhanced by remote SV40 DNA sequences.}
+\newblock \emph{Cell}, \textbf{27}(2 Pt 1): 299--308.
+
+\bibitem[{Engel and Tanimoto(2000)}]{Engel2000}
+Engel JD, Tanimoto K (2000) {Looping, linking, and chromatin activity: new
+  insights into beta-globin locus regulation.}
+\newblock \emph{Cell}, \textbf{100}(5): 499--502.
+
+\bibitem[{Blackwood and Kadonaga(1998)}]{Blackwood1998}
+Blackwood EM, Kadonaga JT (1998) {Going the distance: a current view of
+  enhancer action.}
+\newblock \emph{Science (New York, N.Y.)}, \textbf{281}(5373): 60--63.
+
+\bibitem[{van~de Corput \emph{et~al.}(2012)van~de Corput, de~Boer, Knoch, van
+  Cappellen, Quintanilla, Ferrand and Grosveld}]{VandeCorput2012a}
+van~de Corput MPC, de~Boer E, Knoch Ta, van Cappellen Wa, Quintanilla a,
+  Ferrand L, Grosveld FG (2012) {Super-resolution imaging reveals 3D folding
+  dynamics of the  -globin locus upon gene activation}.
+\newblock \emph{Journal of Cell Science}, pp. 4630--4639.
+
+\bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
+Pombo A, Dillon N (2015) {Three-dimensional genome architecture: players and
+  mechanisms}.
+\newblock \emph{Nature Reviews Molecular Cell Biology}, \textbf{16}(4):
+  245--257.
+
+\bibitem[{Sanyal \emph{et~al.}(2012)Sanyal, Lajoie, Jain and
+  Dekker}]{Sanyal2012}
+Sanyal A, Lajoie BR, Jain G, Dekker J (2012) {The long-range interaction
+  landscape of gene promoters.}
+\newblock \emph{Nature}, \textbf{489}(7414): 109--13.
+
+\bibitem[{Ong and Corces(2014)}]{Ong2014}
+Ong CT, Corces VG (2014) {CTCF: an architectural protein bridging genome
+  topology and function.}
+\newblock \emph{Nature reviews. Genetics}, \textbf{15}(4): 234--46.
+
 \bibitem[{Phillips and Corces(2009)}]{Phillips2009}
 Phillips JE, Corces VG (2009) {CTCF: Master Weaver of the Genome}.
 \newblock \emph{Cell}, \textbf{137}(7): 1194--1211.
+
+\bibitem[{Crane \emph{et~al.}(2015)Crane, Bian, McCord, Lajoie, Wheeler,
+  Ralston, Uzawa, Dekker and Meyer}]{Crane2015}
+Crane E, Bian Q, McCord RP, Lajoie BR, Wheeler BS, Ralston EJ, Uzawa S, Dekker
+  J, Meyer BJ (2015) {Condensin-driven remodelling of X chromosome topology
+  during dosage compensation}.
+\newblock \emph{Nature}.
 
 \bibitem[{Williamson \emph{et~al.}(2014)Williamson, Berlivet, Eskeland, Boyle,
   Illingworth, Paquette and Bickmore}]{Williamson2014}
@@ -303,6 +362,12 @@ Hoffman MM, Ernst J, Wilder SP, Kundaje A, Harris RS, Libbrecht M, Giardine B,
   chromatin elements from ENCODE data.}
 \newblock \emph{Nucleic acids research}, \textbf{41}(2): 827--41.
 
+\bibitem[{Kwasnieski \emph{et~al.}(2014)Kwasnieski, Fiore, Chaudhari and
+  Cohen}]{Kwasnieski2014}
+Kwasnieski JC, Fiore C, Chaudhari HG, Cohen Ba (2014) {High-throughput
+  functional testing of ENCODE segmentation predictions}.
+\newblock \emph{Genome Research}.
+
 \bibitem[{Cheng \emph{et~al.}(2011)Cheng, Yan, Yip, Rozowsky, Alexander, Shou
   and Gerstein}]{Cheng2011}
 Cheng C, Yan Kk, Yip KY, Rozowsky J, Alexander R, Shou C, Gerstein M (2011) {A
@@ -315,6 +380,12 @@ Cheng C, Yan Kk, Yip KY, Rozowsky J, Alexander R, Shou C, Gerstein M (2011) {A
 Althammer S, Pag\`{e}s A, Eyras E (2012) {Predictive models of gene regulation
   from high-throughput epigenomics data.}
 \newblock \emph{Comparative and functional genomics}, \textbf{2012}: 1--13.
+
+\bibitem[{Cheng \emph{et~al.}(2013)Cheng, Ung, Grant and Whitfield}]{Cheng2013}
+Cheng C, Ung M, Grant GD, Whitfield ML (2013) {Transcription Factor Binding
+  Profiles Reveal Cyclic Expression of Human Protein-coding Genes and
+  Non-coding RNAs}.
+\newblock \emph{PLoS Computational Biology}, \textbf{9}(7).
 
 \bibitem[{Dong \emph{et~al.}(2012)Dong, Greven, Kundaje, Djebali, Brown, Cheng,
   Gingeras, Gerstein, Guig\'{o} \emph{et~al.}}]{Dong2012}

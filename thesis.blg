@@ -10,6 +10,7 @@ Repeated entry---line 11 of file /Users/benmoore/Documents/customrefs.bib
  :                        ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Deng2013"
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--there's a number but no volume in Li2014
 Warning--there's a number but no volume in Mifsud2015
@@ -24,45 +25,45 @@ Warning--there's a number but no volume in Anderson2014a
 Warning--empty journal in Hill2013a
 Warning--there's a number but no volume in Hill2013a
 Warning--there's a number but no volume in Lesne2014
-You've used 169 entries,
+You've used 178 entries,
             3024 wiz_defined-function locations,
-            1678 strings with 63414 characters,
-and the built_in function-call counts, 238809 in all, are:
-= -- 25049
-> -- 7290
-< -- 56
-+ -- 5259
-- -- 1863
-* -- 17933
-:= -- 25837
-add.period$ -- 338
-call.type$ -- 169
-change.case$ -- 846
-chr.to.int$ -- 170
-cite$ -- 182
-duplicate$ -- 24943
-empty$ -- 17111
-format.name$ -- 2398
-if$ -- 49202
+            1738 strings with 65321 characters,
+and the built_in function-call counts, 248372 in all, are:
+= -- 26062
+> -- 7513
+< -- 61
++ -- 5415
+- -- 1921
+* -- 18652
+:= -- 26916
+add.period$ -- 356
+call.type$ -- 178
+change.case$ -- 891
+chr.to.int$ -- 179
+cite$ -- 191
+duplicate$ -- 25939
+empty$ -- 17827
+format.name$ -- 2491
+if$ -- 51170
 int.to.chr$ -- 6
-int.to.str$ -- 170
-missing$ -- 2066
-newline$ -- 679
-num.names$ -- 504
-pop$ -- 11996
+int.to.str$ -- 179
+missing$ -- 2154
+newline$ -- 715
+num.names$ -- 531
+pop$ -- 12467
 preamble$ -- 1
-purify$ -- 676
+purify$ -- 712
 quote$ -- 0
-skip$ -- 4271
+skip$ -- 4435
 stack$ -- 0
-substring$ -- 29650
-swap$ -- 5545
-text.length$ -- 8
+substring$ -- 30788
+swap$ -- 5799
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1008
+type$ -- 1062
 warning$ -- 13
-while$ -- 1555
+while$ -- 1617
 width$ -- 0
-write$ -- 2015
+write$ -- 2122
 (There was 1 error message)
