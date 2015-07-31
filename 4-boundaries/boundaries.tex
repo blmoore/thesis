@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt,oneside]{book}
+\documentclass[a4paper,11pt,oneside]{book}
 
 % packages 
 \usepackage{arsclassica}    % fancy layout
@@ -61,7 +61,7 @@ We derived TAD boundaries according to established methods (see Methods XX) for 
 \makebox[\textwidth][c]{ 
 	\includegraphics[width=6.8in]{figs/alltads.pdf}
 }
-\captionsetup{width=1.2\textwidth}
+\captionsetup{width=\textwidth}
 \caption[TAD boundary enrichments and depletions.]{ {\bf TAD boundary enrichments and depletions.}
 36 features were averaged over 1 Mb windows centred on TAD boundaries genome-wide ($25 \times 40$ kb bins). Ribbons represent $95\%$ confidence intervals of the mean at each position.
 }\label{fig:alltads}
@@ -73,7 +73,7 @@ We derived TAD boundaries according to established methods (see Methods XX) for 
 \makebox[\textwidth][c]{ 
 	\includegraphics[width=6.8in]{figs/allcompartments.pdf}
 }
-\captionsetup{width=1.2\textwidth}
+\captionsetup{width=\textwidth}
 \caption[Compartment boundary enrichments and depletions.]{ {\bf Compartment boundary enrichments and depletions.}
 36 features were averaged over 3 Mb windows centred on compartment boundaries genome-wide ($30 \times 100$ kb bins). Ribbons represent $95\%$ confidence intervals of the mean at each position.
 }\label{fig:allcompartments}
@@ -235,6 +235,30 @@ We attempted to model TAD boundaries in a variety of ways: firstly a using a cla
 
 \section{MetaTAD boundaries}\label{sec:metatads}
 
+Our collaborators uncovered the concept of "metaTADs": sequential aggregations of adjacent and strongly-interacting TADs to form a hierarchy of domain organisation covering each chromosome.
+
+MetaTADs are constructed simply by performing constrained heretical clustering based on inter-TAD contacts. That is, those two neighbour TADs that have the largest number of interTAD contacts are linked to form a metaTAD and this process is recursed until all TADs on a chromosome are joined into a tree-like network which fully describes the hierarchical nature of domain organisation.
+
+My contribution to this work was to explore these newly-described metaTAD structures and perform boundary analysis as was done with TADs and compartments (Section \ref{sec:boundaryenrichments}). A testable hypothesis, for example, is that boundaries of larger metaTAD structures could display greater enrichments for boundary-defining features.
+
+\subsection{MetaTAD / TAD boundary comparison}
+
+Due to the way metaTADs were constructed by our collaborators, by sequential aggregation of TADs (Methods XX), boundary comparisons between TADs and metaTADs are not completely straightforward. For one, every metaTAD boundary is, at a lower level, also a TAD boundary hence for a meaningful comparison we compared only a subset of metaTAD boundaries. Selection of this threshold involved a trade-off between maintaining a sufficient sample size of metaTADs and minimising the overlap between metaTAD and TAD boundaries, as a proportion of all TAD boundaries (Fig. \ref{fig:mtcalibrate}).
+
+\begin{figure}
+\begin{center} 
+\includegraphics[width=2.75in]{figs/mt_calibrate.pdf}
+\captionsetup{width=\textwidth}
+\caption[Calibration of metaTAD size selection bounds.]{ {\bf Calibration of metaTAD size selection bounds. }
+As the lower bound on metaTAD size is increased, the proportion of all TAD boundaries which are also metaTAD boundaries decreases.
+}\label{fig:mtcalibrate}
+\end{center}
+\end{figure} 
+
+From this calibration plot, a lower bound metaTAD size cut-off of 10 Mb was selected for comparison with TAD boundaries. This left a reasonable sample size of $263$ metaTAD boundaries, while reducing the overlap with the set of all TAD boundaries to approximately $5\%$ (Fig. \ref{fig:mtcalibrate}). We also used an upper bound for size selection, based on observations by our collaborators that interactions between metaTADs larger than around $40$ Mb were no higher than expected background signal (\emph{data not shown}). In practice, almost all boundaries making up metaTADs larger than $10$ Mb are also present in those larger than $40$ Mb, but as hierarchical clustering continued up until a whole chromosome level, this upper bound may exclude a small number of edge-case peripheral TADs which aggregated into chromsome-wide metaTADs without evidence of heightened intra-TAD interactions.
+
+Next a comparison between metaTAD boundaries for metaTAD size ($s$) in the range $10~\textrm{Mb} < s < 40~\textrm{Mb}$ was performed. Our collaborators generated several ChIP-seq datasets, including for CTCF and three PolII variants, as well as expression data in the form of CAGE (Methods XX). We averaged these features over the set of all metaTAD and TAD boundaries and compared the average profiles of each (Fig. \ref{fig:mtfeats}). These average profiles show heightened enrichment for PolII variants, CTCF and DNase, with non-overlapping $95\%$ confidence intervals of the mean over the boundary bin. Increased enrichments of gene density and histone modificationH$3$K$27$me$3$ are also suggestive of a heightened prevalence at metaTAD boundaries relative to TAD boundaries (Fig. \ref{fig:mtfeats}). The observable co-incidence of metaTAD boundaries and lamina associated domains (LADs) is explored further in Section \ref{sec:mtlads}.
+
 \begin{figure}
 \begin{center} 
 \includegraphics[width=4.5in]{figs/mt_feats.pdf}
@@ -245,25 +269,47 @@ Genome-wide profiles of epigenomic features and gene densities averaged over all
 \end{center}
 \end{figure} 
 
-Our collaborators uncovered the concept of "metaTADs": sequential aggregations of adjacent and strongly-interacting TADs to form a hierarchy of domain organisation covering each chromosome.
+Increased enrichment at metaTAD boundaries relative to TAD boundaries lends evidence to the functional importance of metaTADs, and suggests boundaries become increasingly well-demarcated at higher levels of organisation. However, if this is a genuine biological phenomenon, we'd expect the trend not just to be observable in a comparison between two selected sets, but to increase monotonically as we ascended the metaTAD hierarchy from TADs to chromosomes.
 
-MetaTADs are constructed simply by performing constrained heretical clustering based on inter-TAD contacts. That is, those two neighbour TADs that have the largest number of interTAD contacts are linked to form a metaTAD and this process is recursed until all TADs on a chromosome are joined into a tree-like network which fully describes the hierarchical nature of domain organisation.
+To test this, we reran that above boundary analysis (Fig. \ref{fig:mtfeats}) but at a range of metaTAD size cut-offs (Fig. \ref{fig:mtcutoffenrich}). Generally we find increasing enrichments in metaTAD boundaries relative to TAD bounds through the range of lower bound cutoffs from $0$ to $20$ Mb, possibly with a slight decreased effect size at the highest cutoff of $30$ Mb, where the sample size of boundaries decreases to just $62$ (Fig. \ref{fig:mtcutoffenrich}). This analysis strengthens the evidence for heightened functional enrichment of metaTAD boundaries (Figs. \ref{fig:mtfeats}, \ref{fig:mtcutoffenrich}) and suggests the metaTAD aggregation procedure is capturing boundaries of increasing strength, in terms of enrichment of boundary associated features (e.g. Fig. \ref{fig:alltads}), through the metaTAD hierarchy. 
 
-My contribution to this work was to explore these newly-described metaTAD structures and perform boundary analysis as was done with TADs and compartments (Section \ref{sec:boundaryenrichments}). A hypothesis to test could be that boundaries of larger metaTAD structures could display greater enrichments for boundary-defining features.
+\begin{figure}
+\begin{center} 
+\includegraphics[width=4.5in]{figs/metatad_cutoffenrich.pdf}
+\captionsetup{width=\textwidth}
+\caption[MetaTADs align with lain associated domains.]{ {\bf MetaTAD boundary enrichments and sample sizes with varying size selection. }
+Placeholder
+}\label{fig:mtcutoffenrich}
+\end{center}
+\end{figure} 
 
-\subsection{Lamin associated domains}
+\subsection{Lamina associated domains}\label{sec:malts}
+
+We report a coincidence of metaTAD boundaries and lamina associated domains (LADs), and at a greater level than that observed with smaller TADs (Fig. \ref{fig:mtfeats}). This hints at an association between metaTADs and LADs which can be further investigated.
+
+High resolution LAD data in mouse embryonic stem cells were retrieved from \citet{Peric-Hupkes2010} in the form of continuous measures of lamin-B1 association produced by the DamID technique, known to reflect proximity to the nuclear lamin.\cite{Pickersgill2006} This measure of lamina association was then processed in windows around each metaTAD and TAD boundary, and profiles were combined to form a heatmap (Fig. \ref{fig:mtlamin}).
 
 \begin{figure}
 \begin{center} 
 \includegraphics[width=4.5in]{figs/mt_laminperm.png}
 \captionsetup{width=\textwidth}
-\caption[MetaTADs align with lain associated domains.]{ {\bf MetaTADs align with lain associated domains.}
-Heatmaps of LaminB1 association microarray probe intensity values over MetaTAD boundaries (from domains of size 10 -- 40 Mb) and TAD boundaries, are displayed alongside examples of circularly-permuted boundaries. $42.6\%$ of MetaTAD boundaries (10 -- 40 Mb) had an absolute linear regression coefficient $>.05$ of lamin association intensities, indicating a boundary transition (versus $15.8\%$ expectation from 1000 circular permutations, $p < 1 \times 10^{-4}$). TAD boundaries were also significantly more associated with lamin association transitions (Observed: $11.8\%$, Expected: $9.5\%$; empirical p-value: $p < 1 \times 10^{-4}$). Profiles are shown $\pm450$ kb from each boundary.
+\caption[MetaTADs align with lamin associated domains.]{ {\bf MetaTADs align with lamin associated domains.}
+Heatmaps of LaminB1 association microarray probe intensity values over MetaTAD boundaries (from domains of size 10 -- 40 Mb) and TAD boundaries, are displayed alongside examples of circularly-permuted boundaries. 
+%$42.6\%$ of MetaTAD boundaries (10 -- 40 Mb) had an absolute linear regression coefficient $>.05$ of lamin association intensities, indicating a boundary transition (versus $15.8\%$ expectation from 1000 circular permutations, $p < 1 \times 10^{-4}$). TAD boundaries were also significantly more associated with lamin association transitions (Observed: $11.8\%$, Expected: $9.5\%$; empirical p-value: $p < 1 \times 10^{-4}$). 
+Profiles are shown $\pm450$ kb from each boundary.
 }\label{fig:mtlamin}
 \end{center}
 \end{figure} 
 
+Boundaries were seriated in order to separate out those that coincide with a LAD boundary (Methods XX) and we found a large number of metaTAD boundaries ($43\%$) in our $10$--$40$ Mb subset appeared to correspond to LAD boundaries (Fig. \ref{fig:mtlamin}). The same comparison using TAD boundaries found a coincidence of just $12\%$. However LADs are large domains and there were over $5,000$ TADs called in this Hi-C data by our collaborators, thus in absolute numbers of boundaries this is still represents a large overlap.
+
+To test the significance of these observations, we apply a permutation-based statistical test where our observed coincidences are compared with those produced by $1,000$ circular (per-chromosome) permutations (Methods XX). We found that the metaTAD boundary coincidence is around $2.7$-fold increase above null expectation (observed: $42.6\%$; expected: $15.8\%$; empirical $p$-value: $p < 1 \times 10^{-4}$). Meanwhile TAD boundaries were found to have a smaller, yet still significant, $1.2$-fold increase in coincidence with LAD boundaries relative to a null model (observed: $11.8\%$; expected: $9.5\%$; empirical $p$-value: $p < 1 \times 10^{-4}$).
+
+This result highlights again that metaTADs offer useful perspectives onto higher order genome organisation. In this case, it appears TADs will often neatly aggregate within LADs and together these make-up what we can observe as a metaTAD.
+
 \subsection{Boundaries over a time series}
+
+For the first time, our collaborator's applied the Hi-C technique (Methods XX) over a differentiation time course from mouse embryonic stem cells, to neural pre-cursors and finally fully-differentiated neuron cells. This data offers a unique perspective onto how higher order genome organisation varies during differentiation. 
 
 \begin{figure}
 \begin{center} 

@@ -93,23 +93,24 @@
 \BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Repeats}{section.5.2}% 93
 \BOOKMARK [1][-]{section.5.3}{5.3 De novo boundary prediction}{chapter.5}% 94
 \BOOKMARK [1][-]{section.5.4}{5.4 MetaTAD boundaries}{chapter.5}% 95
-\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 Lamin associated domains}{section.5.4}% 96
-\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Boundaries over a time series}{section.5.4}% 97
-\BOOKMARK [1][-]{section.5.5}{5.5 Other boundaries}{chapter.5}% 98
-\BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 Giemsa bands}{section.5.5}% 99
-\BOOKMARK [2][-]{subsection.5.5.2}{5.5.2 Superboundaries}{section.5.5}% 100
-\BOOKMARK [0][]{chapter.6}{6 Local chromatin conformation}{}% 101
-\BOOKMARK [1][-]{section.6.1}{6.1 Introduction}{chapter.6}% 102
-\BOOKMARK [1][-]{section.6.2}{6.2 4C at the SHH locus}{chapter.6}% 103
-\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Analysis of ZRS interactions}{section.6.2}% 104
-\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 4C / Hi-C comparison}{section.6.2}% 105
-\BOOKMARK [2][-]{subsection.6.2.3}{6.2.3 Assay diagnostics}{section.6.2}% 106
-\BOOKMARK [2][-]{subsection.6.2.4}{6.2.4 3D modelling with 5C data}{section.6.2}% 107
-\BOOKMARK [1][-]{section.6.3}{6.3 5C in the HoxD region}{chapter.6}% 108
-\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 Differential contacts}{section.6.3}% 109
-\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 5C / Hi-C comparison}{section.6.3}% 110
-\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 111
-\BOOKMARK [1][-]{section.7.1}{7.1 Conclusion}{chapter.7}% 112
-\BOOKMARK [1][-]{section.7.2}{7.2 Future research}{chapter.7}% 113
-\BOOKMARK [0][]{chapter*.65}{Appendices}{}% 114
-\BOOKMARK [0][]{chapter*.66}{References}{}% 115
+\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 MetaTAD / TAD boundary comparison}{section.5.4}% 96
+\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Lamina associated domains}{section.5.4}% 97
+\BOOKMARK [2][-]{subsection.5.4.3}{5.4.3 Boundaries over a time series}{section.5.4}% 98
+\BOOKMARK [1][-]{section.5.5}{5.5 Other boundaries}{chapter.5}% 99
+\BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 Giemsa bands}{section.5.5}% 100
+\BOOKMARK [2][-]{subsection.5.5.2}{5.5.2 Superboundaries}{section.5.5}% 101
+\BOOKMARK [0][]{chapter.6}{6 Local chromatin conformation}{}% 102
+\BOOKMARK [1][-]{section.6.1}{6.1 Introduction}{chapter.6}% 103
+\BOOKMARK [1][-]{section.6.2}{6.2 4C at the SHH locus}{chapter.6}% 104
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Analysis of ZRS interactions}{section.6.2}% 105
+\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 4C / Hi-C comparison}{section.6.2}% 106
+\BOOKMARK [2][-]{subsection.6.2.3}{6.2.3 Assay diagnostics}{section.6.2}% 107
+\BOOKMARK [2][-]{subsection.6.2.4}{6.2.4 3D modelling with 5C data}{section.6.2}% 108
+\BOOKMARK [1][-]{section.6.3}{6.3 5C in the HoxD region}{chapter.6}% 109
+\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 Differential contacts}{section.6.3}% 110
+\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 5C / Hi-C comparison}{section.6.3}% 111
+\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 112
+\BOOKMARK [1][-]{section.7.1}{7.1 Conclusion}{chapter.7}% 113
+\BOOKMARK [1][-]{section.7.2}{7.2 Future research}{chapter.7}% 114
+\BOOKMARK [0][]{chapter*.67}{Appendices}{}% 115
+\BOOKMARK [0][]{chapter*.68}{References}{}% 116
