@@ -1,4 +1,4 @@
-\begin{thebibliography}{57}
+\begin{thebibliography}{61}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Barrett \emph{et~al.}(2013)Barrett, Wilhite, Ledoux, Evangelista,
@@ -162,10 +162,36 @@ Huang BDW, Lempicki R (2008) {Systematic and integrative analysis of large gene
   lists using DAVID bioinformatics resources}.
 \newblock \emph{Nature protocols}, (301): 1--43.
 
+\bibitem[{{RIKEN Omics Science Center}(2012)}]{fantom5}
+{RIKEN Omics Science Center} (2012) {FANTOM5}.
+\newblock \emph{http://fantom.gsc.riken.jp/}.
+
+\bibitem[{Itoh \emph{et~al.}(2012)Itoh, Kojima, Nagao-Sato, Saijo, Lassmann,
+  Kanamori-Katayama, Kaiho, Lizio, Kawaji \emph{et~al.}}]{itoh2012a}
+Itoh M, Kojima M, Nagao-Sato S, Saijo E, Lassmann T, Kanamori-Katayama M, Kaiho
+  A, Lizio M, Kawaji H, \emph{et~al.} (2012) {Automated workflow for
+  preparation of cDNA for cap analysis of gene expression on a single molecule
+  sequencer}.
+\newblock \emph{PLoS ONE}, \textbf{7}(1).
+
+\bibitem[{Kodzius \emph{et~al.}(2006)Kodzius, Kojima, Nishiyori, Nakamura,
+  Fukuda, Tagami, Sasaki, Imamura, Kai \emph{et~al.}}]{Kodzius2006}
+Kodzius R, Kojima M, Nishiyori H, Nakamura M, Fukuda S, Tagami M, Sasaki D,
+  Imamura K, Kai C, \emph{et~al.} (2006) {CAGE: cap analysis of gene
+  expression.}
+\newblock \emph{Nature methods}, \textbf{3}(3): 211--22.
+
 \bibitem[{Quinlan and Hall(2010)}]{Quinlan2010}
 Quinlan AR, Hall IM (2010) {BEDTools: A flexible suite of utilities for
   comparing genomic features}.
 \newblock \emph{Bioinformatics}, \textbf{26}(6): 841--842.
+
+\bibitem[{Karolchik \emph{et~al.}(2014)Karolchik, Barber, Casper, Clawson,
+  Cline, Diekhans, Dreszer, Fujita, Guruvadoo \emph{et~al.}}]{Karolchik2014}
+Karolchik D, Barber GP, Casper J, Clawson H, Cline MS, Diekhans M, Dreszer TR,
+  Fujita Pa, Guruvadoo L, \emph{et~al.} (2014) {The UCSC Genome Browser
+  database: 2014 update}.
+\newblock \emph{Nucleic Acids Research}, \textbf{42}(D1): 764--770.
 
 \bibitem[{Peric-Hupkes \emph{et~al.}(2010)Peric-Hupkes, Meuleman, Pagie,
   Bruggeman, Solovei, Brugman, Gr\"{a}f, Flicek, Kerkhoven

@@ -101,9 +101,9 @@
 \contentsline {subsection}{\numberline {5.4.1}MetaTAD / TAD boundary comparison}{72}{subsection.5.4.1}
 \contentsline {subsection}{\numberline {5.4.2}Lamina associated domains}{75}{subsection.5.4.2}
 \contentsline {subsection}{\numberline {5.4.3}Boundaries over a time series}{77}{subsection.5.4.3}
-\contentsline {section}{\numberline {5.5}Other boundaries}{77}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Giemsa bands}{77}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Superboundaries}{79}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.5}Other boundaries}{79}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Giemsa bands}{79}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Superboundaries}{80}{subsection.5.5.2}
 \contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Local chromatin conformation}}{82}{chapter.6}
 \contentsline {section}{\numberline {6.1}Introduction}{82}{section.6.1}
 \contentsline {section}{\numberline {6.2}4C at the SHH locus}{82}{section.6.2}

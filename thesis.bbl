@@ -779,9 +779,10 @@ Ryba T, Hiratani I, Lu J, Itoh M, Kulik M, Zhang J, Schulz TC, Robins AJ,
   related cell types.}
 \newblock \emph{Genome research}, \textbf{20}(6): 761--70.
 
-\bibitem[{{RIKEN Omics Science Center}(2012)}]{fantom5}
-{RIKEN Omics Science Center} (2012) {FANTOM5}.
-\newblock \emph{http://fantom.gsc.riken.jp/}.
+\bibitem[{Consortium \emph{et~al.}(2014)Consortium, Pmi and Dgt}]{fantom5}
+Consortium TF, Pmi R, Dgt C (2014) {A promoter-level mammalian expression
+  atlas.}
+\newblock \emph{Nature}, \textbf{507}(7493): 462--70.
 
 \bibitem[{Kolasinska-Zwierz \emph{et~al.}(2009)Kolasinska-Zwierz, Down,
   Latorre, Liu, Liu and Ahringer}]{Kolasinska-Zwierz2009}

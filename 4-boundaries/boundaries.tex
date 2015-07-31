@@ -317,17 +317,21 @@ This result highlights again that metaTADs offer useful perspectives onto higher
 
 \subsection{Boundaries over a time series}
 
-For the first time, our collaborator's applied the Hi-C technique (Methods XX) over a differentiation time course from mouse embryonic stem cells, to neural pre-cursors and finally fully-differentiated neuron cells. This data offers a unique perspective onto how higher order genome organisation varies during differentiation. 
+For the first time, our collaborator's applied the Hi-C technique over a differentiation time course from mouse embryonic stem cells, to neural pre-cursors and finally fully-differentiated neuron cells. Successive expression measures were also taken alongside this Hi-C data in the form of CAGE data, produced by the FANTOM5 consortium.\cite{fantom5} Together these datasets offer a unique perspective onto how higher order genome organisation varies with expression during differentiation. 
+
+Collaborators explored changes in both the overall tree structure between timepoints, and aggregate expression changes between TADs and metaTADs at successive timepoints. They identified rewiring events in the metaTAD tree over the timecourse, and found corresponding changes in expression (\emph{data not shown}). Given metaTAD structures appear to differ and matched CAGE data exists for each timepoint, it was of interest to test how observed boundary enrichments for gene expression (Figs. \ref{fig:mtfeats}, \ref{fig:mtcutoffenrich}) might vary over this timecourse. 
 
 \begin{figure}
 \begin{center} 
 \includegraphics[width=4.5in]{figs/mt_ts.pdf}
 \captionsetup{width=\textwidth}
 \caption[Observed enrichments persist over a time series.]{ {\bf Observed enrichments persist over a time series.}
-CAGE-defined active TSS (CTSS) were counted per 50 kb bin across each TAD and MetaTAD (10 -- 40 Mb) boundary and averaged (ribbons show $95\%$ confidence intervals of the mean). Gene densities refer to mean counts of annotated genes per bin, with an overlap of at least 250 bp. Peak heights suggest modestly stronger enrichments at MetaTAD boundaries relative to TAD boundaries. 
+CAGE-defined active TSS (CTSS) were counted per $50$ kb bin across each TAD and MetaTAD ($10$--$40$ Mb) boundary and averaged (ribbons show $95\%$ confidence intervals of the mean). Gene densities refer to mean counts of annotated genes per bin, with an overlap of at least 250 bp.
 }\label{fig:mtts}
 \end{center}
 \end{figure} 
+
+We find actively-transcribed CAGE-defined TSS (CTSS) to be consistently enriched over the shifting boundaries through the differentiation timecourse (Fig. \ref{fig:mtts}). We coupled this with a static measure of gene density in order to distinguish expression changes from genic overlap, however both series show similar patterns so it does not seem that boundary expression changes occur at a global scale over this timecourse. Peak heights over boundary bins suggest modestly stronger enrichments at metaTAD boundaries relative to TAD boundaries, as seen with other features (Fig. \ref{fig:mtfeats}). 
 
 \section{Other boundaries}
 
@@ -338,33 +342,35 @@ A recent analysis of Hi-C datasets examined the hierarchy of nuclear compartment
 
 Human Giemsa metaphase banding (G-band) pattern data have been integrated with the human genome assembly, and although such data are widely used, they are also necessarily of low resolution.\cite{Furey2003} These G-band patterns are constant over human cell types at metaphase, but all traces of interphase higher order structure were reported to be absent at metaphase.\cite{Naumova2013} We would therefore expect no agreement between metaphase G-bands and the patterns of interphase TADs and A/B nuclear compartments defined here, over all three cell types. 
 
-We examined the genome wide similarity of all interphase domain structure boundaries to metaphase G-band boundaries, relative to an expected distribution derived by permutation (see Methods) (Figure S9). There is a significant, though extremely modest, excess of compartment boundaries within close proximity of G-band boundaries, such that $13.90\%$ of compartment boundaries are within 500 kb of a G-band boundary (expectation = $10.50\%$, K-S test: D $= 0.076$, p $< 3 \times10^{-12}$). This is seen for compartment boundaries calculated for all three cell types independently. The genome wide overlap of compartment A and B regions with particular G-band classes is nonrandom, and suggests much greater correspondence. Regions assigned to compartment A are significantly over-represented within lighter staining (especially G-negative) bands, while compartment B regions are over-represented in the most darkly staining (G-positive) bands. Approximately $40\%$ of the genome jointly occupies interphase compartment A as well as gneg/gpos25 metaphase G-bands, or occupies the interphase B compartment as well as gpos75/gpos100 at metaphase. Again, the same trends are seen significantly across all three cell types. This agreement is not unexpected given the broad differences in G-negative and G-positive bands, with contrasting gene density, GC content and replication timing\cite{Furey2003} that is strongly reminiscent of the contrasts between interphase A and B compartments,\cite{Lieberman2009} but to our knowledge has not been directly studied before. These data suggest that across the genome most fine structure, reflected in domain boundaries, is not well preserved between interphase and metaphase. However there is evidence for conservation of broader structural categories across a substantial fraction of the genome, which may reflect broad similarities in the degree of compaction seen at many regions across the cell cycle.
+We examined the genome wide similarity of all interphase domain structure boundaries to metaphase G-band boundaries, relative to an expected distribution derived by permutation (Methods XX). There is a significant, though extremely modest, excess of compartment boundaries within close proximity of G-band boundaries, such that $13.90\%$ of compartment boundaries are within $500$ kb of a G-band boundary (expectation = $10.50\%$, K-S test: D $= 0.076$, p $< 3 \times10^{-12}$). This is seen for compartment boundaries calculated for all three cell types independently (a full comparison for GM12878 is shown in Fig. \ref{fig:gbands2}). 
+
+\begin{figure}
+\begin{center} 
+\makebox[\textwidth][c]{ 
+\includegraphics[width=5.7in]{figs/gb_ideo.pdf}
+}
+\captionsetup{width=\textwidth}
+\caption[Genome-wide agreement between Giemsa bands and A/B compartments..]{ {\bf Genome-wide agreement between Giemsa bands and A/B compartments. }
+G-bands, assayed at metaphase, often correspond with interphase A/B compartments across all chromosomes. Data for cell type GM$12878$ is shown.
+}\label{fig:gbands2}
+\end{center}
+\end{figure} 
+
+The genome wide overlap of compartment A and B regions with particular G-band classes is nonrandom, and suggests much greater correspondence. Regions assigned to compartment A are significantly over-represented within lighter staining (especially G-negative) bands, while compartment B regions are over-represented in the most darkly staining (G-positive) bands (Fig. \ref{fig:gbands}). Approximately $40\%$ of the genome jointly occupies interphase compartment A as well as gneg/gpos25 metaphase G-bands, or occupies the interphase B compartment as well as gpos75/gpos100 at metaphase. Again, the same trends are seen significantly across all three cell types. This agreement is not unexpected given the broad differences in G-negative and G-positive bands, with contrasting gene density, GC content and replication timing\cite{Furey2003} that is strongly reminiscent of the contrasts between interphase A and B compartments,\cite{Lieberman2009} but to our knowledge has not been directly studied before. These data suggest that across the genome most fine structure, reflected in domain boundaries, is not well preserved between interphase and metaphase. However there is evidence for conservation of broader structural categories across a substantial fraction of the genome, which may reflect broad similarities in the degree of compaction seen at many regions across the cell cycle.
 
 \begin{figure}
 \begin{center} 
 \includegraphics[width=3.8in]{figs/gbands.pdf}
 \captionsetup{width=\textwidth}
 \caption[ Giemsa--stain bands correspond to A/B compartments.]{ {\bf Giemsa--stain bands correspond to A/B compartments.}
-Placeholder
+The correspondence between G-bands and A/B compartments is broken down into the five levels of Giemsa stain. A compartments largely match \emph{gneg} staining, while \emph{gpos75} and \emph{gpos100} are enriched in B compartments.
 }\label{fig:gbands}
 \end{center}
 \end{figure} 
 
-\begin{figure}
-\begin{center} 
-\makebox[\textwidth][c]{ 
-\includegraphics[width=5.75in]{figs/gb_ideo.pdf}
-}
-\captionsetup{width=\textwidth}
-\caption[Genome-wide agreement between Giemsa bands and A/B compartments in the Gm12878 cell type.]{ {\bf Genome-wide agreement between Giemsa bands and A/B compartments in the Gm12878 cell type.}
-Placeholder
-}\label{fig:gbands2}
-\end{center}
-\end{figure} 
-
-\subsection{Superboundaries}
-
-Thus far compartment and TAD boundaries have been considered separately, however it is of interest to consider how these boundary regions interact across scales. Open questions remain about the co-occurence of these two boundary regions, and whether 
+%\subsection{Superboundaries}
+%
+%Thus far compartment and TAD boundaries have been considered separately, however it is of interest to consider how these boundary regions interact across scales. Open questions remain about the co-occurence of these two boundary regions, and whether 
 
 
 \ifstandalone

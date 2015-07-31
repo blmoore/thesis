@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt,oneside]{book}
+\documentclass[a4paper,11pt,oneside]{book}
 
 % packages 
 \usepackage{arsclassica}    % fancy layout
@@ -330,8 +330,9 @@ MetaTADs are a concept discovered by collaborators. Their method for calling suc
 %CAGE, ctss
 Our collaborators in the metaTAD project performed ChIP-seq experiments for PolIII (three variants), H$3$K$27$me$3$, CTCF and DNase-I hypersensitivity. Mapped reads from these experiments were processed using MACSv2\cite{Zhang2008} to give relative signal over background (from an estimated local model), which was then averaged over all boundaries genome wide. 
 
-%CAGE TSS
-For gene density, CAGE TSS (CTSS) density and LAD boundary density, simple intersection counts were generated per bin using \texttt{bedtools}\cite{Quinlan2010} and these were then averaged over all boundaries.
+Cap analysis of gene expression (CAGE) data was produced by the FANTOM consortium.\cite{fantom5, itoh2012a} This method produces sequencing data from the $5`$ end of cDNAs, and can be used to quantify expression activity at precise promoter locations.\cite{Kodzius2006} Here, CAGE was performed at multiple points along a neural-differentiation timecourse and tags were clustered to form CAGE TSS (CTSS) in a manner developed for the FANTOM5 project.\cite{fantom5} To count these CTSS over boundary bins, we simply intersect the annotations and count CTSS per bin using \texttt{bedtools}.\cite{Quinlan2010}
+
+Gene density over metaTAD boundaries was calculated using UCSC \texttt{mm9} gene models.\cite{Karolchik2014} Again simple intersections were taken to count genes over boundaries using \texttt{bedtools}\cite{Quinlan2010} and requiring a minimal overlap fraction of $0.5\%$ of a bin ($250$ bp).
 
 \subsection{LAD coincidence}
 
