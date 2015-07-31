@@ -517,6 +517,20 @@ Huang BDW, Lempicki R (2008) {Systematic and integrative analysis of large gene
   lists using DAVID bioinformatics resources}.
 \newblock \emph{Nature protocols}, (301): 1--43.
 
+\bibitem[{Quinlan and Hall(2010)}]{Quinlan2010}
+Quinlan AR, Hall IM (2010) {BEDTools: A flexible suite of utilities for
+  comparing genomic features}.
+\newblock \emph{Bioinformatics}, \textbf{26}(6): 841--842.
+
+\bibitem[{Peric-Hupkes \emph{et~al.}(2010)Peric-Hupkes, Meuleman, Pagie,
+  Bruggeman, Solovei, Brugman, Gr\"{a}f, Flicek, Kerkhoven
+  \emph{et~al.}}]{Peric-Hupkes2010}
+Peric-Hupkes D, Meuleman W, Pagie L, Bruggeman SWM, Solovei I, Brugman W,
+  Gr\"{a}f S, Flicek P, Kerkhoven RM, \emph{et~al.} (2010) {Molecular Maps of
+  the Reorganization of Genome-Nuclear Lamina Interactions during
+  Differentiation}.
+\newblock \emph{Molecular Cell}, \textbf{38}(4): 603--613.
+
 \bibitem[{Furey(2003)}]{Furey2003}
 Furey TS (2003) {Integration of the cytogenetic map with the draft human genome
   sequence}.
@@ -637,11 +651,6 @@ Wickham H, Francois R (2015) \emph{dplyr: A Grammar of Data Manipulation}.
 
 \bibitem[{Van~Rossum(1995)}]{rossum1995}
 Van~Rossum G (1995) \emph{Python reference manual}.
-
-\bibitem[{Quinlan and Hall(2010)}]{Quinlan2010}
-Quinlan AR, Hall IM (2010) {BEDTools: A flexible suite of utilities for
-  comparing genomic features}.
-\newblock \emph{Bioinformatics}, \textbf{26}(6): 841--842.
 
 \bibitem[{Li \emph{et~al.}(2009)Li, Handsaker, Wysoker, Fennell, Ruan, Homer,
   Marth, Abecasis and Durbin}]{Li2009}
@@ -1001,15 +1010,6 @@ Schmidt D, Schwalie PC, Wilson MD, Ballester B, Gonalves A, Kutter C, Brown GD,
 Tarailo-Graovac M, Chen N (2009) {Using RepeatMasker to identify repetitive
   elements in genomic sequences}.
 \newblock \emph{Current Protocols in Bioinformatics}, (SUPPL. 25).
-
-\bibitem[{Peric-Hupkes \emph{et~al.}(2010)Peric-Hupkes, Meuleman, Pagie,
-  Bruggeman, Solovei, Brugman, Gr\"{a}f, Flicek, Kerkhoven
-  \emph{et~al.}}]{Peric-Hupkes2010}
-Peric-Hupkes D, Meuleman W, Pagie L, Bruggeman SWM, Solovei I, Brugman W,
-  Gr\"{a}f S, Flicek P, Kerkhoven RM, \emph{et~al.} (2010) {Molecular Maps of
-  the Reorganization of Genome-Nuclear Lamina Interactions during
-  Differentiation}.
-\newblock \emph{Molecular Cell}, \textbf{38}(4): 603--613.
 
 \bibitem[{Pickersgill \emph{et~al.}(2006)Pickersgill, Kalverda, de~Wit,
   Talhout, Fornerod and van Steensel}]{Pickersgill2006}

@@ -17,12 +17,15 @@
 \BOOKMARK [1][-]{section.1.5}{1.5 Boundaries}{chapter.1}% 17
 \BOOKMARK [2][-]{subsection.1.5.1}{1.5.1 TADs}{section.1.5}% 18
 \BOOKMARK [2][-]{subsection.1.5.2}{1.5.2 Compartments}{section.1.5}% 19
-\BOOKMARK [2][-]{subsection.1.5.3}{1.5.3 MetaTADs}{section.1.5}% 20
-\BOOKMARK [1][-]{section.1.6}{1.6 Giemsa band comparison}{chapter.1}% 21
-\BOOKMARK [1][-]{section.1.7}{1.7 Nuclear positioning}{chapter.1}% 22
-\BOOKMARK [1][-]{section.1.8}{1.8 4C analysis}{chapter.1}% 23
-\BOOKMARK [2][-]{subsection.1.8.1}{1.8.1 Normalisation}{section.1.8}% 24
-\BOOKMARK [2][-]{subsection.1.8.2}{1.8.2 Significance estimation}{section.1.8}% 25
-\BOOKMARK [2][-]{subsection.1.8.3}{1.8.3 3\205D modelling}{section.1.8}% 26
-\BOOKMARK [1][-]{section.1.9}{1.9 5C analysis}{chapter.1}% 27
-\BOOKMARK [1][-]{section.1.10}{1.10 Scripts and other analyses}{chapter.1}% 28
+\BOOKMARK [1][-]{section.1.6}{1.6 MetaTAD analysis}{chapter.1}% 20
+\BOOKMARK [2][-]{subsection.1.6.1}{1.6.1 Size selection}{section.1.6}% 21
+\BOOKMARK [2][-]{subsection.1.6.2}{1.6.2 Collaborator datasets}{section.1.6}% 22
+\BOOKMARK [2][-]{subsection.1.6.3}{1.6.3 LAD coincidence}{section.1.6}% 23
+\BOOKMARK [1][-]{section.1.7}{1.7 Giemsa band comparison}{chapter.1}% 24
+\BOOKMARK [1][-]{section.1.8}{1.8 Nuclear positioning}{chapter.1}% 25
+\BOOKMARK [1][-]{section.1.9}{1.9 4C analysis}{chapter.1}% 26
+\BOOKMARK [2][-]{subsection.1.9.1}{1.9.1 Normalisation}{section.1.9}% 27
+\BOOKMARK [2][-]{subsection.1.9.2}{1.9.2 Significance estimation}{section.1.9}% 28
+\BOOKMARK [2][-]{subsection.1.9.3}{1.9.3 3\205D modelling}{section.1.9}% 29
+\BOOKMARK [1][-]{section.1.10}{1.10 5C analysis}{chapter.1}% 30
+\BOOKMARK [1][-]{section.1.11}{1.11 Scripts and other analyses}{chapter.1}% 31

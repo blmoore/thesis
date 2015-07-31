@@ -294,18 +294,26 @@ High resolution LAD data in mouse embryonic stem cells were retrieved from \cite
 \includegraphics[width=4.5in]{figs/mt_laminperm.png}
 \captionsetup{width=\textwidth}
 \caption[MetaTADs align with lamin associated domains.]{ {\bf MetaTADs align with lamin associated domains.}
-Heatmaps of LaminB1 association microarray probe intensity values over MetaTAD boundaries (from domains of size 10 -- 40 Mb) and TAD boundaries, are displayed alongside examples of circularly-permuted boundaries. 
-%$42.6\%$ of MetaTAD boundaries (10 -- 40 Mb) had an absolute linear regression coefficient $>.05$ of lamin association intensities, indicating a boundary transition (versus $15.8\%$ expectation from 1000 circular permutations, $p < 1 \times 10^{-4}$). TAD boundaries were also significantly more associated with lamin association transitions (Observed: $11.8\%$, Expected: $9.5\%$; empirical p-value: $p < 1 \times 10^{-4}$). 
-Profiles are shown $\pm450$ kb from each boundary.
+Heatmaps of LaminB1 association microarray probe intensity values over MetaTAD boundaries (from domains of size 10 -- 40 Mb) and TAD boundaries, are displayed alongside examples of circularly-permuted boundaries. Profiles are shown $\pm450$ kb from each boundary.
 }\label{fig:mtlamin}
 \end{center}
 \end{figure} 
 
 Boundaries were seriated in order to separate out those that coincide with a LAD boundary (Methods XX) and we found a large number of metaTAD boundaries ($43\%$) in our $10$--$40$ Mb subset appeared to correspond to LAD boundaries (Fig. \ref{fig:mtlamin}). The same comparison using TAD boundaries found a coincidence of just $12\%$. However LADs are large domains and there were over $5,000$ TADs called in this Hi-C data by our collaborators, thus in absolute numbers of boundaries this is still represents a large overlap.
 
-To test the significance of these observations, we apply a permutation-based statistical test where our observed coincidences are compared with those produced by $1,000$ circular (per-chromosome) permutations (Methods XX). We found that the metaTAD boundary coincidence is around $2.7$-fold increase above null expectation (observed: $42.6\%$; expected: $15.8\%$; empirical $p$-value: $p < 1 \times 10^{-4}$). Meanwhile TAD boundaries were found to have a smaller, yet still significant, $1.2$-fold increase in coincidence with LAD boundaries relative to a null model (observed: $11.8\%$; expected: $9.5\%$; empirical $p$-value: $p < 1 \times 10^{-4}$).
+To test the significance of these observations, we apply a permutation-based statistical test where our observed coincidences are compared with those produced by $1,000$ circular (per-chromosome) permutations (Methods XX). We found that the metaTAD boundary coincidence is around $2.7$-fold increase above null expectation (observed: $42.6\%$; expected: $15.8\%$; empirical $p$-value: $p < 1 \times 10^{-4}$; Fig. \ref{fig:mtsummary}). Meanwhile TAD boundaries were found to have a smaller, yet still significant, $1.2$-fold increase in coincidence with LAD boundaries relative to a null model (observed: $11.8\%$; expected: $9.5\%$; empirical $p$-value: $p < 1 \times 10^{-4}$; Fig. \ref{fig:mtsummary}).
 
-This result highlights again that metaTADs offer useful perspectives onto higher order genome organisation. In this case, it appears TADs will often neatly aggregate within LADs and together these make-up what we can observe as a metaTAD.
+\begin{figure}
+\begin{center} 
+\includegraphics[width=2.5in]{figs/mt_laminsummary.pdf}
+\captionsetup{width=\textwidth}
+\caption[ MetaTAD boundaries much LAD boundaries much more often than expected by chance. ]{ {\bf MetaTAD boundaries much LAD boundaries much more often than expected by chance. }
+Heatmaps of lamina association over MetaTAD boundaries are shown as in Fig. \ref{fig:mtlamin}. Sidebars labelled O and E reflect observed and expected proportions of metaTAD / LAD boundary overlaps.
+}\label{fig:mtsummary}
+\end{center}
+\end{figure} 
+
+This result highlights again that metaTADs offer useful perspectives onto higher order genome organisation. In this case, it appears TADs will often neatly aggregate within LADs and together these constitute what we observe as a metaTAD.
 
 \subsection{Boundaries over a time series}
 
