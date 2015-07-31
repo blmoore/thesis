@@ -315,6 +315,9 @@ INPUT ./figs/metatad_cutoffenrich.pdf
 INPUT figs/mt_laminperm.png
 INPUT ./figs/mt_laminperm.png
 INPUT ./figs/mt_laminperm.png
+INPUT figs/mt_laminsummary.pdf
+INPUT ./figs/mt_laminsummary.pdf
+INPUT ./figs/mt_laminsummary.pdf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
