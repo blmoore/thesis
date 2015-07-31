@@ -3,48 +3,52 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: boundaries.aux
 The style file: ../thesis.bst
 Database file #1: /Users/benmoore/Documents/library.bib
+Repeated entry---line 3845 of file /Users/benmoore/Documents/library.bib
+ : @article{fantom5
+ :                 ,
+I'm skipping whatever remains of this entry
 Database file #2: /Users/benmoore/Documents/customrefs.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--there's a number but no volume in Tarailo-Graovac2009
-You've used 31 entries,
+You've used 32 entries,
             3024 wiz_defined-function locations,
-            829 strings with 14413 characters,
-and the built_in function-call counts, 52001 in all, are:
-= -- 5492
-> -- 1673
+            835 strings with 14531 characters,
+and the built_in function-call counts, 52932 in all, are:
+= -- 5586
+> -- 1696
 < -- 8
-+ -- 1216
-- -- 427
-* -- 3890
-:= -- 5483
-add.period$ -- 62
-call.type$ -- 31
-change.case$ -- 155
-chr.to.int$ -- 32
-cite$ -- 32
-duplicate$ -- 5493
-empty$ -- 3660
-format.name$ -- 519
-if$ -- 10743
++ -- 1232
+- -- 433
+* -- 3963
+:= -- 5593
+add.period$ -- 64
+call.type$ -- 32
+change.case$ -- 160
+chr.to.int$ -- 33
+cite$ -- 33
+duplicate$ -- 5586
+empty$ -- 3732
+format.name$ -- 528
+if$ -- 10932
 int.to.chr$ -- 1
-int.to.str$ -- 32
-missing$ -- 424
-newline$ -- 128
-num.names$ -- 93
-pop$ -- 2652
+int.to.str$ -- 33
+missing$ -- 434
+newline$ -- 132
+num.names$ -- 96
+pop$ -- 2694
 preamble$ -- 1
-purify$ -- 124
+purify$ -- 128
 quote$ -- 0
-skip$ -- 938
+skip$ -- 954
 stack$ -- 0
-substring$ -- 6676
-swap$ -- 1124
+substring$ -- 6778
+swap$ -- 1153
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 186
+type$ -- 192
 warning$ -- 1
-while$ -- 329
+while$ -- 336
 width$ -- 0
-write$ -- 374
-(There was 1 warning)
+write$ -- 386
+(There was 1 error message)

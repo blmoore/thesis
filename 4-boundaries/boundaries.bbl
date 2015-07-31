@@ -1,4 +1,4 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
@@ -196,6 +196,11 @@ Pickersgill H, Kalverda B, de~Wit E, Talhout W, Fornerod M, van Steensel B
   (2006) {Characterization of the Drosophila melanogaster genome at the nuclear
   lamina.}
 \newblock \emph{Nature genetics}, \textbf{38}(9): 1005--1014.
+
+\bibitem[{Consortium \emph{et~al.}(2014)Consortium, Pmi and Dgt}]{fantom5}
+Consortium TF, Pmi R, Dgt C (2014) {A promoter-level mammalian expression
+  atlas.}
+\newblock \emph{Nature}, \textbf{507}(7493): 462--70.
 
 \bibitem[{Naumova \emph{et~al.}(2013)Naumova, Imakaev, Fudenberg, Zhan, Lajoie,
   Mirny and Dekker}]{Naumova2013}
