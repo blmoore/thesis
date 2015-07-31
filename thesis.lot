@@ -2,16 +2,16 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1}{\ignorespaces Public Hi-C data used in this work.}}{11}{table.caption.13}
-\contentsline {table}{\numberline {2}{\ignorespaces ChIP-seq and other public datasets used in this work. \relax }}{13}{table.caption.14}
+\contentsline {table}{\numberline {1}{\ignorespaces Public Hi-C data used in this work.}}{12}{table.caption.13}
+\contentsline {table}{\numberline {2}{\ignorespaces ChIP-seq and other public datasets used in this work. \relax }}{14}{table.caption.14}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3}{\ignorespaces Performance comparison of different modelling techniques.}}{50}{table.caption.45}
-\contentsline {table}{\numberline {4}{\ignorespaces Performance comparison of full and optimised RF and ML models.}}{54}{table.caption.47}
+\contentsline {table}{\numberline {3}{\ignorespaces Performance comparison of different modelling techniques.}}{57}{table.caption.45}
+\contentsline {table}{\numberline {4}{\ignorespaces Performance comparison of full and optimised RF and ML models.}}{59}{table.caption.47}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A1}{\ignorespaces Gm12878 functional enrichments in regions of variable structure. }}{83}{table.7.1}
-\contentsline {table}{\numberline {A2}{\ignorespaces H1 hESC functional enrichments in regions of variable structure. }}{84}{table.7.2}
-\contentsline {table}{\numberline {A3}{\ignorespaces K562 functional enrichments in regions of variable structure. }}{85}{table.7.3}
+\contentsline {table}{\numberline {A1}{\ignorespaces Gm12878 functional enrichments in regions of variable structure. }}{91}{table.7.1}
+\contentsline {table}{\numberline {A2}{\ignorespaces H1 hESC functional enrichments in regions of variable structure. }}{92}{table.7.2}
+\contentsline {table}{\numberline {A3}{\ignorespaces K562 functional enrichments in regions of variable structure. }}{93}{table.7.3}
