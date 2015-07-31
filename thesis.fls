@@ -419,6 +419,7 @@ INPUT figs/rfparams.pdf
 INPUT ./figs/rfparams.pdf
 INPUT ./figs/rfparams.pdf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplr9o.tfm
 INPUT 2-hic_comparison/hic_comparison.tex
 INPUT 2-hic_comparison/hic_comparison.tex
 INPUT figs/hicnorm.png
@@ -486,7 +487,6 @@ INPUT ./figs/bestbinSummary.pdf
 INPUT figs/RandomForest_10CV_50d.pdf
 INPUT ./figs/RandomForest_10CV_50d.pdf
 INPUT ./figs/RandomForest_10CV_50d.pdf
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplr9o.tfm
 INPUT figs/modelres.pdf
 INPUT ./figs/modelres.pdf
 INPUT ./figs/modelres.pdf
@@ -563,6 +563,9 @@ INPUT ./figs/metatad_cutoffenrich.pdf
 INPUT figs/mt_laminperm.png
 INPUT ./figs/mt_laminperm.png
 INPUT ./figs/mt_laminperm.png
+INPUT figs/mt_laminsummary.pdf
+INPUT ./figs/mt_laminsummary.pdf
+INPUT ./figs/mt_laminsummary.pdf
 INPUT figs/mt_ts.pdf
 INPUT ./figs/mt_ts.pdf
 INPUT ./figs/mt_ts.pdf

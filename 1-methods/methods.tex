@@ -318,11 +318,28 @@ produced the observed values. The point at which transitions occurred
 between states was taken as a boundary which was then extended $\pm 1.5$
 Mb to give a 3 Mb window in which a boundary was though to occur.
 
-Boundary enrichments and alignments were tested in the same manner as TADs, described in section \ref{tads}.
+Boundary enrichments and alignments were tested in the same manner as TADs (Section \ref{tads}).
 
-\subsection{MetaTADs}\label{sec:metatad}
+\section{MetaTAD analysis}
 
-MetaTADs are a concept discovered by collaborators. Their method for calling such features involve the constrained hierarchical cluttering of neighbouring TADs with the greatest inter-TAD contacts. This results in a tree of increasing metaTAD aggregation. For boundary analysis of metaTADs, again a similar approach was used to that of TADs (section \ref{tads}) but thresholded to within a given range of sizes. MetaTADs below 10 Mb were excluded, as to have no lower bound results in $\frac{2}{3}$ of all TAD boundaries likewise considered MetaTAD boundaries, reducing the power to analyse any differences. 10 Mb was chosen in an attempt to compromise minimising the overlap between TAD and metaTAD boundaries, while also retaining a large enough sample size. An upper bound of 40 Mb was also chosen, as beyond this threshold inter-TAD contacts were found to be no higher than expected by chance. In practice, the tree-like structure means any upper-bound has little impact as a filter: in almost all cases, any boundary in a metaTAD of size $> 40$ Mb will also form metaTADs below this value. Additionally, the hierarchical nature of metaTADs means that some boundaries are present at multiple levels of the tree. Only one case of each boundary position was tested for feature enrichments.
+\subsection{Size selection}\label{sec:metatad}
+
+MetaTADs are a concept discovered by collaborators. Their method for calling such features involve the constrained hierarchical cluttering of neighbouring TADs with the greatest inter-TAD contacts. This results in a tree of increasing metaTAD aggregation. For boundary analysis of metaTADs, again a similar approach was used to that of TADs (section \ref{tads}) but thresholded to within a given range of sizes. MetaTADs below 10 Mb were excluded, as to have no lower bound results in $\frac{2}{3}$ of all TAD boundaries likewise considered MetaTAD boundaries, reducing the power to analyse any differences. 10 Mb was chosen in an attempt to compromise minimising the overlap between TAD and metaTAD boundaries, while also retaining a large enough sample size. An upper bound of 40 Mb was also chosen, as beyond this threshold inter-TAD contacts were found to be no higher than expected by chance. In practice, the tree-like structure means any upper-bound has little impact as a filter: in almost all cases, any boundary in a metaTAD of size $> 40$ Mb will also form metaTADs below this value. Additionally, the hierarchical nature of metaTADs means that some boundaries are present at multiple levels of the tree. Only one case of each boundary position was tested for feature enrichments, and this was performed as with TAD boundaries (Section \ref{tads}).
+
+\subsection{Collaborator datasets}
+%CAGE, ctss
+Our collaborators in the metaTAD project performed ChIP-seq experiments for PolIII (three variants), H$3$K$27$me$3$, CTCF and DNase-I hypersensitivity. Mapped reads from these experiments were processed using MACSv2\cite{Zhang2008} to give relative signal over background (from an estimated local model), which was then averaged over all boundaries genome wide. 
+
+%CAGE TSS
+For gene density, CAGE TSS (CTSS) density and LAD boundary density, simple intersection counts were generated per bin using \texttt{bedtools}\cite{Quinlan2010} and these were then averaged over all boundaries.
+
+\subsection{LAD coincidence}
+
+To compare metaTAD boundaries with those of LADs, we made use of previously-published Lamin-B1 DamID microarray probe intensities.\citet{Peric-Hupkes2010} For analysis over boundaries, these values were averaged into the same boundary windows as used previously (50 kb bins $\pm450$ kb around boundary, as in Section \ref{tads}). 
+
+Transitions between high and low lamina association were detected by fitting a linear regression model across each series of consecutive boundary bins (i.e. $\textrm{Lamina association}=\beta\cdot\textrm{bin} + c$). Linear models which had an absolute coefficient $|\beta| >.05$ were taken as crossing a LAD transition. This threshold is a heuristic which appears to perform well at conservatively selecting clear transitions. As a method of seriation for the $y$-axis of heatmap figures (e.g. Fig. \ref{fig:mtlamin}), boundaries were divided into those that coincided with a lamin transition and those that did not, and members within each group were then sorted by average intensity. 
+
+To test the significance of the association between boundaries and lamin transitions, we circularly permuted both TAD and metaTAD boundaries on each chromosome 1000 times, and calculated the proportion of boundaries that crossed LAD boundaries using the same linear regression procedure described above. Empirical $p$-values were then calculated as the number of permuted results greater than or equal to the observed value.
 
 \section{Giemsa band comparison}\label{giemsa-band-comparison}
 
