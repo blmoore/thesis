@@ -257,6 +257,9 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplrc8r.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplb9o.tfm
+INPUT figs/4c_arcs.pdf
+INPUT ./figs/4c_arcs.pdf
+INPUT ./figs/4c_arcs.pdf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplri9o.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplrc9o.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplrc9o.vf
@@ -296,6 +299,7 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplri9o.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT figs/5cfc.pdf
 INPUT ./figs/5cfc.pdf
@@ -308,7 +312,6 @@ INPUT ./figs/5chic.pdf
 INPUT ./figs/5chic.pdf
 INPUT shh.bbl
 INPUT shh.bbl
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplri9o.vf
 INPUT shh.aux
 INPUT ./shh.out
 INPUT ./shh.out
