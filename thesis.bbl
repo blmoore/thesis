@@ -1,4 +1,4 @@
-\begin{thebibliography}{184}
+\begin{thebibliography}{186}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{de~Wit and de~Laat(2012)}]{DeWit2012}
@@ -517,10 +517,36 @@ Huang BDW, Lempicki R (2008) {Systematic and integrative analysis of large gene
   lists using DAVID bioinformatics resources}.
 \newblock \emph{Nature protocols}, (301): 1--43.
 
+\bibitem[{{RIKEN Omics Science Center}(2012)}]{fantom5}
+{RIKEN Omics Science Center} (2012) {FANTOM5}.
+\newblock \emph{http://fantom.gsc.riken.jp/}.
+
+\bibitem[{Itoh \emph{et~al.}(2012)Itoh, Kojima, Nagao-Sato, Saijo, Lassmann,
+  Kanamori-Katayama, Kaiho, Lizio, Kawaji \emph{et~al.}}]{itoh2012a}
+Itoh M, Kojima M, Nagao-Sato S, Saijo E, Lassmann T, Kanamori-Katayama M, Kaiho
+  A, Lizio M, Kawaji H, \emph{et~al.} (2012) {Automated workflow for
+  preparation of cDNA for cap analysis of gene expression on a single molecule
+  sequencer}.
+\newblock \emph{PLoS ONE}, \textbf{7}(1).
+
+\bibitem[{Kodzius \emph{et~al.}(2006)Kodzius, Kojima, Nishiyori, Nakamura,
+  Fukuda, Tagami, Sasaki, Imamura, Kai \emph{et~al.}}]{Kodzius2006}
+Kodzius R, Kojima M, Nishiyori H, Nakamura M, Fukuda S, Tagami M, Sasaki D,
+  Imamura K, Kai C, \emph{et~al.} (2006) {CAGE: cap analysis of gene
+  expression.}
+\newblock \emph{Nature methods}, \textbf{3}(3): 211--22.
+
 \bibitem[{Quinlan and Hall(2010)}]{Quinlan2010}
 Quinlan AR, Hall IM (2010) {BEDTools: A flexible suite of utilities for
   comparing genomic features}.
 \newblock \emph{Bioinformatics}, \textbf{26}(6): 841--842.
+
+\bibitem[{Karolchik \emph{et~al.}(2014)Karolchik, Barber, Casper, Clawson,
+  Cline, Diekhans, Dreszer, Fujita, Guruvadoo \emph{et~al.}}]{Karolchik2014}
+Karolchik D, Barber GP, Casper J, Clawson H, Cline MS, Diekhans M, Dreszer TR,
+  Fujita Pa, Guruvadoo L, \emph{et~al.} (2014) {The UCSC Genome Browser
+  database: 2014 update}.
+\newblock \emph{Nucleic Acids Research}, \textbf{42}(D1): 764--770.
 
 \bibitem[{Peric-Hupkes \emph{et~al.}(2010)Peric-Hupkes, Meuleman, Pagie,
   Bruggeman, Solovei, Brugman, Gr\"{a}f, Flicek, Kerkhoven
@@ -758,13 +784,6 @@ Shiraki T, Kondo S, Katayama S, Waki K, Kasukawa T, Kawaji H, Kodzius R,
 \newblock \emph{Proceedings of the National Academy of Sciences of the United
   States of America}, \textbf{100}(26): 15776--81.
 
-\bibitem[{Kodzius \emph{et~al.}(2006)Kodzius, Kojima, Nishiyori, Nakamura,
-  Fukuda, Tagami, Sasaki, Imamura, Kai \emph{et~al.}}]{Kodzius2006}
-Kodzius R, Kojima M, Nishiyori H, Nakamura M, Fukuda S, Tagami M, Sasaki D,
-  Imamura K, Kai C, \emph{et~al.} (2006) {CAGE: cap analysis of gene
-  expression.}
-\newblock \emph{Nature methods}, \textbf{3}(3): 211--22.
-
 \bibitem[{Zuber and Strimmer(2011)}]{Zuber2011}
 Zuber V, Strimmer K (2011) {High-Dimensional Regression and Variable Selection
   Using CAR Scores}.
@@ -778,11 +797,6 @@ Ryba T, Hiratani I, Lu J, Itoh M, Kulik M, Zhang J, Schulz TC, Robins AJ,
   profiles predict long-range chromatin interactions and distinguish closely
   related cell types.}
 \newblock \emph{Genome research}, \textbf{20}(6): 761--70.
-
-\bibitem[{Consortium \emph{et~al.}(2014)Consortium, Pmi and Dgt}]{fantom5}
-Consortium TF, Pmi R, Dgt C (2014) {A promoter-level mammalian expression
-  atlas.}
-\newblock \emph{Nature}, \textbf{507}(7493): 462--70.
 
 \bibitem[{Kolasinska-Zwierz \emph{et~al.}(2009)Kolasinska-Zwierz, Down,
   Latorre, Liu, Liu and Ahringer}]{Kolasinska-Zwierz2009}
