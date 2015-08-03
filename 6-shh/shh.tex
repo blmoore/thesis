@@ -69,7 +69,7 @@ My part in this collaboration was to analyse 3C-seq (also known as 4C) data reco
 \includegraphics[width=5in]{figs/shharc_full.pdf}
 \captionsetup{width=\textwidth} 
 \caption[TSA treatment induces a strong ZRS--SHH interaction. ]{ {\bf TSA treatment induces a strong ZRS--SHH interaction. }
-4C interactions are shown as edges from source node (ZRS enhancer bait fragment) to targets along an approximately 2 Mb region of chromosome 5. Edge width is proportional to the number of interactions, only highly significant interactions are shown (FDR $q$-value $<5 \times 10 ^{-5}$). Zoomed region shows the number of interactions of the bait region with SHH in both treated and untreated samples. Each rectangle is a restriction fragment, coloured by FDR $q$-value indicating the significance of the interaction above expected levels.
+4C interactions are shown as edges from source node (ZRS enhancer bait fragment) to targets along an approximately 2 Mb region of chromosome 5. Edge width is proportional to the number of interactions, only highly significant interactions are shown (FDR $q$-value $<5 \times 10 ^{-5}$). Zoomed region shows the number of interactions of the bait region with SHH in both untreated and TSA treated (after 18h) samples. Each rectangle is a restriction fragment, coloured by FDR $q$-value indicating the significance of the interaction above expected levels.
 }\label{fig:ssharc}
 \end{center} 
 \end{figure} 
@@ -80,12 +80,22 @@ The first stage in analysing these contacts is to convert observed raw sequencin
 
 The results of a comparison between TSA treated and untreated samples is shown in Figure \ref{fig:ssharc}. In it we see a striking and highly significant ZRS--SHH contact in the treated sample ($q$-value $ < 5 \times 10^{-10}$), with a weaker but still significant contact in the adjacent restriction fragment in the untreated sample ($q$-value $ < 5 \times 10^{-5}$). 
 
-We also see more broadly a much higher total number of significant contacts in the untreated sample around the viewpoint (Fig. \ref{fig:ssharc}, \emph{upper}). In the treated sample, only a few contacts cross the stringent $q$-value threshold, with the SHH--ZRS contact among the most significant in terms of both $q$-value and supporting number of reads (indicated by the thickness of the arc, Fig. \ref{fig:ssharc}, \emph{upper}).
+We also see more broadly a much higher total number of significant contacts in the untreated sample around the viewpoint (Fig. \ref{fig:4carcs}). In the treated samples, only a few contacts cross the stringent $q$-value threshold, with the SHH--ZRS contact among the most significant in terms of both $q$-value and supporting number of reads (indicated by the thickness of the arc, Figs. \ref{fig:ssharc}, \ref{fig:4carcs}).
 
 Existing multi-probe FISH data produced by our collaborators shows approximately equal levels of compaction in this region in both TSA treated and untreated cells (\emph{data not shown}). This information in combination with the 4C results reported here (Fig. \ref{fig:ssharc}) support a hypothesis that while both samples are held together in a TAD (Fig. \ref{fig:shhtad}) --- unavoidably inducing many contacts --- it is only in the treated sample where a highly-specific ZRS--SHH contact occurs and potentially is then bring about expression of the \emph{SHH} gene.
 
 % Conclusions: appears ZRS contacts become more targetted in TSA+ cells, before more diffuse. 
 % Maybe in contact all the time (supported by FISH data) but not engaging in specific contacts when non-expressing.
+
+\begin{figure}
+\begin{center} 
+\includegraphics[width=5in]{figs/4c_arcs.pdf}
+\captionsetup{width=\textwidth} 
+\caption[ A stable ZRS--SHH interaction is coupled with reduced extraneous contacts. ]{ {\bf A stable ZRS--SHH interaction is coupled with reduced extraneous contacts. }
+Arc plots are shown for an untreated, non-expressing 14fp cell population (\emph{untreated}) and following TSA treatment after 18 and 24 hours. Arcs link highly significant interactions ($q$-value $< 5 \times 10^{-5}$) and arc widths are proportional to the normalised number of reads recorded for the interaction (Methods \ref{methods:4c}).
+}\label{fig:4carcs}
+\end{center} 
+\end{figure} 
 
 \subsection{4C / Hi-C comparison}
 

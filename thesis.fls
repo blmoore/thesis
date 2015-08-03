@@ -404,6 +404,9 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplbi9o.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmbi.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplbi8r.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplbij8r.tfm
+INPUT figs/genome_org.pdf
+INPUT ./figs/genome_org.pdf
+INPUT ./figs/genome_org.pdf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
@@ -569,12 +572,12 @@ INPUT ./figs/mt_laminsummary.pdf
 INPUT figs/mt_ts.pdf
 INPUT ./figs/mt_ts.pdf
 INPUT ./figs/mt_ts.pdf
-INPUT figs/gbands.pdf
-INPUT ./figs/gbands.pdf
-INPUT ./figs/gbands.pdf
 INPUT figs/gb_ideo.pdf
 INPUT ./figs/gb_ideo.pdf
 INPUT ./figs/gb_ideo.pdf
+INPUT figs/gbands.pdf
+INPUT ./figs/gbands.pdf
+INPUT ./figs/gbands.pdf
 INPUT 6-shh/shh.tex
 INPUT 6-shh/shh.tex
 INPUT figs/shhtad.pdf
@@ -583,6 +586,9 @@ INPUT ./figs/shhtad.pdf
 INPUT figs/shharc_full.pdf
 INPUT ./figs/shharc_full.pdf
 INPUT ./figs/shharc_full.pdf
+INPUT figs/4c_arcs.pdf
+INPUT ./figs/4c_arcs.pdf
+INPUT ./figs/4c_arcs.pdf
 INPUT figs/5cfc.pdf
 INPUT ./figs/5cfc.pdf
 INPUT ./figs/5cfc.pdf
