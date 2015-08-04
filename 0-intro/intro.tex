@@ -96,7 +96,14 @@ Observed interaction frequencies (O) are averaged along super-diagonals to give 
 \end{center}
 \end{figure} 
 
-These compartments were identified through a continuous eigenvector profile, derived from a normalised Hi-C contact matrix.\cite{Lieberman2009} Importantly, this measure holds more information than a simple two-state classification, rather the continuous values can be interpreted as relative levels of compaction or activity.\cite{Dekker2013, Imakaev2012}
+These compartments were identified through a continuous eigenvector profile, derived from a normalised Hi-C contact matrix\cite{Lieberman2009} (Fig. \ref{fig:eigcalc}). This approach can be intuitively understood as formulated by \citet{Lajoie2014}:
+\begin{enumerate}
+\item A tartan pattern on normalised Hi-C matrices indicates two preferentially-contacting compartments (Fig. \ref{fig:eigcalc}).
+\item Assume a function ($c$) that maps a given genomic bin to its compartment, using a positive number for compartment A and \emph{vice versa}.
+\item The interaction frequency between bins $i$ and $j$ is thus $c(i)\cdot c(j)$. (This is enough to generate a tartan pattern: if $i$ and $j$ are in the same compartment, the product will be positive.\cite{Lajoie2014})
+\item Our symmetric Hi-C matrix thus contains $c(i)c(j)$ and in this formulation, principle components analysis is finding the basis that minimises the mean-squared error between $c(i)c(j)$ and $c(i)$.
+\end{enumerate}
+Importantly, this measure holds more information than a simple two-state classification, rather the continuous values can be interpreted as relative levels of compaction or activity.\cite{Dekker2013, Imakaev2012}
 
 \subsection{Topological domains}\label{intro:tads}
 
@@ -124,7 +131,7 @@ Dixon \emph{et al.}\cite{Dixon2012} also performed some comparative analysis, re
 
 A study of \emph{Drosophila} embryonic chromosomes found a similarly hierarchical organisation of physical domains, and also was able to relate these to ``epigenomics domains" showing specific sets of enrichment signatures representing active, null, polycomb-associated and telomeric regions.\cite{Sexton2012} 
 
-Recent high-resolution studies have been able to resolve ever-smaller levels of sub-structure. Rao \emph{et al.}\cite{Rao2014} refined the concept of chromosome compartments to "sub-compartments", dividing simple A/B divisions into a total of 5 subtypes. The authors were also able to identify "contact domains" of median size 185 kb, many of which were associated with identifiable individual looping events (Section \ref{intro:loops}).\cite{Rao2014} The authors also suggest that previously-observed large TADs may be the result of insufficient sequencing; that is, not all boundaries could be detected using 40 kb binned contact maps thus multiple contact domains were unintentionally combined into large domains.
+Recent high-resolution studies have been able to resolve ever-smaller levels of sub-structure. Rao \emph{et al.}\cite{Rao2014} refined the concept of chromosome compartments to "sub-compartments", dividing simple A/B divisions into a total of 5 subtypes. The authors were also able to identify "contact domains" of median size 185 kb, many of which were associated with identifiable individual looping events (Section \ref{intro:loops}).\cite{Rao2014} This domain size is close to those of \citet{Filippova2014} (described above) and the authors here suggest that previously-observed large TADs may be the result of insufficient sequencing; that is, not all boundaries could be detected using 40 kb binned contact maps thus multiple contact domains were unintentionally combined into large domains.
 
 \begin{figure}
 \begin{center}
@@ -145,7 +152,7 @@ that reflects empirical C-method observations and potentially describe the polym
 dynamics of chromatin folding.
 
 \subsection{Fractal globule}
-Lieberman Aiden \emph{ et al.}\cite{Lieberman2009} tested a number of theoretical models of genome folding to see which best explained the observed power-law scaling between distance and observed contact frequency ($IF =  1 / dist^{-\alpha}$ where $\alpha \approx 1.08$).  The authors sought to distinguish two previously-described models of genome organisation: the "fractal globule" and "equilibrium globule". The authors found that a theoretical fractal globule, embodying scale-independent self-similar aggregate folding, better fit the observed data than an equilibrium globule null model where simulated polymer folding was allowed to proceed unchecked.
+Lieberman Aiden \emph{ et al.}\cite{Lieberman2009} tested a number of theoretical models of genome folding to see which best explained the observed power-law scaling between distance and observed contact frequency ($\textrm{IF} =  \frac{1}{dist^{-\alpha}}$ where $\alpha \approx 1.08$).  The authors sought to distinguish two previously-described models of genome organisation: the "fractal globule" and "equilibrium globule". The study found that a theoretical fractal globule, embodying scale-independent self-similar aggregate folding, better fit the observed data than an equilibrium globule null model where simulated polymer folding was allowed to proceed unchecked.
 
 % cartoon of fractal globule ?
 
@@ -159,7 +166,7 @@ This model offers broad explanatory power for a range of observed power law coef
 
 \subsection{Looping and CTCF}\label{intro:loops}
 
-Examples have long been known of specific enhancer elements that are brought into close proximity with the promoter(s) they are regulating; under this model, these contacts form a "loop" structure between two potentially distal loci.\cite{Kadauke2009a, Sexton2009} A model region, the $\beta$-globin locus and its locus control region (LCR) located 40-80 kb away,\cite{Dekker2013} has been studied since the early 1980s,\cite{Banerji1981, Engel2000, Blackwood1998, Tolhuis2002} and is an interesting example of a well-characterised looping. Current knowledge suggests the $\beta$-globin forms loops with the multiple distal \emph{cis}-enhancer elements which make up the LCR, together forming an active chromatin hub (ACH).\cite{VandeCorput2012a} Within such a hub, regulatory signals could be efficiently integrated to dictate the overall activity of the target locus.\cite{DeWit2012, Pombo2015} It is now thought that the majority of active promoters are engaged with multiple, often cell type specific, regulatory looping events.\cite{Sanyal2012, Jin2013}
+Examples have long been known of specific enhancer elements that are brought into close proximity with the promoter(s) they are regulating; under this model, these contacts form a "loop" structure between two potentially distal loci\cite{Kadauke2009a, Sexton2009} (Fig. \ref{fig:genomeorg}). A model region, the $\beta$-globin locus and its locus control region (LCR) located 40-80 kb away,\cite{Dekker2013} has been studied since the early 1980s,\cite{Banerji1981, Engel2000, Blackwood1998, Tolhuis2002} and is an interesting example of a well-characterised looping. Current knowledge suggests the $\beta$-globin forms loops with the multiple distal \emph{cis}-enhancer elements which make up the LCR, together forming an active chromatin hub (ACH).\cite{VandeCorput2012a} Within such a hub, regulatory signals could be efficiently integrated to dictate the overall activity of the target locus.\cite{DeWit2012, Pombo2015} It is now thought that the majority of active promoters are engaged with multiple, often cell type specific, regulatory looping events.\cite{Sanyal2012, Jin2013}
 
 A notable component of many long-range looping events is the CCCTC-binding transcription factor (CTCF),\cite{Ong2014, Phillips2009} already mentioned as a component of TAD boundaries (Section \ref{intro:tads}) and as a proposed looping factor in the SBS model (Section \ref{intro:sbs}). CTCF is strongly conserved in higher eukaryotes,\cite{Filippova1996a} ubiquitously expressed and embryonic lethal, but it is not tied to a single biological function --- instead CTCF has been described as a "multivalent factor",\cite{Phillips2009} capable of regulating transcription, imprinting, dosage-compensation and acting as an insulator. 
 
@@ -168,9 +175,9 @@ In the context of genome organisation, CTCF is of interest for its role of ancho
 % bring back around to Rao2014 via CTCF
 A recent Hi-C paper, that of \citet{Rao2014}, again brought CTCF and looping to the fore of chromatin conformation research. This study identified around $10,000$ individual looping events in the human genome, almost all linking loci over distances of less than 2 Mb, and around $30\%$ connecting predicted enhancer and promoter chromatin states. \citet{Rao2014} also found a 6-fold overall increase in expression when comparing those promoters participating in a looping event with those not. Furthermore, $86\%$ of these loops involved CTCF bound regions, with roughly the same proportion involving cohesion subunits RAD21 and SMC3. The authors thus proposes that a CTCF-binding motif formed the "anchor" for this transitive complex of architectural proteins.\cite{Rao2014} A majority of these loops ($65\%$) also demarcated a topological domain, and at much higher resolution than previously observed (Section \ref{intro:tads}). Another striking finding of this research was that CTCF loops almost always occur in between bound motifs with a convergent orientation,\cite{Rao2014} though questions remain over why this should be the case, especially when considering the interactions of a flexible polymer in 3-D solution.
 
-\subsection{Cell cycle changes}
-
-Chromosome structure has been assayed both through mitosis\cite{Naumova2013} and studies have also focused on the edge-case of chromatin structures on X-chromosomes.\cite{Crane2015}
+%\subsection{Cell cycle changes}
+%
+%Chromosome structure has been assayed both through mitosis\cite{Naumova2013} and studies have also focused on the edge-case of chromatin structures on X-chromosomes.\cite{Crane2015}
 
 \section{Criticisms of C-methods}
 
@@ -194,7 +201,9 @@ Realistically and in most instances, an experimental design may either target hi
 \subsection{Biological interpretation}
 % For 
 % in Lieberman: s^{1/3}  == scaling observed in 3D FISH (500 kb < 2 Mb)
-A key consideration with C-methods is that, when accurately stated, the assays are measuring ``the frequency at which sequences are ligated together by formaldehyde cross-linking",\cite{Williamson2014} which is then assumed to be a proxy for physical distance within the nucleus. This is a marked difference from aforementioned FISH methods, where the physical distance is observed directly, albeit through the addition of non-native probes. So strong is this assumption, that methods have been developed that use a known FISH distance to then calibrate genome-wide Hi-C distances,\cite{Shavit2014} yet it remains unclear to what extent these two methods are compatible.
+A key consideration with C-methods is that, when accurately stated, the assays are measuring ``the frequency at which sequences are ligated together by formaldehyde cross-linking",\cite{Williamson2014} which is then assumed to be a proxy for physical distance within the nucleus. This is a marked difference from aforementioned FISH methods, where the physical distance is observed directly, albeit through the addition of non-native probes. So strong is this assumption, that methods have been developed that use a known FISH distance to then calibrate genome-wide Hi-C distances,\cite{Shavit2014} however it need not be the case that population-level interaction frequencies capture physical distance.\cite{Lajoie2014} Consider, for example, a tight enhancer--promoter interaction occurring in $50\%$ of cells, but not at all in the other half. In this scenario, the two loci would have an intermediate interaction frequency overall, which is then converted to a distance measure that reflects the realities of neither cell sub-population. For similar reasons, the transience of an interaction cannot be directly inferred from its interaction frequencies: a weak interaction frequency may be the result of either the same fleeting contact in many cells, or stable contacts in only a subset of cells.\cite{Lajoie2014}
+
+%yet it remains unclear to what extent these two methods are compatible.
 
 %Incidental contacts
 When interpreting C-methods data it should also be kept in mind that even verifiable contacts are by no-means functional. To elaborate, C-methods may find two regions to be strongly co-localised, but an understanding of the region may explain their co-localisation to be caused by mutual interaction with a nuclear lamina or nucleolus, for example, rather than any specific functional relationship between the two loci.\cite{Dekker2013} In addition, a functional enhancer--promoter interaction will necessarily constrain the contacts of other nearby regions, potentially causing highly-reproducible "bystander interactions"\cite{Dekker2013} that are nevertheless uninteresting from a functional perspective. 
