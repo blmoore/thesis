@@ -7,50 +7,50 @@ Database file #2: /Users/benmoore/Documents/customrefs.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--there's a number but no volume in Li2014
 Warning--there's a number but no volume in Mifsud2015
-Warning--empty journal in Dekker2014
 Warning--there's a number but no volume in Lajoie2014
+Warning--empty journal in Dekker2014
 Warning--empty journal in Williamson2014
 Warning--empty journal in Feingold2004
 Warning--there's a number but no volume in Landt2012
-You've used 75 entries,
+You've used 74 entries,
             3024 wiz_defined-function locations,
-            1118 strings with 38356 characters,
-and the built_in function-call counts, 105608 in all, are:
-= -- 11093
-> -- 3190
+            1114 strings with 38081 characters,
+and the built_in function-call counts, 103744 in all, are:
+= -- 10896
+> -- 3119
 < -- 23
-+ -- 2302
-- -- 817
-* -- 7962
-:= -- 11422
-add.period$ -- 150
-call.type$ -- 75
-change.case$ -- 376
-chr.to.int$ -- 76
-cite$ -- 82
-duplicate$ -- 10996
-empty$ -- 7578
-format.name$ -- 1066
-if$ -- 21753
++ -- 2250
+- -- 799
+* -- 7828
+:= -- 11228
+add.period$ -- 148
+call.type$ -- 74
+change.case$ -- 371
+chr.to.int$ -- 75
+cite$ -- 81
+duplicate$ -- 10796
+empty$ -- 7455
+format.name$ -- 1045
+if$ -- 21368
 int.to.chr$ -- 1
-int.to.str$ -- 76
-missing$ -- 914
-newline$ -- 304
-num.names$ -- 222
-pop$ -- 5299
+int.to.str$ -- 75
+missing$ -- 900
+newline$ -- 300
+num.names$ -- 219
+pop$ -- 5185
 preamble$ -- 1
-purify$ -- 300
+purify$ -- 296
 quote$ -- 0
-skip$ -- 1861
+skip$ -- 1833
 stack$ -- 0
-substring$ -- 13145
-swap$ -- 2478
+substring$ -- 12912
+swap$ -- 2448
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 450
+type$ -- 444
 warning$ -- 7
-while$ -- 689
+while$ -- 678
 width$ -- 0
-write$ -- 897
+write$ -- 886
 (There were 7 warnings)
