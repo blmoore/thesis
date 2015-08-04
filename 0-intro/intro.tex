@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt,oneside]{book}
+\documentclass[a4paper,11pt,oneside]{book}
 
 % packages 
 \usepackage{arsclassica}    % fancy layout
@@ -37,7 +37,10 @@
 \chapter{Introduction}
 \section{Genome organisation}
 %
-%It's oft-stated that the DNA within each human cell would extend for two metres fully extended. Instead that same length of DNA packs into a cell nucleus with a diameter in the order of micrometers ($\mu$m). This is achieved through a complex organisation hierarchy, ranging from how chromosomes are arranged in the nucleus, down to how DNA is wrapped around nucleosomes.\cite{Pombo2015}
+It's oft-stated that the DNA within each human cell would extend for two metres fully extended. Instead that same length of DNA packs into a cell nucleus with a diameter in the order of micrometers ($\mu$m). This is achieved through a complex organisation hierarchy, ranging from how chromosomes are arranged in the nucleus in territories, to nuclear interactions with the nucleolus or periphery, down to how DNA is wrapped around nucleosomes (for recent reviews, see \citenum{Pombo2015, Fraser2015}). While the biophysics of the latter level of organisation may be well understood, more broadly little is known about the guiding principles and functional importance of higher order chromatin organisation.
+
+This introductory section will describe the current state-of-the-art in chromosome conformation capture experimental methods, as well as criticisms and considerations when interpreting these data, and discuss what is currently understood or theorised about the structure and function of higher order genome organisation. We compare competing models which attempt to recapitulate mechanisms of chromatin folding, and also explore some of the best understood organisational strata in mammalian higher order genome organisation.
+
 %
 %Briefly, DNA exists mostly as a left-handed double-helix of hydrogen bonded purines and pyrimidines. These in turn are wrapped around histone octamers, proteins with tuneable DNA packing properties. These wrapped histones can be visualised as "beads on a string" in transcriptionally active regions, and possibly as a more-compact 30 nanometre fibre, though this is disputed.\cite{Naumova2013} %citations therein
 
@@ -45,7 +48,7 @@
 
 Classical studies of chromosome conformation relied on microscopy techniques to visualise nuclear architecture, most commonly fluorescence \emph{in situ} hybridisation (FISH). These techniques led to the discovery of ``chromosome territories", regions of the nucleus wherein distinct chromosomes were thought to occupy, and more broadly identified the non-random arrangement of loci in three-dimensional space.\cite{DeWit2012, VanSteensel2010} Finer details of chromatin organisation, such as the proposed 30 nm fibre, were also introduced through microscopy-based techniques. Techniques such as FISH are powerful for precise inspection of single genes, but are low-throughput and offer limited resolution.\cite{DeWit2012}
 
-With the advent DNA sequencing technology, new experimental methods emerged. Chromosome conformation capture (3C), introduced by Dekker \emph{et al.}\cite{Dekker2002} was the first sequencing-based method of measuring chromosome conformation. The method uses formaldehyde to cross-link nuclear proteins in place, trapping genomic regions that were physically co-located through bound proteins, then to apply a frequent restriction enzyme to shear the sample into fragments. Next, under dilute conditions, DNA fragments are ligated together. The dilute conditions favour ligations between fixed fragments, with the aim of generating hybrid fragments form two genomic regions which were close together in the original preparation. Cross-linking can then be reversed and, in the case of the original 3C method, measured by quantitative PCR using pre-designed primers for your fragments of interest. The end result is a relative measure of interaction frequency between any two regions of interest, in theory directly proportional to their distance in three-dimensional space.
+With the advent DNA sequencing technology, new experimental methods emerged. Chromosome conformation capture (3C), introduced by Dekker \emph{et al.}\cite{Dekker2002} was the first sequencing-based method of assaying nuclear architecture. The method uses formaldehyde to cross-link nuclear proteins in place, trapping genomic regions that were physically co-located through bound proteins, then to apply a frequent restriction enzyme to shear the sample into fragments. Next, under dilute conditions, DNA fragments are ligated together. The dilute conditions favour ligations between fixed fragments, with the aim of generating hybrid fragments form two genomic regions which were close together in the original preparation. Cross-linking can then be reversed and, in the case of the original 3C method, measured by quantitative PCR using pre-designed primers for your fragments of interest. The end result is a relative measure of interaction frequency between any two regions of interest, in theory directly proportional to their distance in three-dimensional space.
 
 The rapid advancement of sequencing, allowed the original 3C method to be further developed, first through microarray technology, then using high-throughput sequencing. Two protocols were proposed for a 3C-inspired one-to-many assay\cite{Zhao2006, Simonis2006} (both named 4C), whereby interactions were measured for a specific ``viewpoint" fragment against all other restriction fragments genome-wide. The same year a many-to-many assay (5C) allowed measurements for all restriction fragments within a specified region.\cite{Dostie2006} 
 
@@ -111,6 +114,8 @@ In experiments totalling around two billion total sequencing reads, Dixon \emph{
 \end{figure} 
 
 Dixon \emph{et al.}\cite{Dixon2012} also performed some comparative analysis, reporting large and significant overlap of domain boundary positions both within species and between human and mouse cell lines.
+
+% Function of TADs, regulons, hormone treatment, differentiation etc.
 
 \subsection{Other proposed structures}
 
@@ -186,15 +191,7 @@ An additional and separate issue identified with C-methods, specifically 3C in t
 
 Machine learning offers a powerful framework for understanding complex datasets, such as those produced in large-scale genomics studies. Problems in the field such as gene prediction and inferring regulatory networks can be approached by employing a learning algorithm, either in a supervised way based on a known truth set, or through unsupervised methods aimed at pattern detection or clustering (for reviews see \citenum{Jordan2015, Libbrecht2015}). If a successful predictive model can be built, it can then be dissected to explore statistical rules which may impart novel biological insight. As a toy example, learning a highly-accurate model of enhancer prediction could itself identify novel epigenetic marks indicative of enhancers, generating testable hypotheses about how enhancers are activated.
 
-The link between epigenomic features and local chromatin state has been
-analysed computationally in a number of publications, notably in
-developing the
-Hidden Markov Model-based ChromHMM\cite{Ernst2012} algorithm which predicts states such as active promoters and enhancers, using a
-range of histone marks and other underlying features.\cite{Ernst2011} Similarly a Random Forest-based
-algorithm was developed to predict enhancers from histone
-modification data.\cite{Rajagopal2013} However few studies have spanned all of
-these levels of chromatin structure and nuclear organisation, and it is not yet known how locus-level chromatin features may
-be related to higher order genome organisation. 
+In this section, we will introduce recent and high-profile machine learning applications in the context of the ENCODE consortium, and give examples of how their vast datasets have empowered research groups worldwide to tackle complex biological questions through a variety of machine learning approaches. We then discuss research broadly aligned with the aims of this thesis, those attempting to advance an understanding higher order chromatin structure through machine learning and related techniques.
 
 \subsection{ENCODE}\label{intro:encode}
 
