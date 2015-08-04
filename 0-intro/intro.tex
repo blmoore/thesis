@@ -176,25 +176,34 @@ Chromosome structure has been assayed both through mitosis\cite{Naumova2013} and
 
 C-methods are a relatively new and developing set of assays, especially compared to long-standing microscopy techniques which have for decades been used to visualise chromosome conformation. In this section, we discuss some of the limitations and issues with applying or interpreting the results of C-methods.
 
+\subsection{Cell populations}
 % cell populations
-As previously mentioned (Section \ref{sec:hicvar}), the Hi-C assay typically takes place in a cell population (though proof-of-concept single-cell experiments have been reported\cite{Nagano2013}). An obvious consideration, then, is that all interaction counts reflect the average over a large number of cells, often including unsynchronised populations at different stages of the cell cycle.\cite{Fraser2015}
+As previously mentioned (Section \ref{sec:hicvar}), the Hi-C assay typically takes place in a cell population (though proof-of-concept single-cell experiments have been reported\cite{Nagano2013}). An obvious consideration, then, is that all interaction counts reflect the average over a large number of cells, often including unsynchronised populations at different stages of the cell cycle.\cite{Fraser2015} Given evidence that, while the interphase chromosomes exhibit cell-to-cell variability, the mitotic state is much more static,\cite{Naumova2013, Dekker2014} one might expect even a small proportion of dividing cells to add a detectable bias to averaged genome-wide contact maps.
 
-% ploidy
-A more esoteric consideration with C-data is that organisms under study are typically diploid, while maps of chromosome organisation are commonly collapsed onto a haploid pseudo-genome. Experiments can delineate haplotype information using deep sequencing, though commonly this is only attempted for specific experiment designs, such as comparing active and inactive X-chromosomes. CITEXX
+\subsection{Ploidy}
+A more esoteric consideration with C-methods data is that organisms under study are typically diploid, while maps of chromosome organisation are commonly collapsed onto a haploid pseudo-genome. Haplotype conformation can be delineated from C-methods data a variety of ways, such as using haploid cell lines (e.g. \citenum{Rao2014}) or via detectable sequence differences using either deep sequencing or a targeted area (e.g. \citenum{Splinter2011}). An altogether different and inventive solution is to use the inherent proximity-ligation information produced by C-methods to discriminate haplotypes,\cite{Selvaraj2013a} an idea since extended to deconvolution problems in metagenomics.\cite{Burton2014, Beitel2014}
 
 % resolution
-The resolution of a Hi-C experiment has a hard-limit imposed by the choice of restriction enzyme. For example, the commonly-used HindIII enzyme is a six-cutter that recognises the motif AAGCTT and cuts approximately every 4 kb, on average.\cite{DeWit2012} More recent studies have switched to a four-cutter restriction enzyme, for example MboI,\cite{Rao2014} which increases this upper-bound on resolution to the order of hundreds of basepairs (i.e. naively, $4^{4} = 256$bp fragments, on average). A downside of using more frequent restriction enzymes is the potential side-effect of promoting more non-specific ligations by increasing the concentration of fragments in solution.\cite{Rao2014} 
+\subsection{Resolution}
+The resolution of a Hi-C experiment has a hard-limit imposed by the choice of restriction enzyme. For example, the commonly-used HindIII enzyme is a six-cutter that recognises the motif AAGCTT and cuts approximately every 4 kb, on average.\cite{DeWit2012} This results in on the order of $10$ million restriction fragments with a total pairwise interaction space of $10^{12}$.\cite{Lajoie2014} The depth of sequencing required to cover this interaction space is cost-prohibitive, so in practice analysis takes place with data aggregated into bins of either fixed length or fixed number of restriction fragments. 
 
+More recent studies have switched to a four-cutter restriction enzyme, for example MboI,\cite{Rao2014} which increases this upper-bound on resolution to the order of hundreds of basepairs (i.e. naively, $4^{4} = 256$bp fragments, on average), but again ultra deep-sequencing is required to realise such resolutions during analysis. A downside of using more frequent restriction enzymes is the potential side-effect of promoting more non-specific ligations by increasing the concentration of fragments in solution.\cite{Rao2014} 
+
+Realistically and in most instances, an experimental design may either target high-resolution interactions through targeted 4C or 5C, or low-resolution genome-wide interactions --- but not both.
+
+\subsection{Biological interpretation}
 % For 
 % in Lieberman: s^{1/3}  == scaling observed in 3D FISH (500 kb < 2 Mb)
 A key consideration with C-methods is that, when accurately stated, the assays are measuring ``the frequency at which sequences are ligated together by formaldehyde cross-linking",\cite{Williamson2014} which is then assumed to be a proxy for physical distance within the nucleus. This is a marked difference from aforementioned FISH methods, where the physical distance is observed directly, albeit through the addition of non-native probes. So strong is this assumption, that methods have been developed that use a known FISH distance to then calibrate genome-wide Hi-C distances,\cite{Shavit2014} yet it remains unclear to what extent these two methods are compatible.
 
 %Incidental contacts
-When interpreting C-methods data it should also be kept in mind that even verifiable contacts are by no-means functional. To elaborate, C-methods may find two regions to be strongly co-localised, but an understanding of the region may explain their co-localisation to be caused by mutual interaction with a nuclear lamina or nucleolus, for example, rather than any specific functional relationship between the two loci.\cite{Dekker2013} In addition, a functional enhancer--promoter interaction will necessarily constrain the contacts of other nearby regions, potentially causing highly-reproducible "bystander interactions"\cite{Dekker2013} that are nevertheless uninteresting form a functional perspective. 
+When interpreting C-methods data it should also be kept in mind that even verifiable contacts are by no-means functional. To elaborate, C-methods may find two regions to be strongly co-localised, but an understanding of the region may explain their co-localisation to be caused by mutual interaction with a nuclear lamina or nucleolus, for example, rather than any specific functional relationship between the two loci.\cite{Dekker2013} In addition, a functional enhancer--promoter interaction will necessarily constrain the contacts of other nearby regions, potentially causing highly-reproducible "bystander interactions"\cite{Dekker2013} that are nevertheless uninteresting from a functional perspective. 
+
+\subsection{Other considerations}
+An additional and separate issue identified with C-methods, specifically 3C in this instance, emerges from reports that the observed ligation frequency is as low as $1\%$ of expected values in a model system,\cite{Gavrilov2013} potentially magnifying the relative influence of noise and artefacts.
 
 % something about polymer folding, unavoidable contacts between nearby regions? Refs in Dekker2013: http://www.nature.com/nrg/journal/v14/n6/full/nrg3454.html#ref24
 
-An additional and separate issue identified with C-methods, specifically 3C in this instance, emerges from reports that the observed ligation frequency is as low as $1\%$ of expected values in a model system,\cite{Gavrilov2013} potentially magnifying the relative influence of noise and artefacts.
 
 \section{Machine learning in genomics}\label{intro:ml}
 

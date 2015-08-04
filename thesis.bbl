@@ -1,5 +1,18 @@
-\begin{thebibliography}{186}
+\begin{thebibliography}{192}
 \providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
+Pombo A, Dillon N (2015) {Three-dimensional genome architecture: players and
+  mechanisms}.
+\newblock \emph{Nature Reviews Molecular Cell Biology}, \textbf{16}(4):
+  245--257.
+
+\bibitem[{Fraser \emph{et~al.}(2015)Fraser, Williamson, Bickmore and
+  Dostie}]{Fraser2015}
+Fraser J, Williamson I, Bickmore Wa, Dostie J (2015) {An Overview of Genome
+  Organization and How We Got There: from FISH to Hi-C}.
+\newblock \emph{Microbiology and Molecular Biology Reviews}, \textbf{79}(3):
+  347--372.
 
 \bibitem[{de~Wit and de~Laat(2012)}]{DeWit2012}
 de~Wit E, de~Laat W (2012) {A decade of 3C technologies: insights into nuclear
@@ -216,12 +229,6 @@ van~de Corput MPC, de~Boer E, Knoch Ta, van Cappellen Wa, Quintanilla a,
   dynamics of the  -globin locus upon gene activation}.
 \newblock \emph{Journal of Cell Science}, pp. 4630--4639.
 
-\bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
-Pombo A, Dillon N (2015) {Three-dimensional genome architecture: players and
-  mechanisms}.
-\newblock \emph{Nature Reviews Molecular Cell Biology}, \textbf{16}(4):
-  245--257.
-
 \bibitem[{Sanyal \emph{et~al.}(2012)Sanyal, Lajoie, Jain and
   Dekker}]{Sanyal2012}
 Sanyal A, Lajoie BR, Jain G, Dekker J (2012) {The long-range interaction
@@ -272,6 +279,37 @@ Crane E, Bian Q, McCord RP, Lajoie BR, Wheeler BS, Ralston EJ, Uzawa S, Dekker
   during dosage compensation}.
 \newblock \emph{Nature}.
 
+\bibitem[{Dekker(2014)}]{Dekker2014}
+Dekker J (2014) {Two ways to fold the genome during the cell cycle : insights
+  obtained with chromosome conformation capture}.
+\newblock \textbf{7}(1): 1--12.
+
+\bibitem[{Splinter \emph{et~al.}(2011)Splinter, de~Wit, Nora, Klous, van~de
+  Werken, Zhu, Kaaij, van Ijcken, Gribnau \emph{et~al.}}]{Splinter2011}
+Splinter E, de~Wit E, Nora EP, Klous P, van~de Werken HJG, Zhu Y, Kaaij LJT,
+  van Ijcken W, Gribnau J, \emph{et~al.} (2011) {The inactive X chromosome
+  adopts a unique three-dimensional conformation that is dependent on Xist
+  RNA.}
+\newblock \emph{Genes \& development}, \textbf{25}(13): 1371--83.
+
+\bibitem[{Burton \emph{et~al.}(2014)Burton, Liachko, Dunham and
+  Shendure}]{Burton2014}
+Burton JN, Liachko I, Dunham MJ, Shendure J (2014) {Species-Level Deconvolution
+  of Metagenome Assemblies with Hi-C-Based Contact Probability Maps.}
+\newblock \emph{G3 (Bethesda, Md.)}, \textbf{4}(July): 1339--1346.
+
+\bibitem[{Beitel \emph{et~al.}(2014)Beitel, Froenicke, Lang, Korf, Michelmore,
+  Eisen and Darling}]{Beitel2014}
+Beitel CW, Froenicke L, Lang JM, Korf IF, Michelmore RW, Eisen Ja, Darling AE
+  (2014) {Strain- and plasmid-level deconvolution of a synthetic metagenome by
+  sequencing proximity ligation products.}
+\newblock \emph{PeerJ}, \textbf{2}: e415.
+
+\bibitem[{Lajoie \emph{et~al.}(2014)Lajoie, Dekker and Kaplan}]{Lajoie2014}
+Lajoie BR, Dekker J, Kaplan N (2014) {The Hitchhiker’s Guide to Hi-C
+  Analysis: Practical guidelines}.
+\newblock \emph{Methods}, (November).
+
 \bibitem[{Williamson \emph{et~al.}(2014)Williamson, Berlivet, Eskeland, Boyle,
   Illingworth, Paquette and Bickmore}]{Williamson2014}
 Williamson I, Berlivet S, Eskeland R, Boyle S, Illingworth RS, Paquette D,
@@ -298,25 +336,6 @@ Jordan MI, Mitchell TM (2015) {Machine learning: Trends, perspectives, and
 Libbrecht MW, Noble WS (2015) {Machine learning applications in genetics and
   genomics}.
 \newblock \emph{Nature Reviews Genetics}, \textbf{16}(6): 321--332.
-
-\bibitem[{Ernst and Kellis(2012)}]{Ernst2012}
-Ernst J, Kellis M (2012) {ChromHMM: automating chromatin-state discovery and
-  characterization.}
-\newblock \emph{Nature methods}, \textbf{9}(3): 215--6.
-
-\bibitem[{Ernst \emph{et~al.}(2011)Ernst, Kheradpour, Mikkelsen, Shoresh, Ward,
-  Epstein, Zhang, Wang, Issner \emph{et~al.}}]{Ernst2011}
-Ernst J, Kheradpour P, Mikkelsen TS, Shoresh N, Ward LD, Epstein CB, Zhang X,
-  Wang L, Issner R, \emph{et~al.} (2011) {Mapping and analysis of chromatin
-  state dynamics in nine human cell types.}
-\newblock \emph{Nature}, \textbf{473}(7345): 43--9.
-
-\bibitem[{Rajagopal \emph{et~al.}(2013)Rajagopal, Xie, Li, Wagner, Wang,
-  Stamatoyannopoulos, Ernst, Kellis and Ren}]{Rajagopal2013}
-Rajagopal N, Xie W, Li Y, Wagner U, Wang W, Stamatoyannopoulos J, Ernst J,
-  Kellis M, Ren B (2013) {RFECS: a random-forest based algorithm for enhancer
-  identification from chromatin state.}
-\newblock \emph{PLoS computational biology}, \textbf{9}(3): e1002968.
 
 \bibitem[{Feingold \emph{et~al.}(2004)Feingold, Good, Guyer, Kamholz, Liefer,
   Wetterstrand, Collins, Gingeras, Kampa \emph{et~al.}}]{Feingold2004}
@@ -384,6 +403,18 @@ Hoffman MM, Buske OJ, Wang J, Weng Z, Bilmes Ja, Noble WS (2012) {Unsupervised
   pattern discovery in human chromatin structure through genomic segmentation}.
 \newblock \emph{Nature Methods}, \textbf{9}(5): 473--476.
 
+\bibitem[{Ernst \emph{et~al.}(2011)Ernst, Kheradpour, Mikkelsen, Shoresh, Ward,
+  Epstein, Zhang, Wang, Issner \emph{et~al.}}]{Ernst2011}
+Ernst J, Kheradpour P, Mikkelsen TS, Shoresh N, Ward LD, Epstein CB, Zhang X,
+  Wang L, Issner R, \emph{et~al.} (2011) {Mapping and analysis of chromatin
+  state dynamics in nine human cell types.}
+\newblock \emph{Nature}, \textbf{473}(7345): 43--9.
+
+\bibitem[{Ernst and Kellis(2012)}]{Ernst2012}
+Ernst J, Kellis M (2012) {ChromHMM: automating chromatin-state discovery and
+  characterization.}
+\newblock \emph{Nature methods}, \textbf{9}(3): 215--6.
+
 \bibitem[{Ernst and Kellis(2010)}]{Ernst2010a}
 Ernst J, Kellis M (2010) {Discovery and characterization of chromatin states
   for systematic annotation of the human genome.}
@@ -420,6 +451,13 @@ Cheng C, Ung M, Grant GD, Whitfield ML (2013) {Transcription Factor Binding
   Profiles Reveal Cyclic Expression of Human Protein-coding Genes and
   Non-coding RNAs}.
 \newblock \emph{PLoS Computational Biology}, \textbf{9}(7).
+
+\bibitem[{Rajagopal \emph{et~al.}(2013)Rajagopal, Xie, Li, Wagner, Wang,
+  Stamatoyannopoulos, Ernst, Kellis and Ren}]{Rajagopal2013}
+Rajagopal N, Xie W, Li Y, Wagner U, Wang W, Stamatoyannopoulos J, Ernst J,
+  Kellis M, Ren B (2013) {RFECS: a random-forest based algorithm for enhancer
+  identification from chromatin state.}
+\newblock \emph{PLoS computational biology}, \textbf{9}(3): e1002968.
 
 \bibitem[{Dong \emph{et~al.}(2012)Dong, Greven, Kundaje, Djebali, Brown, Cheng,
   Gingeras, Gerstein, Guig\'{o} \emph{et~al.}}]{Dong2012}
@@ -517,9 +555,10 @@ Huang BDW, Lempicki R (2008) {Systematic and integrative analysis of large gene
   lists using DAVID bioinformatics resources}.
 \newblock \emph{Nature protocols}, (301): 1--43.
 
-\bibitem[{{RIKEN Omics Science Center}(2012)}]{fantom5}
-{RIKEN Omics Science Center} (2012) {FANTOM5}.
-\newblock \emph{http://fantom.gsc.riken.jp/}.
+\bibitem[{Consortium \emph{et~al.}(2014)Consortium, Pmi and Dgt}]{fantom5}
+Consortium TF, Pmi R, Dgt C (2014) {A promoter-level mammalian expression
+  atlas.}
+\newblock \emph{Nature}, \textbf{507}(7493): 462--70.
 
 \bibitem[{Itoh \emph{et~al.}(2012)Itoh, Kojima, Nagao-Sato, Saijo, Lassmann,
   Kanamori-Katayama, Kaiho, Lizio, Kawaji \emph{et~al.}}]{itoh2012a}
