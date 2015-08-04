@@ -13,108 +13,113 @@
 \contentsline {section}{\numberline {1.1}Genome organisation}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}C-methods and Hi-C}{1}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Hi-C variants}{2}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}Chromosome compartments}{3}{subsection.1.1.3}
-\contentsline {subsection}{\numberline {1.1.4}Topological domains}{5}{subsection.1.1.4}
+\contentsline {subsection}{\numberline {1.1.3}Chromosome compartments}{4}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}Topological domains}{4}{subsection.1.1.4}
 \contentsline {subsection}{\numberline {1.1.5}Other proposed structures}{6}{subsection.1.1.5}
-\contentsline {section}{\numberline {1.2}Models of chromatin folding}{7}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Fractal globule}{7}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Strings and binders switch}{7}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Looping and CTCF}{8}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {1.2.4}Cell cycle changes}{9}{subsection.1.2.4}
-\contentsline {section}{\numberline {1.3}Criticisms of C-methods}{9}{section.1.3}
-\contentsline {section}{\numberline {1.4}Machine learning in genomics}{10}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}ENCODE}{10}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Related work}{11}{subsection.1.4.2}
-\contentsline {section}{\numberline {1.5}Aims}{11}{section.1.5}
-\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Methods}}{13}{chapter.2}
-\contentsline {section}{\numberline {2.1}Hi-C data}{13}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Mapping}{13}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Filtering}{13}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Correction}{14}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}Eigenvector calculation}{14}{subsection.2.1.4}
-\contentsline {section}{\numberline {2.2}ENCODE features}{15}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Clustering input features}{15}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Modelling}{15}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Random Forest}{15}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Model performance}{16}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Other modelling approaches}{17}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Variable regions}{18}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Stratification by variability}{18}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Enhancer enrichment}{18}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Gene ontology analysis}{19}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}Boundaries}{19}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}TADs}{19}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Compartments}{19}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}MetaTAD analysis}{20}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Size selection}{20}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Collaborator datasets}{20}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}LAD coincidence}{21}{subsection.2.6.3}
-\contentsline {section}{\numberline {2.7}Giemsa band comparison}{21}{section.2.7}
-\contentsline {section}{\numberline {2.8}Nuclear positioning}{22}{section.2.8}
-\contentsline {section}{\numberline {2.9}4C analysis}{22}{section.2.9}
-\contentsline {subsection}{\numberline {2.9.1}Normalisation}{22}{subsection.2.9.1}
-\contentsline {subsection}{\numberline {2.9.2}Significance estimation}{23}{subsection.2.9.2}
-\contentsline {subsection}{\numberline {2.9.3}3--D modelling}{24}{subsection.2.9.3}
-\contentsline {section}{\numberline {2.10}5C analysis}{24}{section.2.10}
-\contentsline {section}{\numberline {2.11}Scripts and other analyses}{24}{section.2.11}
-\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Reanalysis of Hi-C datasets}}{25}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{25}{section.3.1}
-\contentsline {section}{\numberline {3.2}Hi-C reprocessing}{25}{section.3.2}
-\contentsline {section}{\numberline {3.3}Compartment profiles}{26}{section.3.3}
-\contentsline {section}{\numberline {3.4}Domain calls}{28}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Compartments}{28}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}TADs}{29}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Domain epigenetics}{30}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}A/B compartments}{32}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}TAD classes}{33}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}Variable regions}{33}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Chromatin state enrichment}{35}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Gene ontology enrichment}{35}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Contact changes}{37}{subsection.3.6.3}
-\contentsline {section}{\numberline {3.7}Nuclear positioning}{39}{section.3.7}
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Integrative modelling as a tool to explore biological systems}}{42}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{42}{section.4.1}
-\contentsline {section}{\numberline {4.2}Reproducing Dong \emph {et al.} }{43}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Model adjustments}{45}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Modelling FANTOM5 expression data}{45}{section.4.3}
-\contentsline {section}{\numberline {4.4}Modelling higher order chromatin}{48}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Predictive model}{48}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Cross-application}{49}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Between-cell variability}{49}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Variable importance}{51}{subsection.4.4.4}
-\contentsline {subsection}{\numberline {4.4.5}Correlating input features}{53}{subsection.4.4.5}
-\contentsline {section}{\numberline {4.5}Technical considerations}{57}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Resolution}{57}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Other modelling approaches}{57}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Non-independence}{60}{subsection.4.5.3}
-\contentsline {section}{\numberline {4.6}Parsimonious models from expanded feature sets}{60}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Stepwise regression}{61}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}LASSO ($\ell _1$) regression}{62}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}Regularised Random Forest}{62}{subsection.4.6.3}
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Chromatin domain boundaries}}{63}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{63}{section.5.1}
-\contentsline {section}{\numberline {5.2}TAD and compartment boundaries}{64}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}CTCF and YY1}{69}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Repeats}{70}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}De novo boundary prediction}{72}{section.5.3}
-\contentsline {section}{\numberline {5.4}MetaTAD boundaries}{72}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}MetaTAD / TAD boundary comparison}{73}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Lamina associated domains}{76}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Boundaries over a time series}{78}{subsection.5.4.3}
-\contentsline {section}{\numberline {5.5}Other boundaries}{80}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Giemsa bands}{80}{subsection.5.5.1}
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Local chromatin conformation}}{83}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{83}{section.6.1}
-\contentsline {section}{\numberline {6.2}4C at the SHH locus}{83}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Analysis of ZRS interactions}{84}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}4C / Hi-C comparison}{86}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Assay diagnostics}{87}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}3D modelling with 5C data}{87}{subsection.6.2.4}
-\contentsline {section}{\numberline {6.3}5C in the HoxD region}{87}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Differential contacts}{87}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{87}{subsection.6.3.2}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{91}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclusion}{93}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future research}{93}{section.7.2}
-\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{94}{chapter*.70}
-\contentsline {chapter}{References}{113}{chapter*.71}
+\contentsline {section}{\numberline {1.2}Models of chromatin folding}{8}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Fractal globule}{8}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Strings and binders switch}{8}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Looping and CTCF}{9}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Cell cycle changes}{10}{subsection.1.2.4}
+\contentsline {section}{\numberline {1.3}Criticisms of C-methods}{10}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Cell populations}{10}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Ploidy}{10}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Resolution}{11}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}Biological interpretation}{11}{subsection.1.3.4}
+\contentsline {subsection}{\numberline {1.3.5}Other considerations}{12}{subsection.1.3.5}
+\contentsline {section}{\numberline {1.4}Machine learning in genomics}{12}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}ENCODE}{12}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Related work}{13}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}Aims}{13}{section.1.5}
+\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Methods}}{15}{chapter.2}
+\contentsline {section}{\numberline {2.1}Hi-C data}{15}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Mapping}{15}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Filtering}{15}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Correction}{16}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Eigenvector calculation}{16}{subsection.2.1.4}
+\contentsline {section}{\numberline {2.2}ENCODE features}{17}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Clustering input features}{17}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Modelling}{17}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Random Forest}{17}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Model performance}{18}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Other modelling approaches}{19}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Variable regions}{20}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Stratification by variability}{20}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Enhancer enrichment}{20}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Gene ontology analysis}{21}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Boundaries}{21}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}TADs}{21}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Compartments}{21}{subsection.2.5.2}
+\contentsline {section}{\numberline {2.6}MetaTAD analysis}{22}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Size selection}{22}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Collaborator datasets}{22}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}LAD coincidence}{23}{subsection.2.6.3}
+\contentsline {section}{\numberline {2.7}Giemsa band comparison}{23}{section.2.7}
+\contentsline {section}{\numberline {2.8}Nuclear positioning}{24}{section.2.8}
+\contentsline {section}{\numberline {2.9}4C analysis}{24}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Normalisation}{24}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.2}Significance estimation}{25}{subsection.2.9.2}
+\contentsline {subsection}{\numberline {2.9.3}3--D modelling}{26}{subsection.2.9.3}
+\contentsline {section}{\numberline {2.10}5C analysis}{26}{section.2.10}
+\contentsline {section}{\numberline {2.11}Scripts and other analyses}{26}{section.2.11}
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Reanalysis of Hi-C datasets}}{27}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{27}{section.3.1}
+\contentsline {section}{\numberline {3.2}Hi-C reprocessing}{27}{section.3.2}
+\contentsline {section}{\numberline {3.3}Compartment profiles}{28}{section.3.3}
+\contentsline {section}{\numberline {3.4}Domain calls}{30}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Compartments}{30}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}TADs}{31}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Domain epigenetics}{32}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}A/B compartments}{34}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}TAD classes}{35}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Variable regions}{35}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Chromatin state enrichment}{37}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Gene ontology enrichment}{37}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Contact changes}{39}{subsection.3.6.3}
+\contentsline {section}{\numberline {3.7}Nuclear positioning}{41}{section.3.7}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Integrative modelling as a tool to explore biological systems}}{44}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{44}{section.4.1}
+\contentsline {section}{\numberline {4.2}Reproducing Dong \emph {et al.} }{45}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Model adjustments}{47}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Modelling FANTOM5 expression data}{47}{section.4.3}
+\contentsline {section}{\numberline {4.4}Modelling higher order chromatin}{50}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Predictive model}{50}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Cross-application}{51}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Between-cell variability}{51}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Variable importance}{53}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}Correlating input features}{55}{subsection.4.4.5}
+\contentsline {section}{\numberline {4.5}Technical considerations}{59}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Resolution}{59}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Other modelling approaches}{59}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Non-independence}{62}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}Parsimonious models from expanded feature sets}{62}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Stepwise regression}{63}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}LASSO ($\ell _1$) regression}{64}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Regularised Random Forest}{64}{subsection.4.6.3}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Chromatin domain boundaries}}{65}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{65}{section.5.1}
+\contentsline {section}{\numberline {5.2}TAD and compartment boundaries}{66}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}CTCF and YY1}{71}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Repeats}{72}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}De novo boundary prediction}{74}{section.5.3}
+\contentsline {section}{\numberline {5.4}MetaTAD boundaries}{74}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}MetaTAD / TAD boundary comparison}{75}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Lamina associated domains}{78}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Boundaries over a time series}{80}{subsection.5.4.3}
+\contentsline {section}{\numberline {5.5}Other boundaries}{82}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Giemsa bands}{82}{subsection.5.5.1}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Local chromatin conformation}}{85}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{85}{section.6.1}
+\contentsline {section}{\numberline {6.2}4C at the SHH locus}{85}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Analysis of ZRS interactions}{86}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}4C / Hi-C comparison}{88}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Assay diagnostics}{89}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}3D modelling with 5C data}{89}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}5C in the HoxD region}{89}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Differential contacts}{89}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{89}{subsection.6.3.2}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{93}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclusion}{95}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future research}{95}{section.7.2}
+\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{96}{chapter*.70}
+\contentsline {chapter}{References}{115}{chapter*.71}
