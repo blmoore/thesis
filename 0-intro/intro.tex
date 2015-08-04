@@ -116,10 +116,11 @@ In experiments totalling around two billion total sequencing reads, Dixon \emph{
 Dixon \emph{et al.}\cite{Dixon2012} also performed some comparative analysis, reporting large and significant overlap of domain boundary positions both within species and between human and mouse cell lines.
 
 % Function of TADs, regulons, hormone treatment, differentiation etc.
+% Sexton2015 review
 
 \subsection{Other proposed structures}
 
-Filippova \emph{et al.}\cite{Filippova2014} developed a tuneable algorithm which identifies "alternative topological domains".
+\citet{Filippova2014} developed a tuneable algorithm which identifies "alternative topological domains". The authors use dynamic programming to search for an optimal set of non-overlapping boundary pairs that maximise intra-domain contacts. The algorithm includes a length scaling factor ($\gamma$) which is used to penalise domain size; by varying $\gamma$ the authors define a subset of "multiscale domains" of heightened persistence across resolutions.\cite{Filippova2014} These multiscale domains were found to be smaller, on average, than those previously reported by \citet{Dixon2012}, despite be applied to the same Hi-C experimental data (mean size: 200 kb as opposed to $\approx 1$ Mb). However the domains of \citet{Filippova2014} show increased intra-domain contacts and stronger boundary enrichments relative to previously-described TADs, indicating this algorithm may generate a more accurate representation of topological domains in mammalian genome organisation. Intriguingly, this study also reports quantitative evidence for hierarchical genome organisation, finding that those domains called at large $\gamma$ will then combine into larger meta-domains as the $\gamma$ penalty decreases.
 
 A study of \emph{Drosophila} embryonic chromosomes found a similarly hierarchical organisation of physical domains, and also was able to relate these to ``epigenomics domains" showing specific sets of enrichment signatures representing active, null, polycomb-associated and telomeric regions.\cite{Sexton2012} 
 
@@ -173,6 +174,14 @@ Chromosome structure has been assayed both through mitosis\cite{Naumova2013} and
 
 \section{Criticisms of C-methods}
 
+C-methods are a relatively new and developing set of assays, especially compared to long-standing microscopy techniques which have for decades been used to visualise chromosome conformation. In this section, we discuss some of the limitations and issues with applying or interpreting the results of C-methods.
+
+% cell populations
+As previously mentioned (Section \ref{sec:hicvar}), the Hi-C assay typically takes place in a cell population (though proof-of-concept single-cell experiments have been reported\cite{Nagano2013}). An obvious consideration, then, is that all interaction counts reflect the average over a large number of cells, often including unsynchronised populations at different stages of the cell cycle.\cite{Fraser2015}
+
+% ploidy
+A more esoteric consideration with C-data is that organisms under study are typically diploid, while maps of chromosome organisation are commonly collapsed onto a haploid pseudo-genome. Experiments can delineate haplotype information using deep sequencing, though commonly this is only attempted for specific experiment designs, such as comparing active and inactive X-chromosomes. CITEXX
+
 % resolution
 The resolution of a Hi-C experiment has a hard-limit imposed by the choice of restriction enzyme. For example, the commonly-used HindIII enzyme is a six-cutter that recognises the motif AAGCTT and cuts approximately every 4 kb, on average.\cite{DeWit2012} More recent studies have switched to a four-cutter restriction enzyme, for example MboI,\cite{Rao2014} which increases this upper-bound on resolution to the order of hundreds of basepairs (i.e. naively, $4^{4} = 256$bp fragments, on average). A downside of using more frequent restriction enzymes is the potential side-effect of promoting more non-specific ligations by increasing the concentration of fragments in solution.\cite{Rao2014} 
 
@@ -191,7 +200,7 @@ An additional and separate issue identified with C-methods, specifically 3C in t
 
 Machine learning offers a powerful framework for understanding complex datasets, such as those produced in large-scale genomics studies. Problems in the field such as gene prediction and inferring regulatory networks can be approached by employing a learning algorithm, either in a supervised way based on a known truth set, or through unsupervised methods aimed at pattern detection or clustering (for reviews see \citenum{Jordan2015, Libbrecht2015}). If a successful predictive model can be built, it can then be dissected to explore statistical rules which may impart novel biological insight. As a toy example, learning a highly-accurate model of enhancer prediction could itself identify novel epigenetic marks indicative of enhancers, generating testable hypotheses about how enhancers are activated.
 
-In this section, we will introduce recent and high-profile machine learning applications in the context of the ENCODE consortium, and give examples of how their vast datasets have empowered research groups worldwide to tackle complex biological questions through a variety of machine learning approaches. We then discuss research broadly aligned with the aims of this thesis, those attempting to advance an understanding higher order chromatin structure through machine learning and related techniques.
+In this section, we introduce recent and high-profile machine learning applications in the context of the ENCODE consortium, and give examples of how their vast datasets have empowered research groups worldwide to tackle complex biological questions through a variety of machine learning approaches. We then discuss research broadly aligned with the aims of this thesis, those attempting to advance an understanding higher order chromatin structure through machine learning and related techniques.
 
 \subsection{ENCODE}\label{intro:encode}
 
@@ -203,21 +212,7 @@ More broadly, ENCODE data has been used by external researchers to generate inpu
 
 \subsection{Related work}
 
-%The recent comprehensive ChIP-seq datasets
-%produced by the ENCODE consortium\cite{Dunham2012} combined with Hi-C
-%genome-wide contact maps in a number of human cell
-%types\cite{Dixon2012, Lieberman2009, Kalhor2012} present a remarkable
-%opportunity to investigate the relationships between local
-%chromatin features and higher order structure.
-%
-%In this work, a machine-learning approach was employed to model the
-%compartmental characteristics of large genomic regions based on their
-%aggregate levels of various histone marks and DNA binding
-%proteins. Dissection of the resulting models was then used as a
-%means of gleaning biological insights into the basis of higher order
-%structure and of highlighting important differences between cell types.
-
-% machine learning schematic for (e.g.) chromHMM ?
+% Machine learning + higher order chromatin structure.
 
 \section{Aims}
 
