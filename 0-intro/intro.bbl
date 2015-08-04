@@ -1,4 +1,4 @@
-\begin{thebibliography}{75}
+\begin{thebibliography}{74}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -148,6 +148,11 @@ Naumova N, Imakaev M, Fudenberg G, Zhan Y, Lajoie BR, Mirny La, Dekker J (2013)
   {Organization of the mitotic chromosome.}
 \newblock \emph{Science (New York, N.Y.)}, \textbf{342}(6161): 948--53.
 
+\bibitem[{Lajoie \emph{et~al.}(2014)Lajoie, Dekker and Kaplan}]{Lajoie2014}
+Lajoie BR, Dekker J, Kaplan N (2014) {The Hitchhiker’s Guide to Hi-C
+  Analysis: Practical guidelines}.
+\newblock \emph{Methods}, (November).
+
 \bibitem[{Tanay and Cavalli(2013)}]{Tanay2013}
 Tanay A, Cavalli G (2013) {Chromosomal domains: epigenetic contexts and
   functional implications of genomic compartmentalization.}
@@ -272,13 +277,6 @@ G\'{o}mez-D\'{\i}az E, Corces VG (2014) {Architectural proteins: regulators of
   3D genome organization in cell fate}.
 \newblock \emph{Trends in Cell Biology}, \textbf{24}(11): 703--711.
 
-\bibitem[{Crane \emph{et~al.}(2015)Crane, Bian, McCord, Lajoie, Wheeler,
-  Ralston, Uzawa, Dekker and Meyer}]{Crane2015}
-Crane E, Bian Q, McCord RP, Lajoie BR, Wheeler BS, Ralston EJ, Uzawa S, Dekker
-  J, Meyer BJ (2015) {Condensin-driven remodelling of X chromosome topology
-  during dosage compensation}.
-\newblock \emph{Nature}.
-
 \bibitem[{Dekker(2014)}]{Dekker2014}
 Dekker J (2014) {Two ways to fold the genome during the cell cycle : insights
   obtained with chromosome conformation capture}.
@@ -304,11 +302,6 @@ Beitel CW, Froenicke L, Lang JM, Korf IF, Michelmore RW, Eisen Ja, Darling AE
   (2014) {Strain- and plasmid-level deconvolution of a synthetic metagenome by
   sequencing proximity ligation products.}
 \newblock \emph{PeerJ}, \textbf{2}: e415.
-
-\bibitem[{Lajoie \emph{et~al.}(2014)Lajoie, Dekker and Kaplan}]{Lajoie2014}
-Lajoie BR, Dekker J, Kaplan N (2014) {The Hitchhiker’s Guide to Hi-C
-  Analysis: Practical guidelines}.
-\newblock \emph{Methods}, (November).
 
 \bibitem[{Williamson \emph{et~al.}(2014)Williamson, Berlivet, Eskeland, Boyle,
   Illingworth, Paquette and Bickmore}]{Williamson2014}
