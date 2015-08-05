@@ -1,4 +1,4 @@
-\begin{thebibliography}{79}
+\begin{thebibliography}{84}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -166,12 +166,25 @@ Nora EP, Lajoie BR, Schulz EG, Giorgetti L, Okamoto I, Servant N, Piolot T, van
   regulatory landscape of the X-inactivation centre.}
 \newblock \emph{Nature}, \textbf{485}(7398): 381--5.
 
+\bibitem[{{Vietri Rudan} \emph{et~al.}(2015){Vietri Rudan}, Barrington,
+  Henderson, Ernst, Odom, Tanay and Hadjur}]{VietriRudan2015}
+{Vietri Rudan} M, Barrington C, Henderson S, Ernst C, Odom DT, Tanay A, Hadjur
+  S (2015) {Comparative Hi-C Reveals that CTCF Underlies Evolution of
+  Chromosomal Domain Architecture}.
+\newblock \emph{Cell Reports}, \textbf{10}(8): 1297--1309.
+
 \bibitem[{Sexton \emph{et~al.}(2012)Sexton, Yaffe, Kenigsberg, Bantignies,
   Leblanc, Hoichman, Parrinello, Tanay and Cavalli}]{Sexton2012}
 Sexton T, Yaffe E, Kenigsberg E, Bantignies F, Leblanc B, Hoichman M,
   Parrinello H, Tanay A, Cavalli G (2012) {Three-dimensional folding and
   functional organization principles of the Drosophila genome.}
 \newblock \emph{Cell}, \textbf{148}(3): 458--72.
+
+\bibitem[{Hou \emph{et~al.}(2012)Hou, Li, Qin and Corces}]{Hou2012}
+Hou C, Li L, Qin ZS, Corces VG (2012) {Gene Density, Transcription, and
+  Insulators Contribute to the Partition of the Drosophila Genome into Physical
+  Domains}.
+\newblock \emph{Molecular Cell}, \textbf{48}(3): 471--484.
 
 \bibitem[{Crane \emph{et~al.}(2015)Crane, Bian, McCord, Lajoie, Wheeler,
   Ralston, Uzawa, Dekker and Meyer}]{Crane2015}
@@ -187,6 +200,12 @@ Feng S, Cokus S, Schubert V, Zhai J, Pellegrini M, Jacobsen S (2014)
   Chromatin Interactions in Arabidopsis}.
 \newblock \emph{Molecular Cell}, \textbf{55}(5): 694--707.
 
+\bibitem[{Wang \emph{et~al.}(2015)Wang, Liu, Roqueiro, Grimm, Schwab, Becker,
+  Lanz and Weigel}]{Wang2015}
+Wang C, Liu C, Roqueiro D, Grimm D, Schwab R, Becker C, Lanz C, Weigel D (2015)
+  {Genome-wide analysis of local chromatin packing in Arabidopsis thaliana}.
+\newblock \emph{Genome Research}, \textbf{25}(2): 246--256.
+
 \bibitem[{Duan \emph{et~al.}(2010)Duan, Andronescu, Schutz, McIlwain, Mcllwain,
   Kim, Lee, Shendure, Fields \emph{et~al.}}]{Duan2010}
 Duan Z, Andronescu M, Schutz K, McIlwain S, Mcllwain S, Kim YJ, Lee C, Shendure
@@ -198,6 +217,19 @@ Duan Z, Andronescu M, Schutz K, McIlwain S, Mcllwain S, Kim YJ, Lee C, Shendure
 Gong K, Tjong H, Zhou XJ, Alber F (2015) {Comparative 3D Genome Structure
   Analysis of the Fission and the Budding Yeast}.
 \newblock \emph{Plos One}, \textbf{10}(3): e0119672.
+
+\bibitem[{Sexton and Cavalli(2015)}]{Sexton2015}
+Sexton T, Cavalli G (2015) {Review The Role of Chromosome Domains in Shaping
+  the Functional Genome}.
+\newblock \emph{Cell}, \textbf{160}(6): 1049--1059.
+
+\bibitem[{{Le Dily} \emph{et~al.}(2014){Le Dily}, Bau, Pohl, Vicent, Serra,
+  Soronellas, Castellano, Wright, Ballare \emph{et~al.}}]{LeDily2014}
+{Le Dily} F, Bau D, Pohl a, Vicent GP, Serra F, Soronellas D, Castellano G,
+  Wright RHG, Ballare C, \emph{et~al.} (2014) {Distinct structural transitions
+  of chromatin topological domains correlate with coordinated hormone-induced
+  gene regulation}.
+\newblock \emph{Genes \& Development}, \textbf{28}(19): 2151--2162.
 
 \bibitem[{Filippova \emph{et~al.}(2014)Filippova, Patro, Duggal and
   Kingsford}]{Filippova2014}

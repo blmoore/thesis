@@ -4,7 +4,7 @@ The top-level auxiliary file: thesis.aux
 The style file: thesis.bst
 A level-1 auxiliary file: 0-intro/intro.aux
 Database file #1: /Users/benmoore/Documents/library.bib
-Repeated entry---line 3023 of file /Users/benmoore/Documents/library.bib
+Repeated entry---line 3039 of file /Users/benmoore/Documents/library.bib
  : @article{fantom5
  :                 ,
 I'm skipping whatever remains of this entry
@@ -31,45 +31,45 @@ Warning--there's a number but no volume in Anderson2014a
 Warning--empty journal in Hill2013a
 Warning--there's a number but no volume in Hill2013a
 Warning--there's a number but no volume in Lesne2014
-You've used 195 entries,
+You've used 197 entries,
             3024 wiz_defined-function locations,
-            1844 strings with 70521 characters,
-and the built_in function-call counts, 276432 in all, are:
-= -- 29041
-> -- 8384
+            1856 strings with 71065 characters,
+and the built_in function-call counts, 279945 in all, are:
+= -- 29411
+> -- 8502
 < -- 62
-+ -- 6047
-- -- 2143
-* -- 20782
-:= -- 29865
-add.period$ -- 390
-call.type$ -- 195
-change.case$ -- 976
-chr.to.int$ -- 196
-cite$ -- 210
-duplicate$ -- 28903
-empty$ -- 19819
-format.name$ -- 2766
-if$ -- 56958
++ -- 6133
+- -- 2173
+* -- 21048
+:= -- 30232
+add.period$ -- 394
+call.type$ -- 197
+change.case$ -- 986
+chr.to.int$ -- 198
+cite$ -- 212
+duplicate$ -- 29267
+empty$ -- 20065
+format.name$ -- 2802
+if$ -- 57683
 int.to.chr$ -- 6
-int.to.str$ -- 196
-missing$ -- 2383
-newline$ -- 783
-num.names$ -- 582
-pop$ -- 13902
+int.to.str$ -- 198
+missing$ -- 2412
+newline$ -- 791
+num.names$ -- 588
+pop$ -- 14093
 preamble$ -- 1
-purify$ -- 780
+purify$ -- 788
 quote$ -- 0
-skip$ -- 4906
+skip$ -- 4956
 stack$ -- 0
-substring$ -- 34439
-swap$ -- 6411
+substring$ -- 34895
+swap$ -- 6487
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1164
+type$ -- 1176
 warning$ -- 15
-while$ -- 1792
+while$ -- 1815
 width$ -- 0
-write$ -- 2326
+write$ -- 2350
 (There were 2 error messages)
