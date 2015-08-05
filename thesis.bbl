@@ -1,4 +1,4 @@
-\begin{thebibliography}{192}
+\begin{thebibliography}{195}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -159,11 +159,12 @@ Tanay A, Cavalli G (2013) {Chromosomal domains: epigenetic contexts and
 \newblock \emph{Current opinion in genetics \& development}, \textbf{23}(2):
   197--203.
 
-\bibitem[{Filippova \emph{et~al.}(2014)Filippova, Patro, Duggal and
-  Kingsford}]{Filippova2014}
-Filippova D, Patro R, Duggal G, Kingsford C (2014) {Identification of
-  alternative topological domains in chromatin.}
-\newblock \emph{Algorithms for molecular biology : AMB}, \textbf{9}: 14.
+\bibitem[{Nora \emph{et~al.}(2012)Nora, Lajoie, Schulz, Giorgetti, Okamoto,
+  Servant, Piolot, van Berkum, Meisig \emph{et~al.}}]{Nora2012}
+Nora EP, Lajoie BR, Schulz EG, Giorgetti L, Okamoto I, Servant N, Piolot T, van
+  Berkum NL, Meisig J, \emph{et~al.} (2012) {Spatial partitioning of the
+  regulatory landscape of the X-inactivation centre.}
+\newblock \emph{Nature}, \textbf{485}(7398): 381--5.
 
 \bibitem[{Sexton \emph{et~al.}(2012)Sexton, Yaffe, Kenigsberg, Bantignies,
   Leblanc, Hoichman, Parrinello, Tanay and Cavalli}]{Sexton2012}
@@ -171,6 +172,38 @@ Sexton T, Yaffe E, Kenigsberg E, Bantignies F, Leblanc B, Hoichman M,
   Parrinello H, Tanay A, Cavalli G (2012) {Three-dimensional folding and
   functional organization principles of the Drosophila genome.}
 \newblock \emph{Cell}, \textbf{148}(3): 458--72.
+
+\bibitem[{Crane \emph{et~al.}(2015)Crane, Bian, McCord, Lajoie, Wheeler,
+  Ralston, Uzawa, Dekker and Meyer}]{Crane2015}
+Crane E, Bian Q, McCord RP, Lajoie BR, Wheeler BS, Ralston EJ, Uzawa S, Dekker
+  J, Meyer BJ (2015) {Condensin-driven remodelling of X chromosome topology
+  during dosage compensation}.
+\newblock \emph{Nature}.
+
+\bibitem[{Feng \emph{et~al.}(2014)Feng, Cokus, Schubert, Zhai, Pellegrini and
+  Jacobsen}]{Feng2014}
+Feng S, Cokus S, Schubert V, Zhai J, Pellegrini M, Jacobsen S (2014)
+  {Genome-wide Hi-C Analyses in Wild-Type and Mutants Reveal High-Resolution
+  Chromatin Interactions in Arabidopsis}.
+\newblock \emph{Molecular Cell}, \textbf{55}(5): 694--707.
+
+\bibitem[{Duan \emph{et~al.}(2010)Duan, Andronescu, Schutz, McIlwain, Mcllwain,
+  Kim, Lee, Shendure, Fields \emph{et~al.}}]{Duan2010}
+Duan Z, Andronescu M, Schutz K, McIlwain S, Mcllwain S, Kim YJ, Lee C, Shendure
+  J, Fields S, \emph{et~al.} (2010) {A Three-Dimensional Model of the Yeast
+  Genome}.
+\newblock \emph{Nature}, \textbf{465}(7296): 363--367.
+
+\bibitem[{Gong \emph{et~al.}(2015)Gong, Tjong, Zhou and Alber}]{Gong2015}
+Gong K, Tjong H, Zhou XJ, Alber F (2015) {Comparative 3D Genome Structure
+  Analysis of the Fission and the Budding Yeast}.
+\newblock \emph{Plos One}, \textbf{10}(3): e0119672.
+
+\bibitem[{Filippova \emph{et~al.}(2014)Filippova, Patro, Duggal and
+  Kingsford}]{Filippova2014}
+Filippova D, Patro R, Duggal G, Kingsford C (2014) {Identification of
+  alternative topological domains in chromatin.}
+\newblock \emph{Algorithms for molecular biology : AMB}, \textbf{9}: 14.
 
 \bibitem[{Barbieri \emph{et~al.}(2012)Barbieri, Chotalia, Fraser, Lavitas,
   Dostie, Pombo and Nicodemi}]{Barbieri2012}
@@ -698,13 +731,6 @@ Dixon JR, Jung I, Selvaraj S, Shen Y, Antosiewicz-Bourget JE, Lee AY, Ye Z, Kim
   during stem cell differentiation}.
 \newblock \emph{Nature}, \textbf{518}(7539): 331--336.
 
-\bibitem[{Crane \emph{et~al.}(2015)Crane, Bian, McCord, Lajoie, Wheeler,
-  Ralston, Uzawa, Dekker and Meyer}]{Crane2015}
-Crane E, Bian Q, McCord RP, Lajoie BR, Wheeler BS, Ralston EJ, Uzawa S, Dekker
-  J, Meyer BJ (2015) {Condensin-driven remodelling of X chromosome topology
-  during dosage compensation}.
-\newblock \emph{Nature}.
-
 \bibitem[{Wickham(2009)}]{ggplot2}
 Wickham H (2009) \emph{ggplot2: elegant graphics for data analysis}.
 \newblock Springer New York.
@@ -962,13 +988,6 @@ Sexton T, Cavalli G (2015) {Review The Role of Chromosome Domains in Shaping
 Nora EP, Dekker J, Heard E (2013) {Segmental folding of chromosomes: A basis
   for structural and regulatory chromosomal neighborhoods?}
 \newblock \emph{BioEssays}, \textbf{35}(9): 818--828.
-
-\bibitem[{Nora \emph{et~al.}(2012)Nora, Lajoie, Schulz, Giorgetti, Okamoto,
-  Servant, Piolot, van Berkum, Meisig \emph{et~al.}}]{Nora2012}
-Nora EP, Lajoie BR, Schulz EG, Giorgetti L, Okamoto I, Servant N, Piolot T, van
-  Berkum NL, Meisig J, \emph{et~al.} (2012) {Spatial partitioning of the
-  regulatory landscape of the X-inactivation centre.}
-\newblock \emph{Nature}, \textbf{485}(7398): 381--5.
 
 \bibitem[{Lupi\'{a}\~{n}ez \emph{et~al.}(2015)Lupi\'{a}\~{n}ez, Kraft,
   Heinrich, Krawitz, Brancati, Klopocki, Horn, Kayserili, Opitz
