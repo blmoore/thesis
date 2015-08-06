@@ -64,17 +64,17 @@
 \contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Reanalysis of Hi-C datasets}}{29}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{29}{section.3.1}
 \contentsline {section}{\numberline {3.2}Hi-C reprocessing}{29}{section.3.2}
-\contentsline {section}{\numberline {3.3}Compartment profiles}{30}{section.3.3}
-\contentsline {section}{\numberline {3.4}Domain calls}{32}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Compartments}{32}{subsection.3.4.1}
+\contentsline {section}{\numberline {3.3}Compartment profiles}{31}{section.3.3}
+\contentsline {section}{\numberline {3.4}Domain calls}{31}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Compartments}{31}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}TADs}{33}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Domain epigenetics}{34}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}A/B compartments}{36}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}TAD classes}{37}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}Variable regions}{37}{section.3.6}
+\contentsline {section}{\numberline {3.5}Domain epigenetics}{35}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}A/B compartments}{35}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}TAD classes}{36}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Variable regions}{39}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Chromatin state enrichment}{39}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Gene ontology enrichment}{39}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Contact changes}{41}{subsection.3.6.3}
+\contentsline {subsection}{\numberline {3.6.2}Gene ontology enrichment}{41}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Contact changes}{43}{subsection.3.6.3}
 \contentsline {section}{\numberline {3.7}Nuclear positioning}{43}{section.3.7}
 \contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Integrative modelling as a tool to explore biological systems}}{47}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{47}{section.4.1}

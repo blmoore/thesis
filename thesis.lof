@@ -10,13 +10,13 @@
 \contentsline {figure}{\numberline {6}{\ignorespaces Random Forest parameters are largely insensitive.}}{21}{figure.caption.17}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {7}{\ignorespaces Iterative correction converts raw counts to normalised interaction frequencies.}}{30}{figure.caption.18}
-\contentsline {figure}{\numberline {8}{\ignorespaces Compartment profiles are observably well-correlated between human cell types and across all chromosomes}}{31}{figure.caption.19}
-\contentsline {figure}{\numberline {9}{\ignorespaces Compartment eigenvectors are highly correlated between human cell types}}{32}{figure.caption.20}
-\contentsline {figure}{\numberline {10}{\ignorespaces Compartment calls by simple thresholding method or context-aware HMMs.}}{33}{figure.caption.21}
+\contentsline {figure}{\numberline {8}{\ignorespaces Compartment profiles are observably well-correlated between human cell types and across all chromosomes}}{32}{figure.caption.19}
+\contentsline {figure}{\numberline {9}{\ignorespaces Compartment eigenvectors are highly correlated between human cell types}}{33}{figure.caption.20}
+\contentsline {figure}{\numberline {10}{\ignorespaces Compartment calls by simple thresholding method or context-aware HMMs.}}{34}{figure.caption.21}
 \contentsline {figure}{\numberline {11}{\ignorespaces The number of called TADs per cell type under study.}}{34}{figure.caption.22}
 \contentsline {figure}{\numberline {12}{\ignorespaces TAD boundaries are shared between cell types. }}{35}{figure.caption.23}
-\contentsline {figure}{\numberline {13}{\ignorespaces Concordance of chromatin structure at multiple scales over three human cell types.}}{35}{figure.caption.24}
-\contentsline {figure}{\numberline {14}{\ignorespaces The chromatin signatures of A/B compartments.}}{36}{figure.caption.25}
+\contentsline {figure}{\numberline {13}{\ignorespaces Concordance of chromatin structure at multiple scales over three human cell types.}}{36}{figure.caption.24}
+\contentsline {figure}{\numberline {14}{\ignorespaces The chromatin signatures of A/B compartments.}}{37}{figure.caption.25}
 \contentsline {figure}{\numberline {15}{\ignorespaces TADs reflect epigenetic domains.}}{38}{figure.caption.26}
 \contentsline {figure}{\numberline {16}{\ignorespaces Structurally variable regions indicate cell type specific biology.}}{40}{figure.caption.27}
 \contentsline {figure}{\numberline {17}{\ignorespaces Regions of variable structure are enriched for cell type specific enhancers.}}{41}{figure.caption.28}
