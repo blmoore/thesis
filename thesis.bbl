@@ -218,6 +218,15 @@ Gong K, Tjong H, Zhou XJ, Alber F (2015) {Comparative 3D Genome Structure
   Analysis of the Fission and the Budding Yeast}.
 \newblock \emph{Plos One}, \textbf{10}(3): e0119672.
 
+\bibitem[{Zuin \emph{et~al.}(2013)Zuin, Dixon, van~der Reijden, Ye, Kolovos,
+  Brouwer, van~de Corput, van~de Werken, Knoch \emph{et~al.}}]{Zuin2013}
+Zuin J, Dixon JR, van~der Reijden MIJa, Ye Z, Kolovos P, Brouwer RWW, van~de
+  Corput MPC, van~de Werken HJG, Knoch Ta, \emph{et~al.} (2013) {Cohesin and
+  CTCF differentially affect chromatin architecture and gene expression in
+  human cells.}
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, pp. 1--6.
+
 \bibitem[{Narendra \emph{et~al.}(2015)Narendra, Rocha, An, Raviram, Skok,
   Mazzoni and Reinberg}]{Narendra2015}
 Narendra V, Rocha PP, An D, Raviram R, Skok JA, Mazzoni EO, Reinberg D (2015)
@@ -1064,15 +1073,6 @@ Ku M, Jaffe JD, Koche RP, Rheinbay E, Endoh M, Koseki H, Carr SA, Bernstein BE
   (2012) {H2A.Z landscapes and dual modifications in pluripotent and
   multipotent stem cells underlie complex genome regulatory functions.}
 \newblock \emph{Genome biology}, \textbf{13}(10): R85.
-
-\bibitem[{Zuin \emph{et~al.}(2013)Zuin, Dixon, van~der Reijden, Ye, Kolovos,
-  Brouwer, van~de Corput, van~de Werken, Knoch \emph{et~al.}}]{Zuin2013}
-Zuin J, Dixon JR, van~der Reijden MIJa, Ye Z, Kolovos P, Brouwer RWW, van~de
-  Corput MPC, van~de Werken HJG, Knoch Ta, \emph{et~al.} (2013) {Cohesin and
-  CTCF differentially affect chromatin architecture and gene expression in
-  human cells.}
-\newblock \emph{Proceedings of the National Academy of Sciences of the United
-  States of America}, pp. 1--6.
 
 \bibitem[{Atchison(2014)}]{Atchison2014}
 Atchison ML (2014) {Function of YY1 in Long-Distance DNA Interactions.}

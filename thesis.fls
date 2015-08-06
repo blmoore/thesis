@@ -436,10 +436,10 @@ INPUT 2-hic_comparison/hic_comparison.tex
 INPUT figs/hicnorm.png
 INPUT ./figs/hicnorm.png
 INPUT ./figs/hicnorm.png
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
 INPUT figs/wiggles.pdf
 INPUT ./figs/wiggles.pdf
 INPUT ./figs/wiggles.pdf
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
 INPUT figs/compartment_corr.png
 INPUT ./figs/compartment_corr.png
 INPUT ./figs/compartment_corr.png

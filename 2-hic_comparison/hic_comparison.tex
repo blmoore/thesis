@@ -37,7 +37,7 @@
 
 \section{Introduction}
 
-Since the initial publication of the Hi-C technique in 2009,\cite{Lieberman2009} there has been rapid advancement of both the technique itself and the resolution at which interaction frequencies have been analysed. From the proof-of-concept analysis at 1 megabase (Mb) and 100 kilobase (kb) resolution,\cite{Lieberman2009} subsequent experiments achieved first 40 kb\cite{Dixon2012}, then 10 kb\cite{Jin2013} and most recently 1 kb,\cite{Rao2014} enabling bona fide genome-wide fragment-level analysis for the first time.
+Since the initial publication of the Hi-C technique in 2009,\cite{Lieberman2009} there has been rapid advancement of both the technique itself and the resolution at which interaction frequencies have been analysed. From the proof-of-concept analysis at 1 megabase (Mb) and 100 kilobase (kb) resolution,\cite{Lieberman2009} subsequent experiments achieved resolutions first of 40 kb\cite{Dixon2012}, then 10 kb\cite{Jin2013} and most recently 1 kb,\cite{Rao2014} enabling bona fide genome-wide fragment-level analysis for the first time.
 
 % timeline: 
 % Lieberman Aiden 2009       1 Mb (30 M reads)
@@ -45,17 +45,17 @@ Since the initial publication of the Hi-C technique in 2009,\cite{Lieberman2009}
 % Jin 2013                        5-10 kb ()
 % Rao 2014                           1 kb
 
-Such rapid progression in the field has resulted in a wide variety of public Hi-C datasets being available, albeit with differing qualities. With proper correction and at a suitable resolution, these interaction frequencies can be compared and contrasted within and between species.
+Such rapid progression in the field has resulted in a wide variety of public Hi-C datasets being available, albeit with differing qualities. With proper correction and at a suitable resolution, these interaction frequencies can be compared and contrasted both within and between species.
 
-In this work I uniformly reprocessed publicly-available human Hi-C datasets, in order to address fundamental questions about the stability of higher order genome organisation within cell populations from the same species. Previously Hi-C studies have compared two samples per species, such as K562 against GM06990\cite{Lieberman2009} or IMR90 against GM12878.\cite{Dixon2012} Here I make use of three Hi-C datasets corresponding to extensively-studied human cell lines: K562, GM12878 and H1 hESC. Together these make up the "Tier 1" cell lines studied by the ENCODE consortium,\cite{Dunham2012} hence have huge amounts of matched ChIP-seq and histone modification data available. 
+In this chapter we uniformly reprocessed publicly-available human Hi-C datasets in order to address fundamental questions about the stability of higher order genome organisation within cell populations from the same species. Previously Hi-C studies have compared across two samples per species, such as K562 against GM06990\cite{Lieberman2009} or IMR90 against GM12878.\cite{Dixon2012} Here we make use of three Hi-C datasets corresponding to extensively-studied human cell lines: K562, GM12878 and H1 hESC. Together these make up the "Tier 1" cell lines studied by the ENCODE consortium,\cite{Dunham2012} hence have huge amounts of matched ChIP-seq and histone modification data available. 
 
-By combinatorial reanalysis of these cell-matched datasets, I can investigate the relationships between higher order chromatin structure and locus-level chromatin features.
+By combinatorial reanalysis of these cell-matched datasets, we can investigate the relationships between higher order chromatin structure and locus-level chromatin features more comprehensively, to our knowledge, than any previous study.
 
 % Table: description of cell lines
 
 \section{Hi-C reprocessing}
 
-Each Hi-C dataset used in this work was reprocessed using the same pipeline from raw sequencing reads (Methods \ref{methods:hic}). Briefly, raw sequencing reads were sourced from three different publications (\citet{Lieberman2009}, \citet{Dixon2012} and \citet{Kalhor2012}). These reads were mapped to human genome build \texttt{hg19} using an iterative mapping procedure that maximised the number of uniquely mappable reads from each sample (Methods \ref{methods:mapping}). 
+Each Hi-C dataset used in this work was reprocessed using the same pipeline from raw sequencing reads (Methods \ref{methods:hic}). Briefly, raw sequencing reads were sourced from three different publications: \citet{Lieberman2009}, \citet{Dixon2012} and \citet{Kalhor2012}. These reads were mapped to human genome build \texttt{hg19} using an iterative mapping procedure that maximised the number of uniquely mappable reads from each sample (Methods \ref{methods:mapping}). 
 
 Next a filtering step was applied, which removed those fragment pairs that were likely artifactual or erroneous (Methods \ref{filtering}). A correction step was then applied, whereby biases such as mappability and GC content were removed to give each fragment equal visibility (Methods \ref{methods:correction}). Overall these steps produced comparable maps of interaction frequency in different cell types, despite their differing origins (Fig. \ref{fig:hicnorm}). 
 
@@ -73,10 +73,12 @@ The sample with highest sequencing depth (H1 hESC) is shown alongside that with 
 
 Figure \ref{fig:hicnorm} shows a 10 Mb region of chromosome 18 before and after filtering and normalisation in two different cell types. Self-interacting domains visible in the deeply-sequenced H1 hESC cell type also become more visible in the K562 cell type after normalisation. In addition many of the long-range and intra-domain contacts visible in each raw contact map are down-weighted during the normalisation procedure, indicating their prominence was enhanced by biases or other sources of noise in the experimental procedure (Fig. \ref{fig:hicnorm}).
 
+The relative sparsity of the K562 Hi-C contact map compared to that of the H1 hESC cell line should also be noted (Fig. \ref{fig:hicnorm}). At the time much of this study was performed, deeply-sequenced Hi-C datasets for cell lines K562 and GM12878 were not available, thus the majority of analyses were performed at a lower resolution of 1 Mb to further reduce the impact of variable sequencing depth between cell lines (Methods \ref{methods:hic}).
+
 \section{Compartment profiles}
 % how well do compartments correlate
 
-After uniformly reprocessing each Hi-C dataset and calling compartment eigenvector profiles (see \emph{Methods}), we can compare these between three human cell lines. Compartment profiles have a visibly high-correspondence (Fig. \ref{fig:wiggles}), despite the variable sources of both sample material and experimental data.
+After uniformly reprocessing each Hi-C dataset and calling compartment eigenvector profiles (Methods \ref{sec:eigs}), we can compare these between three human cell lines. We find compartment profiles have a striking concordance (Fig. \ref{fig:wiggles}), despite the variable sources of both sample material and experimental data. This strong correlation of higher order chromatin structure (at the level of compartments) between three very different human cell types shows that genomic regions appear to be constitutively present in either the A or B compartments regardless of cell lineage.
 
 \begin{figure}
 \begin{center}
@@ -91,7 +93,7 @@ Compartment eigenvectors are plotted along the lengths of each human chromosome 
 \end{center}
 \end{figure} 
 
-This close correspondence also validates our approach of combining these different datasets, and suggests our uniform pipeline is successfully accounting for differences in sequencing depth and other batch effects. The Pearson correlation coefficients between these independent measures are in the interval $R = [.75, .8]$ (Fig. \ref{fig:compcor}).
+This close correspondence also validates our approach of combining these different datasets, and suggests our uniform pipeline is successfully accounting for differences in sequencing depth and other batch effects. The pairwise Pearson correlation coefficients between these independent measures are all in the interval $[.75, .8]$ (Fig. \ref{fig:compcor}). Also of note is that each cell type independently shows a similar bimodal distribution of compartment eigenvector, indicative of the two distinct underlying A/B compartment states (Fig. \ref{fig:compcor}).
 
 \begin{figure}
 \begin{center}
@@ -106,11 +108,11 @@ Megabase resolution compartment eigenvector values are shown in a plot matrix. \
 
 \section{Domain calls}
 
-\subsection{Compartments}
+\subsection{Compartments}\label{sec:compcalls}
 
-The continuous compartment eigenvector can be used as-is to classify A/B compartments, using positive and negative eigenvector values after first orientating the vector with respect to, for example, PolII Chip-seq data.\cite{Kalhor2012} However, given the definition of compartments as generally broad and alternating domains along a chromosome, often matching other large domains of Lamin association, an improved classification method might penalise the calls of short compartment calls, which may be the result of noise.
+The continuous compartment eigenvector is most commonly used as-is to classify A/B compartments by thresholding based on sign: typically the eigenvector is orientated such that positive values reflect A compartments and negative values B compartments.\cite{Lieberman2009, Kalhor2012} However, given compartments are understood to be generally broad and alternating domains along a chromosome, often aligning with other large domains such as LADs, an improved classification method might penalise the calls of very short compartment calls, which may be the result of noise.
 
-For this reason, instead of using raw eigenvector values we consider observed values as emissions from unobserved underlying states. This can be modelled through a Hidden Markov Model (HMM), whereby we first parameterise models of state and their transitions, then infer the most likely state sequence to have emitted our observed data. This unobserved two-state sequence is then used for compartment calls (see Methods \ref{sec:eigs}). 
+For this reason, instead of using raw eigenvector values we consider observed values as emissions from unobserved underlying states. This can be modelled through a Hidden Markov Model (HMM), whereby we first parameterise models of state and their transitions, then infer the most likely state sequence to have emitted our observed data. This unobserved two-state sequence is then used for compartment calls (Methods \ref{sec:compartments}). 
 
 In practice, this acts to de-noise our compartment calls. Where single sign-changes along the series would have resulted in a single-block compartment, these may now be modelled as noisy emissions from a single unobserved state. An examplar region is showing in Fig. \ref{fig:denoise}. This shows an approximately 50 Mb region from chromosome 8 with eigenvector data from the H1 hESC cell line. A simple thresholding method in this region calls a total of $12$ regions, whereas our HMM method finds only $6$ larger regions in the same window. The disparity is caused by very short and single-bin compartments being disfavoured by the HMM-based method (Fig. \ref{fig:denoise}). 
 
@@ -125,6 +127,7 @@ Chromosome compartments have previously been called through simple thresholding 
 \end{center}
 \end{figure} 
 
+Having called compartments
 
 % figure showing size distributions of Hi-C domains
 \subsection{TADs}
