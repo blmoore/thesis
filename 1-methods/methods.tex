@@ -264,7 +264,7 @@ cell type relative to the other two. For example, if a 1 Mb bin was
 classified as ``open'' in H1 hESC and ``closed'' in both K562 and
 GM12878, this is said to be a ``flipped'' compartment (to open).
 
-\subsection{Enhancer enrichment}\label{enhancer-enrichment}
+\subsection{Chromatin state enrichment}\label{enhancer-enrichment}
 %explanation of combined states: http://rohsdb.cmb.usc.edu/GBshape/cgi-bin/hgTables?db=hg19&hgta_group=regulation&hgta_track=wgEncodeAwgSegmentation&hgta_table=wgEncodeAwgSegmentationCombinedGm12878&hgta_doSchema=describe+table+schema
 
 Chromatin state annotations used in this work were retrieved from the ChromHMM\cite{Ernst2011} and SegWay\cite{Hoffman2012} combined annotations.\cite{Hoffman2013} These represent the consensus from two independent chromatin state prediction algorithms, and ignore regions of apparent disagreement; hence in theory making more robust and conservative predictions than either algorithm independently. Nevertheless, Hoffman \emph{et al.} caution that in areas of disagreement, each algorithm may highlight differing biological phenomena so should also be considered separately.\cite{Hoffman2013}
@@ -357,7 +357,7 @@ $\pm 500$ kb inaccuracy in G-band boundary. For each G-band boundary,
 the minimum absolute distance to any compartment or TAD boundary was
 calculated for each cell type. To generate a null model, \ldots
 
-\section{Nuclear positioning}
+\section{Nuclear positioning}\label{methods:positioning}
 Previously published data  on chromosome positioning preference within
 the nucleus was used to label each chromosome as ``inner'', ``middle''
 or ``outer''.\cite{Boyle2001} Chromosomes whose DAPI hybridisation
@@ -370,12 +370,11 @@ chromosomes in our filtered dataset, 6, 14 and 15, were assigned to
 the ``middle'' group and showed no significant to either inner or
 outer nuclear shells ($p \geq 0.1$).\cite{Boyle2001} The significance
 of the difference in distribution of eigenvectors in the inner
-versus outer shell was determined by a one-sided Kolmogorov-Smirnov (K-S)
+versus outer shell was determined by a two-sided Kolmogorov-Smirnov (K-S)
 test, with the alternative hypothesis that the empirical cumulative
-density function of the inner chromosome eigenvectors $F_{inner}$
-is greater-than or equal-to $F_{outer}$. This chromosomal positioning data was measured in lymphoblastoid
+density function of the inner chromosome eigenvectors $F_{inner}$ was not equal to $F_{outer}$. This chromosomal positioning data was measured in lymphoblastoid
 cells though nuclear architecture is though to be largely conserved
-between cell types\cite{Chambers2013, DeWit2013} and even higher primates.\cite{Tanabe2002}
+between cell types\cite{Chambers2013, DeWit2013} and even higher primates,\cite{Tanabe2002} so should be comparable in this instance.
 
 \section{4C analysis}\label{methods:4c}
 
