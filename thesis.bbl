@@ -1,4 +1,4 @@
-\begin{thebibliography}{197}
+\begin{thebibliography}{199}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -218,6 +218,13 @@ Gong K, Tjong H, Zhou XJ, Alber F (2015) {Comparative 3D Genome Structure
   Analysis of the Fission and the Budding Yeast}.
 \newblock \emph{Plos One}, \textbf{10}(3): e0119672.
 
+\bibitem[{Narendra \emph{et~al.}(2015)Narendra, Rocha, An, Raviram, Skok,
+  Mazzoni and Reinberg}]{Narendra2015}
+Narendra V, Rocha PP, An D, Raviram R, Skok JA, Mazzoni EO, Reinberg D (2015)
+  {CTCF establishes discrete functional chromatin domains at the Hox clusters
+  during differentiation}.
+\newblock \emph{Science}, \textbf{347}(6225): 1017--1021.
+
 \bibitem[{Sexton and Cavalli(2015)}]{Sexton2015}
 Sexton T, Cavalli G (2015) {Review The Role of Chromosome Domains in Shaping
   the Functional Genome}.
@@ -342,6 +349,13 @@ G\'{o}mez-D\'{\i}az E, Corces VG (2014) {Architectural proteins: regulators of
   3D genome organization in cell fate}.
 \newblock \emph{Trends in Cell Biology}, \textbf{24}(11): 703--711.
 
+\bibitem[{{Van Bortle} \emph{et~al.}(2014){Van Bortle}, Nichols, Li, Ong,
+  Takenaka, Qin and Corces}]{VanBortle2014}
+{Van Bortle} K, Nichols MH, Li L, Ong CT, Takenaka N, Qin ZS, Corces VG (2014)
+  {Insulator function and topological domain border strength scale with
+  architectural protein occupancy.}
+\newblock \emph{Genome biology}, \textbf{15}(5): R82.
+
 \bibitem[{Dekker(2014)}]{Dekker2014}
 Dekker J (2014) {Two ways to fold the genome during the cell cycle : insights
   obtained with chromosome conformation capture}.
@@ -367,6 +381,15 @@ Beitel CW, Froenicke L, Lang JM, Korf IF, Michelmore RW, Eisen Ja, Darling AE
   (2014) {Strain- and plasmid-level deconvolution of a synthetic metagenome by
   sequencing proximity ligation products.}
 \newblock \emph{PeerJ}, \textbf{2}: e415.
+
+\bibitem[{Sahl\'{e}n \emph{et~al.}(2015)Sahl\'{e}n, Abdullayev, Ramsk\"{o}ld,
+  Matskova, Rilakovic, L\"{o}tstedt, Albert, Lundeberg and
+  Sandberg}]{Sahlen2015}
+Sahl\'{e}n P, Abdullayev I, Ramsk\"{o}ld D, Matskova L, Rilakovic N,
+  L\"{o}tstedt B, Albert TJ, Lundeberg J, Sandberg R (2015) {Genome-wide
+  mapping of promoter-anchored interactions with close to single-enhancer
+  resolution}.
+\newblock \emph{Genome Biology}, \textbf{16}(1): 156.
 
 \bibitem[{Williamson \emph{et~al.}(2014)Williamson, Berlivet, Eskeland, Boyle,
   Illingworth, Paquette and Bickmore}]{Williamson2014}
@@ -1015,13 +1038,6 @@ Lupi\'{a}\~{n}ez D, Kraft K, Heinrich V, Krawitz P, Brancati F, Klopocki E,
 Ren B, Dixon J (2015) {A CRISPR Connection between Chromatin Topology and
   Genetic Disorders}.
 \newblock \emph{Cell}, \textbf{161}(5): 955--957.
-
-\bibitem[{{Van Bortle} \emph{et~al.}(2014){Van Bortle}, Nichols, Li, Ong,
-  Takenaka, Qin and Corces}]{VanBortle2014}
-{Van Bortle} K, Nichols MH, Li L, Ong CT, Takenaka N, Qin ZS, Corces VG (2014)
-  {Insulator function and topological domain border strength scale with
-  architectural protein occupancy.}
-\newblock \emph{Genome biology}, \textbf{15}(5): R82.
 
 \bibitem[{Evertts \emph{et~al.}(2013)Evertts, Manning, Wang, Dyson, Garcia and
   Coller}]{Evertts2013}
