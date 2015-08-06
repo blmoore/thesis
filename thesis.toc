@@ -44,7 +44,7 @@
 \contentsline {subsection}{\numberline {2.3.3}Other modelling approaches}{21}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}Variable regions}{22}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Stratification by variability}{22}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Enhancer enrichment}{22}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.2}Chromatin state enrichment}{22}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Gene ontology analysis}{23}{subsection.2.4.3}
 \contentsline {section}{\numberline {2.5}Boundaries}{23}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}TADs}{23}{subsection.2.5.1}
