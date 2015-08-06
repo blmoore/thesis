@@ -446,6 +446,9 @@ INPUT ./figs/compartment_corr.png
 INPUT figs/hmm_calls.png
 INPUT ./figs/hmm_calls.png
 INPUT ./figs/hmm_calls.png
+INPUT figs/comp_sizedists.pdf
+INPUT ./figs/comp_sizedists.pdf
+INPUT ./figs/comp_sizedists.pdf
 INPUT figs/ntads.pdf
 INPUT ./figs/ntads.pdf
 INPUT ./figs/ntads.pdf

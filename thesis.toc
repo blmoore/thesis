@@ -69,13 +69,13 @@
 \contentsline {subsection}{\numberline {3.4.1}Compartments}{31}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}TADs}{33}{subsection.3.4.2}
 \contentsline {section}{\numberline {3.5}Domain epigenetics}{35}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}A/B compartments}{35}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}TAD classes}{36}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}Variable regions}{39}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Chromatin state enrichment}{39}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Gene ontology enrichment}{41}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Contact changes}{43}{subsection.3.6.3}
-\contentsline {section}{\numberline {3.7}Nuclear positioning}{43}{section.3.7}
+\contentsline {subsection}{\numberline {3.5.1}A/B compartments}{37}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}TAD classes}{38}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Variable regions}{38}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Chromatin state enrichment}{40}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Gene ontology enrichment}{40}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Contact changes}{42}{subsection.3.6.3}
+\contentsline {section}{\numberline {3.7}Nuclear positioning}{44}{section.3.7}
 \contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Integrative modelling as a tool to explore biological systems}}{47}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{47}{section.4.1}
 \contentsline {section}{\numberline {4.2}Reproducing Dong \emph {et al.} }{48}{section.4.2}
@@ -120,5 +120,5 @@
 \contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{97}{chapter.7}
 \contentsline {section}{\numberline {7.1}Conclusion}{99}{section.7.1}
 \contentsline {section}{\numberline {7.2}Future research}{99}{section.7.2}
-\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{101}{chapter*.70}
-\contentsline {chapter}{References}{121}{chapter*.71}
+\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{101}{chapter*.71}
+\contentsline {chapter}{References}{121}{chapter*.72}

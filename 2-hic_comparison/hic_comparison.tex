@@ -127,7 +127,17 @@ Chromosome compartments have previously been called through simple thresholding 
 \end{center}
 \end{figure} 
 
-Having called compartments
+Having called compartments we can compare their properties across cell types. In each case, a majority of chromosome compartments are in the range $0$--$10$ Mb in size, with a handful compartments reaching up to $40$ Mb in size (Fig. \ref{fig:compsizedists}). Median sizes for compartments called in this work match those reported previously, with a median size of around $5 Mb$.\cite{Dekker2013} Our slightly larger mean compartment sizes (up to $7.6$ Mb in H1 hESC) may be due to our altered domain calling procedure (Fig. \ref{fig:denoise}) and is clearly influenced by some large outliers (Fig. \ref{fig:compsizedists}).
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=5.8in]{figs/comp_sizedists.pdf}
+\captionsetup{width=\textwidth}
+\caption[ Size distributions of compartment calls in three human cell types. ]{ {\bf Size distributions of compartment calls in three human cell types. }
+Kernel density estimates of compartment sizes (Open: A; Closed: B) are shown per cell type with summary statistics (\emph{inset}), including mean compartment size with $95\%$ confidence intervals.
+}\label{fig:compsizedists}
+\end{center}
+\end{figure} 
 
 % figure showing size distributions of Hi-C domains
 \subsection{TADs}
