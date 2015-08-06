@@ -1,4 +1,4 @@
-\begin{thebibliography}{199}
+\begin{thebibliography}{196}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -875,21 +875,6 @@ Bernstein BE, Stamatoyannopoulos Ja, Costello JF, Ren B, Milosavljevic A,
   Meissner A, Kellis M, Marra Ma, Beaudet AL, \emph{et~al.} (2010) {The NIH
   Roadmap Epigenomics Mapping Consortium.}
 \newblock \emph{Nature biotechnology}, \textbf{28}(10): 1045--8.
-
-\bibitem[{Nikolov and Fischle(2012)}]{Nikolov2012}
-Nikolov M, Fischle W (2012) {Systematic analysis of histone modification
-  readout.}
-\newblock \emph{Molecular bioSystems}, \textbf{Advance Ac}.
-
-\bibitem[{Sajan and Hawkins(2012)}]{Sajan2012}
-Sajan SA, Hawkins RD (2012) {Methods for identifying higher-order chromatin
-  structure.}
-\newblock \emph{Annual review of genomics and human genetics}, \textbf{13}:
-  59--82.
-
-\bibitem[{Henikoff and Shilatifard(2011)}]{Henikoff2011}
-Henikoff S, Shilatifard A (2011) {Histone modification: cause or cog?}
-\newblock \emph{Trends in genetics : TIG}, \textbf{27}(10): 389--96.
 
 \bibitem[{Tippmann \emph{et~al.}(2012)Tippmann, Ivanek, Gaidatzis, Sch\"{o}ler,
   Hoerner, van Nimwegen, Stadler, Stadler and Sch\"{u}beler}]{Tippmann2012}

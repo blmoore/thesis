@@ -488,10 +488,10 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/nowacki/iwona/rm-iwonari.tfm
 INPUT figs/improvedDongPlot.png
 INPUT ./figs/improvedDongPlot.png
 INPUT ./figs/improvedDongPlot.png
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/nowacki/iwona/rm-iwonari.tfm
 INPUT figs/Dong_relImp_Horiz.pdf
 INPUT ./figs/Dong_relImp_Horiz.pdf
 INPUT ./figs/Dong_relImp_Horiz.pdf
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/nowacki/iwona/rm-iwonari.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf

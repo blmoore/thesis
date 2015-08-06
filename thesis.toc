@@ -79,12 +79,13 @@
 \contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Integrative modelling as a tool to explore biological systems}}{49}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{49}{section.4.1}
 \contentsline {section}{\numberline {4.2}Reproducing Dong \emph {et al.} }{50}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Model adjustments}{52}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}\emph {Bestbin} method}{50}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Model adjustments}{50}{subsection.4.2.2}
 \contentsline {section}{\numberline {4.3}Modelling FANTOM5 expression data}{52}{section.4.3}
 \contentsline {section}{\numberline {4.4}Modelling higher order chromatin}{55}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Predictive model}{55}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Cross-application}{56}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Between-cell variability}{56}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.3}Between-cell variability}{58}{subsection.4.4.3}
 \contentsline {subsection}{\numberline {4.4.4}Variable importance}{58}{subsection.4.4.4}
 \contentsline {subsection}{\numberline {4.4.5}Correlating input features}{60}{subsection.4.4.5}
 \contentsline {section}{\numberline {4.5}Technical considerations}{64}{section.4.5}
@@ -93,7 +94,7 @@
 \contentsline {subsection}{\numberline {4.5.3}Non-independence}{67}{subsection.4.5.3}
 \contentsline {section}{\numberline {4.6}Parsimonious models from expanded feature sets}{67}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}Stepwise regression}{68}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}LASSO ($\ell _1$) regression}{69}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.2}LASSO ($\ell _1$) regression}{68}{subsection.4.6.2}
 \contentsline {subsection}{\numberline {4.6.3}Regularised Random Forest}{69}{subsection.4.6.3}
 \contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Chromatin domain boundaries}}{71}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{71}{section.5.1}
