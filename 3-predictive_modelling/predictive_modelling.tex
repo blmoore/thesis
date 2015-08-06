@@ -39,28 +39,29 @@
 
 \section{Introduction}
 Large-scale chromatin data has recently been produced by multiple
-consortia, most notably the ENCODE\cite{Dunham2012} and NIH
-Roadmap Epigenomics\cite{Bernstein2010} projects. The breadth and depth of this new
-data offers unprecedented opportunities to further our understanding
-regarding the fundamental biology of the chromatin landscape. While many histone
-modifications can now be quantified experimentally,\cite{Nikolov2012, Sajan2012, Ernst2011} an integrated
-understanding of general mechanisms underlying the cause or effect of
-these marks lags behind. A 2011 opinion piece asked
-the question ``Histone modification: cause or
-cog?''\cite{Henikoff2011} and speculated that nucleosome modifications
-could be by-products of transcription machinery, as opposed to
-the ``histone code'' hypothesis which suggests that histone
-modifications are placed to direct alterations in chromatin
-state. This latter hypothesis is often tacitly invoked in the
-chromatin literature, wherein a mark may be described as
-``repressive'' or ``activating'' despite only the observation of a
-correlative relationship.\cite{Henikoff2011} 
+consortia, most notably ENCODE (Section \ref{intro:encode}) but also the NIH
+Roadmap Epigenomics project.\cite{Bernstein2010} The breadth and depth of this new
+data offers unprecedented opportunities to advance our understanding
+of the complex biology of the chromatin landscape. To this end,
+studies have already enjoyed success in integrating these data through modelling techniques, with the subsequent dissection of these models revealing novel insights into complex biological phenomena.
+%While many histone
+%modifications can now be quantified experimentally,\cite{Nikolov2012, Sajan2012, Ernst2011} an integrated
+%understanding of general mechanisms underlying the cause or effect of
+%these marks lags behind. A 2011 opinion piece asked
+%the question ``Histone modification: cause or
+%cog?''\cite{Henikoff2011} and speculated that nucleosome modifications
+%could be by-products of transcription machinery, as opposed to
+%the ``histone code'' hypothesis which suggests that histone
+%modifications are placed to direct alterations in chromatin
+%state. This latter hypothesis is often tacitly invoked in the
+%chromatin literature, wherein a mark may be described as
+%``repressive'' or ``activating'' despite only the observation of a
+%correlative relationship.\cite{Henikoff2011} 
 %Similarly, the interplay
 %between locus-level factors and higher-order organisation of
 %chromatin, while known the be an important factor in
 %transcription, remains poorly understood mechanisatically.\cite{Li2011} 
-% Colin's sentence:
-However, the recent flood of data from high throughput sequencing technologies have provided fascinating new glimpses of the ways chromatin and transcription are functionally related.
+%and already has provided fascinating new glimpses of the ways chromatin and transcription are functionally related.
 
 Recent studies have shown convincingly that local chromatin state
 measurements can accurately predict expression levels of genes on a
@@ -70,13 +71,12 @@ cells based on just four predictors: 3 histone modifications
 (H3K36me3, H3K4me2 and H3K27me3) and
 Pol-II occupancy. Remarkably, the linear model was found to explain
 $84.6\%$ of an estimated $91\%$ maximal variance that could be explained
-(as calculated through a detailed determination of noise). An additional
+(as calculated through a detailed determination of noise).\cite{Tippmann2012}  An additional
 finding of this study was that mRNA half-life and microRNA mediated
 transcript degradation both had relatively minor influence on
 steady-state mRNA levels, with the authors concluding that ``the lion's
 share of regulatory contribution is at the level of mRNA synthesis and
-predictable from chromatin alone.''\cite{Tippmann2012} An independent
-study used a similar regression modelling approach to chromatin
+predictable from chromatin alone.''\cite{Tippmann2012} An independent study used a similar regression modelling approach to chromatin
 and transcription factor data and again
 concluded that models built with histone modifications and chromatin
 accessibility data were almost as accurate as those which also
@@ -114,14 +114,14 @@ We can extend this approach to the related domain of nuclear architecture, in th
 
 \section{Reproducing Dong \emph{et al.} }\label{sec:reprodong}
 
-Following \citet{Dong2012}, we first
-reimplemented the published ENCODE modelling framework to 
-replicate their results. In doing so we were able to analyse the
-strengths and caveats of their approach; for example we found, surprisingly, the two-step classification
+We reimplemented the published modelling framework of \citet{Dong2012} to 
+replicate their results and analyse the strengths and caveats of their approach. We were able to reproduce the reported results and highly accurate models of transcriptional output (Fig. XX). In doing this, we were surprised to find that the two-step classification
 then regression (firstly assessing a gene as `on' or `off' and then
 predicting its expression level) added little additional accuracy relative to a simple
 linear regression model 
 (Fig. \ref{fig:TwoStepvsSimple}). 
+
+% figure : results of Dong et al. reproduction
 
 \begin{figure}
 \begin{center}
@@ -142,7 +142,8 @@ linear regression model
 \end{center}
 \end{figure} 
 
-An innovative element of Dong \emph{et al.}'s modelling approach is the `bestbin' method of matching
+\subsection{\emph{Bestbin} method}
+An innovative element of the modelling approach used in \citet{Dong2012} is the `bestbin' method of matching
 chromatin measurements to the expression of a given TSS. This strategy
 first bins normalised signal intensities into $40 \times 100$ bp bins
 encompassing 4 kb around the TSS, and adds an additional bin representing the remaining
