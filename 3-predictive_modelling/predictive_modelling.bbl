@@ -1,9 +1,5 @@
-\begin{thebibliography}{40}
+\begin{thebibliography}{36}
 \providecommand{\natexlab}[1]{#1}
-
-\bibitem[{ENCODE(2012)}]{Dunham2012}
-ENCODE (2012) {An integrated encyclopedia of DNA elements in the human genome.}
-\newblock \emph{Nature}, \textbf{489}(7414): 57--74.
 
 \bibitem[{Bernstein \emph{et~al.}(2010)Bernstein, Stamatoyannopoulos, Costello,
   Ren, Milosavljevic, Meissner, Kellis, Marra, Beaudet
@@ -12,28 +8,6 @@ Bernstein BE, Stamatoyannopoulos Ja, Costello JF, Ren B, Milosavljevic A,
   Meissner A, Kellis M, Marra Ma, Beaudet AL, \emph{et~al.} (2010) {The NIH
   Roadmap Epigenomics Mapping Consortium.}
 \newblock \emph{Nature biotechnology}, \textbf{28}(10): 1045--8.
-
-\bibitem[{Nikolov and Fischle(2012)}]{Nikolov2012}
-Nikolov M, Fischle W (2012) {Systematic analysis of histone modification
-  readout.}
-\newblock \emph{Molecular bioSystems}, \textbf{Advance Ac}.
-
-\bibitem[{Sajan and Hawkins(2012)}]{Sajan2012}
-Sajan SA, Hawkins RD (2012) {Methods for identifying higher-order chromatin
-  structure.}
-\newblock \emph{Annual review of genomics and human genetics}, \textbf{13}:
-  59--82.
-
-\bibitem[{Ernst \emph{et~al.}(2011)Ernst, Kheradpour, Mikkelsen, Shoresh, Ward,
-  Epstein, Zhang, Wang, Issner \emph{et~al.}}]{Ernst2011}
-Ernst J, Kheradpour P, Mikkelsen TS, Shoresh N, Ward LD, Epstein CB, Zhang X,
-  Wang L, Issner R, \emph{et~al.} (2011) {Mapping and analysis of chromatin
-  state dynamics in nine human cell types.}
-\newblock \emph{Nature}, \textbf{473}(7345): 43--9.
-
-\bibitem[{Henikoff and Shilatifard(2011)}]{Henikoff2011}
-Henikoff S, Shilatifard A (2011) {Histone modification: cause or cog?}
-\newblock \emph{Trends in genetics : TIG}, \textbf{27}(10): 389--96.
 
 \bibitem[{Tippmann \emph{et~al.}(2012)Tippmann, Ivanek, Gaidatzis, Sch\"{o}ler,
   Hoerner, van Nimwegen, Stadler, Stadler and Sch\"{u}beler}]{Tippmann2012}
@@ -91,9 +65,10 @@ Chambers EV, Bickmore Wa, Semple CA (2013) {Divergence of mammalian higher
   order chromatin structure is associated with developmental loci.}
 \newblock \emph{PLoS computational biology}, \textbf{9}(4): e1003017.
 
-\bibitem[{{RIKEN Omics Science Center}(2012)}]{fantom5}
-{RIKEN Omics Science Center} (2012) {FANTOM5}.
-\newblock \emph{http://fantom.gsc.riken.jp/}.
+\bibitem[{Consortium \emph{et~al.}(2014)Consortium, Pmi and Dgt}]{fantom5}
+Consortium TF, Pmi R, Dgt C (2014) {A promoter-level mammalian expression
+  atlas.}
+\newblock \emph{Nature}, \textbf{507}(7493): 462--70.
 
 \bibitem[{Kolasinska-Zwierz \emph{et~al.}(2009)Kolasinska-Zwierz, Down,
   Latorre, Liu, Liu and Ahringer}]{Kolasinska-Zwierz2009}
@@ -121,6 +96,10 @@ Karli\'{c} R, Chung Hr, Lasserre J, Vlahovicek K, Vingron M (2010) {Histone
   modification levels are predictive for gene expression.}
 \newblock \emph{Proceedings of the National Academy of Sciences of the United
   States of America}, \textbf{107}(7): 2926--31.
+
+\bibitem[{ENCODE(2012)}]{Dunham2012}
+ENCODE (2012) {An integrated encyclopedia of DNA elements in the human genome.}
+\newblock \emph{Nature}, \textbf{489}(7414): 57--74.
 
 \bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
   Williams, Imakaev, Ragoczy, Telling, Amit, Lajoie, Sabo
