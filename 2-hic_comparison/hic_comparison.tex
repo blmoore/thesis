@@ -139,6 +139,18 @@ Kernel density estimates of compartment sizes (Open: A; Closed: B) are shown per
 \end{center}
 \end{figure} 
 
+Next we compare compartments between the three cell types under study. To do this, we calculate the minimum absolute distance from each boundary in one cell type against those in a designated comparison cell type (we used H1 hESC). The cumulative distribution of this boundary differences is shown (Fig. \ref{fig:compdist}) and compared to a null distribution of random compartment boundaries. We find boundaries are significantly more closely aligned across  cell types than is expected by chance. For example, genome-wide approximately $37\%$ of compartment boundaries in H1 hESC have a corresponding boundary within $100$ kb in GM12878 (and $35\%$ in K562, but only $5\%$ in random boundaries). Comparisons of the cumulative boundary distance distributions yield statistically significant differences relative to the null model (K-S test, K562: $D = 0.47$; $p \approx 0$; GM12878: $D = 0.49$; $p \approx 0$; Fig. \ref{fig:compdist}).
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=2.5in]{figs/compdist.pdf}
+\captionsetup{width=\textwidth}
+\caption[Compartment boundaries are shared between cell types. ]{ {\bf Compartment boundaries are shared between cell types. }
+The empirical cumulative density functions (ECDF) of distances between H1 compartments and those called in GM12878 and K562 are shown. These distances were compared with a null distribution calculated from shuffled boundaries at a matched resolution.
+}\label{fig:compdist}
+\end{center}
+\end{figure} 
+
 % figure showing size distributions of Hi-C domains
 \subsection{TADs}
 
