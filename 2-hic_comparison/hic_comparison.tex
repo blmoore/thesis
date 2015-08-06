@@ -253,7 +253,7 @@ Regions occupying the active A nuclear compartment in one cell type, but the rep
 % fig 1.
 \subsection{Chromatin state enrichment}\label{sec:chromstateenrich}
 
-Given our conservative definition of RVS (Section \ref{sec:variableregions}), such notable changes between transcriptionally permissive and repressive environments might be expected to be associated with cell-type-specific biology, such as functional chromatin states. To test this, we used consensus predicted chromatin state annotations, built from two machine learning algorithms, ChromHMM\cite{Ernst2012} and SegWay\cite{Hoffman2012, Hoffman2013}, and tested for enrichment or depletion in our set of RVS (Methods XX).
+Given our conservative definition of RVS (Section \ref{sec:variableregions}), such notable changes between transcriptionally permissive and repressive environments might be expected to be associated with cell-type-specific biology, such as functional chromatin states. To test this, we used consensus predicted chromatin state annotations, built from two machine learning algorithms, ChromHMM\cite{Ernst2012} and SegWay\cite{Hoffman2012, Hoffman2013}, and tested for enrichment or depletion in our set of RVS (Methods \ref{enhancer-enrichment}).
 
 We found that RVS show a striking enrichment for cell-type specific enhancers in both of our derived cell lines, but not in embryonic stem cells (Fig. \ref{fig:enhancerstates}). This observation can be explained as the undifferentiated cell type would not be expected to have lineage-specific enhancer contacts active in its pluripotent state. The same pattern was not seen for enhancers shared between two or more of the cell types under study. We observed a similar enrichment for cell-type-specific transcription but not for several other chromatin states including promoter activity (Fig. \ref{fig:stateenrich}).
 
@@ -313,6 +313,7 @@ greater than expected interaction bias with active compartments. These data are 
 \end{center} 
 \end{figure} 
 
+% specific example of contact chances, e.g. 4c spider plot / arc diagram
 
 \section{Nuclear positioning}
 
@@ -341,7 +342,7 @@ and peripheral ($F_{edge}$). The difference was found to be statistically signif
 \includegraphics[width=5in]{figs/nucpos.pdf}
 \captionsetup{width=\textwidth} 
 \caption[Nuclear positioning of chromosomes relative to compartment eigenvectors.]{ {\bf Nuclear positioning of chromosomes relative to compartment eigenvectors. }
-Kernel density estimates showing peripheral chromosomes have a greater proportion of B compartments (negative eigenvectors) relative to centrally-position chromosomes. Positioning data from \citet{Boyle2001} (Methods XX).
+Kernel density estimates showing peripheral chromosomes have a greater proportion of B compartments (negative eigenvectors) relative to centrally-position chromosomes. Positioning data from \citet{Boyle2001} (Methods \ref{methods:positioning}).
 }\label{fig:nucpos}
 \end{center} 
 \end{figure} 
