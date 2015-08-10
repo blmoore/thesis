@@ -65,10 +65,9 @@ Chambers EV, Bickmore Wa, Semple CA (2013) {Divergence of mammalian higher
   order chromatin structure is associated with developmental loci.}
 \newblock \emph{PLoS computational biology}, \textbf{9}(4): e1003017.
 
-\bibitem[{Consortium \emph{et~al.}(2014)Consortium, Pmi and Dgt}]{fantom5}
-Consortium TF, Pmi R, Dgt C (2014) {A promoter-level mammalian expression
-  atlas.}
-\newblock \emph{Nature}, \textbf{507}(7493): 462--70.
+\bibitem[{{RIKEN Omics Science Center}(2012)}]{fantom5}
+{RIKEN Omics Science Center} (2012) {FANTOM5}.
+\newblock \emph{http://fantom.gsc.riken.jp/}.
 
 \bibitem[{Kolasinska-Zwierz \emph{et~al.}(2009)Kolasinska-Zwierz, Down,
   Latorre, Liu, Liu and Ahringer}]{Kolasinska-Zwierz2009}
