@@ -37,7 +37,7 @@
 \chapter{Integrative modelling as a tool to explore biological systems}\label{chap:modelling}
 \vspace{2em}
 
-\section{Introduction}
+\section{Introduction}\label{sec:dongintro}
 Large-scale chromatin data has recently been produced by multiple
 consortia, most notably ENCODE (Section \ref{intro:encode}) but also the NIH
 Roadmap Epigenomics project.\cite{Bernstein2010} The breadth and depth of this new
@@ -112,20 +112,34 @@ approach.
 %understanding of the drivers of transcriptional flux. 
 We can extend this idea to the related domain of nuclear architecture, in the hope of understanding the relationships between chromatin and higher order structure in the same way that chromatin features have been related to transcriptional output.
 
-\section{Reproducing Dong \emph{et al.} }\label{sec:reprodong}
+\section{Extending Dong \emph{et al.} }\label{sec:reprodong}
 
-We reimplemented the published modelling framework of \citet{Dong2012} to 
-replicate their results and analyse the strengths and caveats of their approach. We were able to reproduce the reported results and highly accurate models of transcriptional output (Fig. XX). In doing this, we were surprised to find that the two-step classification
+\begin{figure}
+\begin{center}
+\includegraphics[width=5.65in]{figs/dong_repres.pdf}
+\captionsetup{width=\textwidth}
+\caption[ Highly accurate models of expression were built following Dong \emph{et al.} ]{ {\bf Highly accurate models of expression were built following Dong \emph{et al.} }  A scatterplot shows the strong correlation between predicted and observed expression levels per transcript (\emph{left}). Variable importance metrics are shown for the on/off RF classification step and continuous linear regression step (\emph{right}). 
+}\label{fig:dongres}
+\end{center}
+\end{figure} 
+
+We reimplemented the published modelling framework of \citet{Dong2012} (introduced in Section \ref{sec:dongintro}) to 
+replicate their results and analyse the strengths and caveats of their approach. 
+
+We were able to reproduce the reported results and highly accurate models of transcriptional output. An example is shown for a model of CAGE expression in the H1 hESC cell type (Fig. \ref{fig:dongres}). Note that not all variables used in \citet{Dong2012} were made available for this particular modelling scenario, however the Pearson correlation between predicted and observed expression ($0.87$) is above the study's median value ($0.83$), and in-line with other models predicting CAGE data (median $PCC \approx 0.87$).\cite{Dong2012}
+
+We also re-calculated measures of variable importance for this model of transcription (Fig. \ref{fig:dongres}). We not some small variations from the example model shown in \citet{Dong2012} which was predicting cytosolic CAGE data recorded in K562 cells. This hints at some degree of some variability between cell type models, though broad similarities also exist such as both models ranking DNase I hypersensitivity as a relatively informative variable (Fig. \ref{fig:dongres}).
+
+When replicating the modelling approach of \citet{Dong2012}, we were surprised to find that the two-step classification
 then regression (firstly assessing a gene as `on' or `off' and then
 predicting its expression level) added little additional accuracy relative to a simple
-linear regression model 
-(Fig. \ref{fig:TwoStepvsSimple}). 
+linear regression model (Fig. \ref{fig:TwoStepvsSimple}). Indeed, it appears the ``best bin`` technique (Section \ref{sec:dongbestbin}) had much greater impact on overall predictive power than the addition of this classification step.
 
 % figure : results of Dong et al. reproduction
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=.7\textwidth]{figs/improvedDongPlot.png}
+\includegraphics[width=4in]{figs/dong_2stepres.png}
 \captionsetup{width=\textwidth}
 \caption[Comparison of two-step classification-regression model of transcription with
   a simple linear regression model.]{ {\bf Comparison of a published two-step classification-regression model of transcription with
@@ -133,16 +147,14 @@ linear regression model
   $\log_2$ reads per million (RPM) expression values for the two-step model of \citet{Dong2012} and simple multiple linear regression are shown (\emph{left})
   along with frequency distributions of predicted and observed
   expression levels (\emph{right}). Scatterplots are annotated with
-  Pearson's correlation coefficient (\emph{r}) and the root mean
-  squared error (RMSE); the black trendlines describe $y =
-  x$. Following 10-fold cross validation, overall correlation
-  coefficients were: linear model $0.87 \pm 1.77 \times 10^{-5} $;
-  Two-step model $0.872 \pm 9.89 \times 10^{-5} $.
+  Pearson's correlation coefficient (\emph{PCC}) and the root mean
+  squared error (RMSE); black trendlines describe $y =
+  x$. Overall correlations calculated with 10-fold cross-validation.
 }\label{fig:TwoStepvsSimple}
 \end{center}
 \end{figure} 
 
-\subsection{\emph{Bestbin} method}
+\subsection{\emph{Bestbin} method}\label{sec:dongbestbin}
 An innovative element of the modelling approach used in \citet{Dong2012} is the `bestbin' method of matching
 chromatin measurements to the expression of a given TSS. This strategy
 first bins normalised signal intensities into $40 \times 100$ bp bins
@@ -156,6 +168,21 @@ the correlation (between predicted and observed expression) by $0.1$ in
 the simple regression model, an increase in accuracy of almost $13\%$,
 relative to simply taking the average value across all
 bins.\cite{Dong2012} 
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=5.3in]{figs/dong_tssprofiles.pdf}
+\captionsetup{width=\textwidth}
+\caption[ Average input feature profiles over transcription start sites. ]{ {\bf Average input feature profiles over transcription start sites. }  Mean ChIP-seq signal over input control is shown for 6 factors in 6 human cell types used in \citet{Dong2012}. Each is averaged genome-wide over GENCODE v7 \texttt{hg19} defined TSS $\pm 2$ kb. Ribbons shown $99\%$ confidence intervals of the mean. % check this XX
+}\label{fig:dongtssprof}
+\end{center}
+\end{figure} 
+
+The justification for such an approach hinges on the idea that the multitude of input features (mostly histone modifications and DNA binding proteins) have a variety of biological functions, and so the bestbin method is one way of learning these functions in an automated and unsupervised way. For example, the histone modification H3K36me3 is understood to be painted across exons that are being actively-transcribed, thus the genome-wide summary statistic that best captures this function is likely the whole-gene measurement, rather than the level of H3k36me3 at a gene's TSS or upstream promoter. A re-analysis of that ENCODE data used in \citet{Dong2012} highlights this kind of variability across input features (Fig. \ref{fig:dongtssprof}). Some clearly are enriched directly over TSS (CTCF, DNase; Fig. \ref{fig:dongtssprof}) while others show enrichments along the gene body (H3K36me3, H4K20me1; Fi.g \ref{fig:dongtssprof}) as well as more-complex, asymmetrical "shoulder" patterns (H3K27me3, H3K9ac; Fig. \ref{fig:dongtssprof}). Bestbin will therefore, to some degree, capture these relationships without \emph{a priori} specification.
+
+% Dissection of best bin (bestbinDetermination.pdf ?)
+
+\subsection{Variable importance}
 
 \begin{figure}
 \begin{center}
@@ -174,7 +201,7 @@ produced by \citet{Dong2012} through increasing the number of informative
 regressors. While \citet{Dong2012} included broad coverage of different histone modifications,
 they did not investigate the impact of higher order
 chromatin data. For this reason, we matched the TSS positions used in
-\citet{Dong2012} with previously-published genome-wide replication
+\citet{Dong2012} (GENCODE v7 hg19) with previously-published genome-wide replication
 timing ratios measured in BG02 ESCs.\cite{Ryba2010} This data is of a different origin to the transcriptional data in this case (which was record in H1 hESC) but replication timing is thought to be largely conserved between cell types.\cite{Chambers2013} 
 
 We then used these values as an additional

@@ -3,7 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: predictive_modelling.aux
 The style file: ../thesis.bst
 Database file #1: /Users/benmoore/Documents/library.bib
-Repeated entry---line 2902 of file /Users/benmoore/Documents/library.bib
+Repeated entry---line 3009 of file /Users/benmoore/Documents/library.bib
  : @article{fantom5
  :                 ,
 I'm skipping whatever remains of this entry
@@ -17,43 +17,43 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty journal in Vizan2014
 You've used 36 entries,
             3024 wiz_defined-function locations,
-            874 strings with 14596 characters,
-and the built_in function-call counts, 49372 in all, are:
-= -- 5171
-> -- 1468
-< -- 13
-+ -- 1056
-- -- 377
-* -- 3715
-:= -- 5384
+            872 strings with 14549 characters,
+and the built_in function-call counts, 49197 in all, are:
+= -- 5162
+> -- 1452
+< -- 14
++ -- 1044
+- -- 373
+* -- 3690
+:= -- 5366
 add.period$ -- 73
 call.type$ -- 36
 change.case$ -- 182
 chr.to.int$ -- 37
 cite$ -- 37
-duplicate$ -- 5154
-empty$ -- 3571
-format.name$ -- 488
-if$ -- 10160
+duplicate$ -- 5150
+empty$ -- 3559
+format.name$ -- 482
+if$ -- 10126
 int.to.chr$ -- 1
 int.to.str$ -- 37
-missing$ -- 436
+missing$ -- 432
 newline$ -- 148
 num.names$ -- 108
 pop$ -- 2432
 preamble$ -- 1
 purify$ -- 144
 quote$ -- 0
-skip$ -- 892
+skip$ -- 889
 stack$ -- 0
-substring$ -- 6113
-swap$ -- 1164
+substring$ -- 6106
+swap$ -- 1147
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 214
 warning$ -- 1
-while$ -- 324
+while$ -- 320
 width$ -- 0
-write$ -- 434
+write$ -- 433
 (There were 2 error messages)
