@@ -29,7 +29,7 @@
 \contentsline {section}{\numberline {1.4}Machine learning in genomics}{13}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}ENCODE}{13}{subsection.1.4.1}
 \contentsline {subsection}{\numberline {1.4.2}Related work}{14}{subsection.1.4.2}
-\contentsline {section}{\numberline {1.5}Aims}{14}{section.1.5}
+\contentsline {section}{\numberline {1.5}Aims}{15}{section.1.5}
 \contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Methods}}{17}{chapter.2}
 \contentsline {section}{\numberline {2.1}Hi-C data}{17}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Mapping}{17}{subsection.2.1.1}
