@@ -173,16 +173,16 @@ bins.\cite{Dong2012}
 \begin{center}
 \includegraphics[width=5.3in]{figs/dong_tss_profiles.pdf}
 \captionsetup{width=\textwidth}
-\caption[ Average input feature profiles over transcription start sites. ]{ {\bf Average input feature profiles over transcription start sites. }  Mean ChIP-seq signal over input control is shown for 6 factors in 6 human cell types used in \citet{Dong2012}. Each is averaged genome-wide over GENCODE v7 \texttt{hg19} defined TSS $\pm 2$ kb. Ribbons shown $99\%$ confidence intervals of the mean. % check this XX
+\caption[ Average input feature profiles over transcription start sites. ]{ {\bf Average input feature profiles over transcription start sites. }  Mean ChIP-seq signal over input control is shown for 6 factors in 6 human cell types used in \citet{Dong2012}. Each is averaged genome-wide over GENCODE v7 \texttt{hg19} defined TSS $\pm 2$ kb, and over whole genes (\emph{grey shading}). Ribbons shown $99\%$ confidence intervals of the mean. 
 }\label{fig:dongtssprof}
 \end{center}
 \end{figure} 
 
-The justification for such an approach hinges on the idea that the multitude of input features (mostly histone modifications and DNA binding proteins) have a variety of biological functions, and so the bestbin method is one way of learning these functions in an automated and unsupervised way. For example, the histone modification H3K36me3 is understood to be painted across exons that are being actively-transcribed, thus the genome-wide summary statistic that best captures this function is likely the whole-gene measurement, rather than the level of H3k36me3 at a gene's TSS or upstream promoter. A re-analysis of that ENCODE data used in \citet{Dong2012} highlights this kind of variability across input features (Fig. \ref{fig:dongtssprof}). Some clearly are enriched directly over TSS (CTCF, DNase; Fig. \ref{fig:dongtssprof}) while others show enrichments along the gene body (H3K36me3, H4K20me1; Fi.g \ref{fig:dongtssprof}) as well as more-complex, asymmetrical "shoulder" patterns (H3K27me3, H3K9ac; Fig. \ref{fig:dongtssprof}). Bestbin will therefore, to some degree, capture these relationships without \emph{a priori} specification.
+The justification for such an approach hinges on the idea that the multitude of input features (mostly histone modifications and DNA binding proteins) have a variety of biological functions, and so the bestbin method is one way of learning these functions in an automated and unsupervised way. For example, the histone modification H3K36me3 is understood to be painted across exons that are being actively-transcribed,\cite{Tippmann2012, Kolasinska-Zwierz2009, Schaft2003} thus the genome-wide summary statistic that best captures this function is likely the whole-gene measurement, rather than the level of H3k36me3 at a gene's TSS or upstream promoter. A re-analysis of that ENCODE data used in \citet{Dong2012} highlights this kind of variability across input features (Fig. \ref{fig:dongtssprof}). Some clearly are enriched directly over TSS (CTCF, DNase; Fig. \ref{fig:dongtssprof}) while others show enrichments along the gene body (H3K36me3, H4K20me1; Fi.g \ref{fig:dongtssprof}) as well as more-complex, asymmetrical "shoulder" patterns (H3K27me3, H3K9ac; Fig. \ref{fig:dongtssprof}). Bestbin will therefore, to some degree, capture these relationships without \emph{a priori} specification.
 
 % Dissection of best bin (bestbinDetermination.pdf ?)
 
-\subsection{Variable importance}
+%\subsection{Variable importance}
 
 \begin{figure}
 \begin{center}
@@ -201,7 +201,7 @@ produced by \citet{Dong2012} through increasing the number of informative
 regressors. While \citet{Dong2012} included broad coverage of different histone modifications,
 they did not investigate the impact of higher order
 chromatin data. For this reason, we matched the TSS positions used in
-\citet{Dong2012} (GENCODE v7 hg19) with previously-published genome-wide replication
+\citet{Dong2012} with previously-published genome-wide replication
 timing ratios measured in BG02 ESCs.\cite{Ryba2010} This data is of a different origin to the transcriptional data in this case (which was record in H1 hESC) but replication timing is thought to be largely conserved between cell types.\cite{Chambers2013} 
 
 We then used these values as an additional
