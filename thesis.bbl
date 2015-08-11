@@ -659,9 +659,10 @@ Huang BDW, Lempicki R (2008) {Systematic and integrative analysis of large gene
   lists using DAVID bioinformatics resources}.
 \newblock \emph{Nature protocols}, (301): 1--43.
 
-\bibitem[{{RIKEN Omics Science Center}(2012)}]{fantom5}
-{RIKEN Omics Science Center} (2012) {FANTOM5}.
-\newblock \emph{http://fantom.gsc.riken.jp/}.
+\bibitem[{Consortium \emph{et~al.}(2014)Consortium, Pmi and Dgt}]{fantom5}
+Consortium TF, Pmi R, Dgt C (2014) {A promoter-level mammalian expression
+  atlas.}
+\newblock \emph{Nature}, \textbf{507}(7493): 462--70.
 
 \bibitem[{Itoh \emph{et~al.}(2012)Itoh, Kojima, Nagao-Sato, Saijo, Lassmann,
   Kanamori-Katayama, Kaiho, Lizio, Kawaji \emph{et~al.}}]{itoh2012a}
@@ -911,6 +912,17 @@ Shiraki T, Kondo S, Katayama S, Waki K, Kasukawa T, Kawaji H, Kodzius R,
 \newblock \emph{Proceedings of the National Academy of Sciences of the United
   States of America}, \textbf{100}(26): 15776--81.
 
+\bibitem[{Kolasinska-Zwierz \emph{et~al.}(2009)Kolasinska-Zwierz, Down,
+  Latorre, Liu, Liu and Ahringer}]{Kolasinska-Zwierz2009}
+Kolasinska-Zwierz P, Down T, Latorre I, Liu T, Liu XS, Ahringer J (2009)
+  {Differential chromatin marking of introns and expressed exons by H3K36me3.}
+\newblock \emph{Nature genetics}, \textbf{41}(3): 376--81.
+
+\bibitem[{Schaft(2003)}]{Schaft2003}
+Schaft D (2003) {The histone 3 lysine 36 methyltransferase, SET2, is involved
+  in transcriptional elongation}.
+\newblock \emph{Nucleic Acids Research}, \textbf{31}(10): 2475--2482.
+
 \bibitem[{Zuber and Strimmer(2011)}]{Zuber2011}
 Zuber V, Strimmer K (2011) {High-Dimensional Regression and Variable Selection
   Using CAR Scores}.
@@ -924,17 +936,6 @@ Ryba T, Hiratani I, Lu J, Itoh M, Kulik M, Zhang J, Schulz TC, Robins AJ,
   profiles predict long-range chromatin interactions and distinguish closely
   related cell types.}
 \newblock \emph{Genome research}, \textbf{20}(6): 761--70.
-
-\bibitem[{Kolasinska-Zwierz \emph{et~al.}(2009)Kolasinska-Zwierz, Down,
-  Latorre, Liu, Liu and Ahringer}]{Kolasinska-Zwierz2009}
-Kolasinska-Zwierz P, Down T, Latorre I, Liu T, Liu XS, Ahringer J (2009)
-  {Differential chromatin marking of introns and expressed exons by H3K36me3.}
-\newblock \emph{Nature genetics}, \textbf{41}(3): 376--81.
-
-\bibitem[{Schaft(2003)}]{Schaft2003}
-Schaft D (2003) {The histone 3 lysine 36 methyltransferase, SET2, is involved
-  in transcriptional elongation}.
-\newblock \emph{Nucleic Acids Research}, \textbf{31}(10): 2475--2482.
 
 \bibitem[{Breiman(2001{\natexlab{c}})}]{Breiman2001}
 Breiman L (2001{\natexlab{c}}) {Random forests}.
