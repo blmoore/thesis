@@ -6,13 +6,13 @@
 \BOOKMARK [2][-]{subsection.1.1.4}{1.1.4 Eigenvector calculation}{section.1.1}% 6
 \BOOKMARK [1][-]{section.1.2}{1.2 ENCODE features}{chapter.1}% 7
 \BOOKMARK [2][-]{subsection.1.2.1}{1.2.1 Clustering input features}{section.1.2}% 8
-\BOOKMARK [1][-]{section.1.3}{1.3 Modelling}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.3}{1.3 Modelling compartment eigenvectors}{chapter.1}% 9
 \BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 Random Forest}{section.1.3}% 10
 \BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 Model performance}{section.1.3}% 11
 \BOOKMARK [2][-]{subsection.1.3.3}{1.3.3 Other modelling approaches}{section.1.3}% 12
 \BOOKMARK [1][-]{section.1.4}{1.4 Variable regions}{chapter.1}% 13
 \BOOKMARK [2][-]{subsection.1.4.1}{1.4.1 Stratification by variability}{section.1.4}% 14
-\BOOKMARK [2][-]{subsection.1.4.2}{1.4.2 Enhancer enrichment}{section.1.4}% 15
+\BOOKMARK [2][-]{subsection.1.4.2}{1.4.2 Chromatin state enrichment}{section.1.4}% 15
 \BOOKMARK [2][-]{subsection.1.4.3}{1.4.3 Gene ontology analysis}{section.1.4}% 16
 \BOOKMARK [1][-]{section.1.5}{1.5 Boundaries}{chapter.1}% 17
 \BOOKMARK [2][-]{subsection.1.5.1}{1.5.1 TADs}{section.1.5}% 18
@@ -23,9 +23,12 @@
 \BOOKMARK [2][-]{subsection.1.6.3}{1.6.3 LAD coincidence}{section.1.6}% 23
 \BOOKMARK [1][-]{section.1.7}{1.7 Giemsa band comparison}{chapter.1}% 24
 \BOOKMARK [1][-]{section.1.8}{1.8 Nuclear positioning}{chapter.1}% 25
-\BOOKMARK [1][-]{section.1.9}{1.9 4C analysis}{chapter.1}% 26
-\BOOKMARK [2][-]{subsection.1.9.1}{1.9.1 Normalisation}{section.1.9}% 27
-\BOOKMARK [2][-]{subsection.1.9.2}{1.9.2 Significance estimation}{section.1.9}% 28
-\BOOKMARK [2][-]{subsection.1.9.3}{1.9.3 3\205D modelling}{section.1.9}% 29
-\BOOKMARK [1][-]{section.1.10}{1.10 5C analysis}{chapter.1}% 30
-\BOOKMARK [1][-]{section.1.11}{1.11 Scripts and other analyses}{chapter.1}% 31
+\BOOKMARK [1][-]{section.1.9}{1.9 Modelling transcriptional output}{chapter.1}% 26
+\BOOKMARK [2][-]{subsection.1.9.1}{1.9.1 Reproducing a published study}{section.1.9}% 27
+\BOOKMARK [2][-]{subsection.1.9.2}{1.9.2 Predicting FANTOM5 data}{section.1.9}% 28
+\BOOKMARK [1][-]{section.1.10}{1.10 4C analysis}{chapter.1}% 29
+\BOOKMARK [2][-]{subsection.1.10.1}{1.10.1 Normalisation}{section.1.10}% 30
+\BOOKMARK [2][-]{subsection.1.10.2}{1.10.2 Significance estimation}{section.1.10}% 31
+\BOOKMARK [2][-]{subsection.1.10.3}{1.10.3 3\205D modelling}{section.1.10}% 32
+\BOOKMARK [1][-]{section.1.11}{1.11 5C analysis}{chapter.1}% 33
+\BOOKMARK [1][-]{section.1.12}{1.12 Scripts and other analyses}{chapter.1}% 34

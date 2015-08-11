@@ -4,10 +4,6 @@ The top-level auxiliary file: thesis.aux
 The style file: thesis.bst
 A level-1 auxiliary file: 0-intro/intro.aux
 Database file #1: /Users/benmoore/Documents/library.bib
-Repeated entry---line 3009 of file /Users/benmoore/Documents/library.bib
- : @article{fantom5
- :                 ,
-I'm skipping whatever remains of this entry
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Database file #2: /Users/benmoore/Documents/customrefs.bib
 Repeated entry---line 11 of file /Users/benmoore/Documents/customrefs.bib
@@ -33,43 +29,43 @@ Warning--there's a number but no volume in Hill2013a
 Warning--there's a number but no volume in Lesne2014
 You've used 198 entries,
             3024 wiz_defined-function locations,
-            1861 strings with 72100 characters,
-and the built_in function-call counts, 286088 in all, are:
-= -- 30096
-> -- 8725
-< -- 61
-+ -- 6299
-- -- 2229
-* -- 21483
-:= -- 30797
+            1863 strings with 72147 characters,
+and the built_in function-call counts, 286263 in all, are:
+= -- 30105
+> -- 8741
+< -- 60
++ -- 6311
+- -- 2233
+* -- 21508
+:= -- 30815
 add.period$ -- 396
 call.type$ -- 198
 change.case$ -- 991
 chr.to.int$ -- 199
 cite$ -- 213
-duplicate$ -- 29955
-empty$ -- 20467
-format.name$ -- 2853
-if$ -- 58980
+duplicate$ -- 29959
+empty$ -- 20479
+format.name$ -- 2859
+if$ -- 59014
 int.to.chr$ -- 6
 int.to.str$ -- 199
-missing$ -- 2445
+missing$ -- 2449
 newline$ -- 795
 num.names$ -- 591
 pop$ -- 14462
 preamble$ -- 1
 purify$ -- 792
 quote$ -- 0
-skip$ -- 5055
+skip$ -- 5058
 stack$ -- 0
-substring$ -- 35815
-swap$ -- 6570
+substring$ -- 35822
+swap$ -- 6587
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 1182
 warning$ -- 15
-while$ -- 1847
+while$ -- 1851
 width$ -- 0
-write$ -- 2361
-(There were 2 error messages)
+write$ -- 2362
+(There was 1 error message)
