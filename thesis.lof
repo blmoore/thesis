@@ -30,13 +30,13 @@
 \contentsline {figure}{\numberline {24}{\ignorespaces Comparison of two-step classification-regression model of transcription with a simple linear regression model.}}{53}{figure.caption.36}
 \contentsline {figure}{\numberline {25}{\ignorespaces Average input feature profiles over transcription start sites. }}{54}{figure.caption.37}
 \contentsline {figure}{\numberline {26}{\ignorespaces Relative importance metrics for variables in both stages of a reimplementation of a published model for predicting transcriptional output.}}{55}{figure.caption.38}
-\contentsline {figure}{\numberline {27}{\ignorespaces Distributions of bestbin locations relative to the TSS.}}{57}{figure.caption.39}
-\contentsline {figure}{\numberline {28}{\ignorespaces Random Forest predictions of FANTOM5 expression data.}}{58}{figure.caption.40}
+\contentsline {figure}{\numberline {27}{\ignorespaces Random Forest predictions of FANTOM5 expression data.}}{56}{figure.caption.39}
+\contentsline {figure}{\numberline {28}{\ignorespaces Distributions of bestbin locations relative to the TSS.}}{58}{figure.caption.40}
 \contentsline {figure}{\numberline {29}{\ignorespaces Compartment eigenvector model predictions are highly correlated with observed values.}}{59}{figure.caption.41}
 \contentsline {figure}{\numberline {30}{\ignorespaces Models of higher order chromatin structure learned in one cell type can be cross-applied to others.}}{61}{figure.caption.42}
 \contentsline {figure}{\numberline {31}{\ignorespaces Genomic regions that vary across cell types are modelled less successfully than static regions.}}{62}{figure.caption.43}
 \contentsline {figure}{\numberline {32}{\ignorespaces Variable importance per cell type specific model.}}{63}{figure.caption.44}
-\contentsline {figure}{\numberline {33}{\ignorespaces Intersections of the top 10 ranked variables in the cell type specific models.}}{64}{figure.caption.45}
+\contentsline {figure}{\numberline {33}{\ignorespaces Intersections of the top 10 ranked variables in the cell type specific models.}}{63}{figure.caption.45}
 \contentsline {figure}{\numberline {34}{\ignorespaces Comparison of variable importance between three cell type specific Random Forest models.}}{65}{figure.caption.46}
 \contentsline {figure}{\numberline {35}{\ignorespaces Correlations of individual features with compartment eigenvector in the H1 hESC cell type.}}{66}{figure.caption.47}
 \contentsline {figure}{\numberline {36}{\ignorespaces Correlation heatmaps of the 35 features used to model compartment eigenvectors.}}{67}{figure.caption.48}
