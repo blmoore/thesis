@@ -4,7 +4,7 @@ The top-level auxiliary file: thesis.aux
 The style file: thesis.bst
 A level-1 auxiliary file: 0-intro/intro.aux
 Database file #1: /Users/benmoore/Documents/library.bib
-Repeated entry---line 2902 of file /Users/benmoore/Documents/library.bib
+Repeated entry---line 3009 of file /Users/benmoore/Documents/library.bib
  : @article{fantom5
  :                 ,
 I'm skipping whatever remains of this entry
@@ -31,45 +31,45 @@ Warning--there's a number but no volume in Anderson2014a
 Warning--empty journal in Hill2013a
 Warning--there's a number but no volume in Hill2013a
 Warning--there's a number but no volume in Lesne2014
-You've used 196 entries,
+You've used 198 entries,
             3024 wiz_defined-function locations,
-            1851 strings with 71248 characters,
-and the built_in function-call counts, 281577 in all, are:
-= -- 29597
-> -- 8583
-< -- 59
-+ -- 6195
-- -- 2193
-* -- 21168
-:= -- 30346
-add.period$ -- 392
-call.type$ -- 196
-change.case$ -- 981
-chr.to.int$ -- 197
-cite$ -- 211
-duplicate$ -- 29460
-empty$ -- 20161
-format.name$ -- 2813
-if$ -- 58031
+            1861 strings with 72100 characters,
+and the built_in function-call counts, 286088 in all, are:
+= -- 30096
+> -- 8725
+< -- 61
++ -- 6299
+- -- 2229
+* -- 21483
+:= -- 30797
+add.period$ -- 396
+call.type$ -- 198
+change.case$ -- 991
+chr.to.int$ -- 199
+cite$ -- 213
+duplicate$ -- 29955
+empty$ -- 20467
+format.name$ -- 2853
+if$ -- 58980
 int.to.chr$ -- 6
-int.to.str$ -- 197
-missing$ -- 2416
-newline$ -- 787
-num.names$ -- 585
-pop$ -- 14213
+int.to.str$ -- 199
+missing$ -- 2445
+newline$ -- 795
+num.names$ -- 591
+pop$ -- 14462
 preamble$ -- 1
-purify$ -- 784
+purify$ -- 792
 quote$ -- 0
-skip$ -- 4966
+skip$ -- 5055
 stack$ -- 0
-substring$ -- 35189
-swap$ -- 6496
-text.length$ -- 9
+substring$ -- 35815
+swap$ -- 6570
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1170
+type$ -- 1182
 warning$ -- 15
-while$ -- 1822
+while$ -- 1847
 width$ -- 0
-write$ -- 2338
+write$ -- 2361
 (There were 2 error messages)
