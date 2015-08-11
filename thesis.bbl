@@ -1,4 +1,4 @@
-\begin{thebibliography}{198}
+\begin{thebibliography}{197}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -940,13 +940,6 @@ Ryba T, Hiratani I, Lu J, Itoh M, Kulik M, Zhang J, Schulz TC, Robins AJ,
 \bibitem[{Breiman(2001{\natexlab{c}})}]{Breiman2001}
 Breiman L (2001{\natexlab{c}}) {Random forests}.
 \newblock \emph{Machine learning}, \textbf{45}: 5--32.
-
-\bibitem[{Karli\'{c} \emph{et~al.}(2010)Karli\'{c}, Chung, Lasserre, Vlahovicek
-  and Vingron}]{Karlic2010}
-Karli\'{c} R, Chung Hr, Lasserre J, Vlahovicek K, Vingron M (2010) {Histone
-  modification levels are predictive for gene expression.}
-\newblock \emph{Proceedings of the National Academy of Sciences of the United
-  States of America}, \textbf{107}(7): 2926--31.
 
 \bibitem[{Beringer \emph{et~al.}(2015)Beringer, Ballar, Croce and
   Viz}]{Vizan2014}

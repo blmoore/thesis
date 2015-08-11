@@ -41,24 +41,26 @@
 \contentsline {section}{\numberline {2.3}Modelling compartment eigenvectors}{19}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Random Forest}{19}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Model performance}{20}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Other modelling approaches}{21}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}Stepwise regression}{21}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}LASSO}{21}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Other modelling approaches}{21}{subsection.2.3.5}
 \contentsline {section}{\numberline {2.4}Variable regions}{22}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Stratification by variability}{22}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Chromatin state enrichment}{22}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Gene ontology analysis}{23}{subsection.2.4.3}
 \contentsline {section}{\numberline {2.5}Boundaries}{23}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}TADs}{23}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Compartments}{23}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.2}Compartments}{24}{subsection.2.5.2}
 \contentsline {section}{\numberline {2.6}MetaTAD analysis}{24}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}Size selection}{24}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Collaborator datasets}{24}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.2}Collaborator datasets}{25}{subsection.2.6.2}
 \contentsline {subsection}{\numberline {2.6.3}LAD coincidence}{25}{subsection.2.6.3}
-\contentsline {section}{\numberline {2.7}Giemsa band comparison}{25}{section.2.7}
+\contentsline {section}{\numberline {2.7}Giemsa band comparison}{26}{section.2.7}
 \contentsline {section}{\numberline {2.8}Nuclear positioning}{26}{section.2.8}
 \contentsline {section}{\numberline {2.9}Modelling transcriptional output}{26}{section.2.9}
 \contentsline {subsection}{\numberline {2.9.1}Reproducing a published study}{26}{subsection.2.9.1}
 \contentsline {subsection}{\numberline {2.9.2}Predicting FANTOM5 data}{27}{subsection.2.9.2}
-\contentsline {section}{\numberline {2.10}4C analysis}{27}{section.2.10}
+\contentsline {section}{\numberline {2.10}4C analysis}{28}{section.2.10}
 \contentsline {subsection}{\numberline {2.10.1}Normalisation}{28}{subsection.2.10.1}
 \contentsline {subsection}{\numberline {2.10.2}Significance estimation}{28}{subsection.2.10.2}
 \contentsline {subsection}{\numberline {2.10.3}3--D modelling}{29}{subsection.2.10.3}
@@ -85,7 +87,8 @@
 \contentsline {subsection}{\numberline {4.2.1}\emph {Bestbin} method}{53}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Model adjustments}{55}{subsection.4.2.2}
 \contentsline {section}{\numberline {4.3}Modelling FANTOM5 expression data}{56}{section.4.3}
-\contentsline {section}{\numberline {4.4}Modelling higher order chromatin}{59}{section.4.4}
+\contentsline {subsection}{\numberline {4.3.1}\emph {Bestbin} analysis}{57}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}Modelling higher order chromatin}{57}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Predictive model}{59}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Cross-application}{60}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Between-cell variability}{60}{subsection.4.4.3}

@@ -39,7 +39,7 @@
 
 \section{Introduction}\label{sec:dongintro}
 Large-scale chromatin data has recently been produced by multiple
-consortia, most notably ENCODE (Section \ref{intro:encode}) but also the NIH
+consortia, most notably ENCODE\cite{Dunham2012} (Section \ref{intro:encode}) but also the NIH
 Roadmap Epigenomics project.\cite{Bernstein2010} The breadth and depth of this new
 data offers unprecedented opportunities to advance our understanding
 of the complex biology of the chromatin landscape. To this end,
@@ -222,34 +222,69 @@ measurements when evaluated with relative importance metrics
 and do not have significant influence on the expression of the genes resident within them. 
 
 \section{Modelling FANTOM5 expression data}
-Using unpublished FANTOM5 CAGE data and the approach established above, I next attempted to model gene
+
+Using FANTOM5 CAGE data\cite{fantom5} and the approach established above (Section \ref{sec:reprodong}), we next attempted to model gene
 expression at timepoint zero ($t_0$) of a differentiation timecourse of Human
 H1 embryonic stem cells (H1 hESC) to CD34+ hematopoietic stem
-cells.
+cells. Applying this modelling strategy to a novel dataset will allow us to assess the portability of the model design, as well as permitting more detailed breakdown of model components, such as the bestbin strategy.
 
 % How did I do this?:
 % 1) Take robustly mapped CAGE clusters -> Entrez Gene IDs
 % 2) Select the strongest expressed CAGE cluster
 % 3) Either a) use this as a TSS or b) map to closest annotated TSS
-The first stage of the analysis was to map each CAGE cluster to a
-representative TSS. FANTOM5 robust gene mapping\cite{fantom5}
-provided corresponding Entrez Gene IDs for gene-associated CAGE
-clusters, and we selected the most expressed cluster to represent the
-expression level of its mapped gene. We then compared these to Ensembl
-TSS annotations (v69) and
-discarded those tag clusters centered on a point $>50$ bp from an annotated
-TSS associated with the mapped Entrez Gene ID, thereby removing enhancers and other non-genic transcribed
-regions.
+%The first stage of the analysis was to map each CAGE cluster to a
+%representative TSS. FANTOM5 robust gene mapping\cite{fantom5}
+%provided corresponding Entrez Gene IDs for gene-associated CAGE
+%clusters, and we selected the most expressed cluster to represent the
+%expression level of its mapped gene. We then compared these to Ensembl
+%TSS annotations (v69) and
+%discarded those tag clusters centered on a point $>50$ bp from an annotated
+%TSS associated with the mapped Entrez Gene ID, thereby removing enhancers and other non-genic transcribed
+%regions.
 
-Next we retrieved a number of genome-wide histone modification datasets
-from the ENCODE and
-NIH Roadmap consortia which were measured in H1 hESC cells, taking these to be
-reflections of the chromatin state $t_0$. I implemented the
-previously-described `bestbin' strategy\cite{Dong2012} (Section \ref{sec:reprodong}) to objectively
+We retrieved a number of genome-wide ChIP-seq datasets measured in H1 hESC cells and produced by the ENCODE consortium\cite{Dunham2012} (Methods \ref{meth:fantom5}). These were matched to transcript annotations to build an input feature set for use in building a predictive model of transcriptional output.
+
+Due to the finding that a two-step (classification--regression) approach added little additional modelling accuracy (Fig. \ref{fig:TwoStepvsSimple}), we employed a single-step design using a Random Forest (RF) regression model.\cite{Breiman2001, Diaz2006} With a total of 14 predictors (10 histone modifications, HDAC6, H2A.Z, DNase I and an input control, listed in Methods \ref{meth:fantom5}), we were able to build a highly accurate predictive model of transcriptional output of around $11,000$ TSS (Fig. \ref{fig:model}).
+
+\begin{figure}
+\begin{center} 
+\includegraphics[width=.6\textwidth]{figs/RandomForest_10CV_50d.pdf}
+\captionsetup{width=\textwidth} 
+\caption[Random Forest predictions of FANTOM5 expression data.]{ {\bf Random Forest predictions of FANTOM5 expression data. } RF model predictions are plotted against their empirical values. The marginal distributions of predicted and empirical
+  expression values are shown opposite their
+  respective axes. Pearson's correlation coefficient ($r$) and the root
+  mean-squared error (RMSE) are shown (\emph{inset}).
+}\label{fig:model}
+\end{center} 
+\end{figure} 
+
+Model predictions evaluated with 10-fold cross validation show a
+highly significant correlation with measured CAGE levels ($PCC = 0.845\pm
+1 \times 10^{-4}$, $p < 2 \times 10^{-15}$), and the model is able to explain around
+$71\%$ of the variance in the expression response (for comparison a
+linear model resulted in $PCC = 0.825 \pm 3.2 \times 10^{-5}$, $p < 2 \times 10^{-15}$). This result is worse than that of \citet{Dong2012}
+who achieved cross-validated correlation coefficients of up to $0.9$,
+but it is roughly equal to their median test set correlation of
+$0.83$.\cite{Dong2012}  However the RMSEs of our predictions, when normalised by the range of
+observed values, compare more favourably ($0.11$, compared with Dong \emph{et al.}'s: $0.14$). 
+
+Our slightly lower predictive power could be explained by our streamlined model design. \citet{Dong2012} implemented a pseudocount optimisation step whereby an additional count added to each binned signal
+intensity prior to log transformation to maximise expression correlation. In the model presented above, a fixed
+pseudocount of $1$ was used to avoid introducing an unwarranted positive bias towards higher correlation. We confirmed that a two-step classification--regression design did not improve our model performance metrics; indeed, the PCC and RMSE of a classification--regression framework with this data showed a slight decrease in prediction accuracy ($PCC = 0.834 \pm 0.007$, $\textrm{RMSE} = 1.77$ when applied to the same test and
+training data used in Fig. \ref{fig:model}).
+
+%A possible explanation for our lower modelling accuracy relative to that of \citet{Dong2012} is that in our case, while both chromatin data and expression were measured in H1 hESC cells, the experiments took place at
+%different institutes using unstandardised protocols and cell cultures. For comparison, a previous study using chromatin
+%measurements from a number of different sources to predict expression
+%in a matched cell-type reported a predictive correlation of 0.77.\cite{Karlic2010} The ENCODE consortium, on the other hand, went to some lengths to standardise protocols and minimise batch effects between samples.\cite{Dunham2012} 
+
+\subsection{\emph{Bestbin} analysis}
+
+We again implemented the previously-described `bestbin' strategy\cite{Dong2012} (Section \ref{sec:dongbestbin}) to objectively
 select the most-correlated binned signal for each chromatin H1 hESC
-mark. To explore this approach, we analysed the stability of chosen bestbins by
+mark. To explore the implications of this approach, we analysed the stability of chosen bestbins by
 calculating them on $200$ sets of $1000$ randomly selected TSS samples, with each sample
-representing approximately $8\%$ of the dataset (Fig. \ref{fig:bestbin}).
+representing approximately $8\%$ of the dataset. Distributions of chosen bestbins across these 200 sub-samples are shown as boxplots (Fig. \ref{fig:bestbin}).
 
 \begin{figure}
 \begin{center} 
@@ -269,62 +304,12 @@ representing approximately $8\%$ of the dataset (Fig. \ref{fig:bestbin}).
 \end{center}
 \end{figure} 
 
-Figure \ref{fig:bestbin} shows that bestbin selections are often consistent, indicating there are predictably informative regions
-relative to a TSS for each chromatin factor. Furthermore, the selected
+We find that bestbin selections are often highly consistent across sub-samples, indicating there are fairly static informative regions relative to a TSS for each chromatin factor. Furthermore, the selected
 bestbins match known biological mechanisms; for example the H3K36me3
-mark's bestbin is consistently the whole gene measurement and this
+mark's bestbin is consistently the whole gene measurement (Fig. \ref{fig:bestbin}) and this
 mark is known to be enriched in actively transcribed
-exons.\cite{Tippmann2012, Kolasinska-Zwierz2009, Schaft2003} The negative control variable (ChIP-seq input) shows no strong location bias, as expected (Fig. \ref{fig:bestbin}).
+exons.\cite{Tippmann2012, Kolasinska-Zwierz2009, Schaft2003} The negative control variable (ChIP-seq input) shows no strong location bias, as expected (Fig. \ref{fig:bestbin}). Other distributions are less easily explained, such as those features showing a tight distribution of informative regions slightly downstream of the TSS (H3K9ac, H4Kme2/3 and H3K79me2; Fig. \ref{fig:bestbin}).
 
-Having matched a variety of genome-wide H1 hESC chromatin datasets
-to the FANTOM5 timecourse expression data, we then built a regression
-model using a Random Forest (RF) approach.\cite{Breiman2001} This method outperforms a simple
-linear model in initial comparisons and is able to capture non-linear relationships as well
-as interactions without them being explicitly specified.\cite{Diaz2006}
-
-\begin{figure}
-\begin{center} 
-\includegraphics[width=.6\textwidth]{figs/RandomForest_10CV_50d.pdf}
-\captionsetup{width=\textwidth} 
-\caption[Random Forest predictions of FANTOM5 expression data.]{ {\bf Random Forest predictions of FANTOM5 expression data. } RF model predictions are plotted against their empirical values. The marginal distributions of predicted and empirical
-  expression values are shown opposite their
-  respective axes. Pearson's correlation coefficient ($r$) and the root
-  mean-squared error (RMSE) are shown (\emph{inset}).
-}\label{fig:model}
-\end{center} 
-\end{figure} 
-
-Figure \ref{fig:model} shows the resulting predictions of a
-preliminary RF model against the actual recorded expression over a
-test set of approximately $11,000$ TSS. This model was built with $15$
-predictors including control ChIP-seq input, though some of these could be
-removed without loss of accuracy. The model predictions evaluated with
-10-fold cross validation show a
-significant correlation with measured CAGE levels ($PCC = 0.845\pm
-1 \times 10^{-4}$, $p < 2 \times 10^{-15}$), and the model is able to explain around
-$71\%$ of the variance in the expression response (for comparison a
-linear model resulted in $PCC = 0.825 \pm 3.2 \times 10^{-5}$, $p < 2 \times 10^{-15}$). This result is worse than that of \citet{Dong2012}
-who achieved cross-validated correlation coefficients of up to $0.9$,
-but it is roughly equal to their median test set correlation of
-$0.83$.\cite{Dong2012} The RMSEs, when normalised by the range of
-observed values, compare more favourably ($0.11$, compared with Dong \emph{et al.}'s: $0.14$). 
-
-A possible explanation for our lower modelling accuracy relative to that of \citet{Dong2012} is that in our case, while both chromatin data and expression timecourse
-were measured in H1 hESC cells, the experiments took place at
-different institutes and using unstandardised protocols and cell cultures. For comparison, a previous study using chromatin
-measurements from a number of different sources to predict expression
-in a matched cell-type reported a predictive correlation of 0.77.\cite{Karlic2010} The ENCODE consortium, on the other hand, went to some lengths to standardise protocols and minimise batch effects between samples.\cite{Dunham2012} Additionally, \citet{Dong2012} implemented a pseudocount
-optimisation step whereby an additional count added to each binned signal
-intensity prior to log transformation to maximise
-expression correlation. In the model presented above, a fixed
-psuedocount of $1$ was used to avoid introducing positive bias towards
-higher correlation. Another difference between the two approaches is
-our use of a single-step model; Dong \emph{et al.} found a small
-increase in correlation using their classification-regression approach
-but with the model implemented herein (Fig. \ref{fig:model}) this approach gave no obvious advantage (for
-example, $r
-= 0.834 \pm 0.007$, $\textrm{RMSE} = 1.77$ when applied to the same test and
-training data used in Fig. \ref{fig:model}).
 
 % Cut out timecourse stuff?
 
@@ -409,7 +394,7 @@ Indeed we found the most variable regions across cell types were then most diffi
 \includegraphics[width=\textwidth]{figs/varimp.pdf}
 \captionsetup{width=\textwidth} 
 \caption[Variable importance per cell type specific model.]{ {\bf Variable importance per cell type specific model. }
-Variable importance for each Random Forest model was measured in terms of percentage increase in mean squared error when permuted (Methods XX) and the top 10 ranking variables are shown for each model.
+Variable importance for each Random Forest model was measured in terms of percentage increase in mean squared error when permuted (Methods \ref{sec:rf}) and the top 10 ranking variables are shown for each model.
 }\label{fig:varimp}
 \end{center} 
 \end{figure} 
@@ -440,7 +425,7 @@ To assess the significance of observed intersections (Fig. \ref{fig:top10venn}),
 }
 \captionsetup{width=\textwidth} 
 \caption[Comparison of variable importance between three cell type specific Random Forest models.]{ {\bf Comparison of variable importance between three cell type specific Random Forest models. }
-Variable importance for each Random Forest model was measured in terms of percentage increase in mean squared error when permuted (Methods XX). Results are shown sorted by mean variable importance (\emph{left}) and by largest absolute difference in pairwise comparisons (\emph{right}).
+Variable importance for each Random Forest model was measured in terms of percentage increase in mean squared error when permuted (Methods \ref{sec:rf}). Results are shown sorted by mean variable importance (\emph{left}) and by largest absolute difference in pairwise comparisons (\emph{right}).
 }\label{fig:varimp_diff}
 \end{center} 
 \end{figure} 
@@ -516,7 +501,7 @@ Heatmaps show the Pearson correlation coefficient between predicted and observed
 
 Our results confirm RF as a suitable and powerful approach for modelling our relationships of interest in this work (Fig. \ref{fig:diffmethods}), with both the highest cell-type specific performance (PCC between predicted and observed $=0.790$) and on cross-applications (mean PCC $= 0.689$). 
 
-Multiple linear regression assumes linear relationships between model parameters and input features and allows for simple, normally-distributed errors. Surprisingly, this simple approach is capable of accurate cell-type specific predictions (mean PCC $= 0.787$), likely due to the high raw correlation between the inputs and dependent variable. However this simple approach fails to cross-apply between cell types (mean PCC $=0.139$) indicating a problems with overfitting. This can be remedied through variable selection procedures, however a strength of the RF approach is that this step is not necessary, and pre-selection of model variables may result in a sub-optimal end result (ref XX).
+Multiple linear regression assumes linear relationships between model parameters and input features and allows for simple, normally-distributed errors. Surprisingly, this simple approach is capable of accurate cell-type specific predictions (mean PCC $= 0.787$), likely due to the high raw correlation between the inputs and dependent variable. However this simple approach fails to cross-apply between cell types (mean PCC $=0.139$) indicating a problems with overfitting. This can be remedied through variable selection procedures, however a strength of the RF approach is that this step is not necessary, and pre-selection of model variables may result in a sub-optimal end result.\cite{Diaz2006}
 
 \begin{table}
 \centering
@@ -552,7 +537,7 @@ Model variables are plotted against the first two axes used in PLS regression mo
 
 % use n-1, n-2, ... as predictors for bin N
 
-As recognised through our use of Hidden Markov Models (Methods XX), consecutive bins along a chromosome are non-independent yet thus far predictive models have not considered this inter-dependence. 
+As recognised through our use of Hidden Markov Models (Methods \ref{sec:compartments}), consecutive bins along a chromosome are non-independent yet thus far predictive models have not considered this inter-dependence. 
 
 This is for two reasons: firstly non independence could be thought of as an artefact of bin-sizing (we have elected to use regular, fixed binning beneath the scale of compartments themselves whereas another approach could use variable bin sizes, for example per compartment, TAD or restriction fragment); secondly using information of a bin's surroundings may obscure by proxy the chromatin features which would otherwise prove predictive. As an example, knowing that bin $x_{i-1}$ and bin $x_{i+1}$ are in compartment state A would allow us with high confidence to predict the state of bin $x_i$, but without learning anything of any region's relationships with their histone modifications and bound factors.
 
@@ -564,7 +549,7 @@ Conversely, the $35$ variables used thus far as model inputs are not the complet
 
 \subsection{Stepwise regression}
 % BIC penalised linear models
-Multiple linear regression is a simple and analytically well-described modelling framework which is amenable to regularisation through a variety of methods. A simple approach is to start with a complete model and serially remove and/or add variables, then calculate a metric (here we use the Bayesian information criterion, BIC) which weighs the the model likelihood against model complexity. This process is iterated until the metric reaches a (local) minimum, thus creating a more parsimonious model which retains predictive accuracy and should be less prone to overfitting. Stepwise regression also aids interpretation by selecting representative features from collinear clusters.\cite{Mantel1970} A detailed explanation of this feature selection procedure can be found in Methods XX. It should be noted that despite its continued widespread usage, several statistical issues have been identified with the stepwise procedure for model selection.\cite{Hurvich1990}
+Multiple linear regression is a simple and analytically well-described modelling framework which is amenable to regularisation through a variety of methods. A simple approach is to start with a complete model and serially remove and/or add variables, then calculate a metric (here we use the Bayesian information criterion, BIC) which weighs the the model likelihood against model complexity. This process is iterated until the metric reaches a (local) minimum, thus creating a more parsimonious model which retains predictive accuracy and should be less prone to overfitting. Stepwise regression also aids interpretation by selecting representative features from collinear clusters.\cite{Mantel1970} A detailed explanation of this feature selection procedure can be found in Methods \ref{meth:stepregress}. It should be noted that despite its continued widespread usage, several statistical issues have been identified with the stepwise procedure for model selection.\cite{Hurvich1990}
 
 In terms of model performance alone, stepwise regression gives the highest predictive accuracy on a held-out validation set in each cell type specific model of compartment eigenvector (Table \ref{tab:bicmodels}), however it must be said that differences in model performance across all comparisons are modest. These results do show that even expanded feature sets of up to 187 input features add little explanatory power beyond that of much less complex models with 20 or fewer input variables (Table \ref{tab:bicmodels}). 
 
@@ -591,7 +576,7 @@ PCC between predicted and empirical compartment eigenvectors is shown for a rang
 
 \subsection{LASSO ($\ell_1$) regression}
 
-A more modern technique for regularisation of linear models is the least absolute shrinkage and selection operator (LASSO). In brief, the LASSO is a form of $\ell_1$ regularisation that penalises the sum of absolute values of standardised regression coefficients. By penalising absolute values and sums, rather than squared values as in $\ell_2$ regularisation, coefficients can be shrunk to $0$ thereby removing terms from the model. Thus LASSO combines coefficient shrinkage of techniques like Ridge regression with a type of feature selection as seen in stepwise regression.\cite{Tibshirani1994, Hastie2001} A detailed explanation of this method can be found in Methods XX.
+A more modern technique for regularisation of linear models is the least absolute shrinkage and selection operator (LASSO). In brief, the LASSO is a form of $\ell_1$ regularisation that penalises the sum of absolute values of standardised regression coefficients. By penalising absolute values and sums, rather than squared values as in $\ell_2$ regularisation, coefficients can be shrunk to $0$ thereby removing terms from the model. Thus LASSO combines coefficient shrinkage of techniques like Ridge regression with a type of feature selection as seen in stepwise regression.\cite{Tibshirani1994, Hastie2001} A detailed explanation of this method can be found in Methods \ref{meth:lasso}.
 
 Again we can perform a simplistic comparison of model performance using LASSO regression and other techniques (Table \ref{tab:bicmodels}). LASSO retrieves comparable numbers of informative variables to the stepwise regression technique in each cell type, and again removes the majority of input features from expanded sets as redundant or relatively uninformative.
 
@@ -601,7 +586,7 @@ The LASSO is a tunable algorithm, thus we can gain additional insights of coeffi
 
 Random Forest (RF) comparisons are included for comparison in Table \ref{tab:bicmodels} where RF models were built using model-selection procedures based on linear regression. The result of this is the linear regression-based feature selection acts as a "filter" method for feature selection, fully independent of the RF learning algorithm. A more coherent approach might be an "embedded" method, where a regularisation procedure is integrated with the learning algorithm.\cite{Guyon2003, Kohavi1997a} %( cite noble review? elements of stat learn?)
 
-While RF is a much younger technique than linear models, a framework for Regularised Random Forests has recently been described\cite{Deng2012} and implemented in the R package \texttt{RRF}.\cite{Deng2013} The algorithm uses the idea that at each node in a tree, unused variable should only be included if they offer a significant information gain over those available variables which have already been used in the tree. This differs from the standard RF algorithm where splitting decisions at each node are entirely independent of each other (Methods XX). 
+While RF is a much younger technique than linear models, a framework for Regularised Random Forests has recently been described\cite{Deng2012} and implemented in the R package \texttt{RRF}.\cite{Deng2013} The algorithm uses the idea that at each node in a tree, unused variable should only be included if they offer a significant information gain over those available variables which have already been used in the tree. This differs from the standard RF algorithm where splitting decisions at each node are entirely independent of each other (Methods \ref{sec:rf}). 
 
 We found that this algorithm was unable to perform feature selection on our highly collinear feature set, instead leaving full or almost full feature sets in each case (\emph{data not shown}) and so providing equal results to a standard RF model using expanded feature sets (Table \ref{tab:bicmodels}).
 

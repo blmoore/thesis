@@ -503,12 +503,12 @@ INPUT ./figs/Dong_relImp_Horiz.pdf
 INPUT ./figs/Dong_relImp_Horiz.pdf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT figs/bestbinSummary.pdf
-INPUT ./figs/bestbinSummary.pdf
-INPUT ./figs/bestbinSummary.pdf
 INPUT figs/RandomForest_10CV_50d.pdf
 INPUT ./figs/RandomForest_10CV_50d.pdf
 INPUT ./figs/RandomForest_10CV_50d.pdf
+INPUT figs/bestbinSummary.pdf
+INPUT ./figs/bestbinSummary.pdf
+INPUT ./figs/bestbinSummary.pdf
 INPUT figs/modelres.pdf
 INPUT ./figs/modelres.pdf
 INPUT ./figs/modelres.pdf
