@@ -1,4 +1,4 @@
-\begin{thebibliography}{196}
+\begin{thebibliography}{198}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -135,18 +135,35 @@ Nagano T, Lubling Y, Stevens TJ, Schoenfelder S, Yaffe E, Dean W, Laue ED,
   in chromosome structure.}
 \newblock \emph{Nature}, \textbf{502}(7469): 59--64.
 
+\bibitem[{Hughes \emph{et~al.}(2014)Hughes, Roberts, McGowan, Hay,
+  Giannoulatou, Lynch, {De Gobbi}, Taylor, Gibbons and Higgs}]{Hughes2014}
+Hughes JR, Roberts N, McGowan S, Hay D, Giannoulatou E, Lynch M, {De Gobbi} M,
+  Taylor S, Gibbons R, Higgs DR (2014) {Analysis of hundreds of cis-regulatory
+  landscapes at high resolution in a single, high-throughput experiment.}
+\newblock \emph{Nature genetics}, \textbf{46}(2): 205--12.
+
+\bibitem[{Dryden \emph{et~al.}(2014)Dryden, Broome, Dudbridge, Johnson, Orr,
+  Schoenfelder, Nagano, Andrews, Wingett \emph{et~al.}}]{Dryden2014}
+Dryden NH, Broome LR, Dudbridge F, Johnson N, Orr N, Schoenfelder S, Nagano T,
+  Andrews S, Wingett S, \emph{et~al.} (2014) {Unbiased analysis of potential
+  targets of breast cancer susceptibility loci by Capture Hi-C.}
+\newblock \emph{Genome research}, pp. 1854--1868.
+
+\bibitem[{Sahl\'{e}n \emph{et~al.}(2015)Sahl\'{e}n, Abdullayev, Ramsk\"{o}ld,
+  Matskova, Rilakovic, L\"{o}tstedt, Albert, Lundeberg and
+  Sandberg}]{Sahlen2015}
+Sahl\'{e}n P, Abdullayev I, Ramsk\"{o}ld D, Matskova L, Rilakovic N,
+  L\"{o}tstedt B, Albert TJ, Lundeberg J, Sandberg R (2015) {Genome-wide
+  mapping of promoter-anchored interactions with close to single-enhancer
+  resolution}.
+\newblock \emph{Genome Biology}, \textbf{16}(1): 156.
+
 \bibitem[{Mifsud \emph{et~al.}(2015)Mifsud, Tavares-Cadete, Young, Sugar,
   Schoenfelder, Ferreira, Wingett, Andrews, Grey \emph{et~al.}}]{Mifsud2015}
 Mifsud B, Tavares-Cadete F, Young AN, Sugar R, Schoenfelder S, Ferreira L,
   Wingett SW, Andrews S, Grey W, \emph{et~al.} (2015) {Mapping long-range
   promoter contacts in human cells with high-resolution capture Hi-C}.
 \newblock \emph{Nature Genetics}, (April): 1--12.
-
-\bibitem[{Naumova \emph{et~al.}(2013)Naumova, Imakaev, Fudenberg, Zhan, Lajoie,
-  Mirny and Dekker}]{Naumova2013}
-Naumova N, Imakaev M, Fudenberg G, Zhan Y, Lajoie BR, Mirny La, Dekker J (2013)
-  {Organization of the mitotic chromosome.}
-\newblock \emph{Science (New York, N.Y.)}, \textbf{342}(6161): 948--53.
 
 \bibitem[{Lajoie \emph{et~al.}(2014)Lajoie, Dekker and Kaplan}]{Lajoie2014}
 Lajoie BR, Dekker J, Kaplan N (2014) {The Hitchhiker’s Guide to Hi-C
@@ -365,6 +382,12 @@ G\'{o}mez-D\'{\i}az E, Corces VG (2014) {Architectural proteins: regulators of
   architectural protein occupancy.}
 \newblock \emph{Genome biology}, \textbf{15}(5): R82.
 
+\bibitem[{Naumova \emph{et~al.}(2013)Naumova, Imakaev, Fudenberg, Zhan, Lajoie,
+  Mirny and Dekker}]{Naumova2013}
+Naumova N, Imakaev M, Fudenberg G, Zhan Y, Lajoie BR, Mirny La, Dekker J (2013)
+  {Organization of the mitotic chromosome.}
+\newblock \emph{Science (New York, N.Y.)}, \textbf{342}(6161): 948--53.
+
 \bibitem[{Dekker(2014)}]{Dekker2014}
 Dekker J (2014) {Two ways to fold the genome during the cell cycle : insights
   obtained with chromosome conformation capture}.
@@ -390,15 +413,6 @@ Beitel CW, Froenicke L, Lang JM, Korf IF, Michelmore RW, Eisen Ja, Darling AE
   (2014) {Strain- and plasmid-level deconvolution of a synthetic metagenome by
   sequencing proximity ligation products.}
 \newblock \emph{PeerJ}, \textbf{2}: e415.
-
-\bibitem[{Sahl\'{e}n \emph{et~al.}(2015)Sahl\'{e}n, Abdullayev, Ramsk\"{o}ld,
-  Matskova, Rilakovic, L\"{o}tstedt, Albert, Lundeberg and
-  Sandberg}]{Sahlen2015}
-Sahl\'{e}n P, Abdullayev I, Ramsk\"{o}ld D, Matskova L, Rilakovic N,
-  L\"{o}tstedt B, Albert TJ, Lundeberg J, Sandberg R (2015) {Genome-wide
-  mapping of promoter-anchored interactions with close to single-enhancer
-  resolution}.
-\newblock \emph{Genome Biology}, \textbf{16}(1): 156.
 
 \bibitem[{Williamson \emph{et~al.}(2014)Williamson, Berlivet, Eskeland, Boyle,
   Illingworth, Paquette and Bickmore}]{Williamson2014}
@@ -645,10 +659,9 @@ Huang BDW, Lempicki R (2008) {Systematic and integrative analysis of large gene
   lists using DAVID bioinformatics resources}.
 \newblock \emph{Nature protocols}, (301): 1--43.
 
-\bibitem[{Consortium \emph{et~al.}(2014)Consortium, Pmi and Dgt}]{fantom5}
-Consortium TF, Pmi R, Dgt C (2014) {A promoter-level mammalian expression
-  atlas.}
-\newblock \emph{Nature}, \textbf{507}(7493): 462--70.
+\bibitem[{{RIKEN Omics Science Center}(2012)}]{fantom5}
+{RIKEN Omics Science Center} (2012) {FANTOM5}.
+\newblock \emph{http://fantom.gsc.riken.jp/}.
 
 \bibitem[{Itoh \emph{et~al.}(2012)Itoh, Kojima, Nagao-Sato, Saijo, Lassmann,
   Kanamori-Katayama, Kaiho, Lizio, Kawaji \emph{et~al.}}]{itoh2012a}

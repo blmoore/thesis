@@ -26,43 +26,45 @@
 \contentsline {figure}{\numberline {21}{\ignorespaces Regions of variable higher order structure change their genome-wide contact profiles to favour active compartments.}}{46}{figure.caption.32}
 \contentsline {figure}{\numberline {22}{\ignorespaces Nuclear positioning of chromosomes relative to compartment eigenvectors.}}{47}{figure.caption.33}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {23}{\ignorespaces Comparison of two-step classification-regression model of transcription with a simple linear regression model.}}{51}{figure.caption.34}
-\contentsline {figure}{\numberline {24}{\ignorespaces Relative importance metrics for variables in both stages of a reimplementation of a published model for predicting transcriptional output.}}{51}{figure.caption.35}
-\contentsline {figure}{\numberline {25}{\ignorespaces Distributions of bestbin locations relative to the TSS.}}{53}{figure.caption.36}
-\contentsline {figure}{\numberline {26}{\ignorespaces Random Forest predictions of FANTOM5 expression data.}}{54}{figure.caption.37}
-\contentsline {figure}{\numberline {27}{\ignorespaces Compartment eigenvector model predictions are highly correlated with observed values.}}{56}{figure.caption.38}
-\contentsline {figure}{\numberline {28}{\ignorespaces Models of higher order chromatin structure learned in one cell type can be cross-applied to others.}}{57}{figure.caption.39}
-\contentsline {figure}{\numberline {29}{\ignorespaces Genomic regions that vary across cell types are modelled less successfully than static regions.}}{58}{figure.caption.40}
-\contentsline {figure}{\numberline {30}{\ignorespaces Variable importance per cell type specific model.}}{59}{figure.caption.41}
-\contentsline {figure}{\numberline {31}{\ignorespaces Intersections of the top 10 ranked variables in the cell type specific models.}}{60}{figure.caption.42}
-\contentsline {figure}{\numberline {32}{\ignorespaces Comparison of variable importance between three cell type specific Random Forest models.}}{61}{figure.caption.43}
-\contentsline {figure}{\numberline {33}{\ignorespaces Correlations of individual features with compartment eigenvector in the H1 hESC cell type.}}{62}{figure.caption.44}
-\contentsline {figure}{\numberline {34}{\ignorespaces Correlation heatmaps of the 35 features used to model compartment eigenvectors.}}{63}{figure.caption.45}
-\contentsline {figure}{\numberline {35}{\ignorespaces Models learned at 1 Mb resolution can be applied to higher resolution datasets.}}{65}{figure.caption.46}
-\contentsline {figure}{\numberline {36}{\ignorespaces Comparison of Random Forest performance with other modelling approaches.}}{66}{figure.caption.47}
-\contentsline {figure}{\numberline {37}{\ignorespaces Circle of correlations of variables compared with PLS axes. }}{67}{figure.caption.49}
+\contentsline {figure}{\numberline {23}{\ignorespaces Highly accurate models of expression were built following Dong \emph {et al.} }}{50}{figure.caption.34}
+\contentsline {figure}{\numberline {24}{\ignorespaces Comparison of two-step classification-regression model of transcription with a simple linear regression model.}}{51}{figure.caption.35}
+\contentsline {figure}{\numberline {25}{\ignorespaces Average input feature profiles over transcription start sites. }}{52}{figure.caption.36}
+\contentsline {figure}{\numberline {26}{\ignorespaces Relative importance metrics for variables in both stages of a reimplementation of a published model for predicting transcriptional output.}}{53}{figure.caption.37}
+\contentsline {figure}{\numberline {27}{\ignorespaces Distributions of bestbin locations relative to the TSS.}}{55}{figure.caption.38}
+\contentsline {figure}{\numberline {28}{\ignorespaces Random Forest predictions of FANTOM5 expression data.}}{56}{figure.caption.39}
+\contentsline {figure}{\numberline {29}{\ignorespaces Compartment eigenvector model predictions are highly correlated with observed values.}}{57}{figure.caption.40}
+\contentsline {figure}{\numberline {30}{\ignorespaces Models of higher order chromatin structure learned in one cell type can be cross-applied to others.}}{59}{figure.caption.41}
+\contentsline {figure}{\numberline {31}{\ignorespaces Genomic regions that vary across cell types are modelled less successfully than static regions.}}{60}{figure.caption.42}
+\contentsline {figure}{\numberline {32}{\ignorespaces Variable importance per cell type specific model.}}{61}{figure.caption.43}
+\contentsline {figure}{\numberline {33}{\ignorespaces Intersections of the top 10 ranked variables in the cell type specific models.}}{62}{figure.caption.44}
+\contentsline {figure}{\numberline {34}{\ignorespaces Comparison of variable importance between three cell type specific Random Forest models.}}{63}{figure.caption.45}
+\contentsline {figure}{\numberline {35}{\ignorespaces Correlations of individual features with compartment eigenvector in the H1 hESC cell type.}}{64}{figure.caption.46}
+\contentsline {figure}{\numberline {36}{\ignorespaces Correlation heatmaps of the 35 features used to model compartment eigenvectors.}}{65}{figure.caption.47}
+\contentsline {figure}{\numberline {37}{\ignorespaces Models learned at 1 Mb resolution can be applied to higher resolution datasets.}}{67}{figure.caption.48}
+\contentsline {figure}{\numberline {38}{\ignorespaces Comparison of Random Forest performance with other modelling approaches.}}{68}{figure.caption.49}
+\contentsline {figure}{\numberline {39}{\ignorespaces Circle of correlations of variables compared with PLS axes. }}{69}{figure.caption.51}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {38}{\ignorespaces TAD boundary enrichments and depletions.}}{73}{figure.caption.51}
-\contentsline {figure}{\numberline {39}{\ignorespaces Compartment boundary enrichments and depletions.}}{74}{figure.caption.52}
-\contentsline {figure}{\numberline {40}{\ignorespaces Compartment and TAD boundary enrichment summary in three human cell types.}}{76}{figure.caption.53}
-\contentsline {figure}{\numberline {41}{\ignorespaces Distinct enrichments of CTCF and YY1 boundaries.}}{77}{figure.caption.54}
-\contentsline {figure}{\numberline {42}{\ignorespaces Repeat class average-o-grams over all TAD and compartment boundaries.}}{79}{figure.caption.55}
-\contentsline {figure}{\numberline {43}{\ignorespaces Significance and effect sizes of repeat class enrichments/depletions over boundaries.}}{80}{figure.caption.56}
-\contentsline {figure}{\numberline {44}{\ignorespaces Significance and effect sizes of repeat family enrichments/depletions over boundaries.}}{81}{figure.caption.57}
-\contentsline {figure}{\numberline {45}{\ignorespaces Calibration of metaTAD size selection bounds.}}{82}{figure.caption.58}
-\contentsline {figure}{\numberline {46}{\ignorespaces Large metaTADs show greater enrichments for an array of boundary features.}}{83}{figure.caption.59}
-\contentsline {figure}{\numberline {47}{\ignorespaces MetaTADs align with lain associated domains.}}{84}{figure.caption.60}
-\contentsline {figure}{\numberline {48}{\ignorespaces MetaTADs align with lamin associated domains.}}{85}{figure.caption.61}
-\contentsline {figure}{\numberline {49}{\ignorespaces MetaTAD boundaries much LAD boundaries much more often than expected by chance. }}{86}{figure.caption.62}
-\contentsline {figure}{\numberline {50}{\ignorespaces Observed enrichments persist over a time series.}}{87}{figure.caption.63}
-\contentsline {figure}{\numberline {51}{\ignorespaces Genome-wide agreement between Giemsa bands and A/B compartments..}}{89}{figure.caption.64}
-\contentsline {figure}{\numberline {52}{\ignorespaces Giemsa--stain bands correspond to A/B compartments.}}{90}{figure.caption.65}
+\contentsline {figure}{\numberline {40}{\ignorespaces TAD boundary enrichments and depletions.}}{75}{figure.caption.53}
+\contentsline {figure}{\numberline {41}{\ignorespaces Compartment boundary enrichments and depletions.}}{76}{figure.caption.54}
+\contentsline {figure}{\numberline {42}{\ignorespaces Compartment and TAD boundary enrichment summary in three human cell types.}}{78}{figure.caption.55}
+\contentsline {figure}{\numberline {43}{\ignorespaces Distinct enrichments of CTCF and YY1 boundaries.}}{79}{figure.caption.56}
+\contentsline {figure}{\numberline {44}{\ignorespaces Repeat class average-o-grams over all TAD and compartment boundaries.}}{81}{figure.caption.57}
+\contentsline {figure}{\numberline {45}{\ignorespaces Significance and effect sizes of repeat class enrichments/depletions over boundaries.}}{82}{figure.caption.58}
+\contentsline {figure}{\numberline {46}{\ignorespaces Significance and effect sizes of repeat family enrichments/depletions over boundaries.}}{83}{figure.caption.59}
+\contentsline {figure}{\numberline {47}{\ignorespaces Calibration of metaTAD size selection bounds.}}{84}{figure.caption.60}
+\contentsline {figure}{\numberline {48}{\ignorespaces Large metaTADs show greater enrichments for an array of boundary features.}}{85}{figure.caption.61}
+\contentsline {figure}{\numberline {49}{\ignorespaces MetaTADs align with lain associated domains.}}{86}{figure.caption.62}
+\contentsline {figure}{\numberline {50}{\ignorespaces MetaTADs align with lamin associated domains.}}{87}{figure.caption.63}
+\contentsline {figure}{\numberline {51}{\ignorespaces MetaTAD boundaries much LAD boundaries much more often than expected by chance. }}{88}{figure.caption.64}
+\contentsline {figure}{\numberline {52}{\ignorespaces Observed enrichments persist over a time series.}}{89}{figure.caption.65}
+\contentsline {figure}{\numberline {53}{\ignorespaces Genome-wide agreement between Giemsa bands and A/B compartments..}}{91}{figure.caption.66}
+\contentsline {figure}{\numberline {54}{\ignorespaces Giemsa--stain bands correspond to A/B compartments.}}{92}{figure.caption.67}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {53}{\ignorespaces SHH--ZRS contacts occur within a stable TAD.}}{92}{figure.caption.66}
-\contentsline {figure}{\numberline {54}{\ignorespaces TSA treatment induces a strong ZRS--SHH interaction. }}{93}{figure.caption.67}
-\contentsline {figure}{\numberline {55}{\ignorespaces A stable ZRS--SHH interaction is coupled with reduced extraneous contacts. }}{94}{figure.caption.68}
-\contentsline {figure}{\numberline {56}{\ignorespaces Raw differences between anterior and posterior 5C interactions.}}{96}{figure.caption.69}
-\contentsline {figure}{\numberline {57}{\ignorespaces {\bf Will we use this stuff? } Placeholder \relax }}{97}{figure.caption.70}
-\contentsline {figure}{\numberline {58}{\ignorespaces {\bf Will we use this stuff? } Placeholder \relax }}{98}{figure.caption.71}
+\contentsline {figure}{\numberline {55}{\ignorespaces SHH--ZRS contacts occur within a stable TAD.}}{94}{figure.caption.68}
+\contentsline {figure}{\numberline {56}{\ignorespaces TSA treatment induces a strong ZRS--SHH interaction. }}{95}{figure.caption.69}
+\contentsline {figure}{\numberline {57}{\ignorespaces A stable ZRS--SHH interaction is coupled with reduced extraneous contacts. }}{96}{figure.caption.70}
+\contentsline {figure}{\numberline {58}{\ignorespaces Raw differences between anterior and posterior 5C interactions.}}{98}{figure.caption.71}
+\contentsline {figure}{\numberline {59}{\ignorespaces {\bf Will we use this stuff? } Placeholder \relax }}{99}{figure.caption.72}
+\contentsline {figure}{\numberline {60}{\ignorespaces {\bf Will we use this stuff? } Placeholder \relax }}{100}{figure.caption.73}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
