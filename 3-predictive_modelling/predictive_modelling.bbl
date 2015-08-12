@@ -1,4 +1,4 @@
-\begin{thebibliography}{35}
+\begin{thebibliography}{36}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{ENCODE(2012)}]{Dunham2012}
@@ -182,6 +182,12 @@ Mantel N (1970) {Why Stepdown Procedures in Variable Selection}.
 Hurvich CM, Tsai Cl (1990) {The Impact of Model Selection on Inference in
   Linear Regression}.
 \newblock \emph{The American Statistician}, \textbf{44}(3): 214.
+
+\bibitem[{Whittingham \emph{et~al.}(2006)Whittingham, Stephens, Bradbury and
+  Freckleton}]{Whittingham2006}
+Whittingham MJ, Stephens Pa, Bradbury RB, Freckleton RP (2006) {Why do we still
+  use stepwise modelling in ecology and behaviour?}
+\newblock \emph{Journal of Animal Ecology}, \textbf{75}(5): 1182--1189.
 
 \bibitem[{Tibshirani(1994)}]{Tibshirani1994}
 Tibshirani R (1994) {Regression Selection and Shrinkage via the Lasso}.

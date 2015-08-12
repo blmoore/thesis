@@ -28,6 +28,9 @@
 \newcolumntype{L}{>{\centering\arraybackslash}m{4cm}}
 \definecolor{light-gray}{gray}{0.95}
 
+\usepackage{bm}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
 \usepackage{standalone}
 \standalonetrue 
 
@@ -216,7 +219,42 @@ To test the sensitivity of the models to resolution, we also applied cell-type s
 
 \subsection{Stepwise regression}\label{meth:stepregress}
 
+
+
 \subsection{LASSO}\label{meth:lasso}
+
+The least absolute shrinkage and selection operator (LASSO) is a form of $\ell_1$ regularisation that penalises the sum of absolute values of standardised regression coefficients. By penalising absolute values and sums, rather than squared values as in $\ell_2$ regularisation (Ridge regression, for example), coefficients can be shrunk to $0$ thereby removing terms from the model. Thus LASSO combines coefficient shrinkage of techniques like Ridge regression with a type of feature selection by promoting model sparsity.\cite{Tibshirani1994, Hastie2001}
+
+Simply put, the LASSO minimises the sum of squared errors subject to a tuneable constraint on the sum total of absolute model coefficients. In equation form, we are fitting a simple linear model:
+
+\begin{equation}
+\hat{y} = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_n x_n
+~~~~
+\mathrm{or}~~\hat{y} = \bm{X}\bm{\beta} (+ \bm{\epsilon})
+\end{equation} \vspace{.2em}
+
+We then wish to find that $\bm{\beta}$ which minimises $\sum_{j=1}^{n}(\hat{y}_j - y_j)^2$ while at the same time satisfying the inequality:
+
+\begin{equation}\label{eqn:lassoineq}
+\sum\limits_{i=1}^{p} |\beta_i| \leq c
+\end{equation} \vspace{.2em}
+
+Where here $c$ represents a tuneable parameter inversely proportional to the level of regularisation imposed on the model. It can be seen, for example, that of $c$ is set to the sum of Eqn. \ref{eqn:lassoineq} can be contrasted with Ridge regression, where the same in inequality instead constrains $\sum_{i=1}^{p} \beta_j^2$.
+
+Formally, the LASSO problem has been expressed as:\cite{Hastie2001}
+
+\begin{equation}\label{eqn:lassolagrangian}
+\hat{\beta}^\mathrm{lasso} = \argmin_\beta \bigg\{ 
+\frac{1}{2} \sum_{i=1}^N (y_i - \beta_0 - \sum_{j=i}^p x_{ij}\beta_j)^2 
++ \lambda \sum_{j=1}^p |\beta_j|
+\bigg\}
+\end{equation} \vspace{.2em}
+
+This formulation introduces the $\lambda$ parameter as used in Section \ref{sec:lassoreg}. This parameter translates $\beta$ coefficients, such that larger values of $\lambda$ place stronger constraints on the coefficient total, thus encourage greater shrinkage and model sparsity (Eqn. \ref{eqn:lassolagrangian}).
+
+% Introduce LASSO penalty, with equations
+
+%Discuss how lambda was selected, i.e. with cross-validation
 
 \subsection{Other modelling approaches}
  
