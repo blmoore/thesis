@@ -27,45 +27,45 @@ Warning--there's a number but no volume in Anderson2014a
 Warning--empty journal in Hill2013a
 Warning--there's a number but no volume in Hill2013a
 Warning--there's a number but no volume in Lesne2014
-You've used 197 entries,
+You've used 198 entries,
             3024 wiz_defined-function locations,
-            1857 strings with 71951 characters,
-and the built_in function-call counts, 284821 in all, are:
-= -- 29950
-> -- 8702
+            1865 strings with 72196 characters,
+and the built_in function-call counts, 286198 in all, are:
+= -- 30101
+> -- 8733
 < -- 60
-+ -- 6283
-- -- 2223
-* -- 21398
-:= -- 30662
-add.period$ -- 394
-call.type$ -- 197
-change.case$ -- 986
-chr.to.int$ -- 198
-cite$ -- 212
-duplicate$ -- 29806
-empty$ -- 20374
-format.name$ -- 2846
-if$ -- 58717
++ -- 6305
+- -- 2231
+* -- 21504
+:= -- 30808
+add.period$ -- 396
+call.type$ -- 198
+change.case$ -- 991
+chr.to.int$ -- 199
+cite$ -- 213
+duplicate$ -- 29953
+empty$ -- 20477
+format.name$ -- 2857
+if$ -- 59001
 int.to.chr$ -- 6
-int.to.str$ -- 198
-missing$ -- 2437
-newline$ -- 791
-num.names$ -- 588
-pop$ -- 14386
+int.to.str$ -- 199
+missing$ -- 2448
+newline$ -- 795
+num.names$ -- 591
+pop$ -- 14457
 preamble$ -- 1
-purify$ -- 788
+purify$ -- 792
 quote$ -- 0
-skip$ -- 5038
+skip$ -- 5056
 stack$ -- 0
-substring$ -- 35633
-swap$ -- 6554
+substring$ -- 35822
+swap$ -- 6585
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1176
+type$ -- 1182
 warning$ -- 15
-while$ -- 1842
+while$ -- 1850
 width$ -- 0
-write$ -- 2350
+write$ -- 2362
 (There was 1 error message)

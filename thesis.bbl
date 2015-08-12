@@ -1,4 +1,4 @@
-\begin{thebibliography}{197}
+\begin{thebibliography}{198}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -643,6 +643,9 @@ Hastie T, Tibshirani R, Friedman J (2009) \emph{{Elements of Statistical
 \newblock Springer, 2 edition.
 \newblock ISBN 978-0-387-84858-7.
 
+\bibitem[{Tibshirani(1994)}]{Tibshirani1994}
+Tibshirani R (1994) {Regression Selection and Shrinkage via the Lasso}.
+
 \bibitem[{Tobias(1995)}]{Tobias1995}
 Tobias RD (1995) {An Introduction to Partial Least Squares Regression}.
 \newblock \emph{Proc. Ann. SAS Users Group Int. Conf. 20th}, pp. 1250--1257.
@@ -1003,8 +1006,11 @@ Hurvich CM, Tsai Cl (1990) {The Impact of Model Selection on Inference in
   Linear Regression}.
 \newblock \emph{The American Statistician}, \textbf{44}(3): 214.
 
-\bibitem[{Tibshirani(1994)}]{Tibshirani1994}
-Tibshirani R (1994) {Regression Selection and Shrinkage via the Lasso}.
+\bibitem[{Whittingham \emph{et~al.}(2006)Whittingham, Stephens, Bradbury and
+  Freckleton}]{Whittingham2006}
+Whittingham MJ, Stephens Pa, Bradbury RB, Freckleton RP (2006) {Why do we still
+  use stepwise modelling in ecology and behaviour?}
+\newblock \emph{Journal of Animal Ecology}, \textbf{75}(5): 1182--1189.
 
 \bibitem[{Guyon \emph{et~al.}(2003)Guyon, Weston, Barnhill and
   Vapnik}]{Guyon2003}
