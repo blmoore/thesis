@@ -580,6 +580,16 @@ A more modern technique for regularisation of linear models is the least absolut
 
 Again we can perform a simplistic comparison of model performance using LASSO regression and other techniques (Table \ref{tab:bicmodels}). LASSO retrieves comparable numbers of informative variables to the stepwise regression technique in each cell type, and again removes the majority of input features from expanded sets as redundant or relatively uninformative.
 
+\begin{figure}
+\begin{center} 
+\includegraphics[width=3in]{figs/lasso_bar.pdf}
+\captionsetup{width=\textwidth} 
+\caption[ Circle of correlations of variables compared with PLS axes. ]{ {\bf Circle of correlations of variables compared with PLS axes.  }
+Model variables are plotted against the first two axes used in PLS regression models per cell type. $Y$ represents our compartment eigenvector.
+}\label{fig:lassobar}
+\end{center} 
+\end{figure} 
+
 The LASSO is a tunable algorithm, thus we can gain additional insights of coefficient traces over varying the regularisation parameter, $\lambda$.
 
 \subsection{Regularised Random Forest}
