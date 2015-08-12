@@ -1,4 +1,4 @@
-\begin{thebibliography}{66}
+\begin{thebibliography}{71}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Barrett \emph{et~al.}(2013)Barrett, Wilhite, Ledoux, Evangelista,
@@ -131,8 +131,35 @@ Hastie T, Tibshirani R, Friedman J (2009) \emph{{Elements of Statistical
 \newblock Springer, 2 edition.
 \newblock ISBN 978-0-387-84858-7.
 
+\bibitem[{Mantel(1970)}]{Mantel1970}
+Mantel N (1970) {Why Stepdown Procedures in Variable Selection}.
+\newblock \emph{Technometrics}, \textbf{12}(3): 621--625.
+
+\bibitem[{Hurvich and Tsai(1990)}]{Hurvich1990}
+Hurvich CM, Tsai Cl (1990) {The Impact of Model Selection on Inference in
+  Linear Regression}.
+\newblock \emph{The American Statistician}, \textbf{44}(3): 214.
+
+\bibitem[{Whittingham \emph{et~al.}(2006)Whittingham, Stephens, Bradbury and
+  Freckleton}]{Whittingham2006}
+Whittingham MJ, Stephens Pa, Bradbury RB, Freckleton RP (2006) {Why do we still
+  use stepwise modelling in ecology and behaviour?}
+\newblock \emph{Journal of Animal Ecology}, \textbf{75}(5): 1182--1189.
+
 \bibitem[{Tibshirani(1994)}]{Tibshirani1994}
 Tibshirani R (1994) {Regression Selection and Shrinkage via the Lasso}.
+
+\bibitem[{Friedman \emph{et~al.}(2010)Friedman, Hastie and
+  Tibshirani}]{glmnet1}
+Friedman J, Hastie T, Tibshirani R (2010) Regularization paths for generalized
+  linear models via coordinate descent.
+\newblock \emph{Journal of Statistical Software}, \textbf{33}(1): 1--22.
+
+\bibitem[{Simon \emph{et~al.}(2011)Simon, Friedman, Hastie and
+  Tibshirani}]{glmnet2}
+Simon N, Friedman J, Hastie T, Tibshirani R (2011) Regularization paths for
+  cox's proportional hazards model via coordinate descent.
+\newblock \emph{Journal of Statistical Software}, \textbf{39}(5): 1--13.
 
 \bibitem[{Tobias(1995)}]{Tobias1995}
 Tobias RD (1995) {An Introduction to Partial Least Squares Regression}.

@@ -3,6 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: thesis.bst
 A level-1 auxiliary file: 0-intro/intro.aux
+Reallocated field_info (elt_size=4) to 10025 items from 5000.
 Database file #1: /Users/benmoore/Documents/library.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Database file #2: /Users/benmoore/Documents/customrefs.bib
@@ -27,45 +28,45 @@ Warning--there's a number but no volume in Anderson2014a
 Warning--empty journal in Hill2013a
 Warning--there's a number but no volume in Hill2013a
 Warning--there's a number but no volume in Lesne2014
-You've used 198 entries,
+You've used 200 entries,
             3024 wiz_defined-function locations,
-            1865 strings with 72196 characters,
-and the built_in function-call counts, 286198 in all, are:
-= -- 30101
-> -- 8733
+            1873 strings with 72521 characters,
+and the built_in function-call counts, 288373 in all, are:
+= -- 30329
+> -- 8787
 < -- 60
-+ -- 6305
-- -- 2231
-* -- 21504
-:= -- 30808
-add.period$ -- 396
-call.type$ -- 198
-change.case$ -- 991
-chr.to.int$ -- 199
-cite$ -- 213
-duplicate$ -- 29953
-empty$ -- 20477
-format.name$ -- 2857
-if$ -- 59001
++ -- 6343
+- -- 2245
+* -- 21671
+:= -- 31052
+add.period$ -- 400
+call.type$ -- 200
+change.case$ -- 1001
+chr.to.int$ -- 201
+cite$ -- 215
+duplicate$ -- 30183
+empty$ -- 20640
+format.name$ -- 2877
+if$ -- 59445
 int.to.chr$ -- 6
-int.to.str$ -- 199
-missing$ -- 2448
-newline$ -- 795
-num.names$ -- 591
-pop$ -- 14457
+int.to.str$ -- 201
+missing$ -- 2469
+newline$ -- 803
+num.names$ -- 597
+pop$ -- 14565
 preamble$ -- 1
-purify$ -- 792
+purify$ -- 800
 quote$ -- 0
-skip$ -- 5056
+skip$ -- 5090
 stack$ -- 0
-substring$ -- 35822
-swap$ -- 6585
+substring$ -- 36077
+swap$ -- 6645
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1182
+type$ -- 1194
 warning$ -- 15
-while$ -- 1850
+while$ -- 1865
 width$ -- 0
-write$ -- 2362
+write$ -- 2386
 (There was 1 error message)
