@@ -43,29 +43,29 @@
 \contentsline {subsection}{\numberline {2.3.2}Model performance}{20}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Stepwise regression}{21}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}LASSO}{21}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Other modelling approaches}{21}{subsection.2.3.5}
-\contentsline {section}{\numberline {2.4}Variable regions}{22}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Stratification by variability}{22}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Chromatin state enrichment}{22}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Gene ontology analysis}{23}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}Boundaries}{23}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}TADs}{23}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.3.5}Other modelling approaches}{22}{subsection.2.3.5}
+\contentsline {section}{\numberline {2.4}Variable regions}{23}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Stratification by variability}{23}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Chromatin state enrichment}{23}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Gene ontology analysis}{24}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Boundaries}{24}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}TADs}{24}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Compartments}{24}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}MetaTAD analysis}{24}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Size selection}{24}{subsection.2.6.1}
+\contentsline {section}{\numberline {2.6}MetaTAD analysis}{25}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Size selection}{25}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}Collaborator datasets}{25}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}LAD coincidence}{25}{subsection.2.6.3}
+\contentsline {subsection}{\numberline {2.6.3}LAD coincidence}{26}{subsection.2.6.3}
 \contentsline {section}{\numberline {2.7}Giemsa band comparison}{26}{section.2.7}
-\contentsline {section}{\numberline {2.8}Nuclear positioning}{26}{section.2.8}
-\contentsline {section}{\numberline {2.9}Modelling transcriptional output}{26}{section.2.9}
-\contentsline {subsection}{\numberline {2.9.1}Reproducing a published study}{26}{subsection.2.9.1}
-\contentsline {subsection}{\numberline {2.9.2}Predicting FANTOM5 data}{27}{subsection.2.9.2}
+\contentsline {section}{\numberline {2.8}Nuclear positioning}{27}{section.2.8}
+\contentsline {section}{\numberline {2.9}Modelling transcriptional output}{27}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Reproducing a published study}{27}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.2}Predicting FANTOM5 data}{28}{subsection.2.9.2}
 \contentsline {section}{\numberline {2.10}4C analysis}{28}{section.2.10}
 \contentsline {subsection}{\numberline {2.10.1}Normalisation}{28}{subsection.2.10.1}
-\contentsline {subsection}{\numberline {2.10.2}Significance estimation}{28}{subsection.2.10.2}
-\contentsline {subsection}{\numberline {2.10.3}3--D modelling}{29}{subsection.2.10.3}
-\contentsline {section}{\numberline {2.11}5C analysis}{29}{section.2.11}
-\contentsline {section}{\numberline {2.12}Scripts and other analyses}{29}{section.2.12}
+\contentsline {subsection}{\numberline {2.10.2}Significance estimation}{29}{subsection.2.10.2}
+\contentsline {subsection}{\numberline {2.10.3}3--D modelling}{30}{subsection.2.10.3}
+\contentsline {section}{\numberline {2.11}5C analysis}{30}{section.2.11}
+\contentsline {section}{\numberline {2.12}Scripts and other analyses}{30}{section.2.12}
 \contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Reanalysis of Hi-C datasets}}{31}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{31}{section.3.1}
 \contentsline {section}{\numberline {3.2}Hi-C reprocessing}{31}{section.3.2}
@@ -100,7 +100,7 @@
 \contentsline {subsection}{\numberline {4.5.3}Non-independence}{71}{subsection.4.5.3}
 \contentsline {section}{\numberline {4.6}Parsimonious models from expanded feature sets}{71}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}Stepwise regression}{72}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}LASSO ($\ell _1$) regression}{73}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.2}LASSO regression}{73}{subsection.4.6.2}
 \contentsline {subsection}{\numberline {4.6.3}Regularised Random Forest}{73}{subsection.4.6.3}
 \contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Chromatin domain boundaries}}{75}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{75}{section.5.1}
@@ -127,5 +127,5 @@
 \contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{103}{chapter.7}
 \contentsline {section}{\numberline {7.1}Conclusion}{105}{section.7.1}
 \contentsline {section}{\numberline {7.2}Future research}{105}{section.7.2}
-\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{107}{chapter*.75}
-\contentsline {chapter}{References}{127}{chapter*.76}
+\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{107}{chapter*.76}
+\contentsline {chapter}{References}{127}{chapter*.77}

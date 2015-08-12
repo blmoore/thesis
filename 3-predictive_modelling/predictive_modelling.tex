@@ -549,7 +549,7 @@ Conversely, the $35$ variables used thus far as model inputs are not the complet
 
 \subsection{Stepwise regression}
 % BIC penalised linear models
-Multiple linear regression is a simple and analytically well-described modelling framework which is amenable to regularisation through a variety of methods. A simple approach is to start with a complete model and serially remove and/or add variables, then calculate a metric (here we use the Bayesian information criterion, BIC) which weighs the the model likelihood against model complexity. This process is iterated until the metric reaches a (local) minimum, thus creating a more parsimonious model which retains predictive accuracy and should be less prone to overfitting. Stepwise regression also aids interpretation by selecting representative features from collinear clusters.\cite{Mantel1970} A detailed explanation of this feature selection procedure can be found in Methods \ref{meth:stepregress}. It should be noted that despite its continued widespread usage, several statistical issues have been identified with the stepwise procedure for model selection.\cite{Hurvich1990}
+Multiple linear regression is a simple and analytically well-described modelling framework which is amenable to regularisation through a variety of methods. A simple approach is to start with a complete model and serially remove and/or add variables, then calculate a metric (here we use the Bayesian information criterion, BIC) which weighs the the model likelihood against model complexity. This process is iterated until the metric reaches a (local) minimum, thus creating a more parsimonious model which retains predictive accuracy and should be less prone to overfitting. Stepwise regression also aids interpretation by selecting representative features from collinear clusters.\cite{Mantel1970} A detailed explanation of this feature selection procedure can be found in Methods \ref{meth:stepregress}. It should be noted that despite its continued widespread usage, several statistical issues have been identified with the stepwise procedure for model selection.\cite{Hurvich1990, Whittingham2006}
 
 In terms of model performance alone, stepwise regression gives the highest predictive accuracy on a held-out validation set in each cell type specific model of compartment eigenvector (Table \ref{tab:bicmodels}), however it must be said that differences in model performance across all comparisons are modest. These results do show that even expanded feature sets of up to 187 input features add little explanatory power beyond that of much less complex models with 20 or fewer input variables (Table \ref{tab:bicmodels}). 
 
@@ -574,7 +574,7 @@ PCC between predicted and empirical compartment eigenvectors is shown for a rang
 }
 \end{table}
 
-\subsection{LASSO ($\ell_1$) regression}
+\subsection{LASSO regression}\label{sec:lassoreg}
 
 A more modern technique for regularisation of linear models is the least absolute shrinkage and selection operator (LASSO). In brief, the LASSO is a form of $\ell_1$ regularisation that penalises the sum of absolute values of standardised regression coefficients. By penalising absolute values and sums, rather than squared values as in $\ell_2$ regularisation, coefficients can be shrunk to $0$ thereby removing terms from the model. Thus LASSO combines coefficient shrinkage of techniques like Ridge regression with a type of feature selection as seen in stepwise regression.\cite{Tibshirani1994, Hastie2001} A detailed explanation of this method can be found in Methods \ref{meth:lasso}.
 
@@ -584,13 +584,16 @@ Again we can perform a simplistic comparison of model performance using LASSO re
 \begin{center} 
 \includegraphics[width=3in]{figs/lasso_bar.pdf}
 \captionsetup{width=\textwidth} 
-\caption[ Circle of correlations of variables compared with PLS axes. ]{ {\bf Circle of correlations of variables compared with PLS axes.  }
-Model variables are plotted against the first two axes used in PLS regression models per cell type. $Y$ represents our compartment eigenvector.
+\caption[ Ten largest LASSO model coefficients from expanded feature sets. ]{ {\bf Ten largest LASSO model coefficients from expanded feature sets.  }
+Those coefficients with the largest absolute value are plotted for each cell type specific LASSO model. 
 }\label{fig:lassobar}
 \end{center} 
 \end{figure} 
 
-The LASSO is a tunable algorithm, thus we can gain additional insights of coefficient traces over varying the regularisation parameter, $\lambda$.
+Of those variables with a non-zero coefficient at the optimally-selected tuning parameter $\lambda$ (Methods \ref{meth:lasso}), the ten largest in each cell type are shown (Fig. \ref{fig:lassobar}).
+
+% Too many coefficients remain in model for clear plots of coefficient trace
+%The LASSO is a tunable algorithm, thus we can gain additional insights of coefficient traces over varying the regularisation parameter, $\lambda$.
 
 \subsection{Regularised Random Forest}
 

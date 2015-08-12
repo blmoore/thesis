@@ -43,28 +43,29 @@
 \contentsline {figure}{\numberline {37}{\ignorespaces Models learned at 1 Mb resolution can be applied to higher resolution datasets.}}{69}{figure.caption.49}
 \contentsline {figure}{\numberline {38}{\ignorespaces Comparison of Random Forest performance with other modelling approaches.}}{70}{figure.caption.50}
 \contentsline {figure}{\numberline {39}{\ignorespaces Circle of correlations of variables compared with PLS axes. }}{71}{figure.caption.52}
+\contentsline {figure}{\numberline {40}{\ignorespaces Ten largest LASSO model coefficients from expanded feature sets. }}{73}{figure.caption.54}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {40}{\ignorespaces TAD boundary enrichments and depletions.}}{77}{figure.caption.54}
-\contentsline {figure}{\numberline {41}{\ignorespaces Compartment boundary enrichments and depletions.}}{78}{figure.caption.55}
-\contentsline {figure}{\numberline {42}{\ignorespaces Compartment and TAD boundary enrichment summary in three human cell types.}}{80}{figure.caption.56}
-\contentsline {figure}{\numberline {43}{\ignorespaces Distinct enrichments of CTCF and YY1 boundaries.}}{81}{figure.caption.57}
-\contentsline {figure}{\numberline {44}{\ignorespaces Repeat class average-o-grams over all TAD and compartment boundaries.}}{83}{figure.caption.58}
-\contentsline {figure}{\numberline {45}{\ignorespaces Significance and effect sizes of repeat class enrichments/depletions over boundaries.}}{84}{figure.caption.59}
-\contentsline {figure}{\numberline {46}{\ignorespaces Significance and effect sizes of repeat family enrichments/depletions over boundaries.}}{85}{figure.caption.60}
-\contentsline {figure}{\numberline {47}{\ignorespaces Calibration of metaTAD size selection bounds.}}{86}{figure.caption.61}
-\contentsline {figure}{\numberline {48}{\ignorespaces Large metaTADs show greater enrichments for an array of boundary features.}}{87}{figure.caption.62}
-\contentsline {figure}{\numberline {49}{\ignorespaces MetaTADs align with lain associated domains.}}{88}{figure.caption.63}
-\contentsline {figure}{\numberline {50}{\ignorespaces MetaTADs align with lamin associated domains.}}{89}{figure.caption.64}
-\contentsline {figure}{\numberline {51}{\ignorespaces MetaTAD boundaries much LAD boundaries much more often than expected by chance. }}{90}{figure.caption.65}
-\contentsline {figure}{\numberline {52}{\ignorespaces Observed enrichments persist over a time series.}}{91}{figure.caption.66}
-\contentsline {figure}{\numberline {53}{\ignorespaces Genome-wide agreement between Giemsa bands and A/B compartments..}}{93}{figure.caption.67}
-\contentsline {figure}{\numberline {54}{\ignorespaces Giemsa--stain bands correspond to A/B compartments.}}{94}{figure.caption.68}
+\contentsline {figure}{\numberline {41}{\ignorespaces TAD boundary enrichments and depletions.}}{77}{figure.caption.55}
+\contentsline {figure}{\numberline {42}{\ignorespaces Compartment boundary enrichments and depletions.}}{78}{figure.caption.56}
+\contentsline {figure}{\numberline {43}{\ignorespaces Compartment and TAD boundary enrichment summary in three human cell types.}}{80}{figure.caption.57}
+\contentsline {figure}{\numberline {44}{\ignorespaces Distinct enrichments of CTCF and YY1 boundaries.}}{81}{figure.caption.58}
+\contentsline {figure}{\numberline {45}{\ignorespaces Repeat class average-o-grams over all TAD and compartment boundaries.}}{83}{figure.caption.59}
+\contentsline {figure}{\numberline {46}{\ignorespaces Significance and effect sizes of repeat class enrichments/depletions over boundaries.}}{84}{figure.caption.60}
+\contentsline {figure}{\numberline {47}{\ignorespaces Significance and effect sizes of repeat family enrichments/depletions over boundaries.}}{85}{figure.caption.61}
+\contentsline {figure}{\numberline {48}{\ignorespaces Calibration of metaTAD size selection bounds.}}{86}{figure.caption.62}
+\contentsline {figure}{\numberline {49}{\ignorespaces Large metaTADs show greater enrichments for an array of boundary features.}}{87}{figure.caption.63}
+\contentsline {figure}{\numberline {50}{\ignorespaces MetaTADs align with lain associated domains.}}{88}{figure.caption.64}
+\contentsline {figure}{\numberline {51}{\ignorespaces MetaTADs align with lamin associated domains.}}{89}{figure.caption.65}
+\contentsline {figure}{\numberline {52}{\ignorespaces MetaTAD boundaries much LAD boundaries much more often than expected by chance. }}{90}{figure.caption.66}
+\contentsline {figure}{\numberline {53}{\ignorespaces Observed enrichments persist over a time series.}}{91}{figure.caption.67}
+\contentsline {figure}{\numberline {54}{\ignorespaces Genome-wide agreement between Giemsa bands and A/B compartments..}}{93}{figure.caption.68}
+\contentsline {figure}{\numberline {55}{\ignorespaces Giemsa--stain bands correspond to A/B compartments.}}{94}{figure.caption.69}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {55}{\ignorespaces SHH--ZRS contacts occur within a stable TAD.}}{96}{figure.caption.69}
-\contentsline {figure}{\numberline {56}{\ignorespaces TSA treatment induces a strong ZRS--SHH interaction. }}{97}{figure.caption.70}
-\contentsline {figure}{\numberline {57}{\ignorespaces A stable ZRS--SHH interaction is coupled with reduced extraneous contacts. }}{98}{figure.caption.71}
-\contentsline {figure}{\numberline {58}{\ignorespaces Raw differences between anterior and posterior 5C interactions.}}{100}{figure.caption.72}
-\contentsline {figure}{\numberline {59}{\ignorespaces {\bf Will we use this stuff? } Placeholder \relax }}{101}{figure.caption.73}
-\contentsline {figure}{\numberline {60}{\ignorespaces {\bf Will we use this stuff? } Placeholder \relax }}{102}{figure.caption.74}
+\contentsline {figure}{\numberline {56}{\ignorespaces SHH--ZRS contacts occur within a stable TAD.}}{96}{figure.caption.70}
+\contentsline {figure}{\numberline {57}{\ignorespaces TSA treatment induces a strong ZRS--SHH interaction. }}{97}{figure.caption.71}
+\contentsline {figure}{\numberline {58}{\ignorespaces A stable ZRS--SHH interaction is coupled with reduced extraneous contacts. }}{98}{figure.caption.72}
+\contentsline {figure}{\numberline {59}{\ignorespaces Raw differences between anterior and posterior 5C interactions.}}{100}{figure.caption.73}
+\contentsline {figure}{\numberline {60}{\ignorespaces {\bf Will we use this stuff? } Placeholder \relax }}{101}{figure.caption.74}
+\contentsline {figure}{\numberline {61}{\ignorespaces {\bf Will we use this stuff? } Placeholder \relax }}{102}{figure.caption.75}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
