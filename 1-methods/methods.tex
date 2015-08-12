@@ -219,7 +219,10 @@ To test the sensitivity of the models to resolution, we also applied cell-type s
 
 \subsection{Stepwise regression}\label{meth:stepregress}
 
+% Expand, equations etc.
+Stepwise regression is a form of model selection used with multiple regression. This simple approach starts with a complete model and serially remove and/or add variables, then calculate a metric (here we use the Bayesian information criterion, BIC) which weighs the the model likelihood against model complexity. This process is iterated until the metric reaches a (local) minimum, thus creating a more parsimonious model which retains predictive accuracy and should be less prone to overfitting. Stepwise regression also aids interpretation by selecting representative features from collinear clusters.\cite{Mantel1970} 
 
+It should be noted that despite its continued widespread usage, several statistical issues have been identified with the stepwise procedure for model selection.\cite{Hurvich1990, Whittingham2006}
 
 \subsection{LASSO}\label{meth:lasso}
 
@@ -252,9 +255,7 @@ Formally, the LASSO problem has been expressed as:\cite{Hastie2001}
 
 This formulation introduces the $\lambda$ parameter as used in Section \ref{sec:lassoreg}. This parameter translates $\beta$ coefficients, such that larger values of $\lambda$ place stronger constraints on the coefficient total, thus encourage greater shrinkage and model sparsity (Eqn. \ref{eqn:lassolagrangian}).
 
-% Introduce LASSO penalty, with equations
-
-%Discuss how lambda was selected, i.e. with cross-validation
+In this thesis, we used the \texttt{glmnet} R package to fit LASSO models.\cite{glmnet1, glmnet2} In order to select $\lambda$, we use a $10$-fold cross-validation approach on a separate held-out training set. We chose that $\lambda$ which produced a mean cross-validated error within $1$ standard error of the minimum, thus favouring a sparser model than the global minimima.
 
 \subsection{Other modelling approaches}
  
