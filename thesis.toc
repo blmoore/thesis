@@ -36,36 +36,37 @@
 \contentsline {subsection}{\numberline {2.1.2}Filtering}{17}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Correction}{18}{subsection.2.1.3}
 \contentsline {subsection}{\numberline {2.1.4}Eigenvector calculation}{18}{subsection.2.1.4}
-\contentsline {section}{\numberline {2.2}ENCODE features}{19}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Clustering input features}{19}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Modelling compartment eigenvectors}{19}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Random Forest}{19}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Model performance}{20}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Stepwise regression}{21}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}LASSO}{22}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Other modelling approaches}{23}{subsection.2.3.5}
-\contentsline {section}{\numberline {2.4}Variable regions}{23}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Stratification by variability}{23}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Chromatin state enrichment}{23}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Gene ontology analysis}{24}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}Boundaries}{24}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}TADs}{24}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Compartments}{25}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}MetaTAD analysis}{25}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Size selection}{25}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Collaborator datasets}{26}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}LAD coincidence}{26}{subsection.2.6.3}
-\contentsline {section}{\numberline {2.7}Giemsa band comparison}{27}{section.2.7}
-\contentsline {section}{\numberline {2.8}Nuclear positioning}{27}{section.2.8}
+\contentsline {subsection}{\numberline {2.1.5}TAD calling}{19}{subsection.2.1.5}
+\contentsline {section}{\numberline {2.2}ENCODE features}{20}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Clustering input features}{20}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Modelling compartment eigenvectors}{20}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Random Forest}{20}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Model performance}{21}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Stepwise regression}{22}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}LASSO}{23}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Other modelling approaches}{24}{subsection.2.3.5}
+\contentsline {section}{\numberline {2.4}Variable regions}{24}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Stratification by variability}{24}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Chromatin state enrichment}{24}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Gene ontology analysis}{25}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Boundaries}{25}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}TAD boundaries}{25}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Compartments}{26}{subsection.2.5.2}
+\contentsline {section}{\numberline {2.6}MetaTAD analysis}{26}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Size selection}{26}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Collaborator datasets}{27}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}LAD coincidence}{27}{subsection.2.6.3}
+\contentsline {section}{\numberline {2.7}Giemsa band comparison}{28}{section.2.7}
+\contentsline {section}{\numberline {2.8}Nuclear positioning}{28}{section.2.8}
 \contentsline {section}{\numberline {2.9}Modelling transcriptional output}{28}{section.2.9}
 \contentsline {subsection}{\numberline {2.9.1}Reproducing a published study}{28}{subsection.2.9.1}
-\contentsline {subsection}{\numberline {2.9.2}Predicting FANTOM5 data}{28}{subsection.2.9.2}
-\contentsline {section}{\numberline {2.10}4C analysis}{29}{section.2.10}
-\contentsline {subsection}{\numberline {2.10.1}Normalisation}{29}{subsection.2.10.1}
-\contentsline {subsection}{\numberline {2.10.2}Significance estimation}{29}{subsection.2.10.2}
-\contentsline {subsection}{\numberline {2.10.3}3--D modelling}{30}{subsection.2.10.3}
-\contentsline {section}{\numberline {2.11}5C analysis}{30}{section.2.11}
-\contentsline {section}{\numberline {2.12}Scripts and other analyses}{30}{section.2.12}
+\contentsline {subsection}{\numberline {2.9.2}Predicting FANTOM5 data}{29}{subsection.2.9.2}
+\contentsline {section}{\numberline {2.10}4C analysis}{30}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}Normalisation}{30}{subsection.2.10.1}
+\contentsline {subsection}{\numberline {2.10.2}Significance estimation}{30}{subsection.2.10.2}
+\contentsline {subsection}{\numberline {2.10.3}3--D modelling}{31}{subsection.2.10.3}
+\contentsline {section}{\numberline {2.11}5C analysis}{31}{section.2.11}
+\contentsline {section}{\numberline {2.12}Scripts and other analyses}{31}{section.2.12}
 \contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Reanalysis of Hi-C datasets}}{33}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{33}{section.3.1}
 \contentsline {section}{\numberline {3.2}Hi-C reprocessing}{33}{section.3.2}

@@ -6,8 +6,8 @@
 \contentsline {figure}{\numberline {3}{\ignorespaces Dixon \emph {et al.} pipeline for calling topological associating domains (TADs).}}{7}{figure.caption.12}
 \contentsline {figure}{\numberline {4}{\ignorespaces Levels of higher order chromatin organisation.}}{8}{figure.caption.13}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5}{\ignorespaces Random Forests overview.}}{20}{figure.caption.16}
-\contentsline {figure}{\numberline {6}{\ignorespaces Random Forest parameters are largely insensitive.}}{21}{figure.caption.17}
+\contentsline {figure}{\numberline {5}{\ignorespaces Random Forests overview.}}{21}{figure.caption.16}
+\contentsline {figure}{\numberline {6}{\ignorespaces Random Forest parameters are largely insensitive.}}{22}{figure.caption.17}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {7}{\ignorespaces Iterative correction converts raw counts to normalised interaction frequencies.}}{34}{figure.caption.19}
 \contentsline {figure}{\numberline {8}{\ignorespaces Compartment profiles are observably well-correlated between human cell types and across all chromosomes}}{36}{figure.caption.20}
