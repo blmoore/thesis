@@ -250,9 +250,10 @@ The least absolute shrinkage and selection operator (LASSO) is a form of $\ell_1
 Simply put, the LASSO minimises the sum of squared errors subject to a tuneable constraint on the sum total of absolute model coefficients. In equation form, we are fitting a simple linear model:
 
 \begin{equation}
-\hat{y} = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_n x_n
-~~~~
-\mathrm{or}~~\hat{y} = \bm{X}\bm{\beta} (+ \bm{\epsilon})
+\begin{aligned}
+\hat{y} = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_n x_n\\
+\mathrm{or}~~\hat{y} = \bm{X}\bm{\beta} %(+ \bm{\epsilon})
+\end{aligned}
 \end{equation} \vspace{.2em}
 
 We then wish to find that $\bm{\beta}$ which minimises $\sum_{j=1}^{n}(\hat{y}_j - y_j)^2$ while at the same time satisfying the inequality:
@@ -261,7 +262,7 @@ We then wish to find that $\bm{\beta}$ which minimises $\sum_{j=1}^{n}(\hat{y}_j
 \sum\limits_{i=1}^{p} |\beta_i| \leq c
 \end{equation} \vspace{.2em}
 
-Where here $c$ represents a tuneable parameter inversely proportional to the level of regularisation imposed on the model. It can be seen, for example, that of $c$ is set to the sum of Eqn. \ref{eqn:lassoineq} can be contrasted with Ridge regression, where the same in inequality instead constrains $\sum_{i=1}^{p} \beta_j^2$.
+Where here $c$ represents a tuneable parameter inversely proportional to the level of regularisation imposed on the model. It can be seen, for example, that of $c$ is set to the sum of the coefficients fit by ordinary least squares, the LASSO solution will be equivalent. Eqn. \ref{eqn:lassoineq} can be contrasted with Ridge regression, where the same in inequality instead constrains $\sum_{i=1}^{p} \beta_j^2$.
 
 Formally, the LASSO problem has been expressed as:\cite{Hastie2001}
 
