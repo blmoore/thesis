@@ -1,4 +1,4 @@
-\begin{thebibliography}{200}
+\begin{thebibliography}{201}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -1038,6 +1038,10 @@ Kohavi R, Kohavi R (1997) {Wrappers for feature subset selection}.
 Deng H, Runger G (2012) {Feature selection via regularized trees}.
 \newblock In: \emph{Neural Networks (IJCNN), The 2012 International Joint
   Conference on}. IEEE, pp. 1--8.
+
+\bibitem[{Deng and Runger(2013)}]{Deng2013a}
+Deng H, Runger G (2013) {Gene selection with guided regularized random forest}.
+\newblock \emph{Pattern Recognition}, \textbf{46}(12): 3483--3489.
 
 \bibitem[{Nora \emph{et~al.}(2013)Nora, Dekker and Heard}]{Nora2013}
 Nora EP, Dekker J, Heard E (2013) {Segmental folding of chromosomes: A basis

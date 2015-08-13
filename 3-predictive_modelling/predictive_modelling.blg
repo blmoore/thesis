@@ -8,48 +8,47 @@ Repeated entry---line 11 of file /Users/benmoore/Documents/customrefs.bib
  : @inproceedings{deng2012
  :                        ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Deng2013"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty journal in Vizan2014
-You've used 36 entries,
+You've used 37 entries,
             3024 wiz_defined-function locations,
-            876 strings with 14645 characters,
-and the built_in function-call counts, 49307 in all, are:
-= -- 5167
-> -- 1460
-< -- 13
-+ -- 1050
-- -- 375
-* -- 3711
-:= -- 5377
-add.period$ -- 73
-call.type$ -- 36
-change.case$ -- 182
-chr.to.int$ -- 37
-cite$ -- 37
-duplicate$ -- 5148
-empty$ -- 3569
-format.name$ -- 486
-if$ -- 10147
+            881 strings with 14741 characters,
+and the built_in function-call counts, 50086 in all, are:
+= -- 5245
+> -- 1475
+< -- 14
++ -- 1060
+- -- 379
+* -- 3773
+:= -- 5474
+add.period$ -- 75
+call.type$ -- 37
+change.case$ -- 187
+chr.to.int$ -- 38
+cite$ -- 38
+duplicate$ -- 5220
+empty$ -- 3632
+format.name$ -- 495
+if$ -- 10305
 int.to.chr$ -- 1
-int.to.str$ -- 37
-missing$ -- 435
-newline$ -- 148
-num.names$ -- 108
-pop$ -- 2427
+int.to.str$ -- 38
+missing$ -- 444
+newline$ -- 152
+num.names$ -- 111
+pop$ -- 2457
 preamble$ -- 1
-purify$ -- 144
+purify$ -- 148
 quote$ -- 0
-skip$ -- 890
+skip$ -- 904
 stack$ -- 0
-substring$ -- 6113
-swap$ -- 1162
+substring$ -- 6197
+swap$ -- 1189
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 214
+type$ -- 220
 warning$ -- 1
-while$ -- 323
+while$ -- 329
 width$ -- 0
-write$ -- 434
+write$ -- 446
 (There was 1 error message)

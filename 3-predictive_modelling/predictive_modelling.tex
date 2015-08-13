@@ -128,7 +128,7 @@ replicate their results and analyse the strengths and caveats of their approach.
 
 We were able to reproduce the reported results and highly accurate models of transcriptional output. An example is shown for a model of CAGE expression in the H1 hESC cell type (Fig. \ref{fig:dongres}). Note that not all variables used in \citet{Dong2012} were made available for this particular modelling scenario, however the Pearson correlation between predicted and observed expression ($0.87$) is above the study's median value ($0.83$), and in-line with other models predicting CAGE data (median $PCC \approx 0.87$).\cite{Dong2012}
 
-We also re-calculated measures of variable importance for this model of transcription (Fig. \ref{fig:dongres}). We not some small variations from the example model shown in \citet{Dong2012} which was predicting cytosolic CAGE data recorded in K562 cells. This hints at some degree of some variability between cell type models, though broad similarities also exist such as both models ranking DNase I hypersensitivity as a relatively informative variable (Fig. \ref{fig:dongres}).
+We also re-calculated measures of variable importance for this model of transcription (Fig. \ref{fig:dongres}). We note some small variations from the example model shown in \citet{Dong2012} which was predicting cytosolic CAGE data recorded in K562 cells. This hints at some degree of some variability between cell type models, though broad similarities also exist such as both models ranking DNase I hypersensitivity as a relatively informative variable (Fig. \ref{fig:dongres}).
 
 When replicating the modelling approach of \citet{Dong2012}, we were surprised to find that the two-step classification
 then regression (firstly assessing a gene as `on' or `off' and then
@@ -178,7 +178,7 @@ bins.\cite{Dong2012}
 \end{center}
 \end{figure} 
 
-The justification for such an approach hinges on the idea that the multitude of input features (mostly histone modifications and DNA binding proteins) have a variety of biological functions, and so the bestbin method is one way of learning these functions in an automated and unsupervised way. For example, the histone modification H3K36me3 is understood to be painted across exons that are being actively-transcribed,\cite{Tippmann2012, Kolasinska-Zwierz2009, Schaft2003} thus the genome-wide summary statistic that best captures this function is likely the whole-gene measurement, rather than the level of H3k36me3 at a gene's TSS or upstream promoter. A re-analysis of that ENCODE data used in \citet{Dong2012} highlights this kind of variability across input features (Fig. \ref{fig:dongtssprof}). Some clearly are enriched directly over TSS (CTCF, DNase; Fig. \ref{fig:dongtssprof}) while others show enrichments along the gene body (H3K36me3, H4K20me1; Fi.g \ref{fig:dongtssprof}) as well as more-complex, asymmetrical "shoulder" patterns (H3K27me3, H3K9ac; Fig. \ref{fig:dongtssprof}). Bestbin will therefore, to some degree, capture these relationships without \emph{a priori} specification.
+The justification for such an approach hinges on the idea that the multitude of input features (mostly histone modifications and DNA binding proteins) have a variety of biological functions, and so the bestbin method is one way of learning these functions in an automated and unsupervised way. For example, the histone modification H3K36me3 is understood to be painted across exons that are being actively-transcribed,\cite{Tippmann2012, Kolasinska-Zwierz2009, Schaft2003} thus the genome-wide summary statistic that best captures this function is likely the whole-gene measurement, rather than the level of H3k36me3 at a gene's TSS or upstream promoter. A re-analysis of ENCODE data used in \citet{Dong2012} highlights this kind of variability across input features (Fig. \ref{fig:dongtssprof}). Some marks clearly are enriched directly over TSS (CTCF, DNase; Fig. \ref{fig:dongtssprof}) while others show enrichments along the gene body (H3K36me3, H4K20me1; Fi.g \ref{fig:dongtssprof}) as well as more-complex, asymmetrical "shoulder" patterns (H3K27me3, H3K9ac; Fig. \ref{fig:dongtssprof}). Bestbin will therefore, to some degree, capture these spatial relationships without \emph{a priori} specification.
 
 % Dissection of best bin (bestbinDetermination.pdf ?)
 
@@ -284,7 +284,7 @@ We again implemented the previously-described `bestbin' strategy\cite{Dong2012} 
 select the most-correlated binned signal for each chromatin H1 hESC
 mark. To explore the implications of this approach, we analysed the stability of chosen bestbins by
 calculating them on $200$ sets of $1000$ randomly selected TSS samples, with each sample
-representing approximately $8\%$ of the dataset. Distributions of chosen bestbins across these 200 sub-samples are shown as boxplots (Fig. \ref{fig:bestbin}).
+representing approximately $8\%$ of the complete dataset. Distributions of chosen bestbins across these 200 sub-samples are shown as boxplots (Fig. \ref{fig:bestbin}).
 
 \begin{figure}
 \begin{center} 
@@ -328,9 +328,9 @@ exons.\cite{Tippmann2012, Kolasinska-Zwierz2009, Schaft2003} The negative contro
 
 \section{Modelling higher order chromatin}\label{sec:modhoc}
 
-Accurate predictive modelling of transcription in a variety of cell types offered several novel insights into the internal between histone modifications and transcription factors with transcriptional machinery, and advanced a quantitative explanation of the degree to which correlated features are informative. It is of interest then, to test whether this approach can be applied to other data, such as the reprocessed higher order chromatin organisation data assembled in this work (Chapter \ref{chap:hiccomparison}).
+Accurate predictive modelling of transcription in a variety of cell types offered several novel insights into the interrelationships between locus-level chromatin features and transcriptional machinery, as well as advancing a quantitative explanation of the degree to which correlated features are informative. It is of interest then, to test whether this approach can be applied to other data, such as the reprocessed higher order chromatin organisation data assembled in this work (Chapter \ref{chap:hiccomparison}).
 
-Previous publications have identified several correlates which track compartment eigenvector profiles to varying degrees,\cite{Lieberman2009, Imakaev2012} yet to date these relationships have not been quantitively investigated. The above-described modelling framework offers a statistical approach to understanding the drivers of these observed correlations.
+Previous publications have identified several correlates which track compartment eigenvector profiles to varying degrees,\cite{Lieberman2009, Imakaev2012} yet to date these relationships have not been quantitively investigated. The above-described modelling framework offers a statistical approach towards understanding the drivers of these observed correlations.
 
 \subsection{Predictive model}
 
@@ -347,7 +347,7 @@ We built Random Forest regression models (Methods \ref{sec:rf}) to predict compa
 \end{center} 
 \end{figure} 
 
-Our predictive models were also assessed in terms of classification performance, i.e. did the model correctly assign each block to an A or  B compartment. Instead of retraining a classifier and building parallel models, instead for an estimate of classification accuracy we threshold our regression predictions (Methods \ref{sec:modelperf}). We found our Random Forest models achieved high classification accuracy with upwards of $82\%$ of the all genomic bins correctly assigned in each cell type (Fig. \ref{fig:modelres}). 
+Our predictive models were also assessed in terms of classification performance, i.e. did the model correctly assign each block to an A or  B compartment. Instead of retraining a classifier and building parallel models, instead for an estimate of classification accuracy we threshold our regression predictions (Methods \ref{sec:modelperf}). We found our Random Forest models achieved high classification accuracy with $\geq82\%$ of all $1$ Mb genomic bins correctly assigned in each cell type (Fig. \ref{fig:modelres}). 
 
 This predictive performance underlines the strong connection between locus-level features and higher order chromatin structure previously noted by \citet{Lieberman2009} Given such highly-predictive models can be generated, it is then of interest to dissect said models in an attempt to understand the nature of this captured relationship.
 
@@ -357,7 +357,7 @@ This predictive performance underlines the strong connection between locus-level
 
 High predictive accuracy on cell type specific models could be the result of ``over-fitting". In machine-learning, over-fitting refers to the point at which parameters are being optimised to capture noise within a feature set, as well as signal, thereby giving an overoptimistic model performance which would not generalise to another featureset with different noise profiles.
 
-To test if over-fitting was causing our high observed accuracy, we cross-applied models learnt in one cell type to unseen input data from each of the other two cell types under study. If predictive accuracy is a lot lower on unseen data, this lends evidence to the idea that our models may be overfitted to their respective cell types. Conversely, it could be the case that biologically-distinct mechanisms are in place that differ between cell types, preventing a simple cross-application.
+To test if over-fitting was causing our high observed accuracy, we cross-applied models learnt in one cell type to unseen input data from each of the other two cell types under study. If predictive accuracy is a lot lower on unseen data, this lends evidence to the idea that our models may be overfit to their respective cell types. Conversely, it could be the case that biologically-distinct mechanisms are in place that differ between cell types, preventing a simple cross-application.
 
 \begin{figure}
 \begin{center} 
@@ -369,7 +369,7 @@ To test if over-fitting was causing our high observed accuracy, we cross-applied
 \end{center} 
 \end{figure} 
 
-We found cross-application between cell types was possible and with similarly-high levels of accuracy (Fig. \ref{fig:xapp}). This gives good evidence not only that are models are not overfitting to cell-type specific noise, but also that there exist broad rules linking chromatin conformation and locus-level feature aggregation. The cross-application suggests there exists enough commonalities for compartment profile predictions to transcend the cell-type specific biology inherent to an embryonic stem cell or differentiated lymphoblast.
+We found cross-application between cell types was possible and resulted in similarly-high levels of accuracy to within cell-type cross-validation (Fig. \ref{fig:xapp}). This gives good evidence not only that are models are not overfitting to cell-type specific noise, but also that there exist broad rules linking chromatin conformation and locus-level feature aggregation. The cross-application suggests there exists enough commonalities for compartment profile predictions to transcend the cell-type specific biology inherent to an embryonic stem cell or differentiated lymphoblast.
 
 \subsection{Between-cell variability}
  
@@ -385,7 +385,7 @@ Genome-wide compartment eigenvectors were partitioned into thirds according to t
  
 Given much of the higher order chromatin organisation is conserved between the three cell types used in this work (Fig. \ref{fig:compcor}), a testable hypothesis is that these conserved regions are drivers of cross-applicability between cell types. Conversely, genomic regions which vary most across the cell types in our dataset should be more difficult to predict.
 
-Indeed we found the most variable regions across cell types were then most difficult to predict through our Random Forest modelling framework (Fig. \ref{fig:stratmod}). In each cell type, the third of the genome with the most consistent compartment eigenvectors across cell types could then most accurately be modelled in that cell type, and conversely the most variable third shown significantly depleted predictability (Fig. \ref{fig:stratmod}). This latter result suggests these variable regions could either be those which are noisiest, where the eigenvector is least capturing compartment structure, or where cell-type specific biology is influencing compartment structure in each case, in ways not captured by out input feature set and low resolution modelling pipeline.
+Indeed we found the most variable regions across cell types were then most difficult to predict through our Random Forest modelling framework (Fig. \ref{fig:stratmod}). In each cell type, the third of the genome with the most consistent compartment eigenvectors across cell types could then most accurately be modelled in each cell type, and conversely the most variable third shown significantly depleted predictability (Fig. \ref{fig:stratmod}). This latter result suggests these variable regions could either be those which are noisiest, where the eigenvector is least capturing compartment structure, or where cell-type specific biology is influencing compartment structure in ways not captured by our input feature set and low resolution modelling pipeline.
 
 \subsection{Variable importance}
 
@@ -418,6 +418,17 @@ Venn diagram illustrating intersections between sets of ten most influential var
 
 To assess the significance of observed intersections (Fig. \ref{fig:top10venn}), the variable selection process could be modelled with, for example, a multivariate hypergeometric distribution or via simulation. Simulation was used here for simplicity: each intersection was calculated under $10,000$ variables draws with uniform distribution and empirical $p$-values were then calculated accordingly. Under the assumption that variables are ranked independently in each cell type, drawing at least one variable in all three cell types would be expected by chance ($p = 0.6$). Similarly, the overlaps between pairs of cell types is within the range of expectation (probability of 7 or more variables appearing in exactly two sets: $0.39$). Hence these data suggest the top 10 most influential variables are not significantly more alike across the three cell-type specific models than expected by chance, however ten is an arbitrary cutoff, and many of the rankings are based on small differences in variable importance, thus could be unstable between multiple generations of stochastic Random Forest models.
 
+% figure showing e.g. how individual var regresses against eigen (Egr1compare.pdf)
+\begin{figure}
+\begin{center} 
+\includegraphics[width=4.5in]{figs/h1feats.pdf}
+\captionsetup{width=\textwidth} 
+\caption[Correlations of individual features with compartment eigenvector in the H1 hESC cell type.]{ {\bf Correlations of individual features with compartment eigenvector in the H1 hESC cell type. }
+Two-dimensional kernel density estimates show the density of points in a scatterplot of compartment eigenvector ($x$-axis) against each input feature individually ($y$-axes). Features with a PCC against eigenvector of above or below $0.1$ are coloured as positive or negative, respectively.
+}\label{fig:h1feats}
+\end{center} 
+\end{figure} 
+
 \begin{figure}
 \begin{center} 
 \makebox[\textwidth][c]{ 
@@ -431,17 +442,6 @@ Variable importance for each Random Forest model was measured in terms of percen
 \end{figure} 
 
 In addition to rankings, raw variable importance metrics can be compared between cell-type specific models (Fig. \ref{fig:varimp_diff}). This shows that variables such as CTCF have a relatively small but highly consistent variable importance across the three cell type specific models, whereas other features like ATF3 are highly influential in one cell type but not the other two. Absolute differences in these figures should not be over interpreted and will be affected to some degree by data quality, eigenvector calculation and other sources of noise. Nevertheless there are observations which may reflect biological phenomena, such as the higher relative importance of P300 in both hematopoietic cell line models, potentially reflecting its activity as a histone acetyl transferase that regulates hematopoiesis\cite{Sun2015} and a noted involvement with CTCF in chromatin looping.\cite{Handoko2011}
-
-% figure showing e.g. how individual var regresses against eigen (Egr1compare.pdf)
-\begin{figure}
-\begin{center} 
-\includegraphics[width=4.5in]{figs/h1feats.pdf}
-\captionsetup{width=\textwidth} 
-\caption[Correlations of individual features with compartment eigenvector in the H1 hESC cell type.]{ {\bf Correlations of individual features with compartment eigenvector in the H1 hESC cell type. }
-Two-dimensional kernel density estimates show the density of points in a scatterplot of compartment eigenvector ($x$-axis) against each input feature individually ($y$-axes). Features with a PCC against eigenvector of above or below $0.1$ are coloured as positive or negative, respectively.
-}\label{fig:h1feats}
-\end{center} 
-\end{figure} 
 
 % also consider looking at LOCAL variable importance
 
@@ -459,7 +459,7 @@ The Pearson correlation coefficient (PCC) of genome-wide 1 Mb bins of each featu
 \end{center} 
 \end{figure} 
 
-We found as expected pervasive multicollinearity across our feature sets, with the majority of input variables in each model falling into a persistent "active" cluster containing regions with high DNase hypersensitivity, POL2 binding and histone modifications H3K36me3 as well as GC content (Fig. \ref{fig:featmap}). 
+We found pervasive multicollinearity across our feature sets, with the majority of input variables in each model falling into a persistent "active" cluster containing regions with high DNase hypersensitivity, POL2 binding and histone modifications H3K36me3 as well as GC content (Fig. \ref{fig:featmap}). 
 
 Outliers are also present. H3K9me3, noted for high variable importance in each model (Fig. \ref{fig:varimp}) and the only feature ranked within the top 10 in each model (Fig. \ref{fig:top10venn}) is a clear outgroup in the H1 hESC and GM12878 correlation heatmaps, and in K562 forms a stable cluster only with the P300 transcription factor (Fig. \ref{fig:featmap}). This suggests H3K9me3 is providing orthogonal information to many of the other input variables, and likely explains its high variable importance.
 
@@ -485,7 +485,7 @@ Note however, there is some indirect leakage between test and training set when 
 
 \subsection{Other modelling approaches}
 
-Random Forest (RF) was \emph{a priori} chosen as an appropriate and powerful modelling tool for this work. Other methods could have been used and should be compared. Here we compare our RF approach with two other options: multiple linear regression and partial least squares regression.
+Random Forest (RF) was \emph{a priori} chosen as an appropriate and powerful modelling tool for this work. Other methods could have been used and should be compared. Here we compare our RF approach with two other options: multiple linear regression and partial least squares regression (Methods \ref{meth:othermodels}).
 
 \begin{figure}
 \begin{center} 
@@ -501,7 +501,7 @@ Heatmaps show the Pearson correlation coefficient between predicted and observed
 
 Our results confirm RF as a suitable and powerful approach for modelling our relationships of interest in this work (Fig. \ref{fig:diffmethods}), with both the highest cell-type specific performance (PCC between predicted and observed $=0.790$) and on cross-applications (mean PCC $= 0.689$). 
 
-Multiple linear regression assumes linear relationships between model parameters and input features and allows for simple, normally-distributed errors. Surprisingly, this simple approach is capable of accurate cell-type specific predictions (mean PCC $= 0.787$), likely due to the high raw correlation between the inputs and dependent variable. However this simple approach fails to cross-apply between cell types (mean PCC $=0.139$) indicating a problems with overfitting. This can be remedied through variable selection procedures, however a strength of the RF approach is that this step is not necessary, and pre-selection of model variables may result in a sub-optimal end result.\cite{Diaz2006}
+Multiple linear regression assumes linear relationships between model parameters and input features and allows for simple, normally-distributed errors. Surprisingly, this simple approach is capable of accurate cell-type specific predictions (mean PCC $= 0.787$; Table \ref{tab:diffmethods}), likely due to the high raw correlation between the inputs and dependent variable. However this simple approach fails to cross-apply between cell types (mean PCC $=0.139$; Table \ref{tab:diffmethods}) indicating a problems with overfitting. This can be remedied through variable selection procedures, however a strength of the RF approach is that this step is not necessary, and pre-selection of model variables may result in a sub-optimal end result.\cite{Diaz2006}
 
 \begin{table}
 \centering
@@ -517,9 +517,9 @@ Cross-application  & 0.139 & 0.689 & 0.641
 \end{tabular}
 \end{table}
 
-Partial least squares regression is another technique which used dimensionality reduction to engineer a lower-dimension orthogonal feature set. Hence this method is well-suited to multi collinear inputs, such as our feature set. As expected, PLS regression provides highly accurate cell type specific predictions (mean PCC $=0.750$) and during cross-application (mean PCC $=0.641$), though in both cases produces slightly inferior results to RF models (Fig. \ref{fig:diffmethods}).
+Partial least squares regression is another technique which used dimensionality reduction to engineer a lower-dimension and orthogonal feature set. Hence this method is well-suited to multi collinear inputs, such as the set of variables used in this work (e.g. Fig. \ref{fig:featmap}). As expected, PLS regression provides highly accurate cell type specific predictions (mean PCC $=0.750$; Table \ref{tab:diffmethods}) and during cross-application (mean PCC $=0.641$; Table \ref{tab:diffmethods}), though in both cases produces slightly inferior results to RF models (Fig. \ref{fig:diffmethods}).
 
-PLS uses a type of dimensionality reduction, which offers another way to explore the inter-relationships between our feature set. Plotting input features against these lower-dimension components can give a revelling insight beyond simple correlations (e.g. Fig. \ref{fig:featmap}). Figure \ref{fig:circor} shows a "circle of correlations", where features are plotted onto polar co-ordinates against the first two PLS components. Interpretation of this figure is that nearby variables in the scatterplot are positively correlated, and the vector length from the circle centre is proportional to said variable's representation in the model. Negatively correlated variables point in opposite directions while uncorrelated variables are orthogonal to each other.\cite{Abdi2010} We therefore see the known multicollinearity represented as groupings of overlapping variables in each cell type, with a smaller number of orthogonal and negatively correlated variables in each cell type (Fig. \ref{fig:circor}).
+PLS uses a type of dimensionality reduction, which offers another way to explore the inter-relationships between our feature set. Plotting input features against these lower-dimension components can give a revelling insight beyond simple correlations (e.g. Fig. \ref{fig:featmap}). Figure \ref{fig:circor} shows a "circle of correlations", where features are plotted onto polar co-ordinates against the first two PLS components (Methods \ref{meth:othermodels}). Interpretation of this figure is that nearby variables in the scatterplot are positively correlated, and the vector length from the circle centre is proportional to said variable's representation in the model. Negatively correlated variables point in opposite directions while uncorrelated variables are orthogonal to each other.\cite{Abdi2010} We therefore see the known multicollinearity represented as groupings of overlapping variables in each cell type, with a smaller number of orthogonal and negatively correlated variables in each cell type (Fig. \ref{fig:circor}).
 
 \begin{figure}
 \begin{center} 
@@ -539,7 +539,7 @@ Model variables are plotted against the first two axes used in PLS regression mo
 
 As recognised through our use of Hidden Markov Models (Methods \ref{sec:compartments}), consecutive bins along a chromosome are non-independent yet thus far predictive models have not considered this inter-dependence. 
 
-This is for two reasons: firstly non independence could be thought of as an artefact of bin-sizing (we have elected to use regular, fixed binning beneath the scale of compartments themselves whereas another approach could use variable bin sizes, for example per compartment, TAD or restriction fragment); secondly using information of a bin's surroundings may obscure by proxy the chromatin features which would otherwise prove predictive. As an example, knowing that bin $x_{i-1}$ and bin $x_{i+1}$ are in compartment state A would allow us with high confidence to predict the state of bin $x_i$, but without learning anything of any region's relationships with their histone modifications and bound factors.
+This is for two reasons: firstly non independence could be thought of as an artefact of bin-sizing (we have elected to use regular, fixed binning beneath the scale of compartments themselves whereas another approach could use variable bin sizes, for example per compartment, TAD or restriction fragment); secondly using information of a bin's surroundings may obscure by proxy the chromatin features which would otherwise prove predictive. As an example, knowing that bin $x_{i-1}$ and bin $x_{i+1}$ are in compartment state A would allow us with high confidence to predict the state of bin $x_i$, but without learning anything of the region's relationship with its encompassed histone modifications and bound factors.
 
 \section{Parsimonious models from expanded feature sets}
 
@@ -576,7 +576,7 @@ PCC between predicted and empirical compartment eigenvectors is shown for a rang
 
 \subsection{LASSO regression}\label{sec:lassoreg}
 
-A more modern technique for regularisation of linear models is the least absolute shrinkage and selection operator (LASSO). In brief, the LASSO is a form of $\ell_1$ regularisation that penalises the sum of absolute values of standardised regression coefficients. By penalising absolute values and sums, rather than squared values as in $\ell_2$ regularisation, coefficients can be shrunk to $0$ thereby removing terms from the model. Thus LASSO combines coefficient shrinkage of techniques like Ridge regression with a type of feature selection as seen in stepwise regression.\cite{Tibshirani1994, Hastie2001} A detailed explanation of this method can be found in Methods \ref{meth:lasso}.
+A more modern technique for regularisation of linear models is the least absolute shrinkage and selection operator (LASSO). In brief, the LASSO is a form of $\ell_1$ regularisation that penalises the sum of absolute values of standardised regression coefficients. By penalising total absolute values, rather than squared values as in $\ell_2$ regularisation, coefficients can be shrunk to $0$ thereby removing terms from the model. Thus LASSO combines the coefficient shrinkage of techniques like Ridge regression with a type of feature selection as seen in stepwise regression.\cite{Tibshirani1994, Hastie2001} A detailed explanation of this method can be found in Methods \ref{meth:lasso}.
 
 Again we can perform a simplistic comparison of model performance using LASSO regression and other techniques (Table \ref{tab:bicmodels}). LASSO retrieves comparable numbers of informative variables to the stepwise regression technique in each cell type, and again removes the majority of input features from expanded sets as redundant or relatively uninformative.
 
@@ -590,7 +590,7 @@ Those coefficients with the largest absolute value are plotted for each cell typ
 \end{center} 
 \end{figure} 
 
-Of those variables with a non-zero coefficient at the optimally-selected tuning parameter $\lambda$ (Methods \ref{meth:lasso}), the ten largest in each cell type are shown (Fig. \ref{fig:lassobar}).
+Of those variables with a non-zero coefficient at the optimally-selected tuning parameter $\lambda$ (Methods \ref{meth:lasso}), the ten largest in each cell type are shown (Fig. \ref{fig:lassobar}). Interpretation \ldots XX
 
 % Too many coefficients remain in model for clear plots of coefficient trace
 %The LASSO is a tunable algorithm, thus we can gain additional insights of coefficient traces over varying the regularisation parameter, $\lambda$.
@@ -599,7 +599,7 @@ Of those variables with a non-zero coefficient at the optimally-selected tuning 
 
 Random Forest (RF) comparisons are included for comparison in Table \ref{tab:bicmodels} where RF models were built using model-selection procedures based on linear regression. The result of this is the linear regression-based feature selection acts as a "filter" method for feature selection, fully independent of the RF learning algorithm. A more coherent approach might be an "embedded" method, where a regularisation procedure is integrated with the learning algorithm.\cite{Guyon2003, Kohavi1997a} %( cite noble review? elements of stat learn?)
 
-While RF is a much younger technique than linear models, a framework for Regularised Random Forests has recently been described\cite{Deng2012} and implemented in the R package \texttt{RRF}.\cite{Deng2013} The algorithm uses the idea that at each node in a tree, unused variable should only be included if they offer a significant information gain over those available variables which have already been used in the tree. This differs from the standard RF algorithm where splitting decisions at each node are entirely independent of each other (Methods \ref{sec:rf}). 
+While RF is a much younger technique than linear models, a framework for Regularised Random Forests (RRF) has recently been described\cite{Deng2012} and implemented in the R package \texttt{RRF}.\cite{Deng2013a} The RRF algorithm uses the idea that at each node in a tree, unused variable should only be included if they offer a significant information gain over those available variables which have already been used in the tree. This differs from the standard RF algorithm where splitting decisions at each node are entirely independent of each other (Methods \ref{sec:rf}). 
 
 We found that this algorithm was unable to perform feature selection on our highly collinear feature set, instead leaving full or almost full feature sets in each case (\emph{data not shown}) and so providing equal results to a standard RF model using expanded feature sets (Table \ref{tab:bicmodels}).
 

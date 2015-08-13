@@ -77,10 +77,10 @@
 \contentsline {section}{\numberline {3.5}Domain epigenetics}{41}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}A/B compartments}{41}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}TAD classes}{43}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}Variable regions}{43}{section.3.6}
+\contentsline {section}{\numberline {3.6}Variable regions}{45}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Chromatin state enrichment}{45}{subsection.3.6.1}
 \contentsline {subsection}{\numberline {3.6.2}Gene ontology enrichment}{45}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Contact changes}{47}{subsection.3.6.3}
+\contentsline {subsection}{\numberline {3.6.3}Contact changes}{49}{subsection.3.6.3}
 \contentsline {section}{\numberline {3.7}Nuclear positioning}{49}{section.3.7}
 \contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Integrative modelling as a tool to explore biological systems}}{53}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{53}{section.4.1}
@@ -94,14 +94,14 @@
 \contentsline {subsection}{\numberline {4.4.2}Cross-application}{62}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Between-cell variability}{62}{subsection.4.4.3}
 \contentsline {subsection}{\numberline {4.4.4}Variable importance}{64}{subsection.4.4.4}
-\contentsline {subsection}{\numberline {4.4.5}Correlating input features}{66}{subsection.4.4.5}
-\contentsline {section}{\numberline {4.5}Technical considerations}{70}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Resolution}{70}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Other modelling approaches}{70}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Non-independence}{73}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.4.5}Correlating input features}{68}{subsection.4.4.5}
+\contentsline {section}{\numberline {4.5}Technical considerations}{68}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Resolution}{68}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Other modelling approaches}{71}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Non-independence}{72}{subsection.4.5.3}
 \contentsline {section}{\numberline {4.6}Parsimonious models from expanded feature sets}{73}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Stepwise regression}{74}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}LASSO regression}{75}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.1}Stepwise regression}{73}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}LASSO regression}{74}{subsection.4.6.2}
 \contentsline {subsection}{\numberline {4.6.3}Regularised Random Forest}{75}{subsection.4.6.3}
 \contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Chromatin domain boundaries}}{77}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{77}{section.5.1}
