@@ -338,9 +338,13 @@ Variable regions (section \ref{sec:variable}) were tested for functional enrichm
 \subsection{TADs}\label{tads}
 
 TAD boundaries were called using the software provided in
-\citet{Dixon2012} using their recommended parameters. For the generation
+\citet{Dixon2012} using their recommended parameters. This method is introduced in Section \ref{intro:tads}.  % XX write DI/ tad calling highlights
+
+The TAD calling algorithm is a multi-stage process. Firstly, XX
+
+For the generation
 of boundary profiles, input features were
-averaged into 40 kb bins spanning $\pm450$ kb from the boundary bin.
+averaged into 50 kb bins spanning $\pm450$ kb from the boundary bin.
 
 To test for the enrichment or depletion of a chromatin feature over a
 given boundary, a two tailed Mann-Whitney test was used to compare the
@@ -366,13 +370,15 @@ produced the observed values. Justification for this approach is discussed in Se
 The point at which transitions occurred
 between states was taken as a boundary which was then extended $\pm 1.5$~Mb to give a $3$~Mb window in which a boundary was though to occur. Boundary enrichments and alignments were tested in the same manner as TADs (Section \ref{tads}).
 
-\section{MetaTAD analysis}
+\section{MetaTAD analysis}\label{meth:meta}
+
+MetaTADs are a concept discovered by collaborators. Their method for calling such features involve the constrained hierarchical cluttering of neighbouring TADs with the greatest inter-TAD contacts. This results in a tree of increasing metaTAD aggregation. % expand XX
 
 \subsection{Size selection}\label{sec:metatad}
 
-MetaTADs are a concept discovered by collaborators. Their method for calling such features involve the constrained hierarchical cluttering of neighbouring TADs with the greatest inter-TAD contacts. This results in a tree of increasing metaTAD aggregation. For boundary analysis of metaTADs, again a similar approach was used to that of TADs (section \ref{tads}) but thresholded to within a given range of sizes. MetaTADs below 10 Mb were excluded, as to have no lower bound results in $\frac{2}{3}$ of all TAD boundaries likewise considered MetaTAD boundaries, reducing the power to analyse any differences. 10 Mb was chosen in an attempt to compromise minimising the overlap between TAD and metaTAD boundaries, while also retaining a large enough sample size. An upper bound of 40 Mb was also chosen, as beyond this threshold inter-TAD contacts were found to be no higher than expected by chance. In practice, the tree-like structure means any upper-bound has little impact as a filter: in almost all cases, any boundary in a metaTAD of size $> 40$ Mb will also form metaTADs below this value. Additionally, the hierarchical nature of metaTADs means that some boundaries are present at multiple levels of the tree. Only one case of each boundary position was tested for feature enrichments, and this was performed as with TAD boundaries (Section \ref{tads}).
+For boundary analysis of metaTADs, again a similar approach was used to that of TADs (section \ref{tads}) but thresholded to within a given range of sizes. MetaTADs below 10 Mb were excluded, as to have no lower bound results in $\frac{2}{3}$ of all TAD boundaries likewise considered MetaTAD boundaries, reducing the power to analyse any differences. 10 Mb was chosen in an attempt to compromise minimising the overlap between TAD and metaTAD boundaries, while also retaining a large enough sample size. An upper bound of 40 Mb was also chosen, as beyond this threshold inter-TAD contacts were found to be no higher than expected by chance. In practice, the tree-like structure means any upper-bound has little impact as a filter: in almost all cases, any boundary in a metaTAD of size $> 40$ Mb will also form metaTADs below this value. Additionally, the hierarchical nature of metaTADs means that some boundaries are present at multiple levels of the tree. Only one case of each boundary position was tested for feature enrichments, and this was performed as with TAD boundaries (Section \ref{tads}).
 
-\subsection{Collaborator datasets}
+\subsection{Collaborator datasets}\label{meth:metadata}
 %CAGE, ctss
 Our collaborators in the metaTAD project performed ChIP-seq experiments for PolIII (three variants), H$3$K$27$me$3$, CTCF and DNase-I hypersensitivity. Mapped reads from these experiments were processed using MACSv2\cite{Zhang2008} to give relative signal over background (from an estimated local model), which was then averaged over all boundaries genome wide. 
 
@@ -380,7 +386,7 @@ Cap analysis of gene expression (CAGE) data was produced by the FANTOM consortiu
 
 Gene density over metaTAD boundaries was calculated using UCSC \texttt{mm9} gene models.\cite{Karolchik2014} Again simple intersections were taken to count genes over boundaries using \texttt{bedtools}\cite{Quinlan2010} and requiring a minimal overlap fraction of $0.5\%$ of a bin ($250$ bp).
 
-\subsection{LAD coincidence}
+\subsection{LAD coincidence}\label{meth:metalad}
 
 To compare metaTAD boundaries with those of LADs, we made use of previously-published Lamin-B1 DamID microarray probe intensities.\citet{Peric-Hupkes2010} For analysis over boundaries, these values were averaged into the same boundary windows as used previously (50 kb bins $\pm450$ kb around boundary, as in Section \ref{tads}). 
 
