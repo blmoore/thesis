@@ -127,8 +127,8 @@ histone marks were made available by the ENCODE
 consortium\citep{Dunham2012, Boyle2014} along with DNase I
 hypersensitivity and H2A.z occupancy, for each of the Tier 1 ENCODE cell
 lines used in this work: H1 hESC, K562 and GM12878. These data were
-pre-processed using MACSv2\citep{Zhang2008} to produce fold-change
-relative to input chromatin. GC content was also calculated and used in
+pre-processed using MACSv2\citep{Zhang2008} to produce signal fold-change
+relative to input chromatin. In most cases a paired input control was generated per cell type and by the same laboratory as that which performed a set of ChIP-seq experiments.\cite{Boyle2014} GC content was also calculated and used in
 the featureset to give 35 total inputs (Table \ref{tab:features}).
 
 \begin{table}[h]
@@ -386,11 +386,15 @@ between states was taken as a boundary which was then extended $\pm 1.5$~Mb to g
 
 \section{MetaTAD analysis}\label{meth:meta}
 
-MetaTADs are a concept discovered by collaborators. Their method for calling such features involve the constrained hierarchical cluttering of neighbouring TADs with the greatest inter-TAD contacts. This results in a tree of increasing metaTAD aggregation. % expand XX
+MetaTADs are a concept discovered by collaborators. Their method for calling such features involve the constrained hierarchical cluttering of those neighbouring TADs with the greatest inter-TAD contacts. This pairing was recursed up to the level of whole chromosomes, thus resulting in a tree of increasing metaTAD aggregation. 
+
+%Additionally our collaborators used an altered TAD calling method to that of \citet{Dixon2012} They used the directionality index (DI), as described in Section \ref{meth:tadcalling}), but replaced the subsequent steps with a simple thresholding method: when the DI crossed a threshold of standard deviation, $\sigma$, it was considered either an up- or downstream biased bin and TADs were called between
+
+% expand XX
 
 \subsection{Size selection}\label{sec:metatad}
 
-For boundary analysis of metaTADs, again a similar approach was used to that of TADs (section \ref{tads}) but thresholded to within a given range of sizes. MetaTADs below 10 Mb were excluded, as to have no lower bound results in $\frac{2}{3}$ of all TAD boundaries likewise considered MetaTAD boundaries, reducing the power to analyse any differences. 10 Mb was chosen in an attempt to compromise minimising the overlap between TAD and metaTAD boundaries, while also retaining a large enough sample size. An upper bound of 40 Mb was also chosen, as beyond this threshold inter-TAD contacts were found to be no higher than expected by chance. In practice, the tree-like structure means any upper-bound has little impact as a filter: in almost all cases, any boundary in a metaTAD of size $> 40$ Mb will also form metaTADs below this value. Additionally, the hierarchical nature of metaTADs means that some boundaries are present at multiple levels of the tree. Only one case of each boundary position was tested for feature enrichments, and this was performed as with TAD boundaries (Section \ref{tads}).
+For boundary analysis of metaTADs, again a similar approach was used to that of TADs (Section \ref{tads}) but thresholded to within a given range of sizes. MetaTADs below 10 Mb were excluded, as to have no lower bound results in $\frac{2}{3}$ of all TAD boundaries likewise considered MetaTAD boundaries, reducing the power to analyse any differences. 10 Mb was chosen in an attempt to compromise minimising the overlap between TAD and metaTAD boundaries, while also retaining a large enough sample size. An upper bound of 40 Mb was also chosen, as beyond this threshold inter-TAD contacts were found to be no higher than expected by chance. In practice, the tree-like structure means any upper-bound has little impact as a filter: in almost all cases, any boundary in a metaTAD of size $> 40$ Mb will also fortpalam metaTADs below this value. Additionally, the hierarchical nature of metaTADs means that some boundaries are present at multiple levels of the tree. Only one case of each boundary position was tested for feature enrichments, and this was performed as with TAD boundaries (Section \ref{tads}).
 
 \subsection{Collaborator datasets}\label{meth:metadata}
 %CAGE, ctss
