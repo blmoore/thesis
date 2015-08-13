@@ -58,8 +58,8 @@
 \contentsline {subsection}{\numberline {2.6.3}LAD coincidence}{27}{subsection.2.6.3}
 \contentsline {section}{\numberline {2.7}Giemsa band comparison}{28}{section.2.7}
 \contentsline {section}{\numberline {2.8}Nuclear positioning}{28}{section.2.8}
-\contentsline {section}{\numberline {2.9}Modelling transcriptional output}{28}{section.2.9}
-\contentsline {subsection}{\numberline {2.9.1}Reproducing a published study}{28}{subsection.2.9.1}
+\contentsline {section}{\numberline {2.9}Modelling transcriptional output}{29}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Reproducing a published study}{29}{subsection.2.9.1}
 \contentsline {subsection}{\numberline {2.9.2}Predicting FANTOM5 data}{29}{subsection.2.9.2}
 \contentsline {section}{\numberline {2.10}4C analysis}{30}{section.2.10}
 \contentsline {subsection}{\numberline {2.10.1}Normalisation}{30}{subsection.2.10.1}
