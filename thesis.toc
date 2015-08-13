@@ -74,7 +74,7 @@
 \contentsline {section}{\numberline {3.4}Domain calls}{35}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Compartments}{35}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}TADs}{39}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Domain epigenetics}{41}{section.3.5}
+\contentsline {section}{\numberline {3.5}Domain epigenomics}{41}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}A/B compartments}{41}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}TAD classes}{43}{subsection.3.5.2}
 \contentsline {section}{\numberline {3.6}Variable regions}{45}{section.3.6}
