@@ -54,7 +54,7 @@ Many questions remain about chromatin boundaries. For example, are the observed 
 
 The mammalian genome is organized into TADs, predominantly self-interacting chromatin domains, with boundary regions reportedly associated with pronounced peaks and troughs of particular features within 500 kb of the predicted boundary.\cite{Dixon2012} Exploration of this phenomenon using a set of 24 mouse ESC chromatin features (and a smaller number of human ESC features) reportedly revealed enrichment peaks of CTCF, H3K4me3 and H3K36me3, as well as a pronounced dip in H3K9me3, suggesting that high levels of transcription may contribute to boundary formation.\cite{Dixon2012} However, it was unclear whether other features show unusual patterns in TAD boundary regions, and whether the constellation of features involved changes between cell types. The features associated with boundaries separating A and B compartments calculated from Hi-C eigenvectors have not been studied to our knowledge. The datasets assembled here, consisting of 35 matched chromatin features across three cell types, allow us to conduct the first comparative study of the constituents of human TAD and compartment boundary regions.
 
-We derived TAD boundaries according to established methods (see Methods XX) for all three cell types under study. We then sought evidence for significantly enriched or depleted features at TAD boundary regions using a conservative approach (a nonparametric statistical test and Bonferroni multiple testing correction, see Methods XX).
+We derived TAD boundaries according to established methods (see Methods \ref{tads}) for all three cell types under study. We then sought evidence for significantly enriched or depleted features at TAD boundary regions using a conservative approach (a nonparametric statistical test and Bonferroni multiple testing correction, see Methods \ref{tads}).
 
 \begin{figure}
 \begin{center} 
@@ -185,7 +185,7 @@ influences of CTCF and cohesin in organizing chromatin structure.\cite{Zuin2013,
 
 Dixon \emph{et al}.'s study of TAD boundaries identified short interspersed element (SINE) repeats as being enriched over domain boundaries and suggested roles for these repeats in altering genome organisation, in line with prior evidence.\cite{Dixon2012, Lunyak2007} Interestingly, SINE elements are thought to be responsible for spreading CTCF binding sites through mammalian genomes\cite{Schmidt2012} (thought not in primates\cite{Schwalie2013}). Analysis of recent high-resolution Hi-C data again reported a SINE B2 link with CTCF loops in mice.\cite{Rao2014} Together these results suggest repeats could be a key component in the makeup of domain boundaries.
 
-To investigate this, we used the \texttt{RepeatMasker}\cite{Tarailo-Graovac2009} software package to call repeat classes and families in the \texttt{hg19} and \texttt{mm10} genome assemblies. Counts for each annotated feature were then average over boundaries as described previously (Methods XX).
+To investigate this, we used the \texttt{RepeatMasker}\cite{Tarailo-Graovac2009} software package to call repeat classes and families in the \texttt{hg19} and \texttt{mm10} genome assemblies. Counts for each annotated feature were then average over boundaries as described previously (Methods \ref{boundaries}).
 
 \begin{figure}
 \begin{center} 
@@ -204,7 +204,7 @@ At the level of repeat class, we corroborate the findings of \citet{Dixon2012} t
 \includegraphics[width=3.2in]{figs/rep_classbubble.pdf}
 \captionsetup{width=\textwidth}
 \caption[Significance and effect sizes of repeat class enrichments/depletions over boundaries.]{ {\bf Significance and effect sizes of repeat class enrichments/depletions over boundaries.}
-Boundary profiles (Fig. \ref{fig:rep_classprofiles}) were tested for enrichment or depletion of each factor at the boundary bin relative to peripheral non-boundary bins (see Methods XX). Bubble area is proportional to the raw effect size of an enrichment or depletion. The Bonferroni-corrected significance threshold is highlighted with a dashed line.
+Boundary profiles (Fig. \ref{fig:rep_classprofiles}) were tested for enrichment or depletion of each factor at the boundary bin relative to peripheral non-boundary bins (see Methods \ref{boundaries}). Bubble area is proportional to the raw effect size of an enrichment or depletion. The Bonferroni-corrected significance threshold is highlighted with a dashed line.
 }\label{fig:rep_classbubble}
 \end{center}
 \end{figure} 
@@ -229,7 +229,7 @@ As per Fig. \ref{fig:rep_classbubble} but for a higher resolution repeat classif
 
 \section{De novo boundary prediction}
 
-We have shown TAD and compartment domain boundaries to be well-marked by a variety of features. Compartment boundaries are successfully predicted as a side-effect of modelling the continuous compartment profile eigenvector (Section XX) however a related measure of activity and repression does not exist for TADs.
+We have shown TAD and compartment domain boundaries to be well-marked by a variety of features. Compartment boundaries are successfully predicted as a side-effect of modelling the continuous compartment profile eigenvector (Section \ref{sec:modhoc}) however a related measure of activity and repression does not exist for TADs.
 
 We attempted to model TAD boundaries in a variety of ways: firstly a using a class-balanced classification framework and secondly through indirect models of directionality index and the downstream domain-caller HMM state.\cite{Dixon2012}
 
@@ -243,7 +243,7 @@ My contribution to this work was to explore these newly-described metaTAD struct
 
 \subsection{MetaTAD / TAD boundary comparison}
 
-Due to the way metaTADs were constructed by our collaborators, by sequential aggregation of TADs (Methods XX), boundary comparisons between TADs and metaTADs are not completely straightforward. For one, every metaTAD boundary is, at a lower level, also a TAD boundary hence for a meaningful comparison we compared only a subset of metaTAD boundaries. Selection of this threshold involved a trade-off between maintaining a sufficient sample size of metaTADs and minimising the overlap between metaTAD and TAD boundaries, as a proportion of all TAD boundaries (Fig. \ref{fig:mtcalibrate}).
+Due to the way metaTADs were constructed by our collaborators, by sequential aggregation of TADs (Methods \ref{meth:meta}), boundary comparisons between TADs and metaTADs are not completely straightforward. For one, every metaTAD boundary is, at a lower level, also a TAD boundary hence for a meaningful comparison we compared only a subset of metaTAD boundaries. Selection of this threshold involved a trade-off between maintaining a sufficient sample size of metaTADs and minimising the overlap between metaTAD and TAD boundaries, as a proportion of all TAD boundaries (Fig. \ref{fig:mtcalibrate}).
 
 \begin{figure}
 \begin{center} 
@@ -257,7 +257,7 @@ As the lower bound on metaTAD size is increased, the proportion of all TAD bound
 
 From this calibration plot, a lower bound metaTAD size cut-off of 10 Mb was selected for comparison with TAD boundaries. This left a reasonable sample size of $263$ metaTAD boundaries, while reducing the overlap with the set of all TAD boundaries to approximately $5\%$ (Fig. \ref{fig:mtcalibrate}). We also used an upper bound for size selection, based on observations by our collaborators that interactions between metaTADs larger than around $40$ Mb were no higher than expected background signal (\emph{data not shown}). In practice, almost all boundaries making up metaTADs larger than $10$ Mb are also present in those larger than $40$ Mb, but as hierarchical clustering continued up until a whole chromosome level, this upper bound may exclude a small number of edge-case peripheral TADs which aggregated into chromsome-wide metaTADs without evidence of heightened intra-TAD interactions.
 
-Next a comparison between metaTAD boundaries for metaTAD size ($s$) in the range $10~\textrm{Mb} < s < 40~\textrm{Mb}$ was performed. Our collaborators generated several ChIP-seq datasets, including for CTCF and three PolII variants, as well as expression data in the form of CAGE (Methods XX). We averaged these features over the set of all metaTAD and TAD boundaries and compared the average profiles of each (Fig. \ref{fig:mtfeats}). These average profiles show heightened enrichment for PolII variants, CTCF and DNase, with non-overlapping $95\%$ confidence intervals of the mean over the boundary bin. Increased enrichments of gene density and histone modificationH$3$K$27$me$3$ are also suggestive of a heightened prevalence at metaTAD boundaries relative to TAD boundaries (Fig. \ref{fig:mtfeats}). The observable co-incidence of metaTAD boundaries and lamina associated domains (LADs) is explored further in Section \ref{sec:mtlads}.
+Next a comparison between metaTAD boundaries for metaTAD size ($s$) in the range $10~\textrm{Mb} < s < 40~\textrm{Mb}$ was performed. Our collaborators generated several ChIP-seq datasets, including for CTCF and three PolII variants, as well as expression data in the form of CAGE (Methods \ref{meth:metadata}). We averaged these features over the set of all metaTAD and TAD boundaries and compared the average profiles of each (Fig. \ref{fig:mtfeats}). These average profiles show heightened enrichment for PolII variants, CTCF and DNase, with non-overlapping $95\%$ confidence intervals of the mean over the boundary bin. Increased enrichments of gene density and histone modificationH$3$K$27$me$3$ are also suggestive of a heightened prevalence at metaTAD boundaries relative to TAD boundaries (Fig. \ref{fig:mtfeats}). The observable co-incidence of metaTAD boundaries and lamina associated domains (LADs) is explored further in Section \ref{sec:mtlads}.
 
 \begin{figure}
 \begin{center} 
@@ -278,7 +278,7 @@ To test this, we reran that above boundary analysis (Fig. \ref{fig:mtfeats}) but
 \includegraphics[width=4.5in]{figs/metatad_cutoffenrich.pdf}
 \captionsetup{width=\textwidth}
 \caption[MetaTADs align with lain associated domains.]{ {\bf MetaTAD boundary enrichments and sample sizes with varying size selection. }
-Placeholder
+Boundary average-o-grams are shown for TAD and metaTAD boundaries with variable lower bound cut-offs. Sample sizes for each threshold are shown in the legend (\emph{inset}).
 }\label{fig:mtcutoffenrich}
 \end{center}
 \end{figure} 
@@ -299,9 +299,9 @@ Heatmaps of LaminB1 association microarray probe intensity values over MetaTAD b
 \end{center}
 \end{figure} 
 
-Boundaries were seriated in order to separate out those that coincide with a LAD boundary (Methods XX) and we found a large number of metaTAD boundaries ($43\%$) in our $10$--$40$ Mb subset appeared to correspond to LAD boundaries (Fig. \ref{fig:mtlamin}). The same comparison using TAD boundaries found a coincidence of just $12\%$. However LADs are large domains and there were over $5,000$ TADs called in this Hi-C data by our collaborators, thus in absolute numbers of boundaries this is still represents a large overlap.
+Boundaries were seriated in order to separate out those that coincide with a LAD boundary (Methods \ref{meth:metalad}) and we found a large number of metaTAD boundaries ($43\%$) in our $10$--$40$ Mb subset appeared to correspond to LAD boundaries (Fig. \ref{fig:mtlamin}). The same comparison using TAD boundaries found a coincidence of just $12\%$. However LADs are large domains and there were over $5,000$ TADs called in this Hi-C data by our collaborators, thus in absolute numbers of boundaries this is still represents a large overlap.
 
-To test the significance of these observations, we apply a permutation-based statistical test where our observed coincidences are compared with those produced by $1,000$ circular (per-chromosome) permutations (Methods XX). We found that the metaTAD boundary coincidence is around $2.7$-fold increase above null expectation (observed: $42.6\%$; expected: $15.8\%$; empirical $p$-value: $p < 1 \times 10^{-4}$; Fig. \ref{fig:mtsummary}). Meanwhile TAD boundaries were found to have a smaller, yet still significant, $1.2$-fold increase in coincidence with LAD boundaries relative to a null model (observed: $11.8\%$; expected: $9.5\%$; empirical $p$-value: $p < 1 \times 10^{-4}$; Fig. \ref{fig:mtsummary}).
+To test the significance of these observations, we apply a permutation-based statistical test where our observed coincidences are compared with those produced by $1,000$ circular (per-chromosome) permutations (Methods \ref{meth:metalad}). We found that the metaTAD boundary coincidence is around $2.7$-fold increase above null expectation (observed: $42.6\%$; expected: $15.8\%$; empirical $p$-value: $p < 1 \times 10^{-4}$; Fig. \ref{fig:mtsummary}). Meanwhile TAD boundaries were found to have a smaller, yet still significant, $1.2$-fold increase in coincidence with LAD boundaries relative to a null model (observed: $11.8\%$; expected: $9.5\%$; empirical $p$-value: $p < 1 \times 10^{-4}$; Fig. \ref{fig:mtsummary}).
 
 \begin{figure}
 \begin{center} 
@@ -342,7 +342,7 @@ A recent analysis of Hi-C datasets examined the hierarchy of nuclear compartment
 
 Human Giemsa metaphase banding (G-band) pattern data have been integrated with the human genome assembly, and although such data are widely used, they are also necessarily of low resolution.\cite{Furey2003} These G-band patterns are constant over human cell types at metaphase, but all traces of interphase higher order structure were reported to be absent at metaphase.\cite{Naumova2013} We would therefore expect no agreement between metaphase G-bands and the patterns of interphase TADs and A/B nuclear compartments defined here, over all three cell types. 
 
-We examined the genome wide similarity of all interphase domain structure boundaries to metaphase G-band boundaries, relative to an expected distribution derived by permutation (Methods XX). There is a significant, though extremely modest, excess of compartment boundaries within close proximity of G-band boundaries, such that $13.90\%$ of compartment boundaries are within $500$ kb of a G-band boundary (expectation = $10.50\%$, K-S test: D $= 0.076$, p $< 3 \times10^{-12}$). This is seen for compartment boundaries calculated for all three cell types independently (a full comparison for GM12878 is shown in Fig. \ref{fig:gbands2}). 
+We examined the genome wide similarity of all interphase domain structure boundaries to metaphase G-band boundaries, relative to an expected distribution derived by permutation (Methods \ref{giemsa-band-comparison}). There is a significant, though modest, excess of compartment boundaries within close proximity of G-band boundaries, such that $13.90\%$ of compartment boundaries are within $500$ kb of a G-band boundary (expectation = $10.50\%$, K-S test: D $= 0.076$, p $< 3 \times10^{-12}$). This is seen for compartment boundaries calculated for all three cell types independently (a full comparison for GM12878 is shown in Fig. \ref{fig:gbands2}). 
 
 \begin{figure}
 \begin{center} 

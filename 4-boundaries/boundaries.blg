@@ -3,10 +3,6 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: boundaries.aux
 The style file: ../thesis.bst
 Database file #1: /Users/benmoore/Documents/library.bib
-Repeated entry---line 3845 of file /Users/benmoore/Documents/library.bib
- : @article{fantom5
- :                 ,
-I'm skipping whatever remains of this entry
 Database file #2: /Users/benmoore/Documents/customrefs.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--there's a number but no volume in Tarailo-Graovac2009
@@ -51,4 +47,4 @@ warning$ -- 1
 while$ -- 336
 width$ -- 0
 write$ -- 386
-(There was 1 error message)
+(There was 1 warning)

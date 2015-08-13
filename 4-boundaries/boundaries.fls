@@ -312,9 +312,12 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplbj8r.tfm
 INPUT figs/metatad_cutoffenrich.pdf
 INPUT ./figs/metatad_cutoffenrich.pdf
 INPUT ./figs/metatad_cutoffenrich.pdf
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplri9o.tfm
 INPUT figs/mt_laminperm.png
 INPUT ./figs/mt_laminperm.png
 INPUT ./figs/mt_laminperm.png
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplri9o.vf
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplrij8r.tfm
 INPUT figs/mt_laminsummary.pdf
 INPUT ./figs/mt_laminsummary.pdf
 INPUT ./figs/mt_laminsummary.pdf
@@ -332,11 +335,8 @@ INPUT ./figs/gb_ideo.pdf
 INPUT figs/gbands.pdf
 INPUT ./figs/gbands.pdf
 INPUT ./figs/gbands.pdf
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplri9o.tfm
 INPUT boundaries.bbl
 INPUT boundaries.bbl
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplri9o.vf
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplrij8r.tfm
 INPUT boundaries.aux
 INPUT ./boundaries.out
 INPUT ./boundaries.out
