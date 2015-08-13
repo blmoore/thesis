@@ -11,7 +11,6 @@ Repeated entry---line 11 of file /Users/benmoore/Documents/customrefs.bib
  : @inproceedings{deng2012
  :                        ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Deng2013"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--there's a number but no volume in Li2014
 Warning--there's a number but no volume in Mifsud2015
@@ -28,45 +27,45 @@ Warning--there's a number but no volume in Anderson2014a
 Warning--empty journal in Hill2013a
 Warning--there's a number but no volume in Hill2013a
 Warning--there's a number but no volume in Lesne2014
-You've used 200 entries,
+You've used 201 entries,
             3024 wiz_defined-function locations,
-            1873 strings with 72521 characters,
-and the built_in function-call counts, 288373 in all, are:
-= -- 30329
-> -- 8787
-< -- 60
-+ -- 6343
-- -- 2245
-* -- 21671
-:= -- 31052
-add.period$ -- 400
-call.type$ -- 200
-change.case$ -- 1001
-chr.to.int$ -- 201
-cite$ -- 215
-duplicate$ -- 30183
-empty$ -- 20640
-format.name$ -- 2877
-if$ -- 59445
+            1877 strings with 72615 characters,
+and the built_in function-call counts, 289152 in all, are:
+= -- 30407
+> -- 8802
+< -- 61
++ -- 6353
+- -- 2249
+* -- 21733
+:= -- 31149
+add.period$ -- 402
+call.type$ -- 201
+change.case$ -- 1006
+chr.to.int$ -- 202
+cite$ -- 216
+duplicate$ -- 30255
+empty$ -- 20703
+format.name$ -- 2886
+if$ -- 59603
 int.to.chr$ -- 6
-int.to.str$ -- 201
-missing$ -- 2469
-newline$ -- 803
-num.names$ -- 597
-pop$ -- 14565
+int.to.str$ -- 202
+missing$ -- 2478
+newline$ -- 807
+num.names$ -- 600
+pop$ -- 14595
 preamble$ -- 1
-purify$ -- 800
+purify$ -- 804
 quote$ -- 0
-skip$ -- 5090
+skip$ -- 5104
 stack$ -- 0
-substring$ -- 36077
-swap$ -- 6645
+substring$ -- 36161
+swap$ -- 6672
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1194
+type$ -- 1200
 warning$ -- 15
-while$ -- 1865
+while$ -- 1871
 width$ -- 0
-write$ -- 2386
+write$ -- 2398
 (There was 1 error message)

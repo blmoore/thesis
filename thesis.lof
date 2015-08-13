@@ -37,12 +37,12 @@
 \contentsline {figure}{\numberline {31}{\ignorespaces Genomic regions that vary across cell types are modelled less successfully than static regions.}}{64}{figure.caption.43}
 \contentsline {figure}{\numberline {32}{\ignorespaces Variable importance per cell type specific model.}}{65}{figure.caption.44}
 \contentsline {figure}{\numberline {33}{\ignorespaces Intersections of the top 10 ranked variables in the cell type specific models.}}{65}{figure.caption.45}
-\contentsline {figure}{\numberline {34}{\ignorespaces Comparison of variable importance between three cell type specific Random Forest models.}}{67}{figure.caption.46}
-\contentsline {figure}{\numberline {35}{\ignorespaces Correlations of individual features with compartment eigenvector in the H1 hESC cell type.}}{68}{figure.caption.47}
+\contentsline {figure}{\numberline {34}{\ignorespaces Correlations of individual features with compartment eigenvector in the H1 hESC cell type.}}{66}{figure.caption.46}
+\contentsline {figure}{\numberline {35}{\ignorespaces Comparison of variable importance between three cell type specific Random Forest models.}}{67}{figure.caption.47}
 \contentsline {figure}{\numberline {36}{\ignorespaces Correlation heatmaps of the 35 features used to model compartment eigenvectors.}}{69}{figure.caption.48}
-\contentsline {figure}{\numberline {37}{\ignorespaces Models learned at 1 Mb resolution can be applied to higher resolution datasets.}}{71}{figure.caption.49}
-\contentsline {figure}{\numberline {38}{\ignorespaces Comparison of Random Forest performance with other modelling approaches.}}{72}{figure.caption.50}
-\contentsline {figure}{\numberline {39}{\ignorespaces Circle of correlations of variables compared with PLS axes. }}{73}{figure.caption.52}
+\contentsline {figure}{\numberline {37}{\ignorespaces Models learned at 1 Mb resolution can be applied to higher resolution datasets.}}{70}{figure.caption.49}
+\contentsline {figure}{\numberline {38}{\ignorespaces Comparison of Random Forest performance with other modelling approaches.}}{71}{figure.caption.50}
+\contentsline {figure}{\numberline {39}{\ignorespaces Circle of correlations of variables compared with PLS axes. }}{72}{figure.caption.52}
 \contentsline {figure}{\numberline {40}{\ignorespaces Ten largest LASSO model coefficients from expanded feature sets. }}{75}{figure.caption.54}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {41}{\ignorespaces TAD boundary enrichments and depletions.}}{79}{figure.caption.55}

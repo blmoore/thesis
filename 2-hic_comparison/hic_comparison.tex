@@ -47,9 +47,9 @@ Since the initial publication of the Hi-C technique in 2009,\cite{Lieberman2009}
 
 Such rapid progression in the field has resulted in a wide variety of public Hi-C datasets being available, albeit with differing qualities. With proper correction and at a suitable resolution, these interaction frequencies can be compared and contrasted both within and between species.
 
-In this chapter we uniformly reprocessed publicly-available human Hi-C datasets in order to address fundamental questions about the stability of higher order genome organisation within cell populations from the same species. Previously Hi-C studies have compared across two samples per species, such as K562 against GM06990\cite{Lieberman2009} or IMR90 against GM12878.\cite{Dixon2012} Here we make use of three Hi-C datasets corresponding to extensively-studied human cell lines: K562, GM12878 and H1 hESC. Together these make up the "Tier 1" cell lines studied by the ENCODE consortium,\cite{Dunham2012} hence have huge amounts of matched ChIP-seq and histone modification data available. 
+In this chapter we uniformly reprocessed publicly-available human Hi-C datasets in order to address fundamental questions about the stability of higher order genome organisation between cell populations from the same species. Previously Hi-C studies have compared across two samples per species, such as K562 against GM06990\cite{Lieberman2009} or IMR90 against GM12878.\cite{Dixon2012} Here we make use of three Hi-C datasets corresponding to extensively-studied human cell lines: K562, GM12878 and H1 hESC. Together these make up the "Tier 1" cell lines studied by the ENCODE consortium,\cite{Dunham2012} hence have huge amounts of matched ChIP-seq and histone modification data available. 
 
-By combinatorial reanalysis of these cell-matched datasets, we can investigate the relationships between higher order chromatin structure and locus-level chromatin features more comprehensively, to our knowledge, than any previous study.
+By combinatorial reanalysis of these cell-matched datasets, we can comprehensively investigate the quantitative relationships between higher order chromatin structure and locus-level chromatin features.
 
 % Table: description of cell lines
 
@@ -127,7 +127,7 @@ Chromosome compartments have previously been called through simple thresholding 
 \end{center}
 \end{figure} 
 
-Having called compartments we can compare their properties across cell types. In each case, a majority of chromosome compartments are in the range $0$--$10$ Mb in size, with a handful compartments reaching up to $40$ Mb in size (Fig. \ref{fig:compsizedists}). Median sizes for compartments called in this work match those reported previously, with a median size of around $5 Mb$.\cite{Dekker2013} Our slightly larger mean compartment sizes (up to $7.6$ Mb in H1 hESC) may be due to our altered domain calling procedure (Fig. \ref{fig:denoise}) and is clearly influenced by some large outliers (Fig. \ref{fig:compsizedists}).
+Having called compartments we can compare their properties across cell types. In each case, a majority of chromosome compartments are in the range $0$--$10$ Mb in size, with a handful compartments reaching up to $40$ Mb in size (Fig. \ref{fig:compsizedists}). Median sizes for compartments called in this work match those reported previously, with a median size of around $5$ Mb.\cite{Dekker2013} Our slightly larger mean compartment sizes (up to $7.6$ Mb in H1 hESC) may be due to our altered domain calling procedure (Fig. \ref{fig:denoise}) and is clearly influenced by some large outliers (Fig. \ref{fig:compsizedists}).
 
 \begin{figure}
 \begin{center}
@@ -195,7 +195,7 @@ The eigenvector compartment profile is shown for chromosome 2 for three human ce
 
 \section{Domain epigenetics}
 
-The use of well-studied human cell types allows intersection with publicly-available epigenomics datasets, such as those produce by the ENCODE consortium.\cite{Dunham2012} In total, 35 cell-matched ChIP-seq datasets were available for all three of the tier 1 ENCODE cell lines: GM12878, H1 hESC and K562 (see Methods \ref{methods:encode}). 
+The use of well-studied human cell types allows intersection with publicly-available epigenomics datasets, such as those produce by the ENCODE consortium.\cite{Dunham2012} In total, 35 cell-matched ChIP-seq datasets were available for all three of the tier 1 ENCODE cell lines: GM12878, H1 hESC and K562 (see Methods \ref{methods:encode}). In this section we integrate reprocessed Hi-C data and derived higher order domains with these various high-resolution datasets.
 
 \subsection{A/B compartments}
 
@@ -217,11 +217,11 @@ Exceptions to this rule are few. However the repressive histone modification H3k
 
 \subsection{TAD classes}
 
-Unlike compartments, initially TAD were not observably correlated with blocks of chromatin features (e.g.\citenum{Dixon2012}). Later studies have linked TADs with such enrichments, first in \emph{Drosophila}\cite{Sexton2012} and later in human cells, where it was argued TADs are merely a low-resolution window to smaller "sub-compartments", bearing similar active and inactive marks to their much-larger namesakes.\cite{Rao2014}
+Unlike compartments, initially TAD were not observably correlated with blocks of chromatin features.\cite{Dixon2012} Later studies have linked TADs with such enrichments, first in \emph{Drosophila}\cite{Sexton2012} and later in human cells, where it was argued TADs are merely a low-resolution window to smaller "sub-compartments", bearing similar active and inactive marks to their much-larger namesakes.\cite{Rao2014} Here we look for evidence that TADs called in our human cell types correspond to the "epigenetic domains" identified in \emph{Drosophila} by \citet{Sexton2012} Epigenetic domains were identified through supervised clustering of physical domains by their average enrichment for selected epigenomic features of known function, for example enrichment of H3K27me3 mark was used to call Polycomb (PcG) associated domains. 
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=4.4in]{figs/tads_encode.pdf}
+\includegraphics[width=4.5in]{figs/tads_encode.pdf}
 \captionsetup{width=\textwidth}
 \caption[TADs reflect epigenetic domains.]{ {\bf TADs reflect epigenetic domains. }
 Following the Drosophila results of \citet{Sexton2012}, clustering of TAD domains by mean log2 signal of 34 ENCODE features distinguishes “null”, “active” and polycomb-associated (PcG) domains, as well as reflecting the encompassing A/B compartments.
@@ -229,14 +229,16 @@ Following the Drosophila results of \citet{Sexton2012}, clustering of TAD domain
 \end{center}
 \end{figure} 
 
-Here we look for evidence of the \citet{Sexton2012} characterisation of TADs called in our human cell types. We found that TADs called across the three cell types used in this work could be clustered into transcriptionally active (active), repressed heterochromatin (null) and polycomb-associated (PcG) domains, based on the patterns of DNase hypersensitivity, H3k9me3 and H3k27me3, respectively (Fig. \ref{fig:tadencode}). This analysis reveals that active compartments typically cover both active and PcG-associated TADs, while B compartments appear more homogeneous and are composed mostly of H3k9me3-enriched heterochromatin even when considering fine-grained TAD structures rather than megabase-sized genomic blocks.
+We found that TADs called across the three cell types used in this work could similarly be clustered into transcriptionally active (active), repressed heterochromatin (null) and polycomb-associated (PcG) domains, based on the patterns of DNase hypersensitivity, H3k9me3 and H3k27me3, respectively (Fig. \ref{fig:tadencode}). \emph{Drosophila} physical domains were clustered into four categories, with three of those matching our annotations. The fourth \emph{Drosophila} domain type was enriched for the HP1 protein (therefore likely centromeric) for which we did not have ENCODE ChIP-seq data in all human cell types under study. 
 
-These findings also link with recent work that suggested TADs are windows unto ``sub-compartments"\cite{Rao2014} which more closely reflect the functional enrichments of compartments. However, in our data we did not find statistical support for the suggested 5 classes of sub-compartment; instead, an ensemble of algorithms for optimising the number of cluster centroids voted for two or three clusters of TADs (\emph{data not shown}). This is not wholly surprising as \citet{Rao2014} report sub-compartments only on extremely deep-sequenced samples, and at a scale below that of TADs.
+This analysis reveals that active compartments typically cover both active and PcG-associated TADs, while B compartments appear more homogeneous and are composed mostly of H3k9me3-enriched heterochromatin even when considering fine-grained TAD structures rather than megabase-sized genomic blocks (Fig. \ref{fig:tadencode}).
+
+These findings also link with recent work that suggested TADs are windows unto ``sub-compartments"\cite{Rao2014} which more closely reflect the functional enrichments of compartments. However, in our data we did not find statistical support for the suggested 5 classes of sub-compartment; instead, an ensemble of algorithms for optimising the number of cluster centroids voted for two or three clusters of TADs (\emph{data not shown}). This is not wholly surprising as \citet{Rao2014} report sub-compartments only on extremely deep-sequenced samples, and at a scale of below that of TADs.
 
 \section{Variable regions}\label{sec:variableregions}
 % investigate those regions which are "flipped"
 
-Despite the vast majority of the genome being in matched chromatin compartments, there are also regions of disagreement. Reasons for observable differences include technical errors and bias, but also more interesting functional explanations, where cell-type specific activation or repression is reflected in changes in higher order structure.
+Despite the vast majority of the genome being in matched chromatin compartments across human cell types (Fig. \ref{fig:wiggles}), there are also regions of disagreement. Reasons for observable differences include technical errors and biases, but also more interesting functional explanations, where cell-type specific activation or repression is reflected in changes in higher order structure.
 
 To conservatively call regions of variable structure (RVS), we used HMM-called compartment states and selected those which were either: i) open in one cell type and closed in both others or ii) closed in one cell type and open in both others. This left sets of RVS which could be considered as "flipped open" or "flipped closed" in a given cell type.
 
@@ -253,7 +255,7 @@ Regions occupying the active A nuclear compartment in one cell type, but the rep
 % fig 1.
 \subsection{Chromatin state enrichment}\label{sec:chromstateenrich}
 
-Given our conservative definition of RVS (Section \ref{sec:variableregions}), such notable changes between transcriptionally permissive and repressive environments might be expected to be associated with cell-type-specific biology, such as functional chromatin states. To test this, we used consensus predicted chromatin state annotations, built from two machine learning algorithms, ChromHMM\cite{Ernst2012} and SegWay\cite{Hoffman2012, Hoffman2013}, and tested for enrichment or depletion in our set of RVS (Methods \ref{enhancer-enrichment}).
+Given our conservative definition of RVS (Section \ref{sec:variableregions}), such notable changes between transcriptionally permissive and repressive environments might be expected to be associated with cell-type-specific biology, such as functional chromatin states. To test this, we used consensus predicted chromatin state annotations, built from two machine learning algorithms, \texttt{ChromHMM}\cite{Ernst2012} and \texttt{SegWay}\cite{Hoffman2012, Hoffman2013}, and tested for enrichment or depletion in our set of RVS (Methods \ref{enhancer-enrichment}).
 
 We found that RVS show a striking enrichment for cell-type specific enhancers in both of our derived cell lines, but not in embryonic stem cells (Fig. \ref{fig:enhancerstates}). This observation can be explained as the undifferentiated cell type would not be expected to have lineage-specific enhancer contacts active in its pluripotent state. The same pattern was not seen for enhancers shared between two or more of the cell types under study. We observed a similar enrichment for cell-type-specific transcription but not for several other chromatin states including promoter activity (Fig. \ref{fig:stateenrich}).
 
@@ -297,7 +299,9 @@ The size of RVS could also explain we do not capture the relationship hinted at 
 
 \subsection{Contact changes}
 
-A defining characteristic of active A compartment regions is a preferential bias in contacting other A compartment regions.\cite{Lieberman2009} However, it is not clear whether cell-type-specific transitions in higher-order structure are solely compartment-level phenomena, or involve other structural strata. We therefore examined the genome-wide contact profiles of each region of variable cell-type-specific chromatin structure in detail. If these cell-type-specific structures are mediated by finer-scale structural levels (such as TADs) we might expect to see predominantly short-range contacts in their underlying contact profile. Instead, we found that variable regions preferentially interact with other A compartment regions in the cell types in which they are active (\ref{fig:longrange}), but not in the other cell types in which they are inactive. This supports the idea that these cell-type-specific regions are undergoing compartment-level transitions, disproportionately mediated by the formation of long-range contacts, while also not precluding additional changes at lower levels such as TADs.
+A defining characteristic of active A compartment regions is a preferential bias in contacting other A compartment regions.\cite{Lieberman2009} However, it is not clear whether cell-type-specific transitions in higher-order structure are solely compartment-level phenomena, or involve other structural strata. We therefore examined the genome-wide contact profiles of each region of variable cell-type-specific chromatin structure in detail. 
+
+If our cell-type-specific RVS are mediated by finer-scale structural levels (such as TADs) we might expect to see predominantly short-range contact changes in their underlying contact profile. Instead, we found that variable regions preferentially interact with other A compartment regions in the cell types in which they are active (Fig. \ref{fig:longrange}), but not in the other cell types in which they are inactive. This supports the idea that these cell-type-specific regions are undergoing compartment-level transitions, disproportionately mediated by the formation of long-range contacts, while also not precluding additional changes at lower levels such as TADs.
 
 \begin{figure}
 \begin{center} 
@@ -317,7 +321,7 @@ greater than expected interaction bias with active compartments. These data are 
 
 \section{Nuclear positioning}
 
-Chromosome positioning within the nucleus is known to reflect gene density, with the most gene-dense chromosomes occupying the centre of the nucleus in human cells.\cite{Bickmore2013} \citet{Kalhor2012} used a Hi-C variant to recreate probability density maps of chromosome positions which again reflected this feature of higher order chromatin organisation, and also reported active regions were more diffuse than inactive. A testable expectation with the eigenvector data used in this work is that active A compartments are enriched in the central nucleus of our human cell types, and B compartments are preferentially located in the nuclear periphery.
+Chromosome positioning within the nucleus is known to reflect gene density, with the most gene-dense chromosomes occupying the centre of the nucleus in human cells.\cite{Bickmore2013} \citet{Kalhor2012} used a Hi-C variant to recreate probability density maps of chromosome positions which again reflected this feature of higher order chromatin organisation, and also reported active regions were more diffuse than inactive. A testable hypothesis with the eigenvector data used in this work is that active A compartments are enriched in the central nucleus of our human cell types, and B compartments are preferentially located in the nuclear periphery.
 
 To test this, published data on chromosome positioning preference within
 the nucleus was used to label chromosomes as ``central'' or 

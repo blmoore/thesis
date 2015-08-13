@@ -276,11 +276,13 @@ This formulation introduces the $\lambda$ parameter as used in Section \ref{sec:
 
 In this thesis, we used the \texttt{glmnet} R package to fit LASSO models.\cite{glmnet1, glmnet2} In order to select $\lambda$, we use a $10$-fold cross-validation approach on a separate held-out training set. We chose that $\lambda$ which produced a mean cross-validated error within $1$ standard error of the minimum, thus favouring a sparser model than the global minimima.
 
-\subsection{Other modelling approaches}
+\subsection{Other modelling approaches}\label{meth:othermodels}
  
 Linear regression was used as a baseline for comparison with more complicated approaches such as Random Forest. If the same modelling accuracy could be achieved with simple multiple linear regression, this would be a faster and more interpretable modelling framework.
 
 Partial least squares (PLS) regression was also used to model compartment profiles. PLS regression is well-suited to highly correlated inputs, employing a dimensionality reduction step to help address this redundancy, yet lacks the interpretability of a multiple linear regression. Similar to RF, PLS regression is aimed at building highly-predictive models rather than understanding singular relationships between a predictor and independent variable.\cite{Tobias1995} The \texttt{plsdepot} R implementation of PLS regression was used in this work.
+
+% XX circle of correlations
 
 %\subsection{Graphical lasso}
 %Regularised models made use of the Graphical LASSO\cite{Friedman2008}
