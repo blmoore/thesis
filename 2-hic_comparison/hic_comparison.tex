@@ -193,7 +193,7 @@ The eigenvector compartment profile is shown for chromosome 2 for three human ce
 \end{center} 
 \end{figure} 
 
-\section{Domain epigenetics}
+\section{Domain epigenomics}
 
 The use of well-studied human cell types allows intersection with publicly-available epigenomics datasets, such as those produce by the ENCODE consortium.\cite{Dunham2012} In total, 35 cell-matched ChIP-seq datasets were available for all three of the tier 1 ENCODE cell lines: GM12878, H1 hESC and K562 (see Methods \ref{methods:encode}). In this section we integrate reprocessed Hi-C data and derived higher order domains with these various high-resolution datasets.
 
@@ -217,13 +217,13 @@ Exceptions to this rule are few. However the repressive histone modification H3k
 
 \subsection{TAD classes}
 
-Unlike compartments, initially TAD were not observably correlated with blocks of chromatin features.\cite{Dixon2012} Later studies have linked TADs with such enrichments, first in \emph{Drosophila}\cite{Sexton2012} and later in human cells, where it was argued TADs are merely a low-resolution window to smaller "sub-compartments", bearing similar active and inactive marks to their much-larger namesakes.\cite{Rao2014} Here we look for evidence that TADs called in our human cell types correspond to the "epigenetic domains" identified in \emph{Drosophila} by \citet{Sexton2012} Epigenetic domains were identified through supervised clustering of physical domains by their average enrichment for selected epigenomic features of known function, for example enrichment of H3K27me3 mark was used to call Polycomb (PcG) associated domains. 
+Unlike compartments, initially TAD were not observably correlated with blocks of chromatin features.\cite{Dixon2012} Later studies have linked TADs with such enrichments, first in \emph{Drosophila}\cite{Sexton2012} and later in human cells, where it was argued TADs are merely a low-resolution window to smaller "sub-compartments", bearing similar active and inactive marks to their much-larger namesakes.\cite{Rao2014} Here we look for evidence that TADs called in our human cell types correspond to the "epigenomic domains" identified in \emph{Drosophila} by \citet{Sexton2012} Epigenomic domains were identified through supervised clustering of physical domains by their average enrichment for selected epigenomic features of known function, for example enrichment of H3K27me3 mark was used to call Polycomb (PcG) associated domains. 
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=4.5in]{figs/tads_encode.pdf}
 \captionsetup{width=\textwidth}
-\caption[TADs reflect epigenetic domains.]{ {\bf TADs reflect epigenetic domains. }
+\caption[TADs reflect epigenomic domains.]{ {\bf TADs reflect epigenomic domains. }
 Following the Drosophila results of \citet{Sexton2012}, clustering of TAD domains by mean log2 signal of 34 ENCODE features distinguishes “null”, “active” and polycomb-associated (PcG) domains, as well as reflecting the encompassing A/B compartments.
 }\label{fig:tadencode}
 \end{center}
