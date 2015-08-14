@@ -241,6 +241,17 @@ A straightforward approach to this modelling task is to build a supervised class
 
 To build parsimonious and accurate models (as discussed in Section \ref{sec:parsimoniousmodels}), we used the \texttt{AUC-RF} algorithm.\cite{Calle2011} This is a form of stepwise model selection which optimises feature subset selection relative to the area under the receiver operating characteristic (AUROC), a metric which captures both the speciality and sensitivity of a classifier. 
 
+\begin{figure}
+\begin{center} 
+\includegraphics[width=3in]{figs/tadbounds_auroc.pdf}
+\captionsetup{width=\textwidth}
+\caption[ Receiver operating characteristics for TAD boundary classifications. ]{ {\bf Receiver operating characteristics for TAD boundary classifications. }
+Placeholder XX --- I think there's a bug in here, they look too similar.
+}\label{fig:tadbounds_auroc}
+\end{center}
+\end{figure} 
+
+
 % Use these previous results to guide models :  include ncRNA counts?
 
 \section{MetaTAD boundaries}\label{sec:metatads}
