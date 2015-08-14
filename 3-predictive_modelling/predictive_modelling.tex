@@ -541,7 +541,7 @@ As recognised through our use of Hidden Markov Models (Methods \ref{sec:compartm
 
 This is for two reasons: firstly non independence could be thought of as an artefact of bin-sizing (we have elected to use regular, fixed binning beneath the scale of compartments themselves whereas another approach could use variable bin sizes, for example per compartment, TAD or restriction fragment); secondly using information of a bin's surroundings may obscure by proxy the chromatin features which would otherwise prove predictive. As an example, knowing that bin $x_{i-1}$ and bin $x_{i+1}$ are in compartment state A would allow us with high confidence to predict the state of bin $x_i$, but without learning anything of the region's relationship with its encompassed histone modifications and bound factors.
 
-\section{Parsimonious models from expanded feature sets}
+\section{Parsimonious models from expanded feature sets}\label{sec:parsimoniousmodels}
 
 Strongly predictive models can be useful tools to reason about a complex system, however from a researcher's perspective there also exists a trade-off between predictive power and parsimony. Namely simpler models with fewer inputs may be more interpretable and of wider utility, for example in cell types with less ChIP-seq data available than those used in this work. For this reason we explore parsimonious models with reduced feature sets, with an aim to build simpler models of chromatin state while retaining, if possible, similar levels of predictive accuracy.
 

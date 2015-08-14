@@ -233,6 +233,16 @@ We have shown TAD and compartment domain boundaries to be well-marked by a varie
 
 We attempted to model TAD boundaries in a variety of ways: firstly a using a class-balanced classification framework and secondly through indirect models of directionality index and the downstream domain-caller HMM state.\cite{Dixon2012}
 
+\subsection{Learning boundary classification}
+
+Results presented in this thesis describe the spectra of chromatin marks over TAD boundaries (Figs. \ref{fig:alltads}, \ref{fig:boundarysummary}), it is thus of interested to test if we can build a predictive model that can call boundary regions from these marks alone. Such a model, if successful, could have broad utility in domain prediction in metazoan organisms where Hi-C data is not available.
+
+A straightforward approach to this modelling task is to build a supervised classifier that learns the associations between two classes of genomic region: those labelled TAD boundaries and those which are not. To this end, we again turn to a Random Forest (RF) model, due to its many attractive properties discussed previously (Methods \ref{sec:rf}). Our input feature set is made up of the same $35$ matched features used in models of compartment eigenvector (Section \ref{sec:modhoc}). Classifications are those produced by the \citet{Dixon2012} TAD calling algorithm (Methods \ref{meth:tadcalling}), therefore TAD boundaries were resolved to 40 kb bins. We class such bins as boundary true positives (TP), and select matched bins $500$ kb upstream as boundary true negatives (TN) for our training set.
+
+To build parsimonious and accurate models (as discussed in Section \ref{sec:parsimoniousmodels}), we used the \texttt{AUC-RF} algorithm.\cite{Calle2011} This is a form of stepwise model selection which optimises feature subset selection relative to the area under the receiver operating characteristic (AUROC), a metric which captures both the speciality and sensitivity of a classifier. 
+
+% Use these previous results to guide models :  include ncRNA counts?
+
 \section{MetaTAD boundaries}\label{sec:metatads}
 
 Our collaborators uncovered the concept of "metaTADs": sequential aggregations of adjacent and strongly-interacting TADs to form a hierarchy of domain organisation covering each chromosome.
