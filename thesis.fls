@@ -580,6 +580,9 @@ INPUT ./figs/rep_classbubble.pdf
 INPUT figs/rep_fambubble.pdf
 INPUT ./figs/rep_fambubble.pdf
 INPUT ./figs/rep_fambubble.pdf
+INPUT figs/tadbounds_auroc.pdf
+INPUT ./figs/tadbounds_auroc.pdf
+INPUT ./figs/tadbounds_auroc.pdf
 INPUT figs/mt_calibrate.pdf
 INPUT ./figs/mt_calibrate.pdf
 INPUT ./figs/mt_calibrate.pdf
