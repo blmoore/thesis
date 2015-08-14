@@ -34,7 +34,7 @@
 
 %\maketitle
 
-\chapter{Chromatin domain boundaries}
+\chapter{Chromatin domain boundaries}\label{chap:boundaries}
 
 \section{Introduction}
 
@@ -54,7 +54,7 @@ Many questions remain about chromatin boundaries. For example, are the observed 
 
 The mammalian genome is organized into TADs, predominantly self-interacting chromatin domains, with boundary regions reportedly associated with pronounced peaks and troughs of particular features within 500 kb of the predicted boundary.\cite{Dixon2012} Exploration of this phenomenon using a set of 24 mouse ESC chromatin features (and a smaller number of human ESC features) reportedly revealed enrichment peaks of CTCF, H3K4me3 and H3K36me3, as well as a pronounced dip in H3K9me3, suggesting that high levels of transcription may contribute to boundary formation.\cite{Dixon2012} However, it was unclear whether other features show unusual patterns in TAD boundary regions, and whether the constellation of features involved changes between cell types. The features associated with boundaries separating A and B compartments calculated from Hi-C eigenvectors have not been studied to our knowledge. The datasets assembled here, consisting of 35 matched chromatin features across three cell types, allow us to conduct the first comparative study of the constituents of human TAD and compartment boundary regions.
 
-We derived TAD boundaries according to established methods (see Methods \ref{tads}) for all three cell types under study. We then sought evidence for significantly enriched or depleted features at TAD boundary regions using a conservative approach (a nonparametric statistical test and Bonferroni multiple testing correction, see Methods \ref{tads}).
+We derived TAD boundaries according to established methods (see Methods \ref{meth:tadcalling}) for all three cell types under study. We then sought evidence for significantly enriched or depleted features at TAD boundary regions using a conservative approach (a nonparametric statistical test and Bonferroni multiple testing correction, see Methods \ref{tads}).
 
 \begin{figure}
 \begin{center} 
@@ -304,7 +304,7 @@ Boundary average-o-grams are shown for TAD and metaTAD boundaries with variable 
 \end{center}
 \end{figure} 
 
-\subsection{Lamina associated domains}\label{sec:malts}
+\subsection{Lamina associated domains}\label{sec:mtlads}
 
 We report a coincidence of metaTAD boundaries and lamina associated domains (LADs), and at a greater level than that observed with smaller TADs (Fig. \ref{fig:mtfeats}). This hints at an association between metaTADs and LADs which can be further investigated.
 
