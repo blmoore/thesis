@@ -119,12 +119,12 @@
 \contentsline {section}{\numberline {6.1}Introduction}{97}{section.6.1}
 \contentsline {section}{\numberline {6.2}4C at the SHH locus}{97}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Analysis of ZRS interactions}{98}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}4C / Hi-C comparison}{100}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.2}4C / Hi-C comparison}{101}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}Assay diagnostics}{101}{subsection.6.2.3}
 \contentsline {subsection}{\numberline {6.2.4}3D modelling with 5C data}{101}{subsection.6.2.4}
 \contentsline {section}{\numberline {6.3}5C in the HoxD region}{101}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Differential contacts}{101}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{101}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.1}Differential contacts}{102}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{102}{subsection.6.3.2}
 \contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{105}{chapter.7}
 \contentsline {section}{\numberline {7.1}Conclusion}{107}{section.7.1}
 \contentsline {section}{\numberline {7.2}Future research}{107}{section.7.2}
