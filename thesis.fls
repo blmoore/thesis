@@ -580,6 +580,9 @@ INPUT ./figs/rep_classbubble.pdf
 INPUT figs/rep_fambubble.pdf
 INPUT ./figs/rep_fambubble.pdf
 INPUT ./figs/rep_fambubble.pdf
+INPUT figs/AUCRF_opt.pdf
+INPUT ./figs/AUCRF_opt.pdf
+INPUT ./figs/AUCRF_opt.pdf
 INPUT figs/tadpred_auroc.pdf
 INPUT ./figs/tadpred_auroc.pdf
 INPUT ./figs/tadpred_auroc.pdf

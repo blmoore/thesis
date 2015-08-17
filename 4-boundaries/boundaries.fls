@@ -303,6 +303,9 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
+INPUT figs/AUCRF_opt.pdf
+INPUT ./figs/AUCRF_opt.pdf
+INPUT ./figs/AUCRF_opt.pdf
 INPUT figs/tadpred_auroc.pdf
 INPUT ./figs/tadpred_auroc.pdf
 INPUT ./figs/tadpred_auroc.pdf

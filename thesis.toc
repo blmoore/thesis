@@ -111,7 +111,7 @@
 \contentsline {subsection}{\numberline {5.2.2}Repeats}{84}{subsection.5.2.2}
 \contentsline {section}{\numberline {5.3}De novo boundary prediction}{86}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Learning boundary classification}{86}{subsection.5.3.1}
-\contentsline {section}{\numberline {5.4}MetaTAD boundaries}{88}{section.5.4}
+\contentsline {section}{\numberline {5.4}MetaTAD boundaries}{89}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}MetaTAD / TAD boundary comparison}{89}{subsection.5.4.1}
 \contentsline {subsection}{\numberline {5.4.2}Lamina associated domains}{93}{subsection.5.4.2}
 \contentsline {subsection}{\numberline {5.4.3}Boundaries over a time series}{94}{subsection.5.4.3}
@@ -130,5 +130,5 @@
 \contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{107}{chapter.7}
 \contentsline {section}{\numberline {7.1}Conclusion}{109}{section.7.1}
 \contentsline {section}{\numberline {7.2}Future research}{109}{section.7.2}
-\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{111}{chapter*.78}
-\contentsline {chapter}{References}{131}{chapter*.79}
+\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{111}{chapter*.79}
+\contentsline {chapter}{References}{131}{chapter*.80}
