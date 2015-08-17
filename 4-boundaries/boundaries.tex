@@ -237,22 +237,34 @@ We attempted to model TAD boundaries in a variety of ways: firstly a using a cla
 
 Results presented in this thesis describe the spectra of chromatin marks over TAD boundaries (Figs. \ref{fig:alltads}, \ref{fig:boundarysummary}), it is thus of interested to test if we can build a predictive model that can call boundary regions from these marks alone. Such a model, if successful, could have broad utility in domain prediction in metazoan organisms where Hi-C data is not available.
 
-A straightforward approach to this modelling task is to build a supervised classifier that learns the associations between two classes of genomic region: those labelled TAD boundaries and those which are not. To this end, we again turn to a Random Forest (RF) model, due to its many attractive properties discussed previously (Methods \ref{sec:rf}). Our input feature set is made up of the same $35$ matched features used in models of compartment eigenvector (Section \ref{sec:modhoc}). Classifications are those produced by the \citet{Dixon2012} TAD calling algorithm (Methods \ref{meth:tadcalling}), therefore TAD boundaries were resolved to 40 kb bins. We class such bins as boundary true positives (TP), and select matched bins $500$ kb upstream as boundary true negatives (TN) for our training set.
+A straightforward approach to this modelling task is to build a supervised classifier that learns the associations between two classes of genomic region: those labelled TAD boundaries and those which are not. To this end, we again turn to a Random Forest (RF) model, due to its many attractive properties discussed previously (Methods \ref{sec:rf}). Our input feature set is made up of the same $35$ matched features used in models of compartment eigenvector (Section \ref{sec:modhoc}), with the addition of Alu repeat elements (Section \ref{sec:repeats}). Classifications are those produced by the \citet{Dixon2012} TAD calling algorithm (Methods \ref{meth:tadcalling}), therefore TAD boundaries were resolved to 40 kb bins. We class such bins as boundary true positives (TP), and select matched bins $500$ kb upstream as boundary true negatives (TN) for our training set.
 
-To build parsimonious and accurate models (as discussed in Section \ref{sec:parsimoniousmodels}), we used the \texttt{AUC-RF} algorithm.\cite{Calle2011} This is a form of stepwise model selection which optimises feature subset selection relative to the area under the receiver operating characteristic (AUROC), a metric which captures both the speciality and sensitivity of a classifier. 
+To build parsimonious and accurate models (as discussed in Section \ref{sec:parsimoniousmodels}), we used the \texttt{AUC-RF} algorithm.\cite{Calle2011} This is a form of stepwise model selection which optimises feature subset selection relative to the area under the receiver operating characteristic (AUROC), a metric which captures both the speciality and sensitivity of a classifier. This method was used a training set of $80\%$ of boundaries per cell type, with predictions assessed on out-of-bag (OOB) data as each forest was constructed. Selected models were then applied to the remaining held-out test set of $20\%$ of TAD boundaries, with their matched non-boundary bins (full details are in Methods \ref{meth:tadpred}). 
+
+Predictive performance of these models is shown as ROC plus (Fig. \ref{fig:tadpred_auroc}) and in each case an AUROC of around $0.67$--$0.71$ was achieved. In practice, this means that each classifier has around a $70\%$ probability of ranking a random boundary region more highly than a random non-boundary region.\cite{Fawcett2006a} Using a commonly-used AUROC "rule of thumb", this performance falls between the ranges of "poor" to "moderate" classification accuracy.\cite{Streiner2007a}
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=3in]{figs/tadbounds_auroc.pdf}
+\includegraphics[width=3in]{figs/tadpred_auroc.pdf}
 \captionsetup{width=\textwidth}
 \caption[ Receiver operating characteristics for TAD boundary classifications. ]{ {\bf Receiver operating characteristics for TAD boundary classifications. }
-Placeholder XX --- I think there's a bug in here, they look too similar.
-}\label{fig:tadbounds_auroc}
+ROCs are shown for three cell-type specific classifiers of TAD boundary bins. The area under each cure is also shown (\emph{inset}).
+}\label{fig:tadpred_auroc}
 \end{center}
 \end{figure} 
 
+With their moderate-to-low classification accuracy in mind, it is still of interest to analyse the variable importances in each cell type model. We find that CTCF stands out as the most informative variable in each classifier by some margin (Fig. \ref{fig:tadpred_varimp}).
 
-% Use these previous results to guide models :  include ncRNA counts?
+\begin{figure}
+\begin{center} 
+\includegraphics[width=5.45in]{figs/tadpred_varimp.pdf}
+\captionsetup{width=\textwidth}
+\caption[ Variable importance for boundary classification Random Forest models. ]{ {\bf Variable importance for boundary classification Random Forest models. }
+The highest ten most important variables in each boundary classification model are shown and ranked by their variable importance as defined by mean decrease in Gini coefficient (Methods \ref{meth:tadpred}).
+}\label{fig:tadpred_varimp}
+\end{center}
+\end{figure} 
+
 
 \section{MetaTAD boundaries}\label{sec:metatads}
 
