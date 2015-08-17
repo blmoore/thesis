@@ -241,6 +241,18 @@ A straightforward approach to this modelling task is to build a supervised class
 
 To build parsimonious and accurate models (as discussed in Section \ref{sec:parsimoniousmodels}), we used the \texttt{AUC-RF} algorithm.\cite{Calle2011} This is a form of stepwise model selection which optimises feature subset selection relative to the area under the receiver operating characteristic (AUROC), a metric which captures both the speciality and sensitivity of a classifier. This method was used a training set of $80\%$ of boundaries per cell type, with predictions assessed on out-of-bag (OOB) data as each forest was constructed. Selected models were then applied to the remaining held-out test set of $20\%$ of TAD boundaries, with their matched non-boundary bins (full details are in Methods \ref{meth:tadpred}). 
 
+% AUC-RF optimisation plots
+\begin{figure}
+\begin{center} 
+\includegraphics[width=3in]{figs/AUCRF_opt.pdf}
+\captionsetup{width=\textwidth}
+\caption[ The AUC-RF stepwise algorithm finds that variable subset which maximises the AUROC on out-of-bag data. ]{ {\bf The AUC-RF stepwise algorithm finds that variable subset which maximises the AUROC on out-of-bag data. }
+The AUROC is calculated at each stage of a stepwise method for selecting the best subset model from a full featureset. Here AUC-RF selected the following combinations. K562: XXX The AUC-RF algorithm is explained in Methods \ref{meth:tadpred}.
+}\label{fig:tadpred_opt}
+\end{center}
+\end{figure} 
+
+
 Predictive performance of these models is shown as ROC plus (Fig. \ref{fig:tadpred_auroc}) and in each case an AUROC of around $0.67$--$0.71$ was achieved. In practice, this means that each classifier has around a $70\%$ probability of ranking a random boundary region more highly than a random non-boundary region.\cite{Fawcett2006a} Using a commonly-used AUROC "rule of thumb", this performance falls between the ranges of "poor" to "moderate" classification accuracy.\cite{Streiner2007a}
 
 \begin{figure}
@@ -260,7 +272,7 @@ With their moderate-to-low classification accuracy in mind, it is still of inter
 \includegraphics[width=5.45in]{figs/tadpred_varimp.pdf}
 \captionsetup{width=\textwidth}
 \caption[ Variable importance for boundary classification Random Forest models. ]{ {\bf Variable importance for boundary classification Random Forest models. }
-The highest ten most important variables in each boundary classification model are shown and ranked by their variable importance as defined by mean decrease in Gini coefficient (Methods \ref{meth:tadpred}).
+The highest ten most important variables in each boundary classification model are shown and ranked by their variable importance as defined by mean decrease in Gini coefficient when permuted (Methods \ref{meth:tadpred}).
 }\label{fig:tadpred_varimp}
 \end{center}
 \end{figure} 
