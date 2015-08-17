@@ -51,7 +51,8 @@
 \contentsline {subsection}{\numberline {2.4.3}Gene ontology analysis}{25}{subsection.2.4.3}
 \contentsline {section}{\numberline {2.5}Boundaries}{25}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}TAD boundaries}{25}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Compartments}{26}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.2}Predicting TAD boundaries}{26}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Compartments}{26}{subsection.2.5.3}
 \contentsline {section}{\numberline {2.6}MetaTAD analysis}{26}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}Size selection}{26}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}Collaborator datasets}{27}{subsection.2.6.2}
@@ -110,12 +111,12 @@
 \contentsline {subsection}{\numberline {5.2.2}Repeats}{84}{subsection.5.2.2}
 \contentsline {section}{\numberline {5.3}De novo boundary prediction}{86}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Learning boundary classification}{86}{subsection.5.3.1}
-\contentsline {section}{\numberline {5.4}MetaTAD boundaries}{87}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}MetaTAD / TAD boundary comparison}{88}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Lamina associated domains}{91}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Boundaries over a time series}{93}{subsection.5.4.3}
-\contentsline {section}{\numberline {5.5}Other boundaries}{95}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Giemsa bands}{95}{subsection.5.5.1}
+\contentsline {section}{\numberline {5.4}MetaTAD boundaries}{88}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}MetaTAD / TAD boundary comparison}{89}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Lamina associated domains}{93}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Boundaries over a time series}{94}{subsection.5.4.3}
+\contentsline {section}{\numberline {5.5}Other boundaries}{96}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Giemsa bands}{96}{subsection.5.5.1}
 \contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Local chromatin conformation}}{99}{chapter.6}
 \contentsline {section}{\numberline {6.1}Introduction}{99}{section.6.1}
 \contentsline {section}{\numberline {6.2}4C at the SHH locus}{99}{section.6.2}
@@ -129,5 +130,5 @@
 \contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{107}{chapter.7}
 \contentsline {section}{\numberline {7.1}Conclusion}{109}{section.7.1}
 \contentsline {section}{\numberline {7.2}Future research}{109}{section.7.2}
-\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{111}{chapter*.77}
-\contentsline {chapter}{References}{131}{chapter*.78}
+\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{111}{chapter*.78}
+\contentsline {chapter}{References}{131}{chapter*.79}
