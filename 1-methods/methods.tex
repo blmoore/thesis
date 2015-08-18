@@ -234,7 +234,7 @@ Forest regression model was learned from all 1 Mb bins for a given cell
 type. This was then used to predict all bins from each of the other two
 cell types.
 
-To test the sensitivity of the models to resolution, we also applied cell-type specific models learnt at 1 Mb resolution to input features binned at 100 kb. 
+To test the sensitivity of the models to resolution, we also applied cell-type specific models learnt at 1 Mb resolution to input features binned at 100 kb. This was done by training a Random Forest regression model on all available 1 Mb bins in a given cell type, then applying that model to the prediction of all compartment eigenvectors derived at 100 kb. Model performance was then assessed as above, with the caveat that here the test set represents a higher-resolution window onto the original training set, therefore we might expect this to inflate the measures of generalisation error.
 
 \subsection{Stepwise regression}\label{meth:stepregress}
 
@@ -285,31 +285,6 @@ Partial least squares (PLS) regression was also used to model compartment profil
 
 % XX circle of correlations
 
-%\subsection{Graphical lasso}
-%Regularised models made use of the Graphical LASSO\cite{Friedman2008}
-%(least absolute shrinkage and selection operator) as a method of
-%$L_1$-norm based
-%regularisation, implemented via the \texttt{glasso} R package. The
-%graphical lasso provides tuneable regularisation which is
-%capable of feature selection via minimising regression parameters to
-%0. It was chosen in this case due to the multicollinearity of the
-%featureset, the algorithm's fast speed of
-%execution and the intuitiveness a graphical model
-%presents.\cite{Friedman2008} 
-%
-%More specifically, the graphical lasso regulates the number of 0s in
-%the inverse covariance matrix, $\bm{\Theta}=\bm{\Sigma}^{-1}$, also known as the
-%precision matrix. Then if element $\theta_{ij}=0$, the variables $X_i$ and $X_j$ can be said to be
-%conditionally independent, given the remaining
-%variables.\cite{Mazumder2012} The algorithm minimises a negative
-%log-likelihood (Eqn. \ref{eq:glasso}\cite{Mazumder2012}) given the tuning parameter $\lambda$, which was tuned
-%in this case to leave a small number of variables ($<10$)
-%directly dependent on the eigenvector data. \\
-%\begin{equation} \label{eq:glasso}
-%\underset{\bm{\Theta}\prec\bm{0}}{\mathrm{minimise}}~f(\bm{\Theta}) :=
-%-\log\det(\bm{\Theta}) + \mathrm{tr}(\bm{\mathrm{S}\Theta}) + \lambda
-%\lVert\bm{\Theta}\rVert_1
-%\end{equation}
 
 \section{Variable regions}\label{variable-regions}
 
@@ -376,6 +351,12 @@ To compare boundaries between cells, each TAD boundary called in K562 and GM1287
 % AUC_RF alorithm
 % AUROC  why good
 % Classification RF + gini coefficient
+
+To predict TAD boundaries we used a classification Random Forest model, built with the \texttt{AUC-RF} algorithm.\cite{Calle2011}
+
+The input feature set for this model was made up of the same $35$ matched features used in models of compartment eigenvector (Section \ref{sec:modhoc}), with the addition of counts of Alu repeat elements (Section \ref{sec:repeats}). Classifications are those produced by the \citet{Dixon2012} TAD calling algorithm (Methods \ref{meth:tadcalling}), therefore TAD boundaries were resolved to 40 kb bins. We class such bins as boundary true positives (TP), and select matched bins $500$ kb upstream as boundary true negatives (TN) for our training set.
+
+To build parsimonious and accurate models (as discussed in Section \ref{sec:parsimoniousmodels}), we used the  This is a form of stepwise model selection which optimises feature subset selection relative to the area under the receiver operating characteristic (AUROC), a metric which captures both the speciality and sensitivity of a classifier. This method was used a training set of $80\%$ of boundaries per cell type, with predictions assessed on out-of-bag (OOB) data as each forest was constructed. Selected models were then applied to the remaining held-out test set of $20\%$ of TAD boundaries, with their matched non-boundary bins (full details are in Methods \ref{meth:tadpred}). 
 
 
 \subsection{Compartments}\label{sec:compartments}

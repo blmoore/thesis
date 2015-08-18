@@ -19,19 +19,20 @@
 \BOOKMARK [2][-]{subsection.1.4.3}{1.4.3 Gene ontology analysis}{section.1.4}% 19
 \BOOKMARK [1][-]{section.1.5}{1.5 Boundaries}{chapter.1}% 20
 \BOOKMARK [2][-]{subsection.1.5.1}{1.5.1 TAD boundaries}{section.1.5}% 21
-\BOOKMARK [2][-]{subsection.1.5.2}{1.5.2 Compartments}{section.1.5}% 22
-\BOOKMARK [1][-]{section.1.6}{1.6 MetaTAD analysis}{chapter.1}% 23
-\BOOKMARK [2][-]{subsection.1.6.1}{1.6.1 Size selection}{section.1.6}% 24
-\BOOKMARK [2][-]{subsection.1.6.2}{1.6.2 Collaborator datasets}{section.1.6}% 25
-\BOOKMARK [2][-]{subsection.1.6.3}{1.6.3 LAD coincidence}{section.1.6}% 26
-\BOOKMARK [1][-]{section.1.7}{1.7 Giemsa band comparison}{chapter.1}% 27
-\BOOKMARK [1][-]{section.1.8}{1.8 Nuclear positioning}{chapter.1}% 28
-\BOOKMARK [1][-]{section.1.9}{1.9 Modelling transcriptional output}{chapter.1}% 29
-\BOOKMARK [2][-]{subsection.1.9.1}{1.9.1 Reproducing a published study}{section.1.9}% 30
-\BOOKMARK [2][-]{subsection.1.9.2}{1.9.2 Predicting FANTOM5 data}{section.1.9}% 31
-\BOOKMARK [1][-]{section.1.10}{1.10 4C analysis}{chapter.1}% 32
-\BOOKMARK [2][-]{subsection.1.10.1}{1.10.1 Normalisation}{section.1.10}% 33
-\BOOKMARK [2][-]{subsection.1.10.2}{1.10.2 Significance estimation}{section.1.10}% 34
-\BOOKMARK [2][-]{subsection.1.10.3}{1.10.3 3\205D modelling}{section.1.10}% 35
-\BOOKMARK [1][-]{section.1.11}{1.11 5C analysis}{chapter.1}% 36
-\BOOKMARK [1][-]{section.1.12}{1.12 Scripts and other analyses}{chapter.1}% 37
+\BOOKMARK [2][-]{subsection.1.5.2}{1.5.2 Predicting TAD boundaries}{section.1.5}% 22
+\BOOKMARK [2][-]{subsection.1.5.3}{1.5.3 Compartments}{section.1.5}% 23
+\BOOKMARK [1][-]{section.1.6}{1.6 MetaTAD analysis}{chapter.1}% 24
+\BOOKMARK [2][-]{subsection.1.6.1}{1.6.1 Size selection}{section.1.6}% 25
+\BOOKMARK [2][-]{subsection.1.6.2}{1.6.2 Collaborator datasets}{section.1.6}% 26
+\BOOKMARK [2][-]{subsection.1.6.3}{1.6.3 LAD coincidence}{section.1.6}% 27
+\BOOKMARK [1][-]{section.1.7}{1.7 Giemsa band comparison}{chapter.1}% 28
+\BOOKMARK [1][-]{section.1.8}{1.8 Nuclear positioning}{chapter.1}% 29
+\BOOKMARK [1][-]{section.1.9}{1.9 Modelling transcriptional output}{chapter.1}% 30
+\BOOKMARK [2][-]{subsection.1.9.1}{1.9.1 Reproducing a published study}{section.1.9}% 31
+\BOOKMARK [2][-]{subsection.1.9.2}{1.9.2 Predicting FANTOM5 data}{section.1.9}% 32
+\BOOKMARK [1][-]{section.1.10}{1.10 4C analysis}{chapter.1}% 33
+\BOOKMARK [2][-]{subsection.1.10.1}{1.10.1 Normalisation}{section.1.10}% 34
+\BOOKMARK [2][-]{subsection.1.10.2}{1.10.2 Significance estimation}{section.1.10}% 35
+\BOOKMARK [2][-]{subsection.1.10.3}{1.10.3 3\205D modelling}{section.1.10}% 36
+\BOOKMARK [1][-]{section.1.11}{1.11 5C analysis}{chapter.1}% 37
+\BOOKMARK [1][-]{section.1.12}{1.12 Scripts and other analyses}{chapter.1}% 38
