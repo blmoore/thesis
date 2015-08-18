@@ -352,12 +352,9 @@ To compare boundaries between cells, each TAD boundary called in K562 and GM1287
 % AUROC  why good
 % Classification RF + gini coefficient
 
-To predict TAD boundaries we used a classification Random Forest model, built with the \texttt{AUC-RF} algorithm.\cite{Calle2011}
+To predict TAD boundaries we used a classification Random Forest model, built with the \texttt{AUC-RF} algorithm.\cite{Calle2011} This is a form of stepwise model selection which optimises feature subset selection relative to the area under the receiver operating characteristic (AUROC), a metric which captures both the speciality and sensitivity of a classifier. 
 
-The input feature set for this model was made up of the same $35$ matched features used in models of compartment eigenvector (Section \ref{sec:modhoc}), with the addition of counts of Alu repeat elements (Section \ref{sec:repeats}). Classifications are those produced by the \citet{Dixon2012} TAD calling algorithm (Methods \ref{meth:tadcalling}), therefore TAD boundaries were resolved to 40 kb bins. We class such bins as boundary true positives (TP), and select matched bins $500$ kb upstream as boundary true negatives (TN) for our training set.
-
-To build parsimonious and accurate models (as discussed in Section \ref{sec:parsimoniousmodels}), we used the  This is a form of stepwise model selection which optimises feature subset selection relative to the area under the receiver operating characteristic (AUROC), a metric which captures both the speciality and sensitivity of a classifier. This method was used a training set of $80\%$ of boundaries per cell type, with predictions assessed on out-of-bag (OOB) data as each forest was constructed. Selected models were then applied to the remaining held-out test set of $20\%$ of TAD boundaries, with their matched non-boundary bins (full details are in Methods \ref{meth:tadpred}). 
-
+The input feature set for this model was made up of the same $35$ ENCODE features used in models of compartment eigenvector (Methods \ref{methods:encode}), with the addition of counts of Alu repeat elements (as used in Section \ref{sec:repeats}). TAD boundary bins were called as previously described (Methods \ref{meth:tadcalling}) and were resolved to 40 kb. Bins containing a TAD boundary were our true positives (TP), and to generate true negatives (TN) we took matched bins $450$ kb upstream of each boundary bin. Of these, a randomly-selected $80\%$ of TP/TN pairs were used as our training and validation set in each cell type, while the remaining $20\%$ of cases were held-out as independent test sets.
 
 \subsection{Compartments}\label{sec:compartments}
 
