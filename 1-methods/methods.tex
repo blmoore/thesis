@@ -352,7 +352,28 @@ To compare boundaries between cells, each TAD boundary called in K562 and GM1287
 % AUROC  why good
 % Classification RF + gini coefficient
 
-To predict TAD boundaries we used a classification Random Forest model, built with the \texttt{AUC-RF} algorithm.\cite{Calle2011} This is a form of stepwise model selection which optimises feature subset selection relative to the area under the receiver operating characteristic (AUROC), a metric which captures both the speciality and sensitivity of a classifier. 
+To predict TAD boundaries we used a classification Random Forest model, built with the AUC-RF algorithm,\cite{Calle2011} as implemented in the \texttt{AUCRF} R package. This is a form of stepwise model selection which optimises feature subset selection relative to the area under the receiver operating characteristic (AUROC), a metric which captures both the speciality and sensitivity of a classifier hence is better-suited to unbalanced datasets than previously-described RF variable selection methods that used simple classification accuracy.\cite{Diaz2006, Chen2012} The AUC-RF procedure has been successfully applied in other bioinformatics applications, such as identifying a subset of most relevant variants in a genome-wide association study.\cite{DeMaturana2013} 
+
+More specifically, the AUC-RF algorithm is a backwards elimination procedure, commencing with variable ranking by importance. In these classification RF models, mean decrease in Gini impurity was chosen as the measure of variable importance, as it proved to be more stable than mean decrease in accuracy on permuted data.\cite{Calle2011} Regardless, impurity and permutation-based importance measures are thought to be largely consistent in many cases.\cite{Liaw2002, Hastie2001}
+
+The Gini impurity, $G$, of a single node containing some proportion of a two-class variable is calculated as shown (Eqn. \ref{eqn:gini}), and is observably related to the concept of entropy or information gain. 
+
+\begin{equation}\label{eqn:gini}
+G = \sum_{i=1}^{n_c} p_i(1-p_i)
+\end{equation}
+
+In our simple two-class setting (i.e. boundary, $b$ or not), this simplifies to Eqn. \ref{eqn:ginisimp}. Here it can be seen that a $G$ of 0.5 means the node contains a $50:50$ split of class labels, whereas a node of $95\%$ boundaries has a lower impurity ($G = 0.095$).
+
+\begin{equation}\label{eqn:ginisimp}
+G =  2p_{b} (1-p_{b})
+\end{equation}
+
+To convert the impurity into a measure of importance, we compare $G$ of a parent node with that of its two daughter nodes ($G_{d_1}$ and $G_{d_2}$), following a partition on a given variable of interest. This decrease in Gini impurity can then be averaged over all splits in which a specific variable has been selected ($N_{used}$). This approach is described in Equation \ref{eqn:giniimportance}.
+
+% j = node; N_used : number of times var used; d_x = daughter
+\begin{equation}\label{eqn:giniimportance}
+I = \frac{1}{N_{used}} \sum_{j=1}^{N_{used}} G_{j} - G_{d_1} - G_{d_2} 
+\end{equation}
 
 The input feature set for this model was made up of the same $35$ ENCODE features used in models of compartment eigenvector (Methods \ref{methods:encode}), with the addition of counts of Alu repeat elements (as used in Section \ref{sec:repeats}). TAD boundary bins were called as previously described (Methods \ref{meth:tadcalling}) and were resolved to 40 kb. Bins containing a TAD boundary were our true positives (TP), and to generate true negatives (TN) we took matched bins $450$ kb upstream of each boundary bin. Of these, a randomly-selected $80\%$ of TP/TN pairs were used as our training and validation set in each cell type, while the remaining $20\%$ of cases were held-out as independent test sets.
 
@@ -394,7 +415,7 @@ Gene density over metaTAD boundaries was calculated using UCSC \texttt{mm9} gene
 
 To compare metaTAD boundaries with those of LADs, we made use of previously-published Lamin-B1 DamID microarray probe intensities.\citet{Peric-Hupkes2010} For analysis over boundaries, these values were averaged into the same boundary windows as used previously (50 kb bins $\pm450$ kb around boundary, as in Section \ref{meth:tadbounds}). 
 
-Transitions between high and low lamina association were detected by fitting a linear regression model across each series of consecutive boundary bins (i.e. $\textrm{Lamina association}=\beta\cdot\textrm{bin} + c$). Linear models which had an absolute coefficient $|\beta| >.05$ were taken as crossing a LAD transition. This threshold is a heuristic which appears to perform well at conservatively selecting clear transitions. As a method of seriation for the $y$-axis of heatmap figures (e.g. Fig. \ref{fig:mtlamin}), boundaries were divided into those that coincided with a lamin transition and those that did not, and members within each group were then sorted by average intensity. 
+Transitions between high and low lamina association were detected by fitting a linear regression model across each series of consecutive boundary bins (i.e. $\textrm{Lamina assoc.}=\beta\cdot\textrm{bin} + c$). Linear models which had an absolute coefficient $|\beta| >.05$ were taken as crossing a LAD transition. This threshold is a heuristic which appears to perform well at conservatively selecting clear transitions. As a method of seriation for the $y$-axis of heatmap figures (e.g. Fig. \ref{fig:mtlamin}), boundaries were divided into those that coincided with a lamin transition and those that did not, and members within each group were then sorted by average intensity. 
 
 To test the significance of the association between boundaries and lamin transitions, we circularly permuted both TAD and metaTAD boundaries on each chromosome 1000 times, and calculated the proportion of boundaries that crossed LAD boundaries using the same linear regression procedure described above. Empirical $p$-values were then calculated as the number of permuted results greater than or equal to the observed value.
 
