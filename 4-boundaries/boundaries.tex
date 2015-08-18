@@ -242,12 +242,16 @@ A straightforward approach to this modelling task is to build a supervised class
 To build parsimonious and accurate models (as discussed in Section \ref{sec:parsimoniousmodels}), we used the \texttt{AUC-RF} algorithm.\cite{Calle2011} This is a form of stepwise model selection which optimises feature subset selection relative to the area under the receiver operating characteristic (AUROC), a metric which captures both the speciality and sensitivity of a classifier. This method was used a training set of $80\%$ of boundaries per cell type, with predictions assessed on out-of-bag (OOB) data as each forest was constructed. Selected models were then applied to the remaining held-out test set of $20\%$ of TAD boundaries, with their matched non-boundary bins (full details are in Methods \ref{meth:tadpred}). 
 
 % AUC-RF optimisation plots
+%        AUC  k      ct
+%1 0.6636421 26 GM12878
+%2 0.7086773 17 H1 hESC
+%3 0.6645574 15    K562
 \begin{figure}
 \begin{center} 
 \includegraphics[width=3in]{figs/AUCRF_opt.pdf}
 \captionsetup{width=\textwidth}
 \caption[ The AUC-RF stepwise algorithm finds that variable subset which maximises the AUROC on out-of-bag data. ]{ {\bf The AUC-RF stepwise algorithm finds that variable subset which maximises the AUROC on out-of-bag data. }
-The AUROC is calculated at each stage of a stepwise method for selecting the best subset model from a full featureset. Here AUC-RF selected the following combinations. K562: XXX The AUC-RF algorithm is explained in Methods \ref{meth:tadpred}.
+The AUROC is calculated at each stage of a stepwise method for selecting the best subset model from a full featureset. Here AUC-RF selected the following combinations: GM12878: 26 vars, 0.66 AUC; H1 hESC: 17 vars, 0.71 AUC; K562: 15 vars, 0.66 AUC. The AUC-RF algorithm is described in Methods \ref{meth:tadpred}.
 }\label{fig:tadpred_opt}
 \end{center}
 \end{figure} 
@@ -265,7 +269,7 @@ ROCs are shown for three cell-type specific classifiers of TAD boundary bins. Th
 \end{center}
 \end{figure} 
 
-With their moderate-to-low classification accuracy in mind, it is still of interest to analyse the variable importances in each cell type model. We find that CTCF stands out as the most informative variable in each classifier by some margin (Fig. \ref{fig:tadpred_varimp}).
+With their moderate-to-low classification accuracy in mind, it is still of interest to analyse the variable importances in each cell type model. Strikingly we find that CTCF stands out as the most informative variable in each classifier by some margin (Fig. \ref{fig:tadpred_varimp}). This is in agreement with our results that CTCF showed among the highest and most consistent enrichments at TAD boundaries (Fig. \ref{fig:boundarysummary})
 
 \begin{figure}
 \begin{center} 

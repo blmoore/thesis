@@ -1,4 +1,4 @@
-\begin{thebibliography}{71}
+\begin{thebibliography}{72}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Barrett \emph{et~al.}(2013)Barrett, Wilhite, Ledoux, Evangelista,
@@ -196,6 +196,12 @@ Ashburner M, Ball Ca, Blake Ja, Botstein D, Butler H, Cherry JM, Davis aP,
 Huang BDW, Lempicki R (2008) {Systematic and integrative analysis of large gene
   lists using DAVID bioinformatics resources}.
 \newblock \emph{Nature protocols}, (301): 1--43.
+
+\bibitem[{Calle \emph{et~al.}(2011)Calle, Urrea, Boulesteix and
+  Malats}]{Calle2011}
+Calle ML, Urrea V, Boulesteix AL, Malats N (2011) {AUC-RF: A new strategy for
+  genomic profiling with random forest}.
+\newblock \emph{Human Heredity}, \textbf{72}(2): 121--132.
 
 \bibitem[{Consortium \emph{et~al.}(2014)Consortium, Pmi and Dgt}]{fantom5}
 Consortium TF, Pmi R, Dgt C (2014) {A promoter-level mammalian expression
