@@ -1,4 +1,4 @@
-\begin{thebibliography}{205}
+\begin{thebibliography}{208}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -375,6 +375,10 @@ G\'{o}mez-D\'{\i}az E, Corces VG (2014) {Architectural proteins: regulators of
   3D genome organization in cell fate}.
 \newblock \emph{Trends in Cell Biology}, \textbf{24}(11): 703--711.
 
+\bibitem[{Nichols and Corces(2015)}]{Nichols2015}
+Nichols M, Corces V (2015) {A CTCF Code for 3D Genome Architecture}.
+\newblock \emph{Cell}, \textbf{162}(4): 703--705.
+
 \bibitem[{{Van Bortle} \emph{et~al.}(2014){Van Bortle}, Nichols, Li, Ong,
   Takenaka, Qin and Corces}]{VanBortle2014}
 {Van Bortle} K, Nichols MH, Li L, Ong CT, Takenaka N, Qin ZS, Corces VG (2014)
@@ -694,6 +698,18 @@ Huang BDW, Lempicki R (2008) {Systematic and integrative analysis of large gene
 Calle ML, Urrea V, Boulesteix AL, Malats N (2011) {AUC-RF: A new strategy for
   genomic profiling with random forest}.
 \newblock \emph{Human Heredity}, \textbf{72}(2): 121--132.
+
+\bibitem[{Chen and Ishwaran(2012)}]{Chen2012}
+Chen X, Ishwaran H (2012) {Random forests for genomic data analysis}.
+\newblock \emph{Genomics}, \textbf{99}(6): 323--329.
+
+\bibitem[{{De Maturana} \emph{et~al.}(2013){De Maturana}, Ye, Calle, Rothman,
+  Urrea, Kogevinas, Petrus, Chanock, Tard\'{o}n \emph{et~al.}}]{DeMaturana2013}
+{De Maturana} EL, Ye Y, Calle ML, Rothman N, Urrea V, Kogevinas M, Petrus S,
+  Chanock SJ, Tard\'{o}n A, \emph{et~al.} (2013) {Application of multi-SNP
+  approaches Bayesian LASSO and AUC-RF to detect main effects of
+  inflammatory-gene variants associated with bladder cancer risk}.
+\newblock \emph{PLoS ONE}, \textbf{8}(12).
 
 \bibitem[{Consortium \emph{et~al.}(2014)Consortium, Pmi and Dgt}]{fantom5}
 Consortium TF, Pmi R, Dgt C (2014) {A promoter-level mammalian expression

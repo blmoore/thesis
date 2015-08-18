@@ -409,6 +409,9 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplbij8r.tfm
 INPUT figs/genome_org.pdf
 INPUT ./figs/genome_org.pdf
 INPUT ./figs/genome_org.pdf
+INPUT figs/fractals.pdf
+INPUT ./figs/fractals.pdf
+INPUT ./figs/fractals.pdf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplr9o.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm

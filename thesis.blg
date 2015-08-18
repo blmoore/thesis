@@ -3,7 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: thesis.bst
 A level-1 auxiliary file: 0-intro/intro.aux
-Reallocated field_info (elt_size=4) to 10125 items from 5000.
+Reallocated field_info (elt_size=4) to 10200 items from 5000.
 Database file #1: /Users/benmoore/Documents/library.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Database file #2: /Users/benmoore/Documents/customrefs.bib
@@ -27,45 +27,45 @@ Warning--there's a number but no volume in Anderson2014a
 Warning--empty journal in Hill2013a
 Warning--there's a number but no volume in Hill2013a
 Warning--there's a number but no volume in Lesne2014
-You've used 205 entries,
+You've used 208 entries,
             3024 wiz_defined-function locations,
-            1904 strings with 73250 characters,
-and the built_in function-call counts, 292566 in all, are:
-= -- 30755
-> -- 8870
-< -- 64
-+ -- 6399
-- -- 2267
-* -- 21994
-:= -- 31559
-add.period$ -- 410
-call.type$ -- 205
-change.case$ -- 1026
-chr.to.int$ -- 206
-cite$ -- 220
-duplicate$ -- 30600
-empty$ -- 20974
-format.name$ -- 2918
-if$ -- 60298
+            1921 strings with 74107 characters,
+and the built_in function-call counts, 296547 in all, are:
+= -- 31179
+> -- 8979
+< -- 66
++ -- 6477
+- -- 2295
+* -- 22295
+:= -- 31991
+add.period$ -- 416
+call.type$ -- 208
+change.case$ -- 1041
+chr.to.int$ -- 209
+cite$ -- 223
+duplicate$ -- 31024
+empty$ -- 21262
+format.name$ -- 2959
+if$ -- 61117
 int.to.chr$ -- 6
-int.to.str$ -- 206
-missing$ -- 2515
-newline$ -- 823
-num.names$ -- 612
-pop$ -- 14744
+int.to.str$ -- 209
+missing$ -- 2549
+newline$ -- 835
+num.names$ -- 621
+pop$ -- 14936
 preamble$ -- 1
-purify$ -- 820
+purify$ -- 832
 quote$ -- 0
-skip$ -- 5163
+skip$ -- 5237
 stack$ -- 0
-substring$ -- 36541
-swap$ -- 6780
+substring$ -- 37038
+swap$ -- 6874
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1224
+type$ -- 1242
 warning$ -- 15
-while$ -- 1895
+while$ -- 1919
 width$ -- 0
-write$ -- 2446
+write$ -- 2482
 (There was 1 error message)
