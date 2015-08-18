@@ -143,7 +143,7 @@ different scales, with patterns of informative features typically
 spanning regions up to 500 Kb for TAD boundaries, and patterns
 associated with compartment boundaries often spanning more than 1 Mb.
 
-\subsection{CTCF and YY1}
+\subsection{CTCF and YY1}\label{sec:ctcfyy1}
 
 \begin{figure}
 \begin{center} 
@@ -171,13 +171,12 @@ test this, we split our sets of TAD boundaries into those possessing
 ChiP-seq peaks (region peaks called by ENCODE \cite{Dunham2012}) for
 CTCF, YY1, both CTCF and YY1 (overlapping peaks) and neither. We then
 tested each boundary subset for genome-wide enrichments of the other
-features in our dataset (Figure S14). Unexpectedly, we found that
+features in our dataset (Fig. \ref{fig:ctcfyy1}). Unexpectedly, we found that
 boundaries marked by YY1 (without overlapping CTCF peaks) were
 generally most strongly-enriched for other features in our dataset. We
 also found that boundaries lacking both CTCF and YY1 peaks showed
-instead the strongest enrichments for RAD21 in each cell type (Figure
-S14), reinforcing previous findings that describe the distinct
-influences of CTCF and cohesin in organizing chromatin structure.\cite{Zuin2013, Seitan2013, Phillips-Cremins2013}
+instead the strongest enrichments for RAD21 in each cell type (Fig. \ref{fig:ctcfyy1}), reinforcing previous findings that describe the distinct
+influences of CTCF and cohesin in organising chromatin structure.\cite{Zuin2013, Seitan2013, Phillips-Cremins2013}
 
 % Schwalie: These observations suggest that with respect to transcriptional activity, YY1 is the functionally dominant factor at co-bound locations.
 
@@ -229,9 +228,9 @@ As per Fig. \ref{fig:rep_classbubble} but for a higher resolution repeat classif
 
 \section{De novo boundary prediction}
 
-We have shown TAD and compartment domain boundaries to be well-marked by a variety of features. Compartment boundaries are successfully predicted as a side-effect of modelling the continuous compartment profile eigenvector (Section \ref{sec:modhoc}) however a related measure of activity and repression does not exist for TADs.
+We have shown TAD and compartment domain boundaries to be well-marked by a variety of features. Compartment boundaries are successfully predicted as a side-effect of modelling the continuous compartment profile eigenvector (Section \ref{sec:modhoc}) however a related measure of activity and repression does not exist for TADs. Instead then, we attempt to predict TAD boundaries within a class-balanced classification framework.
 
-We attempted to model TAD boundaries in a variety of ways: firstly a using a class-balanced classification framework and secondly through indirect models of directionality index and the downstream domain-caller HMM state.\cite{Dixon2012}
+%We attempted to model TAD boundaries in a variety of ways: firstly a using a class-balanced classification framework and secondly through indirect models of directionality index and the downstream domain-caller HMM state.\cite{Dixon2012}
 
 \subsection{Learning boundary classification}
 
@@ -269,21 +268,21 @@ ROCs are shown for three cell-type specific classifiers of TAD boundary bins. Th
 \end{center}
 \end{figure} 
 
-With their moderate-to-low classification accuracy in mind, it is still of interest to analyse the variable importances in each cell type model. Strikingly we find that CTCF stands out as the most informative variable in each classifier by some margin (Fig. \ref{fig:tadpred_varimp}). This is in agreement with our results that CTCF showed among the highest and most consistent enrichments at TAD boundaries (Fig. \ref{fig:boundarysummary})
+With their moderate-to-low classification accuracy in mind, it is still of interest to analyse the variable importances in each cell type model. Strikingly we find that CTCF stands out as the most informative variable in each classifier by some margin (Fig. \ref{fig:tadpred_varimp}). This is in agreement with our results that CTCF showed among the highest and most consistent enrichments at TAD boundaries (Fig. \ref{fig:boundarysummary}). RAD21 is also highly ranked in each case and this ties in with our previous results suggesting orthogonal boundary enrichments for either CTCF or RAD21 (Section \ref{sec:ctcfyy1}). Surprisingly YY1 does not feature as highly ranked in any model despite our observed consistent enrichments at TAD boundaries (Fig. \ref{fig:boundarysummary}). In fact  YY1 was preened from the optimal H1 hESC and GM12878 models by the AUC-RF algorithm due to its low variable importance (\emph{data not shown}). This could be due to a redundancy between information provided by YY1 and the CTCF variable as, for example, co-binding of YY1 and CTCF is thought to occur at sites of long-range chromatin interactions.\cite{Atchison2014} 
 
 \begin{figure}
 \begin{center} 
 \includegraphics[width=5.45in]{figs/tadpred_varimp.pdf}
 \captionsetup{width=\textwidth}
 \caption[ Variable importance for boundary classification Random Forest models. ]{ {\bf Variable importance for boundary classification Random Forest models. }
-The highest ten most important variables in each boundary classification model are shown and ranked by their variable importance as defined by mean decrease in Gini coefficient in daughter nodes (Methods \ref{meth:tadpred}).
+The highest ten most important variables in each boundary classification model are shown and ranked by their variable importance as defined by mean decrease in Gini impurity (Methods \ref{meth:gini}).
 }\label{fig:tadpred_varimp}
 \end{center}
 \end{figure} 
 
-\subsection{Modelling performance}
- 
-The modelling performance achieved above with TAD boundaries (Fig. \ref{fig:tadpred_auroc}) is notably lower than previous models of transcription and compartment eigenvectors (Chapter \ref{chap:modelling}).
+%\subsection{Modelling performance}
+% 
+%The modelling performance achieved above with TAD boundaries (Fig. \ref{fig:tadpred_auroc}) is notably lower than previous models of transcription and compartment eigenvectors (Chapter \ref{chap:modelling}).
 
 \section{MetaTAD boundaries}\label{sec:metatads}
 
