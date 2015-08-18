@@ -1,4 +1,4 @@
-\begin{thebibliography}{90}
+\begin{thebibliography}{91}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -374,6 +374,10 @@ Phillips-Cremins JE, Sauria MEG, Sanyal A, Gerasimova TI, Lajoie BR, Bell JSK,
 G\'{o}mez-D\'{\i}az E, Corces VG (2014) {Architectural proteins: regulators of
   3D genome organization in cell fate}.
 \newblock \emph{Trends in Cell Biology}, \textbf{24}(11): 703--711.
+
+\bibitem[{Nichols and Corces(2015)}]{Nichols2015}
+Nichols M, Corces V (2015) {A CTCF Code for 3D Genome Architecture}.
+\newblock \emph{Cell}, \textbf{162}(4): 703--705.
 
 \bibitem[{{Van Bortle} \emph{et~al.}(2014){Van Bortle}, Nichols, Li, Ong,
   Takenaka, Qin and Corces}]{VanBortle2014}
