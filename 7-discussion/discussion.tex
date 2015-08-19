@@ -36,27 +36,15 @@
 
 \chapter{Discussion}
 
-The recent abundance of epigenomic data in model cell types has
-enabled accurate modelling of the transcriptional output of human
-promoters, and a rigorously quantitative assessment of the most
-influential chromatin features underlying gene expression
-\cite{Dong2012}. We have shown that it is possible to construct
-comparable models describing the features underlying higher order
-chromatin structure, and that their predictive accuracy can be
-high. Our analysis exploits Hi-C datasets that have been re-analysed,
-from the intitial sequence read mapping onwards, identically for three
-different cell types. These data were collated with 35 locus level
-ENCODE chromatin datasets, also processed identically, and matched
-across the same cell types. In common with previous studies
-\cite{Chambers2013, Dixon2012}, we observed good concordance of higher
-order chromatin structure, relected in Hi-C data, between different
-cell types. Random forest models summarised the important
-relationships among these many variables, providing insights into the
-quantitative contributions of locus level chromatin features to higher
-order structures. Although certain features were notably more
-influential in a particular cell type, the models shared overlapping
-constellations of informative features, allowing the cross application
-of models between cell types.
+% General, intro-y type stuff
+Since the publication of the Hi-C assay, there has been a flurry of follow-up papers largely focused on improving the technique and/or employing increasingly deep sequencing to achieve higher resolution analyses. A side-effect of this process is a growing bank of chromosome conformation datasets that, following proper reprocessing, can be compared and contrasted to gain biological insights into the importance of higher order chromatin organisation.
+
+Despite the increasing availability of 
+
+Previous studies have compared regions of higher order structure between cell types\cite{Lieberman2009} and species\cite{Dixon2012} but often anecdotally, on a selected region. Here we perform a multi-cell line comparison is a quantitative way, to 
+
+
+\section{Predictive models of chromosome compartments}
 
 Integrative analyses of locus level chromatin data have allowed the
 prediction of functional chromatin states \cite{Ernst2012, Ram2011,
@@ -83,6 +71,30 @@ order domain dynamics. It is not possible to distinguish cause and
 effect using the current data, but it seems likely that the
 alterations in domain organization occur prior to enhancer activity.
 
+The recent abundance of epigenomic data in model cell types has
+enabled accurate modelling of the transcriptional output of human
+promoters, and a rigorously quantitative assessment of the most
+influential chromatin features underlying gene expression
+\cite{Dong2012}. We have shown that it is possible to construct
+comparable models describing the features underlying higher order
+chromatin structure, and that their predictive accuracy can be
+high. Our analysis exploits Hi-C datasets that have been re-analysed,
+from the intitial sequence read mapping onwards, identically for three
+different cell types. These data were collated with 35 locus level
+ENCODE chromatin datasets, also processed identically, and matched
+across the same cell types. In common with previous studies
+\cite{Chambers2013, Dixon2012}, we observed good concordance of higher
+order chromatin structure, reflected in Hi-C data, between different
+cell types. Random forest models summarised the important
+relationships among these many variables, providing insights into the
+quantitative contributions of locus level chromatin features to higher
+order structures. Although certain features were notably more
+influential in a particular cell type, the models shared overlapping
+constellations of informative features, allowing the cross application
+of models between cell types.
+
+
+
 The current data suggest that the contributions of certain locus level
 chromatin features to higher order structures vary between cell
 types. Striking examples include the strong influence of H3K9me3 in
@@ -106,6 +118,20 @@ reconciled by the presence of inter-correlated clusters of features
 underlying A and B compartments. The shifting membership of these
 clusters evidently retains enough similarity between cell types to
 enable the cross application of models.
+
+\section{Domain boundaries}
+
+Chromatin domains have been described at multiple scales, from 5 Mb chromosome compartments\cite{Lieberman2009} down to 185 kb contact domains\cite{Rao2014} in human cells. Across all domains, questions remain about how they are constructed and maintained. Two competing ideas are that boundary elements, akin to the classic chromatin insulators, block intra-domain contacts and the spread of heterochromatin and hence create chromatin domains; however, another suggestion is that boundary regions are rather less important and in fact the unavoidable consequence of adjacent self-interacting domains, perhaps instead held together through internal enhancer--promoter interactions, among contacts.  
+
+In favour of functional boundary elements, knockdown of CTCF has been shown to cause increased intraTAD contacts,\cite{Zuin2013} though the same study reported an orthogonal function for cohesin
+
+The incidental boundary hypothesis is supported by data showing that deletion of specific boundary elements in insufficient to cause adjacent domains to merge,(ref XX) In addition, the majority of CTCF sites fall within TADs rather than at their boundaries (approximately $85\%$ of human CTCF sites are non-boundary\cite{Dixon2012}). Further it has been shown that the majority of enhancer--promoter contacts are tissue invariant,\cite{Bouwman2015a} hence these constitutive contacts could account for the high levels of domain conservation reported previously\cite{Lieberman2009, Dixon2012, Chambers2013, Rao2014} and in this work (Chapter \ref{chap:hiccomparison}).
+
+In this work we find an array of chromatin features that, on average, are statistically associated or excluded from TAD or compartment boundaries. Among these are features with a long history of 
+
+% Enrichment of Alu elements suggest CTCF sites inserted, bring about novel loops and domains
+
+As with many biological phenomena the question of whether boundary regions or internal contacts are stabilising chromatin domains is a reductive false dichotomy, and it seems likely that both boundary insulation and interTAD contacts work together to maintain chromatin domains.
 
 Chromatin boundaries, separating TADs and nuclear compartments at
 different scales, also showed cell type specific enrichments of
@@ -132,6 +158,16 @@ exploring the structure and function of domains
 constituents of boundaries may have utility in the biomedical
 interpretation of genomic variation in noncoding regions of the
 genome.
+
+\section{A note on causality}
+
+\section{Insights into higher order chromatin organisation}
+
+% RVS
+% largely invariant but with local changes
+% functional importance of higher order structure ?
+
+Our results agree with a functional model of genome architecture whereby a majority of the genome is arranged into large static compartments, be they Lamina associated, nucleolus associated or central and accessible chromatin. Indeed, it seems possible that such large, constitutive anchor points may be enough to generate a significant amount of concordance in nuclear architecture between cell types.\cite{Bouwman2015a} This broad overview is  coupled with local changes in different tissues, allowing cell type specific regulation of gene environments through "looping out", detachment from the nuclear lamina and other conceivable mechanisms of variation.
 
 \section{Conclusion}
 
