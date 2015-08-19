@@ -1,18 +1,13 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{16}
 \providecommand{\natexlab}[1]{#1}
 
-\bibitem[{Dong \emph{et~al.}(2012)Dong, Greven, Kundaje, Djebali, Brown, Cheng,
-  Gingeras, Gerstein, Guig\'{o} \emph{et~al.}}]{Dong2012}
-Dong X, Greven MC, Kundaje A, Djebali S, Brown JB, Cheng C, Gingeras TR,
-  Gerstein M, Guig\'{o} R, \emph{et~al.} (2012) {Modeling gene expression using
-  chromatin features in various cellular contexts.}
-\newblock \emph{Genome biology}, \textbf{13}(9): R53.
-
-\bibitem[{Chambers \emph{et~al.}(2013)Chambers, Bickmore and
-  Semple}]{Chambers2013}
-Chambers EV, Bickmore Wa, Semple CA (2013) {Divergence of mammalian higher
-  order chromatin structure is associated with developmental loci.}
-\newblock \emph{PLoS computational biology}, \textbf{9}(4): e1003017.
+\bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
+  Williams, Imakaev, Ragoczy, Telling, Amit, Lajoie, Sabo
+  \emph{et~al.}}]{Lieberman2009}
+Lieberman-Aiden E, van Berkum NL, Williams L, Imakaev M, Ragoczy T, Telling A,
+  Amit I, Lajoie BR, Sabo PJ, \emph{et~al.} (2009) {Comprehensive mapping of
+  long-range interactions reveals folding principles of the human genome.}
+\newblock \emph{Science}, \textbf{326}(5950): 289--93.
 
 \bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
   and Ren}]{Dixon2012}
@@ -44,6 +39,19 @@ Hoffman MM, Ernst J, Wilder SP, Kundaje A, Harris RS, Libbrecht M, Giardine B,
   chromatin elements from ENCODE data.}
 \newblock \emph{Nucleic acids research}, \textbf{41}(2): 827--41.
 
+\bibitem[{Chambers \emph{et~al.}(2013)Chambers, Bickmore and
+  Semple}]{Chambers2013}
+Chambers EV, Bickmore Wa, Semple CA (2013) {Divergence of mammalian higher
+  order chromatin structure is associated with developmental loci.}
+\newblock \emph{PLoS computational biology}, \textbf{9}(4): e1003017.
+
+\bibitem[{Dong \emph{et~al.}(2012)Dong, Greven, Kundaje, Djebali, Brown, Cheng,
+  Gingeras, Gerstein, Guig\'{o} \emph{et~al.}}]{Dong2012}
+Dong X, Greven MC, Kundaje A, Djebali S, Brown JB, Cheng C, Gingeras TR,
+  Gerstein M, Guig\'{o} R, \emph{et~al.} (2012) {Modeling gene expression using
+  chromatin features in various cellular contexts.}
+\newblock \emph{Genome biology}, \textbf{13}(9): R53.
+
 \bibitem[{Zwang \emph{et~al.}(2012)Zwang, Oren and Yarden}]{Zwang2012}
 Zwang Y, Oren M, Yarden Y (2012) {Consistency test of the cell cycle: roles for
   p53 and EGR1.}
@@ -64,6 +72,27 @@ Hagmeyer BM, Duyndam MC, Angel P, de~Groot RP, Verlaan M, Elfferich P, van~der
   Eb A, Zantema A (1996) {Altered AP-1/ATF complexes in
   adenovirus-E1-transformed cells due to EIA-dependent induction of ATF3.}
 \newblock \emph{Oncogene}, \textbf{12}: 1025--1032.
+
+\bibitem[{Rao \emph{et~al.}(2014)Rao, Huntley, Durand, Stamenova, Bochkov,
+  Robinson, Sanborn, Machol, Omer \emph{et~al.}}]{Rao2014}
+Rao S, Huntley M, Durand N, Stamenova E, Bochkov I, Robinson J, Sanborn A,
+  Machol I, Omer A, \emph{et~al.} (2014) {A 3D Map of the Human Genome at
+  Kilobase Resolution Reveals Principles of Chromatin Looping}.
+\newblock \emph{Cell}, \textbf{159}(7): 1665--1680.
+
+\bibitem[{Zuin \emph{et~al.}(2013)Zuin, Dixon, van~der Reijden, Ye, Kolovos,
+  Brouwer, van~de Corput, van~de Werken, Knoch \emph{et~al.}}]{Zuin2013}
+Zuin J, Dixon JR, van~der Reijden MIJa, Ye Z, Kolovos P, Brouwer RWW, van~de
+  Corput MPC, van~de Werken HJG, Knoch Ta, \emph{et~al.} (2013) {Cohesin and
+  CTCF differentially affect chromatin architecture and gene expression in
+  human cells.}
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, pp. 1--6.
+
+\bibitem[{Bouwman and de~Laat(2015)}]{Bouwman2015a}
+Bouwman BA, de~Laat W (2015) {Getting the genome in shape: the formation of
+  loops, domains and compartments}.
+\newblock \emph{Genome Biology}, \textbf{16}(1): 154.
 
 \bibitem[{Ong and Corces(2014)}]{Ong2014}
 Ong CT, Corces VG (2014) {CTCF: an architectural protein bridging genome
