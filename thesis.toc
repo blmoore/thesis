@@ -76,13 +76,13 @@
 \contentsline {section}{\numberline {3.3}Compartment profiles}{37}{section.3.3}
 \contentsline {section}{\numberline {3.4}Domain calls}{37}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Compartments}{37}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}TADs}{41}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Domain epigenomics}{43}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}A/B compartments}{43}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}TAD classes}{45}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.4.2}TADs}{42}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Domain epigenomics}{44}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}A/B compartments}{44}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}TAD classes}{44}{subsection.3.5.2}
 \contentsline {section}{\numberline {3.6}Variable regions}{47}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Chromatin state enrichment}{47}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Gene ontology enrichment}{47}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.2}Gene ontology enrichment}{49}{subsection.3.6.2}
 \contentsline {subsection}{\numberline {3.6.3}Contact changes}{51}{subsection.3.6.3}
 \contentsline {section}{\numberline {3.7}Nuclear positioning}{51}{section.3.7}
 \contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Integrative modelling as a tool to explore biological systems}}{55}{chapter.4}
@@ -130,7 +130,11 @@
 \contentsline {subsection}{\numberline {6.3.1}Differential contacts}{106}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{106}{subsection.6.3.2}
 \contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{109}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclusion}{111}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future research}{111}{section.7.2}
-\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{113}{chapter*.80}
-\contentsline {chapter}{References}{133}{chapter*.81}
+\contentsline {section}{\numberline {7.1}Predictive models of chromosome compartments}{109}{section.7.1}
+\contentsline {section}{\numberline {7.2}Domain boundaries}{110}{section.7.2}
+\contentsline {section}{\numberline {7.3}A note on causality}{112}{section.7.3}
+\contentsline {section}{\numberline {7.4}Insights into higher order chromatin organisation}{112}{section.7.4}
+\contentsline {section}{\numberline {7.5}Conclusion}{112}{section.7.5}
+\contentsline {section}{\numberline {7.6}Future research}{113}{section.7.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{115}{chapter*.81}
+\contentsline {chapter}{References}{135}{chapter*.82}
