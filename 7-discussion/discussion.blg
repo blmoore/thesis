@@ -5,44 +5,44 @@ The style file: ../thesis.bst
 Database file #1: /Users/benmoore/Documents/library.bib
 Database file #2: /Users/benmoore/Documents/customrefs.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 12 entries,
+You've used 16 entries,
             3024 wiz_defined-function locations,
-            698 strings with 8266 characters,
-and the built_in function-call counts, 19145 in all, are:
-= -- 2007
-> -- 612
-< -- 3
-+ -- 444
-- -- 157
-* -- 1445
-:= -- 2046
-add.period$ -- 24
-call.type$ -- 12
-change.case$ -- 60
-chr.to.int$ -- 13
-cite$ -- 12
-duplicate$ -- 2007
-empty$ -- 1357
-format.name$ -- 194
-if$ -- 3941
+            728 strings with 9831 characters,
+and the built_in function-call counts, 27152 in all, are:
+= -- 2873
+> -- 864
+< -- 5
++ -- 628
+- -- 221
+* -- 2039
+:= -- 2863
+add.period$ -- 32
+call.type$ -- 16
+change.case$ -- 80
+chr.to.int$ -- 17
+cite$ -- 16
+duplicate$ -- 2877
+empty$ -- 1913
+format.name$ -- 272
+if$ -- 5605
 int.to.chr$ -- 1
-int.to.str$ -- 13
-missing$ -- 162
-newline$ -- 52
-num.names$ -- 36
-pop$ -- 941
+int.to.str$ -- 17
+missing$ -- 221
+newline$ -- 68
+num.names$ -- 48
+pop$ -- 1344
 preamble$ -- 1
-purify$ -- 48
+purify$ -- 64
 quote$ -- 0
-skip$ -- 358
+skip$ -- 517
 stack$ -- 0
-substring$ -- 2425
-swap$ -- 431
-text.length$ -- 0
+substring$ -- 3498
+swap$ -- 588
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 72
+type$ -- 96
 warning$ -- 0
-while$ -- 124
+while$ -- 172
 width$ -- 0
-write$ -- 147
+write$ -- 195
