@@ -47,7 +47,7 @@ Since the initial publication of the Hi-C technique in 2009,\cite{Lieberman2009}
 
 Such rapid progression in the field has resulted in a wide variety of public Hi-C datasets being available, albeit with differing qualities. With proper correction and at a suitable resolution, these interaction frequencies can be compared and contrasted both within and between species.
 
-In this chapter we uniformly reprocessed publicly-available human Hi-C datasets in order to address fundamental questions about the stability of higher order genome organisation between cell populations from the same species. Previously Hi-C studies have compared across two samples per species, such as K562 against GM06990\cite{Lieberman2009} or IMR90 against GM12878.\cite{Dixon2012} Here we make use of three Hi-C datasets corresponding to extensively-studied human cell lines: K562, GM12878 and H1 hESC. Together these make up the "Tier 1" cell lines studied by the ENCODE consortium,\cite{Dunham2012} hence have huge amounts of matched ChIP-seq and histone modification data available. 
+In this chapter we uniformly reprocessed publicly-available human Hi-C datasets in order to address fundamental questions about the stability of higher order genome organisation between cell populations from the same species. Previously Hi-C studies have compared across two samples, such as K562 against GM06990\cite{Lieberman2009} or IMR90 against GM12878.\cite{Dixon2012} Here we make use of three Hi-C datasets corresponding to extensively-studied human cell lines: K562, GM12878 and H1 hESC. Together these make up the "Tier 1" cell lines studied by the ENCODE consortium,\cite{Dunham2012} hence have huge amounts of matched ChIP-seq and histone modification data available. 
 
 By combinatorial reanalysis of these cell-matched datasets, we can comprehensively investigate the quantitative relationships between higher order chromatin structure and locus-level chromatin features.
 
@@ -55,7 +55,7 @@ By combinatorial reanalysis of these cell-matched datasets, we can comprehensive
 
 \section{Hi-C reprocessing}
 
-Each Hi-C dataset used in this work was reprocessed using the same pipeline from raw sequencing reads (Methods \ref{methods:hic}). Briefly, raw sequencing reads were sourced from three different publications: \citet{Lieberman2009}, \citet{Dixon2012} and \citet{Kalhor2012}. These reads were mapped to human genome build \texttt{hg19} using an iterative mapping procedure that maximised the number of uniquely mappable reads from each sample (Methods \ref{methods:mapping}). 
+Each Hi-C dataset used in this work was reprocessed from raw sequencing reads using the same pipeline (Methods \ref{methods:hic}). Briefly, raw sequencing reads were sourced from three different publications: \citet{Lieberman2009}, \citet{Dixon2012} and \citet{Kalhor2012}. These reads were mapped to human genome build \texttt{hg19} using an iterative mapping procedure that maximised the number of uniquely mappable reads from each sample (Methods \ref{methods:mapping}). 
 
 Next a filtering step was applied, which removed those fragment pairs that were likely artifactual or erroneous (Methods \ref{methods:filtering}). A correction step was then applied, whereby biases such as mappability and GC content were removed to give each fragment equal visibility (Methods \ref{methods:correction}). Overall these steps produced comparable maps of interaction frequency in different cell types, despite their differing origins (Fig. \ref{fig:hicnorm}). 
 
@@ -227,7 +227,7 @@ Exceptions to this rule are few. However the repressive histone modification H3k
 
 \subsection{TAD classes}
 
-Unlike compartments, initially TAD were not observably correlated with blocks of chromatin features.\cite{Dixon2012} Later studies have linked TADs with such enrichments, first in \emph{Drosophila}\cite{Sexton2012} and later in human cells, where it was argued TADs are merely a low-resolution window to smaller "sub-compartments", bearing similar active and inactive marks to their much-larger namesakes.\cite{Rao2014} Here we look for evidence that TADs called in our human cell types correspond to the "epigenomic domains" identified in \emph{Drosophila} by \citet{Sexton2012} Epigenomic domains were identified through supervised clustering of physical domains by their average enrichment for selected epigenomic features of known function, for example enrichment of H3K27me3 mark was used to call Polycomb (PcG) associated domains. 
+Unlike compartments, initially TADs were not observably correlated with blocks of chromatin features.\cite{Dixon2012} Later studies have linked TADs with such enrichments, first in \emph{Drosophila}\cite{Sexton2012} and later in human cells, where it was argued TADs are merely a low-resolution window to smaller "sub-compartments", bearing similar active and inactive marks to their much-larger namesakes.\cite{Rao2014} Here we look for evidence that TADs called in our human cell types correspond to the "epigenomic domains" identified in \emph{Drosophila} by \citet{Sexton2012} Epigenomic domains were identified through supervised clustering of physical domains by their average enrichment for selected epigenomic features of known function, for example enrichment of H3K27me3 mark was used to call Polycomb (PcG) associated domains. 
 
 \begin{figure}
 \begin{center}
@@ -243,7 +243,7 @@ We found that TADs called across the three cell types used in this work could si
 
 This analysis reveals that active compartments typically cover both active and PcG-associated TADs, while B compartments appear more homogeneous and are composed mostly of H3k9me3-enriched heterochromatin even when considering fine-grained TAD structures rather than megabase-sized genomic blocks (Fig. \ref{fig:tadencode}).
 
-These findings also link with recent work that suggested TADs are windows unto ``sub-compartments"\cite{Rao2014} which more closely reflect the functional enrichments of compartments. However, in our data we did not find statistical support for the suggested 5 classes of sub-compartment; instead, an ensemble of algorithms for optimising the number of cluster centroids voted for two or three clusters of TADs (\emph{data not shown}). This is not wholly surprising as \citet{Rao2014} report sub-compartments only on extremely deep-sequenced samples, and at a scale of below that of TADs.
+These findings also link with recent work that suggested TADs are windows into ``sub-compartments"\cite{Rao2014} which more closely reflect the functional enrichments of compartments. However, in our data we did not find statistical support for the suggested 5 classes of sub-compartment; instead, an ensemble of algorithms for optimising the number of cluster centroids voted for two or three clusters of TADs (\emph{data not shown}). This is not wholly surprising as \citet{Rao2014} report sub-compartments only on extremely deep-sequenced samples, and at a scale of below that of TADs.
 
 \section{Variable regions}\label{sec:variableregions}
 % investigate those regions which are "flipped"
@@ -303,7 +303,7 @@ CTCF: CTCF enriched element; T: transcribed region; R: repressed or low-activity
 
 Specific examples of RVS highlight genes of interest (Fig. \ref{fig:flippedegs}) but should be coupled with statistical evidence prior to suggestions of a general trend. For this reason we used Gene Ontology (GO) terms to test for functional enrichment within open RVS per cell type. 
 
-Functional enrichments of genes found in RVS in each cell type were calculated using DAVID \cite{Huang2008, Huang2009} and filtered by false discovery rate (FDR $< .05$). This revealed slight enrichments for keywords "blood", "oxygen carrier" and "$\beta$ Haemoglobin" in the K562 cell type, a multipotent cell type which is known to show properties of an early erythrocyte, among others.\cite{lozzio1981} However, in the other two cell types we did not find significant enrichments across regions, except for artefacts caused by violations of the independence assumption used in GO term hypergeometric testing. Our RVS blocks were at least 1 Mb each so could contain more than one gene, thus enrichments were seen for those genes known to for paralogous clusters along a chromosome, such as olfactory receptors. The full results of these tests are given in the appendix (Tables \ref{tab:gmgo}, \ref{tab:h1go}, \ref{tab:k5go}).
+Functional enrichments of genes found in "flipped open" RVS in each cell type were calculated using DAVID \cite{Huang2008, Huang2009} and filtered by false discovery rate (FDR $< .05$). This revealed slight enrichments for keywords "blood", "oxygen carrier" and "$\beta$ Haemoglobin" in the K562 cell type, a multipotent cell type which is known to show properties of an early erythrocyte, among others.\cite{lozzio1981} However, in the other two cell types we did not find significant enrichments across regions, except for artefacts caused by violations of the independence assumption used in GO term hypergeometric testing. Our RVS blocks were at least 1 Mb each so could contain more than one gene, thus enrichments were seen for those genes known to for paralogous clusters along a chromosome, such as olfactory receptors. The full results of these tests are given in the appendix (Tables \ref{tab:gmgo}, \ref{tab:h1go}, \ref{tab:k5go}).
 
 The size of RVS could also explain we do not capture the relationship hinted at by cherry-picked examples (Fig. \ref{fig:flippedegs}). Given regions contain multiple (often unrelated) genes, we can imagine a case where a cell type specific locus is activated and moves into a more central position, disturbing adjacent genes which remain in a repressed state. Thus the cell type specific signals contained within the sum of all RVS in a given cell type could be obscured by the noise of adjacent genes captured in these broad compartment transitions.
 
@@ -319,10 +319,9 @@ If our cell-type-specific RVS are mediated by finer-scale structural levels (suc
 \captionsetup{width=\textwidth} 
 \caption[Regions of variable higher order structure change their genome-wide
 contact profiles to favour active compartments.]{ {\bf Regions of variable higher order structure change their genome-wide contact profiles to favour active compartments. }
-Genome-wide normalised contacts were summed for each region of variable structure and the relative proportion of those that were with
-active / A compartments is shown across the three cell types used in this study. Proportions
+Genome-wide normalised contacts were summed for each region of variable structure and the relative proportion of those that were with active / A compartments is shown across the three cell types used in this study. Proportions
 were subtracted from the genome-wide average per cell type, such that positive values indicate a
-greater than expected interaction bias with active compartments. These data are presented both as a summary boxplot (A) and with each individual region visualised (B).
+greater than expected interaction bias with active compartments. These data are presented both as a summary boxplot (A) and with each individual region visualised, sorted by relative proportion of A contacts in active cell type (B). 
 }\label{fig:longrange}
 \end{center} 
 \end{figure} 
