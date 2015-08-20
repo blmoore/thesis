@@ -42,9 +42,10 @@
 \contentsline {section}{\numberline {2.3}Modelling compartment eigenvectors}{20}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Random Forest}{20}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Model performance}{21}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Stepwise regression}{22}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}LASSO}{23}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Other modelling approaches}{24}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.3}Hidden Markov models}{22}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Stepwise regression}{22}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}LASSO}{23}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Other modelling approaches}{24}{subsection.2.3.6}
 \contentsline {section}{\numberline {2.4}Variable regions}{24}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Stratification by variability}{24}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Chromatin state enrichment}{25}{subsection.2.4.2}
@@ -131,9 +132,10 @@
 \contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{106}{subsection.6.3.2}
 \contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{109}{chapter.7}
 \contentsline {section}{\numberline {7.1}Modelling higher order chromatin organisation}{109}{section.7.1}
-\contentsline {section}{\numberline {7.2}Domain boundaries}{110}{section.7.2}
-\contentsline {section}{\numberline {7.3}A note on causality}{111}{section.7.3}
-\contentsline {section}{\numberline {7.4}Insights into genome organisation}{112}{section.7.4}
-\contentsline {section}{\numberline {7.5}Conclusion}{112}{section.7.5}
+\contentsline {section}{\numberline {7.2}The role of chromatin domains}{110}{section.7.2}
+\contentsline {section}{\numberline {7.3}Domain boundaries}{110}{section.7.3}
+\contentsline {section}{\numberline {7.4}A note on causality}{111}{section.7.4}
+\contentsline {section}{\numberline {7.5}Insights into genome organisation}{112}{section.7.5}
+\contentsline {section}{\numberline {7.6}Conclusion}{112}{section.7.6}
 \contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{115}{chapter*.81}
 \contentsline {chapter}{References}{135}{chapter*.82}

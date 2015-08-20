@@ -37,7 +37,7 @@
 \chapter{Introduction}
 \section{Genome organisation}\label{intro:genomeorg}
 %
-It's oft-stated that the DNA within each human cell would extend for two metres fully extended. Instead that same length of DNA packs into a cell nucleus with a diameter in the order of micrometers ($\mu$m). This is achieved through a complex organisation hierarchy, ranging from how chromosomes are arranged in the nucleus in territories, to nuclear interactions with the nucleolus or periphery, down to how DNA is wrapped around nucleosomes (for recent reviews, see \citenum{Pombo2015, Fraser2015}). While the biophysics of the latter level of organisation may be well understood, more broadly little is known about the guiding principles and functional importance of higher order chromatin organisation.
+It's oft-stated that the DNA within each human cell would extend for two metres fully extended. Instead that same length of DNA packs into a cell nucleus with a diameter in the order of micrometers ($\mu$m). This is achieved through a complex organisation hierarchy, ranging from how chromosomes are arranged in the nucleus in territories, to nuclear interactions with the nucleolus or periphery, down to how DNA is wrapped around nucleosomes (for recent reviews, see \citenum{Pombo2015, Fraser2015}). While the biophysics of the latter level of organisation may be well understood, more broadly there is much still to learn about the guiding principles and functional importance of higher order chromatin organisation.
 
 This introductory section will describe the current state-of-the-art in chromosome conformation capture experimental methods, as well as criticisms and considerations when interpreting these data, and discuss what is currently understood or theorised about the structure and function of higher order genome organisation. We compare competing models which attempt to recapitulate mechanisms of chromatin folding, and also explore some of the best understood organisational strata in mammalian higher order genome organisation.
 
@@ -101,7 +101,7 @@ Observed interaction frequencies (O) are averaged along super-diagonals to give 
 These compartments were identified through a continuous eigenvector profile, derived from a normalised Hi-C contact matrix\cite{Lieberman2009} (Fig. \ref{fig:eigcalc}). This approach can be intuitively understood as formulated by \citet{Lajoie2014}:
 \begin{enumerate}
 \item A tartan pattern on normalised Hi-C matrices indicates two preferentially-contacting compartments (Fig. \ref{fig:eigcalc}).
-\item Assume a function ($c$) that maps a given genomic bin to its compartment, using a positive number for compartment A and \emph{vice versa}.
+\item Assume a function ($c$) that maps a given genomic bin to its compartment, using a positive number for compartment A and a negative for compartment B.
 \item The interaction frequency between bins $i$ and $j$ is thus $c(i)\cdot c(j)$. (This is enough to generate a tartan pattern: if $i$ and $j$ are in the same compartment, the product will be positive.\cite{Lajoie2014})
 \item Our symmetric Hi-C matrix thus contains $c(i)c(j)$ and in this formulation, principle components analysis is finding the basis that minimises the mean-squared error between $c(i)c(j)$ and $c(i)$.
 \end{enumerate}
@@ -139,7 +139,7 @@ Recent high-resolution studies have been able to resolve ever-smaller levels of 
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=4in]{figs/genome_org.pdf}
+\includegraphics[width=4in]{figs/genome_org.png}
 \captionsetup{width=\textwidth}
 \caption[Levels of higher order chromatin organisation.]{ {\bf Levels of higher order chromatin organisation. } 
   Cartoon showing how functional contacts, such as loops between bound CTCF insulators (Section \ref{intro:loops}), occur within TADs (Section \ref{intro:tads}) which in turn are found within A or B compartments (Section \ref{sec:compartments}).
@@ -192,7 +192,7 @@ A recent Hi-C paper, that of \citet{Rao2014}, again brought CTCF and looping to 
 
 % recently partially addressed with http://www.sciencedirect.com/science/article/pii/S0092867415009691 + Guo et al. (2015) in Cell
 
-While the evidence linking CTCF and genome architecture is substantial, it should be noted that from a global perspective as few as $15\%$ of all CTCF sites were found to occur at TAD boundaries in human and mouse cells\cite{Dixon2012} and similarly around $25\%$ if TAD borders had no observable CTCF binding.\cite{Sexton2015} These facts indicate that CTCF alone is neither necessary nor sufficient for the formation of higher order chromatin structures such as TADs. Indeed, the degree of insulation at a given genomic site was recently reported to correlate with the degree of co-binding of a range of architectural proteins including not only CTCF but cohesin, condensin and the transcription complex TFIIIC, among others.\cite{VanBortle2014}
+While the evidence linking CTCF and genome architecture is substantial, it should be noted that from a global perspective as few as $15\%$ of all CTCF ChIP-seq peaks were found to occur at TAD boundaries in human and mouse cells\cite{Dixon2012} and similarly around $25\%$ if TAD borders had no observable CTCF binding.\cite{Sexton2015} These facts indicate that CTCF alone is neither necessary nor sufficient for the formation of higher order chromatin structures such as TADs. Indeed, the degree of insulation at a given genomic site was recently reported to correlate with the degree of co-binding of a range of architectural proteins including not only CTCF but cohesin, condensin and the transcription complex TFIIIC, among others.\cite{VanBortle2014}
 
 %\subsection{Cell cycle changes}
 %
