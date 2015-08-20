@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
@@ -105,5 +105,17 @@ Nora EP, Lajoie BR, Schulz EG, Giorgetti L, Okamoto I, Servant N, Piolot T, van
   Berkum NL, Meisig J, \emph{et~al.} (2012) {Spatial partitioning of the
   regulatory landscape of the X-inactivation centre.}
 \newblock \emph{Nature}, \textbf{485}(7398): 381--5.
+
+\bibitem[{Sexton and Cavalli(2015)}]{Sexton2015}
+Sexton T, Cavalli G (2015) {Review The Role of Chromosome Domains in Shaping
+  the Functional Genome}.
+\newblock \emph{Cell}, \textbf{160}(6): 1049--1059.
+
+\bibitem[{Giorgetti \emph{et~al.}(2014)Giorgetti, Galupa, Nora, Piolot, Lam,
+  Dekker, Tiana and Heard}]{Giorgetti2014a}
+Giorgetti L, Galupa R, Nora EP, Piolot T, Lam F, Dekker J, Tiana G, Heard E
+  (2014) {Predictive polymer modeling reveals coupled fluctuations in
+  chromosome conformation and transcription}.
+\newblock \emph{Cell}, \textbf{157}(4): 950--963.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt,oneside]{book}
+\documentclass[a4paper,11pt,oneside]{book}
 
 % packages 
 \usepackage{arsclassica}    % fancy layout
@@ -161,13 +161,48 @@ genome.
 
 \section{A note on causality}
 
+% formulate problem: is genome organised by (e.g.) transcription? or does genome organisation direct transcription?
+
+Throughout this thesis we have probed correlative relationships: those between chromatin features and expression, or higher order chromatin structure, or domain boundaries. However even the most predictive correlations make no comment on the underlying chain of causality. Whether genome organisation is a cause of consequence of the functions of underlying genetic elements remains an open question.\cite{Sexton2015}
+
+%Is it the case that pioneer factors and chromatin remodellers make key chromatin regions accessible, allowing the association of transcription initiation complexes and other bound factors? Or instead is the genome more passively arranged, through sequestration of repeat regions with LADs and rRNA gene clusters at the nucleolus, leaving that which remains more exposed to functional binding partners? As in common in biological systems, the reality is likely that both explanations hold for different regions of the genome.
+
+Two different approaches could be use to address the causality question. A standard rejoinder is to design wet-lab experiments, for example extending Hi-C studies to perturbation or differentiation time courses, such as that performed by collaborators in Chapter \ref{chap:boundaries}. However, another approach is first develop theoretical models which, under simulation, recapitulate observed data, and then to use these models to generate falsifiable hypotheses about the effects of specific perturbations. This latter approach is exemplified in a study by \citet{Giorgetti2014a} where the authors applied physical polymer modelling to deconvolute population-level 5C data into single-cell conformations. The model suggests that population-level averages are explained by transient contacts in each cell, rather than persistent loops. Furthermore, these models were able to predict the effects of a genetic deletion of a CTCF site and found that contacts within a TAD contribute to maintenance of the domain, dispelling an insulation-only explanation.\cite{Giorgetti2014a} This is also in agreement with experimental results showing that TADs can remain intact with the depletion of CTCF over a timecourse.\cite{Zuin2013}
+
+The predictive models generated in this thesis could also be applied to predicting the effects of experimental perturbations.
+
+%For example, in Chapter \ref{chap:boundaries} we find CTCF as strongly boundary-enriched and predictive of TAD boundaries. Indeed, this binding factor is the prime candidate for organising long-range DNA--DNA loops\cite{Rao2014, VietriRudan2015} and has been labelled the "master weaver of the genome".\cite{Phillips2009} It surprising to find that topological domains persist when CTCF is knocked-down.\cite{Zuin2013}
+%
+%For even greater precision, single cell Hi-C experiments with improved yield are expected to be published in the near-term, thus could allow 
+%
+%In Chapter \ref{chap:shh} we analyse experimental results which do attempt to address causality in a model region. Namely, is the ZRS--SHH contact itself the driver of SHH expression, or is the contact just an ever-present communication channel for the two regions.
+
+%While many histone
+%modifications can now be quantified experimentally,\cite{Nikolov2012, Sajan2012, Ernst2011} an integrated
+%understanding of general mechanisms underlying the cause or effect of
+%these marks lags behind. A 2011 opinion piece asked
+%the question ``Histone modification: cause or
+%cog?''\cite{Henikoff2011} and speculated that nucleosome modifications
+%could be by-products of transcription machinery, as opposed to
+%the ``histone code'' hypothesis which suggests that histone
+%modifications are placed to direct alterations in chromatin
+%state. This latter hypothesis is often tacitly invoked in the
+%chromatin literature, wherein a mark may be described as
+%``repressive'' or ``activating'' despite only the observation of a
+%correlative relationship.\cite{Henikoff2011} 
+%Similarly, the interplay
+%between locus-level factors and higher-order organisation of
+%chromatin, while known the be an important factor in
+%transcription, remains poorly understood mechanisatically.\cite{Li2011} 
+
+
 \section{Insights into higher order chromatin organisation}
 
 % RVS
 % largely invariant but with local changes
 % functional importance of higher order structure ?
 
-Our results agree with a functional model of genome architecture whereby a majority of the genome is arranged into large static compartments, be they Lamina associated, nucleolus associated or central and accessible chromatin. Indeed, it seems possible that such large, constitutive anchor points may be enough to generate a significant amount of concordance in nuclear architecture between cell types.\cite{Bouwman2015a} This broad overview is  coupled with local changes in different tissues, allowing cell type specific regulation of gene environments through "looping out", detachment from the nuclear lamina and other conceivable mechanisms of variation.
+Our results agree with a functional model of genome architecture whereby a majority of the genome is arranged into large static compartments, be they Lamina associated, nucleolus associated or central and accessible chromatin. Indeed, it seems possible that such large, constitutive anchor points may be enough to generate a significant amount of concordance in nuclear architecture between cell types.\cite{Bouwman2015a} This broad overview is  coupled with local changes in different tissues, allowing cell type specific regulation of gene environments through "looping out", detachment from the nuclear lamina and other conceivable mechanisms of variation. Whether these local changes are driven by DNA-binding proteins and chromatin remodellers or another biological mechanism remains unclear.
 
 \section{Conclusion}
 
