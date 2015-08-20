@@ -130,11 +130,10 @@
 \contentsline {subsection}{\numberline {6.3.1}Differential contacts}{106}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{106}{subsection.6.3.2}
 \contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{109}{chapter.7}
-\contentsline {section}{\numberline {7.1}Predictive models of chromosome compartments}{109}{section.7.1}
+\contentsline {section}{\numberline {7.1}Modelling higher order chromatin organisation}{109}{section.7.1}
 \contentsline {section}{\numberline {7.2}Domain boundaries}{110}{section.7.2}
-\contentsline {section}{\numberline {7.3}A note on causality}{112}{section.7.3}
-\contentsline {section}{\numberline {7.4}Insights into higher order chromatin organisation}{112}{section.7.4}
+\contentsline {section}{\numberline {7.3}A note on causality}{111}{section.7.3}
+\contentsline {section}{\numberline {7.4}Insights into genome organisation}{112}{section.7.4}
 \contentsline {section}{\numberline {7.5}Conclusion}{112}{section.7.5}
-\contentsline {section}{\numberline {7.6}Future research}{113}{section.7.6}
 \contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{115}{chapter*.81}
 \contentsline {chapter}{References}{135}{chapter*.82}

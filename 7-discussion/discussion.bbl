@@ -39,39 +39,20 @@ Hoffman MM, Ernst J, Wilder SP, Kundaje A, Harris RS, Libbrecht M, Giardine B,
   chromatin elements from ENCODE data.}
 \newblock \emph{Nucleic acids research}, \textbf{41}(2): 827--41.
 
-\bibitem[{Chambers \emph{et~al.}(2013)Chambers, Bickmore and
-  Semple}]{Chambers2013}
-Chambers EV, Bickmore Wa, Semple CA (2013) {Divergence of mammalian higher
-  order chromatin structure is associated with developmental loci.}
-\newblock \emph{PLoS computational biology}, \textbf{9}(4): e1003017.
+\bibitem[{Bernstein \emph{et~al.}(2010)Bernstein, Stamatoyannopoulos, Costello,
+  Ren, Milosavljevic, Meissner, Kellis, Marra, Beaudet
+  \emph{et~al.}}]{Bernstein2010}
+Bernstein BE, Stamatoyannopoulos Ja, Costello JF, Ren B, Milosavljevic A,
+  Meissner A, Kellis M, Marra Ma, Beaudet AL, \emph{et~al.} (2010) {The NIH
+  Roadmap Epigenomics Mapping Consortium.}
+\newblock \emph{Nature biotechnology}, \textbf{28}(10): 1045--8.
 
-\bibitem[{Dong \emph{et~al.}(2012)Dong, Greven, Kundaje, Djebali, Brown, Cheng,
-  Gingeras, Gerstein, Guig\'{o} \emph{et~al.}}]{Dong2012}
-Dong X, Greven MC, Kundaje A, Djebali S, Brown JB, Cheng C, Gingeras TR,
-  Gerstein M, Guig\'{o} R, \emph{et~al.} (2012) {Modeling gene expression using
-  chromatin features in various cellular contexts.}
-\newblock \emph{Genome biology}, \textbf{13}(9): R53.
-
-\bibitem[{Zwang \emph{et~al.}(2012)Zwang, Oren and Yarden}]{Zwang2012}
-Zwang Y, Oren M, Yarden Y (2012) {Consistency test of the cell cycle: roles for
-  p53 and EGR1.}
-\newblock \emph{Cancer research}, \textbf{72}(5): 1051--4.
-
-\bibitem[{M\"{u}ller-Tidow \emph{et~al.}(2010)M\"{u}ller-Tidow, Klein, Hascher,
-  Isken, Tickenbrock, Thoennissen, Agrawal-Singh, Tschanter, Disselhoff
-  \emph{et~al.}}]{Muller-Tidow2010}
-M\"{u}ller-Tidow C, Klein HU, Hascher A, Isken F, Tickenbrock L, Thoennissen N,
-  Agrawal-Singh S, Tschanter P, Disselhoff C, \emph{et~al.} (2010) {Profiling
-  of histone H3 lysine 9 trimethylation levels predicts transcription factor
-  activity and survival in acute myeloid leukemia.}
-\newblock \emph{Blood}, \textbf{116}(18): 3564--71.
-
-\bibitem[{Hagmeyer \emph{et~al.}(1996)Hagmeyer, Duyndam, Angel, de~Groot,
-  Verlaan, Elfferich, van~der Eb and Zantema}]{Hagmeyer1996}
-Hagmeyer BM, Duyndam MC, Angel P, de~Groot RP, Verlaan M, Elfferich P, van~der
-  Eb A, Zantema A (1996) {Altered AP-1/ATF complexes in
-  adenovirus-E1-transformed cells due to EIA-dependent induction of ATF3.}
-\newblock \emph{Oncogene}, \textbf{12}: 1025--1032.
+\bibitem[{Kundaje \emph{et~al.}(2015)Kundaje, Meuleman, Ernst, Bilenky, Yen,
+  Heravi-Moussavi, Kheradpour, Zhang, Wang \emph{et~al.}}]{Kundaje2015}
+Kundaje A, Meuleman W, Ernst J, Bilenky M, Yen A, Heravi-Moussavi A, Kheradpour
+  P, Zhang Z, Wang J, \emph{et~al.} (2015) {Integrative analysis of 111
+  reference human epigenomes}.
+\newblock \emph{Nature}, \textbf{518}(7539): 317--330.
 
 \bibitem[{Rao \emph{et~al.}(2014)Rao, Huntley, Durand, Stamenova, Bochkov,
   Robinson, Sanborn, Machol, Omer \emph{et~al.}}]{Rao2014}
@@ -93,6 +74,12 @@ Zuin J, Dixon JR, van~der Reijden MIJa, Ye Z, Kolovos P, Brouwer RWW, van~de
 Bouwman BA, de~Laat W (2015) {Getting the genome in shape: the formation of
   loops, domains and compartments}.
 \newblock \emph{Genome Biology}, \textbf{16}(1): 154.
+
+\bibitem[{Chambers \emph{et~al.}(2013)Chambers, Bickmore and
+  Semple}]{Chambers2013}
+Chambers EV, Bickmore Wa, Semple CA (2013) {Divergence of mammalian higher
+  order chromatin structure is associated with developmental loci.}
+\newblock \emph{PLoS computational biology}, \textbf{9}(4): e1003017.
 
 \bibitem[{Ong and Corces(2014)}]{Ong2014}
 Ong CT, Corces VG (2014) {CTCF: an architectural protein bridging genome
@@ -117,5 +104,19 @@ Giorgetti L, Galupa R, Nora EP, Piolot T, Lam F, Dekker J, Tiana G, Heard E
   (2014) {Predictive polymer modeling reveals coupled fluctuations in
   chromosome conformation and transcription}.
 \newblock \emph{Cell}, \textbf{157}(4): 950--963.
+
+\bibitem[{Kim and Kim(2012)}]{Kim2012}
+Kim J, Kim H (2012) {Recruitment and biological consequences of histone
+  modification of H3K27me3 and H3K9me3.}
+\newblock \emph{ILAR journal / National Research Council, Institute of
+  Laboratory Animal Resources}, \textbf{53}(3-4): 232--9.
+
+\bibitem[{Karimi \emph{et~al.}(2011)Karimi, Goyal, Maksakova, Bilenky, Leung,
+  Tang, Shinkai, Mager, Jones \emph{et~al.}}]{Karimi2011}
+Karimi MM, Goyal P, Maksakova Ia, Bilenky M, Leung D, Tang JX, Shinkai Y, Mager
+  DL, Jones S, \emph{et~al.} (2011) {DNA methylation and SETDB1/H3K9me3
+  regulate predominantly distinct sets of genes, retroelements, and chimeric
+  transcripts in mescs}.
+\newblock \emph{Cell Stem Cell}, \textbf{8}(6): 676--687.
 
 \end{thebibliography}

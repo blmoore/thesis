@@ -44,80 +44,63 @@ Despite the increasing availability of
 Previous studies have compared regions of higher order structure between cell types\cite{Lieberman2009} and species\cite{Dixon2012} but often anecdotally, on a selected region. Here we perform a multi-cell line comparison is a quantitative way, to 
 
 
-\section{Predictive models of chromosome compartments}
+\section{Modelling higher order chromatin organisation}
 
 Integrative analyses of locus level chromatin data have allowed the
 prediction of functional chromatin states \cite{Ernst2012, Ram2011,
   Dunham2012, Hoffman2013} but these states typically emcompass small
-regions such as the enhancers examined here. The prediction of higher
-order chromatin domains has received much less attention, and it was
-not clear until now that sufficient data existed to allow accurate
-predictions. Our data show that accurate predictions of Hi-C derived
-eigenvector values, and the nuclear compartment domains based upon
-them, are entirely feasible. Strong and significant correlations are
-seen between cell types for a variety of human higher order domains,
-deliniating variation in replication timing, lamin association and
-nuclear compartments derived from Hi-C eigenvectors
-\cite{Chambers2013}. The data presented here therefore suggest that a
-variety of such domains could be successfully modelled. Given the fact
-that the binding patterns of most human chromatin components have not
-yet been mapped the models presented here are remarkably successful,
-though will undoubtedly improve with further data and algorithm
-development. These models also allowed us to probe the features
-underlying regions with variable higher order structure between cell
-types, revealing enrichments of cell type specific enhancer activity,
-and suggesting links between functional chromatin states and higher
-order domain dynamics. It is not possible to distinguish cause and
-effect using the current data, but it seems likely that the
-alterations in domain organization occur prior to enhancer activity.
+regions, on the order of hundreds of basepairs, rather than the larger-scale structures we are concerned with in this work.
 
-The recent abundance of epigenomic data in model cell types has
-enabled accurate modelling of the transcriptional output of human
-promoters, and a rigorously quantitative assessment of the most
-influential chromatin features underlying gene expression
-\cite{Dong2012}. We have shown that it is possible to construct
-comparable models describing the features underlying higher order
-chromatin structure, and that their predictive accuracy can be
-high. Our analysis exploits Hi-C datasets that have been re-analysed,
-from the intitial sequence read mapping onwards, identically for three
-different cell types. These data were collated with 35 locus level
-ENCODE chromatin datasets, also processed identically, and matched
-across the same cell types. In common with previous studies
-\cite{Chambers2013, Dixon2012}, we observed good concordance of higher
-order chromatin structure, reflected in Hi-C data, between different
-cell types. Random forest models summarised the important
-relationships among these many variables, providing insights into the
-quantitative contributions of locus level chromatin features to higher
-order structures. Although certain features were notably more
-influential in a particular cell type, the models shared overlapping
-constellations of informative features, allowing the cross application
-of models between cell types.
+Our data show that accurate predictions of Hi-C derived
+eigenvector values, and therefore chromosome compartments, are entirely achievable. Generalisation across cell types further suggests that chromosome compartments could be inferred for those cell types without any available Hi-C data but with available ChIP-seq for a handful of chromatin features. For example, the NIH Roadmap Epigenomics project has generated histone modification data in hundreds of cell lines, tissues and developmental stages.\cite{Bernstein2010, Kundaje2015} If models in this work were adapted to use matched inputs, this would allow comprehensive comparisons of inferred chromosome compartments across a diverse range of conditions and cell types. In the same vein, chromosome compartments are known to be related to and recapitulate other aspects of higher order chromatin organisation, including replication timing domains, Lamina associated domains and nucleolus association domains. We therefore suggest a similar modelling approach could prove successful for each of these domains of interest. An exciting idea is that an integrative model capable of identifying these LADs and NADs could forward this information to a subsequent three-dimensional reconstruction algorithm, giving a truly \emph{in situ} perspective onto nuclear architecture.
 
+% Stuff from the paper ::
 
+%The recent abundance of epigenomic data in model cell types has
+%enabled accurate modelling of the transcriptional output of human
+%promoters, and a rigorously quantitative assessment of the most
+%influential chromatin features underlying gene expression
+%\cite{Dong2012}. We have shown that it is possible to construct
+%comparable models describing the features underlying higher order
+%chromatin structure, and that their predictive accuracy can be
+%high. Our analysis exploits Hi-C datasets that have been re-analysed,
+%from the intitial sequence read mapping onwards, identically for three
+%different cell types. These data were collated with 35 locus level
+%ENCODE chromatin datasets, also processed identically, and matched
+%across the same cell types. In common with previous studies
+%\cite{Chambers2013, Dixon2012}, we observed good concordance of higher
+%order chromatin structure, reflected in Hi-C data, between different
+%cell types. Random forest models summarised the important
+%relationships among these many variables, providing insights into the
+%quantitative contributions of locus level chromatin features to higher
+%order structures. Although certain features were notably more
+%influential in a particular cell type, the models shared overlapping
+%constellations of informative features, allowing the cross application
+%of models between cell types.
 
-The current data suggest that the contributions of certain locus level
-chromatin features to higher order structures vary between cell
-types. Striking examples include the strong influence of H3K9me3 in
-K562 leukemia cells, and EGR1 binding in H1 hESC. EGR1 is a pivotal
-regulator of cell fate and mitogenesis with critical roles in
-development and cancer \cite{Zwang2012}. While the patterns of
-repressive H3K9me3 accumulation have been a focus in the cancer
-literature and have been proposed as a diagnostic marker in leukemia
-\cite{Muller-Tidow2010}. Similarly, the model for GM12878
-(Epstein-Barr virus transformed lymphoblasoid) cells shows a
-disproportionate influence of ATF3 binding patterns, and ATF3
-induction is a known consequence of virus transformed cells
-\cite{Hagmeyer1996}. Thus, the most cell type specific features in
-these models may be important indicators of cell type specific
-functions. These cell type specific features present a paradox, in
-view of the strong correlations in organization genome wide across
-different cell types \cite{Chambers2013, Dixon2012}, and the
-demonstration that models trained in one cell type often perform well
-with data from other cell types. These contradictory observations are
-reconciled by the presence of inter-correlated clusters of features
-underlying A and B compartments. The shifting membership of these
-clusters evidently retains enough similarity between cell types to
-enable the cross application of models.
+%The current data suggest that the contributions of certain locus level
+%chromatin features to higher order structures vary between cell
+%types. Striking examples include the strong influence of H3K9me3 in
+%K562 leukemia cells, and EGR1 binding in H1 hESC. EGR1 is a pivotal
+%regulator of cell fate and mitogenesis with critical roles in
+%development and cancer \cite{Zwang2012}. While the patterns of
+%repressive H3K9me3 accumulation have been a focus in the cancer
+%literature and have been proposed as a diagnostic marker in leukemia
+%\cite{Muller-Tidow2010}. Similarly, the model for GM12878
+%(Epstein-Barr virus transformed lymphoblasoid) cells shows a
+%disproportionate influence of ATF3 binding patterns, and ATF3
+%induction is a known consequence of virus transformed cells
+%\cite{Hagmeyer1996}. Thus, the most cell type specific features in
+%these models may be important indicators of cell type specific
+%functions. These cell type specific features present a paradox, in
+%view of the strong correlations in organization genome wide across
+%different cell types \cite{Chambers2013, Dixon2012}, and the
+%demonstration that models trained in one cell type often perform well
+%with data from other cell types. These contradictory observations are
+%reconciled by the presence of inter-correlated clusters of features
+%underlying A and B compartments. The shifting membership of these
+%clusters evidently retains enough similarity between cell types to
+%enable the cross application of models.
 
 \section{Domain boundaries}
 
@@ -169,7 +152,7 @@ Throughout this thesis we have probed correlative relationships: those between c
 
 Two different approaches could be use to address the causality question. A standard rejoinder is to design wet-lab experiments, for example extending Hi-C studies to perturbation or differentiation time courses, such as that performed by collaborators in Chapter \ref{chap:boundaries}. However, another approach is first develop theoretical models which, under simulation, recapitulate observed data, and then to use these models to generate falsifiable hypotheses about the effects of specific perturbations. This latter approach is exemplified in a study by \citet{Giorgetti2014a} where the authors applied physical polymer modelling to deconvolute population-level 5C data into single-cell conformations. The model suggests that population-level averages are explained by transient contacts in each cell, rather than persistent loops. Furthermore, these models were able to predict the effects of a genetic deletion of a CTCF site and found that contacts within a TAD contribute to maintenance of the domain, dispelling an insulation-only explanation.\cite{Giorgetti2014a} This is also in agreement with experimental results showing that TADs can remain intact with the depletion of CTCF over a timecourse.\cite{Zuin2013}
 
-The predictive models generated in this thesis could also be applied to predicting the effects of experimental perturbations.
+The models built in this thesis could also be applied to predicting the effects of experimental perturbations. For example, an experiment decreasing the tri-methylation of H3K9, through down-regulation of SETDB1 or SV39H1 for example, might be expected to lead to heterochromatic regions to become more permissive or allow the transcription of marked tandem repeat sequences.\cite{Kim2012}  Our models further suggest the effect would be most pronounced in K562 cells (Section \ref{sec:varimp}). A previous experiment analysed the effects of losing H3K9me3 in SETDB1 knockout mice and found increased expression of a number of endogenous retroviruses,\cite{Karimi2011} but whether these expression changes were also coupled with alterations in chromosome compartment was not tested. Performing such an experiment over a number of timepoints could help to establish whether expression drives genomic regions to an active compartment or \emph{vice versa}.
 
 %For example, in Chapter \ref{chap:boundaries} we find CTCF as strongly boundary-enriched and predictive of TAD boundaries. Indeed, this binding factor is the prime candidate for organising long-range DNA--DNA loops\cite{Rao2014, VietriRudan2015} and has been labelled the "master weaver of the genome".\cite{Phillips2009} It surprising to find that topological domains persist when CTCF is knocked-down.\cite{Zuin2013}
 %
@@ -196,16 +179,17 @@ The predictive models generated in this thesis could also be applied to predicti
 %transcription, remains poorly understood mechanisatically.\cite{Li2011} 
 
 
-\section{Insights into higher order chromatin organisation}
+\section{Insights into genome organisation}
 
 % RVS
 % largely invariant but with local changes
 % functional importance of higher order structure ?
 
-Our results agree with a functional model of genome architecture whereby a majority of the genome is arranged into large static compartments, be they Lamina associated, nucleolus associated or central and accessible chromatin. Indeed, it seems possible that such large, constitutive anchor points may be enough to generate a significant amount of concordance in nuclear architecture between cell types.\cite{Bouwman2015a} This broad overview is  coupled with local changes in different tissues, allowing cell type specific regulation of gene environments through "looping out", detachment from the nuclear lamina and other conceivable mechanisms of variation. Whether these local changes are driven by DNA-binding proteins and chromatin remodellers or another biological mechanism remains unclear.
+Overall our results agree with a functional model of genome architecture whereby a majority of the genome is arranged into large static compartments (Section \ref{sec:wiggles}), be they Lamina associated, nucleolus associated or central and accessible chromatin. Indeed, it seems plausible that such large, constitutive anchor points may be enough to generate a significant amount of concordance in nuclear architecture between cell types.\cite{Bouwman2015a} These broad similarities are coupled with local structural changes in different cell lines (Section \ref{sec:variableregions}), allowing cell type specific regulation of gene environments through "looping out", detachment from the nuclear lamina and other conceivable mechanisms of structural variation. Whether these local changes are driven by DNA-binding proteins and chromatin remodellers or functional contacts such as enhancer--promoter interactions remains unclear, though we report enrichments for both transcriptional activity and active enhancers in variable regions, but do not observe enrichments for CTCF elements, for example (Section \ref{sec:chromstateenrich}).
 
 \section{Conclusion}
 
+% structure function relationships remains unclear 
 It has become commonplace to discuss the multi-layered, hierarchical
 organization of interphase chromosomes across strata ranging from
 nuclear compartments, down to the spectra of histone modifications and
@@ -241,8 +225,6 @@ summary, we show that integrative modelling of large chromatin dataset
 collections using random forests can generate useful insights into
 chromosome structure and seed testable hypotheses for further
 experimental studies.
-
-\section{Future research}
 
 \ifstandalone
 \begin{small}
