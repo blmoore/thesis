@@ -114,7 +114,7 @@ The TAD calling algorithm is a multi-stage process. Firstly, a statistic called 
 
 Equation \ref{eqn:di} can be intuitively understood as first determining the direction of the bias (the sign is given by $\frac{U - D}{|U - D|}$) and then calculating the extent of the bias (with $\frac{(D - E)^2}{E} + \frac{(U - E)^2}{E}$ being akin to a $\chi^2$-type statistic).\cite{Dixon2012}
 
-This DI metric could be used as-is to call domains. Peaks of downstream contacts culminating in a peak of upstream contacts would delineate a self-interacting domains. However, \citet{Dixon2012} instead use a hidden Markvoc model (HMM) in a manner similar of that we later employed to call compartments (Section \ref{sec:compartments}). 
+This DI metric could be used as-is to call domains. Peaks of downstream contacts culminating in a peak of upstream contacts would delineate self-interacting domains. However, \citet{Dixon2012} instead use a hidden Markov model (HMM) in a manner similar of that we later employed to call compartments (Section \ref{sec:compartments}). 
 
 Here, the DI metric is considered a noisy observation emitted by an unobserved underlying three-state sequence of upstream, downstream or no- directional contact bias.\cite{Dixon2012} The HMM was fit to each chromosome with between 1 and 20 Gaussian mixtures allowed per state, however in some cases the expectation-maximisation (EM) algorithm used to parameterise these hidden states failed to converge; such cases were ignored. The Akaike information criterion (AIC) was used to selection the optimal number of mixtures (in practice, we found 5--10 were selected). 
 
@@ -236,6 +236,8 @@ cell types.
 
 To test the sensitivity of the models to resolution, we also applied cell-type specific models learnt at 1 Mb resolution to input features binned at 100 kb. This was done by training a Random Forest regression model on all available 1 Mb bins in a given cell type, then applying that model to the prediction of all compartment eigenvectors derived at 100 kb. Model performance was then assessed as above, with the caveat that here the test set represents a higher-resolution window onto the original training set, therefore we might expect this to inflate the measures of generalisation error.
 
+\subsection{Hidden Markov models}\label{meth:hmm}
+
 \subsection{Stepwise regression}\label{meth:stepregress}
 
 % Expand, equations etc.
@@ -245,7 +247,7 @@ It should be noted that despite its continued widespread usage, several statisti
 
 \subsection{LASSO}\label{meth:lasso}
 
-The least absolute shrinkage and selection operator (LASSO) is a form of $\ell_1$ regularisation that penalises the sum of absolute values of standardised regression coefficients. By penalising absolute values and sums, rather than squared values as in $\ell_2$ regularisation (Ridge regression, for example), coefficients can be shrunk to $0$ thereby removing terms from the model. Thus LASSO combines coefficient shrinkage of techniques like Ridge regression with a type of feature selection by promoting model sparsity.\cite{Tibshirani1994, Hastie2001}
+The least absolute shrinkage and selection operator (LASSO) is a form of $\ell_1$ regularisation that penalises the sum of absolute values of standardised regression coefficients. By penalising absolute values and sums, rather than squared values as in $\ell_2$ regularisation (Ridge regression, for example), coefficients can be shrunk to $0$ thereby removing terms from the model. Thus the LASSO combines coefficient shrinkage of techniques like Ridge regression with a type of feature selection by promoting model sparsity.\cite{Tibshirani1994, Hastie2001}
 
 Simply put, the LASSO minimises the sum of squared errors subject to a tuneable constraint on the sum total of absolute model coefficients. In equation form, we are fitting a simple linear model:
 
@@ -334,7 +336,7 @@ Variable regions (section \ref{sec:variable}) were tested for functional enrichm
 
 \subsection{TAD boundaries}\label{meth:tadbounds}
 
-Having called TADs (Section \ref{meth:tadcalling}), we than have a set of boundaries at the start and end of each domain. We generated average boundary enrichment or depletion profiles by averaging input features into 50 kb bins spanning $\pm450$ kb from the boundary bin.
+Having called TADs (Section \ref{meth:tadcalling}), we then have a set of boundaries at the start and end of each domain. We generated average boundary enrichment or depletion profiles by averaging input features into 50 kb bins spanning $\pm450$ kb from the boundary bin.
 
 To test for the enrichment or depletion of a chromatin feature over a
 given boundary, a two tailed Mann-Whitney test was used to compare the
@@ -399,16 +401,25 @@ In our simple two-class setting (i.e. boundary, $b$, or non-boundary), this simp
 G =  2p_{b} (1-p_{b})
 \end{equation}
 
-To convert the impurity into a measure of importance, we compare $G$ of a parent node with that of its two daughter nodes ($G_{d_1}$ and $G_{d_2}$), following a partition on a given variable of interest. This decrease in Gini impurity can then be averaged over all splits in which a specific variable has been selected ($N_{used}$). This approach is described in Equation \ref{eqn:giniimportance}.
+To convert the impurity into a measure of importance, we compare $G$ of a parent node with that of its two daughter nodes ($G_{d_1}$ and $G_{d_2}$), following a partition on a given variable of interest. %This decrease in Gini impurity can then be averaged over all splits in which a specific variable has been selected ($N_{used}$). This approach is described in Equation \ref{eqn:giniimportance}.
+
+% text from ?importance :: The second measure is the total decrease in node impurities from splitting on the variable, averaged over all trees. For classification, the node impurity is measured by the Gini index. For regression, it is measured by residual sum of squares.
+This decrease in Gini impurity can then be summed over all splits in which a specific variable has been selected per tree ($N_{used}$), and the averaged over all trees in the forest ($ntrees$). This approach is described in Equation \ref{eqn:giniimportance}.
 
 % j = node; N_used : number of times var used; d_x = daughter
+%\begin{equation}\label{eqn:giniimportance}
+%I = \frac{1}{N_{used}} \sum_{j=1}^{N_{used}} G_{j} - (G_{d_1} + G_{d_2})
+%\end{equation}
+
+% actually looks like Gini is summed per tree, averaged per forest
 \begin{equation}\label{eqn:giniimportance}
-I = \frac{1}{N_{used}} \sum_{j=1}^{N_{used}} G_{j} - (G_{d_1} + G_{d_2})
+I = \frac{1}{ntrees} \sum_{i=1}^{ntrees} \sum_{j=1}^{N_{used}} G_{j} - (G_{d_1} + G_{d_2})
 \end{equation}
+
 
 \section{MetaTAD analysis}\label{meth:meta}
 
-MetaTADs are a concept discovered by collaborators. Their method for calling such features involve the constrained hierarchical cluttering of those neighbouring TADs with the greatest inter-TAD contacts. This pairing was recursed up to the level of whole chromosomes, thus resulting in a tree of increasing metaTAD aggregation. 
+MetaTADs are a conceptual level of genome organisation discovered by collaborators in the Pombo lab. Their method for calling metaTADs involve the constrained hierarchical clustering of those neighbouring TADs with the greatest inter-TAD contacts. This pairing was recursed up to the level of whole chromosomes, thus resulting in a tree of increasing metaTAD aggregation. 
 
 %Additionally our collaborators used an altered TAD calling method to that of \citet{Dixon2012} They used the directionality index (DI), as described in Section \ref{meth:tadcalling}), but replaced the subsequent steps with a simple thresholding method: when the DI crossed a threshold of standard deviation, $\sigma$, it was considered either an up- or downstream biased bin and TADs were called between
 
@@ -514,7 +525,7 @@ This package functions both to produces normalised interaction frequencies which
 
 \subsection{Normalisation}\label{methods:4cnorm}
 
-The normalisation procedure is adapted from a previous method for normalising deepCAGE data between samples.\cite{Balwierz2009} In short, the reverse-cumulative distribution of read counts per restriction fragment is fit to a power-law model; this effectively encodes the \emph{a priori} expectation of exponential decay of the number of contacts as distance increases from the viewpoint. Transformed read counts per million (RPM) can then be retrieved from a standardised reverse cumulative distribution, parametrised with the empirical coefficient, $\alpha = -1.35$.\cite{Thongjuea2013}
+The normalisation procedure for 4C data is adapted from a previous method for normalising deepCAGE data between samples.\cite{Balwierz2009} In short, the reverse-cumulative distribution of read counts per restriction fragment is fit to a power-law model; this effectively encodes the \emph{a priori} expectation of exponential decay of the number of contacts as distance increases from the viewpoint. Transformed read counts per million (RPM) can then be retrieved from a standardised reverse cumulative distribution, parametrised with the empirical coefficient, $\alpha = -1.35$.\cite{Thongjuea2013}
 
 This normalisation procedure has the effect of making the output RPM value independent of the original experiment's sequencing depth and, more importantly, acts to reduces the impact of artefacts and errors by enforcing the expected power-law relationship of restriction fragment read counts.
 
