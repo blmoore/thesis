@@ -1,4 +1,4 @@
-\begin{thebibliography}{211}
+\begin{thebibliography}{212}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -646,6 +646,10 @@ Hastie T, Tibshirani R, Friedman J (2009) \emph{{Elements of Statistical
   Learning: Data Mining, Inference, and Prediction}}.
 \newblock Springer, 2 edition.
 \newblock ISBN 978-0-387-84858-7.
+
+\bibitem[{Eddy(2004)}]{Eddy2004}
+Eddy SR (2004) {What is a hidden Markov model?}
+\newblock \emph{Nature biotechnology}, \textbf{22}(10): 1315--1316.
 
 \bibitem[{Mantel(1970)}]{Mantel1970}
 Mantel N (1970) {Why Stepdown Procedures in Variable Selection}.

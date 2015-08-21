@@ -6,45 +6,45 @@ Database file #1: /Users/benmoore/Documents/library.bib
 Database file #2: /Users/benmoore/Documents/customrefs.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--there's a number but no volume in Huang2008
-You've used 18 entries,
+You've used 19 entries,
             3024 wiz_defined-function locations,
-            744 strings with 9568 characters,
-and the built_in function-call counts, 26580 in all, are:
-= -- 2767
-> -- 854
-< -- 4
-+ -- 620
-- -- 219
-* -- 2006
-:= -- 2873
-add.period$ -- 36
-call.type$ -- 18
-change.case$ -- 90
-chr.to.int$ -- 19
-cite$ -- 19
-duplicate$ -- 2750
-empty$ -- 1891
-format.name$ -- 272
-if$ -- 5460
+            752 strings with 9653 characters,
+and the built_in function-call counts, 27180 in all, are:
+= -- 2824
+> -- 861
+< -- 5
++ -- 624
+- -- 221
+* -- 2050
+:= -- 2956
+add.period$ -- 38
+call.type$ -- 19
+change.case$ -- 95
+chr.to.int$ -- 20
+cite$ -- 20
+duplicate$ -- 2804
+empty$ -- 1945
+format.name$ -- 275
+if$ -- 5581
 int.to.chr$ -- 1
-int.to.str$ -- 19
-missing$ -- 234
-newline$ -- 76
-num.names$ -- 54
-pop$ -- 1351
+int.to.str$ -- 20
+missing$ -- 242
+newline$ -- 80
+num.names$ -- 57
+pop$ -- 1369
 preamble$ -- 1
-purify$ -- 72
+purify$ -- 76
 quote$ -- 0
-skip$ -- 448
+skip$ -- 461
 stack$ -- 0
-substring$ -- 3293
-swap$ -- 624
+substring$ -- 3356
+swap$ -- 647
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 108
+type$ -- 114
 warning$ -- 1
-while$ -- 181
+while$ -- 186
 width$ -- 0
-write$ -- 219
+write$ -- 231
 (There was 1 warning)

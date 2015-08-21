@@ -110,7 +110,32 @@ Megabase resolution compartment eigenvector values are shown in a plot matrix. \
 
 \subsection{Compartments}\label{sec:compcalls}
 
-The continuous compartment eigenvector is most commonly used as-is to classify A/B compartments by thresholding based on sign: typically the eigenvector is orientated such that positive values reflect A compartments and negative values B compartments.\cite{Lieberman2009, Kalhor2012} However, given compartments are understood to be generally broad and alternating domains along a chromosome, often aligning with other large domains such as LADs, an improved classification method might penalise the calls of very short compartment calls, which may be the result of noise.
+The continuous compartment eigenvector is most commonly used as-is to classify A/B compartments by thresholding based on sign: typically the eigenvector is orientated such that positive values reflect A compartments and negative values B compartments.\cite{Lieberman2009, Kalhor2012} However, given compartments are understood to be generally broad and alternating domains along a chromosome, often aligning with other large domains such as LADs, an improved classification method might penalise the calls of very short compartment calls, which may be the result of noise. For this reason, instead of using raw eigenvector values we consider observed values as emissions from unobserved underlying states (Fig. \ref{fig:hmmflow}). We built a hidden Markov model (HMM; Methods \ref{meth:hmm}) to represent these states through a well-described probabilistic framework.\cite{Eddy2004}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=3.2in]{figs/hmm_flow.pdf}
+\captionsetup{width=\textwidth}
+\caption[ Overview of HMM method for compartment calls.  ]{ {\bf Overview of HMM method for compartment calls.  }
+Schematic of HMM method for compartment calls, showing transition and emissions distributions learned in the GM12878 cell type. A description of HMMs is given in Methods \ref{meth:hmm}. Emission distributions for each cell type are shown in Figure \ref{fig:hmmdist}.
+}\label{fig:hmmflow}
+\end{center}
+\end{figure} 
+
+ Firstly we designed the HMM to have two unobserved states with univariate Gaussian distributed emissions (representing our A and B compartments; Fig. \ref{fig:hmmdist}). To parameterise these states we used the iterative Baum-Welch algorithm, an Expectation-Maximisation procedure designed for HMMs. Having parameterised the HMM for each cell type, we then use the Viterbi algorithm to infer the most likely state sequence to have generated our observed data. This two-state sequence is then used to assign compartment identities to genomic bins. A schematic of this procedure is shown in Figure \ref{fig:hmmflow}.
+%This can be modelled through a Hidden Markov Model (HMM), whereby we first parameterise models of state and their transitions, then infer the most likely state sequence to have emitted our observed data (Fig. \ref{fig:hmmflow}). This unobserved two-state sequence is then used for compartment calls (Methods \ref{sec:compartments}). 
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=2.75in]{figs/hmm_dists.pdf}
+\captionsetup{width=\textwidth}
+\caption[ Univariate Gaussian emission distributions for A and B unobserved HMM states. ]{ {\bf Univariate Gaussian emission distributions for A and B unobserved HMM states. }
+Probability distributions for compartment eigenvector values per HMM state are shown for each cell type. Distributions centred below zero (lighter colours) show the distribution for the B compartment state, distributions centred above zero (darker) represent the A compartment state.
+}\label{fig:hmmdist}
+\end{center}
+\end{figure} 
+
+In practice, this acts to de-noise our compartment calls. Whereas single sign-changes along the series would (under a thresholding procedure) have resulted in a single-block compartment, these may now be modelled as noisy emissions from a single unobserved state. An exemplar region is shown in Fig. \ref{fig:denoise}. This shows an approximately 50 Mb region from chromosome 8 with eigenvector data from the H1 hESC cell line. A simple thresholding method in this region calls a total of $12$ regions, whereas our HMM method finds only $6$ larger regions in the same window. The disparity is caused by very short and single-bin compartments being disfavoured by the HMM-based method (e.g. Fig. \ref{fig:denoise}). 
 
 \begin{figure}
 \begin{center}
@@ -122,32 +147,7 @@ Chromosome compartments have previously been called through simple thresholding 
 \end{center}
 \end{figure} 
 
-For this reason, instead of using raw eigenvector values we consider observed values as emissions from unobserved underlying states. This can be modelled through a Hidden Markov Model (HMM), whereby we first parameterise models of state and their transitions, then infer the most likely state sequence to have emitted our observed data. This unobserved two-state sequence is then used for compartment calls (Methods \ref{sec:compartments}). 
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=3in]{figs/hmm_flow.pdf}
-\captionsetup{width=\textwidth}
-\caption[ Overview of HMM method for compartment calls.  ]{ {\bf Overview of HMM method for compartment calls.  }
-Schematic of HMM method for compartment calls, showing transition and emissions distributions learned in the GM12878 cell type. A description of the HMM framework is given in Methods \ref{meth:hmm}.
-}\label{fig:hmmflow}
-\end{center}
-\end{figure} 
-
-In practice, this acts to de-noise our compartment calls. Where single sign-changes along the series would have resulted in a single-block compartment, these may now be modelled as noisy emissions from a single unobserved state. An exemplar region is showing in Fig. \ref{fig:denoise}. This shows an approximately 50 Mb region from chromosome 8 with eigenvector data from the H1 hESC cell line. A simple thresholding method in this region calls a total of $12$ regions, whereas our HMM method finds only $6$ larger regions in the same window. The disparity is caused by very short and single-bin compartments being disfavoured by the HMM-based method (Fig. \ref{fig:denoise}). 
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=2.75in]{figs/hmm_dists.pdf}
-\captionsetup{width=\textwidth}
-\caption[ Gaussian distributions emitted by HMM A/B states.  ]{ {\bf Gaussian distributions emitted by HMM A/B states. }
-Placeholder
-}\label{fig:hmmdist}
-\end{center}
-\end{figure} 
-
-
-Having called compartments we can compare their properties across cell types. In each case, a majority of chromosome compartments are in the range $0$--$10$ Mb in size, with a handful compartments reaching up to $40$ Mb in size (Fig. \ref{fig:compsizedists}). Median sizes for compartments called in this work match those reported previously, with a median size of around $5$ Mb.\cite{Dekker2013} Our slightly larger mean compartment sizes (up to $7.6$ Mb in H1 hESC) may be due to our altered domain calling procedure (Fig. \ref{fig:denoise}) and is clearly influenced by some large outliers (Fig. \ref{fig:compsizedists}).
+Having called compartments we can compare their properties across cell types. In each case, a majority of chromosome compartment sizes are in the range $0$--$10$ Mb, with a handful compartments reaching up to $40$ Mb in size (Fig. \ref{fig:compsizedists}). Median sizes for compartments called in this work match those reported previously, with a median size of around $5$ Mb.\cite{Dekker2013} Our slightly larger mean compartment sizes (up to $7.6$ Mb in H1 hESC) may be due to our altered domain calling procedure (Fig. \ref{fig:denoise}) and is clearly influenced by some large outliers (Fig. \ref{fig:compsizedists}).
 
 \begin{figure}
 \begin{center}

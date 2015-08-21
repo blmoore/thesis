@@ -43,27 +43,27 @@
 \contentsline {subsection}{\numberline {2.3.1}Random Forest}{20}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Model performance}{21}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Hidden Markov models}{22}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Stepwise regression}{22}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.4}Stepwise regression}{23}{subsection.2.3.4}
 \contentsline {subsection}{\numberline {2.3.5}LASSO}{23}{subsection.2.3.5}
 \contentsline {subsection}{\numberline {2.3.6}Other modelling approaches}{24}{subsection.2.3.6}
 \contentsline {section}{\numberline {2.4}Variable regions}{24}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Stratification by variability}{24}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Chromatin state enrichment}{25}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Gene ontology analysis}{25}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}Boundaries}{25}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}TAD boundaries}{25}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.5}Boundaries}{26}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}TAD boundaries}{26}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Compartments}{26}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}Predicting TAD boundaries}{26}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}AUC-RF}{26}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Gini importance}{27}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.6}Predicting TAD boundaries}{27}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}AUC-RF}{27}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Gini importance}{28}{subsection.2.6.2}
 \contentsline {section}{\numberline {2.7}MetaTAD analysis}{28}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}Size selection}{28}{subsection.2.7.1}
 \contentsline {subsection}{\numberline {2.7.2}Collaborator datasets}{29}{subsection.2.7.2}
 \contentsline {subsection}{\numberline {2.7.3}LAD coincidence}{29}{subsection.2.7.3}
 \contentsline {section}{\numberline {2.8}Giemsa band comparison}{30}{section.2.8}
 \contentsline {section}{\numberline {2.9}Nuclear positioning}{30}{section.2.9}
-\contentsline {section}{\numberline {2.10}Modelling transcriptional output}{30}{section.2.10}
-\contentsline {subsection}{\numberline {2.10.1}Reproducing a published study}{30}{subsection.2.10.1}
+\contentsline {section}{\numberline {2.10}Modelling transcriptional output}{31}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}Reproducing a published study}{31}{subsection.2.10.1}
 \contentsline {subsection}{\numberline {2.10.2}Predicting FANTOM5 data}{31}{subsection.2.10.2}
 \contentsline {section}{\numberline {2.11}4C analysis}{32}{section.2.11}
 \contentsline {subsection}{\numberline {2.11.1}Normalisation}{32}{subsection.2.11.1}
@@ -80,12 +80,12 @@
 \contentsline {subsection}{\numberline {3.4.2}TADs}{42}{subsection.3.4.2}
 \contentsline {section}{\numberline {3.5}Domain epigenomics}{44}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}A/B compartments}{44}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}TAD classes}{44}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.2}TAD classes}{45}{subsection.3.5.2}
 \contentsline {section}{\numberline {3.6}Variable regions}{47}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Chromatin state enrichment}{47}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Gene ontology enrichment}{49}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Contact changes}{51}{subsection.3.6.3}
-\contentsline {section}{\numberline {3.7}Nuclear positioning}{51}{section.3.7}
+\contentsline {subsection}{\numberline {3.6.1}Chromatin state enrichment}{50}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Gene ontology enrichment}{52}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Contact changes}{52}{subsection.3.6.3}
+\contentsline {section}{\numberline {3.7}Nuclear positioning}{54}{section.3.7}
 \contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Integrative modelling as a tool to explore biological systems}}{55}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{55}{section.4.1}
 \contentsline {section}{\numberline {4.2}Extending Dong \emph {et al.} }{56}{section.4.2}
@@ -137,5 +137,5 @@
 \contentsline {section}{\numberline {7.4}A note on causality}{111}{section.7.4}
 \contentsline {section}{\numberline {7.5}Insights into genome organisation}{112}{section.7.5}
 \contentsline {section}{\numberline {7.6}Conclusion}{112}{section.7.6}
-\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{115}{chapter*.81}
-\contentsline {chapter}{References}{135}{chapter*.82}
+\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{115}{chapter*.82}
+\contentsline {chapter}{References}{135}{chapter*.83}
