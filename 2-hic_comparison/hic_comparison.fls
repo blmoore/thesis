@@ -285,6 +285,9 @@ INPUT figs/hmm_calls.png
 INPUT ./figs/hmm_calls.png
 INPUT ./figs/hmm_calls.png
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplr9o.tfm
+INPUT figs/hmm_flow.pdf
+INPUT ./figs/hmm_flow.pdf
+INPUT ./figs/hmm_flow.pdf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplri9o.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
