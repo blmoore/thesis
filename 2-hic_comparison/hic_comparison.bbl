@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{19}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
@@ -40,6 +40,10 @@ Kalhor R, Tjong H, Jayathilaka N, Alber F, Chen L (2012) {Genome architectures
   revealed by tethered chromosome conformation capture and population-based
   modeling.}
 \newblock \emph{Nature biotechnology}, \textbf{30}(1): 90--8.
+
+\bibitem[{Eddy(2004)}]{Eddy2004}
+Eddy SR (2004) {What is a hidden Markov model?}
+\newblock \emph{Nature biotechnology}, \textbf{22}(10): 1315--1316.
 
 \bibitem[{Dekker \emph{et~al.}(2013)Dekker, Marti-Renom and Mirny}]{Dekker2013}
 Dekker J, Marti-Renom Ma, Mirny La (2013) {Exploring the three-dimensional
