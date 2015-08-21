@@ -37,12 +37,11 @@
 \chapter{Discussion}
 
 % General, intro-y type stuff
-Since the publication of the Hi-C assay, there has been a flurry of follow-up papers largely focused on improving the technique and/or employing increasingly deep sequencing to achieve higher resolution analyses. A side-effect of this process is a growing bank of chromosome conformation datasets that, following proper reprocessing, can be compared and contrasted to gain biological insights into the importance of higher order chromatin organisation.
-
-Despite the increasing availability of 
-
-Previous studies have compared regions of higher order structure between cell types\cite{Lieberman2009} and species\cite{Dixon2012} but often anecdotally, on a selected region. Here we perform a multi-cell line comparison is a quantitative way, to 
-
+%Since the publication of the Hi-C assay, there has been a flurry of follow-up papers largely focused on improving the technique and/or employing increasingly deep sequencing to achieve higher resolution analyses. A side-effect of this process is a growing bank of chromosome conformation datasets that, following proper reprocessing, can be compared and contrasted to gain biological insights into the importance of higher order chromatin organisation.
+%
+%Despite the increasing availability of 
+%
+%Previous studies have compared regions of higher order structure between cell types\cite{Lieberman2009} and species\cite{Dixon2012} but often anecdotally, on a selected region. Here we perform a multi-cell line comparison is a quantitative way, to 
 
 \section{Modelling higher order chromatin organisation}
 
@@ -53,6 +52,8 @@ regions, on the order of hundreds of basepairs, rather than the larger-scale str
 
 Our data show that accurate predictions of Hi-C derived
 eigenvector values, and therefore chromosome compartments, are entirely achievable. Generalisation across cell types further suggests that chromosome compartments could be inferred for those cell types without any available Hi-C data but with available ChIP-seq for a handful of chromatin features. For example, the NIH Roadmap Epigenomics project has generated histone modification data in hundreds of cell lines, tissues and developmental stages.\cite{Bernstein2010, Kundaje2015} If models in this work were adapted to use matched inputs, this would allow comprehensive comparisons of inferred chromosome compartments across a diverse range of conditions and cell types. In the same vein, chromosome compartments are known to be related to and recapitulate other aspects of higher order chromatin organisation, including replication timing domains, Lamina associated domains and nucleolus association domains. We therefore suggest a similar modelling approach could prove successful for each of these domains of interest. An exciting idea is that an integrative model capable of identifying these LADs and NADs could forward this information to a subsequent three-dimensional reconstruction algorithm, giving a truly \emph{in situ} perspective onto nuclear architecture.
+
+We had less success with the prediction of TAD boundaries (Section \ref{sec:tadpred}). One reason for this is that the TAD calling algorithm used in this work\cite{Dixon2012} (Methods \ref{meth:tad calling}), though a published and well-used method, produces observably-flawed domain calls in some contexts. In addition the sensitivity of this method is proportional to the sample sequencing depth, which varied across our three human Hi-C datasets. We resolved TAD domains to 40 kb bins, far below the resolution of individual CTCF motifs which can generate physical domains. Indeed, given the newly-available very highly-sequenced Hi-C datasets,\cite{Rao2014} an improved method of predicting domains might start from individual ChIP-seq peaks and consider pairs of correctly-orientated CTCF motifs. In addition, any predictive model of such domains would do well to consider the hierarchical nature of chromatin organisation (exemplified by metaTADs, Section \ref{sec:metatads}) rather than seeking simple linear discretisation of chromatin fibre into adjacent domains. Finally, we note that an accurate predictive model of lower-levels of domain organisation, be they TADs or smaller physical domains, could likely recapitulate, on aggregate, broader domains such as compartments and metaTADs, culminating in a multi-scale model of nuclear architecture from the levels of kilobases up to entire chromosomes.
 
 % Stuff from the paper ::
 
@@ -102,7 +103,7 @@ eigenvector values, and therefore chromosome compartments, are entirely achievab
 %clusters evidently retains enough similarity between cell types to
 %enable the cross application of models.
 
-\section{The role of chromatin domains}
+%\section{The role of chromatin domains}
 
 % Conservation suggests function
 % How are they established, and re-established during cell cycle
@@ -118,37 +119,39 @@ In favour of functional boundary elements, knockdown of CTCF has been shown to c
 
 The incidental boundary hypothesis is supported by data showing that deletion of specific boundary elements in insufficient to cause adjacent domains to merge,(ref XX) In addition, the majority of CTCF sites fall within TADs rather than at their boundaries (approximately $85\%$ of human CTCF sites are non-boundary\cite{Dixon2012}). Further it has been shown that the majority of enhancer--promoter contacts are tissue invariant,\cite{Bouwman2015a} hence these constitutive contacts could account for the high levels of domain conservation reported previously\cite{Lieberman2009, Dixon2012, Chambers2013, Rao2014} and in this work (Chapter \ref{chap:hiccomparison}).
 
-In this work we find an array of chromatin features that, on average, are statistically associated or excluded from TAD or compartment boundaries. Among these are features with a long history of 
+As with many biological phenomena, the question of whether boundary regions or internal contacts are stabilising chromatin domains is a reductive dichotomy, and it seems likely that both boundary insulation and interTAD contacts work together to maintain chromatin domains.
+
+\section{Domain evolution}
+
+In this work we find an array of chromatin features that, on average, are statistically associated or excluded from TAD or compartment boundaries (Section \ref{sec:boundaryenrichments}). Among these are features with a long history of implications in chromatin organisation, including CTCF and cohesin subunit RAD21. We also report enrichments for Alu repeat elements (Section \ref{sec:repeats}) but no other repeat classes. Alu repeats and CTCF are linked by evidence that CTCF binding sites have in the past been dispersed through waves of retrosposon expansion.\cite{Schmidt2012, Nikolaev2009} Thus this suggests a model for the evolution of topological domains, whereby purifying selection removes those inserted CTCF sites which disrupt desirable regulatory environments, while those which bring-about efficient "regulon" structures are favoured. Newly-released comparative Hi-C and CTCF datasets\cite{VietriRudan2015} provide an opportunity to investigate this proposed evolutionary model. 
 
 % Enrichment of Alu elements suggest CTCF sites inserted, bring about novel loops and domains
 
-As with many biological phenomena the question of whether boundary regions or internal contacts are stabilising chromatin domains is a reductive false dichotomy, and it seems likely that both boundary insulation and interTAD contacts work together to maintain chromatin domains.
-
-Chromatin boundaries, separating TADs and nuclear compartments at
-different scales, also showed cell type specific enrichments of
-various locus level chromatin features. Across cell types, the
-complexity of boundary composition varies considerably so that only a
-few features were seen consistently enriched or depleted at
-boundaries. Peaks associated with active promoters were notable for
-both TAD and compartment boundaries in all cell types. Among the most
-influentual variables for the random forest models constructed for the
-two hematopoietic cell lines was the ubiquitous transcription factor
-YY1, which re-appeared in the analysis of chromatin boundary
-regions. Significant enrichments of YY1 were seen at TAD and nuclear
-compartment boundaries in all three cell types. Thus, the same protein
-was implicated at the level of broad genomic binding patterns (over 1
-Mb intervals) and at the level of locally enriched peaks at boundary
-regions (spanning 100-500 Kb). This is intriguing as YY1 has recently
-been shown to co-localise with the architectural protein
-CTCF \cite{Ong2014} and suggests that these proteins cooperate in the
-establishment of domain boundaries. The identification of such
-features, significantly enriched at boundary regions, provides
-potential targets for deletion in experimental studies further
-exploring the structure and function of domains
-(e.g. \cite{Nora2012}). Both cell type specific and general
-constituents of boundaries may have utility in the biomedical
-interpretation of genomic variation in noncoding regions of the
-genome.
+%Chromatin boundaries, separating TADs and nuclear compartments at
+%different scales, also showed cell type specific enrichments of
+%various locus level chromatin features. Across cell types, the
+%complexity of boundary composition varies considerably so that only a
+%few features were seen consistently enriched or depleted at
+%boundaries. Peaks associated with active promoters were notable for
+%both TAD and compartment boundaries in all cell types. Among the most
+%influentual variables for the random forest models constructed for the
+%two hematopoietic cell lines was the ubiquitous transcription factor
+%YY1, which re-appeared in the analysis of chromatin boundary
+%regions. Significant enrichments of YY1 were seen at TAD and nuclear
+%compartment boundaries in all three cell types. Thus, the same protein
+%was implicated at the level of broad genomic binding patterns (over 1
+%Mb intervals) and at the level of locally enriched peaks at boundary
+%regions (spanning 100-500 Kb). This is intriguing as YY1 has recently
+%been shown to co-localise with the architectural protein
+%CTCF \cite{Ong2014} and suggests that these proteins cooperate in the
+%establishment of domain boundaries. The identification of such
+%features, significantly enriched at boundary regions, provides
+%potential targets for deletion in experimental studies further
+%exploring the structure and function of domains
+%(e.g. \cite{Nora2012}). Both cell type specific and general
+%constituents of boundaries may have utility in the biomedical
+%interpretation of genomic variation in noncoding regions of the
+%genome.
 
 \section{A note on causality}
 

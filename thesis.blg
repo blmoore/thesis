@@ -3,7 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: thesis.bst
 A level-1 auxiliary file: 0-intro/intro.aux
-Reallocated field_info (elt_size=4) to 10300 items from 5000.
+Reallocated field_info (elt_size=4) to 10450 items from 5000.
 Database file #1: /Users/benmoore/Documents/library.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Database file #2: /Users/benmoore/Documents/customrefs.bib
@@ -19,6 +19,7 @@ Warning--empty journal in Dekker2014
 Warning--empty journal in Williamson2014
 Warning--empty journal in Feingold2004
 Warning--there's a number but no volume in Landt2012
+Warning--empty journal in ryan1993viterbi
 Warning--there's a number but no volume in Huang2008
 Warning--missing publisher in rossum1995
 Warning--empty journal in Vizan2014
@@ -27,45 +28,45 @@ Warning--there's a number but no volume in Anderson2014a
 Warning--empty journal in Hill2013a
 Warning--there's a number but no volume in Hill2013a
 Warning--there's a number but no volume in Lesne2014
-You've used 212 entries,
+You've used 218 entries,
             3024 wiz_defined-function locations,
-            1943 strings with 81280 characters,
-and the built_in function-call counts, 301184 in all, are:
-= -- 31640
-> -- 9135
-< -- 69
-+ -- 6589
-- -- 2335
-* -- 22642
-:= -- 32525
-add.period$ -- 424
-call.type$ -- 212
-change.case$ -- 1061
-chr.to.int$ -- 213
-cite$ -- 227
-duplicate$ -- 31482
-empty$ -- 21598
-format.name$ -- 3013
-if$ -- 62065
+            1987 strings with 82345 characters,
+and the built_in function-call counts, 306505 in all, are:
+= -- 32185
+> -- 9248
+< -- 76
++ -- 6665
+- -- 2365
+* -- 23034
+:= -- 33161
+add.period$ -- 435
+call.type$ -- 218
+change.case$ -- 1093
+chr.to.int$ -- 219
+cite$ -- 234
+duplicate$ -- 32023
+empty$ -- 22011
+format.name$ -- 3062
+if$ -- 63158
 int.to.chr$ -- 6
-int.to.str$ -- 213
-missing$ -- 2595
-newline$ -- 851
-num.names$ -- 633
-pop$ -- 15149
+int.to.str$ -- 219
+missing$ -- 2650
+newline$ -- 874
+num.names$ -- 653
+pop$ -- 15400
 preamble$ -- 1
-purify$ -- 848
+purify$ -- 872
 quote$ -- 0
-skip$ -- 5334
+skip$ -- 5435
 stack$ -- 0
-substring$ -- 37553
-swap$ -- 6998
-text.length$ -- 10
+substring$ -- 38136
+swap$ -- 7151
+text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1266
-warning$ -- 15
-while$ -- 1953
+type$ -- 1302
+warning$ -- 16
+while$ -- 1991
 width$ -- 0
-write$ -- 2529
+write$ -- 2599
 (There was 1 error message)
