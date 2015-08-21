@@ -238,6 +238,10 @@ To test the sensitivity of the models to resolution, we also applied cell-type s
 
 \subsection{Hidden Markov models}\label{meth:hmm}
 
+Hidden Markov models (HMMs) are used both for calling TADs (Methods \ref{meth:tadcalling}) and for identifying chromosome compartments (Methods \ref{sec:compartments}, discussed in Section \ref{sec:compcalls}). Here we briefly introduce the HMM framework in general terms.
+
+HMMs are widely used in computational biology, and have been called "the Legos of computational sequence analysis"\cite{Eddy2004} due to their wide applicability. HMMs provide a probabilistic modelling framework to explore any system that can be reduced to a 1D state sequence.
+
 \subsection{Stepwise regression}\label{meth:stepregress}
 
 % Expand, equations etc.
@@ -413,7 +417,7 @@ This decrease in Gini impurity can then be summed over all splits in which a spe
 
 % actually looks like Gini is summed per tree, averaged per forest
 \begin{equation}\label{eqn:giniimportance}
-I = \frac{1}{ntrees} \sum_{i=1}^{ntrees} \sum_{j=1}^{N_{used}} G_{j} - (G_{d_1} + G_{d_2})
+I = \frac{1}{ntrees} \sum_{ntrees} \sum_{j=1}^{N_{used}} G_{j} - (G_{d_1} + G_{d_2})
 \end{equation}
 
 

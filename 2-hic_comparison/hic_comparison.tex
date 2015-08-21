@@ -124,13 +124,23 @@ Chromosome compartments have previously been called through simple thresholding 
 
 For this reason, instead of using raw eigenvector values we consider observed values as emissions from unobserved underlying states. This can be modelled through a Hidden Markov Model (HMM), whereby we first parameterise models of state and their transitions, then infer the most likely state sequence to have emitted our observed data. This unobserved two-state sequence is then used for compartment calls (Methods \ref{sec:compartments}). 
 
-In practice, this acts to de-noise our compartment calls. Where single sign-changes along the series would have resulted in a single-block compartment, these may now be modelled as noisy emissions from a single unobserved state. An examplar region is showing in Fig. \ref{fig:denoise}. This shows an approximately 50 Mb region from chromosome 8 with eigenvector data from the H1 hESC cell line. A simple thresholding method in this region calls a total of $12$ regions, whereas our HMM method finds only $6$ larger regions in the same window. The disparity is caused by very short and single-bin compartments being disfavoured by the HMM-based method (Fig. \ref{fig:denoise}). 
+\begin{figure}
+\begin{center}
+\includegraphics[width=3in]{figs/hmm_flow.pdf}
+\captionsetup{width=\textwidth}
+\caption[ Overview of HMM method for compartment calls.  ]{ {\bf Overview of HMM method for compartment calls.  }
+Schematic of HMM method for compartment calls, showing transition and emissions distributions learned in the GM12878 cell type. A description of the HMM framework is given in Methods \ref{meth:hmm}.
+}\label{fig:hmmflow}
+\end{center}
+\end{figure} 
+
+In practice, this acts to de-noise our compartment calls. Where single sign-changes along the series would have resulted in a single-block compartment, these may now be modelled as noisy emissions from a single unobserved state. An exemplar region is showing in Fig. \ref{fig:denoise}. This shows an approximately 50 Mb region from chromosome 8 with eigenvector data from the H1 hESC cell line. A simple thresholding method in this region calls a total of $12$ regions, whereas our HMM method finds only $6$ larger regions in the same window. The disparity is caused by very short and single-bin compartments being disfavoured by the HMM-based method (Fig. \ref{fig:denoise}). 
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=2.75in]{figs/hmm_dists.pdf}
 \captionsetup{width=\textwidth}
-\caption[Gaussian distributions fit to unobserved HMM states. ]{ {\bf Gaussian distributions fit to unobserved HMM states. }
+\caption[ Gaussian distributions emitted by HMM A/B states.  ]{ {\bf Gaussian distributions emitted by HMM A/B states. }
 Placeholder
 }\label{fig:hmmdist}
 \end{center}
