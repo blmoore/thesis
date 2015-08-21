@@ -30,6 +30,7 @@
 
 \usepackage{bm}
 \DeclareMathOperator*{\argmin}{arg\,min}
+\usepackage{tikz-cd}
 
 \usepackage{standalone}
 \standalonetrue 
@@ -240,7 +241,21 @@ To test the sensitivity of the models to resolution, we also applied cell-type s
 
 Hidden Markov models (HMMs) are used both for calling TADs (Methods \ref{meth:tadcalling}) and for identifying chromosome compartments (Methods \ref{sec:compartments}, discussed in Section \ref{sec:compcalls}). Here we briefly introduce the HMM framework in general terms.
 
-HMMs are widely used in computational biology, and have been called "the Legos of computational sequence analysis"\cite{Eddy2004} due to their wide applicability. HMMs provide a probabilistic modelling framework to explore any system that can be reduced to a 1D state sequence.
+HMMs are widely used in computational biology, and have been called "the Legos of computational sequence analysis"\cite{Eddy2004} due to their wide applicability. HMMs provide a probabilistic modelling framework to explore any system that can be reduced to a 1D state sequence.\cite{Eddy1996, Rabiner1989} In the discrete case, each state in this sequence is capable of "emitting" one of a number of symbols, each with its own probability. In the continuous case, used in this work, instead a state has an associated emission distribution which can be a simple univariate Gaussian or a more complex mixture model. After an emission, each state has a number of "transition" probabilities, where the sequence can either change to another state or remain in the same state.
+
+A typical representation of an HMM is shown in Equation \ref{eqn:hmm}, where hidden states ($\theta$) emit a sequence of observed states ($y$).\cite{Volg2005}
+
+\begin{equation}\label{eqn:hmm}
+\begin{tikzcd}[column sep=1.2pc]
+\ldots \arrow{r} & y_{i-1} \arrow{r} & y_i \arrow{r} & y_{i+1} \arrow{r} & \ldots\\
+\ldots \arrow{r} & \theta_{i-1} \arrow{r} \arrow{u} &
+\theta_I \arrow{u} \arrow{r} & \theta_{i+1} \arrow{u} \arrow{r} & \ldots
+\end{tikzcd}
+\end{equation}
+
+HMM state emission and transition parameters can be learned from an observation sequence via the Baum-Welch algorithm,\cite{Baum1970} a special case of the Expectation-Maximisation algorithm applied to HMMs. Following initialisation of transition and emission matrices (this can be random), the Baum-Welch algorithm first performs the $E$-step, calculating the expected number of transitions and emissions via a Forward-Backward procedure, then the $M$-step re-estimates transition and emission parameters based on these expected values. These two steps repeat until the HMM parameters converge to a local maxima.
+
+Given a fully-specified HMM, the Viterbi algorithm can be applied to find the most probable state sequence given a sequence of observations.\cite{ryan1993viterbi} Using the notation of Equation \ref{eqn:hmm}, the Viterbi algorithm finds $\hat{\theta} = \mathrm{argmax}_\theta \Pr( y, \theta)$ using dynamic programming.\cite{Volg2005}
 
 \subsection{Stepwise regression}\label{meth:stepregress}
 
@@ -523,9 +538,9 @@ H4K20me1 &
 
 \section{4C analysis}\label{methods:4c}
 
-The experimental protocol used by our collaborators to generate 3C-seq data (also known as 4C) recommends the \texttt{r3Cseq} R package,\cite{Stadhouders2013, Thongjuea2013} part of the bioconductor repository\cite{Gentleman2004, Huber2015} for the R programming environment.\cite{Ihaka1996}
+For computational analysis of 3C-seq data (also known as 4C), the experimental protocol used by our collaborators recommends the \texttt{r3Cseq} R package,\cite{Stadhouders2013, Thongjuea2013} part of the BioConductor repository\cite{Gentleman2004, Huber2015} for the R programming environment.\cite{Ihaka1996}
 
-This package functions both to produces normalised interaction frequencies which are comparable between experiments, and to assign statistical significance to any identified contacts, thereby reporting regions that co-localise to a greater degree than expected by their genomic proximity alone.
+This package produces normalised interaction frequencies which are comparable between experiments and then assigns statistical significance to any identified contacts, thereby reporting regions that co-localise to a greater degree than expected by their genomic proximity alone.
 
 \subsection{Normalisation}\label{methods:4cnorm}
 
@@ -545,7 +560,7 @@ Z = \frac{(O-E)}{\sigma}
 
 \noindent Where $\sigma$ is the standard deviation of residuals from the observed ($O$), expected ($E$) difference. This $Z$-score can then be converted to a $p$-value which in turn is corrected for multiple testing using bootstrapped estimates of false-discovery rate (FDR) $q$-values\cite{Storey2004} (as implemented in the \texttt{qvalue} R package\cite{qvalue}). This $Z$--test approach assumes a normally-distributed test statistic, an assumption that typically does not hold on 4C data where interactions distal to the viewpoint are increasingly sparse, however this approach and variants thereof have been applied in a variety 4C and 5C analyses (e.g. \citenum{Simonis2006, Sanyal2012, Splinter2012, Gao2013, Dixon2015, Crane2015}). Some publications (e.g. \citenum{Nora2012}) use a more appropriate distribution to assign $p$-values to the $Z$ statistic, such as the Weibull (extreme value) distribution.
 
-While we are mostly concerned with these \emph{cis} interactions, \texttt{r3Cseq} also offers significance testing for \emph{trans} interactions between the viewpoint and restriction fragments on different chromosomes. Here instead of distance scaling, the expected ($E$) terms in eqn. \ref{form:r3cseq} are genome-wide averages excluding regions $\pm$ 100 kb around the viewpoint.\cite{Thongjuea2013} This means the absolute values of normalised RPMs reported for \emph{trans} interactions are in practice upscaled, being equivalent to experimental RPMs less the most deeply-sequenced regions, i.e. the viewpoint and immediately adjacent regions.
+While we are mostly concerned with these \emph{cis} interactions, \texttt{r3Cseq} also offers significance testing for \emph{trans} interactions between the viewpoint and restriction fragments on different chromosomes. Here instead of distance scaling, the expected ($E$) terms in Equation \ref{form:r3cseq} are genome-wide averages excluding regions $\pm$ 100 kb around the viewpoint.\cite{Thongjuea2013} This means the absolute values of normalised RPMs reported for \emph{trans} interactions are in practice upscaled, being equivalent to experimental RPMs less the most deeply-sequenced regions, i.e. the viewpoint and immediately adjacent regions.
 
 \subsection{3--D modelling}\label{methods:3dmodelling}
 

@@ -1,20 +1,5 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{19}
 \providecommand{\natexlab}[1]{#1}
-
-\bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
-  Williams, Imakaev, Ragoczy, Telling, Amit, Lajoie, Sabo
-  \emph{et~al.}}]{Lieberman2009}
-Lieberman-Aiden E, van Berkum NL, Williams L, Imakaev M, Ragoczy T, Telling A,
-  Amit I, Lajoie BR, Sabo PJ, \emph{et~al.} (2009) {Comprehensive mapping of
-  long-range interactions reveals folding principles of the human genome.}
-\newblock \emph{Science}, \textbf{326}(5950): 289--93.
-
-\bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
-  and Ren}]{Dixon2012}
-Dixon JR, Selvaraj S, Yue F, Kim A, Li Y, Shen Y, Hu M, Liu JS, Ren B (2012)
-  {Topological domains in mammalian genomes identified by analysis of chromatin
-  interactions.}
-\newblock \emph{Nature}, \textbf{485}(7398): 376--80.
 
 \bibitem[{Ernst and Kellis(2012)}]{Ernst2012}
 Ernst J, Kellis M (2012) {ChromHMM: automating chromatin-state discovery and
@@ -54,12 +39,27 @@ Kundaje A, Meuleman W, Ernst J, Bilenky M, Yen A, Heravi-Moussavi A, Kheradpour
   reference human epigenomes}.
 \newblock \emph{Nature}, \textbf{518}(7539): 317--330.
 
+\bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
+  and Ren}]{Dixon2012}
+Dixon JR, Selvaraj S, Yue F, Kim A, Li Y, Shen Y, Hu M, Liu JS, Ren B (2012)
+  {Topological domains in mammalian genomes identified by analysis of chromatin
+  interactions.}
+\newblock \emph{Nature}, \textbf{485}(7398): 376--80.
+
 \bibitem[{Rao \emph{et~al.}(2014)Rao, Huntley, Durand, Stamenova, Bochkov,
   Robinson, Sanborn, Machol, Omer \emph{et~al.}}]{Rao2014}
 Rao S, Huntley M, Durand N, Stamenova E, Bochkov I, Robinson J, Sanborn A,
   Machol I, Omer A, \emph{et~al.} (2014) {A 3D Map of the Human Genome at
   Kilobase Resolution Reveals Principles of Chromatin Looping}.
 \newblock \emph{Cell}, \textbf{159}(7): 1665--1680.
+
+\bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
+  Williams, Imakaev, Ragoczy, Telling, Amit, Lajoie, Sabo
+  \emph{et~al.}}]{Lieberman2009}
+Lieberman-Aiden E, van Berkum NL, Williams L, Imakaev M, Ragoczy T, Telling A,
+  Amit I, Lajoie BR, Sabo PJ, \emph{et~al.} (2009) {Comprehensive mapping of
+  long-range interactions reveals folding principles of the human genome.}
+\newblock \emph{Science}, \textbf{326}(5950): 289--93.
 
 \bibitem[{Zuin \emph{et~al.}(2013)Zuin, Dixon, van~der Reijden, Ye, Kolovos,
   Brouwer, van~de Corput, van~de Werken, Knoch \emph{et~al.}}]{Zuin2013}
@@ -81,17 +81,25 @@ Chambers EV, Bickmore Wa, Semple CA (2013) {Divergence of mammalian higher
   order chromatin structure is associated with developmental loci.}
 \newblock \emph{PLoS computational biology}, \textbf{9}(4): e1003017.
 
-\bibitem[{Ong and Corces(2014)}]{Ong2014}
-Ong CT, Corces VG (2014) {CTCF: an architectural protein bridging genome
-  topology and function.}
-\newblock \emph{Nature reviews. Genetics}, \textbf{15}(4): 234--46.
+\bibitem[{Schmidt \emph{et~al.}(2012)Schmidt, Schwalie, Wilson, Ballester,
+  Gonalves, Kutter, Brown, Marshall, Flicek and Odom}]{Schmidt2012}
+Schmidt D, Schwalie PC, Wilson MD, Ballester B, Gonalves A, Kutter C, Brown GD,
+  Marshall A, Flicek P, Odom DT (2012) {Waves of retrotransposon expansion
+  remodel genome organization and CTCF binding in multiple mammalian lineages}.
+\newblock \emph{Cell}, \textbf{148}(1-2): 335--348.
 
-\bibitem[{Nora \emph{et~al.}(2012)Nora, Lajoie, Schulz, Giorgetti, Okamoto,
-  Servant, Piolot, van Berkum, Meisig \emph{et~al.}}]{Nora2012}
-Nora EP, Lajoie BR, Schulz EG, Giorgetti L, Okamoto I, Servant N, Piolot T, van
-  Berkum NL, Meisig J, \emph{et~al.} (2012) {Spatial partitioning of the
-  regulatory landscape of the X-inactivation centre.}
-\newblock \emph{Nature}, \textbf{485}(7398): 381--5.
+\bibitem[{Nikolaev \emph{et~al.}(2009)Nikolaev, Akopov, Didych and
+  Sverdlov}]{Nikolaev2009}
+Nikolaev LG, Akopov SB, Didych Da, Sverdlov ED (2009) {Vertebrate Protein CTCF
+  and its Multiple Roles in a Large-Scale Regulation of Genome Activity.}
+\newblock \emph{Current genomics}, \textbf{10}(5): 294--302.
+
+\bibitem[{{Vietri Rudan} \emph{et~al.}(2015){Vietri Rudan}, Barrington,
+  Henderson, Ernst, Odom, Tanay and Hadjur}]{VietriRudan2015}
+{Vietri Rudan} M, Barrington C, Henderson S, Ernst C, Odom DT, Tanay A, Hadjur
+  S (2015) {Comparative Hi-C Reveals that CTCF Underlies Evolution of
+  Chromosomal Domain Architecture}.
+\newblock \emph{Cell Reports}, \textbf{10}(8): 1297--1309.
 
 \bibitem[{Sexton and Cavalli(2015)}]{Sexton2015}
 Sexton T, Cavalli G (2015) {Review The Role of Chromosome Domains in Shaping

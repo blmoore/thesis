@@ -1,4 +1,4 @@
-\begin{thebibliography}{212}
+\begin{thebibliography}{218}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -651,6 +651,29 @@ Hastie T, Tibshirani R, Friedman J (2009) \emph{{Elements of Statistical
 Eddy SR (2004) {What is a hidden Markov model?}
 \newblock \emph{Nature biotechnology}, \textbf{22}(10): 1315--1316.
 
+\bibitem[{Eddy(1996)}]{Eddy1996}
+Eddy SR (1996) {Hidden Markov models.}
+\newblock \emph{Current opinion in structural biology}, \textbf{6}(3):
+  361--365.
+
+\bibitem[{Rabiner(1989)}]{Rabiner1989}
+Rabiner L (1989) {A tutorial on hidden Markov models and selected applications
+  in speech recognition}.
+\newblock \emph{Proceedings of the IEEE}, \textbf{77}(2): 257--286.
+
+\bibitem[{Vogl and Futschik(2010)}]{Volg2005}
+Vogl C, Futschik A (2010) {Hidden Markov Models in Biology}.
+\newblock In: O~Carugo, F~Eisenhaber, eds., \emph{Energy}, Humana Press,
+  volume~00, chapter~14, pp. 241--253.
+\newblock ISBN 038795399X.
+
+\bibitem[{Baum \emph{et~al.}(1970)Baum, Petrie, Soules and Weiss}]{Baum1970}
+Baum LE, Petrie T, Soules G, Weiss N (1970) {A Maximization Technique Occurring
+  in the Statistical Analysis of Probabilistic Functions of Markov Chains}.
+
+\bibitem[{Ryan and Nudd(1993)}]{ryan1993viterbi}
+Ryan MS, Nudd GR (1993) The viterbi algorithm.
+
 \bibitem[{Mantel(1970)}]{Mantel1970}
 Mantel N (1970) {Why Stepdown Procedures in Variable Selection}.
 \newblock \emph{Technometrics}, \textbf{12}(3): 621--625.
@@ -1287,6 +1310,12 @@ Kundaje A, Meuleman W, Ernst J, Bilenky M, Yen A, Heravi-Moussavi A, Kheradpour
   P, Zhang Z, Wang J, \emph{et~al.} (2015) {Integrative analysis of 111
   reference human epigenomes}.
 \newblock \emph{Nature}, \textbf{518}(7539): 317--330.
+
+\bibitem[{Nikolaev \emph{et~al.}(2009)Nikolaev, Akopov, Didych and
+  Sverdlov}]{Nikolaev2009}
+Nikolaev LG, Akopov SB, Didych Da, Sverdlov ED (2009) {Vertebrate Protein CTCF
+  and its Multiple Roles in a Large-Scale Regulation of Genome Activity.}
+\newblock \emph{Current genomics}, \textbf{10}(5): 294--302.
 
 \bibitem[{Giorgetti \emph{et~al.}(2014)Giorgetti, Galupa, Nora, Piolot, Lam,
   Dekker, Tiana and Heard}]{Giorgetti2014a}
