@@ -1,4 +1,4 @@
-\begin{thebibliography}{218}
+\begin{thebibliography}{219}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -938,11 +938,11 @@ Hu G, Cui K, Northrup D, Liu C, Wang C, Tang Q, Ge K, Levens D, Crane-Robinson
   differentiation}.
 \newblock \emph{Cell Stem Cell}, \textbf{12}(2): 180--192.
 
-\bibitem[{Li \emph{et~al.}(2012)Li, Gadue, Chen, Jiao, Tuteja, Schug, Li and
-  Kaestner}]{Li2012}
-Li Z, Gadue P, Chen K, Jiao Y, Tuteja G, Schug J, Li W, Kaestner KH (2012)
-  {Foxa2 and H2A.Z mediate nucleosome depletion during embryonic stem cell
-  differentiation}.
+\bibitem[{Li \emph{et~al.}(2012{\natexlab{a}})Li, Gadue, Chen, Jiao, Tuteja,
+  Schug, Li and Kaestner}]{Li2012}
+Li Z, Gadue P, Chen K, Jiao Y, Tuteja G, Schug J, Li W, Kaestner KH
+  (2012{\natexlab{a}}) {Foxa2 and H2A.Z mediate nucleosome depletion during
+  embryonic stem cell differentiation}.
 \newblock \emph{Cell}, \textbf{151}(7): 1608--1616.
 
 \bibitem[{Huang \emph{et~al.}(2009)Huang, Sherman and Lempicki}]{Huang2009}
@@ -1310,6 +1310,13 @@ Kundaje A, Meuleman W, Ernst J, Bilenky M, Yen A, Heravi-Moussavi A, Kheradpour
   P, Zhang Z, Wang J, \emph{et~al.} (2015) {Integrative analysis of 111
   reference human epigenomes}.
 \newblock \emph{Nature}, \textbf{518}(7539): 317--330.
+
+\bibitem[{Li \emph{et~al.}(2012{\natexlab{b}})Li, Ruan, Auerbach, Sandhu,
+  Zheng, Wang, Poh, Goh, Lim \emph{et~al.}}]{Li2012a}
+Li G, Ruan X, Auerbach RK, Sandhu KS, Zheng M, Wang P, Poh HM, Goh Y, Lim J,
+  \emph{et~al.} (2012{\natexlab{b}}) {Extensive promoter-centered chromatin
+  interactions provide a topological basis for transcription regulation}.
+\newblock \emph{Cell}, \textbf{148}(1-2): 84--98.
 
 \bibitem[{Nikolaev \emph{et~al.}(2009)Nikolaev, Akopov, Didych and
   Sverdlov}]{Nikolaev2009}
