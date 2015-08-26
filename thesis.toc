@@ -123,12 +123,13 @@
 \contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Local chromatin conformation}}{101}{chapter.6}
 \contentsline {section}{\numberline {6.1}Introduction}{101}{section.6.1}
 \contentsline {section}{\numberline {6.2}4C at the SHH locus}{101}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Analysis of ZRS interactions}{102}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Assay diagnostics}{104}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}3D modelling with 5C data}{106}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.1}4C pipeline}{102}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Analysis of ZRS interactions}{103}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Assay diagnostics}{103}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}3D modelling with 5C data}{107}{subsection.6.2.4}
 \contentsline {section}{\numberline {6.3}5C in the HoxD region}{107}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Differential contacts}{107}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{107}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.1}Differential contacts}{108}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{108}{subsection.6.3.2}
 \contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{111}{chapter.7}
 \contentsline {section}{\numberline {7.1}Modelling higher order chromatin organisation}{111}{section.7.1}
 \contentsline {section}{\numberline {7.2}Domain boundaries}{112}{section.7.2}
