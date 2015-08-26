@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
@@ -56,6 +56,18 @@ Stadhouders R, Kolovos P, Brouwer R, Zuin J, van~den Heuvel A, Kockx C, Palstra
   conformation capture sequencing for rapid genome-scale high-resolution
   detection of long-range chromatin interactions.}
 \newblock \emph{Nature protocols}, \textbf{8}(3): 509--24.
+
+\bibitem[{Andrews(2015)}]{fastqc}
+Andrews S (2015) {FastQC} (v0.10.1): A quality control tool for high throughput
+  sequence data.
+
+\bibitem[{Lin \emph{et~al.}(2012)Lin, Benner, Mansson, Heinz, Miyazaki,
+  Miyazaki, Chandra, Bossen, Glass and Murre}]{Lin2012}
+Lin YC, Benner C, Mansson R, Heinz S, Miyazaki K, Miyazaki M, Chandra V, Bossen
+  C, Glass CK, Murre C (2012) {Global changes in the nuclear positioning of
+  genes and intra- and interdomain genomic interactions that orchestrate B cell
+  fate.}
+\newblock \emph{Nature immunology}, \textbf{13}(12): 1196--204.
 
 \bibitem[{Ba\`{u} \emph{et~al.}(2011)Ba\`{u}, Sanyal, Lajoie, Capriotti, Byron,
   Lawrence, Dekker and Marti-Renom}]{Bau2011a}
