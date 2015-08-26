@@ -112,19 +112,40 @@ The 4C protocol used by our collaborators in this work was that of \citet{Stadho
 \item $50\%$ or more of all reads should map to the chromosome on which the bait region is located.
 \end{enumerate}
 
-We found the proportion of reads mapped to the fair region chromosome, chromosome 5 in this case, fell below the prescribed level of $50\%$. Looking at three experiments (two from the untreated control), we find instead that between approximately $10$--$20\%$ of all reads mapped to the bait chromosome (Fig. XX). While this is still a clear enrichment over non-bait chromosomes, it suggests the assay results suffer from either increased \emph{trans}-contact noise or decreased \emph{cis}-contact enrichment around the bait region.
+% duplication: treated 02 : 71.2 % (reads 42.2M)
+%                                 04 : 84.4 % (reads 24.2M)
+%                    haeiii: 74.0% (reads 10.4M)
+%                    mluci: 62.8% (reads 10M)
+
+Sequence duplication levels were measured with \texttt{FastQC}\cite{fastqc} and are shown in Table \ref{tab:4c}. We find slightly lower than expected levels of duplication, ranging from $62.8\%$ to $84.4\%$. 
+
+\begin{table}[]
+\centering
+\caption[4C sequencing library statistics.]{ {\bf 4C sequencing library statistics.}
+4C experiments are summarised as total number of reads in each experiment and the percentage of those reads labelled "duplicates". Note in 4C these duplicates are not artifactual and instead result from large numbers of contacts nearby to the viewpoint.
+}
+\label{tab:4c}
+\begin{tabular}{lcccc}
+                                      & \multicolumn{2}{c}{{\bf TSA-}}      & \multicolumn{2}{c}{{\bf TSA+}}   \\ \cline{2-5} 
+\multicolumn{1}{l|}{}                 & MlucI & \multicolumn{1}{c|}{HaeIII} & 18h  & \multicolumn{1}{c|}{24h}  \\ \hline
+\multicolumn{1}{|r|}{Reads (Million)} & 10    & \multicolumn{1}{c|}{10.4}   & 42.2 & \multicolumn{1}{c|}{24.2} \\ \cline{2-5} 
+\multicolumn{1}{|r|}{Duplicated (\%)} & 62.8  & \multicolumn{1}{c|}{74.0}   & 71.2 & \multicolumn{1}{c|}{84.4} \\ \hline
+\end{tabular}
+\end{table}
+
+We found the proportion of reads mapped to the fair region chromosome, chromosome 5 in this case, fell below the prescribed level of $50\%$. Looking at three experiments (two from the untreated control), we find instead that between approximately $10$--$20\%$ of all reads mapped to the bait chromosome (Fig. \ref{fig:4cchromosomes}). While this is still a clear enrichment over non-bait chromosomes, it suggests the assay results suffer from either increased \emph{trans}-contact noise or decreased \emph{cis}-contact enrichment around the bait region. 
 
 \begin{figure}
 \begin{center} 
 \includegraphics[width=5.4in]{figs/4c_chromosomes.pdf}
 \captionsetup{width=\textwidth} 
 \caption[ The bait chromosome is enriched for 4C sequencing reads. ]{ {\bf The bait chromosome is enriched for 4C sequencing reads. }
-Chromosome 5 is visibly enriched for 4C reads as it  contains the ZRS bait region (or viewpoint). Untreated control samples (\emph{TSA-}) were analysed from both the 
+Chromosome 5 is visibly enriched for 4C reads as it  contains the ZRS bait region (or viewpoint). Untreated control samples (\emph{TSA-}) were assayed with two different secondary restriction enzymes (4-cutters HaeIII and MlucI).
 }\label{fig:4cchromosomes}
 \end{center} 
 \end{figure} 
 
-Lower than expected levels of both sequence duplication and bait chromosome enrichment suggest loss of signal around the bait region itself. This is the area where we'd expect both very high levels of duplication (identical restriction fragment pairings between nearby genomic locations) and a majority of all sequencing reads, driving the overall chromosome enrichment. The precise reason for the discrepancy is unclear but suggests the results may have a lower signal-to-noise ratio than has previously been achievable in 4C experiments.
+Lower than expected levels of both sequence duplication and bait chromosome enrichment suggest loss of signal around the bait region itself. This is the area where we'd expect both very high levels of duplication (identical restriction fragment pairings between nearby genomic locations) and a majority of all sequencing reads, driving the overall chromosome enrichment. The precise reason for the discrepancy is unclear but suggests the results may have a lower signal-to-noise ratio than has previously been achievable in 4C experiments.\cite{Stadhouders2013} Potentially the signal-to-noise ratio could be improved by utilising a double cross-linking procedure such as that used in \citet{Lin2012}
 
 \subsection{3D modelling with 5C data}
 

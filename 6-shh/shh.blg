@@ -4,50 +4,52 @@ The top-level auxiliary file: shh.aux
 The style file: ../thesis.bst
 Database file #1: /Users/benmoore/Documents/library.bib
 Database file #2: /Users/benmoore/Documents/customrefs.bib
+Warning--entry type for "fastqc" isn't style-file defined
+--line 122 of file /Users/benmoore/Documents/customrefs.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--there's a number but no volume in Anderson2014a
 Warning--empty journal in Hill2013a
 Warning--there's a number but no volume in Hill2013a
 Warning--there's a number but no volume in Lesne2014
-You've used 16 entries,
+You've used 18 entries,
             3024 wiz_defined-function locations,
-            726 strings with 9067 characters,
-and the built_in function-call counts, 22645 in all, are:
-= -- 2358
-> -- 720
-< -- 2
-+ -- 520
-- -- 185
-* -- 1707
-:= -- 2454
-add.period$ -- 32
-call.type$ -- 16
-change.case$ -- 80
-chr.to.int$ -- 17
-cite$ -- 20
-duplicate$ -- 2373
-empty$ -- 1606
-format.name$ -- 236
-if$ -- 4648
+            737 strings with 9551 characters,
+and the built_in function-call counts, 25239 in all, are:
+= -- 2631
+> -- 806
+< -- 3
++ -- 582
+- -- 207
+* -- 1895
+:= -- 2742
+add.period$ -- 35
+call.type$ -- 18
+change.case$ -- 90
+chr.to.int$ -- 19
+cite$ -- 22
+duplicate$ -- 2640
+empty$ -- 1785
+format.name$ -- 262
+if$ -- 5180
 int.to.chr$ -- 1
-int.to.str$ -- 17
-missing$ -- 196
-newline$ -- 68
-num.names$ -- 48
-pop$ -- 1205
+int.to.str$ -- 19
+missing$ -- 217
+newline$ -- 75
+num.names$ -- 54
+pop$ -- 1346
 preamble$ -- 1
-purify$ -- 64
+purify$ -- 72
 quote$ -- 0
-skip$ -- 358
+skip$ -- 399
 stack$ -- 0
-substring$ -- 2756
-swap$ -- 519
+substring$ -- 3079
+swap$ -- 571
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 96
+type$ -- 108
 warning$ -- 4
-while$ -- 145
+while$ -- 162
 width$ -- 0
-write$ -- 193
-(There were 4 warnings)
+write$ -- 214
+(There were 5 warnings)
