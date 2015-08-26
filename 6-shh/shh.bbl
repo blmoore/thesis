@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{21}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
@@ -56,6 +56,21 @@ Stadhouders R, Kolovos P, Brouwer R, Zuin J, van~den Heuvel A, Kockx C, Palstra
   conformation capture sequencing for rapid genome-scale high-resolution
   detection of long-range chromatin interactions.}
 \newblock \emph{Nature protocols}, \textbf{8}(3): 509--24.
+
+\bibitem[{Martin(2011)}]{cutadapt}
+Martin M (2011) Cutadapt removes adapter sequences from high-throughput
+  sequencing reads.
+\newblock \emph{EMBnet.journal}, \textbf{17}(1): 10--12.
+
+\bibitem[{Langmead and Salzberg(2012)}]{Langmead2012}
+Langmead B, Salzberg SL (2012) {Fast gapped-read alignment with Bowtie 2.}
+\newblock \emph{Nature methods}, \textbf{9}(4): 357--9.
+
+\bibitem[{Li \emph{et~al.}(2009)Li, Handsaker, Wysoker, Fennell, Ruan, Homer,
+  Marth, Abecasis and Durbin}]{Li2009}
+Li H, Handsaker B, Wysoker A, Fennell T, Ruan J, Homer N, Marth G, Abecasis G,
+  Durbin R (2009) {The Sequence Alignment/Map format and SAMtools}.
+\newblock \emph{Bioinformatics}, \textbf{25}(16): 2078--2079.
 
 \bibitem[{Andrews(2015)}]{fastqc}
 Andrews S (2015) {FastQC} (v0.10.1): A quality control tool for high throughput
