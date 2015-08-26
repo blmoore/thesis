@@ -99,9 +99,9 @@ Arc plots are shown for an untreated, non-expressing 14fp cell population (\emph
 \end{center} 
 \end{figure} 
 
-\subsection{4C / Hi-C comparison}
-
-Hi-C data in mouse cells has been previously published,\cite{Dixon2012} so can be compared with this novel 4C data to give broader contextual information about chromatin conformation in the region under study.
+%\subsection{4C / Hi-C comparison}
+%
+%Hi-C data in mouse cells has been previously published,\cite{Dixon2012} so can be compared with this novel 4C data to give broader contextual information about chromatin conformation in the region under study.
 
 \subsection{Assay diagnostics}
 
@@ -112,11 +112,35 @@ The 4C protocol used by our collaborators in this work was that of \citet{Stadho
 \item $50\%$ or more of all reads should map to the chromosome on which the bait region is located.
 \end{enumerate}
 
+We found the proportion of reads mapped to the fair region chromosome, chromosome 5 in this case, fell below the prescribed level of $50\%$. Looking at three experiments (two from the untreated control), we find instead that between approximately $10$--$20\%$ of all reads mapped to the bait chromosome (Fig. XX). While this is still a clear enrichment over non-bait chromosomes, it suggests the assay results suffer from either increased \emph{trans}-contact noise or decreased \emph{cis}-contact enrichment around the bait region.
+
+\begin{figure}
+\begin{center} 
+\includegraphics[width=5.4in]{figs/4c_chromosomes.pdf}
+\captionsetup{width=\textwidth} 
+\caption[ The bait chromosome is enriched for 4C sequencing reads. ]{ {\bf The bait chromosome is enriched for 4C sequencing reads. }
+Chromosome 5 is visibly enriched for 4C reads as it  contains the ZRS bait region (or viewpoint). Untreated control samples (\emph{TSA-}) were analysed from both the 
+}\label{fig:4cchromosomes}
+\end{center} 
+\end{figure} 
+
+Lower than expected levels of both sequence duplication and bait chromosome enrichment suggest loss of signal around the bait region itself. This is the area where we'd expect both very high levels of duplication (identical restriction fragment pairings between nearby genomic locations) and a majority of all sequencing reads, driving the overall chromosome enrichment. The precise reason for the discrepancy is unclear but suggests the results may have a lower signal-to-noise ratio than has previously been achievable in 4C experiments.
+
 \subsection{3D modelling with 5C data}
 
 All-vs-all contacts measured either genome-wide in the case of Hi-C, or over a defined region with 5C, can be used to infer the trajectory of chromatin fibres in three-dimensions through a variety of methods (e.g. \cite{Bau2011a, Hu2013a, Varoquaux2014a, Lesne2014, Trieu2014, Peng2013, Ay2014b, Caudai2015}). 5C data was generated over this same SHH--ZRS region (Fig. \ref{fig:shhtad}) with the aim of developing a multi-point perspective on local chromatin conformation beyond that available from 4C data.
 
 We used this 5C experimental data in combination with a particular three-dimensional inference program  (\texttt{AutoChrom3D}\cite{Peng2013}) in an attempt to compare polymer trajectories in TSA treated and untreated 14fp mouse cells.
+
+\begin{figure}
+\begin{center} 
+\includegraphics[width=5in]{figs/5c_3d.png}
+\captionsetup{width=\textwidth} 
+\caption[ Inferred 3D structure of the SHH--ZRS TAD. ]{ {\bf Inferred 3D structure of the SHH--ZRS TAD. }
+Placheolder.
+}\label{fig:5c3d}
+\end{center} 
+\end{figure} 
 
 \section{5C in the HoxD region}
 
