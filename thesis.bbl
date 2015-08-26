@@ -1,4 +1,4 @@
-\begin{thebibliography}{220}
+\begin{thebibliography}{222}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -1250,6 +1250,18 @@ Lettice La, Hill AE, Devenney PS, Hill RE (2008) {Point mutations in a distant
 Bouwman BA, de~Laat W (2015) {Getting the genome in shape: the formation of
   loops, domains and compartments}.
 \newblock \emph{Genome Biology}, \textbf{16}(1): 154.
+
+\bibitem[{Andrews(2015)}]{fastqc}
+Andrews S (2015) {FastQC} (v0.10.1): A quality control tool for high throughput
+  sequence data.
+
+\bibitem[{Lin \emph{et~al.}(2012)Lin, Benner, Mansson, Heinz, Miyazaki,
+  Miyazaki, Chandra, Bossen, Glass and Murre}]{Lin2012}
+Lin YC, Benner C, Mansson R, Heinz S, Miyazaki K, Miyazaki M, Chandra V, Bossen
+  C, Glass CK, Murre C (2012) {Global changes in the nuclear positioning of
+  genes and intra- and interdomain genomic interactions that orchestrate B cell
+  fate.}
+\newblock \emph{Nature immunology}, \textbf{13}(12): 1196--204.
 
 \bibitem[{Ba\`{u} \emph{et~al.}(2011)Ba\`{u}, Sanyal, Lajoie, Capriotti, Byron,
   Lawrence, Dekker and Marti-Renom}]{Bau2011a}

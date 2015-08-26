@@ -125,10 +125,10 @@
 \contentsline {section}{\numberline {6.2}4C at the SHH locus}{101}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Analysis of ZRS interactions}{102}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Assay diagnostics}{104}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}3D modelling with 5C data}{105}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}5C in the HoxD region}{106}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Differential contacts}{108}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{108}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.2.3}3D modelling with 5C data}{106}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}5C in the HoxD region}{107}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Differential contacts}{107}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{107}{subsection.6.3.2}
 \contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{111}{chapter.7}
 \contentsline {section}{\numberline {7.1}Modelling higher order chromatin organisation}{111}{section.7.1}
 \contentsline {section}{\numberline {7.2}Domain boundaries}{112}{section.7.2}
@@ -136,5 +136,5 @@
 \contentsline {section}{\numberline {7.4}A note on causality}{113}{section.7.4}
 \contentsline {section}{\numberline {7.5}Insights into genome organisation}{114}{section.7.5}
 \contentsline {section}{\numberline {7.6}Conclusion}{114}{section.7.6}
-\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{117}{chapter*.84}
-\contentsline {chapter}{References}{137}{chapter*.85}
+\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{117}{chapter*.85}
+\contentsline {chapter}{References}{137}{chapter*.86}

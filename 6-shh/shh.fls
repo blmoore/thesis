@@ -296,10 +296,10 @@ INPUT figs/4c_arcs.pdf
 INPUT ./figs/4c_arcs.pdf
 INPUT ./figs/4c_arcs.pdf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplri9o.vf
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT figs/4c_chromosomes.pdf
 INPUT ./figs/4c_chromosomes.pdf
 INPUT ./figs/4c_chromosomes.pdf
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT figs/5c_3d.png
 INPUT ./figs/5c_3d.png
 INPUT ./figs/5c_3d.png
