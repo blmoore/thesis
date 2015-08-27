@@ -118,24 +118,24 @@
 \contentsline {subsection}{\numberline {5.4.1}MetaTAD / TAD boundary comparison}{92}{subsection.5.4.1}
 \contentsline {subsection}{\numberline {5.4.2}Lamina associated domains}{94}{subsection.5.4.2}
 \contentsline {subsection}{\numberline {5.4.3}Boundaries over a time series}{96}{subsection.5.4.3}
-\contentsline {section}{\numberline {5.5}Other boundaries}{98}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Giemsa bands}{98}{subsection.5.5.1}
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Local chromatin conformation}}{101}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{101}{section.6.1}
-\contentsline {section}{\numberline {6.2}4C at the SHH locus}{101}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}4C pipeline}{102}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Analysis of ZRS interactions}{103}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Assay diagnostics}{103}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}3D modelling with 5C data}{107}{subsection.6.2.4}
-\contentsline {section}{\numberline {6.3}5C in the HoxD region}{107}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Differential contacts}{108}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{108}{subsection.6.3.2}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{111}{chapter.7}
-\contentsline {section}{\numberline {7.1}Modelling higher order chromatin organisation}{111}{section.7.1}
-\contentsline {section}{\numberline {7.2}Domain boundaries}{112}{section.7.2}
-\contentsline {section}{\numberline {7.3}Domain evolution}{113}{section.7.3}
-\contentsline {section}{\numberline {7.4}A note on causality}{113}{section.7.4}
-\contentsline {section}{\numberline {7.5}Insights into genome organisation}{114}{section.7.5}
-\contentsline {section}{\numberline {7.6}Conclusion}{114}{section.7.6}
-\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{117}{chapter*.85}
-\contentsline {chapter}{References}{137}{chapter*.86}
+\contentsline {section}{\numberline {5.5}Other boundaries}{99}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Giemsa bands}{99}{subsection.5.5.1}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Local chromatin conformation}}{103}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{103}{section.6.1}
+\contentsline {section}{\numberline {6.2}4C at the SHH locus}{103}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}4C pipeline}{104}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Analysis of ZRS interactions}{105}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Assay diagnostics}{105}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}3D modelling with 5C data}{109}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}5C in the HoxD region}{109}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Differential contacts}{110}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{110}{subsection.6.3.2}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{113}{chapter.7}
+\contentsline {section}{\numberline {7.1}Modelling higher order chromatin organisation}{113}{section.7.1}
+\contentsline {section}{\numberline {7.2}Domain boundaries}{114}{section.7.2}
+\contentsline {section}{\numberline {7.3}Domain evolution}{115}{section.7.3}
+\contentsline {section}{\numberline {7.4}A note on causality}{115}{section.7.4}
+\contentsline {section}{\numberline {7.5}Insights into genome organisation}{116}{section.7.5}
+\contentsline {section}{\numberline {7.6}Conclusion}{116}{section.7.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{119}{chapter*.86}
+\contentsline {chapter}{References}{139}{chapter*.87}
