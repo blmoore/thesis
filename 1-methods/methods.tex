@@ -253,7 +253,7 @@ A typical representation of an HMM is shown in Equation \ref{eqn:hmm}, where hid
 \end{tikzcd}
 \end{equation}
 
-HMM state emission and transition parameters can be learned from an observation sequence via the Baum-Welch algorithm,\cite{Baum1970} a special case of the Expectation-Maximisation algorithm applied to HMMs. Following initialisation of transition and emission matrices (this can be random), the Baum-Welch algorithm first performs the $E$-step, calculating the expected number of transitions and emissions via a Forward-Backward procedure, then the $M$-step re-estimates transition and emission parameters based on these expected values. These two steps repeat until the HMM parameters converge to a local maxima.
+HMM state emission and transition parameters can be learned from an observation sequence via the Baum-Welch algorithm,\cite{Baum1970} a special case of the Expectation-Maximisation algorithm applied to HMMs. Following initialisation of transition and emission matrices (this can be random), the Baum-Welch algorithm first performs the $E$-step, calculating the expected number of transitions and emissions via a Forward-Backward procedure, then the $M$-step re-estimates transition and emission parameters based on these expected values. These two steps repeat until the HMM parameters converge to a local maximum.
 
 Given a fully-specified HMM, the Viterbi algorithm can be applied to find the most probable state sequence given a sequence of observations.\cite{ryan1993viterbi} Using the notation of Equation \ref{eqn:hmm}, the Viterbi algorithm finds $\hat{\theta} = \mathrm{argmax}_\theta \Pr( y, \theta)$ using dynamic programming.\cite{Volg2005}
 
