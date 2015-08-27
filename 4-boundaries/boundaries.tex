@@ -292,7 +292,7 @@ MetaTADs are constructed simply by performing constrained heretical clustering b
 
 My contribution to this work was to explore these newly-described metaTAD structures and perform boundary analysis as was done with TADs and compartments (Section \ref{sec:boundaryenrichments}). A testable hypothesis, for example, is that boundaries of larger metaTAD structures could display greater enrichments for boundary-defining features.
 
-\subsection{MetaTAD / TAD boundary comparison}
+\subsection{MetaTAD / TAD boundary comparison}\label{sec:metaVtad}
 
 Due to the way metaTADs were constructed by our collaborators, by sequential aggregation of TADs (Methods \ref{meth:meta}), boundary comparisons between TADs and metaTADs are not completely straightforward. For one, every metaTAD boundary is, at a lower level, also a TAD boundary hence for a meaningful comparison we compared only a subset of metaTAD boundaries. Selection of this threshold involved a trade-off between maintaining a sufficient sample size of metaTADs and minimising the overlap between metaTAD and TAD boundaries, as a proportion of all TAD boundaries (Fig. \ref{fig:mtcalibrate}).
 
@@ -361,6 +361,18 @@ To test the significance of these observations, we apply a permutation-based sta
 \caption[ MetaTAD boundaries much LAD boundaries much more often than expected by chance. ]{ {\bf MetaTAD boundaries much LAD boundaries much more often than expected by chance. }
 Heatmaps of lamina association over MetaTAD boundaries are shown as in Fig. \ref{fig:mtlamin}. Sidebars labelled O and E reflect observed and expected proportions of metaTAD / LAD boundary overlaps.
 }\label{fig:mtsummary}
+\end{center}
+\end{figure} 
+
+As with other enrichments (Fig. \ref{fig:mtcutoffenrich}), we went on to verify that this result was not specific to the choice of boundary size cutoff. Recall that as metaTADs are derived from TADs, selecting metaTADs within a size range is a trade-off between minimising overlap between TADs and metaTADs to enable more powerful comparison, while retaining a sufficiently large sample size of metaTAD boundaries (Section \ref{sec:metaVtad}). In the case of LAD--metaTAD coincidence, we again find this result is insensitive to the selection of domain size cutoff, and indeed that there's evidence for an increasing proportion of co-occurrence as we ascend the metaTAD hierarchy (Fig. \ref{fig:mtcutoffrange}).
+
+\begin{figure}
+\begin{center} 
+\includegraphics[width=5in]{figs/mt_cutoffrange.pdf}
+\captionsetup{width=\textwidth}
+\caption[ MetaTAD--LAD coincidence increases at higher levels of the metaTAD hierarchy. ]{ {\bf MetaTAD--LAD coincidence increases at higher levels of the metaTAD hierarchy. }
+Heatmaps of lamina association over MetaTAD boundaries are shown as in Fig. \ref{fig:mtlamin}. Panels show the size selection cutoffs for metaTAD domains considered in each case.
+}\label{fig:mtcutoffrange}
 \end{center}
 \end{figure} 
 
