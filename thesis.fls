@@ -711,6 +711,9 @@ INPUT ./figs/mt_laminperm.png
 INPUT figs/mt_laminsummary.pdf
 INPUT ./figs/mt_laminsummary.pdf
 INPUT ./figs/mt_laminsummary.pdf
+INPUT figs/mt_cutoffrange.pdf
+INPUT ./figs/mt_cutoffrange.pdf
+INPUT ./figs/mt_cutoffrange.pdf
 INPUT figs/mt_ts.pdf
 INPUT ./figs/mt_ts.pdf
 INPUT ./figs/mt_ts.pdf

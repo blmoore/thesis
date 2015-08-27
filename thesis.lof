@@ -63,17 +63,18 @@
 \contentsline {figure}{\numberline {56}{\ignorespaces MetaTADs align with lain associated domains.}}{94}{figure.caption.70}
 \contentsline {figure}{\numberline {57}{\ignorespaces MetaTADs align with lamin associated domains.}}{95}{figure.caption.71}
 \contentsline {figure}{\numberline {58}{\ignorespaces MetaTAD boundaries much LAD boundaries much more often than expected by chance. }}{96}{figure.caption.72}
-\contentsline {figure}{\numberline {59}{\ignorespaces Observed enrichments persist over a time series.}}{97}{figure.caption.73}
-\contentsline {figure}{\numberline {60}{\ignorespaces Genome-wide agreement between Giemsa bands and A/B compartments..}}{99}{figure.caption.74}
-\contentsline {figure}{\numberline {61}{\ignorespaces Giemsa--stain bands correspond to A/B compartments.}}{100}{figure.caption.75}
+\contentsline {figure}{\numberline {59}{\ignorespaces MetaTAD--LAD coincidence increases at higher levels of the metaTAD hierarchy. }}{97}{figure.caption.73}
+\contentsline {figure}{\numberline {60}{\ignorespaces Observed enrichments persist over a time series.}}{98}{figure.caption.74}
+\contentsline {figure}{\numberline {61}{\ignorespaces Genome-wide agreement between Giemsa bands and A/B compartments..}}{100}{figure.caption.75}
+\contentsline {figure}{\numberline {62}{\ignorespaces Giemsa--stain bands correspond to A/B compartments.}}{101}{figure.caption.76}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {62}{\ignorespaces SHH--ZRS contacts occur within a stable TAD.}}{102}{figure.caption.76}
-\contentsline {figure}{\numberline {63}{\ignorespaces TSA treatment induces a strong ZRS--SHH interaction. }}{104}{figure.caption.77}
-\contentsline {figure}{\numberline {64}{\ignorespaces A stable ZRS--SHH interaction is coupled with reduced extraneous contacts. }}{105}{figure.caption.78}
-\contentsline {figure}{\numberline {65}{\ignorespaces The bait chromosome is enriched for 4C sequencing reads. }}{106}{figure.caption.80}
-\contentsline {figure}{\numberline {66}{\ignorespaces Inferred 3D structure of the SHH--ZRS TAD. }}{107}{figure.caption.81}
-\contentsline {figure}{\numberline {67}{\ignorespaces Raw differences between anterior and posterior 5C interactions.}}{108}{figure.caption.82}
-\contentsline {figure}{\numberline {68}{\ignorespaces Differential 5C contacts between 5C experiments over the HoxD locus in anterior and posterior limb bud cells.}}{109}{figure.caption.83}
-\contentsline {figure}{\numberline {69}{\ignorespaces Comparison of 5C and Hi-C over the HoxD region in different cell types.}}{110}{figure.caption.84}
+\contentsline {figure}{\numberline {63}{\ignorespaces SHH--ZRS contacts occur within a stable TAD.}}{104}{figure.caption.77}
+\contentsline {figure}{\numberline {64}{\ignorespaces TSA treatment induces a strong ZRS--SHH interaction. }}{106}{figure.caption.78}
+\contentsline {figure}{\numberline {65}{\ignorespaces A stable ZRS--SHH interaction is coupled with reduced extraneous contacts. }}{107}{figure.caption.79}
+\contentsline {figure}{\numberline {66}{\ignorespaces The bait chromosome is enriched for 4C sequencing reads. }}{108}{figure.caption.81}
+\contentsline {figure}{\numberline {67}{\ignorespaces Inferred 3D structure of the SHH--ZRS TAD. }}{109}{figure.caption.82}
+\contentsline {figure}{\numberline {68}{\ignorespaces Raw differences between anterior and posterior 5C interactions.}}{110}{figure.caption.83}
+\contentsline {figure}{\numberline {69}{\ignorespaces Differential 5C contacts between 5C experiments over the HoxD locus in anterior and posterior limb bud cells.}}{111}{figure.caption.84}
+\contentsline {figure}{\numberline {70}{\ignorespaces Comparison of 5C and Hi-C over the HoxD region in different cell types.}}{112}{figure.caption.85}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
