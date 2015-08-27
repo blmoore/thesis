@@ -1,4 +1,4 @@
-\begin{thebibliography}{223}
+\begin{thebibliography}{224}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -596,6 +596,11 @@ Leinonen R, Sugawara H, Shumway M (2011) {The sequence read archive.}
 \bibitem[{Langmead and Salzberg(2012)}]{Langmead2012}
 Langmead B, Salzberg SL (2012) {Fast gapped-read alignment with Bowtie 2.}
 \newblock \emph{Nature methods}, \textbf{9}(4): 357--9.
+
+\bibitem[{Fortin and Hansen(2015)}]{Fortin2015a}
+Fortin JP, Hansen KD (2015) {Reconstructing A/B compartments as revealed by
+  Hi-C using long-range correlations in epigenetic data}.
+\newblock \emph{bioRxiv}, pp. 1--52.
 
 \bibitem[{Zhang \emph{et~al.}(2008)Zhang, Liu, Meyer, Eeckhoute, Johnson,
   Bernstein, Nusbaum, Myers, Brown \emph{et~al.}}]{Zhang2008}
