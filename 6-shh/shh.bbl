@@ -1,4 +1,4 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{22}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
@@ -135,5 +135,11 @@ Ay F, Bunnik EM, Varoquaux N, Bol SM, Prudhomme J, Vert JP, Noble WS, {Le Roch}
 Caudai C, Salerno E, Zopp\`{e} M, Tonazzini A (2015) {Inferring 3D chromatin
   structure using a multiscale approach based on quaternions}.
 \newblock \emph{BMC Bioinformatics}, \textbf{16}(1): 234.
+
+\bibitem[{Lajoie \emph{et~al.}(2009)Lajoie, van Berkum, Sanyal and
+  Dekker}]{Lajoie2009a}
+Lajoie BR, van Berkum NL, Sanyal A, Dekker J (2009) {My5C: web tools for
+  chromosome conformation capture studies.}
+\newblock \emph{Nature methods}, \textbf{6}(10): 690--691.
 
 \end{thebibliography}
