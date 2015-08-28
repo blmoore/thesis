@@ -167,29 +167,31 @@ We used this 5C experimental data in combination with a particular three-dimensi
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=5.4in]{figs/5c3d.pdf}
+\includegraphics[width=5.45in]{figs/5c3d.pdf}
 \captionsetup{width=\textwidth} 
 \caption[ Inferred polymer trajectories of the ZRS--SHH region following TSA treatment in two cell lines. ]{ {\bf Inferred polymer trajectories of the ZRS--SHH region following TSA treatment in two cell lines. }
-3D structures are shown for 5C experiments assaying the region around \emph{Shh} (\emph{red}) and ZRS (\emph{blue}) in a limb bud cell line (88fp, \emph{Shh}-expressing) and a non-expressing embryonic cell line (MD). Labelled measurements are given in Table \ref{tab:3ddist}.
+3D structures are shown for 5C experiments assaying the region around \emph{Shh} (\emph{red}) and ZRS (\emph{blue}) in an \emph{Shh}-expressing limb bud cell line (88fp) and a non-expressing embryonic cell line (MD). Labelled measurements are given in Table \ref{tab:3ddist}. Structures were predicted by \texttt{AutoChrom3D}\cite{Peng2013} using $210 \times 8$ kb beads per polymer.
 }\label{fig:5c3d}
 \end{center} 
 \end{figure} 
 
-% Please add the following required packages to your document preamble:
-% \usepackage{multirow}
+We find that TSA treatment of 88fp cells does appear to slightly reduce the distance between \emph{Shh} and ZRS in inferred 3D structures (Fig. \ref{fig:5c3d}), however this difference is overshadowed---to our surprise---by that observed in the non-expressing MD cell line. This latter embryonic cell line undergoes a large structural transition which brings together the \emph{Shh} gene and the ZRS enhancer. Measurements between these elements for each structure are shown in Table \ref{tab:3ddist}.
+
+We also report a greater overall structural shift following TSA treatment in the MD cell line, with an RMSD between the two structures of $2.377$ arbitrary units, relative to $1.701$ between TSA+ and TSA- 88fp cells. The radius of gyration, unchanged in 88fp, is also decreased in the MD cell line following TSA treatment, indicating the region becomes more compact following TSA treatment (Table \ref{tab:3ddist}).
+
 \begin{table}[]
 \centering
 \caption[Measurement distances between ZRS and SHH in each inferred 3D structure.]{ {\bf Measurement distances between ZRS and SHH in each inferred 3D structure. }
-Distances are shown in arbitrary units. \emph{Shh} spans two beads of the polymer model, hence two distances are calculated in each case ($d_1$, $d_2$). RMS is the minimised root mean squared difference between the two structures and is given as a relative unitless quantity. 
+Distances are shown in arbitrary units. \emph{Shh} spans two beads of the polymer model, hence two distances are calculated in each case ($d_1$, $d_2$). RMSD is the minimised root mean squared deviation between the two structures and is given as a relative unitless quantity. The radius of gyration (gyradius) is also shown.
 }
 \label{tab:3ddist}
-\begin{tabular}{ll|cc|l}
-                      &    & \multicolumn{2}{c|}{{\bf Distance}} &                        \\
-                      &    & TSA-                 & TSA+                & RMS                    \\ \hline
-\multirow{2}{*}{88fp} & $d_1$ & 5.4                  & 5.1                 & \multirow{2}{*}{1.701} \\
-                      & $d_2$ & 4.1                  & 3.9                 &                        \\ \hline
-\multirow{2}{*}{MD}   & $d_1$ & 6.2                  & 3.3                 & \multirow{2}{*}{2.377} \\
-                      & $d_2$ & 4.8                  & 2.0                 &                        \\ \hline
+\begin{tabular}{ll|cc|l|cc|}
+                      &    & \multicolumn{2}{c|}{{\bf Distance}} & \multirow{2}{*}{RMSD}   & \multicolumn{2}{c|}{{\bf Gyradius}}             \\
+                      &    & TSA-             & TSA+             &                        & TSA-                   & TSA+                   \\ \hline
+\multirow{2}{*}{88fp} & d1 & 5.4              & 5.1              & \multirow{2}{*}{1.701} & \multirow{2}{*}{0.244} & \multirow{2}{*}{0.244} \\
+                      & d2 & 4.1              & 3.9              &                        &                        &                        \\ \hline
+\multirow{2}{*}{MD}   & d1 & 6.2              & 3.3              & \multirow{2}{*}{2.377} & \multirow{2}{*}{0.217} & \multirow{2}{*}{0.205} \\
+                      & d2 & 4.8              & 2.0              &                        &                        &                        \\ \hline
 \end{tabular}
 \end{table}
 
