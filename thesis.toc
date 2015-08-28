@@ -127,15 +127,15 @@
 \contentsline {subsection}{\numberline {6.2.2}Analysis of ZRS interactions}{105}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}Assay diagnostics}{105}{subsection.6.2.3}
 \contentsline {subsection}{\numberline {6.2.4}3D modelling with 5C data}{109}{subsection.6.2.4}
-\contentsline {section}{\numberline {6.3}5C in the HoxD region}{109}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Differential contacts}{110}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{110}{subsection.6.3.2}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{113}{chapter.7}
-\contentsline {section}{\numberline {7.1}Modelling higher order chromatin organisation}{113}{section.7.1}
-\contentsline {section}{\numberline {7.2}Domain boundaries}{114}{section.7.2}
-\contentsline {section}{\numberline {7.3}Domain evolution}{115}{section.7.3}
-\contentsline {section}{\numberline {7.4}A note on causality}{115}{section.7.4}
-\contentsline {section}{\numberline {7.5}Insights into genome organisation}{116}{section.7.5}
-\contentsline {section}{\numberline {7.6}Conclusion}{116}{section.7.6}
-\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{119}{chapter*.86}
-\contentsline {chapter}{References}{139}{chapter*.87}
+\contentsline {section}{\numberline {6.3}5C in the HoxD region}{111}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Differential contacts}{111}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}5C / Hi-C comparison}{111}{subsection.6.3.2}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{115}{chapter.7}
+\contentsline {section}{\numberline {7.1}Modelling higher order chromatin organisation}{115}{section.7.1}
+\contentsline {section}{\numberline {7.2}Domain boundaries}{116}{section.7.2}
+\contentsline {section}{\numberline {7.3}Domain evolution}{117}{section.7.3}
+\contentsline {section}{\numberline {7.4}A note on causality}{117}{section.7.4}
+\contentsline {section}{\numberline {7.5}Insights into genome organisation}{118}{section.7.5}
+\contentsline {section}{\numberline {7.6}Conclusion}{118}{section.7.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{121}{chapter*.87}
+\contentsline {chapter}{References}{141}{chapter*.88}
