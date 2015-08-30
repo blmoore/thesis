@@ -159,7 +159,7 @@ Chromosome 5 is visibly enriched for 4C reads as it  contains the ZRS bait regio
 
 Lower than expected levels of both sequence duplication and bait chromosome enrichment suggest loss of signal around the bait region itself. This is the area where we'd expect both very high levels of duplication (identical restriction fragment pairings between nearby genomic locations) and a majority of all sequencing reads, driving the overall chromosome enrichment. The precise reason for the discrepancy is unclear but suggests the results may have a lower signal-to-noise ratio than has previously been achievable in 4C experiments.\cite{Stadhouders2013} Potentially the signal-to-noise ratio could be improved by utilising a double cross-linking procedure such as that used in \citet{Lin2012}
 
-\subsection{3D modelling with 5C data}
+\section{3D modelling with 5C data}
 
 All-vs-all contacts measured either genome-wide in the case of Hi-C, or over a defined region with 5C, can be used to infer the trajectory of chromatin fibres in three-dimensions through a variety of methods (e.g. \cite{Bau2011a, Hu2013a, Varoquaux2014a, Lesne2014, Trieu2014, Peng2013, Ay2014b, Caudai2015}). 5C data was generated over this same SHH--ZRS region (Fig. \ref{fig:shhtad}) with the aim of developing a multi-point perspective on local chromatin conformation beyond that available from 4C data. The \texttt{my5C} program was used to generate normalised 5C interaction frequencies.\cite{Lajoie2009a}
 
@@ -195,6 +195,8 @@ Distances are shown in arbitrary units. \emph{Shh} spans two beads of the polyme
 \end{tabular}
 \end{table}
 
+\subsection{Repeat simulations}
+
 \begin{figure}
 \begin{center} 
 \includegraphics[width=5.45in]{figs/3dreps.pdf}
@@ -205,57 +207,67 @@ Distances are shown in arbitrary units. \emph{Shh} spans two beads of the polyme
 \end{center} 
 \end{figure} 
 
-\section{5C in the HoxD region}
-
-HoxD is another well-studied genetic system involved in limb development and under the control of known enhancers. In this experiment, our collaborators were interested in the chromatin conformations of HoxD13 loci in both the anterior and posterior developing limb bud, particularly how and where the two differed. To this end, our collaborators performed 5C for two biological replicates in anterior and posterior limb bud cell lines, and my contribution was to call differential contacts between the two conditions.
-
-% Region gets a mention in Bickmore 2013 review 
-
-% files for this under iain on ext HD
-% relevant publications: http://dev.biologists.org/content/139/17/3157.full.pdf+html
-
-%Iain's thesis: https://www.era.lib.ed.ac.uk/handle/1842/8056
-
-\subsection{Differential contacts}
-
-% raw diff: fold change?
-
 \begin{figure}
 \begin{center} 
-\includegraphics[width=\textwidth]{figs/5cfc.pdf}
+\includegraphics[width=2.75in]{figs/3d_dists.pdf}
 \captionsetup{width=\textwidth} 
-\caption[Raw differences between anterior and posterior 5C interactions.]{ {\bf Raw differences between anterior and posterior 5C interactions. }
-Placeholder
-}\label{fig:5cfc}
+\caption[ \emph{Shh}--ZRS distance measurements from repeated 3D polymer simulations. ]{ {\bf \emph{Shh}--ZRS distance measurements from repeated 3D polymer simulations. }
+3D structures are shown for 5C experiments assaying the region around \emph{Shh} (\emph{red}) and ZRS (\emph{blue}) in an \emph{Shh}-expressing limb bud cell line (88fp) and a non-expressing embryonic cell line (MD). Labelled measurements are given in Table \ref{tab:3ddist}. Structures were predicted by \texttt{AutoChrom3D}\cite{Peng2013} using $210 \times 8$ kb beads per polymer.
+}\label{fig:3ddist}
 \end{center} 
 \end{figure} 
 
-% statistical test of differential contacts
-
-\begin{figure}
-\begin{center} 
-\includegraphics[width=\textwidth]{figs/5cdiff.pdf}
-\captionsetup{width=\textwidth} 
-\caption[Differential 5C contacts between 5C experiments over the HoxD locus in anterior and posterior limb bud cells.]{ {\bf Differential 5C contacts between 5C experiments over the HoxD locus in anterior and posterior limb bud cells. }
-Scatterplots compare anterior and posterior interaction frequencies ($IF$, \emph{left}) and significantly different contacts are highlighted in the 5C heatmaps with colour-matched lines and squares (\emph{right}). No differential contacts were found over both repeats (Sets 1 and 2).
-}\label{fig:5cdiff}
-\end{center} 
-\end{figure} 
-
-
-\subsection{5C / Hi-C comparison}
-
-% Precedent for comparing 5C and Hi-C : Phillips-Cremins2013
-
-\begin{figure}
-\begin{center} 
-\includegraphics[width=\textwidth]{figs/5chic.pdf}
-\captionsetup{width=\textwidth} 
-\caption[Comparison of 5C and Hi-C over the HoxD region in different cell types.]{ {\bf Comparison of 5C and Hi-C over the HoxD region in different cell types. }
-Previously-published Hi-C data\cite{Dixon2012} for two cell types is shown alongside novel 5C data in limb bud lines. Chances in the total contacts for a row or column are shown (\emph{lower}) with a fitted loess model. Significance outliers are labelled.
-}\label{fig:5cdiff}
-\end{center} 
-\end{figure} 
+%\section{5C in the HoxD region}
+%
+%HoxD is another well-studied genetic system involved in limb development and under the control of known enhancers. In this experiment, our collaborators were interested in the chromatin conformations of HoxD13 loci in both the anterior and posterior developing limb bud, particularly how and where the two differed. To this end, our collaborators performed 5C for two biological replicates in anterior and posterior limb bud cell lines, and my contribution was to call differential contacts between the two conditions.
+%
+%% Region gets a mention in Bickmore 2013 review 
+%
+%% files for this under iain on ext HD
+%% relevant publications: http://dev.biologists.org/content/139/17/3157.full.pdf+html
+%
+%%Iain's thesis: https://www.era.lib.ed.ac.uk/handle/1842/8056
+%
+%\subsection{Differential contacts}
+%
+%% raw diff: fold change?
+%
+%\begin{figure}
+%\begin{center} 
+%\includegraphics[width=\textwidth]{figs/5cfc.pdf}
+%\captionsetup{width=\textwidth} 
+%\caption[Raw differences between anterior and posterior 5C interactions.]{ {\bf Raw differences between anterior and posterior 5C interactions. }
+%Placeholder
+%}\label{fig:5cfc}
+%\end{center} 
+%\end{figure} 
+%
+%% statistical test of differential contacts
+%
+%\begin{figure}
+%\begin{center} 
+%\includegraphics[width=\textwidth]{figs/5cdiff.pdf}
+%\captionsetup{width=\textwidth} 
+%\caption[Differential 5C contacts between 5C experiments over the HoxD locus in anterior and posterior limb bud cells.]{ {\bf Differential 5C contacts between 5C experiments over the HoxD locus in anterior and posterior limb bud cells. }
+%Scatterplots compare anterior and posterior interaction frequencies ($IF$, \emph{left}) and significantly different contacts are highlighted in the 5C heatmaps with colour-matched lines and squares (\emph{right}). No differential contacts were found over both repeats (Sets 1 and 2).
+%}\label{fig:5cdiff}
+%\end{center} 
+%\end{figure} 
+%
+%
+%\subsection{5C / Hi-C comparison}
+%
+%% Precedent for comparing 5C and Hi-C : Phillips-Cremins2013
+%
+%\begin{figure}
+%\begin{center} 
+%\includegraphics[width=\textwidth]{figs/5chic.pdf}
+%\captionsetup{width=\textwidth} 
+%\caption[Comparison of 5C and Hi-C over the HoxD region in different cell types.]{ {\bf Comparison of 5C and Hi-C over the HoxD region in different cell types. }
+%Previously-published Hi-C data\cite{Dixon2012} for two cell types is shown alongside novel 5C data in limb bud lines. Chances in the total contacts for a row or column are shown (\emph{lower}) with a fitted loess model. Significance outliers are labelled.
+%}\label{fig:5cdiff}
+%\end{center} 
+%\end{figure} 
 
 
 \ifstandalone
