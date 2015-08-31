@@ -3,7 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: thesis.bst
 A level-1 auxiliary file: 0-intro/intro.aux
-Reallocated field_info (elt_size=4) to 10625 items from 5000.
+Reallocated field_info (elt_size=4) to 10650 items from 5000.
 Database file #1: /Users/benmoore/Documents/library.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Database file #2: /Users/benmoore/Documents/customrefs.bib
@@ -13,6 +13,8 @@ Repeated entry---line 11 of file /Users/benmoore/Documents/customrefs.bib
 I'm skipping whatever remains of this entry
 Warning--entry type for "fastqc" isn't style-file defined
 --line 122 of file /Users/benmoore/Documents/customrefs.bib
+Warning--entry type for "lingo" isn't style-file defined
+--line 144 of file /Users/benmoore/Documents/customrefs.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--there's a number but no volume in Li2014
 Warning--there's a number but no volume in Mifsud2015
@@ -30,45 +32,45 @@ Warning--there's a number but no volume in Anderson2014a
 Warning--empty journal in Hill2013a
 Warning--there's a number but no volume in Hill2013a
 Warning--there's a number but no volume in Lesne2014
-You've used 225 entries,
+You've used 226 entries,
             3024 wiz_defined-function locations,
-            2024 strings with 84380 characters,
-and the built_in function-call counts, 315256 in all, are:
-= -- 33093
-> -- 9515
-< -- 80
-+ -- 6856
-- -- 2433
-* -- 23683
-:= -- 34134
-add.period$ -- 448
-call.type$ -- 225
-change.case$ -- 1128
-chr.to.int$ -- 226
-cite$ -- 241
-duplicate$ -- 32928
-empty$ -- 22639
-format.name$ -- 3149
-if$ -- 64958
+            2028 strings with 84502 characters,
+and the built_in function-call counts, 315634 in all, are:
+= -- 33130
+> -- 9522
+< -- 81
++ -- 6860
+- -- 2435
+* -- 23705
+:= -- 34198
+add.period$ -- 449
+call.type$ -- 226
+change.case$ -- 1133
+chr.to.int$ -- 227
+cite$ -- 242
+duplicate$ -- 32962
+empty$ -- 22667
+format.name$ -- 3152
+if$ -- 65031
 int.to.chr$ -- 7
-int.to.str$ -- 226
-missing$ -- 2728
-newline$ -- 901
-num.names$ -- 674
-pop$ -- 15837
+int.to.str$ -- 227
+missing$ -- 2732
+newline$ -- 904
+num.names$ -- 677
+pop$ -- 15852
 preamble$ -- 1
-purify$ -- 900
+purify$ -- 904
 quote$ -- 0
-skip$ -- 5594
+skip$ -- 5605
 stack$ -- 0
-substring$ -- 39184
-swap$ -- 7363
+substring$ -- 39210
+swap$ -- 7372
 text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1344
+type$ -- 1350
 warning$ -- 16
-while$ -- 2051
+while$ -- 2054
 width$ -- 0
-write$ -- 2680
+write$ -- 2689
 (There was 1 error message)

@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
@@ -135,6 +135,17 @@ Ay F, Bunnik EM, Varoquaux N, Bol SM, Prudhomme J, Vert JP, Noble WS, {Le Roch}
 Caudai C, Salerno E, Zopp\`{e} M, Tonazzini A (2015) {Inferring 3D chromatin
   structure using a multiscale approach based on quaternions}.
 \newblock \emph{BMC Bioinformatics}, \textbf{16}(1): 234.
+
+\bibitem[{Kalhor \emph{et~al.}(2012)Kalhor, Tjong, Jayathilaka, Alber and
+  Chen}]{Kalhor2012}
+Kalhor R, Tjong H, Jayathilaka N, Alber F, Chen L (2012) {Genome architectures
+  revealed by tethered chromosome conformation capture and population-based
+  modeling.}
+\newblock \emph{Nature biotechnology}, \textbf{30}(1): 90--8.
+
+\bibitem[{LINDO(2015)}]{lingo}
+LINDO (2015) {LINGO} (v15.0): Optimization modeling software for linear,
+  nonlinear, and integer programming.
 
 \bibitem[{Lajoie \emph{et~al.}(2009)Lajoie, van Berkum, Sanyal and
   Dekker}]{Lajoie2009a}
