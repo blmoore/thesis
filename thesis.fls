@@ -381,6 +381,7 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplri9o.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplrij8r.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 OUTPUT thesis.toc
 INPUT thesis.lof
 INPUT thesis.lof
@@ -519,7 +520,6 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT 1-methods/methods.tex
 INPUT 1-methods/methods.tex
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplb9t.vf
