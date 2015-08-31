@@ -161,17 +161,17 @@ Sequence duplication levels were measured with \texttt{FastQC}\cite{fastqc} and 
 %\multicolumn{1}{|l|}{Reads (Million)} & 10    & \multicolumn{1}{c|}{10.4}   & 8.8 & \multicolumn{1}{c|}{24.2} \\ \cline{2-5} 
 %\multicolumn{1}{|l|}{Duplicated (\%)} & 62.8  & \multicolumn{1}{c|}{74.0}   & 74.2 & \multicolumn{1}{c|}{84.4} \\ \hline
 %\end{tabular}
-\begin{tabular}{l|l|ll|}
-\cline{2-4}
-                                      & \multicolumn{1}{c|}{\multirow{2}{*}{{\bf TSA-}}} & \multicolumn{2}{c|}{{\bf TSA+}} \\
-                                      & \multicolumn{1}{c|}{}                            & 18h            & 24h            \\ \hline
-\multicolumn{1}{|l|}{Reads (million)} & 10                                               & 8.8            & 24.2           \\
-\multicolumn{1}{|l|}{Duplicated (\%)} & 62.8                                             & 74.2           & 84.4           \\ \hline
+\begin{tabular}{l|c|cc|c|c|}
+\cline{2-6}
+                                      & \multirow{2}{*}{{\bf 14fp TSA-}} & \multicolumn{2}{c|}{{\bf 14fp TSA+}} & \multirow{2}{*}{{\bf E11.5}} & \multirow{2}{*}{{\bf MD TSA+}} \\
+                                      &                                  & 18h               & 24h              &                              &                                \\ \hline
+\multicolumn{1}{|l|}{Reads (million)} & 10.0                             & 8.8               & 24.2             & 10.7                         & 12.2                           \\
+\multicolumn{1}{|l|}{Duplicated (\%)} & 62.8                             & 74.2              & 84.4             & 80.2                         & 72.8                           \\ \hline
 \end{tabular}
 \end{table}
 
 
-We found the proportion of reads mapped to the fair region chromosome, chromosome 5 in this case, fell below the prescribed level of $50\%$. Looking at three experiments (two from the untreated control), we find instead that between approximately $10$--$20\%$ of all reads mapped to the bait chromosome (Fig. \ref{fig:4cchromosomes}). While this is still a clear enrichment over non-bait chromosomes, it suggests the assay results suffer from either increased \emph{trans}-contact noise or decreased \emph{cis}-contact enrichment around the bait region. 
+We found the proportion of reads mapped to the fair region chromosome, chromosome 5 in this case, fell below the prescribed level of $50\%$. Across 4C experiments, we find instead that between approximately $10$--$20\%$ of all reads mapped to the bait chromosome (Fig. \ref{fig:4cchromosomes}), except for  the 18 hour TSA+ treatment experiment which shows only around $7\%$. While this is still a clear enrichment over non-bait chromosomes, it suggests the assay results suffer from either increased \emph{trans}-contact noise or decreased \emph{cis}-contact enrichment around the bait region. 
 
 \begin{figure}
 \begin{center} 
