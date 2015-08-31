@@ -68,9 +68,7 @@
 \contentsline {section}{\numberline {2.11}4C analysis}{32}{section.2.11}
 \contentsline {subsection}{\numberline {2.11.1}Normalisation}{33}{subsection.2.11.1}
 \contentsline {subsection}{\numberline {2.11.2}Significance estimation}{33}{subsection.2.11.2}
-\contentsline {subsection}{\numberline {2.11.3}3--D modelling}{34}{subsection.2.11.3}
-\contentsline {section}{\numberline {2.12}5C analysis}{34}{section.2.12}
-\contentsline {section}{\numberline {2.13}Scripts and other analyses}{34}{section.2.13}
+\contentsline {section}{\numberline {2.12}Scripts and other analyses}{34}{section.2.12}
 \contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Reanalysis of Hi-C datasets}}{35}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{35}{section.3.1}
 \contentsline {section}{\numberline {3.2}Hi-C reprocessing}{35}{section.3.2}
@@ -126,8 +124,10 @@
 \contentsline {subsection}{\numberline {6.2.1}4C pipeline}{104}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Analysis of ZRS interactions}{105}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}Assay diagnostics}{105}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}3D modelling with 5C data}{109}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Repeat simulations}{111}{subsection.6.3.1}
+\contentsline {section}{\numberline {6.3}3D modelling of chromatin fibre}{109}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}\texttt {AutoChrom3D} method}{109}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Modelling the \emph {Shh} region with 5C}{110}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Repeat simulations}{110}{subsection.6.3.3}
 \contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{115}{chapter.7}
 \contentsline {section}{\numberline {7.1}Modelling higher order chromatin organisation}{115}{section.7.1}
 \contentsline {section}{\numberline {7.2}Domain boundaries}{116}{section.7.2}
