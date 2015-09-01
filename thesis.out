@@ -118,22 +118,23 @@
 \BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 Giemsa bands}{section.5.5}% 118
 \BOOKMARK [0][]{chapter.6}{6 Local chromatin conformation}{}% 119
 \BOOKMARK [1][-]{section.6.1}{6.1 Introduction}{chapter.6}% 120
-\BOOKMARK [1][-]{section.6.2}{6.2 4C at the SHH locus}{chapter.6}% 121
-\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 4C pipeline}{section.6.2}% 122
-\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 ZRS\205Shh interaction following TSA treatment}{section.6.2}% 123
-\BOOKMARK [2][-]{subsection.6.2.3}{6.2.3 Comparison with controls}{section.6.2}% 124
-\BOOKMARK [2][-]{subsection.6.2.4}{6.2.4 4C time series}{section.6.2}% 125
-\BOOKMARK [2][-]{subsection.6.2.5}{6.2.5 Assay diagnostics}{section.6.2}% 126
-\BOOKMARK [1][-]{section.6.3}{6.3 3D modelling of chromatin fibre}{chapter.6}% 127
-\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 AutoChrom3D method}{section.6.3}% 128
-\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 Modelling the Shh region with 5C}{section.6.3}% 129
-\BOOKMARK [2][-]{subsection.6.3.3}{6.3.3 Repeat simulations}{section.6.3}% 130
-\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 131
-\BOOKMARK [1][-]{section.7.1}{7.1 Modelling higher order chromatin organisation}{chapter.7}% 132
-\BOOKMARK [1][-]{section.7.2}{7.2 Domain boundaries}{chapter.7}% 133
-\BOOKMARK [1][-]{section.7.3}{7.3 Domain evolution}{chapter.7}% 134
-\BOOKMARK [1][-]{section.7.4}{7.4 A note on causality}{chapter.7}% 135
-\BOOKMARK [1][-]{section.7.5}{7.5 Insights into genome organisation}{chapter.7}% 136
-\BOOKMARK [1][-]{section.7.6}{7.6 Conclusion}{chapter.7}% 137
-\BOOKMARK [0][]{chapter*.87}{Appendices}{}% 138
-\BOOKMARK [0][]{chapter*.88}{References}{}% 139
+\BOOKMARK [1][-]{section.6.2}{6.2 The Shh locus}{chapter.6}% 121
+\BOOKMARK [1][-]{section.6.3}{6.3 4C of the ZRS}{chapter.6}% 122
+\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 4C pipeline}{section.6.3}% 123
+\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 ZRS\205Shh interaction following TSA treatment}{section.6.3}% 124
+\BOOKMARK [2][-]{subsection.6.3.3}{6.3.3 Comparison with controls}{section.6.3}% 125
+\BOOKMARK [2][-]{subsection.6.3.4}{6.3.4 4C time series}{section.6.3}% 126
+\BOOKMARK [2][-]{subsection.6.3.5}{6.3.5 Assay diagnostics}{section.6.3}% 127
+\BOOKMARK [1][-]{section.6.4}{6.4 Polymer modelling}{chapter.6}% 128
+\BOOKMARK [2][-]{subsection.6.4.1}{6.4.1 AutoChrom3D method}{section.6.4}% 129
+\BOOKMARK [2][-]{subsection.6.4.2}{6.4.2 Modelling the Shh region with 5C}{section.6.4}% 130
+\BOOKMARK [2][-]{subsection.6.4.3}{6.4.3 Repeat simulations}{section.6.4}% 131
+\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 132
+\BOOKMARK [1][-]{section.7.1}{7.1 Modelling higher order chromatin organisation}{chapter.7}% 133
+\BOOKMARK [1][-]{section.7.2}{7.2 Domain boundaries}{chapter.7}% 134
+\BOOKMARK [1][-]{section.7.3}{7.3 Domain evolution}{chapter.7}% 135
+\BOOKMARK [1][-]{section.7.4}{7.4 A note on causality}{chapter.7}% 136
+\BOOKMARK [1][-]{section.7.5}{7.5 Insights into genome organisation}{chapter.7}% 137
+\BOOKMARK [1][-]{section.7.6}{7.6 Conclusion}{chapter.7}% 138
+\BOOKMARK [0][]{chapter*.87}{Appendices}{}% 139
+\BOOKMARK [0][]{chapter*.88}{References}{}% 140
