@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{26}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
@@ -36,6 +36,13 @@ Laurell T, Vandermeer JE, Wenger AM, Grigelioniene G, Nordenskj\"{o}ld A, Arner
   polydactyly with triphalangeal thumb}.
 \newblock \emph{Human Mutation}, \textbf{33}(7): 1063--1066.
 
+\bibitem[{Amano \emph{et~al.}(2009)Amano, Sagai, Tanabe, Mizushina, Nakazawa
+  and Shiroishi}]{Amano2009}
+Amano T, Sagai T, Tanabe H, Mizushina Y, Nakazawa H, Shiroishi T (2009)
+  {Chromosomal Dynamics at the Shh Locus: Limb Bud-Specific Differential
+  Regulation of Competence and Active Transcription}.
+\newblock \emph{Developmental Cell}, \textbf{16}(1): 47--57.
+
 \bibitem[{Lettice \emph{et~al.}(2008)Lettice, Hill, Devenney and
   Hill}]{Lettice2008}
 Lettice La, Hill AE, Devenney PS, Hill RE (2008) {Point mutations in a distant
@@ -43,10 +50,11 @@ Lettice La, Hill AE, Devenney PS, Hill RE (2008) {Point mutations in a distant
   responsible for preaxial polydactyly}.
 \newblock \emph{Human Molecular Genetics}, \textbf{17}(7): 978--985.
 
-\bibitem[{Bouwman and de~Laat(2015)}]{Bouwman2015a}
-Bouwman BA, de~Laat W (2015) {Getting the genome in shape: the formation of
-  loops, domains and compartments}.
-\newblock \emph{Genome Biology}, \textbf{16}(1): 154.
+\bibitem[{Zeller \emph{et~al.}(2009)Zeller, L\'{o}pez-R\'{\i}os and
+  Zuniga}]{Zeller2009}
+Zeller R, L\'{o}pez-R\'{\i}os J, Zuniga A (2009) {Vertebrate limb bud
+  development: moving towards integrative analysis of organogenesis.}
+\newblock \emph{Nature reviews. Genetics}, \textbf{10}(12): 845--858.
 
 \bibitem[{Martin(2011)}]{cutadapt}
 Martin M (2011) Cutadapt removes adapter sequences from high-throughput
@@ -62,6 +70,11 @@ Langmead B, Salzberg SL (2012) {Fast gapped-read alignment with Bowtie 2.}
 Li H, Handsaker B, Wysoker A, Fennell T, Ruan J, Homer N, Marth G, Abecasis G,
   Durbin R (2009) {The Sequence Alignment/Map format and SAMtools}.
 \newblock \emph{Bioinformatics}, \textbf{25}(16): 2078--2079.
+
+\bibitem[{Bouwman and de~Laat(2015)}]{Bouwman2015a}
+Bouwman BA, de~Laat W (2015) {Getting the genome in shape: the formation of
+  loops, domains and compartments}.
+\newblock \emph{Genome Biology}, \textbf{16}(1): 154.
 
 \bibitem[{Stadhouders \emph{et~al.}(2013)Stadhouders, Kolovos, Brouwer, Zuin,
   van~den Heuvel, Kockx, Palstra, Wendt, Grosveld
