@@ -57,11 +57,12 @@ An approximately 1 Mb region of the mouse genome is shown below a Hi-C contact m
 
 % , and is conserved across mammals and fish
 
-Anterior-posterior patterning in the developing limb is regulated in mammals by Sonic Hedgehog (\emph{Shh}).\cite{Anderson2012} Specifically, the \emph{Shh} gene is expressed within a confined region named the "zone of polarising activity". Its expression within this region is known to be regulated by a well-studied enhancer, the "zone of polarising activity regulatory sequence" or ZRS.\cite{Hill2013a} ZRS is located almost 1 Mb downstream of its target SHH promoter in humans, and is located in intronic regions of another gene, LMBR1 (Fig. \ref{fig:shhtad}).\cite{Hill2013a, Laurell2012} Single point mutations and short insertions within this enhancer have been linked to various limb deformities, including pre- and post-axial polydactyly.\cite{Anderson2012, Lettice2008, Laurell2012} For example, a heritable point mutation in the ZRS enhancer is the cause of polydactyly in "Hemingway cats", a large group of domestic cats with extra toes that reside at the former home of Ernest Hemingway.\cite{Lettice2008}  
+Anterior-posterior patterning in the developing limb is regulated in mammals by Sonic Hedgehog (\emph{Shh}).\cite{Anderson2012} Specifically, the \emph{Shh} gene is expressed within a confined region named the "zone of polarising activity". Its expression within this region is known to be regulated by a well-studied enhancer, the "zone of polarising activity regulatory sequence" or ZRS.\cite{Hill2013a} ZRS is located almost 1 Mb downstream of its target SHH promoter in humans, and is located in intronic regions of another gene, LMBR1 (Fig. \ref{fig:shhtad}).\cite{Hill2013a, Laurell2012} Expression of \emph{Shh} within the ZPA is tightly controlled, initiating in mice at developmental stage E$9.5$ and terminating at E$12.5$.\cite{Amano2009} As such, single point mutations and short insertions within the ZRS enhancer have been linked to various limb deformities, including pre- and post-axial polydactyly.\cite{Anderson2012, Lettice2008, Laurell2012} For example, a heritable point mutation in the ZRS enhancer is the cause of polydactyly in "Hemingway cats", a large group of domestic cats with extra toes that reside at the former home of Ernest Hemingway.\cite{Lettice2008, Zeller2009}  
 
-To further investigate this regulatory system, our collaborators in the Hill lab (University of Edinburgh) have developed a cell which allows inducible \emph{Shh} expression in a non-expressing 14fp cell line derived from the developing limb bud. Treatment of this cell line with trichostatin A (TSA) then leads to detectable \emph{Shh} expression, and increased levels of the histone activation mark H3K27ac at the ZRS (\emph{unpublished data}). However, the question remains whether this TSA treatment is fundamentally altering local chromatin structure---that is, bringing together the ZRS enhancer with its target \emph{Shh} promoter---or whether ZRS and \emph{Shh} are in contact in both the active and non-expressing cell lines and \emph{Shh} expression is blocked through other means. Analysis of the region through FISH implies similar levels of compaction in \emph{Shh} expressing and non-expressing cells (\emph{data not shown}), suggesting the latter explanation. Additionally, studies have previously reported the \emph{Shh}--ZRS interaction is an example of a "pre-formed loop", and as such is maintained regardless of transcriptional activity.\cite{Bouwman2015a}
+To further investigate the dynamics of the \emph{Shh} locus, our collaborators in the Hill lab (University of Edinburgh) have developed a model system which allows inducible \emph{Shh} expression in a non-expressing 14fp cell line derived from the developing limb bud. Treatment of this cell line with the histone deacetylase inhibitor trichostatin A (TSA) then leads to detectable \emph{Shh} expression, and increased levels of the histone activation mark H3K27ac at the ZRS (\emph{unpublished data}). However, the question remains whether this TSA treatment is fundamentally altering local chromatin structure---that is, bringing together the ZRS enhancer with its target \emph{Shh} promoter---or whether ZRS and \emph{Shh} are in contact in both the active and non-expressing cell lines in a poised state. Previous 3D-FISH experiments have shown \emph{Shh}--ZRS contact  to be associated with \emph{Shh} expression in the developing limb bud, though it is not detected in every cell.\cite{Amano2009, Hill2013a} Instead only a proportion of cells in the ZPA are \emph{Shh}-expressing at a given time, and it is within these expressing cells where \emph{Shh}--ZRS colocalisation is most likely.\cite{Amano2009}
+%Alternatively, studies have previously reported the \emph{Shh}--ZRS interaction is an example of a "pre-formed loop", and as such is maintained regardless of transcriptional activity.\cite{Bouwman2015a}
 
-My part in this collaboration was to analyse 3C-seq (also known as 4C), and 5C data generated by our collaborators over the \emph{Shh}--ZRS region in mouse. 
+My part in this collaboration was to analyse 3C-seq (also known as 4C), then 5C data generated by our collaborators over the \emph{Shh}--ZRS region in mouse. Experimental design and wet-lab procedures were performed by members of the Hill lab.
 
 \section{4C at the \emph{Shh} locus}\label{sec:4cshh}
 \subsection{4C pipeline}
@@ -71,7 +72,7 @@ The 4C analysis pipeline, starting from de-multiplexed \texttt{fastq} files as p
 \begin{enumerate}
 \item Trim known bait sequence using \texttt{cutadapt},\cite{cutadapt} select only those reads where known sequence was present
 \item Map reads to reference genome \texttt{mm9} using \texttt{bowtie2}\cite{Langmead2012} with the \texttt{very-sensitive} flag
-\item Filter alignments with a MAPQ score $<30$ to select for high-confidence alignments using \texttt{samtools}\cite{Li2009}
+\item Filter alignments with a MAPQ score $>30$ to select for high-confidence alignments using \texttt{samtools}\cite{Li2009}
 \item Normalise and analyse contacts using the \texttt{r3cseq} R package (Methods \ref{methods:4c})
 \end{enumerate}
 
@@ -115,7 +116,7 @@ Existing multi-probe FISH data produced by our collaborators shows approximately
 
 We also see more broadly a much higher total number of significant contacts in the untreated sample around the viewpoint (Fig. \ref{fig:4carcs}). In the treated samples, only a few contacts cross the stringent $q$-value threshold, with the SHH--ZRS contact among the most significant in terms of both $q$-value and supporting number of reads (indicated by the thickness of the arc, Figs. \ref{fig:ssharc}, \ref{fig:4carcs}).
 
-ChIP-seq experiments performed by out collaborators show an increase in the H3K27ac histone mark over ZRS following TSA treatment which peaks after 24 hours, but starts to increase after around 16 (\emph{data not shown}).
+ChIP-seq experiments performed by our collaborators show an increase in the H3K27ac histone mark over ZRS following TSA treatment which peaks after 24 hours, but starts to increase after around 16 (\emph{data not shown}). 
 
 % Conclusions: appears ZRS contacts become more targetted in TSA+ cells, before more diffuse. 
 % Maybe in contact all the time (supported by FISH data) but not engaging in specific contacts when non-expressing.
@@ -275,11 +276,13 @@ Measurements were taken from 5 replicate 3D simulations (shown in Fig. \ref{fig:
 \end{center} 
 \end{figure} 
 
-Qualitatively, there could be some observable structural dynamics caused by TSA treatment in 88fp cells. It appears potentially that part of the \emph{Shh}--ZRS TAD becomes more loosely-packed at the ZRS side. This can be seen most clearly in simulations 2 and 4 of the TSA treated 88fp polymer models (Fig. \ref{fig:3dreps}). This could also be coupled with less compaction around \emph{Shh}, potentially making the two sites more accessible despite no change in their physical distance.
+Qualitatively, there could be some observable structural dynamics caused by TSA treatment in 88fp cells. It appears potentially that part of the \emph{Shh}--ZRS TAD becomes more loosely-packed at the ZRS side. This can be seen most clearly in simulations 2 and 4 of the TSA treated 88fp polymer models (Fig. \ref{fig:3dreps}). Given the function of TSA as a histone dactyls inhibitor, and unpublished results showing it causes an increase in H3K27 acetylation over the ZRS, we speculate that this additional acetyl groups could be causing greater repulsion between histones leading to a less-compacted structure. Potentially then, the ZRS is transitioning to a more accessible state despite no change in its physical distance relative to \emph{Shh}.
 
-\subsection{Discussion}
+%\subsection{Discussion}
 
-The main result, that TSA treatment induces a \emph{Shh}--ZRS contact in mandibular cell lines but not in limb bud, is difficult to explain and runs contrary to our expectations. Firstly the \emph{Shh}--ZRS contact is thought to be a consistent pre-formed loop, regardless of \emph{Shh} expression. Indeed, FISH experiments by our collaborators report consistent and tight levels of compaction relative to their genomic distance (\emph{data not shown}). We 
+%The main result, that TSA treatment induces a \emph{Shh}--ZRS contact in mandibular cell lines but not in limb bud, is difficult to explain and runs contrary to our expectations. 
+
+Firstly the \emph{Shh}--ZRS contact has previously been shown by 3D-FISH to be associated with \emph{Shh} expression in the developing limb bud, though it is not detected in every cell.\cite{Amano2009, Hill2013a} Instead only a proportion of cells in the ZPA are \emph{Shh}-expressing at a given time, and it is within these expressing cells where \emph{Shh}--ZRS colocalisation is most likely.\cite{Amano2009}
 
 
 Additional follow-up experiments are underway to further explore the dynamics in this region.
