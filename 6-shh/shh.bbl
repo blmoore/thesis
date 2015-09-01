@@ -48,15 +48,6 @@ Bouwman BA, de~Laat W (2015) {Getting the genome in shape: the formation of
   loops, domains and compartments}.
 \newblock \emph{Genome Biology}, \textbf{16}(1): 154.
 
-\bibitem[{Stadhouders \emph{et~al.}(2013)Stadhouders, Kolovos, Brouwer, Zuin,
-  van~den Heuvel, Kockx, Palstra, Wendt, Grosveld
-  \emph{et~al.}}]{Stadhouders2013}
-Stadhouders R, Kolovos P, Brouwer R, Zuin J, van~den Heuvel A, Kockx C, Palstra
-  RJ, Wendt KS, Grosveld F, \emph{et~al.} (2013) {Multiplexed chromosome
-  conformation capture sequencing for rapid genome-scale high-resolution
-  detection of long-range chromatin interactions.}
-\newblock \emph{Nature protocols}, \textbf{8}(3): 509--24.
-
 \bibitem[{Martin(2011)}]{cutadapt}
 Martin M (2011) Cutadapt removes adapter sequences from high-throughput
   sequencing reads.
@@ -71,6 +62,15 @@ Langmead B, Salzberg SL (2012) {Fast gapped-read alignment with Bowtie 2.}
 Li H, Handsaker B, Wysoker A, Fennell T, Ruan J, Homer N, Marth G, Abecasis G,
   Durbin R (2009) {The Sequence Alignment/Map format and SAMtools}.
 \newblock \emph{Bioinformatics}, \textbf{25}(16): 2078--2079.
+
+\bibitem[{Stadhouders \emph{et~al.}(2013)Stadhouders, Kolovos, Brouwer, Zuin,
+  van~den Heuvel, Kockx, Palstra, Wendt, Grosveld
+  \emph{et~al.}}]{Stadhouders2013}
+Stadhouders R, Kolovos P, Brouwer R, Zuin J, van~den Heuvel A, Kockx C, Palstra
+  RJ, Wendt KS, Grosveld F, \emph{et~al.} (2013) {Multiplexed chromosome
+  conformation capture sequencing for rapid genome-scale high-resolution
+  detection of long-range chromatin interactions.}
+\newblock \emph{Nature protocols}, \textbf{8}(3): 509--24.
 
 \bibitem[{Andrews(2015)}]{fastqc}
 Andrews S (2015) {FastQC} (v0.10.1): A quality control tool for high throughput

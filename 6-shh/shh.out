@@ -1,12 +1,14 @@
 \BOOKMARK [0][]{chapter.1}{1 Local chromatin conformation}{}% 1
 \BOOKMARK [1][-]{section.1.1}{1.1 Introduction}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{1.2 4C at the SHH locus}{chapter.1}% 3
-\BOOKMARK [2][-]{subsection.1.2.1}{1.2.1 4C pipeline}{section.1.2}% 4
-\BOOKMARK [2][-]{subsection.1.2.2}{1.2.2 ZRS\205Shh interaction following TSA treatment}{section.1.2}% 5
-\BOOKMARK [2][-]{subsection.1.2.3}{1.2.3 Comparison with controls}{section.1.2}% 6
-\BOOKMARK [2][-]{subsection.1.2.4}{1.2.4 4C time series}{section.1.2}% 7
-\BOOKMARK [2][-]{subsection.1.2.5}{1.2.5 Assay diagnostics}{section.1.2}% 8
-\BOOKMARK [1][-]{section.1.3}{1.3 3D modelling of chromatin fibre}{chapter.1}% 9
-\BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 AutoChrom3D method}{section.1.3}% 10
-\BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 Modelling the Shh region with 5C}{section.1.3}% 11
-\BOOKMARK [2][-]{subsection.1.3.3}{1.3.3 Repeat simulations}{section.1.3}% 12
+\BOOKMARK [1][-]{section.1.2}{1.2 The Shh locus}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{1.3 4C at the Shh locus}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 4C pipeline}{section.1.3}% 5
+\BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 ZRS\205Shh interaction following TSA treatment}{section.1.3}% 6
+\BOOKMARK [2][-]{subsection.1.3.3}{1.3.3 Comparison with controls}{section.1.3}% 7
+\BOOKMARK [2][-]{subsection.1.3.4}{1.3.4 4C time series}{section.1.3}% 8
+\BOOKMARK [2][-]{subsection.1.3.5}{1.3.5 Assay diagnostics}{section.1.3}% 9
+\BOOKMARK [1][-]{section.1.4}{1.4 Polymer modelling of chromatin}{chapter.1}% 10
+\BOOKMARK [2][-]{subsection.1.4.1}{1.4.1 AutoChrom3D method}{section.1.4}% 11
+\BOOKMARK [2][-]{subsection.1.4.2}{1.4.2 Modelling the Shh region with 5C}{section.1.4}% 12
+\BOOKMARK [2][-]{subsection.1.4.3}{1.4.3 Repeat simulations}{section.1.4}% 13
+\BOOKMARK [2][-]{subsection.1.4.4}{1.4.4 Discussion}{section.1.4}% 14
