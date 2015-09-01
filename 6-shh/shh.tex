@@ -39,15 +39,15 @@
 
 \section{Introduction}
 
-The Hi-C assay provides a genome-wide overview of chromatin conformation, however this broad scope imposes resolution limits inherent to an all-vs-all assay. For a closer look at chromatin conformation within a region of interest, alternative C-based assays such as 3C, 4C and 5C can be employed alongside classical microscopy techniques like FISH.
+The Hi-C assay provides a genome-wide overview of chromatin conformation, however this broad scope as an all-vs-all assay comes with inherent limits to the resolution at which individual interactions can be analysed. For a closer look at chromatin conformation within a region of interest, alternative C-based assays such as 3C, 4C and 5C can be employed alongside classical microscopy techniques like FISH.
 
-Here I discuss a collaborative project involving the use of 4C and 5C data to "zoom in" on a well-studied locus involved in limb development: the Sonic Hedgehog (\emph{Shh}) gene and its distal \emph{cis}-regulatory element named ZRS.
+Here I discuss a collaborative project involving the use of 4C and 5C data to zoom in on a well-studied locus involved in limb development: the Sonic Hedgehog (\emph{Shh}) gene and its distal \emph{cis}-regulatory element named ZRS.
 
 \section{The \emph{Shh} locus}
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=3.5in]{figs/shhtad.pdf}
+\includegraphics[width=3.5in]{figs/shhtad.png}
 \captionsetup{width=\textwidth} 
 \caption[SHH--ZRS contacts occur within a stable TAD.]{ {\bf SHH--ZRS contacts occur within a stable TAD. }
 An approximately 1 Mb region of the mouse genome is shown below a Hi-C contact map (derived from previously published data\cite{Dixon2012}). A clear TAD can be identified spanning from SHH to ZRS, dashed lines show TAD boundaries called by \citet{Dixon2012}. This figure was generated for \citet{Anderson2014a}.
@@ -57,23 +57,28 @@ An approximately 1 Mb region of the mouse genome is shown below a Hi-C contact m
 
 % , and is conserved across mammals and fish
 
-Anterior-posterior patterning in the developing limb is regulated in mammals by Sonic Hedgehog (\emph{Shh}).\cite{Anderson2012} Specifically, the \emph{Shh} gene is expressed within a confined region named the "zone of polarising activity" (ZPA). Its expression within this region is known to be regulated by a well-studied enhancer, the "ZPA regulatory sequence" or ZRS.\cite{Hill2013a} ZRS is located almost 1 Mb downstream of its target SHH promoter in humans, and is located in intronic regions of another gene, LMBR1 (Fig. \ref{fig:shhtad}).\cite{Hill2013a, Laurell2012} Expression of \emph{Shh} within the ZPA is tightly controlled, initiating in mice at developmental stage E$9.5$ and terminating at E$12.5$.\cite{Amano2009} As such, single point mutations and short insertions within the ZRS enhancer have been linked to various limb deformities, including pre- and post-axial polydactyly.\cite{Anderson2012, Lettice2008, Laurell2012} For example, a heritable point mutation in the ZRS enhancer is the cause of polydactyly in "Hemingway cats", a large group of domestic cats with extra toes that reside at the former home of Ernest Hemingway.\cite{Lettice2008, Zeller2009}  
+Anterior-posterior patterning in the developing limb is regulated in mammals by the Sonic hedgehog morphogen, encoded by the \emph{Shh} gene.\cite{Anderson2012} Specifically, the \emph{Shh} gene is expressed within a confined region of developing limb buds named the "zone of polarising activity" (ZPA). Its expression within this region is known to be regulated by a well-studied enhancer, the "ZPA regulatory sequence" or ZRS.\cite{Hill2013a} ZRS is located almost 1 Mb downstream of its target \emph{Shh} promoter in humans, and is located in intronic regions of another gene, LMBR1 (Fig. \ref{fig:shhtad}).\cite{Hill2013a, Laurell2012} Expression of \emph{Shh} within the ZPA is tightly controlled, initiating in mice at developmental stage E$9.5$ and terminating at E$12.5$.\cite{Amano2009} As such, single point mutations and short insertions within the ZRS enhancer have been linked to various limb deformities, including pre- and post-axial polydactyly.\cite{Anderson2012, Lettice2008, Laurell2012} For example, a heritable point mutation in the ZRS enhancer is the cause of polydactyly in "Hemingway cats", a large group of domestic cats with extra toes that reside at the former home of Ernest Hemingway.\cite{Lettice2008, Zeller2009}  
 
-To further investigate the dynamics of the \emph{Shh} locus, our collaborators in the Hill lab (University of Edinburgh) have developed a model system which allows inducible \emph{Shh} expression in a non-expressing 14fp cell line derived from the developing limb bud. Treatment of this cell line with the histone deacetylase inhibitor trichostatin A (TSA) then leads to detectable \emph{Shh} expression, and increased levels of the histone activation mark H3K27ac at the ZRS (\emph{unpublished data}). However, the question remains whether this TSA treatment is fundamentally altering local chromatin structure---that is, bringing together the ZRS enhancer with its target \emph{Shh} promoter---or whether ZRS and \emph{Shh} are in contact in both the active and non-expressing cell lines in a poised state. Previous 3D-FISH experiments have shown \emph{Shh}--ZRS contact  to be associated with \emph{Shh} expression in the developing limb bud, though it is not detected in every cell.\cite{Amano2009, Hill2013a} Instead only a proportion of cells in the ZPA are \emph{Shh}-expressing at a given time, and it is within these expressing cells where \emph{Shh}--ZRS colocalisation is most likely.\cite{Amano2009}
+To further investigate the dynamics of the \emph{Shh} locus, our collaborators in the Hill lab (University of Edinburgh) have developed a model system which allows inducible \emph{Shh} expression in a non-expressing 14fp cell line derived from the developing murine limb bud. Treatment of this cell line with the histone deacetylase inhibitor trichostatin A (TSA) then leads to detectable \emph{Shh} expression, and increased levels of the histone activation mark H3K27ac at the ZRS (\emph{unpublished data}). However, the question remains whether this TSA treatment is fundamentally altering local chromatin structure---that is, bringing together the ZRS enhancer with its target \emph{Shh} promoter---or whether ZRS and \emph{Shh} are in contact in both the active and non-expressing cell lines in a poised state. Previous 3D-FISH experiments have shown \emph{Shh}--ZRS contact  to be associated with \emph{Shh} expression in the developing limb bud, though it is not detected in every cell.\cite{Amano2009, Hill2013a} Instead only a proportion of cells in the ZPA are \emph{Shh}-expressing at a given time, and it is within these expressing cells where \emph{Shh}--ZRS colocalisation is most likely to occur.\cite{Amano2009}
 %Alternatively, studies have previously reported the \emph{Shh}--ZRS interaction is an example of a "pre-formed loop", and as such is maintained regardless of transcriptional activity.\cite{Bouwman2015a}
 
 My part in this collaboration was to analyse 3C-seq (also known as 4C), then 5C data generated by our collaborators over the \emph{Shh}--ZRS region in mouse. Experimental design and wet-lab procedures were performed by members of the Hill lab.
 
 \section{4C of the ZRS}\label{sec:4cshh}
+
+4C experiments were performed by collaborators using the ZRS region as a bait sequence, or "viewpoint", such that it contacts were measured with all other HindIII restriction fragments genome-wide. Thus the 4C technique allows us to assay changes in the ZRS--\emph{Shh} contact relative to the totality of other chromatin interactions involving ZRS.
+
+The 4C experimental design involved two control experiments. The first used cells derived from whole limb bud at developmental stage E11.5, thereby containing some \emph{Shh} expressing cells as a positive control. The negative control was a mouse mandibular cell line (MD) which does not express \emph{Shh}. For the perturbation experiment, 4C was performed in the \emph{Shh}-inducible 14fp cell line, both with and without trichostatin A (TSA) treatment.
+
 \subsection{4C pipeline}
 
-The 4C analysis pipeline, starting from de-multiplexed \texttt{fastq} files as produced by our in-house sequencing facilities, can be summarised as:
+The 4C analysis pipeline, starting from de-multiplexed sequencing reads (\texttt{fastq} files) as produced by our in-house sequencing facilities using an Ion Torrent Ion Proton\textsuperscript{TM} sequencer, can be summarised as:
 
 \begin{enumerate}
 \item Trim known bait sequence using \texttt{cutadapt},\cite{cutadapt} select only those reads where known sequence was present
 \item Map reads to reference genome \texttt{mm9} using \texttt{bowtie2}\cite{Langmead2012} with the \texttt{very-sensitive} flag
 \item Filter alignments with a MAPQ score $>30$ to select for high-confidence alignments using \texttt{samtools}\cite{Li2009}
-\item Normalise and analyse contacts using the \texttt{r3cseq} R package (Methods \ref{methods:4c})
+\item Normalise contacts using the \texttt{r3cseq} R package and assign FDR $q$-values to interactions, with the aim of finding those significantly over-represented relative to expectation (Methods \ref{methods:4c})
 \end{enumerate}
 
 % Adam sent a powerpoint he gave for section meeting, see also Prof Hill's publications
@@ -90,13 +95,8 @@ The 4C analysis pipeline, starting from de-multiplexed \texttt{fastq} files as p
 \end{center} 
 \end{figure} 
 
-4C experiments were performed by collaborators using the ZRS region as a bait sequence, or "viewpoint", such that it contacts were measured with all other HindIII restriction fragments genome-wide. The experimental design, again generated entirely by collaborators, involved two control experiments. The first used cells derived from whole limb bud at developmental stage E11.5, thereby containing some \emph{Shh} expressing cells as a positive control. The negative control was a mouse mandibular cell line (MD) which does not express \emph{Shh}. 4C was then also performed in the \emph{Shh}-inducible 14fp cell line, both with and without trichostatin A (TSA) treatment.
 
-The first stage in analysing these contacts is to convert observed raw sequencing reads to normalised frequencies (Methods \ref{methods:4cnorm}), these normalised values are then assigned significance scores in the form of $q$-values, with the aim of finding those significantly over-represented relative to expectation (Methods \ref{methods:4csignif}).
-
-The results of a comparison between TSA treated and untreated samples is shown in Figure \ref{fig:ssharc}. In it we see a striking and highly significant ZRS--SHH contact in the treated sample ($q$-value $ < 5 \times 10^{-10}$), with a weaker but still significant contact in the adjacent restriction fragment in the untreated sample ($q$-value $ < 5 \times 10^{-5}$). 
-
-\subsection{Comparison with controls}
+The results of a comparison between 4C experiments in TSA treated and untreated 14fp cells is shown in Figure \ref{fig:ssharc}. In it we see a striking and highly significant ZRS--SHH contact in the treated sample ($q$-value $ < 5 \times 10^{-10}$), with a weaker but still significant contact in the adjacent restriction fragment in the untreated sample ($q$-value $ < 5 \times 10^{-5}$). 
 
 \begin{figure}
 \begin{center} 
@@ -108,18 +108,11 @@ Arc plots are shown for two control experiments: the \emph{Shh} expressing E11.5
 \end{center} 
 \end{figure} 
 
-Comparing these results with controls shows a constitutive \emph{Shh}--ZRS contact in each case, regardless of \emph{Shh} expression status (Fig. \ref{fig:4c4way}). This is in agreement with previous evidence suggesting ZRS contacts \emph{Shh} constitutively.\cite{Bouwman2015a} REF XX However the TSA-- 14fp cell line shows a large number of off-target contacts, potentially indicating many spurious contacts across the cell population.
+Comparing these results with controls shows a detectable and significant \emph{Shh}--ZRS contact in each case, regardless of \emph{Shh} expression status (FDR $q$-value $ < 0.05$); Fig. \ref{fig:4c4way}). This is in agreement with previous evidence suggesting ZRS contacts \emph{Shh} constitutively.\cite{Bouwman2015a} However the TSA-- 14fp cell line also shows a large number of off-target contacts, potentially indicating a lack of specificity in the \emph{Shh}--ZRS contact, or a range of alternative contacts occurring throughout the cell population.
 
-Existing multi-probe FISH data produced by our collaborators shows approximately equal levels of compaction in this region in both TSA treated and untreated cells (\emph{data not shown}). This information in combination with the 4C results reported here (Fig. \ref{fig:ssharc}) support a hypothesis that while both samples are held together in a TAD (Fig. \ref{fig:shhtad}) --- unavoidably inducing many contacts --- it is only in the treated sample where a highly-specific ZRS--SHH contact occurs and potentially is then bring about expression of the \emph{Shh} gene.
+Unpublished experimental results show that following TSA treatment, \emph{Shh} expression increases over a period of 24 hours until it reaches that seen in the limb, this steady increase is also mirrored by an increase in the level of H3K27ac histone mark over ZRS (Hill lab, \emph{personal communication}). For this reason, 4C of ZRS was also performed a full 24 hours after TSA treatment, as well as the 18 hour treatment analysed above (e.g. Fig. \ref{fig:4c4way}). These two experiments give largely similar results (Fig. \ref{fig:4carcs}), and the ZRS--\emph{Shh} interaction frequency is highly significant in each case, particularly 24 hours after treatment (\emph{TSA-} : $ q < 1.5 \times 10^{-5}$; \emph{TSA+}$^{18h}$ : $q < 1.4 \times 10^{-8}$; \emph{TSA+}$^{24h}$ : $ q < 7.8 \times 10^{-35}$).
 
-\subsection{4C time series}
-
-We also see more broadly a much higher total number of significant contacts in the untreated sample around the viewpoint (Fig. \ref{fig:4carcs}). In the treated samples, only a few contacts cross the stringent $q$-value threshold, with the SHH--ZRS contact among the most significant in terms of both $q$-value and supporting number of reads (indicated by the thickness of the arc, Figs. \ref{fig:ssharc}, \ref{fig:4carcs}).
-
-ChIP-seq experiments performed by our collaborators show an increase in the H3K27ac histone mark over ZRS following TSA treatment which peaks after 24 hours, but starts to increase after around 16 (\emph{data not shown}). 
-
-% Conclusions: appears ZRS contacts become more targetted in TSA+ cells, before more diffuse. 
-% Maybe in contact all the time (supported by FISH data) but not engaging in specific contacts when non-expressing.
+Additional FISH data produced by our collaborators shows approximately equal levels of compaction in this region in both TSA treated and untreated 14fp cells (\emph{data not shown}). This information in combination with the 4C results reported here (Fig. \ref{fig:ssharc}) support a hypothesis that as these two loci border a TAD (Fig. \ref{fig:shhtad}), they frequently contact each other regardless of \emph{Shh} expression state. It could also be the case that TSA treatment brings about specific, functional ZRS--\emph{Shh} contact in 14fp cells which is coupled with expression of the \emph{Shh} gene.
 
 \begin{figure}
 \begin{center} 
@@ -131,13 +124,9 @@ Arc plots are shown for an untreated, non-expressing 14fp cell population (\emph
 \end{center} 
 \end{figure} 
 
-%\subsection{4C / Hi-C comparison}
-%
-%Hi-C data in mouse cells has been previously published,\cite{Dixon2012} so can be compared with this novel 4C data to give broader contextual information about chromatin conformation in the region under study.
-
 \subsection{Assay diagnostics}
 
-The 4C protocol used by our collaborators in this work was that of \citet{Stadhouders2013}. In it, the authors advise some statistical tests to ensure the quality of the experiment results. Among these were:\cite{Stadhouders2013}
+The 4C protocol used by our collaborators in this work was that of \citet{Stadhouders2013} In it, the authors advise some statistical tests to ensure the quality of the experiment results. Among these were:\cite{Stadhouders2013}
 
 \begin{enumerate}
 \item Sequencing reads should be found to have high duplication rates of $95\%$ or greater.
@@ -149,7 +138,7 @@ The 4C protocol used by our collaborators in this work was that of \citet{Stadho
 %                    haeiii: 74.0% (reads 10.4M)
 %                    mluci: 62.8% (reads 10M)
 
-Additionally, the 4C procedure\cite{Stadhouders2013} was adapted for specific in-house sequencing instruments (an Ion Torrent Ion Proton\textsuperscript{TM} sequencer as opposed to Illumina\textsuperscript{TM} technology) and as such required diagnostics to confirm the experimental data was accurate. 
+Additionally, the 4C procedure was adapted for specific in-house sequencing instruments (an Ion Torrent Ion Proton\textsuperscript{TM} sequencer as opposed to Illumina\textsuperscript{TM} technology) and as such required diagnostics to confirm the experimental data was accurate. 
 
 Sequence duplication levels were measured with \texttt{FastQC}\cite{fastqc} and are shown in Table \ref{tab:4c}. We find slightly lower than expected levels of duplication, ranging from $62.8\%$ to $84.4\%$. This suggests that while the assay does appear to be working, there may be extraneous noise and non-bait interactions in the sequencing library.
 
@@ -175,7 +164,7 @@ Sequence duplication levels were measured with \texttt{FastQC}\cite{fastqc} and 
 \end{table}
 
 
-We found the proportion of reads mapped to the fair region chromosome, chromosome 5 in this case, fell below the prescribed level of $50\%$. Across 4C experiments, we find instead that between approximately $10$--$20\%$ of all reads mapped to the bait chromosome (Fig. \ref{fig:4cchromosomes}), except for  the 18 hour TSA+ treatment experiment which shows only around $7\%$. While this is still a clear enrichment over non-bait chromosomes, it suggests the assay results suffer from either increased \emph{trans}-contact noise or decreased \emph{cis}-contact enrichment around the bait region. 
+We found the proportion of reads mapped to the bait region chromosome, chromosome 5 in this case, fell below the prescribed level of $50\%$. Across 4C experiments, we find instead that between approximately $10$--$20\%$ of all reads mapped to the bait chromosome (Fig. \ref{fig:4cchromosomes}), except for  the 18 hour TSA+ treatment experiment which shows only around $7\%$. While this is still a clear enrichment over non-bait chromosomes, it suggests the assay results suffer from either increased \emph{trans}-contact noise or decreased \emph{cis}-contact enrichment around the bait region. 
 
 \begin{figure}
 \begin{center} 
@@ -187,12 +176,12 @@ Chromosome 5 is visibly enriched for 4C reads as it  contains the ZRS bait regio
 \end{center} 
 \end{figure} 
 
-Lower than expected levels of both sequence duplication and bait chromosome enrichment suggest loss of signal around the bait region itself. This is the area where we'd expect both very high levels of duplication (identical restriction fragment pairings between nearby genomic locations) and a majority of all sequencing reads, driving the overall chromosome enrichment. The precise reason for the discrepancy is unclear but suggests the results may have a lower signal-to-noise ratio than has previously been achievable in 4C experiments.\cite{Stadhouders2013} Potentially the signal-to-noise ratio could be improved by utilising a double cross-linking procedure such as that used in \citet{Lin2012}
+Lower than expected levels of both sequence duplication and bait chromosome enrichment suggest loss of signal around the bait region itself. This is the area where we expect both very high levels of duplication (identical restriction fragment pairings between nearby genomic locations) and where a majority of all sequencing reads should originate, hence causing the overall chromosome enrichment. The precise reason for the discrepancy is unclear but suggests the results may have a lower signal-to-noise ratio than has previously been achievable in 4C experiments.\cite{Stadhouders2013} Potentially the signal-to-noise ratio could be improved by utilising a double cross-linking procedure such as that used in \citet{Lin2012}
 
 \section{Polymer modelling}
 
 % intro stuff introducing 3d modelling
-Chromosome conformation capture allow investigation of genome organisation, but such data are commonly analysed using one or two-dimensional representations. A growing set of algorithms looks instead to rebuild the three-dimensional polymer trajectory of a chromatin fibre, using Hi-C or 5C data as input (e.g. \citenum{Bau2011a, Hu2013a, Varoquaux2014a, Lesne2014, Trieu2014, Peng2013, Ay2014b, Caudai2015}). Intuitively, in each method the interaction frequency between two regions is idealised as inversely proportional to their physical distance (where possible and according to various other constraints). Where these methods differ is in their approaches to solving this optimisation problem. We chose the \texttt{AutoChrom3D} method\cite{Peng2013} for use in this work (described in Section \ref{sec:achrom}) as the algorithm can accept 5C input and model polymers at high resolution of 8 kb or greater.
+Chromosome conformation capture allow investigation of genome organisation, but such data are commonly analysed using one or two-dimensional representations. A growing set of algorithms looks instead to rebuild the three-dimensional trajectory of a chromatin fibre, using Hi-C or 5C data as input (e.g. \citenum{Bau2011a, Hu2013a, Varoquaux2014a, Lesne2014, Trieu2014, Peng2013, Ay2014b, Caudai2015}). Intuitively, in each method the interaction frequency between two regions is idealised as inversely proportional to their physical distance (where possible and according to various other constraints). Where these methods differ is in their approaches to performing this spatial transformation, and in solving the subsequent optimisation problem. We chose the \texttt{AutoChrom3D} method\cite{Peng2013} for use in this work (described in Section \ref{sec:achrom}) as the algorithm can accept 5C input and model polymers at high resolution of up to 8 kb.
 
 \subsection{\texttt{AutoChrom3D} method}\label{sec:achrom}
 
@@ -211,7 +200,7 @@ The procedure implemented in \texttt{AutoChrom3D} can be summarised as:\cite{Pen
 
 5C data was generated by our collaborators over the same \emph{Shh}--ZRS region as was assayed with 4C (Fig. \ref{fig:shhtad}; Section \ref{sec:4cshh}) with the aim of developing a multi-point perspective on local chromatin conformation beyond that available from 4C data.
 
-We used this 5C experimental data in combination with a particular three-dimensional inference program  (\texttt{AutoChrom3D}\cite{Peng2013}) in an attempt to compare polymer trajectories in TSA treated and untreated 88fp mouse cells, a similar and complimentary cell line to that used in earlier 4C experiments (14fp). As a control, 5C was also performed on mandibular (MD) cells, with and without TSA treatment, which do not express \emph{Shh}. Prior to structural modelling, the \texttt{my5C} program was used to generate normalised 5C interaction frequencies.\cite{Lajoie2009a}
+We used this 5C experimental data in combination with the \texttt{AutoChrom3D} three-dimensional inference algorithm\cite{Peng2013} in an attempt to compare polymer trajectories in TSA treated and untreated 88fp mouse cells, a similar and complimentary cell line to that used in earlier 4C experiments (14fp). As a control, 5C was also performed on mandibular (MD) cells, with and without TSA treatment, which do not express \emph{Shh}. Prior to structural modelling, the \texttt{my5C} program was used to generate normalised 5C interaction frequencies.\cite{Lajoie2009a}
 
 \begin{figure}
 \begin{center} 
@@ -223,7 +212,7 @@ We used this 5C experimental data in combination with a particular three-dimensi
 \end{center} 
 \end{figure} 
 
-We find that TSA treatment of 88fp cells does appear to slightly reduce the distance between \emph{Shh} and ZRS in inferred 3D structures (Fig. \ref{fig:5c3d}), however this difference is overshadowed---to our surprise---by that observed in the non-expressing MD cell line. This latter mandibular cell line undergoes a large structural transition which brings together the \emph{Shh} gene and the ZRS enhancer. Measurements between these elements for each structure are shown in Table \ref{tab:3ddist}.
+We find that TSA treatment of 88fp cells does appear to slightly reduce the distance between \emph{Shh} and ZRS in inferred 3D structures (Fig. \ref{fig:5c3d}), however this difference is overshadowed---to our surprise---by that observed in the non-expressing MD cell line. This latter mandibular cell line undergoes a large structural transition which brings the \emph{Shh} gene and ZRS into close proximity. Measurements between these elements for each structure are shown in Table \ref{tab:3ddist}.
 
 We also report a greater overall structural shift following TSA treatment in the MD cell line, with an RMSD between the two structures of $2.377$ arbitrary units, relative to $1.701$ between TSA+ and TSA- 88fp cells. The radius of gyration, unchanged in 88fp, is also decreased in the MD cell line following TSA treatment, indicating the region becomes more compact following TSA treatment (Table \ref{tab:3ddist}).
 
@@ -249,7 +238,7 @@ We have shown what appears to be a structural shift in the \emph{Shh}-ZRS locus 
 
 %Due to the use of cell populations we cannot resolve whether such a contact is either constitutive in a certain proportion of cells under study, or an ephemeral yet commonly-occurring interaction.
 
-We re-ran simulations of the 3D chromatin fibre in the \emph{Shh}-ZRS region a total of five times (Fig. \ref{fig:3dreps}). In every case, the algorithm generates the known \emph{Shh}-ZRS TAD as a compacted domain bookended by the two loci under study. This sanity check ensures the results are broadly compatible with our \emph{a prior} expectation of the region's structure given the 2D heatmap representation of 5C data (Fig. \ref{fig:shhtad}).
+We re-ran simulations of the 3D chromatin fibre in the \emph{Shh}-ZRS region a total of five times (Fig. \ref{fig:3dreps}). In each case, the algorithm generates the known \emph{Shh}-ZRS TAD as a compacted domain bookended by the two loci under study. This sanity check shows that the results are broadly compatible with our \emph{a prior} expectation of the region's structure given the 2D heatmap representation of 5C data (Fig. \ref{fig:shhtad}).
 
 Repeat simulations indeed appear to recreate the induced ZRS--\emph{Shh} contact in the mandibular cell line (MD) following TSA treatment (Fig. \ref{fig:3dreps}). This is again surprising, as the MD cell lines do not express \emph{Shh} and so were included as a negative control, with no expected changes in local chromatin structure following TSA treatment. In repeat simulations of the 88fp cell line, a close analogue of the 14fp cell line used in 4C, we see relatively little change in distance between \emph{Shh} and ZRS (Fig. \ref{fig:3dreps}). 
 
@@ -269,13 +258,23 @@ We quantified these distances by measuring form the single bead containing ZRS t
 \begin{center} 
 \includegraphics[width=2.75in]{figs/3d_dists.pdf}
 \captionsetup{width=\textwidth} 
-\caption[ \emph{Shh}--ZRS distance measurements from repeated 3D polymer simulations. ]{ {\bf \emph{Shh}--ZRS distance measurements from repeated 3D polymer simulations. }
+\caption[ ZRS--\emph{Shh} distance measurements from repeated 3D polymer simulations. ]{ {\bf ZRS--\emph{Shh} distance measurements from repeated 3D polymer simulations. }
 Measurements were taken from 5 replicate 3D simulations (shown in Fig. \ref{fig:3dreps}). Distances are given in arbitrary units. \emph{Shh} spans two beads of the polymer model, hence two distances are calculated in each case ($d_1$, $d_2$).
 }\label{fig:3ddist}
 \end{center} 
 \end{figure} 
 
-Qualitatively, there could be some observable structural dynamics caused by TSA treatment in 88fp cells. It appears potentially that part of the \emph{Shh}--ZRS TAD becomes more loosely-packed at the ZRS side. This can be seen most clearly in simulations 2 and 4 of the TSA treated 88fp polymer models (Fig. \ref{fig:3dreps}). Given the function of TSA as a histone dactyls inhibitor, and unpublished results showing it causes an increase in H3K27 acetylation over the ZRS, we speculate that this additional acetyl groups could be causing greater repulsion between histones leading to a less-compacted structure. Potentially then, the ZRS is transitioning to a more accessible state despite no change in its physical distance relative to \emph{Shh}.
+Qualitatively, there could be some observable structural dynamics caused by TSA treatment in 88fp cells. It appears potentially that part of the \emph{Shh}--ZRS TAD becomes more loosely-packed at the ZRS side. This can be seen most clearly in two of the five simulations of the TSA treated 88fp polymer models (Fig. \ref{fig:decompaction}). Given the function of TSA as a histone dactyls inhibitor, and unpublished results showing it causes an increase in H3K27 acetylation over the ZRS, we speculate that this additional acetyl groups could be causing greater repulsion between histones leading to a less-compacted structure. Potentially then, the ZRS is transitioning to a more accessible state despite no change in its physical distance relative to \emph{Shh}.
+
+\begin{figure}
+\begin{center} 
+\includegraphics[width=3in]{figs/decompaction.pdf}
+\captionsetup{width=\textwidth} 
+\caption[ Polymer models showing partial TAD decompaction following TSA treatment. ]{ {\bf Polymer models showing partial TAD decompaction following TSA treatment. }
+Two of the simulations from Figure \ref{fig:3dreps} are shown here and annotated. In the TSA treated 14fp samples (TSA+) there is potentially evidence for a looser packing of the chromatin around ZRS (\emph{dark green}).
+}\label{fig:decompaction}
+\end{center} 
+\end{figure} 
 
 %\subsection{Discussion}
 
