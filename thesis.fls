@@ -372,10 +372,10 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplr9o.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/iwona/ot1iwona.fd
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/iwona/ot1iwona.fd
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/nowacki/iwona/rm-iwonar.tfm
-INPUT thesis.toc
-INPUT thesis.toc
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplrc9o.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/nowacki/iwona/rm-iwonar-sc.tfm
+INPUT thesis.toc
+INPUT thesis.toc
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplrc9o.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplri9o.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
@@ -725,9 +725,9 @@ INPUT ./figs/gbands.pdf
 INPUT ./figs/gbands.pdf
 INPUT 6-shh/shh.tex
 INPUT 6-shh/shh.tex
-INPUT figs/shhtad.pdf
-INPUT ./figs/shhtad.pdf
-INPUT ./figs/shhtad.pdf
+INPUT figs/shhtad.png
+INPUT ./figs/shhtad.png
+INPUT ./figs/shhtad.png
 INPUT figs/shharc_full.pdf
 INPUT ./figs/shharc_full.pdf
 INPUT ./figs/shharc_full.pdf
@@ -751,6 +751,9 @@ INPUT ./figs/3dreps.pdf
 INPUT figs/3d_dists.pdf
 INPUT ./figs/3d_dists.pdf
 INPUT ./figs/3d_dists.pdf
+INPUT figs/decompaction.pdf
+INPUT ./figs/decompaction.pdf
+INPUT ./figs/decompaction.pdf
 INPUT 7-discussion/discussion.tex
 INPUT 7-discussion/discussion.tex
 INPUT 8-appendix/appendix.tex

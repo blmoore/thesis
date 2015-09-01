@@ -2,6 +2,12 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
 \contentsline {table}{\numberline {1}{\ignorespaces Public Hi-C data used in this work.}}{17}{table.caption.15}
 \contentsline {table}{\numberline {2}{\ignorespaces ChIP-seq and other public datasets used in this work. \relax }}{20}{table.caption.16}
 \contentsline {table}{\numberline {3}{\ignorespaces ENCODE datasets generated in the H1 hESC cell line and used in models of transcriptional output. \relax }}{32}{table.caption.19}
@@ -11,8 +17,8 @@
 \contentsline {table}{\numberline {5}{\ignorespaces Performance comparison of full and optimised RF and ML models.}}{76}{table.caption.56}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6}{\ignorespaces 4C sequencing library statistics.}}{109}{table.caption.81}
-\contentsline {table}{\numberline {7}{\ignorespaces Measurement distances between ZRS and SHH in each inferred 3D structure.}}{111}{table.caption.84}
+\contentsline {table}{\numberline {6}{\ignorespaces 4C sequencing library statistics.}}{108}{table.caption.81}
+\contentsline {table}{\numberline {7}{\ignorespaces Measurement distances between ZRS and SHH in each inferred 3D structure.}}{112}{table.caption.84}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {A1}{\ignorespaces Gm12878 functional enrichments in regions of variable structure.}}{124}{table.7.1}

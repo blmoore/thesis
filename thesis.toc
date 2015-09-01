@@ -1,14 +1,14 @@
 \vspace {-\cftbeforechapskip }
 \select@language {english}
-\contentsline {chapter}{Declaration}{ii}{Doc-Start}
-\contentsline {chapter}{Acknowledgements}{iv}{chapter*.1}
-\contentsline {chapter}{Abstract}{vi}{chapter*.2}
-\contentsline {chapter}{Lay summary}{ix}{chapter*.3}
+\contentsline {chapter}{\spacedlowsmallcaps {Declaration}}{iii}{chapter*.1}
+\contentsline {chapter}{\spacedlowsmallcaps {Acknowledgements}}{v}{chapter*.2}
+\contentsline {chapter}{\spacedlowsmallcaps {Abstract}}{vii}{chapter*.3}
+\contentsline {chapter}{\spacedlowsmallcaps {Lay summary}}{ix}{chapter*.4}
 \contentsline {chapter}{Contents}{xi}{chapter*.5}
 \contentsline {chapter}{List of Figures}{xv}{chapter*.6}
 \contentsline {chapter}{List of Tables}{xix}{chapter*.7}
-\contentsline {chapter}{List of Acronyms}{xx}{chapter*.7}
-\contentsline {chapter}{Published material}{xxiii}{chapter*.8}
+\contentsline {chapter}{\spacedlowsmallcaps {List of acronyms}}{xxi}{chapter*.8}
+\contentsline {chapter}{\spacedlowsmallcaps {Published material}}{xxiii}{chapter*.9}
 \contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Introduction}}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Genome organisation}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}C-methods and Hi-C}{1}{subsection.1.1.1}
@@ -122,15 +122,13 @@
 \contentsline {section}{\numberline {6.1}Introduction}{103}{section.6.1}
 \contentsline {section}{\numberline {6.2}The \emph {Shh} locus}{103}{section.6.2}
 \contentsline {section}{\numberline {6.3}4C of the ZRS}{104}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}4C pipeline}{104}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.1}4C pipeline}{105}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}ZRS--\emph {Shh} interaction following TSA treatment}{105}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Comparison with controls}{105}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}4C time series}{105}{subsection.6.3.4}
-\contentsline {subsection}{\numberline {6.3.5}Assay diagnostics}{107}{subsection.6.3.5}
-\contentsline {section}{\numberline {6.4}Polymer modelling}{110}{section.6.4}
+\contentsline {subsection}{\numberline {6.3.3}Assay diagnostics}{107}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Polymer modelling}{109}{section.6.4}
 \contentsline {subsection}{\numberline {6.4.1}\texttt {AutoChrom3D} method}{110}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Modelling the \emph {Shh} region with 5C}{111}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Repeat simulations}{111}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.2}Modelling the \emph {Shh} region with 5C}{110}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Repeat simulations}{112}{subsection.6.4.3}
 \contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Discussion}}{117}{chapter.7}
 \contentsline {section}{\numberline {7.1}Modelling higher order chromatin organisation}{117}{section.7.1}
 \contentsline {section}{\numberline {7.2}Domain boundaries}{118}{section.7.2}
@@ -138,5 +136,5 @@
 \contentsline {section}{\numberline {7.4}A note on causality}{119}{section.7.4}
 \contentsline {section}{\numberline {7.5}Insights into genome organisation}{120}{section.7.5}
 \contentsline {section}{\numberline {7.6}Conclusion}{120}{section.7.6}
-\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{123}{chapter*.87}
-\contentsline {chapter}{References}{143}{chapter*.88}
+\contentsline {chapter}{\spacedlowsmallcaps {Appendices}}{123}{chapter*.88}
+\contentsline {chapter}{References}{143}{chapter*.89}
