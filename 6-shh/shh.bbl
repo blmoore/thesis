@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{27}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
@@ -165,5 +165,12 @@ LINDO (2015) {LINGO} (v15.0): Optimization modeling software for linear,
 Lajoie BR, van Berkum NL, Sanyal A, Dekker J (2009) {My5C: web tools for
   chromosome conformation capture studies.}
 \newblock \emph{Nature methods}, \textbf{6}(10): 690--691.
+
+\bibitem[{Williamson \emph{et~al.}(2014)Williamson, Berlivet, Eskeland, Boyle,
+  Illingworth, Paquette and Bickmore}]{Williamson2014}
+Williamson I, Berlivet S, Eskeland R, Boyle S, Illingworth RS, Paquette D,
+  Bickmore WA (2014) {Spatial genome organization: contrasting views from
+  chromosome conformation capture and fluorescence in situ hybridization}.
+\newblock pp. 2778--2791.
 
 \end{thebibliography}
