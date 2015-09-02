@@ -163,10 +163,10 @@ Next we compare compartments between the three cell types under study. To do thi
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=2.5in]{figs/compdist.pdf}
+\includegraphics[width=2.5in]{figs/compdist_v2.pdf}
 \captionsetup{width=\textwidth}
 \caption[Compartment boundaries are shared between cell types. ]{ {\bf Compartment boundaries are shared between cell types. }
-The empirical cumulative density functions (ECDF) of distances between H1 compartments and those called in GM12878 and K562 are shown. These distances were compared with a null distribution calculated from shuffled boundaries at a matched resolution.
+The empirical cumulative density functions (ECDF) of distances between H1 compartments and those called in GM12878 and K562 are shown. Vertical lines mark distances of 0, 1 and 2 bins. These distances were compared with a null distribution calculated from shuffled boundaries at a matched resolution.
 }\label{fig:compdist}
 \end{center}
 \end{figure} 
@@ -189,14 +189,14 @@ A greater number of TADs were called in H1 hESC ($2,897$ total) than in GM12878 
 
 The \citet{Dixon2012} method of calling TADs relies on the detection of boundaries,\cite{Rao2014} thus is affected by sequencing depth: experiments with sparser contact matrices may not contain enough for a sufficiently high degree of bias to allow a boundary call. This is evident in our datasets even after normalisation, with the deeply-sequenced H1 hESC cell type having approximately $50\%$ more TADs called than in the GM12878 cell type (Fig. \ref{fig:ntads}). This effect could have been mitigated by down-sampling reads in the H1 cell type, but at a cost of reducing the quality of the best dataset under study. Instead this disparity should just be noted as a potential cofounder in downstream TAD analysis; at lower-resolution such as that used to calculate compartment eigenvectors (1 Mb) this sensitivity to sequencing depth is not evident (Figs. \ref{fig:wiggles}, \ref{fig:compcor}).
 
-Despite differing numbers, there is still detectable levels of conservation of TADs between cell types (Fig. \ref{fig:bounddist}). Genome-wide, $33\%$ of all H1 TAD boundaries have a matching boundary in GM12878 in the same or an adjacent 40 kb bin (K562: $31\%$, null model: $18\%$; K--S test: $D=0.26$, $p\approx0$). To illustrate this conservation with a real example, a 20 Mb region of chromosome 2 is pictured (Fig. \ref{fig:blowout}), highlighting the conservation between both TADs and compartment calls across the three cell types and at multiple scales: from chromosome-wide 1 Mb compartment eigenvectors, to TADs with individual boundaries resolved to 40 kb.
+Despite differing numbers, there is still detectable levels of conservation of TADs between cell types (Fig. \ref{fig:bounddist}). Genome-wide, $45\%$ of all H1 TAD boundaries have a matching boundary in GM12878 in the same or an adjacent 40 kb bin (K562: $41\%$, null model: $22\%$; K--S test: $D=0.2$, $p\approx0$). To illustrate this conservation with a real example, a 20 Mb region of chromosome 2 is pictured (Fig. \ref{fig:blowout}), highlighting the conservation between both TADs and compartment calls across the three cell types and at multiple scales: from chromosome-wide 1 Mb compartment eigenvectors, to TADs with individual boundaries resolved to 40 kb.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=2.5in]{figs/taddist.pdf}
+\includegraphics[width=2.5in]{figs/taddist_v2.pdf}
 \captionsetup{width=\textwidth}
 \caption[TAD boundaries are shared between cell types. ]{ {\bf TAD boundaries are shared between cell types. }
-The empirical cumulative density functions (ECDF) of distances between H1 TADs and those called in GM12878 and K562 are shown. These distances were compared with a null distribution calculated from randomly placed boundaries allocated at a matched resolution.
+The empirical cumulative density functions (ECDF) of distances between H1 TADs and those called in GM12878 and K562 are shown. Vertical lines mark distances of 0, 1 and 2 bins. These distances were compared with a null distribution calculated from randomly placed boundaries allocated at a matched resolution.
 }\label{fig:bounddist}
 \end{center}
 \end{figure} 
