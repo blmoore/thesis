@@ -1,4 +1,4 @@
-\begin{thebibliography}{228}
+\begin{thebibliography}{229}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -1396,5 +1396,10 @@ Karimi MM, Goyal P, Maksakova Ia, Bilenky M, Leung D, Tang JX, Shinkai Y, Mager
   regulate predominantly distinct sets of genes, retroelements, and chimeric
   transcripts in mescs}.
 \newblock \emph{Cell Stem Cell}, \textbf{8}(6): 676--687.
+
+\bibitem[{Huang \emph{et~al.}(2015)Huang, Marco, Pinello and Yuan}]{Huang2015}
+Huang J, Marco E, Pinello L, Yuan GC (2015) {Predicting chromatin organization
+  using histone marks}.
+\newblock \emph{Genome Biology}, \textbf{16}(1): 162.
 
 \end{thebibliography}
