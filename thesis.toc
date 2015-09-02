@@ -133,8 +133,8 @@
 \contentsline {section}{\numberline {7.1}Modelling higher order chromatin organisation}{117}{section.7.1}
 \contentsline {section}{\numberline {7.2}Domain boundaries}{118}{section.7.2}
 \contentsline {section}{\numberline {7.3}Domain evolution}{119}{section.7.3}
-\contentsline {section}{\numberline {7.4}A note on causality}{119}{section.7.4}
+\contentsline {section}{\numberline {7.4}On causality}{119}{section.7.4}
 \contentsline {section}{\numberline {7.5}Insights into genome organisation}{120}{section.7.5}
-\contentsline {section}{\numberline {7.6}Conclusion}{120}{section.7.6}
+\contentsline {section}{\numberline {7.6}Summary}{120}{section.7.6}
 \contentsline {chapter}{\nonumberline \spacedlowsmallcaps {Appendices}}{123}{chapter*.88}
 \contentsline {chapter}{References}{143}{chapter*.89}
