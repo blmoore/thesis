@@ -200,41 +200,40 @@ The models built in this thesis could also be applied to predicting the effects 
 Overall our results agree with a functional model of genome architecture whereby a majority of the genome is arranged into large static compartments (Section \ref{sec:wiggles}), be they Lamina associated, nucleolus associated or central and accessible chromatin. Indeed, it seems plausible that such large, constitutive anchor points may be enough to generate a significant amount of concordance in nuclear architecture between cell types.\cite{Bouwman2015a} These broad similarities are coupled with local structural changes in different cell lines (Section \ref{sec:variableregions}, Chapter \ref{chap:shh}), allowing cell type specific regulation of gene environments through "looping out", detachment from the nuclear lamina and other conceivable mechanisms of structural variation. Whether these local changes are driven by DNA-binding proteins and chromatin remodellers or functional contacts such as enhancer--promoter interactions remains unclear.
 %, though we report enrichments for both transcriptional activity and active enhancers in variable regions, but do not observe enrichments for CTCF elements, for example (Section \ref{sec:chromstateenrich}), which could be interpreted as evidence .
 
-\section{Conclusion}
+\section{Summary}
 
 % from paper -- needs changing
 % structure function relationships remains unclear 
-Throughout the nuclear architecture literature, it has become commonplace to discuss the multi-layered, hierarchical
-organisation of interphase chromosomes across strata ranging from
-nuclear compartments, down to the spectra of histone modifications and
-bound proteins at individual sub-genic regions. However we lack a
-detailed understanding of how these strata interact. We have shown
-that our perspectives of features occurring at different strata can be
-bridged through various modelling approaches, and the models produced can used to
-explore the interrelationships between these different features quantitatively. 
 
+
+%Throughout the nuclear architecture literature, it has become commonplace to discuss the multi-layered, hierarchical
+%organisation of interphase chromosomes across strata ranging from
+%nuclear compartments, down to the spectra of histone modifications and
+%bound proteins at individual sub-genic regions. However we lack a
+%detailed understanding of how these strata interact. We have shown
+%that our perspectives of features occurring at different strata can be
+%bridged through various modelling approaches, and the models produced can used to
+%explore the interrelationships between these different features quantitatively. 
+
+Work presented in this thesis began with the collection and uniform reprocessing of publicly-available genome-wide Hi-C datasets. While many studies present only their own novel data, we demonstrated the utility in making use of that which is already openly-available. We compared this structural data across three human cell types of diverse origin (human embryonic stem cell H1 hESC, healthy lymphoblastoid cell line GM12878 and the chronic myelogenous leukemic line K562), and found strong conservation of higher order chromatin structure. Where we found blocks with variable structure between cell types, these regions were enriched for cell type specific enhancer and transcriptional activity, and showed long-range changes in their contact profiles, suggesting that we regions reflect notable areas of cell type specific biology.
+ 
+In Chapter \ref{chap:predmod}, we reproduced and extended a predictive model of transcription, before returning to our reprocessed Hi-C data to employ a similar machine learning and model dissection framework.
 We constructed cell type specific models of nuclear
 organisation, as reflected in Hi-C derived eigenvector profiles, to
 discover the most influential features underlying higher order
 structures. We found open and closed compartments to be
 well-correlated with combinatorial patterns of histone modifications
-and DNA binding proteins, enabling accurate predictive models. These
-models could be cross-applied successfully between cell types
-highlighting constellations of common structural features associated
-with different nuclear compartments as expected. Dissection of the
+and DNA binding proteins, enabling accurate predictive models. Dissection of the
 most influential variables also revealed important differences between
 models, consistent with the known biological contrasts among these
 cell types, such as the prominence of EGR1 in embryonic stem cells and
 H3K9me3 in the leukaemic cell line K562. Investigation of regions showing
-variable nuclear organization across the three cell types under study,
+variable nuclear organisation across the three cell types under study,
 revealed enrichments for cell type specific enhancer activity, often
 nucleated at genes with known roles in cell type specific
 functions.
 
-We also examine boundary composition at different levels of higher order chromatin structure across cell types. Among
-enrichments of a large number of factors observed at different
-boundaries in different cell types, CTCF and YY1 were found
-consistently and may cooperate to establish domain boundaries. We had modest success in the prediction of TAD boundaries using these identified enrichment profiles. Higher-resolution chromatin conformation capture data and improved domain calling algorithms will undoubtedly enable more powerful boundary-predictive models in the near future, which in turn could allow broad comparisons of inferred higher order chromatin structure without the application of genome-wide C-methods.
+We also examine boundary composition across cell types and at varying levels of higher order chromatin structure, including TADs, chromosome compartments and those of a newly-proposed layer linking the two: metaTADs. Lead by these observed enrichments and depletions, we then report modest success with the prediction of TAD boundaries in the absence of Hi-C. Higher-resolution chromatin conformation capture data and improved domain calling algorithms will undoubtedly enable more powerful boundary-predictive models in the near future, which in turn could allow broad comparisons of inferred higher order chromatin structure without the application of genome-wide C-methods.
 
 In summary, we show that integrative modelling of large chromatin dataset
 collections can generate useful insights into chromosome structure and seed testable hypotheses for further
