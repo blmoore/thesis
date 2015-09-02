@@ -1,4 +1,4 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Ernst and Kellis(2012)}]{Ernst2012}
@@ -152,5 +152,15 @@ Karimi MM, Goyal P, Maksakova Ia, Bilenky M, Leung D, Tang JX, Shinkai Y, Mager
   regulate predominantly distinct sets of genes, retroelements, and chimeric
   transcripts in mescs}.
 \newblock \emph{Cell Stem Cell}, \textbf{8}(6): 676--687.
+
+\bibitem[{Fortin and Hansen(2015)}]{Fortin2015a}
+Fortin JP, Hansen KD (2015) {Reconstructing A/B compartments as revealed by
+  Hi-C using long-range correlations in epigenetic data}.
+\newblock \emph{bioRxiv}, pp. 1--52.
+
+\bibitem[{Huang \emph{et~al.}(2015)Huang, Marco, Pinello and Yuan}]{Huang2015}
+Huang J, Marco E, Pinello L, Yuan GC (2015) {Predicting chromatin organization
+  using histone marks}.
+\newblock \emph{Genome Biology}, \textbf{16}(1): 162.
 
 \end{thebibliography}
