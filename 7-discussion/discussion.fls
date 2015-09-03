@@ -244,6 +244,16 @@ INPUT discussion.bbl
 INPUT discussion.bbl
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplri9o.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplb9o.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplr9t.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplr9t.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplr9o.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
@@ -256,6 +266,8 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplb9o.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplbj8r.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT discussion.aux
 INPUT ./discussion.out
 INPUT ./discussion.out
@@ -263,6 +275,7 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/iwona/rm-iwona-sc.enc
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/iwona/rm-iwona.enc
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb
