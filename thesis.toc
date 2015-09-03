@@ -5,8 +5,9 @@
 \contentsline {chapter}{\nonumberline \spacedlowsmallcaps {Abstract}}{vii}{chapter*.3}
 \contentsline {chapter}{\nonumberline \spacedlowsmallcaps {Lay summary}}{ix}{chapter*.4}
 \contentsline {chapter}{\sffamily \textls [80]{\scshape contents }}{x}{chapter*.4}
-\contentsline {chapter}{\sffamily \textls [80]{\scshape list of figures }}{xv}{chapter*.5}
+\contentsline {chapter}{\nonumberline List of Figures}{xv}{chapter*.6}
 \contentsline {chapter}{\sffamily \textls [80]{\scshape list of tables }}{xix}{chapter*.6}
+\contentsline {chapter}{\nonumberline List of Tables}{xix}{chapter*.7}
 \contentsline {chapter}{\nonumberline \spacedlowsmallcaps {List of acronyms}}{xxi}{chapter*.8}
 \contentsline {chapter}{\nonumberline \spacedlowsmallcaps {Published material}}{xxiii}{chapter*.9}
 \contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Introduction}}{1}{chapter.1}
