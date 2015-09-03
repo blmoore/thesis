@@ -4,10 +4,9 @@
 \contentsline {chapter}{\nonumberline \spacedlowsmallcaps {Acknowledgements}}{v}{chapter*.2}
 \contentsline {chapter}{\nonumberline \spacedlowsmallcaps {Abstract}}{vii}{chapter*.3}
 \contentsline {chapter}{\nonumberline \spacedlowsmallcaps {Lay summary}}{ix}{chapter*.4}
-\contentsline {chapter}{\sffamily \textls [80]{\scshape contents }}{x}{chapter*.4}
-\contentsline {chapter}{\nonumberline List of Figures}{xv}{chapter*.6}
-\contentsline {chapter}{\sffamily \textls [80]{\scshape list of tables }}{xix}{chapter*.6}
-\contentsline {chapter}{\nonumberline List of Tables}{xix}{chapter*.7}
+\contentsline {chapter}{\nonumberline \spacedlowsmallcaps {Contents}}{xi}{chapter*.5}
+\contentsline {chapter}{\nonumberline \spacedlowsmallcaps {List of figures}}{xv}{chapter*.6}
+\contentsline {chapter}{\nonumberline \spacedlowsmallcaps {List of tables}}{xix}{chapter*.7}
 \contentsline {chapter}{\nonumberline \spacedlowsmallcaps {List of acronyms}}{xxi}{chapter*.8}
 \contentsline {chapter}{\nonumberline \spacedlowsmallcaps {Published material}}{xxiii}{chapter*.9}
 \contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Introduction}}{1}{chapter.1}
@@ -111,12 +110,12 @@
 \contentsline {section}{\numberline {5.2}TAD and compartment boundaries}{80}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}CTCF and YY1}{85}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Repeats}{86}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}\emph {De novo} boundary prediction}{88}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Learning boundary classification}{88}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.3}\emph {De novo} boundary prediction}{89}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Learning boundary classification}{89}{subsection.5.3.1}
 \contentsline {section}{\numberline {5.4}MetaTAD boundaries}{91}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}MetaTAD / TAD boundary comparison}{92}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Lamina associated domains}{94}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Boundaries over a time series}{96}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.2}Lamina associated domains}{95}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Boundaries over a time series}{98}{subsection.5.4.3}
 \contentsline {section}{\numberline {5.5}Other boundaries}{99}{section.5.5}
 \contentsline {subsection}{\numberline {5.5.1}Giemsa bands}{99}{subsection.5.5.1}
 \contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Local chromatin conformation}}{103}{chapter.6}
