@@ -1,4 +1,4 @@
-\begin{thebibliography}{233}
+\begin{thebibliography}{235}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -1373,6 +1373,25 @@ Luo C, Sidote DJ, Zhang Y, Kerstetter Ra, Michael TP, Lam E (2013) {Integrative
   mechanisms for natural antisense transcript production}.
 \newblock \emph{Plant Journal}, \textbf{73}(1): 77--90.
 
+\bibitem[{Bednarz and Wilczyński(2014)}]{Bednarz2014}
+Bednarz P, Wilczyński B (2014) {Supervised learning method for predicting
+  chromatin boundary associated insulator elements}.
+\newblock \emph{Journal of Bioinformatics and Computational Biology},
+  \textbf{12}(06): 1442006.
+
+\bibitem[{Larson \emph{et~al.}(2013)Larson, Huttenhower, Quackenbush and
+  Yuan}]{Larson2013}
+Larson JL, Huttenhower C, Quackenbush J, Yuan GC (2013) {A tiered hidden Markov
+  model characterizes multi-scale chromatin states}.
+\newblock \emph{Genomics}, \textbf{102}(1): 1--7.
+
+\bibitem[{Giorgetti \emph{et~al.}(2014)Giorgetti, Galupa, Nora, Piolot, Lam,
+  Dekker, Tiana and Heard}]{Giorgetti2014a}
+Giorgetti L, Galupa R, Nora EP, Piolot T, Lam F, Dekker J, Tiana G, Heard E
+  (2014) {Predictive polymer modeling reveals coupled fluctuations in
+  chromosome conformation and transcription}.
+\newblock \emph{Cell}, \textbf{157}(4): 950--963.
+
 \bibitem[{Kundaje \emph{et~al.}(2015)Kundaje, Meuleman, Ernst, Bilenky, Yen,
   Heravi-Moussavi, Kheradpour, Zhang, Wang \emph{et~al.}}]{Kundaje2015}
 Kundaje A, Meuleman W, Ernst J, Bilenky M, Yen A, Heravi-Moussavi A, Kheradpour
@@ -1392,13 +1411,6 @@ Li G, Ruan X, Auerbach RK, Sandhu KS, Zheng M, Wang P, Poh HM, Goh Y, Lim J,
 Nikolaev LG, Akopov SB, Didych Da, Sverdlov ED (2009) {Vertebrate Protein CTCF
   and its Multiple Roles in a Large-Scale Regulation of Genome Activity.}
 \newblock \emph{Current genomics}, \textbf{10}(5): 294--302.
-
-\bibitem[{Giorgetti \emph{et~al.}(2014)Giorgetti, Galupa, Nora, Piolot, Lam,
-  Dekker, Tiana and Heard}]{Giorgetti2014a}
-Giorgetti L, Galupa R, Nora EP, Piolot T, Lam F, Dekker J, Tiana G, Heard E
-  (2014) {Predictive polymer modeling reveals coupled fluctuations in
-  chromosome conformation and transcription}.
-\newblock \emph{Cell}, \textbf{157}(4): 950--963.
 
 \bibitem[{Kim and Kim(2012)}]{Kim2012}
 Kim J, Kim H (2012) {Recruitment and biological consequences of histone
