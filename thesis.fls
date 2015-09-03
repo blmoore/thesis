@@ -284,10 +284,6 @@ INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/etex-pkg/etex.sty
-INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/etex-pkg/etex.sty
 INPUT thesis.aux
 INPUT thesis.aux
 INPUT 0-intro/intro.aux
@@ -382,8 +378,6 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/nowacki/iwona/rm-iwonar-sc.tf
 INPUT thesis.toc
 INPUT thesis.toc
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplrc9o.tfm
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/nowacki/iwona/rm-iwonar.tfm
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/nowacki/iwona/rm-iwonar-sc.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplrc9o.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplri9o.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplri9o.vf
@@ -391,6 +385,8 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplrij8r.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/nowacki/iwona/rm-iwonar.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/nowacki/iwona/rm-iwonar-sc.tfm
 OUTPUT thesis.toc
 INPUT thesis.lof
 INPUT thesis.lof
