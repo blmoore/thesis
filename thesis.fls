@@ -284,6 +284,10 @@ INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/etex-pkg/etex.sty
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/etex-pkg/etex.sty
 INPUT thesis.aux
 INPUT thesis.aux
 INPUT 0-intro/intro.aux

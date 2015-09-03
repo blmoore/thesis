@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt,twoside]{scrbook}
+\documentclass[a4paper,11pt,twoside,toc=listof]{scrbook}
 
 % packages 
 \usepackage{arsclassica}    % fancy layout
@@ -60,7 +60,19 @@ The University of Edinburgh \\ 2015 \\} %\vspace{5em}
 
 \titlepic{\vspace{1in} \includegraphics[width=\textwidth]{/Users/benmoore/hvl/1yrReport/figs/igmm.png}}
 
-%\renewcommand\listfigurename{\sffamily\textls[160]{\MakeTextUppercase{List of figures}}} 
+\usepackage{etoolbox}
+% http://tex.stackexchange.com/questions/204974/how-to-change-the-appearance-of-listof-headers
+
+\newcommand{\hhff }{\sffamily\textls[80]{\scshape }}
+
+\patchcmd{\tableofcontents}{%
+    {\MakeUppercase\contentsname}{\MakeUppercase\contentsname}%
+}{
+    {\hhff \contentsname}{\hhff \contentsname}%
+}
+{}{}
+
+\def\bf{\normalfont\bfseries}
 
 \begin{document}
 
@@ -115,11 +127,12 @@ Overall we find the three-dimensional DNA structures within cells are highly sim
 \clearpage
 
 \addcontentsline{toc}{chapter}{\sffamily\textls[80]{\scshape contents }}
-\tableofcontents
+\tableofcontents 
+%\markboth{\sffamily\textls[80]{\scshape contents2}}{\sffamily\textls[80]{\scshape contents2}}
 \clearpage
 
 %\addcontentsline{toc}{chapter}{\sffamily\textls[160]{LIST OF FIGURES}}
-\addcontentsline{toc}{chapter}{\sffamily\textls[80]{\scshape list of figures }}
+
 \listoffigures
 
 \clearpage
