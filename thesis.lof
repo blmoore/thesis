@@ -60,7 +60,7 @@
 \contentsline {figure}{\numberline {47}{\ignorespaces Distinct enrichments of CTCF and YY1 boundaries.}}{85}{figure.caption.61}
 \contentsline {figure}{\numberline {48}{\ignorespaces Repeat class average-o-grams over all TAD and compartment boundaries.}}{87}{figure.caption.62}
 \contentsline {figure}{\numberline {49}{\ignorespaces Significance and effect sizes of repeat class enrichments/depletions over boundaries.}}{88}{figure.caption.63}
-\contentsline {figure}{\numberline {50}{\ignorespaces Significance and effect sizes of repeat family enrichments/depletions over boundaries.}}{88}{figure.caption.64}
+\contentsline {figure}{\numberline {50}{\ignorespaces Significance and effect sizes of repeat family enrichments/depletions over boundaries.}}{89}{figure.caption.64}
 \contentsline {figure}{\numberline {51}{\ignorespaces The AUC-RF stepwise algorithm finds that variable subset which maximises the AUROC on out-of-bag data. }}{90}{figure.caption.65}
 \contentsline {figure}{\numberline {52}{\ignorespaces Receiver operating characteristics for TAD boundary classifications. }}{90}{figure.caption.66}
 \contentsline {figure}{\numberline {53}{\ignorespaces Variable importance for boundary classification Random Forest models. }}{91}{figure.caption.67}

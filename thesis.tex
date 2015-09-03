@@ -13,7 +13,9 @@
 \usepackage{amsmath}
 
 % thesis only
-\usepackage{tocbibind}
+\usepackage[nottoc,notlof,notlot,notbib]{tocbibind}
+\RequirePackage{titlesec}
+\RequirePackage{soul}
 
 % used in into
 \usepackage{acronym}
@@ -57,6 +59,8 @@ The University of Edinburgh \\ 2015 \\} %\vspace{5em}
 }
 
 \titlepic{\vspace{1in} \includegraphics[width=\textwidth]{/Users/benmoore/hvl/1yrReport/figs/igmm.png}}
+
+%\renewcommand\listfigurename{\sffamily\textls[160]{\MakeTextUppercase{List of figures}}} 
 
 \begin{document}
 
@@ -110,16 +114,19 @@ Overall we find the three-dimensional DNA structures within cells are highly sim
 
 \clearpage
 
+\addcontentsline{toc}{chapter}{\sffamily\textls[80]{\scshape contents }}
 \tableofcontents
 \clearpage
 
-% list of figures
-%\addcontentsline{toc}{chapter}{\listfigurename}
+%\addcontentsline{toc}{chapter}{\sffamily\textls[160]{LIST OF FIGURES}}
+\addcontentsline{toc}{chapter}{\sffamily\textls[80]{\scshape list of figures }}
 \listoffigures
+
 \clearpage
 
 % list of tables
 %\addcontentsline{toc}{chapter}{\listtablename}
+\addcontentsline{toc}{chapter}{\sffamily\textls[80]{\scshape list of tables }}
 \listoftables
 \clearpage
 
@@ -214,7 +221,7 @@ changes in cellular differentiation. \emph{Submitted}
 
 % References (grabbed from includes)
 %\begin{small}
-%\addcontentsline{toc}{chapter}{References}
+\addcontentsline{toc}{chapter}{\sffamily\textls[80]{\scshape references}}
 \bibliography{/Users/benmoore/Documents/library,/Users/benmoore/Documents/customrefs}
 %\end{small}
 
