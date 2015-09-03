@@ -1,4 +1,4 @@
-\begin{thebibliography}{229}
+\begin{thebibliography}{233}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -597,9 +597,9 @@ Leinonen R, Sugawara H, Shumway M (2011) {The sequence read archive.}
 Langmead B, Salzberg SL (2012) {Fast gapped-read alignment with Bowtie 2.}
 \newblock \emph{Nature methods}, \textbf{9}(4): 357--9.
 
-\bibitem[{Fortin and Hansen(2015)}]{Fortin2015a}
-Fortin JP, Hansen KD (2015) {Reconstructing A/B compartments as revealed by
-  Hi-C using long-range correlations in epigenetic data}.
+\bibitem[{Fortin and Hansen(2015{\natexlab{a}})}]{Fortin2015a}
+Fortin JP, Hansen KD (2015{\natexlab{a}}) {Reconstructing A/B compartments as
+  revealed by Hi-C using long-range correlations in epigenetic data}.
 \newblock \emph{bioRxiv}, pp. 1--52.
 
 \bibitem[{Zhang \emph{et~al.}(2008)Zhang, Liu, Meyer, Eeckhoute, Johnson,
@@ -1356,6 +1356,23 @@ Ram O, Goren A, Amit I, Shoresh N, Yosef N, Ernst J, Kellis M, Gymrek M, Issner
   uncovered by genome-wide location analysis in human cells.}
 \newblock \emph{Cell}, \textbf{147}(7): 1628--39.
 
+\bibitem[{Song and Chen(2015)}]{Song2014}
+Song J, Chen KC (2015) {Spectacle: fast chromatin state annotation using
+  spectral learning}.
+\newblock \emph{Genome Biology}, \textbf{16}(1): 33.
+
+\bibitem[{Arvey \emph{et~al.}(2012)Arvey, Agius, Noble and Leslie}]{Arvey2012}
+Arvey A, Agius P, Noble WS, Leslie C (2012) {Sequence and chromatin
+  determinants of cell-type-specific transcription factor binding.}
+\newblock \emph{Genome research}, \textbf{22}(9): 1723--34.
+
+\bibitem[{Luo \emph{et~al.}(2013)Luo, Sidote, Zhang, Kerstetter, Michael and
+  Lam}]{Luo2013}
+Luo C, Sidote DJ, Zhang Y, Kerstetter Ra, Michael TP, Lam E (2013) {Integrative
+  analysis of chromatin states in Arabidopsis identified potential regulatory
+  mechanisms for natural antisense transcript production}.
+\newblock \emph{Plant Journal}, \textbf{73}(1): 77--90.
+
 \bibitem[{Kundaje \emph{et~al.}(2015)Kundaje, Meuleman, Ernst, Bilenky, Yen,
   Heravi-Moussavi, Kheradpour, Zhang, Wang \emph{et~al.}}]{Kundaje2015}
 Kundaje A, Meuleman W, Ernst J, Bilenky M, Yen A, Heravi-Moussavi A, Kheradpour
@@ -1396,6 +1413,11 @@ Karimi MM, Goyal P, Maksakova Ia, Bilenky M, Leung D, Tang JX, Shinkai Y, Mager
   regulate predominantly distinct sets of genes, retroelements, and chimeric
   transcripts in mescs}.
 \newblock \emph{Cell Stem Cell}, \textbf{8}(6): 676--687.
+
+\bibitem[{Fortin and Hansen(2015{\natexlab{b}})}]{Fortin2015}
+Fortin JP, Hansen KD (2015{\natexlab{b}}) {Reconstructing A/B compartments as
+  revealed by Hi-C using long-range correlations in epigenetic data}.
+\newblock \emph{Genome Biology}, \textbf{16}(1): 180.
 
 \bibitem[{Huang \emph{et~al.}(2015)Huang, Marco, Pinello and Yuan}]{Huang2015}
 Huang J, Marco E, Pinello L, Yuan GC (2015) {Predicting chromatin organization
