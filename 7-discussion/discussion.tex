@@ -45,10 +45,8 @@
 
 \section{Modelling higher order chromatin organisation}
 
-Integrative analyses of locus level chromatin data have allowed the
-prediction of functional chromatin states \cite{Ernst2012, Ram2011,
-  Dunham2012, Hoffman2013} but these states typically emcompass small
-regions, on the order of hundreds of basepairs, rather than the larger-scale structures we are concerned with in this work.
+Thus far efforts towards the computational modelling of chromatin have been focused either at learning functional chromatin states from histone modifications and transcription factors (e.g. \citenum{Ernst2012, Ram2011,
+  Dunham2012, Hoffman2013, Rajagopal2013, Song2014, Luo2013}), spanning small regions on the order of hundreds of basepairs, or alternatively towards the inference of the overall three-dimensional chromatin fibre trajectory based on conformation data (e.g. \citenum{Bau2011a, Hu2013a, Varoquaux2014a, Lesne2014, Trieu2014, Peng2013, Ay2014b, Caudai2015}). In this work we attempt an intermediate approach, in which we use locus-level chromatin information to model characteristics derived from nuclear architecture, such as chromosomal comparments and topological domains.
 
 Our data show that accurate predictions of Hi-C derived
 eigenvector values, and therefore chromosome compartments, are entirely achievable. Generalisation across cell types further suggests that chromosome compartments could be inferred for those cell types without any available Hi-C data but with available ChIP-seq for a handful of chromatin features. For example, the NIH Roadmap Epigenomics project has generated histone modification data in hundreds of cell lines, tissues and developmental stages.\cite{Bernstein2010, Kundaje2015} If models in this work were adapted to use matched inputs, this would allow comprehensive comparisons of inferred chromosome compartments across a diverse range of conditions and cell types. In the same vein, chromosome compartments are known to be related to and recapitulate other aspects of higher order chromatin organisation, including replication timing domains, Lamina associated domains and nucleolus association domains. We therefore suggest a similar modelling approach could prove successful for each of these domains of interest. An exciting idea is that an integrative model capable of identifying these LADs and NADs could forward this information to a subsequent three-dimensional reconstruction algorithm, thereby modelling a truly \emph{in situ} perspective onto nuclear architecture.
