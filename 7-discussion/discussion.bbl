@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{36}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Ernst and Kellis(2012)}]{Ernst2012}
@@ -23,6 +23,77 @@ Hoffman MM, Ernst J, Wilder SP, Kundaje A, Harris RS, Libbrecht M, Giardine B,
   Ellenbogen PM, Bilmes Ja, \emph{et~al.} (2013) {Integrative annotation of
   chromatin elements from ENCODE data.}
 \newblock \emph{Nucleic acids research}, \textbf{41}(2): 827--41.
+
+\bibitem[{Rajagopal \emph{et~al.}(2013)Rajagopal, Xie, Li, Wagner, Wang,
+  Stamatoyannopoulos, Ernst, Kellis and Ren}]{Rajagopal2013}
+Rajagopal N, Xie W, Li Y, Wagner U, Wang W, Stamatoyannopoulos J, Ernst J,
+  Kellis M, Ren B (2013) {RFECS: a random-forest based algorithm for enhancer
+  identification from chromatin state.}
+\newblock \emph{PLoS computational biology}, \textbf{9}(3): e1002968.
+
+\bibitem[{Song and Chen(2015)}]{Song2014}
+Song J, Chen KC (2015) {Spectacle: fast chromatin state annotation using
+  spectral learning}.
+\newblock \emph{Genome Biology}, \textbf{16}(1): 33.
+
+\bibitem[{Luo \emph{et~al.}(2013)Luo, Sidote, Zhang, Kerstetter, Michael and
+  Lam}]{Luo2013}
+Luo C, Sidote DJ, Zhang Y, Kerstetter Ra, Michael TP, Lam E (2013) {Integrative
+  analysis of chromatin states in Arabidopsis identified potential regulatory
+  mechanisms for natural antisense transcript production}.
+\newblock \emph{Plant Journal}, \textbf{73}(1): 77--90.
+
+\bibitem[{Ba\`{u} \emph{et~al.}(2011)Ba\`{u}, Sanyal, Lajoie, Capriotti, Byron,
+  Lawrence, Dekker and Marti-Renom}]{Bau2011a}
+Ba\`{u} D, Sanyal A, Lajoie BR, Capriotti E, Byron M, Lawrence JB, Dekker J,
+  Marti-Renom Ma (2011) {The three-dimensional folding of the $\alpha$-globin
+  gene domain reveals formation of chromatin globules.}
+\newblock \emph{Nature structural \& molecular biology}, \textbf{18}(1):
+  107--14.
+
+\bibitem[{Hu \emph{et~al.}(2013)Hu, Deng, Qin, Dixon, Selvaraj, Fang, Ren and
+  Liu}]{Hu2013a}
+Hu M, Deng K, Qin Z, Dixon J, Selvaraj S, Fang J, Ren B, Liu JS (2013)
+  {Bayesian inference of spatial organizations of chromosomes.}
+\newblock \emph{PLoS computational biology}, \textbf{9}(1): e1002893.
+
+\bibitem[{Varoquaux \emph{et~al.}(2014)Varoquaux, Ay, Noble and
+  Vert}]{Varoquaux2014a}
+Varoquaux N, Ay F, Noble WS, Vert Jp (2014) {A statistical approach for
+  inferring the 3D structure of the genome.}
+\newblock \emph{Bioinformatics (Oxford, England)}, \textbf{30}(12): i26--i33.
+
+\bibitem[{Lesne \emph{et~al.}(2014)Lesne, Riposo, Roger, Cournac and
+  Mozziconacci}]{Lesne2014}
+Lesne A, Riposo J, Roger P, Cournac A, Mozziconacci J (2014) {3D genome
+  reconstruction from chromosomal contacts.}
+\newblock \emph{Nature methods}, (september).
+
+\bibitem[{Trieu and Cheng(2014)}]{Trieu2014}
+Trieu T, Cheng J (2014) {Large-scale reconstruction of 3D structures of human
+  chromosomes from chromosomal contact data}.
+\newblock \emph{Nucleic Acids Research}, \textbf{42}(7): 1--11.
+
+\bibitem[{Peng \emph{et~al.}(2013)Peng, Fu, Dong, Deng, Li, Wang and
+  Zhang}]{Peng2013}
+Peng C, Fu LY, Dong PF, Deng ZL, Li JX, Wang XT, Zhang HY (2013) {The
+  sequencing bias relaxed characteristics of Hi-C derived data and implications
+  for chromatin 3D modeling}.
+\newblock \emph{Nucleic Acids Research}, \textbf{41}(19).
+
+\bibitem[{Ay \emph{et~al.}(2014)Ay, Bunnik, Varoquaux, Bol, Prudhomme, Vert,
+  Noble and {Le Roch}}]{Ay2014b}
+Ay F, Bunnik EM, Varoquaux N, Bol SM, Prudhomme J, Vert JP, Noble WS, {Le Roch}
+  KG (2014) {Three-dimensional modeling of the P. falciparum genome during the
+  erythrocytic cycle reveals a strong connection between genome architecture
+  and gene expression.}
+\newblock \emph{Genome research}.
+
+\bibitem[{Caudai \emph{et~al.}(2015)Caudai, Salerno, Zopp\`{e} and
+  Tonazzini}]{Caudai2015}
+Caudai C, Salerno E, Zopp\`{e} M, Tonazzini A (2015) {Inferring 3D chromatin
+  structure using a multiscale approach based on quaternions}.
+\newblock \emph{BMC Bioinformatics}, \textbf{16}(1): 234.
 
 \bibitem[{Bernstein \emph{et~al.}(2010)Bernstein, Stamatoyannopoulos, Costello,
   Ren, Milosavljevic, Meissner, Kellis, Marra, Beaudet
