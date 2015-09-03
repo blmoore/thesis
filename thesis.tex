@@ -60,18 +60,12 @@ The University of Edinburgh \\ 2015 \\} %\vspace{5em}
 
 \titlepic{\vspace{1in} \includegraphics[width=\textwidth]{/Users/benmoore/hvl/1yrReport/figs/igmm.png}}
 
-\usepackage{etoolbox}
+%\usepackage{etoolbox}
 % http://tex.stackexchange.com/questions/204974/how-to-change-the-appearance-of-listof-headers
 
-\newcommand{\hhff }{\sffamily\textls[80]{\scshape }}
+%\newcommand{\hhff }{\sffamily\textls[80]{\scshape }}
 
-\patchcmd{\tableofcontents}{%
-    {\MakeUppercase\contentsname}{\MakeUppercase\contentsname}%
-}{
-    {\hhff \contentsname}{\hhff \contentsname}%
-}
-{}{}
-
+% KOMA script fix
 \def\bf{\normalfont\bfseries}
 
 \begin{document}
@@ -126,21 +120,28 @@ Overall we find the three-dimensional DNA structures within cells are highly sim
 
 \clearpage
 
-\addcontentsline{toc}{chapter}{\sffamily\textls[80]{\scshape contents }}
-\tableofcontents 
-%\markboth{\sffamily\textls[80]{\scshape contents2}}{\sffamily\textls[80]{\scshape contents2}}
+\chapter{Contents}
+
+\makeatletter
+\@starttoc{toc}
+\makeatother
+%\tableofcontents
 \clearpage
 
-%\addcontentsline{toc}{chapter}{\sffamily\textls[160]{LIST OF FIGURES}}
+\chapter{List of figures}
 
-\listoffigures
-
+\makeatletter
+\@starttoc{lof}% Print List of Figures
+\makeatother
+%\listoffigures
 \clearpage
 
-% list of tables
-%\addcontentsline{toc}{chapter}{\listtablename}
-\addcontentsline{toc}{chapter}{\sffamily\textls[80]{\scshape list of tables }}
-\listoftables
+\chapter{List of tables}
+
+\makeatletter
+\@starttoc{lot}% Print List of Figures
+\makeatother
+%\listoftables
 \clearpage
 
 % ---------- Acronyms ---------- %
