@@ -1,4 +1,4 @@
-\begin{thebibliography}{36}
+\begin{thebibliography}{41}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Ernst and Kellis(2012)}]{Ernst2012}
@@ -36,12 +36,29 @@ Song J, Chen KC (2015) {Spectacle: fast chromatin state annotation using
   spectral learning}.
 \newblock \emph{Genome Biology}, \textbf{16}(1): 33.
 
+\bibitem[{Arvey \emph{et~al.}(2012)Arvey, Agius, Noble and Leslie}]{Arvey2012}
+Arvey A, Agius P, Noble WS, Leslie C (2012) {Sequence and chromatin
+  determinants of cell-type-specific transcription factor binding.}
+\newblock \emph{Genome research}, \textbf{22}(9): 1723--34.
+
 \bibitem[{Luo \emph{et~al.}(2013)Luo, Sidote, Zhang, Kerstetter, Michael and
   Lam}]{Luo2013}
 Luo C, Sidote DJ, Zhang Y, Kerstetter Ra, Michael TP, Lam E (2013) {Integrative
   analysis of chromatin states in Arabidopsis identified potential regulatory
   mechanisms for natural antisense transcript production}.
 \newblock \emph{Plant Journal}, \textbf{73}(1): 77--90.
+
+\bibitem[{Bednarz and Wilczyński(2014)}]{Bednarz2014}
+Bednarz P, Wilczyński B (2014) {Supervised learning method for predicting
+  chromatin boundary associated insulator elements}.
+\newblock \emph{Journal of Bioinformatics and Computational Biology},
+  \textbf{12}(06): 1442006.
+
+\bibitem[{Larson \emph{et~al.}(2013)Larson, Huttenhower, Quackenbush and
+  Yuan}]{Larson2013}
+Larson JL, Huttenhower C, Quackenbush J, Yuan GC (2013) {A tiered hidden Markov
+  model characterizes multi-scale chromatin states}.
+\newblock \emph{Genomics}, \textbf{102}(1): 1--7.
 
 \bibitem[{Ba\`{u} \emph{et~al.}(2011)Ba\`{u}, Sanyal, Lajoie, Capriotti, Byron,
   Lawrence, Dekker and Marti-Renom}]{Bau2011a}
@@ -95,6 +112,13 @@ Caudai C, Salerno E, Zopp\`{e} M, Tonazzini A (2015) {Inferring 3D chromatin
   structure using a multiscale approach based on quaternions}.
 \newblock \emph{BMC Bioinformatics}, \textbf{16}(1): 234.
 
+\bibitem[{Giorgetti \emph{et~al.}(2014)Giorgetti, Galupa, Nora, Piolot, Lam,
+  Dekker, Tiana and Heard}]{Giorgetti2014a}
+Giorgetti L, Galupa R, Nora EP, Piolot T, Lam F, Dekker J, Tiana G, Heard E
+  (2014) {Predictive polymer modeling reveals coupled fluctuations in
+  chromosome conformation and transcription}.
+\newblock \emph{Cell}, \textbf{157}(4): 950--963.
+
 \bibitem[{Bernstein \emph{et~al.}(2010)Bernstein, Stamatoyannopoulos, Costello,
   Ren, Milosavljevic, Meissner, Kellis, Marra, Beaudet
   \emph{et~al.}}]{Bernstein2010}
@@ -110,6 +134,25 @@ Kundaje A, Meuleman W, Ernst J, Bilenky M, Yen A, Heravi-Moussavi A, Kheradpour
   reference human epigenomes}.
 \newblock \emph{Nature}, \textbf{518}(7539): 317--330.
 
+\bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
+  Williams, Imakaev, Ragoczy, Telling, Amit, Lajoie, Sabo
+  \emph{et~al.}}]{Lieberman2009}
+Lieberman-Aiden E, van Berkum NL, Williams L, Imakaev M, Ragoczy T, Telling A,
+  Amit I, Lajoie BR, Sabo PJ, \emph{et~al.} (2009) {Comprehensive mapping of
+  long-range interactions reveals folding principles of the human genome.}
+\newblock \emph{Science}, \textbf{326}(5950): 289--93.
+
+\bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
+Pombo A, Dillon N (2015) {Three-dimensional genome architecture: players and
+  mechanisms}.
+\newblock \emph{Nature Reviews Molecular Cell Biology}, \textbf{16}(4):
+  245--257.
+
+\bibitem[{Bickmore(2013)}]{Bickmore2013}
+Bickmore Wa (2013) {The spatial organization of the human genome.}
+\newblock \emph{Annual review of genomics and human genetics}, \textbf{14}:
+  67--84.
+
 \bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
   and Ren}]{Dixon2012}
 Dixon JR, Selvaraj S, Yue F, Kim A, Li Y, Shen Y, Hu M, Liu JS, Ren B (2012)
@@ -124,19 +167,16 @@ Rao S, Huntley M, Durand N, Stamenova E, Bochkov I, Robinson J, Sanborn A,
   Kilobase Resolution Reveals Principles of Chromatin Looping}.
 \newblock \emph{Cell}, \textbf{159}(7): 1665--1680.
 
-\bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
-  Williams, Imakaev, Ragoczy, Telling, Amit, Lajoie, Sabo
-  \emph{et~al.}}]{Lieberman2009}
-Lieberman-Aiden E, van Berkum NL, Williams L, Imakaev M, Ragoczy T, Telling A,
-  Amit I, Lajoie BR, Sabo PJ, \emph{et~al.} (2009) {Comprehensive mapping of
-  long-range interactions reveals folding principles of the human genome.}
-\newblock \emph{Science}, \textbf{326}(5950): 289--93.
-
 \bibitem[{Naumova \emph{et~al.}(2013)Naumova, Imakaev, Fudenberg, Zhan, Lajoie,
   Mirny and Dekker}]{Naumova2013}
 Naumova N, Imakaev M, Fudenberg G, Zhan Y, Lajoie BR, Mirny La, Dekker J (2013)
   {Organization of the mitotic chromosome.}
 \newblock \emph{Science (New York, N.Y.)}, \textbf{342}(6161): 948--53.
+
+\bibitem[{Bouwman and de~Laat(2015)}]{Bouwman2015a}
+Bouwman BA, de~Laat W (2015) {Getting the genome in shape: the formation of
+  loops, domains and compartments}.
+\newblock \emph{Genome Biology}, \textbf{16}(1): 154.
 
 \bibitem[{Zuin \emph{et~al.}(2013)Zuin, Dixon, van~der Reijden, Ye, Kolovos,
   Brouwer, van~de Corput, van~de Werken, Knoch \emph{et~al.}}]{Zuin2013}
@@ -172,11 +212,6 @@ Sexton T, Cavalli G (2015) {Review The Role of Chromosome Domains in Shaping
   the Functional Genome}.
 \newblock \emph{Cell}, \textbf{160}(6): 1049--1059.
 
-\bibitem[{Bouwman and de~Laat(2015)}]{Bouwman2015a}
-Bouwman BA, de~Laat W (2015) {Getting the genome in shape: the formation of
-  loops, domains and compartments}.
-\newblock \emph{Genome Biology}, \textbf{16}(1): 154.
-
 \bibitem[{Chambers \emph{et~al.}(2013)Chambers, Bickmore and
   Semple}]{Chambers2013}
 Chambers EV, Bickmore Wa, Semple CA (2013) {Divergence of mammalian higher
@@ -203,13 +238,6 @@ Nikolaev LG, Akopov SB, Didych Da, Sverdlov ED (2009) {Vertebrate Protein CTCF
   Chromosomal Domain Architecture}.
 \newblock \emph{Cell Reports}, \textbf{10}(8): 1297--1309.
 
-\bibitem[{Giorgetti \emph{et~al.}(2014)Giorgetti, Galupa, Nora, Piolot, Lam,
-  Dekker, Tiana and Heard}]{Giorgetti2014a}
-Giorgetti L, Galupa R, Nora EP, Piolot T, Lam F, Dekker J, Tiana G, Heard E
-  (2014) {Predictive polymer modeling reveals coupled fluctuations in
-  chromosome conformation and transcription}.
-\newblock \emph{Cell}, \textbf{157}(4): 950--963.
-
 \bibitem[{Kim and Kim(2012)}]{Kim2012}
 Kim J, Kim H (2012) {Recruitment and biological consequences of histone
   modification of H3K27me3 and H3K9me3.}
@@ -224,10 +252,10 @@ Karimi MM, Goyal P, Maksakova Ia, Bilenky M, Leung D, Tang JX, Shinkai Y, Mager
   transcripts in mescs}.
 \newblock \emph{Cell Stem Cell}, \textbf{8}(6): 676--687.
 
-\bibitem[{Fortin and Hansen(2015)}]{Fortin2015a}
+\bibitem[{Fortin and Hansen(2015)}]{Fortin2015}
 Fortin JP, Hansen KD (2015) {Reconstructing A/B compartments as revealed by
   Hi-C using long-range correlations in epigenetic data}.
-\newblock \emph{bioRxiv}, pp. 1--52.
+\newblock \emph{Genome Biology}, \textbf{16}(1): 180.
 
 \bibitem[{Huang \emph{et~al.}(2015)Huang, Marco, Pinello and Yuan}]{Huang2015}
 Huang J, Marco E, Pinello L, Yuan GC (2015) {Predicting chromatin organization
