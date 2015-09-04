@@ -1,4 +1,4 @@
-\begin{thebibliography}{235}
+\begin{thebibliography}{234}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -1153,13 +1153,6 @@ Onder TT, Kara N, Cherry A, Sinha AU, Zhu N, Bernt KM, Cahan P, Marcarci BO,
 Chai X, Nagarajan S, Kim K, Lee K, Choi JK (2013) {Regulation of the boundaries
   of accessible chromatin.}
 \newblock \emph{PLoS genetics}, \textbf{9}(9): e1003778.
-
-\bibitem[{Ku \emph{et~al.}(2012)Ku, Jaffe, Koche, Rheinbay, Endoh, Koseki, Carr
-  and Bernstein}]{Ku2012}
-Ku M, Jaffe JD, Koche RP, Rheinbay E, Endoh M, Koseki H, Carr SA, Bernstein BE
-  (2012) {H2A.Z landscapes and dual modifications in pluripotent and
-  multipotent stem cells underlie complex genome regulatory functions.}
-\newblock \emph{Genome biology}, \textbf{13}(10): R85.
 
 \bibitem[{Atchison(2014)}]{Atchison2014}
 Atchison ML (2014) {Function of YY1 in Long-Distance DNA Interactions.}
