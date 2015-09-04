@@ -91,7 +91,7 @@
 \contentsline {subsection}{\numberline {4.2.2}Model adjustments}{59}{subsection.4.2.2}
 \contentsline {section}{\numberline {4.3}Modelling FANTOM5 expression data}{60}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}\emph {Bestbin} analysis}{61}{subsection.4.3.1}
-\contentsline {section}{\numberline {4.4}Modelling higher order chromatin}{61}{section.4.4}
+\contentsline {section}{\numberline {4.4}Modelling higher order chromatin}{63}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Predictive model}{63}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Cross-application}{64}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Between-cell variability}{64}{subsection.4.4.3}
