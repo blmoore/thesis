@@ -129,6 +129,7 @@ linear regression model (Fig. \ref{fig:TwoStepvsSimple}). Indeed, it appears the
 \end{figure} 
 
 \subsection{\emph{Bestbin} method}\label{sec:dongbestbin}
+
 An innovative element of the modelling approach used in \citet{Dong2012} is the `bestbin' method of matching
 chromatin measurements to the expression of a given TSS. This strategy
 first bins normalised signal intensities into $40 \times 100$ bp bins
@@ -136,10 +137,10 @@ encompassing 4 kb around the TSS, and adds an additional bin representing the re
 gene body. Then the correlation between
 the signal of a given mark and the expression of a TSS across all
 genes is measured, then the bin producing the highest correlation is
-designated as the `bestbin' and that bin's normalised ChIP-seq signal intensity is
-taken forward for the full model. This was shown to raise
-the correlation (between predicted and observed expression) by $0.1$ in
-the simple regression model, an increase in accuracy of almost $13\%$,
+designated as the `bestbin'. That bin's normalised ChIP-seq signal intensity is then
+used as an input feature for training the model of transcription. This strategy was shown to increase model performance, measured in terms of
+the Pearson correlation between predicted and observed expression, by $0.1$ in
+the simple regression model, an increase of almost $13\%$
 relative to simply taking the average value across all
 bins.\cite{Dong2012} 
 
@@ -176,7 +177,7 @@ regressors. While \citet{Dong2012} included broad coverage of different histone 
 they did not investigate the impact of higher order
 chromatin data. For this reason, we matched the TSS positions used in
 \citet{Dong2012} with previously-published genome-wide replication
-timing ratios measured in BG02 ESCs.\cite{Ryba2010} This data is of a different origin to the transcriptional data in this case (which was record in H1 hESC) but replication timing is thought to be largely conserved between cell types.\cite{Chambers2013} 
+timing ratios measured in BG02 ESCs.\cite{Ryba2010} This data is of a different origin to the transcriptional data in this case (which was recorded in H1 hESC) but replication timing is thought to be largely conserved between cell types.\cite{Chambers2013} 
 
 We then used these values as an additional
 regressor in both the two-step classification regression model and the
@@ -198,9 +199,9 @@ and do not have significant influence on the expression of the genes resident wi
 \section{Modelling FANTOM5 expression data}
 
 Using FANTOM5 CAGE data\cite{fantom5} and the approach established above (Section \ref{sec:reprodong}), we next attempted to model gene
-expression at timepoint zero ($t_0$) of a differentiation timecourse of Human
+expression at timepoint zero ($t_0$) of a differentiation timecourse of human
 H1 embryonic stem cells (H1 hESC) to CD34+ hematopoietic stem
-cells. Applying this modelling strategy to a novel dataset will allow us to assess the portability of the model design, as well as permitting more detailed breakdown of model components, such as the bestbin strategy.
+cells. Applying this modelling strategy to a novel dataset will allow us to assess the portability of the model design, as well as enabling further analysis of model components such as the bestbin strategy.
 
 % How did I do this?:
 % 1) Take robustly mapped CAGE clusters -> Entrez Gene IDs
@@ -236,10 +237,10 @@ Model predictions evaluated with 10-fold cross validation show a
 highly significant correlation with measured CAGE levels ($PCC = 0.845\pm
 1 \times 10^{-4}$, $p < 2 \times 10^{-15}$), and the model is able to explain around
 $71\%$ of the variance in the expression response (for comparison a
-linear model resulted in $PCC = 0.825 \pm 3.2 \times 10^{-5}$, $p < 2 \times 10^{-15}$). This result is worse than that of \citet{Dong2012}
+linear model resulted in $PCC = 0.825 \pm 3.2 \times 10^{-5}$, $p < 2 \times 10^{-15}$). This result is less impressive than that of \citet{Dong2012}
 who achieved cross-validated correlation coefficients of up to $0.9$,
 but it is roughly equal to their median test set correlation of
-$0.83$.\cite{Dong2012}  However the RMSEs of our predictions, when normalised by the range of
+$0.83$.\cite{Dong2012}  Though the RMSEs of our predictions, when normalised by the range of
 observed values, compare more favourably ($0.11$, compared with Dong \emph{et al.}'s: $0.14$). 
 
 Our slightly lower predictive power could be explained by our streamlined model design. \citet{Dong2012} implemented a pseudocount optimisation step whereby an additional count added to each binned signal
@@ -278,7 +279,7 @@ representing approximately $8\%$ of the complete dataset. Distributions of chose
 \end{center}
 \end{figure} 
 
-We find that bestbin selections are often highly consistent across sub-samples, indicating there are fairly static informative regions relative to a TSS for each chromatin factor. Furthermore, the selected
+We find that bestbin selections are often highly consistent across sub-samples, indicating there are fairly static informative regions relative to a TSS for each chromatin feature. Furthermore, the selected
 bestbins match known biological mechanisms; for example the H3K36me3
 mark's bestbin is consistently the whole gene measurement (Fig. \ref{fig:bestbin}) and this
 mark is known to be enriched in actively transcribed
@@ -308,7 +309,7 @@ Previous publications have identified several correlates which track compartment
 
 \subsection{Predictive model}
 
-We built Random Forest regression models (Methods \ref{sec:rf}) to predict compartment eigenvector profiles genome-wide in three human cell types. Models were found to have high predictive accuracy, with Pearson correlation between predicted and observed compartment eigenvectors in the range of $0.82$--$0.75$ (Fig. \ref{fig:modelres}), comparable to that achieved by \citet{Dong2012} in the prediction of transcription.
+We built Random Forest (RF) regression models (Methods \ref{sec:rf}) to predict compartment eigenvector profiles genome-wide in three human cell types. Models were found to have high predictive accuracy, with Pearson correlation between predicted and observed compartment eigenvectors in the range of $0.75$--$0.82$ (Fig. \ref{fig:modelres}), comparable to that achieved by \citet{Dong2012} in the prediction of transcription.
 
 \begin{figure}
 \begin{center} 
@@ -321,7 +322,7 @@ We built Random Forest regression models (Methods \ref{sec:rf}) to predict compa
 \end{center} 
 \end{figure} 
 
-Our predictive models were also assessed in terms of classification performance, i.e. did the model correctly assign each block to an A or  B compartment. Instead of retraining a classifier and building parallel models, instead for an estimate of classification accuracy we threshold our regression predictions (Methods \ref{sec:modelperf}). We found our Random Forest models achieved high classification accuracy with $\geq82\%$ of all $1$ Mb genomic bins correctly assigned in each cell type (Fig. \ref{fig:modelres}). 
+Our predictive models were also assessed in terms of classification performance, i.e. did the model correctly assign each block to an A or  B compartment. Instead of retraining a classifier and building parallel models, for an estimate of classification accuracy we threshold our regression predictions (Methods \ref{sec:modelperf}). We found our RF models achieved high classification accuracy with $\geq82\%$ of all $1$ Mb genomic bins correctly assigned in each cell type (Fig. \ref{fig:modelres}). 
 
 This predictive performance underlines the strong connection between locus-level features and higher order chromatin structure previously noted by \citet{Lieberman2009} Given such highly-predictive models can be generated, it is then of interest to dissect said models in an attempt to understand the nature of this captured relationship.
 
@@ -329,9 +330,9 @@ This predictive performance underlines the strong connection between locus-level
 
 \subsection{Cross-application}
 
-High predictive accuracy on cell type specific models could be the result of ``over-fitting". In machine-learning, over-fitting refers to the point at which parameters are being optimised to capture noise within a feature set, as well as signal, thereby giving an overoptimistic model performance which would not generalise to another featureset with different noise profiles.
+High predictive accuracy on cell type specific models could be the result of ``over-fitting". In machine-learning, over-fitting refers to the point at which parameters are being optimised to capture noise within a feature set, as well as signal, thereby giving an overoptimistic model performance which would not generalise to another featureset with its own noise profile.
 
-To test if over-fitting was causing our high observed accuracy, we cross-applied models learnt in one cell type to unseen input data from each of the other two cell types under study. If predictive accuracy is a lot lower on unseen data, this lends evidence to the idea that our models may be overfit to their respective cell types. Conversely, it could be the case that biologically-distinct mechanisms are in place that differ between cell types, preventing a simple cross-application.
+To test if over-fitting was responsible for our high modelling accuracy, we cross-applied models learnt in one cell type to unseen input data from each of the other two cell types under study. If predictive accuracy is a lot lower on unseen data, this lends evidence to the idea that our models may be overfit to their respective cell types. Conversely, it could be the case that biologically-distinct mechanisms are in place that differ between cell types, preventing a simple cross-application.
 
 \begin{figure}
 \begin{center} 
@@ -343,7 +344,7 @@ To test if over-fitting was causing our high observed accuracy, we cross-applied
 \end{center} 
 \end{figure} 
 
-We found cross-application between cell types was possible and resulted in similarly-high levels of accuracy to within cell-type cross-validation (Fig. \ref{fig:xapp}). This gives good evidence not only that are models are not overfitting to cell-type specific noise, but also that there exist broad rules linking chromatin conformation and locus-level feature aggregation. The cross-application suggests there exists enough commonalities for compartment profile predictions to transcend the cell-type specific biology inherent to an embryonic stem cell or differentiated lymphoblast.
+We found cross-application between cell types was possible and resulted in similarly-high levels of accuracy to within cell-type cross-validation (Fig. \ref{fig:xapp}). This gives good evidence not only that are models are not overfitting to cell-type specific noise, but also that there exist broad rules linking chromatin conformation and locus-level features. Model performance under cross-application suggests there exists enough commonalities for compartment profile predictions to transcend the cell-type specific biology inherent to an embryonic stem cell or differentiated lymphoblast.
 
 \subsection{Between-cell variability}
  
@@ -357,7 +358,7 @@ Genome-wide compartment eigenvectors were partitioned into thirds according to t
 \end{center} 
 \end{figure} 
  
-Given much of the higher order chromatin organisation is conserved between the three cell types used in this work (Fig. \ref{fig:compcor}), a testable hypothesis is that these conserved regions are drivers of cross-applicability between cell types. Conversely, genomic regions which vary most across the cell types in our dataset should be more difficult to predict.
+Given much of the higher order chromatin organisation is conserved between the three cell types used in this work (Fig. \ref{fig:compcor}), a testable hypothesis is that these conserved regions are drivers of cross-applicability between cell types. Under this hypothesis we might also expect those genomic regions which vary most across cell types to be more difficult to predict.
 
 Indeed we found the most variable regions across cell types were then most difficult to predict through our Random Forest modelling framework (Fig. \ref{fig:stratmod}). In each cell type, the third of the genome with the most consistent compartment eigenvectors across cell types could then most accurately be modelled in each cell type, and conversely the most variable third shown significantly depleted predictability (Fig. \ref{fig:stratmod}). This latter result suggests these variable regions could either be those which are noisiest, where the eigenvector is least capturing compartment structure, or where cell-type specific biology is influencing compartment structure in ways not captured by our input feature set and low resolution modelling pipeline.
 
