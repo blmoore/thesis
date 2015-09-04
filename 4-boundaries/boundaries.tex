@@ -50,7 +50,7 @@ A recent experiment used CRISPR genome editing to link TAD boundary changes with
 
 Many questions remain about chromatin boundaries. For example, are the enrichments reported in \citet{Dixon2012} persistent across cell types and how do they compare across organisation strata, such as compartments and TADs? Through computational analysis of the set of boundaries re-called from published datasets, we can investigate these questions and probe boundary enrichments across a broad array of locus-level chromatin features.
 
-\section{TAD and compartment boundaries}\label{sec:boundaryenrichments}
+\section{Boundary analysis}\label{sec:boundaryenrichments}
 
 The mammalian genome is organized into topologically associating domains (TADs), predominantly self-interacting chromatin domains, with boundary regions reportedly associated with pronounced peaks and troughs of particular features within 500 kb of the predicted boundary.\cite{Dixon2012} Exploration of this phenomenon using a set of 24 mouse ESC chromatin features (and a smaller number of human ESC features) revealed enrichment peaks of CTCF, H3K4me3 and H3K36me3, as well as a pronounced dip in H3K9me3, suggesting that high levels of transcription may contribute to boundary formation.\cite{Dixon2012} However, it was unclear whether other features show unusual patterns in TAD boundary regions, and how the constellation of features involved might vary between cell types. Moreover, the features associated with boundaries separating A and B compartments calculated from Hi-C eigenvectors have not been studied to our knowledge. The datasets assembled here, consisting of 35 matched chromatin features across three cell types, allow us to conduct the first comparative study of the constituents of human TAD and compartment boundary regions.
 
@@ -116,7 +116,7 @@ another factor implicated in modulating nuclear architecture in
 partnership with CTCF.\cite{Zuin2013} Various other enrichments
 of modest effect size can also be seen (Fig. \ref{fig:allcompartments}). In contrast with TAD boundaries, the
 composition of compartment boundaries appears least complex in H1
-hESC, relative to the other two cell types. 
+hESC, relative to the other two cell types (cf. Fig. \ref{fig:allcompartments}). 
 
 \subsection{Significance testing of boundary associations}\label{sec:boundsignif}
 
@@ -132,16 +132,13 @@ Domain boundary associations with other chromatin features are most frequently p
 \end{center}
 \end{figure} 
 
-Results of this significance testing, along with selected boundary profiles, are presented in Figure \ref{fig:boundarysummary}. Overall compartment and TAD boundaries are associated with overlapping spectra of chromatin
-features across cell types. These involve DNA binding proteins
-implicated in chromosome architecture (CTCF, YY1, RAD21), but also
-implicate the initiation and repression of transcription as critical
-to boundary formation. However these two boundary classes occur at
-different scales, with patterns of informative features typically
-spanning regions up to 500 kb for TAD boundaries, and patterns
-associated with compartment boundaries often spanning more than 1 Mb.
+Results of this significance testing, along with selected boundary profiles, are presented in Figure \ref{fig:boundarysummary}. Overall we find that compartment and TAD boundaries are associated with overlapping spectra of highly significant enrichments and depletions of chromatin features across cell types. Across all tests (Fig. \ref{fig:boundarysummary}), we frequently find boundary enrichments for those DNA binding proteins
+implicated in chromosome architecture (e.g. CTCF, YY1, RAD21), but also note broad enrichments for classes of input features associated with transcriptional processes (e.g. POL2, TBP, H3K9ac). 
 
-Many other features show significant, though often modest, enrichments in a particular cell type. However, overall the complexity of TAD boundaries (measured as the number of strongly enriched features) is notably higher in H1 hESC than in the other two, more differentiated, cell types (Fig. \ref{fig:boundarysummary}), involving large increases in the binding of sequence specific factors such as SP1 and JUND.
+Reflecting their different scales, we find enrichment and depletion profiles typically
+spanning regions of up to 500 kb for TAD boundaries but those over compartment boundaries often span more than a megabase (Fig. \ref{fig:boundarysummary}). We expect part of the reason for this discrepancy is the resolutions at which domains were called: TADS are resolved in 40 kb while compartment boundaries fall between megabase-sized bins. A further consideration is that larger numbers of TAD boundaries were called in the H1 hESC cell line, due its more deeply-sequenced Hi-C library (Section \ref{sec:calledtads}), giving greater statistical power to detect enrichments thus resulting in smaller $p$-values (Fig. \ref{fig:boundarysummary}). The lower resolution megabase bins used in compartment calling help to do not suffer from this issue.
+
+%Altogether a large number of features show significant, though often modest, association with TAD and/or compartment boundaries. In terms of overall complexity boundaries (measured as the number of strongly enriched features) is notably higher in H1 hESC than in the other two, more differentiated, cell types (Fig. \ref{fig:boundarysummary}), involving large increases in the binding of sequence specific factors such as SP1 and JUND.
 
 
 \subsection{CTCF and YY1}\label{sec:ctcfyy1}
@@ -162,19 +159,20 @@ be enriched for their respective features in terms of raw signal).
 \end{center}
 \end{figure} 
 
-Significant peaks in YY1 are evident in all cell
-types, which is intriguing given the evidence that YY1 and CTCF
+Significant boundary enrichments for both CTCF in YY1 are evident in all cell
+types at both compartment and TAD boundaries (Fig. \ref{fig:boundarysummary}), which is intriguing given the evidence that YY1 and CTCF
 cooperate to affect long distance interactions.\cite{Atchison2014} Co-binding of CTCF with YY1 has also been shown
-to identify a subset of highly conserved CTCF sites.\cite{Schwalie2013} Co-binding of CTCF and YY1 may also therefore be
+to identify a subset of highly conserved CTCF sites.\cite{Schwalie2013} This colocation may also therefore be
 a contributing factor in the establishment of TAD boundaries, which
-appear to be broadly conserved across mammals.\cite{Dixon2012} To
-test this, we split our sets of TAD boundaries into those possessing
-ChiP-seq peaks (region peaks called by ENCODE \cite{Dunham2012}) for
+appear to be broadly conserved across mammals.\cite{Dixon2012} 
+
+To test this, we split our sets of TAD boundaries into those possessing
+ChiP-seq peaks (region peaks as called by the ENCODE data processing pipeline\cite{Dunham2012}) for
 CTCF, YY1, both CTCF and YY1 (overlapping peaks) and neither. We then
 tested each boundary subset for genome-wide enrichments of the other
-features in our dataset (Fig. \ref{fig:ctcfyy1}). Unexpectedly, we found that
-boundaries marked by YY1 (without overlapping CTCF peaks) were
-generally most strongly-enriched for other features in our dataset. We
+features in our dataset (Fig. \ref{fig:ctcfyy1}). Unexpectedly, we found that those
+boundaries marked by YY1 but without overlapping CTCF peaks were
+generally most strongly-enriched for other features in our dataset. This result potentially highlights YY1 as an under-appreciated contributor to boundary demarcation, particularly relative to the well-studied CTCF. We
 also found that boundaries lacking both CTCF and YY1 peaks showed
 instead the strongest enrichments for RAD21 in each cell type (Fig. \ref{fig:ctcfyy1}), reinforcing previous findings that describe the distinct
 influences of CTCF and cohesin in organising chromatin structure.\cite{Zuin2013, Seitan2013, Phillips-Cremins2013}
@@ -287,7 +285,7 @@ The highest ten most important variables in each boundary classification model a
 
 \section{MetaTAD boundaries}\label{sec:metatads}
 
-Our collaborators uncovered the concept of "metaTADs": sequential aggregations of adjacent and strongly-interacting TADs to form a hierarchy of domain organisation covering each chromosome.
+Our collaborators in the Pombo lab (Max Delbr\"{u}ck Center, Berlin) uncovered the concept of "metaTADs": sequential aggregations of adjacent and strongly-interacting TADs to form a hierarchy of domain organisation covering each chromosome.
 
 MetaTADs are constructed simply by performing constrained heretical clustering based on inter-TAD contacts. That is, those two neighbour TADs that have the largest number of interTAD contacts are linked to form a metaTAD and this process is recursed until all TADs on a chromosome are joined into a tree-like network which fully describes the hierarchical nature of domain organisation.
 
