@@ -181,7 +181,7 @@ influences of CTCF and cohesin in organising chromatin structure.\cite{Zuin2013,
 
 \subsection{Repeats}\label{sec:repeats}
 
-Dixon \emph{et al}.'s study of TAD boundaries identified short interspersed element (SINE) repeats as being enriched over domain boundaries and suggested roles for these repeats in altering genome organisation, in line with prior evidence.\cite{Dixon2012, Lunyak2007} Interestingly, SINE elements are thought to be responsible for spreading CTCF binding sites through mammalian genomes\cite{Schmidt2012} (thought not in primates\cite{Schwalie2013}). Analysis of recent high-resolution Hi-C data again reported a SINE B2 link with CTCF loops in mice.\cite{Rao2014} Together these results suggest repeats could be a key component in the makeup of domain boundaries.
+\citet{Dixon2012} identified short interspersed element (SINE) repeats as being enriched over TAD boundaries and suggested roles for these repeats in altering genome organisation, in line with prior evidence.\cite{Dixon2012, Lunyak2007} For example, SINE elements are thought to be responsible for spreading CTCF binding sites through mammalian genomes.\cite{Schmidt2012}  Analysis of recent high-resolution Hi-C data again reported a SINE B2 link with CTCF loops in mice,\cite{Rao2014} and examples have been reported of human genes whose expression has been altered by CTCF sites inserted through Alu repeats.\cite{Ruiz-Narvaez2008} Together these results suggest repeats could be a key component in the makeup of domain boundaries.
 
 To investigate this, we used the \texttt{RepeatMasker}\cite{Tarailo-Graovac2009} software package to call repeat classes and families in the \texttt{hg19} and \texttt{mm10} genome assemblies. Counts for each annotated feature were then average over boundaries as described previously (Methods \ref{boundaries}).
 
@@ -207,9 +207,9 @@ Boundary profiles (Fig. \ref{fig:rep_classprofiles}) were tested for enrichment 
 \end{center}
 \end{figure} 
 
-Repeat class profiles also suggest LINEs may be depleted over TAD boundaries and DNA repeats may be enriched at both boundary types (Fig. \ref{fig:rep_classprofiles}), however statistically these observations do not surpass our pre-defined significance threshold ($\alpha = 0.05$) after multiple testing correction (Fig. \ref{fig:rep_classbubble}).
+We also find LINEs are significantly depleted over TAD boundaries in two cell types, and borderline significant in the third, though with modest effect sizes in each case (Fig. \ref{fig:rep_classbubble}). DNA repeats appear to be enriched at both boundary types (Fig. \ref{fig:rep_classprofiles}), however these observations do not surpass our significance threshold ($\alpha = 0.05$) after multiple testing correction (Fig. \ref{fig:rep_classbubble}).
 
-Repeat classes can be broken into smaller repeat families. \citet{Dixon2012} reported that the Alu (or B1 in mouse) repeat families are enriched over TAD boundaries. Again we can reproduce this finding and extend it to compartment boundaries (Fig. \ref{fig:rep_fambubble}). 
+Repeat classes can be broken into smaller repeat families. \citet{Dixon2012} reported that the Alu (or SINE B2 in mouse) repeat families are enriched over TAD boundaries. Again we can reproduce this finding and extend the analysis to compartment boundaries, where we do not see a significant enrichment for Alu repeat elements (Fig. \ref{fig:rep_fambubble}). Surprisingly almost all other repeat families show no significant departure from their expected levels over TAD or compartment boundaries.
 
 \begin{figure}
 \begin{center} 
@@ -225,7 +225,7 @@ As per Fig. \ref{fig:rep_classbubble} but for a higher resolution repeat classif
 
 % Figure: profiles of those significant + suggestive from all repeat family profiles
 
-\section{\emph{De novo} boundary prediction}\label{sec:boundarypred}
+\section{TAD boundary prediction}\label{sec:boundarypred}
 
 We have shown TAD and compartment domain boundaries to be well-marked by a variety of features. Compartment boundaries are successfully predicted as a side-effect of modelling the continuous compartment profile eigenvector (Section \ref{sec:modhoc}) however a related measure of activity and repression does not exist for TADs. Instead then, we attempt to predict TAD boundaries within a class-balanced classification framework.
 
