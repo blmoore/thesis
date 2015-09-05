@@ -65,14 +65,14 @@
 \contentsline {figure}{\numberline {49}{\ignorespaces Significance and effect sizes of repeat class enrichments/depletions over boundaries.}}{89}{figure.caption.63}
 \contentsline {figure}{\numberline {50}{\ignorespaces Significance and effect sizes of repeat family enrichments/depletions over boundaries.}}{89}{figure.caption.64}
 \contentsline {figure}{\numberline {51}{\ignorespaces The AUC-RF stepwise algorithm finds that variable subset which maximises the AUROC on out-of-bag data. }}{91}{figure.caption.65}
-\contentsline {figure}{\numberline {52}{\ignorespaces Receiver operating characteristics for TAD boundary classifications. }}{91}{figure.caption.66}
+\contentsline {figure}{\numberline {52}{\ignorespaces Receiver operating characteristics for TAD boundary classifications. }}{92}{figure.caption.66}
 \contentsline {figure}{\numberline {53}{\ignorespaces Variable importance for boundary classification Random Forest models. }}{92}{figure.caption.67}
-\contentsline {figure}{\numberline {54}{\ignorespaces Calibration of metaTAD size selection bounds.}}{93}{figure.caption.68}
-\contentsline {figure}{\numberline {55}{\ignorespaces Large metaTADs show greater enrichments for an array of boundary features.}}{94}{figure.caption.69}
-\contentsline {figure}{\numberline {56}{\ignorespaces MetaTADs align with lain associated domains.}}{95}{figure.caption.70}
-\contentsline {figure}{\numberline {57}{\ignorespaces MetaTADs align with lamin associated domains.}}{96}{figure.caption.71}
-\contentsline {figure}{\numberline {58}{\ignorespaces MetaTAD boundaries much LAD boundaries much more often than expected by chance. }}{97}{figure.caption.72}
-\contentsline {figure}{\numberline {59}{\ignorespaces MetaTAD--LAD coincidence increases at higher levels of the metaTAD hierarchy. }}{98}{figure.caption.73}
+\contentsline {figure}{\numberline {54}{\ignorespaces Calibration of metaTAD size selection bounds.}}{94}{figure.caption.68}
+\contentsline {figure}{\numberline {55}{\ignorespaces Large metaTADs show greater enrichments for an array of boundary features.}}{95}{figure.caption.69}
+\contentsline {figure}{\numberline {56}{\ignorespaces MetaTADs align with lain associated domains.}}{96}{figure.caption.70}
+\contentsline {figure}{\numberline {57}{\ignorespaces MetaTADs align with lamin associated domains.}}{97}{figure.caption.71}
+\contentsline {figure}{\numberline {58}{\ignorespaces MetaTAD boundaries much LAD boundaries much more often than expected by chance. }}{98}{figure.caption.72}
+\contentsline {figure}{\numberline {59}{\ignorespaces MetaTAD--LAD coincidence increases at higher levels of the metaTAD hierarchy. }}{99}{figure.caption.73}
 \contentsline {figure}{\numberline {60}{\ignorespaces Observed enrichments persist over a time series.}}{100}{figure.caption.74}
 \contentsline {figure}{\numberline {61}{\ignorespaces Genome-wide agreement between Giemsa bands and A/B compartments..}}{102}{figure.caption.75}
 \contentsline {figure}{\numberline {62}{\ignorespaces Giemsa--stain bands correspond to A/B compartments.}}{103}{figure.caption.76}

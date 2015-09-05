@@ -111,10 +111,10 @@
 \BOOKMARK [2][-]{subsection.5.2.3}{5.2.3 Significance testing of boundary associations}{section.5.2}% 111
 \BOOKMARK [2][-]{subsection.5.2.4}{5.2.4 CTCF and YY1}{section.5.2}% 112
 \BOOKMARK [2][-]{subsection.5.2.5}{5.2.5 Repeats}{section.5.2}% 113
-\BOOKMARK [1][-]{section.5.3}{5.3 De novo boundary prediction}{chapter.5}% 114
+\BOOKMARK [1][-]{section.5.3}{5.3 TAD boundary prediction}{chapter.5}% 114
 \BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Learning boundary classification}{section.5.3}% 115
 \BOOKMARK [1][-]{section.5.4}{5.4 MetaTAD boundaries}{chapter.5}% 116
-\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 MetaTAD / TAD boundary comparison}{section.5.4}% 117
+\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 MetaTAD boundary comparison}{section.5.4}% 117
 \BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Lamina associated domains}{section.5.4}% 118
 \BOOKMARK [2][-]{subsection.5.4.3}{5.4.3 Boundaries over a time series}{section.5.4}% 119
 \BOOKMARK [1][-]{section.5.5}{5.5 Other boundaries}{chapter.5}% 120
