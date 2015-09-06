@@ -744,6 +744,10 @@ INPUT ./figs/4cArcs_v2.pdf
 INPUT figs/4c_chromosomes_v2.pdf
 INPUT ./figs/4c_chromosomes_v2.pdf
 INPUT ./figs/4c_chromosomes_v2.pdf
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT figs/5c3d.pdf
 INPUT ./figs/5c3d.pdf
 INPUT ./figs/5c3d.pdf
