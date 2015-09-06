@@ -117,10 +117,10 @@
 \contentsline {subsection}{\numberline {5.3.1}Learning boundary classification}{90}{subsection.5.3.1}
 \contentsline {section}{\numberline {5.4}MetaTAD boundaries}{93}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}MetaTAD boundary comparison}{93}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Lamina associated domains}{97}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.2}Lamina associated domains}{96}{subsection.5.4.2}
 \contentsline {subsection}{\numberline {5.4.3}Boundaries over a time series}{100}{subsection.5.4.3}
-\contentsline {section}{\numberline {5.5}Other boundaries}{101}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Giemsa bands}{101}{subsection.5.5.1}
+\contentsline {section}{\numberline {5.5}Other boundaries}{100}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Giemsa bands}{100}{subsection.5.5.1}
 \contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Local chromatin conformation}}{105}{chapter.6}
 \contentsline {section}{\numberline {6.1}Introduction}{105}{section.6.1}
 \contentsline {section}{\numberline {6.2}The \emph {Shh} locus}{105}{section.6.2}

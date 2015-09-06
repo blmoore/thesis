@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{35}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
@@ -186,6 +186,11 @@ Fawcett T (2006) {An introduction to ROC analysis}.
 Streiner DL, Cairney J (2007) {What's under the ROC? An introduction to
   receiver operating characteristics curves}.
 \newblock \emph{Canadian Journal of Psychiatry}, \textbf{52}(2): 121--128.
+
+\bibitem[{Weinreb and Raphael(2015)}]{Weinreb2015}
+Weinreb C, Raphael BJ (2015) {Identification of hierarchical chromatin
+  domains.}
+\newblock \emph{Bioinformatics (Oxford, England)}, pp. 1--8.
 
 \bibitem[{Peric-Hupkes \emph{et~al.}(2010)Peric-Hupkes, Meuleman, Pagie,
   Bruggeman, Solovei, Brugman, Gr\"{a}f, Flicek, Kerkhoven
