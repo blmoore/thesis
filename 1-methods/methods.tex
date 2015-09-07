@@ -301,7 +301,7 @@ In this thesis, we used the \texttt{glmnet} R package to fit LASSO models.\cite{
  
 Linear regression was used as a baseline for comparison with more complicated approaches such as Random Forest (Section \ref{sec:lmpls}). If the  modelling accuracy achieved with Random Forest regression could be matched by simple multiple linear regression, the latter could be preferable as a faster and more interpretable modelling framework. For comparison, linear regression models were fit to matched input feature sets and an intercept term.
 
-Partial least squares (PLS) regression was also used to model compartment profiles (Section \ref{sec:lmpls}). PLS regression is well-suited to highly correlated inputs, employing a dimensionality reduction step to help address this redundancy, yet lacks the interpretability of a multiple linear regression. Similar to RF, PLS regression is aimed at building highly-predictive models rather than understanding singular relationships between a predictor and independent variable.\cite{Tobias1995} The \texttt{plsdepot} R implementation of PLS regression was used in this work.
+Partial least squares (PLS) regression was also used to model compartment profiles (Section \ref{sec:lmpls}). PLS regression is well-suited to highly correlated inputs, employing a dimensionality reduction step to help address this redundancy, yet lacks the interpretability of a multiple linear regression. Similar to RF, PLS regression is aimed at building highly-predictive models rather than understanding singular relationships between a predictor and independent variable.\cite{Tobias1995} The \texttt{plsdepot} R implementation of PLS regression was used in this work.\cite{plsdepot}
 
 % XX circle of correlations
 
@@ -311,21 +311,26 @@ Partial least squares (PLS) regression was also used to model compartment profil
 
 Median absolute deviation (MAD) was chosen as a robust measure of the
 variability in a given 1 Mb block between the three primary cell types
-used in this work (H1 hESC, K562 and GM12878). This simple metric is calculated by taking the centre Blocks were ranked by this
+used in this work (H1 hESC, K562 and GM12878). This simple metric is calculated by taking the median eigenvector value for each genomic bin across the three cell types, then taking the absolute difference between this median value and the two other recorded eigenvectors (as well as itself). Finally, the median of these differences is then calculated to give a MAD value per megabase bin. 
+
+Due to only three numbers being considered, the MAD is also equivalent to the minimum absolute difference from the median eigenvector value. That is, a MAD of $0.1$ for a given region where cell type K562 has the median eigenvector value, means that both GM12878 and H1 hESC had absolute eigenvectors $\geq \textrm{K562} + 0.1$. Larger values report greater dispersion thus more variability between cell types.
+
+Blocks were ranked by this
 measure and split into thirds that represented ``low'' variability (the
 third of blocks with the lowest MAD), ``mid'' and ``high'' variability.
 Each subgroup was then independently modelled using the
-previously-described Random Forest approach.
+previously-described Random Forest approach (Section \ref{sec:varrfmod}).
 
-``Flipped'' regions are those whose compartment state differs in one
+In another measure of variability, we also call regions of variable structure (RVS; Section \ref{sec:variableregions}).
+RVS are those genomic regions whose compartment state differs in one
 cell type relative to the other two. For example, if a 1 Mb bin was
 classified as ``open'' in H1 hESC and ``closed'' in both K562 and
-GM12878, this is said to be a ``flipped'' compartment (to open).
+GM12878, this is said to be an RVS, and a ``flipped'' compartment (to open) in H1 hESC. As can be seen, RVS calls are cell type specific: the same RVS that was called as flipped open in H1 hESC would not be called as variable in K562, as necessarily in this scenario H1 hESC and GM12878 would not be concordant.
 
 \subsection{Chromatin state enrichment}\label{enhancer-enrichment}
 %explanation of combined states: http://rohsdb.cmb.usc.edu/GBshape/cgi-bin/hgTables?db=hg19&hgta_group=regulation&hgta_track=wgEncodeAwgSegmentation&hgta_table=wgEncodeAwgSegmentationCombinedGm12878&hgta_doSchema=describe+table+schema
 
-Chromatin state annotations used in this work were retrieved from the ChromHMM\cite{Ernst2011} and SegWay\cite{Hoffman2012} combined annotations.\cite{Hoffman2013} These represent the consensus from two independent chromatin state prediction algorithms, and ignore regions of apparent disagreement; hence in theory making more robust and conservative predictions than either algorithm independently. Nevertheless, Hoffman \emph{et al.} caution that in areas of disagreement, each algorithm may highlight differing biological phenomena so should also be considered separately.\cite{Hoffman2013}
+Chromatin state annotations used in this work were retrieved from \texttt{ChromHMM}\cite{Ernst2011} and \texttt{SegWay}\cite{Hoffman2012} combined annotations.\cite{Hoffman2013} These represent the consensus from two independent chromatin state prediction algorithms, and ignore regions of apparent disagreement; hence in theory making more robust and conservative predictions than either algorithm independently. Nevertheless, \citet{Hoffman2013} caution that in areas of disagreement, each algorithm may highlight differing biological phenomena so ideally should also be considered separately.
 
 The set of state predictions from the combined algorithms are:
 \begin{enumerate}
@@ -343,21 +348,20 @@ considered ``shared'' if there was an overlapping enhancer annotation in
 either of the two other cell types, and labelled as ``tissue-specific''
 otherwise. This was repeated for each of the called chromatin states.
 
-\subsection{Gene ontology analysis}
+\subsection{Gene ontology analysis}\label{meth:go}
 
-Variable regions (section \ref{sec:variable}) were tested for functional enrichments using Gene Ontology (GO) annotations.\cite{Ashburner2000} The DAVID tool\cite{Huang2008} was used to compare GO terms for genes located in variable compartments with a background set of genes within all annotated compartments.
-
+Regions of variable structure (RVS; Section \ref{sec:variable}) were tested for functional enrichments using Gene Ontology (GO) annotations.\cite{Ashburner2000} The DAVID tool\cite{Huang2008} was used to compare GO terms for genes located in variable compartments against a background set of genes from all annotated compartment bins.
 
 \section{Boundaries}\label{boundaries}
 
 \subsection{TAD boundaries}\label{meth:tadbounds}
 
-Having called TADs (Section \ref{meth:tadcalling}), we then have a set of boundaries at the start and end of each domain. We generated average boundary enrichment or depletion profiles by averaging input features into 50 kb bins spanning $\pm450$ kb from the boundary bin.
+Having called TADs (Section \ref{meth:tadcalling}), we then have a set of boundaries at the start and end of each domain. We generated average boundary enrichment or depletion profiles by averaging input features into $50$ kb bins spanning $\pm450$ kb from the central boundary bin.
 
 To test for the enrichment or depletion of a chromatin feature over a
-given boundary, a two tailed Mann-Whitney test was used to compare the
+given boundary class, a two tailed Mann-Whitney test was used to compare the
 boundary bin with the ten outermost bins of the window (5 from either
-side). The significance level at $\alpha = 0.01$ was then
+side). Therefore we tested whether there was any significant difference in rankings of input feature signal between boundary bins and peripheral bins over all boundary instances per class. The significance level at $\alpha = 0.01$ was then
 Bonferonni-adjusted for multiple testing correction, and results with
 \emph{p}-values exceeding this threshold were deemed significantly
 enriched or depleted at a given boundary.
@@ -366,29 +370,26 @@ To compare boundaries between cells, each TAD boundary called in K562 and GM1287
 
 \subsection{Compartments}\label{sec:compartments}
 
-Eigenvectors were calculated as described in section \ref{sec:eigs}. A/B compartmentalisation has previously been called simply from the properly-orientated principle component eigenvector, with positive values representing a bin in an A compartment state, and negative values representing a bin in a B, more repressive state.\cite{Lieberman2009} 
+Eigenvectors were calculated as described previously (Section \ref{sec:eigs}). A/B compartmentalisation has previously been called simply from the properly-orientated principle component eigenvector, with positive values representing a bin in an A compartment state, and negative values representing a bin in a B compartment state.\cite{Lieberman2009} Using this method, compartment boundaries occur whenever the eigenvector changes sign.
 
-Compartment boundaries were called by first training a two-state hidden
+Instead, in our work, compartment boundaries were called by first training a two-state hidden
 Markov model (HMM) on the compartment eigenvector and then using the
 Viterbi algorithm to predict the most likely state sequence that
 produced the observed values (Methods \ref{meth:hmm}). Justification for this approach is discussed in Section \ref{sec:compcalls} and we also note the similar use of an HMM in TAD calling (Section \ref{meth:tadcalling}).
 
-%HMM states distribution plots
-
-The point at which transitions occurred
-between states was taken as a boundary which was then extended $\pm 1.5$~Mb to give a $3$~Mb window in which a boundary was though to occur. Boundary enrichments and alignments were tested in the same manner as TADs (Section \ref{meth:tadbounds}).
+The point at which transitions occurred between compartment states was taken as a boundary which was then extended $\pm 1.5$~Mb to give a $3$~Mb window in which a boundary was though to occur. Boundary enrichments and alignments were tested in the same manner as TADs (Section \ref{meth:tadbounds}).
 
 
 \section{Predicting TAD boundaries}\label{meth:tadpred}
 
-\subsection{AUC-RF}
+\subsection{AUC-RF}\label{meth:aucrf}
 % AUC_RF alorithm
 % AUROC  why good
 % Classification RF + gini coefficient
 
-To predict TAD boundaries we used a classification Random Forest model, built with the AUC-RF algorithm,\cite{Calle2011} as implemented in the \texttt{AUCRF} R package. This is a form of stepwise model selection which optimises feature subset selection relative to the area under the receiver operating characteristic (AUROC), a metric which captures both the speciality and sensitivity of a classifier hence is better-suited to unbalanced datasets than previously-described RF variable selection methods that used simple classification accuracy.\cite{Diaz2006, Chen2012} The AUC-RF procedure has been successfully applied in other bioinformatics applications, such as identifying a subset of most relevant variants in a genome-wide association study.\cite{DeMaturana2013} 
+To predict TAD boundaries we used a classification Random Forest model, built with the AUC-RF algorithm,\cite{Calle2011} as implemented in the \texttt{AUCRF} R package.\cite{aucrf} This is a form of stepwise model selection which optimises feature subset selection relative to the area under the receiver operating characteristic (AUROC), a metric which captures both the specificity and sensitivity of a classifier hence is better-suited to unbalanced datasets than previously-described RF variable selection methods that used simple classification accuracy.\cite{Diaz2006, Chen2012} The AUC-RF procedure has been successfully applied in other bioinformatics applications, such as in identifying a subset of most relevant variants as part of a genome-wide association study.\cite{DeMaturana2013} 
 
-More specifically, the AUC-RF algorithm is a backwards elimination procedure, commencing with variable ranking by importance. In these classification RF models, mean decrease in Gini impurity (Methods \ref{meth:gini}) was chosen as the measure of variable importance, as it proved to be more stable than mean decrease in accuracy on permuted data.\cite{Calle2011} Regardless, impurity and permutation-based importance measures are thought to be largely consistent in many cases.\cite{Liaw2002, Hastie2001}
+More specifically, the AUC-RF algorithm is a backwards elimination procedure, commencing with variable ranking by importance. In these classification RF models, mean decrease in Gini impurity (Methods \ref{meth:gini}) was chosen as the measure of variable importance, as it has previously been proven to be more stable than the mean decrease in accuracy.\cite{Calle2011} Regardless, impurity and permutation-based importance measures are thought to be largely consistent in many cases.\cite{Liaw2002, Hastie2001}
 
 Steps in the algorithm can be summarised as:\cite{Calle2011}
 \begin{enumerate}
@@ -396,14 +397,16 @@ Steps in the algorithm can be summarised as:\cite{Calle2011}
 \item Remove the least important $10\%$ of variables and fit a new RF model
 \item Calculate the AUROC on predictions made with out-of-bag data
 \item Iterate steps 2--3 until a single variable model is built
-\item Select that model with the highest AUROC
+\item Select that model with the highest AUROC as calculated in step 3
 \end{enumerate} \vspace{.1em}
 
 Importantly, AUC-RF avoids some of the problems of stepwise regression. Both over-optimistic model performance (due to repeated training and testing on the same pool of data) and errors due to the instability of variable rankings are mediated through an additional cross-validation step.\cite{Calle2011}
 
-The input feature set for this model was made up of the same $35$ ENCODE features used in models of compartment eigenvector (Methods \ref{methods:encode}), with the addition of counts of Alu repeat elements (as used in Section \ref{sec:repeats}). TAD boundary bins were called as previously described (Methods \ref{meth:tadcalling}) and were resolved to 40 kb. Bins containing a TAD boundary were our true positives (TP), and to generate true negatives (TN) we took matched bins $450$ kb upstream of each boundary bin. Of these, a randomly-selected $80\%$ of TP/TN pairs were used as our training and validation set in each cell type, while the remaining $20\%$ of cases were held-out as independent test sets.
+The input feature set for this model was made up of the same $35$ ENCODE features used in models of compartment eigenvector (Methods \ref{methods:encode}), with the addition of counts of Alu repeat elements (as used in Section \ref{sec:repeats}) and GERP scores as a proxy for  the degree of evolutionarily constrained sequence (Methods \ref{methods:encode}). TAD boundary bins were called as previously described (Methods \ref{meth:tadcalling}) and were resolved to 40 kb. Bins containing a TAD boundary were our true positives (TP), and to generate true negatives (TN) we took matched bins $450$ kb upstream of each boundary bin. Of these, a randomly-selected $80\%$ of TP/TN pairs were used as our training and validation set in each cell type, while the remaining $20\%$ of cases were held-out as independent test sets.
 
 \subsection{Gini importance}\label{meth:gini}
+
+Gini importance was the variable importance metric used to rank variables during the AUC-RF procedure (Section \ref{meth:aucrf}). This measure is calculated as follows.
 
 The Gini impurity, $G$, of a single node containing some proportions of $n$ classes of variable is calculated as shown (Eqn. \ref{eqn:gini}), and is observably related to the concept of entropy or information gain. 
 
@@ -432,6 +435,7 @@ This decrease in Gini impurity can then be summed over all splits in which a spe
 I = \frac{1}{ntrees} \sum_{ntrees} \sum_{j=1}^{N_{used}} G_{j} - (G_{d_1} + G_{d_2})
 \end{equation}
 
+As can be seen through this derivation, the Gini importance captures information regarding both how frequently a variable is selected at a node, and to what degree, after splitting by said variable, the labelled inputs are now better separated in daughter nodes. Through these concepts it is clear that variables with a larger Gini importance are providing a greater amount of useful, discriminative information to the Random Forest classification model.
 
 \section{MetaTAD analysis}\label{meth:meta}
 
