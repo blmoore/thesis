@@ -28,6 +28,7 @@
 \newcolumntype{L}{>{\centering\arraybackslash}m{4cm}}
 \definecolor{light-gray}{gray}{0.95}
 
+\usepackage{amssymb}
 \usepackage{bm}
 \DeclareMathOperator*{\argmin}{arg\,min}
 \usepackage{tikz-cd}
@@ -57,7 +58,7 @@
 Raw Hi-C reads were downloaded from published datasets (Table \ref{hictable}) through
 the Gene Expression Omnibus (GEO)\citep{Barrett2013} or the Short Read Archive (SRA)\citep{Leinonen2011a} with identifiers:
 GSE35156 (H1 hESC), GSE18199 (K562) and SRX030113 (GM12878). These
-paired reads were mapped independently to a reference genome: hg19/GRCh37 for human data, and mm10/GRCm38 for mouse. 
+paired reads were mapped independently to the human reference genome (build \texttt{hg19} / \texttt{GRCh37}.
 
 \begin{table}
 \centering
@@ -70,37 +71,36 @@ Gm12878 & 31$\times10^{6}$ & \href{http://www.ncbi.nlm.nih.gov/sra/SRX030113[acc
 H1 hESC & 331$\times10^{6}$ & \href{http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35156}{GSE35156} &\citenum{Dixon2012} \\
 K562 & 36$\times10^{6}$ &  \href{http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18199}{GSE18199}  & \citenum{Lieberman2009} \\
 \hline
-Cortex & 373$\times10^{6}$ & \href{http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35156}{GSE35156}& \citenum{Dixon2012} \\
-mESC & 476$\times10^{6}$ & \href{http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35156}{GSE35156}&\citenum{Dixon2012} \\
-\hline
-IMR90 & 355$\times10^{6}$ &\href{http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35156}{GSE35156} &\citenum{Dixon2012} 
+%Cortex & 373$\times10^{6}$ & \href{http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35156}{GSE35156}& \citenum{Dixon2012} \\
+%mESC & 476$\times10^{6}$ & \href{http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35156}{GSE35156}&\citenum{Dixon2012} \\
+%\hline
+%IMR90 & 355$\times10^{6}$ &\href{http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35156}{GSE35156} &\citenum{Dixon2012} 
 \end{tabular}
 \end{table}
 
-Mapping was performed using the \texttt{hiclib} software
-package\citep{Imakaev2012} and \texttt{bowtie2}\citep{Langmead2012} with
-the \texttt{-{}-very-sensitive} flag. An iterative mapping approach was used to maximise the number of aligning fragments.\cite{Imakaev2012} Each fragment end was aligned first using short terminal sub-sequences. Those unmapped or with ambiguous mapping were then taken forward into the next iteration and extended until the entire fragment end had been aligned. Those remaining pairs with one or more unmapped ends were discarded.
-
-This approach is designed to maximise uniquely-alignable fragment ends, while avoiding mismappings caused by crossing the fragment junction.\cite{Lajoie2014} 
+Mapping was performed using the \texttt{hiclib} python library\citep{Imakaev2012} and \texttt{bowtie2}\citep{Langmead2012} with
+the \texttt{-{}-very-sensitive} flag. An iterative mapping approach was used to maximise the number of aligning fragments.\cite{Imakaev2012} Each fragment end was aligned first using short terminal sub-sequences. Those unmapped or with ambiguous mapping were then taken forward into the next iteration and extended until the entire fragment end had been aligned. Those remaining pairs with one or more unmapped ends were discarded. This approach is designed to maximise uniquely-alignable fragment ends, while avoiding mismappings from reads that cross a restriction fragment junction.\cite{Lajoie2014} 
 
 \subsection{Filtering}\label{methods:filtering}
 
-After mapping, interactions are first aggregated into restriction fragments then by regular binning of various resolutions (particularly 40 kb, 100 kb and 1 Mb). Several filters were applied at this stage, with the following cases removed:\cite{Imakaev2012, Lajoie2014} 
+After mapping, interactions are first aggregated into restriction fragments then by regular binning at various resolutions (particularly 40 kb, 100 kb and 1 Mb). Several filters were applied at this stage, with the following cases removed:\cite{Imakaev2012, Lajoie2014} 
 \begin{itemize}
 \item Reads directly adjacent to a restriction enzyme site (within 5 bp)
 \item Identical read pairs (presumed PCR duplicates)
 \item Very large restriction fragments ($>100$ kb) which are likely from a repetitive or poorly-assembled region
-\item Extremely over-represented fragments (top $.05\%$) which may throw-off eigenvector derivation
+\item Extremely over-represented fragments (top $.05\%$) which may throw-off the subsequent derivation of principle component eigenvectors
 \end{itemize}
 
 \subsection{Correction}\label{methods:correction}
 
-Iterative correction and eigenvector expansion (ICE) is an approach to normalisation and processing Hi-C data, implemented as software library written in \texttt{python}.\citep{Imakaev2012} The iterative correction algorithm performs matrix balancing with the aim of generating a doubly stochastic matrix from raw interaction counts.\cite{Lajoie2014} That is, such that symmetric matrix $\mathbf{A}$ has both row and columns of equal sum. In practice, this effectively enforces "equal visibility" of each fragment, correcting for previously-described biases in interaction recovery such as GC-content and fragment length\cite{Yaffe2011} but without explicitly modelling these latent variables. This procedure is thus converting actual interaction counts into normalised interaction frequencies (IF), and to relative rather than absolute quantities. Scaling of IFs permits comparison of Hi-C experiments with very different sequencing depths (as is the case in this work, see Table \ref{hictable}). Despite differences in the levels of sequencing, otherwise the experiment methods underlying the produced Hi-C data were similar: the HindIII restriction enzyme was used in each case and the Hi-C protocol was largely unchanged (that is, we did not consider data from Hi-C variants such as TCC\cite{Kalhor2012} and \emph{in-situ} Hi-C\cite{Rao2014}).
+Iterative correction and eigenvector expansion (ICE) is an approach to normalisation and processing Hi-C data and is implemented as part of the the \texttt{hiclib} library written in \texttt{python}.\citep{Imakaev2012} The iterative correction algorithm performs matrix balancing with the aim of generating a doubly stochastic matrix from raw interaction counts.\cite{Lajoie2014} That is, such that symmetric matrix $\mathbf{A}$ has both row and columns of equal sum. In practice, this effectively enforces "equal visibility" of each fragment, correcting for previously-described biases in interaction recovery such as GC-content and fragment length\cite{Yaffe2011} but without explicitly modelling these latent variables. 
+
+This correction procedure is thus converting actual interaction counts into normalised interaction frequencies (IF), and to relative rather than absolute quantities. Scaling of IFs permits comparison of Hi-C experiments with very different sequencing depths (as is the case in this work, see Table \ref{hictable}). Despite differences in the levels of sequencing, otherwise the experiment methods underlying the produced Hi-C data were similar: the HindIII restriction enzyme was used in each case and the Hi-C protocol was largely unchanged (for example, we did not consider data from Hi-C variants such as tethered conformation capture\cite{Kalhor2012} and \emph{in-situ} Hi-C\cite{Rao2014}).
 
 \subsection{Eigenvector calculation}\label{sec:eigs}
-Additional functionality provided by ICE is the eigenvector expansion of normalised contact maps. Eigenvectors from observed/expected matrices were chosen for consistency with Lieberman Aiden \emph{et al.},\cite{Lieberman2009} as opposed to the related eigenvectors calculated in Imakaev \emph{et al.}\cite{Imakaev2012} from the corrected maps alone. The details of this procedure are described in section \ref{sec:compartments}. Briefly, observed contacts (O) are divided by an expected matrix (E) which is generated by averaging the super- and sub-diagonals of the O matrix. That is, the E matrix gives the expected value of interactions at a given distance.
+Additional functionality provided by ICE is the eigenvector expansion of normalised contact maps. Eigenvectors from observed/expected matrices were chosen for consistency with Lieberman Aiden \emph{et al.},\cite{Lieberman2009} as opposed to the related eigenvectors calculated in Imakaev \emph{et al.}\cite{Imakaev2012} from the corrected maps alone. Briefly, observed contacts (O) are divided by an expected matrix (E) which is generated by averaging the super- and sub-diagonals of the O matrix. That is, the E matrix gives the expected value of interactions at a given distance, hence the O/E matrix is a normalised contact map without the distance decay seen in raw Hi-C contact matrices. Examples of these maps are shown in Figure \ref{fig:eigcalc} (Section \ref{sec:compartments}).
 
-Importantly, the first two principle components (PCs) were calculated, and that with the highest absolute Spearman correlation with GC content is taken to reflect A/B compartmentalisation. PC eigenvectors were then orientated to positively correlate with GC, ensuring positive values reflected A compartments and negative values B compartments. Another subtlety is the calculation of eigenvectors per chromosome arm as opposed to per chromosome, this prevents issues with some meta- and submetacentric chromosomes where the first principle component indicated chromosome arms.\cite{Lieberman2009, Imakaev2012} Eigenvector expansion was performed on both 1 Mb and 100 kb matrices, below these resolutions results became less stable, and besides it has been shown that eigenvectors at higher resolution --- when they do indeed capture A/B compartmentalisation --- add little, if any, additional information.\cite{Fortin2015a}
+Importantly, for the eigenvector expansion step the first two principle components (PCs) were calculated, and that with the highest absolute Spearman correlation with GC content is taken to reflect A/B compartmentalisation. PC eigenvectors were then orientated to positively correlate with GC, ensuring positive values reflected A compartments and negative values B compartments. Another subtlety is the calculation of eigenvectors per chromosome arm as opposed to per chromosome, this prevents issues with some meta- and submetacentric chromosomes where the first principle component indicated chromosome arms.\cite{Lieberman2009, Imakaev2012} Eigenvector expansion was performed on both 1 Mb and 100 kb matrices, below these resolutions results became less stable, and besides it has been shown that eigenvectors at higher resolution --- when they do indeed capture A/B compartmentalisation --- add little, if any, additional information.\cite{Fortin2015a}
 
 \subsection{TAD calling}\label{meth:tadcalling}
 
@@ -115,7 +115,7 @@ The TAD calling algorithm is a multi-stage process. Firstly, a statistic called 
 
 Equation \ref{eqn:di} can be intuitively understood as first determining the direction of the bias (the sign is given by $\frac{U - D}{|U - D|}$) and then calculating the extent of the bias (with $\frac{(D - E)^2}{E} + \frac{(U - E)^2}{E}$ being akin to a $\chi^2$-type statistic).\cite{Dixon2012}
 
-This DI metric could be used as-is to call domains. Peaks of downstream contacts culminating in a peak of upstream contacts would delineate self-interacting domains. However, \citet{Dixon2012} instead use a hidden Markov model (HMM; Methods \ref{meth:hmm}) in a manner similar of that we later employed to call compartments (Section \ref{sec:compartments}). 
+This DI metric could be used as-is to call domains, as peaks of downstream contacts culminating in a peak of upstream contacts delineate self-interacting domains. However, \citet{Dixon2012} instead use a hidden Markov model (HMM; Section \ref{meth:hmm}) in a manner similar of that we later employed to call compartments (Section \ref{sec:compartments}). 
 
 Here, the DI metric is considered a noisy observation emitted by an unobserved underlying three-state sequence of upstream, downstream or no- directional contact bias.\cite{Dixon2012} The HMM was fit to each chromosome with between 1 and 20 Gaussian mixtures allowed per state, however in some cases the expectation-maximisation (EM) algorithm used to parameterise these hidden states failed to converge; such cases were ignored. The Akaike information criterion (AIC) was used to selection the optimal number of mixtures (in practice, we found 5--10 were selected). 
 
@@ -161,9 +161,11 @@ ATF3, CEBPB, CHD1, CHD2, CMYC, CTCF, EGR1, EZH2, GABP, JUND, MAX, MXI1, NRSF, PO
 \end{tabular}
 \end{table}
 
+In the analysis of boundaries (Chapter \ref{chap:boundaries}), we also use a measure of sequence conservation in the form of Genomic Evolutionary Rate Profiling (GERP) scores. This measure uses rejected substitutions to assign conservation scores to each genomic site based on multiple alignment of 35 mammalian genomes.\cite{Cooper2005, Davydov2010a} A rule of thumb is that a GERP score $\gtrapprox 2$ indicates an evolutionarily-constrained site.\cite{Goode2010}
+
 \subsection{Clustering input features}
 
-To quantify collinearity of input features, correlation matrices built from genome-wide vectors of input feature measures were build and hierarchicaly clustered. The "significance" of observed clustering was assessed using sub- and super-sampled bootstrapping, with stable clusters deemed significant, as implemented in the \texttt{pvclust} R package.\cite{Suzuki2006a}
+To quantify collinearity of input features, correlation matrices built from genome-wide vectors of input feature measures were build and hierarchicaly clustered. The "significance" of observed clustering was assessed using sub- and super-sampled bootstrapping, with stable clusters across sample sizes deemed significant, as implemented in the \texttt{pvclust} R package.\cite{Suzuki2006a}
 
 \section{Modelling compartment eigenvectors}\label{modelling}
 
