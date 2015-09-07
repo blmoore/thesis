@@ -1,4 +1,4 @@
-\begin{thebibliography}{86}
+\begin{thebibliography}{88}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Barrett \emph{et~al.}(2013)Barrett, Wilhite, Ledoux, Evangelista,
@@ -356,12 +356,24 @@ Dong X, Greven MC, Kundaje A, Djebali S, Brown JB, Cheng C, Gingeras TR,
   chromatin features in various cellular contexts.}
 \newblock \emph{Genome biology}, \textbf{13}(9): R53.
 
+\bibitem[{{ENCODE consortium}(2012)}]{encodevm}
+{ENCODE consortium} (2012) {ENCODE virtual machine and cloud resource}.
+\newblock \url{http://encodedcc.stanford.edu/ftp/encodevm/}.
+
 \bibitem[{Myers \emph{et~al.}(2011)Myers, Stamatoyannopoulos, Snyder, Dunham,
   Hardison, Bernstein, Gingeras, Kent, Birney \emph{et~al.}}]{Myers2011}
 Myers RM, Stamatoyannopoulos J, Snyder M, Dunham I, Hardison RC, Bernstein BE,
   Gingeras TR, Kent WJ, Birney E, \emph{et~al.} (2011) {A user's guide to the
   Encyclopedia of DNA elements (ENCODE)}.
 \newblock \emph{PLoS Biology}, \textbf{9}(4).
+
+\bibitem[{Ryba \emph{et~al.}(2010)Ryba, Hiratani, Lu, Itoh, Kulik, Zhang,
+  Schulz, Robins, Dalton and Gilbert}]{Ryba2010}
+Ryba T, Hiratani I, Lu J, Itoh M, Kulik M, Zhang J, Schulz TC, Robins AJ,
+  Dalton S, Gilbert DM (2010) {Evolutionarily conserved replication timing
+  profiles predict long-range chromatin interactions and distinguish closely
+  related cell types.}
+\newblock \emph{Genome research}, \textbf{20}(6): 761--70.
 
 \bibitem[{Stadhouders \emph{et~al.}(2013)Stadhouders, Kolovos, Brouwer, Zuin,
   van~den Heuvel, Kockx, Palstra, Wendt, Grosveld
@@ -416,9 +428,9 @@ Storey JD, Taylor JE, Siegmund D (2004) {Strong control, conservative point
   Methodology}, \textbf{66}(1): 187--205.
 
 \bibitem[{Storey(2015)}]{qvalue}
-Storey J (2015) \emph{qvalue: Q-value estimation for false discovery rate
-  control}.
-\newblock R package version 2.0.0.
+Storey J (2015) {qvalue (v2.0.0) R package: Q-value estimation for false
+  discovery rate control}.
+\newblock \url{http://github.com/jdstorey/qvalue}.
 
 \bibitem[{Simonis \emph{et~al.}(2006)Simonis, Klous, Splinter, Moshkin,
   Willemsen, de~Wit, van Steensel and de~Laat}]{Simonis2006}
