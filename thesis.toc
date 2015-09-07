@@ -39,33 +39,33 @@
 \contentsline {subsection}{\numberline {2.1.5}TAD calling}{19}{subsection.2.1.5}
 \contentsline {section}{\numberline {2.2}ENCODE features}{20}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Clustering input features}{20}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Modelling compartment eigenvectors}{20}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Random Forest}{20}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Model performance}{21}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Hidden Markov models}{22}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.3}Modelling compartment eigenvectors}{21}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Random Forest}{21}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Model performance}{22}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Hidden Markov models}{23}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Stepwise regression}{23}{subsection.2.3.4}
 \contentsline {subsection}{\numberline {2.3.5}LASSO}{24}{subsection.2.3.5}
 \contentsline {subsection}{\numberline {2.3.6}Other modelling approaches}{25}{subsection.2.3.6}
 \contentsline {section}{\numberline {2.4}Variable regions}{25}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Stratification by variability}{25}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Chromatin state enrichment}{25}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.2}Chromatin state enrichment}{26}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Gene ontology analysis}{26}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}Boundaries}{26}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}TAD boundaries}{26}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.5}Boundaries}{27}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}TAD boundaries}{27}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Compartments}{27}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}Predicting TAD boundaries}{27}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}AUC-RF}{27}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Gini importance}{28}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.6}Predicting TAD boundaries}{28}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}AUC-RF}{28}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Gini importance}{29}{subsection.2.6.2}
 \contentsline {section}{\numberline {2.7}MetaTAD analysis}{29}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}Size selection}{29}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Collaborator datasets}{29}{subsection.2.7.2}
+\contentsline {subsection}{\numberline {2.7.2}Collaborator datasets}{30}{subsection.2.7.2}
 \contentsline {subsection}{\numberline {2.7.3}LAD coincidence}{30}{subsection.2.7.3}
-\contentsline {section}{\numberline {2.8}Giemsa band comparison}{30}{section.2.8}
+\contentsline {section}{\numberline {2.8}Giemsa band comparison}{31}{section.2.8}
 \contentsline {section}{\numberline {2.9}Nuclear positioning}{31}{section.2.9}
-\contentsline {section}{\numberline {2.10}Modelling transcriptional output}{31}{section.2.10}
-\contentsline {subsection}{\numberline {2.10.1}Reproducing a published study}{31}{subsection.2.10.1}
+\contentsline {section}{\numberline {2.10}Modelling transcriptional output}{32}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}Reproducing a published study}{32}{subsection.2.10.1}
 \contentsline {subsection}{\numberline {2.10.2}Predicting FANTOM5 data}{32}{subsection.2.10.2}
-\contentsline {section}{\numberline {2.11}4C analysis}{32}{section.2.11}
+\contentsline {section}{\numberline {2.11}4C analysis}{33}{section.2.11}
 \contentsline {subsection}{\numberline {2.11.1}Normalisation}{33}{subsection.2.11.1}
 \contentsline {subsection}{\numberline {2.11.2}Significance estimation}{33}{subsection.2.11.2}
 \contentsline {section}{\numberline {2.12}Scripts and other analyses}{34}{section.2.12}
