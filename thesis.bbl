@@ -1,4 +1,4 @@
-\begin{thebibliography}{236}
+\begin{thebibliography}{239}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -615,6 +615,26 @@ Zhang Y, Liu T, Meyer Ca, Eeckhoute J, Johnson DS, Bernstein BE, Nusbaum C,
   Myers RM, Brown M, \emph{et~al.} (2008) {Model-based analysis of ChIP-Seq
   (MACS).}
 \newblock \emph{Genome biology}, \textbf{9}(9): R137.
+
+\bibitem[{Cooper \emph{et~al.}(2005)Cooper, Stone, Asimenos, Green, Batzoglou
+  and Sidow}]{Cooper2005}
+Cooper GM, Stone Ea, Asimenos G, Green ED, Batzoglou S, Sidow A (2005)
+  {Distribution and intensity of constraint in mammalian genomic sequence}.
+\newblock \emph{Genome Research}, \textbf{15}(7): 901--913.
+
+\bibitem[{Davydov \emph{et~al.}(2010)Davydov, Goode, Sirota, Cooper, Sidow and
+  Batzoglou}]{Davydov2010a}
+Davydov EV, Goode DL, Sirota M, Cooper GM, Sidow A, Batzoglou S (2010)
+  {Identifying a high fraction of the human genome to be under selective
+  constraint using GERP++}.
+\newblock \emph{PLoS Computational Biology}, \textbf{6}(12).
+
+\bibitem[{Goode \emph{et~al.}(2010)Goode, Cooper, Schmutz, Dickson, Gonzales,
+  Tsai, Karra, Davydov, Batzoglou \emph{et~al.}}]{Goode2010}
+Goode DL, Cooper GM, Schmutz J, Dickson M, Gonzales E, Tsai M, Karra K, Davydov
+  E, Batzoglou S, \emph{et~al.} (2010) {Evolutionary constraint facilitates
+  interpretation of genetic variation in resequenced human genomes}.
+\newblock \emph{Genome Research}, \textbf{20}(3): 301--310.
 
 \bibitem[{Suzuki and Shimodaira(2006)}]{Suzuki2006a}
 Suzuki R, Shimodaira H (2006) {Pvclust: an R package for assessing the
