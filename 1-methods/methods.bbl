@@ -1,4 +1,4 @@
-\begin{thebibliography}{84}
+\begin{thebibliography}{86}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Barrett \emph{et~al.}(2013)Barrett, Wilhite, Ledoux, Evangelista,
@@ -217,6 +217,10 @@ Simon N, Friedman J, Hastie T, Tibshirani R (2011) Regularization paths for
 Tobias RD (1995) {An Introduction to Partial Least Squares Regression}.
 \newblock \emph{Proc. Ann. SAS Users Group Int. Conf. 20th}, pp. 1250--1257.
 
+\bibitem[{Sanchez(2015)}]{plsdepot}
+Sanchez G (2015) {plsdepot (v0.1.18) R package}.
+\newblock \url{https://github.com/gastonstat/plsdepot}.
+
 \bibitem[{Ernst \emph{et~al.}(2011)Ernst, Kheradpour, Mikkelsen, Shoresh, Ward,
   Epstein, Zhang, Wang, Issner \emph{et~al.}}]{Ernst2011}
 Ernst J, Kheradpour P, Mikkelsen TS, Shoresh N, Ward LD, Epstein CB, Zhang X,
@@ -254,6 +258,10 @@ Huang BDW, Lempicki R (2008) {Systematic and integrative analysis of large gene
 Calle ML, Urrea V, Boulesteix AL, Malats N (2011) {AUC-RF: A new strategy for
   genomic profiling with random forest}.
 \newblock \emph{Human Heredity}, \textbf{72}(2): 121--132.
+
+\bibitem[{Urrea(2012)}]{aucrf}
+Urrea V (2012) {AUCRF (v1.1) R package}.
+\newblock \url{https://cran.r-project.org/web/packages/AUCRF}.
 
 \bibitem[{Chen and Ishwaran(2012)}]{Chen2012}
 Chen X, Ishwaran H (2012) {Random forests for genomic data analysis}.
