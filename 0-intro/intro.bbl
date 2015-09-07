@@ -1,4 +1,4 @@
-\begin{thebibliography}{92}
+\begin{thebibliography}{93}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -128,6 +128,13 @@ Kalhor R, Tjong H, Jayathilaka N, Alber F, Chen L (2012) {Genome architectures
   modeling.}
 \newblock \emph{Nature biotechnology}, \textbf{30}(1): 90--8.
 
+\bibitem[{Nagano \emph{et~al.}(2015)Nagano, V\'{a}rnai, Schoenfelder, Javierre,
+  Wingett and Fraser}]{Nagano2015}
+Nagano T, V\'{a}rnai C, Schoenfelder S, Javierre BM, Wingett SW, Fraser P
+  (2015) {Comparison of Hi-C results using in-solution versus in-nucleus
+  ligation}.
+\newblock \emph{Genome Biology}, \textbf{16}(1): 175.
+
 \bibitem[{Nagano \emph{et~al.}(2013)Nagano, Lubling, Stevens, Schoenfelder,
   Yaffe, Dean, Laue, Tanay and Fraser}]{Nagano2013}
 Nagano T, Lubling Y, Stevens TJ, Schoenfelder S, Yaffe E, Dean W, Laue ED,
@@ -164,13 +171,6 @@ Mifsud B, Tavares-Cadete F, Young AN, Sugar R, Schoenfelder S, Ferreira L,
   Wingett SW, Andrews S, Grey W, \emph{et~al.} (2015) {Mapping long-range
   promoter contacts in human cells with high-resolution capture Hi-C}.
 \newblock \emph{Nature Genetics}, (April): 1--12.
-
-\bibitem[{Nagano \emph{et~al.}(2015)Nagano, V\'{a}rnai, Schoenfelder, Javierre,
-  Wingett and Fraser}]{Nagano2015}
-Nagano T, V\'{a}rnai C, Schoenfelder S, Javierre BM, Wingett SW, Fraser P
-  (2015) {Comparison of Hi-C results using in-solution versus in-nucleus
-  ligation}.
-\newblock \emph{Genome Biology}, \textbf{16}(1): 175.
 
 \bibitem[{Lajoie \emph{et~al.}(2014)Lajoie, Dekker and Kaplan}]{Lajoie2014}
 Lajoie BR, Dekker J, Kaplan N (2014) {The Hitchhiker’s Guide to Hi-C
@@ -353,6 +353,13 @@ Ong CT, Corces VG (2014) {CTCF: an architectural protein bridging genome
 \bibitem[{Phillips and Corces(2009)}]{Phillips2009}
 Phillips JE, Corces VG (2009) {CTCF: Master Weaver of the Genome}.
 \newblock \emph{Cell}, \textbf{137}(7): 1194--1211.
+
+\bibitem[{Handoko \emph{et~al.}(2011)Handoko, Xu, Li, Ngan, Chew, Schnapp, Lee,
+  Ye, Ping \emph{et~al.}}]{Handoko2011}
+Handoko L, Xu H, Li G, Ngan CY, Chew E, Schnapp M, Lee CWH, Ye C, Ping JLH,
+  \emph{et~al.} (2011) {CTCF-mediated functional chromatin interactome in
+  pluripotent cells.}
+\newblock \emph{Nature genetics}, \textbf{43}(7): 630--8.
 
 \bibitem[{Filippova \emph{et~al.}(1996)Filippova, Fagerlie, Klenova, Myers,
   Dehner, Goodwin, Neiman, Collins and Lobanenkov}]{Filippova1996a}
