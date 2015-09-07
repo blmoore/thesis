@@ -328,7 +328,7 @@ This predictive performance underlines the strong connection between locus-level
 
 % Model showing actual predictions? ala: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003419
 
-\subsection{Cross-application}
+\subsection{Cross-application}\label{sec:xapp}
 
 High predictive accuracy on cell type specific models could be the result of ``over-fitting". In machine-learning, over-fitting refers to the point at which parameters are being optimised to capture noise within a feature set, as well as signal, thereby giving an overoptimistic model performance which would not generalise to another featureset with its own noise profile.
 
@@ -438,7 +438,7 @@ Outliers are also present. H3K9me3, noted for high variable importance in each m
 
 \section{Technical considerations}
 
-\subsection{Resolution}
+\subsection{Resolution}\label{sec:matres}
 
 Thus far models were built at 1 Mb resolution, but if we are capturing true biological relationships we would expect these to hold at higher or lower resolutions. To test this, models leaned at 1 Mb resolution were applied to feature sets binned at 100 kb, an order of magnitude higher resolution.
 
@@ -456,7 +456,7 @@ Model accuracy when applied to higher resolution input features proved to be sim
 
 Note however, there is some indirect leakage between test and training set when 100 kb bins have been used in aggregate in learning the 1 Mb models. Nevertheless, sustained accuracy is evidence that our models are not resolution-sensitive, and could likely be applied to higher resolutions than the 1 Mb predominantly used in this work.
 
-\subsection{Other modelling approaches}
+\subsection{Other modelling approaches}\label{sec:lmpls}
 
 Random Forest (RF) was \emph{a priori} chosen as an appropriate and powerful modelling tool for this work. Other methods could have been used and should be compared. Here we compare our RF approach with two other options: multiple linear regression and partial least squares regression (Methods \ref{meth:othermodels}).
 
