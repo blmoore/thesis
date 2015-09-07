@@ -186,22 +186,19 @@ as implemented in the R package \texttt{randomForest}.\cite{Liaw2002}
 The RF algorithm (Fig. \ref{fig:randforests}) makes use of a collective of regression trees (size $ntrees$), each built from a
 bootstrapped sample of the training set. In growing each tree, a small
 number of variables ($mtry$) is tested at each bifurcation node, and that which minimises the
-variance in child node subsets is selected at a specific
-threshold. Having trained a group of trees, these can then be used as
+variance in child node subsets is selected at an optimal threshold. Having trained a group of trees, these can then be used as
 predictive tools by inputting a vector of features to each tree and
-averaging the output leaf node value across the forest. RF regression
+averaging the output leaf node values across the forest. RF regression
 was used as it is known to be one of the most powerful regression
 methods developed to date,\cite{Svetnik2003, Cutler2007} typically
 providing low bias and low variance predictions without the need for
 variable selection.\cite{Diaz2006, Dasgupta2012}
 
-Additionally the RF method represents an example of ``algorithmic
+Additionally the RF method is an example of ``algorithmic
 modelling''\cite{Breiman2001b} in that it makes no assumptions about the
 underlying data model.
-Parameters of $mtry = \frac{n}{3}$ (where $n$ is the number of input features) and $ntrees =
-200$ were assumed as they are known to be
-largely insensitive;\cite{Dasgupta2012, Hastie2001} this was verified
-with the dataset used in this work (Fig. \ref{fig:rfparam}). 
+Of the few user-facing parameters, the number of features to test at each node ($mtry$) was set to $\frac{n}{3}$ (where $n$ is the number of input features) and and the number of trees in the forest ($ntrees$) was chosen as
+$200$. These parameters are known to be insensitive over a broad range of values,\cite{Dasgupta2012, Hastie2001} as shown in Figure \ref{fig:rfparam}.
 
 \begin{figure}
 \begin{center}
@@ -221,7 +218,7 @@ units of mean squared error (MSE).\citep{Cutler2007, Dasgupta2012}
 
 \subsection{Model performance}\label{sec:modelperf}
 
-The effectiveness of the modelling approach was measured by four
+The effectiveness of the RF modelling approach used to predict compartment eigenvectors (Section \ref{sec:modhoc}) was measured by four
 different metrics. Prediction accuracy was assessed by the Pearson
 correlation coefficient between the OOB predictions and observed eigenvectors, and the root mean-squared
 error (RMSE) of the same data. Classification error, when predictions
@@ -234,10 +231,10 @@ model could be used to label discrete chromatin compartments.
 
 For cross-application of cell type specific models, a single Random
 Forest regression model was learned from all 1 Mb bins for a given cell
-type. This was then used to predict all bins from each of the other two
-cell types.
+type. This was then used to predict compartment eigenvectors for all bins from each of the other two
+cell types (Section \ref{sec:xapp}).
 
-To test the sensitivity of the models to resolution, we also applied cell-type specific models learnt at 1 Mb resolution to input features binned at 100 kb. This was done by training a Random Forest regression model on all available 1 Mb bins in a given cell type, then applying that model to the prediction of all compartment eigenvectors derived at 100 kb. Model performance was then assessed as above, with the caveat that here the test set represents a higher-resolution window onto the original training set, therefore we might expect this to inflate the measures of generalisation error.
+To test the sensitivity of the models to resolution, we also applied cell-type specific models learnt at 1 Mb resolution to input features binned at 100 kb (Section \ref{sec:matres}). This was done by training a Random Forest regression model on all available 1 Mb bins in a given cell type, then applying that model to the prediction of all compartment eigenvectors derived at 100 kb. Model performance was then assessed as above, with the caveat that here the test set represents a higher-resolution window onto the original training set, therefore we might expect this to inflate the measures of generalisation error.
 
 \subsection{Hidden Markov models}\label{meth:hmm}
 
@@ -255,14 +252,14 @@ A typical representation of an HMM is shown in Equation \ref{eqn:hmm}, where hid
 \end{tikzcd}
 \end{equation}
 
-HMM state emission and transition parameters can be learned from an observation sequence via the Baum-Welch algorithm,\cite{Baum1970} a special case of the Expectation-Maximisation algorithm applied to HMMs. Following initialisation of transition and emission matrices (this can be random), the Baum-Welch algorithm first performs the $E$-step, calculating the expected number of transitions and emissions via a Forward-Backward procedure, then the $M$-step re-estimates transition and emission parameters based on these expected values. These two steps repeat until the HMM parameters converge to a local maximum.
+HMM state emission and transition parameters can be learned from a sequence of observations via the Baum-Welch algorithm,\cite{Baum1970} a special case of the Expectation-Maximisation algorithm applied to HMMs. Following initialisation of transition and emission matrices (this can be random), the Baum-Welch algorithm first performs the $E$-step, calculating the expected number of transitions and emissions via a Forward-Backward procedure, then the $M$-step re-estimates transition and emission parameters based on these expected values. These two steps repeat until the HMM parameters converge to within a set tolerance.
 
-Given a fully-specified HMM, the Viterbi algorithm can be applied to find the most probable state sequence given a sequence of observations.\cite{ryan1993viterbi} Using the notation of Equation \ref{eqn:hmm}, the Viterbi algorithm finds $\hat{\theta} = \mathrm{argmax}_\theta \Pr( y, \theta)$ using dynamic programming.\cite{Volg2005}
+Given a fully-specified HMM, the Viterbi algorithm can be applied to find the most probable state sequence given a sequence of observations.\cite{ryan1993viterbi} Using the notation of Equation \ref{eqn:hmm}, the Viterbi algorithm finds $\hat{\theta} = \mathrm{argmax}_\theta \Pr( y \vert \theta)$ using dynamic programming.\cite{Volg2005}
 
 \subsection{Stepwise regression}\label{meth:stepregress}
 
 % Expand, equations etc.
-Stepwise regression is a form of model selection used with multiple regression. This simple approach starts with a complete model and serially remove and/or add variables, then calculate a metric (here we use the Bayesian information criterion, BIC) which weighs the the model likelihood against model complexity. This process is iterated until the metric reaches a (local) minimum, thus creating a more parsimonious model which retains predictive accuracy and should be less prone to overfitting. Stepwise regression also aids interpretation by selecting representative features from collinear clusters.\cite{Mantel1970} 
+Stepwise regression is a form of model selection applied to multiple linear regression. This simple approach starts with a complete model and serially remove and/or add variables, then calculate a metric (here we use the Bayesian information criterion, BIC) which weighs the the model likelihood against model complexity. Alternatively, the procedure can be run in the opposite direction and build up a model starting from scratch. In either case, the variable inclusion or exclusion process is iterated until the metric reaches a (local) minimum, thereby generating a  parsimonious model which should be less prone to overfitting. Stepwise regression also aids interpretation by selecting representative features from collinear clusters.\cite{Mantel1970} 
 
 It should be noted that despite its continued widespread usage, several statistical issues have been identified with the stepwise procedure for model selection.\cite{Hurvich1990, Whittingham2006}
 
@@ -285,7 +282,7 @@ We then wish to find that $\bm{\beta}$ which minimises $\sum_{j=1}^{n}(\hat{y}_j
 \sum\limits_{i=1}^{p} |\beta_i| \leq c
 \end{equation} \vspace{.2em}
 
-Where here $c$ represents a tuneable parameter inversely proportional to the level of regularisation imposed on the model. It can be seen, for example, that of $c$ is set to the sum of the coefficients fit by ordinary least squares, the LASSO solution will be equivalent. Eqn. \ref{eqn:lassoineq} can be contrasted with Ridge regression, where the same in inequality instead constrains $\sum_{i=1}^{p} \beta_j^2$.
+Where here $c$ represents a tuneable parameter inversely proportional to the level of regularisation imposed on the model. It can be seen, for example, that of $c$ is set to the sum of the coefficients fit by ordinary least squares, the LASSO solution will be equivalent. Equation \ref{eqn:lassoineq} can be contrasted with Ridge regression, where the same in inequality instead constrains $\sum_{i=1}^{p} \beta_j^2$.
 
 Formally, the LASSO problem has been expressed as:\cite{Hastie2001}
 
@@ -296,15 +293,15 @@ Formally, the LASSO problem has been expressed as:\cite{Hastie2001}
 \bigg\}
 \end{equation} \vspace{.2em}
 
-This formulation introduces the $\lambda$ parameter as used in Section \ref{sec:lassoreg}. This parameter translates $\beta$ coefficients, such that larger values of $\lambda$ place stronger constraints on the coefficient total, thus encourage greater shrinkage and model sparsity (Eqn. \ref{eqn:lassolagrangian}).
+This formulation introduces the tuning parameter $\lambda$, which translates $\beta$ coefficients such that larger values of $\lambda$ place stronger constraints on the coefficient total, thus encourage greater shrinkage and model sparsity (Eqn. \ref{eqn:lassolagrangian}).
 
-In this thesis, we used the \texttt{glmnet} R package to fit LASSO models.\cite{glmnet1, glmnet2} In order to select $\lambda$, we use a $10$-fold cross-validation approach on a separate held-out training set. We chose that $\lambda$ which produced a mean cross-validated error within $1$ standard error of the minimum, thus favouring a sparser model than the global minimima.
+In this thesis, we used the \texttt{glmnet} R package to fit LASSO models.\cite{glmnet1, glmnet2} In order to select $\lambda$, we use a $10$-fold cross-validation approach on a separate held-out training set. We chose that $\lambda$ which produced a mean cross-validated error within $1$ standard error of the minimum, thus favouring a slightly sparser model than the global minimimum.
 
 \subsection{Other modelling approaches}\label{meth:othermodels}
  
-Linear regression was used as a baseline for comparison with more complicated approaches such as Random Forest. If the same modelling accuracy could be achieved with simple multiple linear regression, this would be a faster and more interpretable modelling framework.
+Linear regression was used as a baseline for comparison with more complicated approaches such as Random Forest (Section \ref{sec:lmpls}). If the  modelling accuracy achieved with Random Forest regression could be matched by simple multiple linear regression, the latter could be preferable as a faster and more interpretable modelling framework. For comparison, linear regression models were fit to matched input feature sets and an intercept term.
 
-Partial least squares (PLS) regression was also used to model compartment profiles. PLS regression is well-suited to highly correlated inputs, employing a dimensionality reduction step to help address this redundancy, yet lacks the interpretability of a multiple linear regression. Similar to RF, PLS regression is aimed at building highly-predictive models rather than understanding singular relationships between a predictor and independent variable.\cite{Tobias1995} The \texttt{plsdepot} R implementation of PLS regression was used in this work.
+Partial least squares (PLS) regression was also used to model compartment profiles (Section \ref{sec:lmpls}). PLS regression is well-suited to highly correlated inputs, employing a dimensionality reduction step to help address this redundancy, yet lacks the interpretability of a multiple linear regression. Similar to RF, PLS regression is aimed at building highly-predictive models rather than understanding singular relationships between a predictor and independent variable.\cite{Tobias1995} The \texttt{plsdepot} R implementation of PLS regression was used in this work.
 
 % XX circle of correlations
 
