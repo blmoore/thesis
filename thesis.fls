@@ -531,9 +531,6 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplbi9o.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmbi.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplbi8r.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplbij8r.tfm
-INPUT figs/genome_org.png
-INPUT ./figs/genome_org.png
-INPUT ./figs/genome_org.png
 INPUT figs/fractals.pdf
 INPUT ./figs/fractals.pdf
 INPUT ./figs/fractals.pdf
@@ -546,6 +543,9 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
+INPUT figs/genome_org.png
+INPUT ./figs/genome_org.png
+INPUT ./figs/genome_org.png
 INPUT 1-methods/methods.tex
 INPUT 1-methods/methods.tex
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplb9t.vf
