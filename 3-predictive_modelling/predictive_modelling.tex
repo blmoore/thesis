@@ -64,8 +64,8 @@ concluded that models built with histone modifications and chromatin
 accessibility data were almost as accurate as those which also
 included binding data for 12 transcription factors.\cite{McLeay2012a} 
 
-A recent key study from the ENCODE consortium used ChIP-seq datasets to predict gene expression in a range
-of cell types as measured by a variety of experimental techniques.\cite{Dong2012} The authors here developed a
+A key study from the ENCODE consortium, that of \citet{Dong2012}, used ChIP-seq datasets to predict gene expression in a range
+of cell types as measured by a variety of experimental techniques. The authors here developed a
 two-stage model which first attempts to classify each transcription
 start site (TSS) into an `on' or `off' state using a powerful ensemble
 classifier technique called Random Forests (RF). The second stage of the
@@ -97,10 +97,10 @@ approach. We can extend this idea to the related domain of nuclear architecture,
 \end{center}
 \end{figure} 
 
-We reimplemented the published modelling framework of \citet{Dong2012} (introduced in Section \ref{sec:dongintro}) to 
+We reimplemented the published modelling framework of \citet{Dong2012} to 
 replicate their results and analyse the strengths and caveats of their approach. 
 
-We were able to reproduce the reported results and highly accurate models of transcriptional output. An example is shown for a model of CAGE expression in the H1 hESC cell type (Fig. \ref{fig:dongres}). Note that not all variables used in \citet{Dong2012} were made available for this particular modelling scenario, however the Pearson correlation between predicted and observed expression ($0.87$) is above the study's median value ($0.83$), and in-line with other models predicting CAGE data (median $PCC \approx 0.87$).\cite{Dong2012}
+We were able to reproduce the reported results and generate highly accurate models of transcriptional output. An example is shown for a model of CAGE expression in the H1 hESC cell type (Fig. \ref{fig:dongres}). Note that not all variables used in \citet{Dong2012} were made available for this particular modelling scenario, however the Pearson correlation between predicted and observed expression ($0.87$) is above the study's median value ($0.83$), and in-line with other models predicting CAGE data (median $PCC \approx 0.87$).\cite{Dong2012}
 
 We also re-calculated measures of variable importance for this model of transcription (Fig. \ref{fig:dongres}). We note some small variations from the example model shown in \citet{Dong2012} which was predicting cytosolic CAGE data recorded in K562 cells. This hints at some degree of some variability between cell type models, though broad similarities also exist such as both models ranking DNase I hypersensitivity as a relatively informative variable (Fig. \ref{fig:dongres}).
 
@@ -153,7 +153,7 @@ bins.\cite{Dong2012}
 \end{center}
 \end{figure} 
 
-The justification for such an approach hinges on the idea that the multitude of input features (mostly histone modifications and DNA binding proteins) have a variety of biological functions, and so the bestbin method is one way of learning these functions in an automated and unsupervised way. For example, the histone modification H3K36me3 is understood to be painted across exons that are being actively-transcribed,\cite{Tippmann2012, Kolasinska-Zwierz2009, Schaft2003} thus the genome-wide summary statistic that best captures this function is likely the whole-gene measurement, rather than the level of H3k36me3 at a gene's TSS or upstream promoter. A re-analysis of ENCODE data used in \citet{Dong2012} highlights this kind of variability across input features (Fig. \ref{fig:dongtssprof}). Some marks clearly are enriched directly over TSS (CTCF, DNase; Fig. \ref{fig:dongtssprof}) while others show enrichments along the gene body (H3K36me3, H4K20me1; Fi.g \ref{fig:dongtssprof}) as well as more-complex, asymmetrical "shoulder" patterns (H3K27me3, H3K9ac; Fig. \ref{fig:dongtssprof}). Bestbin will therefore, to some degree, capture these spatial relationships without \emph{a priori} specification.
+The justification for such an approach hinges on the idea that the multitude of input features (mostly histone modifications and DNA binding proteins) have a variety of biological functions, and so the bestbin method is one way of learning these functions in an automated and unbiased way. For example, the histone modification H3K36me3 is understood to be painted across exons that are being actively-transcribed,\cite{Tippmann2012, Kolasinska-Zwierz2009, Schaft2003} thus the genome-wide summary statistic that best captures this function is likely the whole-gene measurement, rather than the level of H3k36me3 at a gene's TSS or upstream promoter. A re-analysis of ENCODE data used in \citet{Dong2012} highlights this kind of variability across input features (Fig. \ref{fig:dongtssprof}). Some marks clearly are enriched directly over TSS (CTCF, DNase; Fig. \ref{fig:dongtssprof}) while others show enrichments along the gene body (H3K36me3, H4K20me1; Fi.g \ref{fig:dongtssprof}) as well as more-complex, asymmetrical "shoulder" patterns (H3K27me3, H3K9ac; Fig. \ref{fig:dongtssprof}). Bestbin will therefore, to some degree, capture these spatial relationships without \emph{a priori} specification.
 
 % Dissection of best bin (bestbinDetermination.pdf ?)
 
@@ -169,7 +169,7 @@ Variable importance is measure by decrease in Gini coefficient for the RF classi
 \end{center} 
 \end{figure} 
 
-\subsection{Model adjustments}\label{sec:dongextend}
+\subsection{Model exploration}\label{sec:dongextend}
 
 We attempted to improve the accuracy of predicted expression values
 produced by \citet{Dong2012} through increasing the number of informative
@@ -194,7 +194,7 @@ the replication timing data
 appeared only slightly more informative than the control ChIP-seq input
 measurements when evaluated with relative importance metrics
 (Fig. \ref{fig:relimp}), implying that large-scale chromatin domains
-and do not have significant influence on the expression of the genes resident within them. 
+and have relatively little influence on the expression of the genes resident within them. 
 
 \section{Modelling FANTOM5 expression data}
 
@@ -253,7 +253,7 @@ training data used in Fig. \ref{fig:model}).
 %measurements from a number of different sources to predict expression
 %in a matched cell-type reported a predictive correlation of 0.77.\cite{Karlic2010} The ENCODE consortium, on the other hand, went to some lengths to standardise protocols and minimise batch effects between samples.\cite{Dunham2012} 
 
-\subsection{\emph{Bestbin} analysis}
+\subsection{\emph{Bestbin} location}
 
 We again implemented the previously-described `bestbin' strategy\cite{Dong2012} (Section \ref{sec:dongbestbin}) to objectively
 select the most-correlated binned signal for each chromatin H1 hESC
@@ -283,23 +283,7 @@ We find that bestbin selections are often highly consistent across sub-samples, 
 bestbins match known biological mechanisms; for example the H3K36me3
 mark's bestbin is consistently the whole gene measurement (Fig. \ref{fig:bestbin}) and this
 mark is known to be enriched in actively transcribed
-exons.\cite{Tippmann2012, Kolasinska-Zwierz2009, Schaft2003} The negative control variable (ChIP-seq input) shows no strong location bias, as expected (Fig. \ref{fig:bestbin}). Other distributions are less easily explained, such as those features showing a tight distribution of informative regions slightly downstream of the TSS (H3K9ac, H4Kme2/3 and H3K79me2; Fig. \ref{fig:bestbin}).
-
-
-% Cut out timecourse stuff?
-
-%Having built a reasonable model of $t_0$ expression, the next stage of
-%this preliminary analysis was to consider successive timepoints. In the
-%available CD34+ differentiation dataset, this consisted of expression
-%data recorded at three
-%timepoints (days 0, 3 and 9---hereafter $t_0$, $t_3$ and $t_9$
-%respectively). However genome-wide expression
-%was highly correlated between each of these timepoints (Pearson correlation coefficients: $t_0, t_3 = 0.911; ~t_0,t_9 =
-%0.913; ~t_3,t_9 = 0.977$), and this high correlation meant that the
-%genome-wide model performed essentially equally well regardless of the
-%expression timepoint it was trained or tested on. In future analyses, higher-resolution timecourses may offer
-%more interesting variation or alternatively genes that remain invariant
-%throughout the timecourse could be filtered out of the dataset. 
+exons.\cite{Tippmann2012, Kolasinska-Zwierz2009, Schaft2003} The negative control variable (ChIP-seq input) shows no strong location bias, as expected (Fig. \ref{fig:bestbin}). Other distributions are less easily explained, such as those features showing a tight distribution of informative regions slightly downstream of the TSS (H3K9ac, H4Kme2/3 and H3K79me2; Fig. \ref{fig:bestbin}). In the case of H3K9ac, we note that the selected bestbin appears to coincide with the highest summit of its bimodal average profile over all TSS (shown in Fig. \ref{fig:dongtssprof}).
 
 \section{Modelling higher order chromatin}\label{sec:modhoc}
 
@@ -321,8 +305,9 @@ We built Random Forest (RF) regression models (Methods \ref{sec:rf}) to predict 
 }\label{fig:modelres}
 \end{center} 
 \end{figure} 
+% XX include actual selected best bins in the whole model
 
-Our predictive models were also assessed in terms of classification performance, i.e. did the model correctly assign each block to an A or  B compartment. Instead of retraining a classifier and building parallel models, for an estimate of classification accuracy we threshold our regression predictions (Methods \ref{sec:modelperf}). We found our RF models achieved high classification accuracy with $\geq82\%$ of all $1$ Mb genomic bins correctly assigned in each cell type (Fig. \ref{fig:modelres}). 
+Our predictive models were also assessed in terms of classification performance, i.e. did the model correctly assign each block to an A or  B compartment. Instead of training a classifier, thereby constructing a second model, we threshold our regression predictions at $0$ (Methods \ref{sec:modelperf}). We found our RF models achieved high classification accuracy with $\geq82\%$ of all $1$ Mb genomic bins correctly assigned in each cell type (Fig. \ref{fig:modelres}). 
 
 This predictive performance underlines the strong connection between locus-level features and higher order chromatin structure previously noted by \citet{Lieberman2009} Given such highly-predictive models can be generated, it is then of interest to dissect said models in an attempt to understand the nature of this captured relationship.
 
