@@ -85,9 +85,9 @@
 \BOOKMARK [1][-]{section.4.1}{4.1 Introduction}{chapter.4}% 85
 \BOOKMARK [1][-]{section.4.2}{4.2 Extending Dong et al. }{chapter.4}% 86
 \BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Bestbin method}{section.4.2}% 87
-\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Model adjustments}{section.4.2}% 88
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Model exploration}{section.4.2}% 88
 \BOOKMARK [1][-]{section.4.3}{4.3 Modelling FANTOM5 expression data}{chapter.4}% 89
-\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Bestbin analysis}{section.4.3}% 90
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Bestbin location}{section.4.3}% 90
 \BOOKMARK [1][-]{section.4.4}{4.4 Modelling higher order chromatin}{chapter.4}% 91
 \BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 Predictive model}{section.4.4}% 92
 \BOOKMARK [2][-]{subsection.4.4.2}{4.4.2 Cross-application}{section.4.4}% 93
