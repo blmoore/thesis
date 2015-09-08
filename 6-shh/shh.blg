@@ -5,9 +5,9 @@ The style file: ../thesis.bst
 Database file #1: /Users/benmoore/Documents/library.bib
 Database file #2: /Users/benmoore/Documents/customrefs.bib
 Warning--entry type for "fastqc" isn't style-file defined
---line 122 of file /Users/benmoore/Documents/customrefs.bib
+--line 124 of file /Users/benmoore/Documents/customrefs.bib
 Warning--entry type for "lingo" isn't style-file defined
---line 144 of file /Users/benmoore/Documents/customrefs.bib
+--line 146 of file /Users/benmoore/Documents/customrefs.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--there's a number but no volume in Anderson2014a
 Warning--empty journal in Hill2013a
