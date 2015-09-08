@@ -317,12 +317,12 @@ INPUT ./figs/genome_org.png
 INPUT ./figs/genome_org.png
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplb9o.tfm
-INPUT intro.bbl
-INPUT intro.bbl
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/palatino/pplb9o.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/palatino/pplbj8r.tfm
+INPUT intro.bbl
+INPUT intro.bbl
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT intro.aux
 INPUT ./intro.out
