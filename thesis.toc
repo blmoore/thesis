@@ -87,9 +87,9 @@
 \contentsline {section}{\numberline {4.1}Introduction}{57}{section.4.1}
 \contentsline {section}{\numberline {4.2}Extending Dong \emph {et al.} }{58}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}\emph {Bestbin} method}{59}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Model adjustments}{61}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Model exploration}{61}{subsection.4.2.2}
 \contentsline {section}{\numberline {4.3}Modelling FANTOM5 expression data}{62}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}\emph {Bestbin} analysis}{63}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}\emph {Bestbin} location}{63}{subsection.4.3.1}
 \contentsline {section}{\numberline {4.4}Modelling higher order chromatin}{65}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Predictive model}{65}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Cross-application}{66}{subsection.4.4.2}
