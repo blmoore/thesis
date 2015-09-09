@@ -9,50 +9,49 @@ Warning--entry type for "fastqc" isn't style-file defined
 Warning--entry type for "lingo" isn't style-file defined
 --line 146 of file /Users/benmoore/Documents/customrefs.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Warning--there's a number but no volume in Anderson2014a
 Warning--empty journal in Hill2013a
 Warning--there's a number but no volume in Hill2013a
 Warning--there's a number but no volume in Lesne2014
 Warning--empty journal in Williamson2014
-You've used 27 entries,
+You've used 26 entries,
             3024 wiz_defined-function locations,
-            793 strings with 11523 characters,
-and the built_in function-call counts, 36119 in all, are:
-= -- 3780
-> -- 1101
+            787 strings with 11339 characters,
+and the built_in function-call counts, 34949 in all, are:
+= -- 3656
+> -- 1070
 < -- 7
-+ -- 792
-- -- 283
-* -- 2703
-:= -- 3946
-add.period$ -- 52
-call.type$ -- 27
-change.case$ -- 135
-chr.to.int$ -- 28
-cite$ -- 32
-duplicate$ -- 3768
-empty$ -- 2579
-format.name$ -- 363
-if$ -- 7421
++ -- 770
+- -- 275
+* -- 2614
+:= -- 3816
+add.period$ -- 50
+call.type$ -- 26
+change.case$ -- 130
+chr.to.int$ -- 27
+cite$ -- 30
+duplicate$ -- 3645
+empty$ -- 2493
+format.name$ -- 352
+if$ -- 7182
 int.to.chr$ -- 1
-int.to.str$ -- 28
-missing$ -- 313
-newline$ -- 110
-num.names$ -- 81
-pop$ -- 1901
+int.to.str$ -- 27
+missing$ -- 303
+newline$ -- 106
+num.names$ -- 78
+pop$ -- 1840
 preamble$ -- 1
-purify$ -- 108
+purify$ -- 104
 quote$ -- 0
-skip$ -- 581
+skip$ -- 564
 stack$ -- 0
-substring$ -- 4419
-swap$ -- 838
+substring$ -- 4278
+swap$ -- 810
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 162
-warning$ -- 5
-while$ -- 235
+type$ -- 156
+warning$ -- 4
+while$ -- 227
 width$ -- 0
-write$ -- 318
-(There were 7 warnings)
+write$ -- 306
+(There were 6 warnings)
