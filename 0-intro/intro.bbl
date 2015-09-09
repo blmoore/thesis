@@ -1,4 +1,4 @@
-\begin{thebibliography}{93}
+\begin{thebibliography}{94}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -298,6 +298,12 @@ Grosberg AY, Nechaev S, Shakhnovich E (1988) {The role of topological
   constraints in the kinetics of collapse of macromolecules}.
 \newblock \emph{Journal de Physique}, \textbf{49}(12): 2095--2100.
 
+\bibitem[{Grosberg \emph{et~al.}(1993)Grosberg, Grosberg, Rabin, Rabin, Havlin,
+  Havlin, Neer and Neer}]{Grosberg1993}
+Grosberg a, Grosberg a, Rabin Y, Rabin Y, Havlin S, Havlin S, Neer a, Neer a
+  (1993) {Crumpled Globule Model of the Three-Dimensional Structure of DNA}.
+\newblock \emph{Europhysics Letters (EPL)}, \textbf{23}(5): 373--378.
+
 \bibitem[{Kadauke and Blobel(2009)}]{Kadauke2009a}
 Kadauke S, Blobel Ga (2009) {Chromatin loops in gene regulation}.
 \newblock \emph{Biochimica et Biophysica Acta - Gene Regulatory Mechanisms},
@@ -329,7 +335,7 @@ Blackwood EM, Kadonaga JT (1998) {Going the distance: a current view of
 \bibitem[{Tolhuis \emph{et~al.}(2002)Tolhuis, Palstra, Splinter, Grosveld and
   {De Laat}}]{Tolhuis2002}
 Tolhuis B, Palstra RJ, Splinter E, Grosveld F, {De Laat} W (2002) {Looping and
-  interaction between hypersensitive sites in the active ??-globin locus}.
+  interaction between hypersensitive sites in the active beta-globin locus}.
 \newblock \emph{Molecular Cell}, \textbf{10}(6): 1453--1465.
 
 \bibitem[{van~de Corput \emph{et~al.}(2012)van~de Corput, de~Boer, Knoch, van
@@ -373,7 +379,7 @@ Filippova GN, Fagerlie S, Klenova EM, Myers C, Dehner Y, Goodwin G, Neiman PE,
   Grosveld, Galjart and {De Laat}}]{Splinter2006}
 Splinter E, Heath H, Kooren J, Palstra RJ, Klous P, Grosveld F, Galjart N, {De
   Laat} W (2006) {CTCF mediates long-range chromatin looping and local histone
-  modification in the ??-globin locus}.
+  modification in the beta-globin locus}.
 \newblock \emph{Genes and Development}, \textbf{20}(17): 2349--2354.
 
 \bibitem[{Phillips-Cremins \emph{et~al.}(2013)Phillips-Cremins, Sauria, Sanyal,
