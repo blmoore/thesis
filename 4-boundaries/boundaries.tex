@@ -38,7 +38,7 @@
 
 \section{Introduction}
 
-A succession of studies have defined chromatin domains of different types, for example: chromosome compartments;\cite{Lieberman2009} topological associating domains (TADs);\cite{Dixon2012} contact and loop domains;\cite{Rao2014} physical domains;\cite{Sexton2012, Hou2012} and others.\cite{Filippova2014} The existence of these domains necessitates "boundary regions" either between consecutive domains or bookending more sparsely-positioned domains, however the functional relevance of said boundary regions is still open to debate.
+A succession of studies have defined chromatin domains of different types, for example: A and B chromosome compartments;\cite{Lieberman2009} topologically associating domains (TADs);\cite{Dixon2012} contact and loop domains;\cite{Rao2014} physical domains;\cite{Sexton2012, Hou2012} and others.\cite{Filippova2014} The existence of these domains necessitates "boundary regions" either between consecutive domains or bookending more separated domains, however the functional relevance of said boundary regions is still open to debate.
 
 In their study of topological domains, \citet{Dixon2012} identified average enrichments over TAD boundary regions in both human and mouse for various features including CTCF and PolII. Boundaries were also enriched for signs of active transcription, such as with the histone modification H3k36me3.\cite{Dixon2012} These results, coupled with an observable enrichment for promoters at domain boundaries, have lead to the theory that boundaries may act as an additional layer of transcriptional control.\cite{Sexton2015} However an alternative theory  is that if chromatin domains represent co-regulatory regions as is widely thought,\cite{LeDily2014, Nora2013, Sexton2015} boundaries themselves could be mere side-effects and as such of limited biological interest.
 
@@ -56,7 +56,7 @@ The mammalian genome is organized into topologically associating domains (TADs),
 
 \subsection{TAD boundaries}
 
-We derived TAD boundaries according to established methods (see Methods \ref{meth:tadcalling}) for all three cell types under study. We then sought evidence for significantly enriched or depleted features at TAD boundary regions using a conservative approach (a nonparametric statistical test and Bonferroni multiple testing correction, see Methods \ref{tads}).
+We derived TAD boundaries from uniformly reprocessed Hi-C data (Chapter \ref{chap:hiccomparison}) according to established methods (see Methods \ref{meth:tadcalling}) for all three cell types under study. We then sought evidence for significantly enriched or depleted features at TAD boundary regions using a conservative approach (a nonparametric statistical test and Bonferroni multiple testing correction, see Methods \ref{tads}).
 
 \begin{figure}
 \begin{center} 
@@ -76,7 +76,7 @@ Our findings confirmed the previously reported peaks (CTCF and POL2) and dip (H3
 
 Where neighbouring genomic regions occupy contrasting A and B nuclear
 compartments, the disparity implies the presence of a boundary
-region. Putative compartment boundaries were identified by using an
+region. We identified putative compartment boundaries using an
 HMM to infer the state sequence of A/B compartments across the genome
 based on observed principal component eigenvectors (Section \ref{sec:compcalls}). Analogously to the
 TAD boundary analysis we then sought significant enrichments or
@@ -136,7 +136,7 @@ Results of this significance testing, along with selected boundary profiles, are
 implicated in chromosome architecture (e.g. CTCF, YY1, RAD21), but also note broad enrichments for classes of input features associated with transcriptional processes (e.g. POL2, TBP, H3K9ac). 
 
 Reflecting their different scales, we find enrichment and depletion profiles typically
-spanning regions of up to 500 kb for TAD boundaries but those over compartment boundaries often span more than a megabase (Fig. \ref{fig:boundarysummary}). We expect part of the reason for this discrepancy is the resolutions at which domains were called: TADS are resolved in 40 kb while compartment boundaries fall between megabase-sized bins. A further consideration is that larger numbers of TAD boundaries were called in the H1 hESC cell line, due its more deeply-sequenced Hi-C library (Section \ref{sec:calledtads}), giving greater statistical power to detect enrichments thus resulting in smaller $p$-values (Fig. \ref{fig:boundarysummary}). The lower resolution megabase bins used in compartment calling help to do not suffer from this issue.
+spanning regions of up to 500 kb for TAD boundaries but those over compartment boundaries often span more than a megabase (Fig. \ref{fig:boundarysummary}). We expect part of the reason for this discrepancy is the resolutions at which domains were called: TADS are resolved in 40 kb while compartment boundaries fall between megabase-sized bins. A further consideration is that larger numbers of TAD boundaries were called in the H1 hESC cell line, due its more deeply-sequenced Hi-C library (Section \ref{sec:calledtads}), giving greater statistical power to detect enrichments thus resulting in smaller $p$-values (Fig. \ref{fig:boundarysummary}). The lower resolution megabase bins used in compartment calling do not suffer from this issue.
 
 %Altogether a large number of features show significant, though often modest, association with TAD and/or compartment boundaries. In terms of overall complexity boundaries (measured as the number of strongly enriched features) is notably higher in H1 hESC than in the other two, more differentiated, cell types (Fig. \ref{fig:boundarysummary}), involving large increases in the binding of sequence specific factors such as SP1 and JUND.
 
@@ -159,7 +159,7 @@ be enriched for their respective features in terms of raw signal).
 \end{center}
 \end{figure} 
 
-Significant boundary enrichments for both CTCF in YY1 are evident in all cell
+Significant boundary enrichments for both CTCF and YY1 are evident in all cell
 types at both compartment and TAD boundaries (Fig. \ref{fig:boundarysummary}), which is intriguing given the evidence that YY1 and CTCF
 cooperate to affect long distance interactions.\cite{Atchison2014} Co-binding of CTCF with YY1 has also been shown
 to identify a subset of highly conserved CTCF sites.\cite{Schwalie2013} This colocation may also therefore be
@@ -183,7 +183,7 @@ influences of CTCF and cohesin in organising chromatin structure.\cite{Zuin2013,
 
 \citet{Dixon2012} identified short interspersed element (SINE) repeats as being enriched over TAD boundaries and suggested roles for these repeats in altering genome organisation, in line with prior evidence.\cite{Dixon2012, Lunyak2007} For example, SINE elements are thought to be responsible for spreading CTCF binding sites through mammalian genomes.\cite{Schmidt2012}  Analysis of recent high-resolution Hi-C data again reported a SINE B2 link with CTCF loops in mice,\cite{Rao2014} and examples have been reported of human genes whose expression has been altered by CTCF sites inserted through Alu repeats.\cite{Ruiz-Narvaez2008} Together these results suggest repeats could be a key component in the makeup of domain boundaries.
 
-To investigate this, we used the \texttt{RepeatMasker}\cite{Tarailo-Graovac2009} software package to call repeat classes and families in the \texttt{hg19} and \texttt{mm10} genome assemblies. Counts for each annotated feature were then average over boundaries as described previously (Methods \ref{boundaries}).
+To investigate this, we used the \texttt{RepeatMasker}\cite{Tarailo-Graovac2009} software package to call repeat classes and families in the \texttt{hg19} and \texttt{mm10} genome assemblies. Counts for each annotated feature were then averaged over boundaries as described previously (Methods \ref{boundaries}).
 
 \begin{figure}
 \begin{center} 
@@ -207,9 +207,9 @@ Boundary profiles (Fig. \ref{fig:rep_classprofiles}) were tested for enrichment 
 \end{center}
 \end{figure} 
 
-We also find LINEs are significantly depleted over TAD boundaries in two cell types, and borderline significant in the third, though with modest effect sizes in each case (Fig. \ref{fig:rep_classbubble}). DNA repeats appear to be enriched at both boundary types (Fig. \ref{fig:rep_classprofiles}), however these observations do not surpass our significance threshold ($\alpha = 0.05$) after multiple testing correction (Fig. \ref{fig:rep_classbubble}).
+We also find long interspersed elements (LINEs) are significantly depleted over TAD boundaries in two cell types, and borderline significant in the third, though with modest effect sizes in each case (Figs. \ref{fig:rep_classprofiles}, \ref{fig:rep_classbubble}). DNA repeats appear to be enriched at both boundary types (Fig. \ref{fig:rep_classprofiles}), however these observations do not surpass our significance threshold ($\alpha = 0.05$) after multiple testing correction (Fig. \ref{fig:rep_classbubble}).
 
-Repeat classes can be broken into smaller repeat families. \citet{Dixon2012} reported that the Alu (or SINE B2 in mouse) repeat families are enriched over TAD boundaries. Again we can reproduce this finding and extend the analysis to compartment boundaries, where we do not see a significant enrichment for Alu repeat elements (Fig. \ref{fig:rep_fambubble}). Surprisingly almost all other repeat families show no significant departure from their expected levels over TAD or compartment boundaries.
+Repeat classes can be broken into smaller repeat families. \citet{Dixon2012} reported that the Alu repeat family of the SINE repeat class (or SINE B2 in mouse) is enriched over TAD boundaries. Again we can reproduce this finding and extend the analysis to compartment boundaries, where we do not see a significant enrichment for Alu repeat elements (Fig. \ref{fig:rep_fambubble}). Surprisingly almost all other repeat families show no significant departure from their expected levels over TAD or compartment boundaries.
 
 \begin{figure}
 \begin{center} 
@@ -227,7 +227,7 @@ As per Fig. \ref{fig:rep_classbubble} but for a higher resolution repeat classif
 
 \section{TAD boundary prediction}\label{sec:boundarypred}
 
-We have shown TAD and compartment domain boundaries to be well-marked by a variety of features. Compartment boundaries are successfully predicted as a side-effect of modelling the continuous compartment profile eigenvector (Section \ref{sec:modhoc}) however a related measure of activity and repression does not exist for TADs. Instead then, in this section we attempt to predict TAD boundaries within a class-balanced classification framework.
+We have shown TAD and compartment domain boundaries to be well-marked by a variety of features. Compartment boundaries are successfully predicted as a side-effect of modelling the continuous compartment profile eigenvector (Section \ref{sec:modhoc}) however a related measure of activity and repression, or other comparable profile we might want to predict, does not exist for TADs. Instead then, in this section we attempt to predict TAD boundaries within a class-balanced classification framework.
 
 %We attempted to model TAD boundaries in a variety of ways: firstly a using a class-balanced classification framework and secondly through indirect models of directionality index and the downstream domain-caller HMM state.\cite{Dixon2012}
 
@@ -285,9 +285,9 @@ The ten most important variables in each boundary classification model are shown
 
 \section{MetaTAD boundaries}\label{sec:metatads}
 
-Our collaborators in the Pombo lab (Max Delbr\"{u}ck Center, Berlin) uncovered the concept of "metaTADs": sequential aggregations of adjacent and strongly-interacting TADs that form a hierarchy of domain organisation covering each chromosome.
+Our collaborators in the Pombo lab (Max Delbr\"{u}ck Center, Berlin) proposed the concept of "metaTADs": sequential aggregations of adjacent and strongly-interacting TADs that form a hierarchy of domain organisation covering each chromosome.
 
-MetaTADs are constructed simply by performing constrained hierarchical clustering based on inter-domain contacts. That is, those two neighbour TADs that have the largest number of inter-TAD contacts are linked to form a metaTAD and this process is recursed until all TADs on a chromosome are joined in a tree-like network which fully describes the hierarchical nature of domain organisation.
+MetaTADs are constructed simply by performing constrained hierarchical clustering based on inter-domain contacts. That is, those two neighbour TADs that have the largest number of inter-TAD contacts are linked to form a metaTAD and this process is recursed until all TADs on a chromosome are joined into a single tree which fully describes the hierarchical nature of domain organisation (\emph{manuscript under revision}).
 
 My contribution to this work was to explore these newly-described metaTAD structures and perform boundary analysis as was done with TADs and compartments (Section \ref{sec:boundaryenrichments}). A testable hypothesis, for example, is that boundaries of larger metaTAD structures could display greater enrichments for boundary-defining features.
 
@@ -335,7 +335,7 @@ Boundary average-o-grams are shown for TAD and metaTAD boundaries with variable 
 
 \subsection{Lamina associated domains}\label{sec:mtlads}
 
-We report a coincidence of metaTAD boundaries and lamina associated domains (LADs), and at a greater level than that observed with smaller TADs (Fig. \ref{fig:mtfeats}). This hints at an association between metaTADs and LADs which can be further investigated.
+We report a colocation of metaTAD boundaries and lamina associated domains (LADs), and at a greater level than that observed with smaller TADs (Fig. \ref{fig:mtfeats}). This hints at an association between metaTADs and LADs which merits further investigation.
 
 High resolution LAD data in mouse embryonic stem cells were retrieved from \citet{Peric-Hupkes2010} in the form of continuous measures of lamin-B1 association produced by the DamID technique, known to reflect proximity to the nuclear lamin.\cite{Pickersgill2006} This measure of lamina association was then processed in windows around each metaTAD and TAD boundary, and profiles were combined to form a heatmap (Fig. \ref{fig:mtlamin}).
 
@@ -418,7 +418,7 @@ G-bands, assayed at metaphase, often correspond with interphase A/B compartments
 \end{center}
 \end{figure} 
 
-The genome wide overlap of compartment A and B regions with particular G-band classes is nonrandom, and suggests a greater correspondence than that of simple boundary distances. Regions assigned to compartment A are significantly over-represented within lighter staining (especially G-negative) bands, while compartment B regions are over-represented in the most darkly staining (G-positive) bands (Fig. \ref{fig:gbands}). Approximately $40\%$ of the genome jointly occupies interphase compartment A as well as \texttt{gneg} or \texttt{gpos25} metaphase G-bands, or occupies the interphase B compartment as well as \texttt{gpos75} or \texttt{gpos100} at metaphase (Fig. \ref{fig:gbands}). Similar trends are seen across all three cell types (\emph{data not shown}). 
+The genome wide overlap of compartment A and B regions with particular G-band classes is nonrandom, and suggests a greater correspondence than that of simple boundary distances. Regions assigned to compartment A are significantly over-represented within lighter staining (especially G-negative) bands, while compartment B regions are over-represented in the most darkly staining (G-positive) bands (Fig. \ref{fig:gbands}). Approximately $40\%$ of the genome jointly occupies interphase compartment A as well as the lightly-stained \texttt{gneg} or \texttt{gpos25} metaphase G-bands, or occupies the interphase B compartment in addition to the well-stained \texttt{gpos75} or \texttt{gpos100} bands at metaphase (Fig. \ref{fig:gbands}). Similar trends are seen across all three cell types (\emph{data not shown}). 
 
 This agreement is not wholly unexpected given the known characteristics of G-negative and G-positive bands, with contrasting gene density, GC content and replication timing\cite{Furey2003} that is strongly reminiscent of the contrasts between interphase A and B compartments.\cite{Lieberman2009} Despite showing an association, these data agree with experimental evidence that many domain boundaries are not well preserved between interphase and metaphase. However there is evidence for relationships between the broad structural categories of compartments and G-bands which may reflect similarities in the degree of compaction throughout the cell cycle.
 

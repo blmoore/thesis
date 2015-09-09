@@ -1,4 +1,4 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{42}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{ENCODE(2012)}]{Dunham2012}
@@ -236,5 +236,9 @@ Deng H, Runger G (2013) {Gene selection with guided regularized random forest}.
 \bibitem[{LeCun \emph{et~al.}(2015)LeCun, Bengio and Hinton}]{LeCun2015}
 LeCun Y, Bengio Y, Hinton G (2015) {Deep learning}.
 \newblock \emph{Nature}, \textbf{521}(7553): 436--444.
+
+\bibitem[{Schmidhuber(2015)}]{Schmidhuber2014}
+Schmidhuber J (2015) {Deep learning in neural networks: An overview}.
+\newblock \emph{Neural Networks}, \textbf{61}: 85--117.
 
 \end{thebibliography}
