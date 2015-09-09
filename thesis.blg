@@ -3,7 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: thesis.bst
 A level-1 auxiliary file: 0-intro/intro.aux
-Reallocated field_info (elt_size=4) to 11050 items from 5000.
+Reallocated field_info (elt_size=4) to 11125 items from 5000.
 Database file #1: /Users/benmoore/Documents/library.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Database file #2: /Users/benmoore/Documents/customrefs.bib
@@ -28,49 +28,48 @@ Warning--there's a number but no volume in Huang2008
 Warning--missing publisher in rossum1995
 Warning--empty journal in Vizan2014
 Warning--there's a number but no volume in Tarailo-Graovac2009
-Warning--there's a number but no volume in Anderson2014a
 Warning--empty journal in Hill2013a
 Warning--there's a number but no volume in Hill2013a
 Warning--there's a number but no volume in Lesne2014
-You've used 242 entries,
+You've used 245 entries,
             3024 wiz_defined-function locations,
-            2119 strings with 87650 characters,
-and the built_in function-call counts, 332047 in all, are:
-= -- 34852
-> -- 9940
-< -- 90
-+ -- 7153
-- -- 2543
-* -- 24931
-:= -- 36088
-add.period$ -- 481
-call.type$ -- 242
-change.case$ -- 1213
-chr.to.int$ -- 243
-cite$ -- 258
-duplicate$ -- 34670
-empty$ -- 23878
-format.name$ -- 3312
-if$ -- 68390
+            2140 strings with 87996 characters,
+and the built_in function-call counts, 333656 in all, are:
+= -- 35004
+> -- 9953
+< -- 93
++ -- 7159
+- -- 2547
+* -- 25046
+:= -- 36318
+add.period$ -- 487
+call.type$ -- 245
+change.case$ -- 1228
+chr.to.int$ -- 246
+cite$ -- 260
+duplicate$ -- 34820
+empty$ -- 24025
+format.name$ -- 3319
+if$ -- 68713
 int.to.chr$ -- 8
-int.to.str$ -- 243
-missing$ -- 2882
-newline$ -- 968
-num.names$ -- 725
-pop$ -- 16643
+int.to.str$ -- 246
+missing$ -- 2906
+newline$ -- 980
+num.names$ -- 734
+pop$ -- 16689
 preamble$ -- 1
-purify$ -- 968
+purify$ -- 980
 quote$ -- 0
-skip$ -- 5888
+skip$ -- 5926
 stack$ -- 0
-substring$ -- 41124
-swap$ -- 7796
+substring$ -- 41277
+swap$ -- 7862
 text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1446
-warning$ -- 16
-while$ -- 2162
+type$ -- 1464
+warning$ -- 15
+while$ -- 2176
 width$ -- 0
-write$ -- 2878
+write$ -- 2914
 (There was 1 error message)
