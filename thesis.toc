@@ -99,7 +99,7 @@
 \contentsline {section}{\numberline {4.5}Technical considerations}{72}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Resolution}{72}{subsection.4.5.1}
 \contentsline {subsection}{\numberline {4.5.2}Other modelling approaches}{75}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Non-independence}{76}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.3}Non-independence}{77}{subsection.4.5.3}
 \contentsline {section}{\numberline {4.6}Parsimonious models from expanded feature sets}{77}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}Stepwise regression}{77}{subsection.4.6.1}
 \contentsline {subsection}{\numberline {4.6.2}LASSO regression}{78}{subsection.4.6.2}
