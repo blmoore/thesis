@@ -50,7 +50,7 @@ Here I discuss a collaborative project involving the use of 4C and 5C data to zo
 \includegraphics[width=3.5in]{figs/shhtad.png}
 \captionsetup{width=\textwidth} 
 \caption[SHH--ZRS contacts occur within a stable TAD.]{ {\bf SHH--ZRS contacts occur within a stable TAD. }
-An approximately 1 Mb region of the mouse genome is shown below a Hi-C contact map (derived from previously published data\cite{Dixon2012}). A clear TAD can be identified spanning from SHH to ZRS, dashed lines show TAD boundaries called by \citet{Dixon2012}. This figure was generated for \citet{Anderson2014a}.
+An approximately 1 Mb region of the mouse genome is shown below a Hi-C contact map (derived from previously published data\cite{Dixon2012}). A clear TAD can be identified spanning from SHH to ZRS, dashed lines show TAD boundaries called by \citet{Dixon2012} %The heatmap was generated for \citet{Anderson2014a}
 }\label{fig:shhtad}
 \end{center} 
 \end{figure} 
@@ -90,7 +90,7 @@ The 4C analysis pipeline, starting from de-multiplexed sequencing reads (\texttt
 \includegraphics[width=5in]{figs/shharc_full.pdf}
 \captionsetup{width=\textwidth} 
 \caption[TSA treatment induces a strong ZRS--\emph{Shh} interaction. ]{ {\bf TSA treatment induces a strong ZRS--\emph{Shh} interaction. }
-4C interactions are shown as edges from source node (ZRS enhancer bait fragment) to targets along an approximately 2 Mb region of chromosome 5. Edge width is proportional to the number of interactions, only highly significant interactions are shown (FDR $q$-value $<5 \times 10 ^{-5}$). Zoomed region shows the number of interactions of the bait region with \emph{Shh} in both untreated and TSA treated (after 24h) samples. Each rectangle is a restriction fragment, coloured by FDR $q$-value indicating the significance of the interaction above expected levels.
+4C interactions are shown as edges from source node (ZRS enhancer bait fragment) to targets along an approximately 2 Mb region of chromosome 5. Edge width is proportional to the number of interactions, only highly significant interactions are shown (FDR $q$-value $<5 \times 10 ^{-5}$). Zoomed region shows the number of interactions of the bait region with \emph{Shh} in both untreated and TSA treated (after 24h) samples. Each green--blue rectangle is a restriction fragment, coloured by FDR $q$-value indicating the significance of the interaction above expected levels.
 }\label{fig:ssharc}
 \end{center} 
 \end{figure} 
@@ -234,7 +234,7 @@ Distances are given in arbitrary units. \emph{Shh} spans two beads of the polyme
 
 \subsection{Repeat simulations}
 
-We have shown what appears to be a structural shift in the ZRS--\emph{Shh} locus per 3D modelling predictions (Section \ref{sec:shh5c}). It is of interest to assess the stability and reproducibility of these results through repeat simulations of the polymer trajectory. At this point it is unclear whether the ZRS--\emph{Shh} bound state represents a firm consensus over the cell population, or an alternative structure with similar optimisation energy to that of the non-contacting state. 
+We have shown what appears to be a structural shift in the ZRS--\emph{Shh} locus by 3D modelling predictions (Section \ref{sec:shh5c}). It is of interest to assess the stability and reproducibility of these results through repeat simulations of the polymer trajectory. At this point it is unclear whether the ZRS--\emph{Shh} bound state represents a firm consensus over the cell population, or an alternative structure with similar optimisation energy to that of the non-contacting state. 
 
 %Due to the use of cell populations we cannot resolve whether such a contact is either constitutive in a certain proportion of cells under study, or an ephemeral yet commonly-occurring interaction.
 
@@ -252,7 +252,7 @@ Repeat simulations indeed appear to recreate the induced ZRS--\emph{Shh} contact
 \end{center} 
 \end{figure} 
 
-We quantified these distances by measuring form the single bead containing ZRS to the two beads which overlap the \emph{Shh} gene (Fig. \ref{fig:3ddist}). While these are not biological replicates, just repeat simulations, we find the distance shift in MD cells is statistically significant at the level of $\alpha = 0.05$ for both bead distances (Mann-Whitney: $d_1: p < 0.012$, $d_2: p < 0.012 $). Distances in the 88fp cell line were not significantly different following TSA treatment (Fig. \ref{fig:3ddist}).
+We quantified these distances by measuring from the single bead containing ZRS to the two beads which overlap the \emph{Shh} gene (Fig. \ref{fig:3ddist}). While these are not biological replicates, just repeat simulations, we find the distance shift in MD cells is statistically significant at the level of $\alpha = 0.05$ for both bead distances (Mann-Whitney: $d_1: p < 0.012$, $d_2: p < 0.012 $). Distances in the 88fp cell line were not significantly different following TSA treatment (Fig. \ref{fig:3ddist}).
 
 \begin{figure}
 \begin{center} 
