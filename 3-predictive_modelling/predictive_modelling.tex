@@ -315,9 +315,9 @@ This predictive performance underlines the strong connection between locus-level
 
 \subsection{Cross-application}\label{sec:xapp}
 
-High predictive accuracy on cell type specific models could be the result of ``over-fitting". In machine-learning, over-fitting refers to the point at which parameters are being optimised to capture noise within a feature set, as well as signal, thereby giving an overoptimistic model performance which would not generalise to another featureset with its own noise profile.
+High predictive accuracy on cell type specific models could be the result of ``overfitting". In machine-learning, overfitting refers to the point at which parameters are being optimised to capture the random errors of a particular sample, on top of any underlying relationship between inputs and predictions, thereby giving an overoptimistic model performance which would not generalise to another featureset with an independent noise profile.\cite{Babyak2004, Hawkins2004}
 
-To test if over-fitting was responsible for our high modelling accuracy, we cross-applied models learnt in one cell type to unseen input data from each of the other two cell types under study. If predictive accuracy is a lot lower on unseen data, this lends evidence to the idea that our models may be overfit to their respective cell types. Conversely, it could be the case that biologically-distinct mechanisms are in place that differ between cell types, preventing a simple cross-application.
+To test if overfitting was responsible for our high modelling accuracy, we cross-applied models learnt in one cell type to unseen input data from each of the other two cell types under study. If predictive accuracy is a lot lower on unseen data, this lends evidence to the idea that our models may be overfit to their respective cell types. Conversely, it could be the case that biologically-distinct mechanisms are in place that differ between cell types, preventing a simple cross-application.
 
 \begin{figure}
 \begin{center} 
