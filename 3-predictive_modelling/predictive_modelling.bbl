@@ -1,4 +1,4 @@
-\begin{thebibliography}{40}
+\begin{thebibliography}{41}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{ENCODE(2012)}]{Dunham2012}
@@ -119,6 +119,13 @@ Hawkins D (2004) {The Problem of Overfitting}.
 \newblock \emph{Journal of Chemical Information and Modeling}, \textbf{44}(1):
   1--12.
 
+\bibitem[{Hastie \emph{et~al.}(2009)Hastie, Tibshirani and
+  Friedman}]{Hastie2001}
+Hastie T, Tibshirani R, Friedman J (2009) \emph{{Elements of Statistical
+  Learning: Data Mining, Inference, and Prediction}}.
+\newblock Springer, 2 edition.
+\newblock ISBN 978-0-387-84858-7.
+
 \bibitem[{Beringer \emph{et~al.}(2015)Beringer, Ballar, Croce and
   Viz}]{Vizan2014}
 Beringer M, Ballar C, Croce LD, Viz P (2015) {Role of PRC2-associated factors
@@ -195,13 +202,6 @@ Whittingham MJ, Stephens Pa, Bradbury RB, Freckleton RP (2006) {Why do we still
 \bibitem[{Tibshirani(1994)}]{Tibshirani1994}
 Tibshirani R (1994) {Regression Selection and Shrinkage via the Lasso}.
 
-\bibitem[{Hastie \emph{et~al.}(2009)Hastie, Tibshirani and
-  Friedman}]{Hastie2001}
-Hastie T, Tibshirani R, Friedman J (2009) \emph{{Elements of Statistical
-  Learning: Data Mining, Inference, and Prediction}}.
-\newblock Springer, 2 edition.
-\newblock ISBN 978-0-387-84858-7.
-
 \bibitem[{Kerppola and Curran(1993)}]{Kerppola1993}
 Kerppola TK, Curran T (1993) {Selective DNA bending by a variety of bZIP
   proteins.}
@@ -232,5 +232,9 @@ Deng H, Runger G (2012) {Feature selection via regularized trees}.
 \bibitem[{Deng and Runger(2013)}]{Deng2013a}
 Deng H, Runger G (2013) {Gene selection with guided regularized random forest}.
 \newblock \emph{Pattern Recognition}, \textbf{46}(12): 3483--3489.
+
+\bibitem[{LeCun \emph{et~al.}(2015)LeCun, Bengio and Hinton}]{LeCun2015}
+LeCun Y, Bengio Y, Hinton G (2015) {Deep learning}.
+\newblock \emph{Nature}, \textbf{521}(7553): 436--444.
 
 \end{thebibliography}
