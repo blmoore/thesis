@@ -1,4 +1,4 @@
-\begin{thebibliography}{242}
+\begin{thebibliography}{245}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -1071,6 +1071,16 @@ Zuber V, Strimmer K (2011) {High-Dimensional Regression and Variable Selection
 Breiman L (2001{\natexlab{c}}) {Random forests}.
 \newblock \emph{Machine learning}, \textbf{45}: 5--32.
 
+\bibitem[{Babyak(2004)}]{Babyak2004}
+Babyak Ma (2004) {What You See May Not Be What You Get: A Brief, Nontechnical
+  Introduction to Overfitting in Regression-Type Models}.
+\newblock \emph{Psychosomatic Medicine}, \textbf{66}(3): 411--421.
+
+\bibitem[{Hawkins(2004)}]{Hawkins2004}
+Hawkins D (2004) {The Problem of Overfitting}.
+\newblock \emph{Journal of Chemical Information and Modeling}, \textbf{44}(1):
+  1--12.
+
 \bibitem[{Beringer \emph{et~al.}(2015)Beringer, Ballar, Croce and
   Viz}]{Vizan2014}
 Beringer M, Ballar C, Croce LD, Viz P (2015) {Role of PRC2-associated factors
@@ -1147,6 +1157,14 @@ Deng H, Runger G (2012) {Feature selection via regularized trees}.
 \bibitem[{Deng and Runger(2013)}]{Deng2013a}
 Deng H, Runger G (2013) {Gene selection with guided regularized random forest}.
 \newblock \emph{Pattern Recognition}, \textbf{46}(12): 3483--3489.
+
+\bibitem[{LeCun \emph{et~al.}(2015)LeCun, Bengio and Hinton}]{LeCun2015}
+LeCun Y, Bengio Y, Hinton G (2015) {Deep learning}.
+\newblock \emph{Nature}, \textbf{521}(7553): 436--444.
+
+\bibitem[{Schmidhuber(2015)}]{Schmidhuber2014}
+Schmidhuber J (2015) {Deep learning in neural networks: An overview}.
+\newblock \emph{Neural Networks}, \textbf{61}: 85--117.
 
 \bibitem[{Nora \emph{et~al.}(2013)Nora, Dekker and Heard}]{Nora2013}
 Nora EP, Dekker J, Heard E (2013) {Segmental folding of chromosomes: A basis
@@ -1250,12 +1268,6 @@ Pickersgill H, Kalverda B, de~Wit E, Talhout W, Fornerod M, van Steensel B
   (2006) {Characterization of the Drosophila melanogaster genome at the nuclear
   lamina.}
 \newblock \emph{Nature genetics}, \textbf{38}(9): 1005--1014.
-
-\bibitem[{Anderson \emph{et~al.}(2014)Anderson, Devenney, Hill and
-  Lettice}]{Anderson2014a}
-Anderson E, Devenney PS, Hill RE, Lettice La (2014) {Mapping the Shh long-range
-  regulatory domain.}
-\newblock \emph{Development (Cambridge, England)}, (September): 1--10.
 
 \bibitem[{Anderson \emph{et~al.}(2012)Anderson, Peluso, Lettice and
   Hill}]{Anderson2012}
