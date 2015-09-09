@@ -1,4 +1,4 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{40}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{ENCODE(2012)}]{Dunham2012}
@@ -108,6 +108,16 @@ Imakaev M, Fudenberg G, McCord RP, Naumova N, Goloborodko A, Lajoie BR, Dekker
   J, Mirny LA (2012) {Iterative correction of Hi-C data reveals hallmarks of
   chromosome organization.}
 \newblock \emph{Nature methods}, \textbf{9}(10): 999--1003.
+
+\bibitem[{Babyak(2004)}]{Babyak2004}
+Babyak Ma (2004) {What You See May Not Be What You Get: A Brief, Nontechnical
+  Introduction to Overfitting in Regression-Type Models}.
+\newblock \emph{Psychosomatic Medicine}, \textbf{66}(3): 411--421.
+
+\bibitem[{Hawkins(2004)}]{Hawkins2004}
+Hawkins D (2004) {The Problem of Overfitting}.
+\newblock \emph{Journal of Chemical Information and Modeling}, \textbf{44}(1):
+  1--12.
 
 \bibitem[{Beringer \emph{et~al.}(2015)Beringer, Ballar, Croce and
   Viz}]{Vizan2014}
