@@ -59,7 +59,7 @@ The final stage in the evolution of the 3C method was an all-versus-all assay, c
 \includegraphics[width=4in]{figs/hic.png}
 \captionsetup{width=\textwidth}
 \caption[Steps in the Hi-C assay.]{ {\bf Steps in the Hi-C assay. } 
-  Schematic of the Hi-C experimental procedure as described in Lieberman Aiden \emph{et al.}\cite{Lieberman2009}
+  Schematic of the Hi-C experimental procedure as described in \citet{Lieberman2009}
 }\label{fig:hicmethod}
 \end{center}
 \end{figure} 
@@ -93,8 +93,8 @@ of euchromatin and heterochromatin, respectively. A compartments were observed t
 \begin{center}
 \includegraphics[width=.75\textwidth]{figs/eigcalc.png}
 \captionsetup{width=\textwidth}
-\caption[Derivation of A/B compartment profile from Hi-C data.]{ {\bf Derivation of A/B compartment profile from Hi-C data.} 
-Observed interaction frequencies (O) are averaged along super-diagonals to give a distance-normalised expected matrix (E). The Pearson correlation of the O/E matrix then can undergo eigenvector expansion; in most cases eigenvector $\mathbf{v}$ with the largest eigenvalue, $\lambda$, then reflects A/B compartmentalisation.\cite{Lieberman2009}
+\caption[Derivation of an A/B compartment profile from Hi-C data.]{ {\bf Derivation of A/B an compartment profile from Hi-C data.} 
+Intrachromosomal observed interaction frequencies (O) are averaged along super-diagonals to give a distance-normalised expected matrix (E). The Pearson correlation of the O/E matrix then can undergo eigenvector expansion; in most cases eigenvector $\mathbf{v}$ with the largest eigenvalue, $\lambda$, then reflects A/B compartmentalisation.\cite{Lieberman2009} Matrices are coloured from blue (lowest values), through yellow, to highest values in red.
 }\label{fig:eigcalc}
 \end{center}
 \end{figure} 
@@ -108,11 +108,11 @@ These A and B  compartments were identified through a continuous principle compo
 \end{enumerate}
 Importantly, this measure holds more information than a simple two-state classification, rather the continuous values can be interpreted as relative levels of compartment identity, hence degrees of compaction or activity.\cite{Dekker2013, Imakaev2012}
 
-\subsection{Topological domains}\label{intro:tads}
+\subsection{Topologically associating domains}\label{intro:tads}
 
 The falling cost of high-throughput sequencing has enabled increasingly deep sequencing of Hi-C experiments. Sequencing depth is the main resolution-limiting resource for this assay; in order to increase the analysis resolution while maintaining the same level of coverage requires an exponential increase in the total amount of sequencing.\cite{Lieberman2009, Tanay2013} Nevertheless such deep sequencing has 
 
-In experiments totalling around two billion total sequencing reads, \citet{Dixon2012} produced Hi-C contact maps in human and mouse cell lines at 40 kb resolution. At the same time, \citet{Nora2012} published an even higher-resolution 5C dataset covering a $4.5$ Mb region of the mouse X chromosome. In both of these studies, the authors uncover what are now known as "topological associative domains" (or TADs), observable as off-diagonal blocks in a contact map which exhibit higher-than-expected self-interaction frequency. With a mean size of around 1 Mb, TADs were recognised as a novel layer of higher order chromatin organisation at a level below the larger A/B compartments (Section \ref{sec:compartments}). TADs have since been reported in a variety of metazoan organisms including dog,\cite{VietriRudan2015} \emph{Drosophila}\cite{Sexton2012, Hou2012} and \emph{C.~elegans}\cite{Crane2015} yet comparable structures are not found in higher plants such as \emph{Arabidopsis}\cite{Feng2014, Wang2015} or in yeast.\cite{Duan2010, Gong2015}
+In experiments totalling around two billion total sequencing reads, \citet{Dixon2012} produced Hi-C contact maps in human and mouse cell lines at 40 kb resolution. At the same time, \citet{Nora2012} published an even higher-resolution 5C dataset covering a $4.5$ Mb region of the mouse X chromosome. In both of these studies, the authors uncover what are now known as "topologically associating domains" (or TADs), observable as off-diagonal blocks in a contact map which exhibit higher-than-expected self-interaction frequency. With a mean size of around 1 Mb, TADs were recognised as a novel layer of higher order chromatin organisation at a level below the larger A/B compartments (Section \ref{sec:compartments}). TADs have since been reported in a variety of metazoan organisms including dog,\cite{VietriRudan2015} \emph{Drosophila}\cite{Sexton2012, Hou2012} and \emph{C.~elegans}\cite{Crane2015} yet comparable structures are not found in higher plants such as \emph{Arabidopsis}\cite{Feng2014, Wang2015} or in yeast.\cite{Duan2010, Gong2015}
 
 \citet{Dixon2012} defined a TAD calling algorithm based on the directional bias of a genomic region's contacts, and used a hidden Markov model to infer blocks of strongly up- or downstream-biased, reasoning that domain boundaries are present when a strongly upstream biased region is adjacent to a region of opposite bias (Fig. \ref{fig:dicalc}). These boundaries themselves were investigated and found to show suggestive functional enrichments for DNA binding proteins including CTCF, long thought to act as an insulator of chromatin state (Section \ref{intro:loops}). Deletion of a  CTCF site has been found to disrupt the corresponding TAD border, while removal of some other enriched factors had little effect.\cite{Nora2012, Zuin2013, Narendra2015}
 \citet{Dixon2012} also performed some comparative analysis, reporting large and significant overlap of domain boundary positions both within species and between human and mouse.
@@ -121,7 +121,7 @@ In experiments totalling around two billion total sequencing reads, \citet{Dixon
 \begin{center}
 \includegraphics[width=2.5in]{figs/di_example.png}
 \captionsetup{width=\textwidth}
-\caption[Dixon \emph{et al.} pipeline for calling topological associating domains.]{ {\bf Dixon \emph{et al.} pipeline for calling topological associating domains.} First a directionality index (DI) is calculated for each bin based on the ratio of upstream:downstream contacts. Secondly a hidden Markov model (HMM) is used to infer the most likely state sequence that emitted the DI variable. Finally a simple rule is applied whereby a run of high-confidence upstream-biased state calls marks the end of a domain. New domains begin with any subsequent downstream-biased state. Gaps between TAD calls can be observed and these are labelled border regions up to a size threshold of 400 kb, whereafter those regions are unclassified.\cite{Dixon2012} Additional details are given in Methods \ref{meth:tadcalling}.
+\caption[Dixon \emph{et al.} pipeline for calling topologically associating domains.]{ {\bf Dixon \emph{et al.} pipeline for calling topologically associating domains.} First a directionality index (DI) is calculated for each bin based on the ratio of upstream:downstream contacts. Secondly a hidden Markov model (HMM) is used to infer the most likely state sequence that emitted the DI variable. Finally a simple rule is applied whereby a run of high-confidence upstream-biased state calls marks the end of a domain. New domains begin with any subsequent downstream-biased state. Gaps between TAD calls can be observed and these are labelled border regions up to a size threshold of 400 kb, whereafter those regions are unclassified.\cite{Dixon2012} Additional details are given in Methods \ref{meth:tadcalling}.
 }\label{fig:dicalc}
 \end{center}
 \end{figure} 

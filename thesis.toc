@@ -14,7 +14,7 @@
 \contentsline {subsection}{\numberline {1.1.1}C-methods and Hi-C}{1}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Hi-C variants}{2}{subsection.1.1.2}
 \contentsline {subsection}{\numberline {1.1.3}Chromosome compartments}{4}{subsection.1.1.3}
-\contentsline {subsection}{\numberline {1.1.4}Topological domains}{6}{subsection.1.1.4}
+\contentsline {subsection}{\numberline {1.1.4}Topologically associating domains}{6}{subsection.1.1.4}
 \contentsline {subsection}{\numberline {1.1.5}Other proposed structures}{7}{subsection.1.1.5}
 \contentsline {section}{\numberline {1.2}Models of chromatin folding}{8}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Fractal globule}{8}{subsection.1.2.1}
