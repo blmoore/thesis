@@ -25,9 +25,9 @@
 \contentsline {figure}{\numberline {11}{\ignorespaces Overview of HMM method for compartment calls. }}{42}{figure.caption.23}
 \contentsline {figure}{\numberline {12}{\ignorespaces Univariate Gaussian emission distributions for A and B unobserved HMM states. }}{43}{figure.caption.24}
 \contentsline {figure}{\numberline {13}{\ignorespaces Compartment calls by simple thresholding method or context-aware HMMs.}}{43}{figure.caption.25}
-\contentsline {figure}{\numberline {14}{\ignorespaces Size distributions of compartment calls in three human cell types. }}{44}{figure.caption.26}
+\contentsline {figure}{\numberline {14}{\ignorespaces Size distributions of compartments called in three human cell types. }}{44}{figure.caption.26}
 \contentsline {figure}{\numberline {15}{\ignorespaces Compartment boundaries are shared between cell types. }}{45}{figure.caption.27}
-\contentsline {figure}{\numberline {16}{\ignorespaces The number of called TADs per cell type under study.}}{45}{figure.caption.28}
+\contentsline {figure}{\numberline {16}{\ignorespaces The number of TADs called per chromosome in each cell type under study.}}{45}{figure.caption.28}
 \contentsline {figure}{\numberline {17}{\ignorespaces TAD boundaries are shared between cell types. }}{46}{figure.caption.29}
 \contentsline {figure}{\numberline {18}{\ignorespaces Concordance of chromatin structure at multiple scales over three human cell types.}}{47}{figure.caption.30}
 \contentsline {figure}{\numberline {19}{\ignorespaces The chromatin signatures of A/B compartments.}}{48}{figure.caption.31}
@@ -36,7 +36,7 @@
 \contentsline {figure}{\numberline {22}{\ignorespaces Regions of variable structure are enriched for cell type specific enhancers.}}{52}{figure.caption.34}
 \contentsline {figure}{\numberline {23}{\ignorespaces Distributions of features across all predicted chromatin states in regions of variable higher order structure.}}{53}{figure.caption.35}
 \contentsline {figure}{\numberline {24}{\ignorespaces Regions of variable higher order structure change their genome-wide contact profiles to favour active compartments.}}{55}{figure.caption.36}
-\contentsline {figure}{\numberline {25}{\ignorespaces Nuclear positioning of chromosomes relative to compartment eigenvectors.}}{56}{figure.caption.37}
+\contentsline {figure}{\numberline {25}{\ignorespaces Chromosomes located at the nuclear periphery hold a greater proportion of inactive B compartments than those in the central nucleus.}}{56}{figure.caption.37}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {26}{\ignorespaces Highly accurate models of expression were built following Dong \emph {et al.} }}{58}{figure.caption.38}
 \contentsline {figure}{\numberline {27}{\ignorespaces Comparison of two-step classification-regression model of transcription with a simple linear regression model.}}{59}{figure.caption.39}

@@ -42,7 +42,7 @@
 \contentsline {subsection}{\numberline {2.3.1}Random Forest}{21}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Model performance}{22}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Hidden Markov models}{23}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Stepwise regression}{23}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.4}Stepwise regression}{24}{subsection.2.3.4}
 \contentsline {subsection}{\numberline {2.3.5}LASSO}{24}{subsection.2.3.5}
 \contentsline {subsection}{\numberline {2.3.6}Other modelling approaches}{25}{subsection.2.3.6}
 \contentsline {section}{\numberline {2.4}Variable regions}{25}{section.2.4}
@@ -57,7 +57,7 @@
 \contentsline {subsection}{\numberline {2.6.2}Gini importance}{29}{subsection.2.6.2}
 \contentsline {section}{\numberline {2.7}MetaTAD analysis}{30}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}Size selection}{30}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Collaborator datasets}{30}{subsection.2.7.2}
+\contentsline {subsection}{\numberline {2.7.2}Collaborator datasets}{31}{subsection.2.7.2}
 \contentsline {subsection}{\numberline {2.7.3}LAD coincidence}{31}{subsection.2.7.3}
 \contentsline {section}{\numberline {2.8}Giemsa band comparison}{32}{section.2.8}
 \contentsline {section}{\numberline {2.9}Nuclear positioning}{32}{section.2.9}
