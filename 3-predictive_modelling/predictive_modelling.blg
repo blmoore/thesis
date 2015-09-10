@@ -10,45 +10,45 @@ Repeated entry---line 11 of file /Users/benmoore/Documents/customrefs.bib
 I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty journal in Vizan2014
-You've used 42 entries,
+You've used 41 entries,
             3024 wiz_defined-function locations,
-            918 strings with 15159 characters,
-and the built_in function-call counts, 53575 in all, are:
-= -- 5607
-> -- 1518
-< -- 18
-+ -- 1086
-- -- 391
-* -- 4027
-:= -- 5916
-add.period$ -- 85
-call.type$ -- 42
-change.case$ -- 212
-chr.to.int$ -- 43
-cite$ -- 43
-duplicate$ -- 5574
-empty$ -- 3922
-format.name$ -- 518
-if$ -- 11013
+            911 strings with 14976 characters,
+and the built_in function-call counts, 52739 in all, are:
+= -- 5520
+> -- 1503
+< -- 17
++ -- 1076
+- -- 387
+* -- 3962
+:= -- 5816
+add.period$ -- 83
+call.type$ -- 41
+change.case$ -- 207
+chr.to.int$ -- 42
+cite$ -- 42
+duplicate$ -- 5490
+empty$ -- 3856
+format.name$ -- 509
+if$ -- 10843
 int.to.chr$ -- 1
-int.to.str$ -- 43
-missing$ -- 483
-newline$ -- 172
-num.names$ -- 126
-pop$ -- 2620
+int.to.str$ -- 42
+missing$ -- 474
+newline$ -- 168
+num.names$ -- 123
+pop$ -- 2584
 preamble$ -- 1
-purify$ -- 168
+purify$ -- 164
 quote$ -- 0
-skip$ -- 953
+skip$ -- 939
 stack$ -- 0
-substring$ -- 6589
-swap$ -- 1294
+substring$ -- 6496
+swap$ -- 1267
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 250
+type$ -- 244
 warning$ -- 1
-while$ -- 353
+while$ -- 347
 width$ -- 0
-write$ -- 505
+write$ -- 493
 (There was 1 error message)

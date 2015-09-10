@@ -1,4 +1,4 @@
-\begin{thebibliography}{42}
+\begin{thebibliography}{41}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{ENCODE(2012)}]{Dunham2012}
@@ -166,11 +166,6 @@ Zervos AS, Gyuris J, Brent R (1993) {Mxi1, a protein that specifically
 Sun XJ, Man N, Tan Y, Nimer SD, Wang L (2015) {The Role of Histone
   Acetyltransferases in Normal and Malignant Hematopoiesis}.
 \newblock \emph{Frontiers in Oncology}, \textbf{5}(May): 1--11.
-
-\bibitem[{Suzuki and Shimodaira(2006)}]{Suzuki2006a}
-Suzuki R, Shimodaira H (2006) {Pvclust: an R package for assessing the
-  uncertainty in hierarchical clustering.}
-\newblock \emph{Bioinformatics (Oxford, England)}, \textbf{22}(12): 1540--2.
 
 \bibitem[{Abdi and Williams(2010)}]{Abdi2010}
 Abdi H, Williams LJ (2010) {Principal component analysis}.

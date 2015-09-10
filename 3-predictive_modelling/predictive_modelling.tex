@@ -163,8 +163,8 @@ The justification for such an approach hinges on the idea that the multitude of 
 \begin{center}
 \includegraphics[width=\textwidth]{figs/Dong_relImp_Horiz.pdf}
 \captionsetup{width=.9\textwidth}
-\caption[Relative importance metrics for variables in both stages of a reimplementation of a published model for predicting transcriptional output.]{ {\bf Relative importance metrics for variables in both stages of a reimplementation of a published model for predicting transcriptional output. } 
-Variable importance is measure by decrease in Gini coefficient for the RF classification step, and by CAR $R^2$ decomposition\cite{Zuber2011} for the linear regression step.
+\caption[Variable importance metrics for each stage of our reimplementation of a published model for predicting transcriptional output. ]{ {\bf Variable importance metrics for each stage of our reimplementation of a published model for predicting transcriptional output. } 
+Variable importance was measured by decrease in Gini impurity for the RF classification step (Methods \ref{meth:gini}), and by CAR $R^2$ decomposition\cite{Zuber2011} for the linear regression step.
 }\label{fig:relimp}
 \end{center} 
 \end{figure} 
@@ -227,8 +227,8 @@ Due to the finding that a two-step (classification--regression) approach added l
 \captionsetup{width=\textwidth} 
 \caption[Random Forest predictions of FANTOM5 expression data.]{ {\bf Random Forest predictions of FANTOM5 expression data. } RF model predictions are plotted against their empirical values. The marginal distributions of predicted and empirical
   expression values are shown opposite their
-  respective axes. Pearson's correlation coefficient ($r$) and the root
-  mean-squared error (RMSE) are shown (\emph{inset}).
+  respective axes. Summary metrics of Pearson's correlation coefficient ($r$) and the root
+  mean-squared error (RMSE) are also shown (\emph{inset}).
 }\label{fig:model}
 \end{center} 
 \end{figure} 
@@ -324,7 +324,7 @@ To test if overfitting was responsible for our high modelling accuracy, we cross
 \includegraphics[width=3.5in]{figs/xapp.pdf}
 \captionsetup{width=\textwidth} 
 \caption[ Models of higher order chromatin structure learned in one cell type can be cross-applied to others.]{ {\bf Models of higher order chromatin structure learned in one cell type can be cross-applied to others. }
- Each model, trained in one cell type, was applied to the chromatin feature datasets from the other two cell types. (A) The GM12878 model achieved high accuracy when applied to K562 features (PCC $= 0.76$), as did the reciprocal cross (PCC $= 0.75$). (B) In each case, predictive accuracy decreased on cross-application but there remains significant agreement between predicted and empirical values. Acc., accuracy; AUROC, area under the receiver operating characteristic curve; PCC, Pearson correlation coefficient; RMSE, root mean-squared error.
+ Each model, trained in one cell type, was applied to the chromatin feature datasets from the other two cell types. (A) The GM12878 model achieved high accuracy when applied to K562 features (PCC $= 0.76$), as did the reciprocal cross (PCC $= 0.75$). Inset metrics are the same as those shown in Figure \ref{fig:modelres}. (B) In each case, predictive accuracy decreased on cross-application but there remains significant agreement between predicted and empirical values.
 }\label{fig:xapp}
 \end{center} 
 \end{figure} 
@@ -338,7 +338,7 @@ We found cross-application between cell types was possible and resulted in simil
 \includegraphics[width=3.5in]{figs/stratmod.pdf}
 \captionsetup{width=\textwidth} 
 \caption[Genomic regions that vary across cell types are modelled less successfully than static regions.]{ {\bf Genomic regions that vary across cell types are modelled less successfully than static regions. }
-Genome-wide compartment eigenvectors were partitioned into thirds according to their median absolute deviation (MAD) across the three cell types under study. Models were fit independently to each third, and the modelling accuracy is compared.
+Genome-wide compartment eigenvectors were partitioned into thirds according to their median absolute deviation (MAD) across the three cell types under study (Methods \ref{sec:variable}). This bar chart compares the accuracy of models fit independently to each third, according to the Pearson correlation coefficient (PCC) between predicted and observed values.
 }\label{fig:stratmod}
 \end{center} 
 \end{figure} 
@@ -354,7 +354,7 @@ Indeed we found the most variable regions across cell types were then most diffi
 \includegraphics[width=\textwidth]{figs/varimp.pdf}
 \captionsetup{width=\textwidth} 
 \caption[Variable importance per cell type specific model.]{ {\bf Variable importance per cell type specific model. }
-Variable importance for each Random Forest model was measured in terms of percentage increase in mean squared error when permuted (Methods \ref{sec:rf}) and the top 10 ranking variables are shown for each model.
+Variable importance for each Random Forest model was measured in terms of percentage increase in mean squared error when permuted (Methods \ref{sec:rf}) and the top 10 ranking variables are shown.
 }\label{fig:varimp}
 \end{center} 
 \end{figure} 
@@ -368,8 +368,8 @@ cells,\cite{Nie2012, Kieffer-Kwon2013a} with MAX and MXI1 acting as antagonistic
 \begin{center} 
 \includegraphics[width=.5\textwidth]{figs/top10venn.pdf}
 \captionsetup{width=\textwidth} 
-\caption[Intersections of the top 10 ranked variables in the cell type specific models.]{ {\bf Intersections of the top 10 ranked variables in the cell type specific models. }
-Venn diagram illustrating intersections between sets of ten most influential variables per cell type specific Random Forest regression model of compartment eigenvector (Fig. \ref{fig:varimp}).
+\caption[Intersections of the top 10 ranked variables in cell type specific models.]{ {\bf Intersections of the top 10 ranked variables in cell type specific models. }
+Venn diagram showing the intersections between sets of ten most influential variables calculated in each cell type specific Random Forest regression model of compartment eigenvector (Fig. \ref{fig:varimp}).
 }\label{fig:top10venn}
 \end{center} 
 \end{figure} 
@@ -399,7 +399,7 @@ Variable importance for each Random Forest model was measured in terms of percen
 \end{center} 
 \end{figure} 
 
-In addition to rankings, raw variable importance metrics can also be compared between cell-type specific models (Fig. \ref{fig:varimp_diff}). Through this analysis we found that variables such as CTCF have a relatively small but highly consistent variable importance across the three cell type specific models, whereas other features like ATF3 are highly influential in one cell type but not the other two. Absolute differences in these figures should not be over interpreted and will be affected to some degree by data quality, eigenvector calculation and other sources of noise. Nevertheless there are observations which may reflect biological phenomena, such as the higher relative importance of P300 in both hematopoietic cell line models, potentially reflecting its activity as a histone acetyl transferase that regulates hematopoiesis,\cite{Sun2015} compared with the more consistent influence of CTCF in each model, a transcription factor widely known as a regulator of genome architecture (discussed in Section \ref{intro:loops}).
+In addition to rankings, raw variable importance metrics can also be compared between cell-type specific models (Fig. \ref{fig:varimp_diff}). Through this analysis we found that variables such as CTCF have a relatively small but highly consistent variable importance across the three cell type specific models, whereas other features like ATF3 are highly influential in one cell type but not the other two. Absolute differences in these figures should not be over interpreted and will be affected to some degree by data quality, eigenvector calculation and other sources of noise. Nevertheless there are observations which may reflect biological phenomena, such as the higher relative importance of P300 in both haematopoietic cell line models, potentially reflecting its activity as a histone acetyl transferase that regulates haematopoiesis,\cite{Sun2015} compared with the more consistent influence of CTCF in each model, a transcription factor widely known as a regulator of genome architecture (discussed in Section \ref{intro:loops}).
 
 % also consider looking at LOCAL variable importance
 
@@ -412,7 +412,7 @@ We have an \emph{a priori} expectation of multicollinearity in our feature set, 
 \includegraphics[width=3.6in]{figs/featmap}
 \captionsetup{width=\textwidth} 
 \caption[Correlation heatmaps of the 35 features used to model compartment eigenvectors.]{ {\bf Correlation heatmaps of the 35 features used to model compartment eigenvectors. }
-The Pearson correlation coefficient (PCC) of genome-wide 1 Mb bins of each feature were pairwise correlated with each other. The features were also clustered using hierarchal clustering. The “significance” of these clusters was determined through multi-scale bootstrap resampling, with those clusters that were stable across different sizes of resampling deemed significant, as implemented in the \texttt{pvclust} R package.\cite{Suzuki2006a}
+The Pearson correlation coefficient (PCC) of genome-wide 1 Mb bins of each feature were pairwise correlated with each other. The features were also clustered using hierarchical clustering. The “significance” of these clusters was determined through multi-scale bootstrap resampling, with those clusters that were stable across different sizes of resampling deemed significant (Methods \ref{meth:clustersig}). Such clusters are labelled with coloured blocks in heatmap sidebars.
 }\label{fig:featmap}
 \end{center} 
 \end{figure} 
@@ -432,12 +432,12 @@ Thus far models were built at 1 Mb resolution, but if we are capturing true biol
 \includegraphics[width=3in]{figs/100kb.pdf}
 \captionsetup{width=\textwidth} 
 \caption[Models learned at 1 Mb resolution can be applied to higher resolution datasets.]{ {\bf Models learned at 1 Mb resolution can be applied to higher resolution datasets. }
-Despite having been trained on low resolution training sets, the Random Forest models generated can successfully predict compartment eigenvectors at higher resolution (100 kb, a $10\times$ zoom). Eigenvectors at a higher resolution than this do not necessarily reflect A/B compartmentalisation.
+Despite having been trained on low resolution training sets, the Random Forest models generated can successfully predict compartment eigenvectors at higher resolution (100 kb, a $10\times$ zoom). 
 }\label{fig:100kb}
 \end{center} 
 \end{figure} 
 
-Model accuracy when applied to higher resolution input features proved to be similarly high, with empirical PCC being $88$ to $95\%$ as high as that at 1 Mb native resolution (Fig. \ref{fig:100kb}).
+Model accuracy when applied to higher resolution input features proved to be similarly high, with empirical PCC being $88$ to $95\%$ as high as that at 1 Mb native resolution (Fig. \ref{fig:100kb}). We found that eigenvectors at higher resolution, beyond 100 kb, do not necessarily reflect A/B compartmentalisation.
 
 Note however, there is some indirect leakage between test and training set when 100 kb bins have been used in aggregate in learning the 1 Mb models. Nevertheless, sustained accuracy is evidence that our models are not resolution-sensitive, and could likely be applied to higher resolutions than the 1 Mb predominantly used in this work.
 
@@ -515,7 +515,7 @@ In terms of model performance alone, stepwise regression gives the highest predi
 
 \begin{table}[]
 \centering
-\caption[Performance comparison of full and optimised RF and ML models.]{ {\bf Performance comparison of full and optimised RF and ML models.}
+\caption[Performance comparison of full and optimised RF and LM models.]{ {\bf Performance comparison of full and optimised RF and LM models.}
 PCC between predicted and empirical compartment eigenvectors is shown for a range of modelling scenarios, including multiple linear regression (LM) and Random Forest (RF) approaches. For model selection, two methods are used: stepwise BIC-regularised linear models and LASSO regression; in each case those same features were then also used in building a separate RF for comparison.
 }
 \label{tab:bicmodels}
@@ -542,8 +542,8 @@ Again we can perform a simplistic comparison of model performance using LASSO re
 \begin{center} 
 \includegraphics[width=3.2in]{figs/lasso_bar.pdf}
 \captionsetup{width=\textwidth} 
-\caption[ Ten largest LASSO model coefficients from expanded feature sets. ]{ {\bf Ten largest LASSO model coefficients from expanded feature sets.  }
-Those coefficients with the largest absolute value are plotted for each cell type specific LASSO model. 
+\caption[ Ten largest LASSO coefficients in models derived from expanded feature sets. ]{ {\bf Ten largest LASSO coefficients in models derived from expanded feature sets.  }
+Those coefficients with the largest absolute standardised value are plotted for each cell type specific LASSO model. 
 }\label{fig:lassobar}
 \end{center} 
 \end{figure} 
