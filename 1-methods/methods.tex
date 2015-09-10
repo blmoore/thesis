@@ -163,9 +163,9 @@ ATF3, CEBPB, CHD1, CHD2, CMYC, CTCF, EGR1, EZH2, GABP, JUND, MAX, MXI1, NRSF, PO
 
 In the analysis of boundaries (Chapter \ref{chap:boundaries}), we also use a measure of sequence conservation in the form of Genomic Evolutionary Rate Profiling (GERP) scores. This measure uses rejected substitutions to assign conservation scores to each genomic site based on multiple alignment of 35 mammalian genomes.\cite{Cooper2005, Davydov2010a} A rule of thumb is that a GERP score $\gtrapprox 2$ indicates an evolutionarily-constrained site.\cite{Goode2010}
 
-\subsection{Clustering input features}
+\subsection{Clustering input features}\label{meth:clustersig}
 
-To quantify collinearity of input features, correlation matrices built from genome-wide vectors of input feature measures were build and hierarchicaly clustered. The "significance" of observed clustering was assessed using sub- and super-sampled bootstrapping, with stable clusters across sample sizes deemed significant, as implemented in the \texttt{pvclust} R package.\cite{Suzuki2006a}
+To quantify collinearity of input features, correlation matrices built from genome-wide vectors of input feature measures were build and hierarchically clustered. The "significance" of observed clustering was assessed using sub- and super-sampled bootstrapping, with stable clusters across sample sizes deemed significant, as implemented in the \texttt{pvclust} R package.\cite{Suzuki2006a}
 
 \section{Modelling compartment eigenvectors}\label{modelling}
 
@@ -406,7 +406,7 @@ The input feature set for this model was made up of the same $35$ ENCODE feature
 
 \subsection{Gini importance}\label{meth:gini}
 
-Gini importance was the variable importance metric used to rank variables during the AUC-RF procedure (Section \ref{meth:aucrf}). This measure is calculated as follows.
+Gini importance was the variable importance metric used to rank variables during the AUC-RF procedure (Section \ref{meth:aucrf}) and was also used in the analysis of a two-step model prediction transcriptional output (Section \ref{sec:reprodong}). This measure is calculated as follows.
 
 The Gini impurity, $G$, of a single node containing some proportions of $n$ classes of variable is calculated as shown (Eqn. \ref{eqn:gini}), and is observably related to the concept of entropy or information gain. 
 
