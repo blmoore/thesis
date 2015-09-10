@@ -1,4 +1,4 @@
-\begin{thebibliography}{245}
+\begin{thebibliography}{246}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -297,6 +297,12 @@ Mirny La (2011) {The fractal globule as a model of chromatin architecture in
 Grosberg AY, Nechaev S, Shakhnovich E (1988) {The role of topological
   constraints in the kinetics of collapse of macromolecules}.
 \newblock \emph{Journal de Physique}, \textbf{49}(12): 2095--2100.
+
+\bibitem[{Grosberg \emph{et~al.}(1993)Grosberg, Grosberg, Rabin, Rabin, Havlin,
+  Havlin, Neer and Neer}]{Grosberg1993}
+Grosberg a, Grosberg a, Rabin Y, Rabin Y, Havlin S, Havlin S, Neer a, Neer a
+  (1993) {Crumpled Globule Model of the Three-Dimensional Structure of DNA}.
+\newblock \emph{Europhysics Letters (EPL)}, \textbf{23}(5): 373--378.
 
 \bibitem[{Kadauke and Blobel(2009)}]{Kadauke2009a}
 Kadauke S, Blobel Ga (2009) {Chromatin loops in gene regulation}.

@@ -115,7 +115,7 @@ The TAD calling algorithm is a multi-stage process. Firstly, a statistic called 
 
 Equation \ref{eqn:di} can be intuitively understood as first determining the direction of the bias (the sign is given by $\frac{U - D}{|U - D|}$) and then calculating the extent of the bias (with $\frac{(D - E)^2}{E} + \frac{(U - E)^2}{E}$ being akin to a $\chi^2$-type statistic).\cite{Dixon2012}
 
-This DI metric could be used as-is to call domains, as peaks of downstream contacts culminating in a peak of upstream contacts delineate self-interacting domains. However, \citet{Dixon2012} instead use a hidden Markov model (HMM; Section \ref{meth:hmm}) in a manner similar of that we later employed to call compartments (Section \ref{sec:compartments}). 
+This DI metric could be used as-is to call domains, as peaks of downstream contacts culminating in a peak of upstream contacts delineate self-interacting domains. However, \citet{Dixon2012} instead use a hidden Markov model (HMM; Section \ref{meth:hmm}) in a manner similar of that we later employed to call compartments (Section \ref{meth:compartments}). 
 
 Here, the DI metric is considered a noisy observation emitted by an unobserved underlying three-state sequence of upstream, downstream or no- directional contact bias.\cite{Dixon2012} The HMM was fit to each chromosome with between 1 and 20 Gaussian mixtures allowed per state, however in some cases the expectation-maximisation (EM) algorithm used to parameterise these hidden states failed to converge; such cases were ignored. The Akaike information criterion (AIC) was used to selection the optimal number of mixtures (in practice, we found 5--10 were selected). 
 
@@ -238,7 +238,7 @@ To test the sensitivity of the models to resolution, we also applied cell-type s
 
 \subsection{Hidden Markov models}\label{meth:hmm}
 
-Hidden Markov models (HMMs) are used both for calling TADs (Methods \ref{meth:tadcalling}) and for identifying chromosome compartments (Methods \ref{sec:compartments}, discussed in Section \ref{sec:compcalls}). Here we briefly introduce the HMM framework in general terms.
+Hidden Markov models (HMMs) are used both for calling TADs (Methods \ref{meth:tadcalling}) and for identifying chromosome compartments (Methods \ref{meth:compartments}, discussed in Section \ref{sec:compcalls}). Here we briefly introduce the HMM framework in general terms.
 
 HMMs are widely used in computational biology, and have been called "the Legos of computational sequence analysis"\cite{Eddy2004} due to their wide applicability. HMMs provide a probabilistic modelling framework to explore any system that can be reduced to a 1D state sequence.\cite{Eddy1996, Rabiner1989} In the discrete case, each state in this sequence is capable of "emitting" one of a number of symbols, each with its own probability. In the continuous case, used in this work, instead a state has an associated emission distribution which can be a simple univariate Gaussian or a more complex mixture model. After an emission, each state has a number of "transition" probabilities, where the sequence can either change to another state or remain in the same state.
 
@@ -368,7 +368,7 @@ enriched or depleted at a given boundary.
 
 To compare boundaries between cells, each TAD boundary called in K562 and GM12878 were compared with those called in H1 hESC. For each boundary, the minimum absolute difference to the nearest matching boundary in H1 hESC was recorded, and this was then compared with a null model of an equal number of boundaries randomly-placed along available bins. A Kolmogorov-Smirnov test was then used to compare the empirical cumulative distributions of these distances.
 
-\subsection{Compartments}\label{sec:compartments}
+\subsection{Compartments}\label{meth:compartments}
 
 Eigenvectors were calculated as described previously (Section \ref{sec:eigs}). A/B compartmentalisation has previously been called simply from the properly-orientated principle component eigenvector, with positive values representing a bin in an A compartment state, and negative values representing a bin in a B compartment state.\cite{Lieberman2009} Using this method, compartment boundaries occur whenever the eigenvector changes sign.
 
