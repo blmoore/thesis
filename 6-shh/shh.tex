@@ -49,8 +49,8 @@ Here I discuss a collaborative project involving the use of 4C and 5C data to zo
 \begin{center} 
 \includegraphics[width=3.5in]{figs/shhtad.png}
 \captionsetup{width=\textwidth} 
-\caption[SHH--ZRS contacts occur within a stable TAD.]{ {\bf SHH--ZRS contacts occur within a stable TAD. }
-An approximately 1 Mb region of the mouse genome is shown below a Hi-C contact map (derived from previously published data\cite{Dixon2012}). A clear TAD can be identified spanning from SHH to ZRS, dashed lines show TAD boundaries called by \citet{Dixon2012} %The heatmap was generated for \citet{Anderson2014a}
+\caption[ZRS--\emph{Shh} contacts occur within a stable TAD.]{ {\bf ZRS--\emph{Shh} contacts occur within a stable TAD. }
+An approximately 1 Mb region of the mouse genome is shown below a matched section of a Hi-C contact map (derived from previously published data\cite{Dixon2012}). A clear TAD can be identified spanning from the \emph{Shh} gene to the ZRS, dashed lines show TAD boundaries called by \citet{Dixon2012} %The heatmap was generated for \citet{Anderson2014a}
 }\label{fig:shhtad}
 \end{center} 
 \end{figure} 
@@ -90,7 +90,7 @@ The 4C analysis pipeline, starting from de-multiplexed sequencing reads (\texttt
 \includegraphics[width=5in]{figs/shharc_full.pdf}
 \captionsetup{width=\textwidth} 
 \caption[TSA treatment induces a strong ZRS--\emph{Shh} interaction. ]{ {\bf TSA treatment induces a strong ZRS--\emph{Shh} interaction. }
-4C interactions are shown as edges from source node (ZRS enhancer bait fragment) to targets along an approximately 2 Mb region of chromosome 5. Edge width is proportional to the number of interactions, only highly significant interactions are shown (FDR $q$-value $<5 \times 10 ^{-5}$). Zoomed region shows the number of interactions of the bait region with \emph{Shh} in both untreated and TSA treated (after 24h) samples. Each green--blue rectangle is a restriction fragment, coloured by FDR $q$-value indicating the significance of the interaction above expected levels.
+4C interactions are shown as edges from source node (ZRS enhancer bait fragment) to targets along an approximately 2 Mb region of chromosome 5. Edge width is proportional to the number of interactions, only highly significant interactions are shown (FDR $q$-value $<5 \times 10 ^{-5}$; Methods \ref{methods:4csignif}). Zoomed region shows the number of interactions of the bait region with \emph{Shh} in both untreated and TSA treated (after 24h) samples. Each green--blue rectangle is a restriction fragment, coloured by FDR $q$-value indicating the significance of the interaction above expected levels.
 }\label{fig:ssharc}
 \end{center} 
 \end{figure} 
@@ -118,7 +118,7 @@ Additional FISH data produced by our collaborators shows approximately equal lev
 \begin{center} 
 \includegraphics[width=4.6in]{figs/4cArcs_v2.pdf}
 \captionsetup{width=\textwidth} 
-\caption[ A stable ZRS--SHH interaction is coupled with reduced extraneous contacts. ]{ {\bf A stable ZRS--SHH interaction is coupled with reduced extraneous contacts. }
+\caption[ A stable ZRS--\emph{Shh} interaction is coupled with reduced extraneous contacts. ]{ {\bf A stable ZRS--\emph{Shh} interaction is coupled with reduced extraneous contacts. }
 Arc plots are shown for an untreated, non-expressing 14fp cell population (\emph{TSA-}) and following TSA treatment after 18 and 24 hours. Arcs link significant interactions ($q$-value $< 0.05$) and arc widths are proportional to the normalised number of reads recorded for the interaction (Methods \ref{methods:4c}).
 }\label{fig:4carcs}
 \end{center} 
@@ -206,7 +206,7 @@ We used this 5C experimental data in combination with the \texttt{AutoChrom3D} t
 \begin{center} 
 \includegraphics[width=5.45in]{figs/5c3d.pdf}
 \captionsetup{width=\textwidth} 
-\caption[ Inferred polymer trajectories of the ZRS--SHH region following TSA treatment in two cell lines. ]{ {\bf Inferred polymer trajectories of the ZRS--SHH region following TSA treatment in two cell lines. }
+\caption[ Inferred polymer trajectories of the ZRS--\emph{Shh} region following TSA treatment in two cell lines. ]{ {\bf Inferred polymer trajectories of the ZRS--\emph{Shh} region following TSA treatment in two cell lines. }
 3D structures are shown for 5C experiments assaying the region around \emph{Shh} (\emph{red}) and ZRS (\emph{blue}) in an \emph{Shh}-expressing limb bud cell line (88fp) and a non-expressing mandibular cell line (MD). Labelled measurements are given in Table \ref{tab:3ddist}. Structures were predicted by \texttt{AutoChrom3D}\cite{Peng2013} using $210 \times 8$ kb beads per polymer.
 }\label{fig:5c3d}
 \end{center} 
@@ -218,7 +218,7 @@ We also report a greater overall structural shift following TSA treatment in the
 
 \begin{table}[]
 \centering
-\caption[Measurement distances between ZRS and SHH in each inferred 3D structure.]{ {\bf Measurement distances between ZRS and SHH in each inferred 3D structure. }
+\caption[Measurement distances between ZRS and \emph{Shh} in each inferred 3D structure.]{ {\bf Measurement distances between ZRS and \emph{Shh} in each inferred 3D structure. }
 Distances are given in arbitrary units. \emph{Shh} spans two beads of the polymer model, hence two distances are calculated in each case ($d_1$, $d_2$). RMSD is the minimised root mean squared deviation between the two structures and is given as a relative unitless quantity. The radius of gyration (gyradius) is also shown.
 }
 \label{tab:3ddist}
@@ -246,8 +246,8 @@ Repeat simulations indeed appear to recreate the induced ZRS--\emph{Shh} contact
 \begin{center} 
 \includegraphics[width=5.45in]{figs/3dreps.pdf}
 \captionsetup{width=\textwidth} 
-\caption[ Repeat simulations of 3D polymer trajectories in the \emph{Shh}--ZRS region. ]{ {\bf Repeat simulations of 3D polymer trajectories in the \emph{Shh}--ZRS region. }
-3D structures are shown for 5C experiments assaying the region around \emph{Shh} (\emph{red}) and ZRS (\emph{green}) in an \emph{Shh}-expressing limb bud cell line (88fp) and a non-expressing mandibular cell line (MD). Structures were aligned as whole molecules with the uppermost replicate in each column.
+\caption[ Repeat simulations of 3D polymer trajectories in the ZRS--\emph{Shh} region. ]{ {\bf Repeat simulations of 3D polymer trajectories in the ZRS--\emph{Shh} region. }
+3D structures are shown for 5C experiments assaying the region around \emph{Shh} (\emph{red}) and ZRS (\emph{green}) in an \emph{Shh}-expressing limb bud cell line (88fp) and a non-expressing mandibular cell line (MD). Structures were aligned as whole molecules to the uppermost replicate in each column.
 }\label{fig:3dreps}
 \end{center} 
 \end{figure} 
@@ -259,7 +259,7 @@ We quantified these distances by measuring from the single bead containing ZRS t
 \includegraphics[width=2.75in]{figs/3d_dists.pdf}
 \captionsetup{width=\textwidth} 
 \caption[ ZRS--\emph{Shh} distance measurements from repeated 3D polymer simulations. ]{ {\bf ZRS--\emph{Shh} distance measurements from repeated 3D polymer simulations. }
-Measurements were taken from 5 replicate 3D simulations (shown in Fig. \ref{fig:3dreps}). Distances are given in arbitrary units. \emph{Shh} spans two beads of the polymer model, hence two distances are calculated in each case ($d_1$, $d_2$).
+Measurements were taken from 5 replicate 3D simulations (shown in Figure \ref{fig:3dreps}). Distances are given in arbitrary units. \emph{Shh} spans two beads of the polymer model, hence two distances are calculated in each case ($d_1$, $d_2$).
 }\label{fig:3ddist}
 \end{center} 
 \end{figure} 
@@ -271,7 +271,7 @@ Qualitatively, there could be some observable structural dynamics caused by TSA 
 \includegraphics[width=3in]{figs/decompaction.pdf}
 \captionsetup{width=\textwidth} 
 \caption[ Polymer models showing partial TAD decompaction following TSA treatment. ]{ {\bf Polymer models showing partial TAD decompaction following TSA treatment. }
-Two of the simulations from Figure \ref{fig:3dreps} are shown here and annotated. In the TSA treated 14fp samples (TSA+) there is potentially evidence for a looser packing of the chromatin around ZRS (\emph{dark green}).
+Two of the simulations from Figure \ref{fig:3dreps} are shown here with additional annotation. In the TSA treated 14fp samples (TSA+) there is potentially evidence for a looser packing of the chromatin around the ZRS (\emph{dark green}).
 }\label{fig:decompaction}
 \end{center} 
 \end{figure} 
