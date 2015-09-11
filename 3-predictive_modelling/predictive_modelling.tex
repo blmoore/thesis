@@ -26,11 +26,7 @@
 % bibliography
 \bibliographystyle{../thesis}
 
-% title setup
-\title{ \vspace{3in} Unravelling higher order genome organisation {\small [working
-    title]} \\ \vspace{2em} {\large {\bf Results 2} Predictive modelling } }
-\author{Benjamin L. Moore}
-\titlepic{\vspace{2.2in} \includegraphics[width=\textwidth]{/Users/benmoore/hvl/1yrReport/figs/igmm.png}}
+\graphicspath {{../figs/}}
 
 \begin{document}
 
@@ -90,7 +86,7 @@ approach. We can extend this idea to the related domain of nuclear architecture,
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=5.65in]{figs/dong_repres.pdf}
+\includegraphics[width=5.65in]{dong_repres.pdf}
 \captionsetup{width=\textwidth}
 \caption[ Highly accurate models of expression were built following Dong \emph{et al.} ]{ {\bf Highly accurate models of expression were built following Dong \emph{et al.} }  A scatterplot shows the strong correlation between predicted and observed expression levels per transcript (\emph{left}). Variable importance metrics are shown for the "on/off" RF classification step and subsequent linear regression of those loci classified as "on" (\emph{right}). 
 }\label{fig:dongres}
@@ -113,7 +109,7 @@ linear regression model (Fig. \ref{fig:TwoStepvsSimple}). Indeed, it appears the
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=4in]{figs/dong_2stepres.png}
+\includegraphics[width=4in]{dong_2stepres.png}
 \captionsetup{width=\textwidth}
 \caption[Comparison of two-step classification-regression model of transcription with
   a simple linear regression model.]{ {\bf Comparison of a published two-step classification-regression model of transcription with
@@ -146,7 +142,7 @@ bins.\cite{Dong2012}
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=5.3in]{figs/dong_tss_profiles.pdf}
+\includegraphics[width=5.3in]{dong_tss_profiles.pdf}
 \captionsetup{width=\textwidth}
 \caption[ Average input feature profiles over transcription start sites. ]{ {\bf Average input feature profiles over transcription start sites. }  Mean ChIP-seq signal over input control is shown for 6 factors in 6 human cell types used in \citet{Dong2012}. Each is averaged genome-wide over GENCODE v7 \texttt{hg19} defined TSS $\pm 2$ kb, and over whole genes (\emph{grey shading}). Ribbons shown $99\%$ confidence intervals of the mean. 
 }\label{fig:dongtssprof}
@@ -161,7 +157,7 @@ The justification for such an approach hinges on the idea that the multitude of 
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=\textwidth]{figs/Dong_relImp_Horiz.pdf}
+\includegraphics[width=\textwidth]{Dong_relImp_Horiz.pdf}
 \captionsetup{width=.9\textwidth}
 \caption[Variable importance metrics for each stage of our reimplementation of a published model for predicting transcriptional output. ]{ {\bf Variable importance metrics for each stage of our reimplementation of a published model for predicting transcriptional output. } 
 Variable importance was measured by decrease in Gini impurity for the RF classification step (Methods \ref{meth:gini}), and by CAR $R^2$ decomposition\cite{Zuber2011} for the linear regression step.
@@ -223,7 +219,7 @@ Due to the finding that a two-step (classification--regression) approach added l
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=.6\textwidth]{figs/RandomForest_10CV_50d.pdf}
+\includegraphics[width=.6\textwidth]{RandomForest_10CV_50d.pdf}
 \captionsetup{width=\textwidth} 
 \caption[Random Forest predictions of FANTOM5 expression data.]{ {\bf Random Forest predictions of FANTOM5 expression data. } RF model predictions are plotted against their empirical values. The marginal distributions of predicted and empirical
   expression values are shown opposite their
@@ -263,7 +259,7 @@ representing approximately $8\%$ of the complete dataset. Distributions of chose
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=4.5in]{figs/bestbinSummary.pdf}
+\includegraphics[width=4.5in]{bestbinSummary.pdf}
 \captionsetup{width=\textwidth}
 \caption[Distributions of bestbin locations relative to the
   TSS.]{ {\bf Distributions of bestbin locations relative to the
@@ -298,7 +294,7 @@ We built Random Forest (RF) regression models (Methods \ref{sec:rf}) to predict 
 \begin{figure}
 \begin{center} 
 \makebox[\textwidth][c]{ 
-\includegraphics[width=1.1\textwidth]{figs/modelres.pdf}
+\includegraphics[width=1.1\textwidth]{modelres.pdf}
 }
 \captionsetup{width=\textwidth} 
 \caption[Compartment eigenvector model predictions are highly correlated with observed values.]{ {\bf Compartment eigenvector model predictions are highly correlated with observed values.}  Pearson correlation coefficient (PCC) and root mean-squared error (RMSE) report the degree of success of the regression model, whereas accuracy (Acc.) and area under the receiver operating characteristic (AUROC) give the classification accuracy of binarized outcomes.
@@ -321,7 +317,7 @@ To test if overfitting was responsible for our high modelling accuracy, we cross
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=3.5in]{figs/xapp.pdf}
+\includegraphics[width=3.5in]{xapp.pdf}
 \captionsetup{width=\textwidth} 
 \caption[ Models of higher order chromatin structure learned in one cell type can be cross-applied to others.]{ {\bf Models of higher order chromatin structure learned in one cell type can be cross-applied to others. }
  Each model, trained in one cell type, was applied to the chromatin feature datasets from the other two cell types. (A) The GM12878 model achieved high accuracy when applied to K562 features (PCC $= 0.76$), as did the reciprocal cross (PCC $= 0.75$). Inset metrics are the same as those shown in Figure \ref{fig:modelres}. (B) In each case, predictive accuracy decreased on cross-application but there remains significant agreement between predicted and empirical values.
@@ -335,7 +331,7 @@ We found cross-application between cell types was possible and resulted in simil
  
 \begin{figure}
 \begin{center} 
-\includegraphics[width=3.5in]{figs/stratmod.pdf}
+\includegraphics[width=3.5in]{stratmod.pdf}
 \captionsetup{width=\textwidth} 
 \caption[Genomic regions that vary across cell types are modelled less successfully than static regions.]{ {\bf Genomic regions that vary across cell types are modelled less successfully than static regions. }
 Genome-wide compartment eigenvectors were partitioned into thirds according to their median absolute deviation (MAD) across the three cell types under study (Methods \ref{sec:variable}). This bar chart compares the accuracy of models fit independently to each third, according to the Pearson correlation coefficient (PCC) between predicted and observed values.
@@ -351,7 +347,7 @@ Indeed we found the most variable regions across cell types were then most diffi
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=\textwidth]{figs/varimp.pdf}
+\includegraphics[width=\textwidth]{varimp.pdf}
 \captionsetup{width=\textwidth} 
 \caption[Variable importance per cell type specific model.]{ {\bf Variable importance per cell type specific model. }
 Variable importance for each Random Forest model was measured in terms of percentage increase in mean squared error when permuted (Methods \ref{sec:rf}) and the top 10 ranking variables are shown.
@@ -366,7 +362,7 @@ cells,\cite{Nie2012, Kieffer-Kwon2013a} with MAX and MXI1 acting as antagonistic
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=.5\textwidth]{figs/top10venn.pdf}
+\includegraphics[width=.5\textwidth]{top10venn.pdf}
 \captionsetup{width=\textwidth} 
 \caption[Intersections of the top 10 ranked variables in cell type specific models.]{ {\bf Intersections of the top 10 ranked variables in cell type specific models. }
 Venn diagram showing the intersections between sets of ten most influential variables calculated in each cell type specific Random Forest regression model of compartment eigenvector (Fig. \ref{fig:varimp}).
@@ -379,7 +375,7 @@ To assess the significance of observed intersections (Fig. \ref{fig:top10venn}),
 % figure showing e.g. how individual var regresses against eigen (Egr1compare.pdf)
 \begin{figure}
 \begin{center} 
-\includegraphics[width=4.5in]{figs/h1feats.pdf}
+\includegraphics[width=4.5in]{h1feats.pdf}
 \captionsetup{width=\textwidth} 
 \caption[Correlations of individual features with compartment eigenvector in the H1 hESC cell type.]{ {\bf Correlations of individual features with compartment eigenvector in the H1 hESC cell type. }
 Two-dimensional kernel density estimates show the density of points in a scatterplot of compartment eigenvector ($x$-axis) against each input feature individually ($y$-axes). Features with a PCC against eigenvector of above or below $0.1$ are coloured as positive or negative, respectively.
@@ -390,7 +386,7 @@ Two-dimensional kernel density estimates show the density of points in a scatter
 \begin{figure}
 \begin{center} 
 \makebox[\textwidth][c]{ 
-\includegraphics[width=1.1\textwidth]{figs/varimp_diff.pdf}
+\includegraphics[width=1.1\textwidth]{varimp_diff.pdf}
 }
 \captionsetup{width=\textwidth} 
 \caption[Comparison of variable importance between three cell type specific Random Forest models.]{ {\bf Comparison of variable importance between three cell type specific Random Forest models. }
@@ -409,7 +405,7 @@ We have an \emph{a priori} expectation of multicollinearity in our feature set, 
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=3.6in]{figs/featmap}
+\includegraphics[width=3.6in]{featmap}
 \captionsetup{width=\textwidth} 
 \caption[Correlation heatmaps of the 35 features used to model compartment eigenvectors.]{ {\bf Correlation heatmaps of the 35 features used to model compartment eigenvectors. }
 The Pearson correlation coefficient (PCC) of genome-wide 1 Mb bins of each feature were pairwise correlated with each other. The features were also clustered using hierarchical clustering. The “significance” of these clusters was determined through multi-scale bootstrap resampling, with those clusters that were stable across different sizes of resampling deemed significant (Methods \ref{meth:clustersig}). Such clusters are labelled with coloured blocks in heatmap sidebars.
@@ -429,7 +425,7 @@ Thus far models were built at 1 Mb resolution, but if we are capturing true biol
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=3in]{figs/100kb.pdf}
+\includegraphics[width=3in]{100kb.pdf}
 \captionsetup{width=\textwidth} 
 \caption[Models learned at 1 Mb resolution can be applied to higher resolution datasets.]{ {\bf Models learned at 1 Mb resolution can be applied to higher resolution datasets. }
 Despite having been trained on low resolution training sets, the Random Forest models generated can successfully predict compartment eigenvectors at higher resolution (100 kb, a $10\times$ zoom). 
@@ -448,7 +444,7 @@ Random Forest (RF) was \emph{a priori} chosen as an appropriate and powerful mod
 \begin{figure}
 \begin{center} 
 \makebox[\textwidth][c]{ 
-\includegraphics[width=\textwidth]{figs/diffmethods.pdf}
+\includegraphics[width=\textwidth]{diffmethods.pdf}
 }
 \captionsetup{width=\textwidth} 
 \caption[Comparison of Random Forest performance with other modelling approaches.]{ {\bf Comparison of Random Forest performance with other modelling approaches. }
@@ -482,7 +478,7 @@ PLS uses a type of dimensionality reduction, which offers another way to explore
 \begin{figure}
 \begin{center} 
 \makebox[\textwidth][c]{ 
-\includegraphics[width=1.1\textwidth]{figs/corcirc.pdf}
+\includegraphics[width=1.1\textwidth]{corcirc.pdf}
 }
 \captionsetup{width=\textwidth} 
 \caption[ Circle of correlations of variables compared with PLS axes. ]{ {\bf Circle of correlations of variables compared with PLS axes.  }
@@ -540,7 +536,7 @@ Again we can perform a simplistic comparison of model performance using LASSO re
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=3.2in]{figs/lasso_bar.pdf}
+\includegraphics[width=3.2in]{lasso_bar.pdf}
 \captionsetup{width=\textwidth} 
 \caption[ Ten largest LASSO coefficients in models derived from expanded feature sets. ]{ {\bf Ten largest LASSO coefficients in models derived from expanded feature sets.  }
 Those coefficients with the largest absolute standardised value are plotted for each cell type specific LASSO model. 
