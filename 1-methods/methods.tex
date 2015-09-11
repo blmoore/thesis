@@ -39,11 +39,7 @@
 % bibliography
 \bibliographystyle{../thesis}
 
-% title setup
-\title{ \vspace{3in} Unravelling higher order genome organisation {\small [working
-    title]} \\ \vspace{2em} {\large {\bf Methods section}} }
-\author{Benjamin L. Moore}
-\titlepic{\vspace{2.2in} \includegraphics[width=\textwidth]{/Users/benmoore/hvl/1yrReport/figs/igmm.png}}
+\graphicspath {{../figs/}}
 
 \begin{document}
 
@@ -173,7 +169,7 @@ To quantify collinearity of input features, correlation matrices built from geno
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=4.5in]{figs/randforests.png}
+\includegraphics[width=4.5in]{randforests.png}
 \captionsetup{width=\textwidth}
 \caption[Random Forests overview.]{ {\bf Random Forests overview. } 
  Random Forests are an ensemble of bagged, de-correlated classification or regression trees first described by Breiman.\cite{Breiman2001a} These schematics describe how Random Forests are constructed (\emph{upper}) as well as how measures of predictive accuracy and variable importance can be calculated using out-of-bag (OOB) data.
@@ -202,7 +198,7 @@ $200$. These parameters are known to be insensitive over a broad range of values
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=5in]{figs/rfparams.pdf}
+\includegraphics[width=5in]{rfparams.pdf}
 \captionsetup{width=\textwidth}
 \caption[Random Forest parameters are largely insensitive.]{ {\bf Random Forest parameters are largely insensitive. } 
 Two user-facing Random Forest paramters are known to be insensitive over a broad range.\cite{Hastie2001} Optimisations for $ntrees$ (the number of trees in the forests) and $mtry$ (the number of features tested at each node) are shown for three different models, with typical default values of 200 trees and $\frac{1}{3}$ of input variables highlighted.
