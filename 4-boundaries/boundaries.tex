@@ -24,11 +24,7 @@
 % bibliography
 \bibliographystyle{../thesis}
 
-% title setup
-\title{ \vspace{3in} Unravelling higher order genome organisation {\small [working
-    title]} \\ \vspace{2em} {\large {\bf Results 3: Domain boundaries}} }
-\author{Benjamin L. Moore}
-\titlepic{\vspace{2.2in} \includegraphics[width=\textwidth]{/Users/benmoore/hvl/1yrReport/figs/igmm.png}}
+\graphicspath {{../figs/}}
 
 \begin{document}
 
@@ -61,7 +57,7 @@ We derived TAD boundaries from uniformly reprocessed Hi-C data (Chapter \ref{cha
 \begin{figure}
 \begin{center} 
 \makebox[\textwidth][c]{ 
-	\includegraphics[width=6.8in]{figs/alltads.pdf}
+	\includegraphics[width=6.8in]{alltads.pdf}
 }
 \captionsetup{width=\textwidth}
 \caption[TAD boundary enrichments and depletions.]{ {\bf TAD boundary enrichments and depletions.}
@@ -85,7 +81,7 @@ depletions in our set of chromatin features over these compartment boundaries.
 \begin{figure}
 \begin{center} 
 \makebox[\textwidth][c]{ 
-	\includegraphics[width=6.8in]{figs/allcompartments.pdf}
+	\includegraphics[width=6.8in]{allcompartments.pdf}
 }
 \captionsetup{width=\textwidth}
 \caption[Compartment boundary enrichments and depletions.]{ {\bf Compartment boundary enrichments and depletions.}
@@ -124,7 +120,7 @@ Domain boundary associations with other chromatin features are most frequently p
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=5.5in]{figs/boundarysummary.pdf}
+\includegraphics[width=5.5in]{boundarysummary.pdf}
 \captionsetup{width=\textwidth}
 \caption[Compartment and TAD boundary enrichment summary in three human cell types.]{ {\bf Compartment and TAD boundary enrichment summary in three human cell types.}
 (A) Selected profiles for locus-level features are shown for compartment boundaries (CTCF, H2A.Z and H3K27me3) and TAD boundaries (CTCF, H3K9me3 and POL2), as a mean normalized ChIP-seq signal relative to input chromatin per bin ($\pm1$ standard error). TAD boundaries were examined over $40$ kb bins over the $1$ Mb flanking each boundary; compartment boundaries were examined in 100 kb bins over $3$ Mb. (B) The significance of enrichment or depletion ($-\log_{10}(p)$ two-tailed Mann--Whitney test) of a feature was calculated as the boundary bin relative to the ten most peripheral bins (five either side). Points are scaled by the absolute mean difference in signal over the boundary relative to the mean of peripheral bins.
@@ -145,7 +141,7 @@ spanning regions of up to 500 kb for TAD boundaries but those over compartment b
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=5.8in]{figs/ctcfyy1.pdf}
+\includegraphics[width=5.8in]{ctcfyy1.pdf}
 \captionsetup{width=\textwidth}
 \caption[Distinct enrichments of CTCF and YY1 boundaries.]{ {\bf Distinct enrichments of CTCF and YY1 boundaries.}
 The significance of TAD boundary enrichments and depletions are shown (as in Fig. \ref{fig:boundarysummary}) for boundaries
@@ -187,7 +183,7 @@ To investigate this, we used the \texttt{RepeatMasker}\cite{Tarailo-Graovac2009}
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=3.95in]{figs/rep_classprofiles.pdf}
+\includegraphics[width=3.95in]{rep_classprofiles.pdf}
 \captionsetup{width=\textwidth}
 \caption[Repeat class average-o-grams over all TAD and compartment boundaries.]{ {\bf Repeat class average-o-grams over all TAD and compartment boundaries.}
 \texttt{RepeatMasker} repeat annotations are counted per 50 kb for 1 Mb either side of all TAD and compartment boundaries. The mean counts per bin genome-wide are plotted with $\pm 95\%$ confidence intervals.
@@ -199,7 +195,7 @@ At the level of repeat class, we corroborate the findings of \citet{Dixon2012} t
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=3.2in]{figs/rep_classbubble.pdf}
+\includegraphics[width=3.2in]{rep_classbubble.pdf}
 \captionsetup{width=\textwidth}
 \caption[Significance and effect sizes of repeat class enrichments and depletions over boundaries.]{ {\bf Significance and effect sizes of repeat class enrichments and depletions over boundaries.}
 Boundary profiles (as shown in Figure \ref{fig:rep_classprofiles}) were each tested for enrichment or depletion at the boundary bin relative to peripheral non-boundary bins (see Methods \ref{boundaries}). Bubble area is proportional to the raw effect size of an enrichment or depletion. The Bonferroni-corrected significance threshold is highlighted with a dashed line.
@@ -214,7 +210,7 @@ Repeat classes can be broken into smaller repeat families. \citet{Dixon2012} rep
 \begin{figure}
 \begin{center} 
 \makebox[\textwidth][c]{ 
-\includegraphics[width=7in]{figs/rep_fambubble.pdf}
+\includegraphics[width=7in]{rep_fambubble.pdf}
 }
 \captionsetup{width=\textwidth}
 \caption[Significance and effect sizes of repeat family enrichments and depletions over boundaries.]{ {\bf Significance and effect sizes of repeat family enrichments and depletions over boundaries.}
@@ -246,7 +242,7 @@ To build parsimonious and accurate models (as discussed in Section \ref{sec:pars
 %3 0.6645574 15    K562
 \begin{figure}
 \begin{center} 
-\includegraphics[width=3in]{figs/AUCRF_opt.pdf}
+\includegraphics[width=3in]{AUCRF_opt.pdf}
 \captionsetup{width=\textwidth}
 \caption[ The AUC-RF stepwise algorithm finds that variable subset which maximises the AUROC on out-of-bag data. ]{ {\bf The AUC-RF stepwise algorithm finds that variable subset which maximises the AUROC on out-of-bag data. }
 The AUROC is calculated at each stage of a stepwise method for selecting the best subset model from a full featureset. Here AUC-RF selected the following combinations: GM12878: 26 vars, 0.66 AUC; H1 hESC: 17 vars, 0.71 AUC; K562: 15 vars, 0.66 AUC. The AUC-RF algorithm is described in Methods \ref{meth:tadpred}.
@@ -259,7 +255,7 @@ Predictive performance of these models is shown as ROC plots (Fig. \ref{fig:tadp
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=3in]{figs/tadpred_auroc.pdf}
+\includegraphics[width=3in]{tadpred_auroc.pdf}
 \captionsetup{width=\textwidth}
 \caption[ Receiver operating characteristics for TAD boundary classifications. ]{ {\bf Receiver operating characteristics for TAD boundary classifications. }
 ROCs are shown for three cell type specific classifiers of TAD boundary bins. The area under each cure is also shown (\emph{inset}).
@@ -271,7 +267,7 @@ Despite this sub-optimal classification accuracy, it is still of interest to ana
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=5.45in]{figs/tadpred_varimp.pdf}
+\includegraphics[width=5.45in]{tadpred_varimp.pdf}
 \captionsetup{width=\textwidth}
 \caption[ Variable importance for boundary classification Random Forest models. ]{ {\bf Variable importance for boundary classification Random Forest models. }
 The ten most important variables in each boundary classification model are shown and ranked by their variable importance as defined by mean decrease in Gini impurity (Methods \ref{meth:gini}).
@@ -297,7 +293,7 @@ Due to the way metaTADs were constructed by our collaborators, by sequential agg
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=2.75in]{figs/mt_calibrate.pdf}
+\includegraphics[width=2.75in]{mt_calibrate.pdf}
 \captionsetup{width=\textwidth}
 \caption[Calibration of metaTAD size selection bounds.]{ {\bf Calibration of metaTAD size selection bounds. }
 As the lower bound on metaTAD size is increased, the proportion of all TAD boundaries which are also metaTAD boundaries decreases.
@@ -311,7 +307,7 @@ Next a comparison between metaTAD boundaries for metaTAD size ($s$) in the range
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=4.5in]{figs/mt_feats.pdf}
+\includegraphics[width=4.5in]{mt_feats.pdf}
 \captionsetup{width=\textwidth}
 \caption[Large metaTADs show greater enrichments than TADs for an array of boundary features.]{ {\bf Large metaTADs show greater enrichments than TADs for an array of boundary features.}
 Genome-wide profiles of epigenomic features and gene densities averaged over all TAD and metaTAD (10 -- 40 Mb) boundaries (ribbons show $95\%$ confidence intervals of the mean).
@@ -325,7 +321,7 @@ To test this, we reran the metaTAD boundary analysis (Fig. \ref{fig:mtfeats}) bu
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=4.5in]{figs/metatad_cutoffenrich.pdf}
+\includegraphics[width=4.5in]{metatad_cutoffenrich.pdf}
 \captionsetup{width=\textwidth}
 \caption[MetaTAD boundary enrichments and depletions with varying size selection.]{ {\bf MetaTAD boundary enrichments and depletions with varying size selection. }
 Boundary average-o-grams are shown for TAD and metaTAD boundaries with variable lower bound cut-offs. Sample sizes for each threshold are shown in the legend (\emph{inset}).
@@ -341,7 +337,7 @@ High resolution LAD data in mouse embryonic stem cells were retrieved from \cite
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=4.5in]{figs/mt_laminperm.png}
+\includegraphics[width=4.5in]{mt_laminperm.png}
 \captionsetup{width=\textwidth}
 \caption[MetaTAD boundaries align with those of lamina associated domains.]{ {\bf MetaTAD boundaries align with those of lamina associated domains.}
 Heatmaps of LaminB1 association microarray probe intensity values over MetaTAD boundaries (from domains of size 10 -- 40 Mb) and TAD boundaries, are displayed beside examples of circularly-permuted boundaries (Methods \ref{meth:metalad}). Profiles are shown $\pm450$ kb from each boundary.
@@ -355,7 +351,7 @@ To test the significance of these observations, we apply a permutation-based sta
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=2.5in]{figs/mt_laminsummary.pdf}
+\includegraphics[width=2.5in]{mt_laminsummary.pdf}
 \captionsetup{width=\textwidth}
 \caption[ MetaTAD boundaries co-occur with LAD boundaries much more often than is expected by chance. ]{ {\bf MetaTAD boundaries co-occur with LAD boundaries much more often than is expected by chance. }
 Heatmaps of lamina association over MetaTAD boundaries are shown as in Figure \ref{fig:mtlamin}. Sidebars labelled O and E reflect observed and expected proportions of metaTAD / LAD boundary overlaps (Methods \ref{meth:metalad}).
@@ -367,7 +363,7 @@ As with other enrichments (e.g. Fig. \ref{fig:mtcutoffenrich}), we went on to ve
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=5in]{figs/mt_cutoffrange.pdf}
+\includegraphics[width=5in]{mt_cutoffrange.pdf}
 \captionsetup{width=\textwidth}
 \caption[ MetaTAD--LAD coincidence increases at higher levels of the metaTAD hierarchy. ]{ {\bf MetaTAD--LAD coincidence increases at higher levels of the metaTAD hierarchy. }
 Heatmaps of lamina association over MetaTAD boundaries are shown as in Figure \ref{fig:mtlamin}. Panels show the size selection cutoffs for metaTAD domains considered in each case.
@@ -385,7 +381,7 @@ Collaborators explored changes in both the overall tree structure between timepo
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=4.5in]{figs/mt_ts.pdf}
+\includegraphics[width=4.5in]{mt_ts.pdf}
 \captionsetup{width=\textwidth}
 \caption[Observed enrichments persist over a time series.]{ {\bf Observed enrichments persist over a time series.}
 CAGE-defined active TSS (CTSS) were counted per $50$ kb bin across each TAD and MetaTAD (10 -- 40 Mb) boundary and averaged (ribbons show $95\%$ confidence intervals of the mean). Gene densities refer to mean counts of annotated genes per bin, with an overlap of at least 250 bp (Methods \ref{meth:metadata}).
@@ -409,7 +405,7 @@ We examined the genome wide concordance of interphase compartment boundaries wit
 \begin{figure}
 \begin{center} 
 \makebox[\textwidth][c]{ 
-\includegraphics[width=5.7in]{figs/gb_ideo.pdf}
+\includegraphics[width=5.7in]{gb_ideo.pdf}
 }
 \captionsetup{width=\textwidth}
 \caption[Genome-wide agreement between Giemsa bands and A/B compartments..]{ {\bf Genome-wide agreement between Giemsa bands and A/B compartments. }
@@ -424,7 +420,7 @@ This agreement is not wholly unexpected given the known characteristics of G-neg
 
 \begin{figure}
 \begin{center} 
-\includegraphics[width=3.8in]{figs/gbands.pdf}
+\includegraphics[width=3.8in]{gbands.pdf}
 \captionsetup{width=\textwidth}
 \caption[ Giemsa--stain bands correspond to A/B compartments.]{ {\bf Giemsa--stain bands correspond to A/B compartments.}
 The correspondence between G-bands and A/B compartments is broken down into the five levels of Giemsa stain. A compartments largely match \emph{gneg} staining, while \emph{gpos75} and \emph{gpos100} are enriched in B compartments.
