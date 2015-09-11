@@ -90,15 +90,15 @@
 \contentsline {subsection}{\numberline {4.2.2}Model exploration}{61}{subsection.4.2.2}
 \contentsline {section}{\numberline {4.3}Modelling FANTOM5 expression data}{62}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}\emph {Bestbin} location}{63}{subsection.4.3.1}
-\contentsline {section}{\numberline {4.4}Modelling higher order chromatin}{65}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Predictive model}{65}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Cross-application}{66}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Between-cell variability}{66}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.4}Modelling higher order chromatin}{64}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Predictive model}{64}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Cross-application}{65}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Between-cell variability}{67}{subsection.4.4.3}
 \contentsline {subsection}{\numberline {4.4.4}Variable importance}{68}{subsection.4.4.4}
 \contentsline {subsection}{\numberline {4.4.5}Correlating input features}{72}{subsection.4.4.5}
 \contentsline {section}{\numberline {4.5}Technical considerations}{72}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Resolution}{72}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Other modelling approaches}{75}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.2}Other modelling approaches}{72}{subsection.4.5.2}
 \contentsline {subsection}{\numberline {4.5.3}Non-independence}{76}{subsection.4.5.3}
 \contentsline {section}{\numberline {4.6}Parsimonious models from expanded feature sets}{77}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}Stepwise regression}{77}{subsection.4.6.1}
