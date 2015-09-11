@@ -296,6 +296,7 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT figs/rep_classprofiles.pdf
 INPUT ./figs/rep_classprofiles.pdf
 INPUT ./figs/rep_classprofiles.pdf
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT figs/rep_classbubble.pdf
 INPUT ./figs/rep_classbubble.pdf
 INPUT ./figs/rep_classbubble.pdf
