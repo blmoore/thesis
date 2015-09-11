@@ -24,11 +24,7 @@
 % bibliography
 \bibliographystyle{../thesis}
 
-% title setup
-\title{ \vspace{3in} Unravelling higher order genome organisation {\small [working
-    title]} \\ \vspace{2em} {\large {\bf Introduction}} }
-\author{Benjamin L. Moore}
-\titlepic{\vspace{2.2in} \includegraphics[width=\textwidth]{/Users/benmoore/hvl/1yrReport/figs/igmm.png}}
+\graphicspath {{../figs/}}
 
 \begin{document}
 
@@ -56,7 +52,7 @@ The final stage in the evolution of the 3C method was an all-versus-all assay, c
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=4in]{figs/hic.png}
+\includegraphics[width=4in]{hic.png}
 \captionsetup{width=\textwidth}
 \caption[Steps in the Hi-C assay.]{ {\bf Steps in the Hi-C assay. } 
   Schematic of the Hi-C experimental procedure as described in \citet{Lieberman2009}
@@ -91,7 +87,7 @@ of euchromatin and heterochromatin, respectively. A compartments were observed t
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=.75\textwidth]{figs/eigcalc.png}
+\includegraphics[width=.75\textwidth]{eigcalc.png}
 \captionsetup{width=\textwidth}
 \caption[Derivation of an A/B compartment profile from Hi-C data.]{ {\bf Derivation of A/B an compartment profile from Hi-C data.} 
 Intrachromosomal observed interaction frequencies (O) are averaged along super-diagonals to give a distance-normalised expected matrix (E). The Pearson correlation of the O/E matrix then can undergo eigenvector expansion; in most cases eigenvector $\mathbf{v}$ with the largest eigenvalue, $\lambda$, then reflects A/B compartmentalisation.\cite{Lieberman2009} Matrices are coloured from blue (lowest values), through yellow, to highest values in red.
@@ -119,7 +115,7 @@ In experiments totalling around two billion total sequencing reads, \citet{Dixon
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=2.5in]{figs/di_example.png}
+\includegraphics[width=2.5in]{di_example.png}
 \captionsetup{width=\textwidth}
 \caption[Dixon \emph{et al.} pipeline for calling topologically associating domains.]{ {\bf Dixon \emph{et al.} pipeline for calling topologically associating domains.} First a directionality index (DI) is calculated for each bin based on the ratio of upstream:downstream contacts. Secondly a hidden Markov model (HMM) is used to infer the most likely state sequence that emitted the DI variable. Finally a simple rule is applied whereby a run of high-confidence upstream-biased state calls marks the end of a domain. New domains begin with any subsequent downstream-biased state. Gaps between TAD calls can be observed and these are labelled border regions up to a size threshold of 400 kb, whereafter those regions are unclassified.\cite{Dixon2012} Additional details are given in Methods \ref{meth:tadcalling}.
 }\label{fig:dicalc}
@@ -148,7 +144,7 @@ dynamics of chromatin folding.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=5.5in]{figs/fractals.pdf}
+\includegraphics[width=5.5in]{fractals.pdf}
 \captionsetup{width=\textwidth}
 \caption[ Comparison of theoretical models of chromatin folding. ]{ {\bf Comparison of theoretical models of chromatin folding. } 
  Two theoretical models of chromatin folding are shown simulated along a 2D polymer, coloured from start to finish as blue--green--red. An equilibrium globule is represented by a Hamiltonian path through a grid network (\emph{left}) and is compared to a fractal globule model, here represented by a Hilbert curve (\emph{right}).
@@ -174,7 +170,7 @@ This SBS model achieves broad explanatory power for a range of observed power la
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=4in]{figs/genome_org.png}
+\includegraphics[width=4in]{genome_org.png}
 \captionsetup{width=\textwidth}
 \caption[Levels of higher order chromatin organisation.]{ {\bf Levels of higher order chromatin organisation. } 
   Cartoon showing how functional contacts, such as loops between bound CTCF insulators (Section \ref{intro:loops}), occur within TADs (Section \ref{intro:tads}) which in turn are found within A or B compartments (Section \ref{sec:compartments}).

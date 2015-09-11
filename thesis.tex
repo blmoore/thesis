@@ -62,7 +62,7 @@ Benjamin L. Moore \\
 The University of Edinburgh \\ 2015 \\} %\vspace{5em}
 }
 
-\titlepic{\vspace{1in} \includegraphics[width=\textwidth]{/Users/benmoore/hvl/1yrReport/figs/igmm.png}}
+\titlepic{\vspace{1in} \includegraphics[width=\textwidth]{figs/igmm.png}}
 
 %\usepackage{etoolbox}
 % http://tex.stackexchange.com/questions/204974/how-to-change-the-appearance-of-listof-headers
@@ -71,6 +71,8 @@ The University of Edinburgh \\ 2015 \\} %\vspace{5em}
 
 % KOMA script fix
 \def\bf{\normalfont\bfseries}
+
+\graphicspath {{figs/}}
 
 \begin{document}
 
@@ -227,18 +229,15 @@ changes in cellular differentiation. \emph{Submitted}
 
 \input{4-boundaries/boundaries.tex}
 
-% will this chapter be a goer?
-%\input{5-comparative/comparative.tex}
-
-\input{6-shh/shh.tex}
+\input{5-shh/shh.tex}
 
 % ---------- Discussion ---------- %
-\input{7-discussion/discussion.tex}
+\input{6-discussion/discussion.tex}
 
 \backmatter
 
 % Appendix with includes
-\input{8-appendix/appendix.tex}
+\input{7-appendix/appendix.tex}
 
 % References (grabbed from includes)
 %\begin{small}
