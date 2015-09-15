@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{20}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Lieberman-Aiden \emph{et~al.}(2009)Lieberman-Aiden, van Berkum,
@@ -104,6 +104,12 @@ Huang DW, Sherman BT, Lempicki Ra (2009) {Bioinformatics enrichment tools:
 Lozzio BB, Lozzio CB, Bamberger EG, Feliu AS (1981) A multipotential leukemia
   cell line (k-562) of human origin.
 \newblock \emph{Experimental Biology and Medicine}, \textbf{166}(4): 546--550.
+
+\bibitem[{Edelman and Fraser(2012)}]{Edelman2012}
+Edelman LB, Fraser P (2012) {Transcription factories: Genetic programming in
+  three dimensions}.
+\newblock \emph{Current Opinion in Genetics and Development}, \textbf{22}(2):
+  110--114.
 
 \bibitem[{Bickmore(2013)}]{Bickmore2013}
 Bickmore Wa (2013) {The spatial organization of the human genome.}
