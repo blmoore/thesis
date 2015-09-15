@@ -1,4 +1,4 @@
-\begin{thebibliography}{88}
+\begin{thebibliography}{89}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Barrett \emph{et~al.}(2013)Barrett, Wilhite, Ledoux, Evangelista,
@@ -306,6 +306,13 @@ Karolchik D, Barber GP, Casper J, Clawson H, Cline MS, Diekhans M, Dreszer TR,
   Fujita Pa, Guruvadoo L, \emph{et~al.} (2014) {The UCSC Genome Browser
   database: 2014 update}.
 \newblock \emph{Nucleic Acids Research}, \textbf{42}(D1): 764--770.
+
+\bibitem[{Luperchio \emph{et~al.}(2014)Luperchio, Wong and
+  Reddy}]{Luperchio2014}
+Luperchio TR, Wong X, Reddy KL (2014) {Genome regulation at the peripheral
+  zone: Lamina associated domains in development and disease}.
+\newblock \emph{Current Opinion in Genetics and Development}, \textbf{25}(1):
+  50--61.
 
 \bibitem[{Peric-Hupkes \emph{et~al.}(2010)Peric-Hupkes, Meuleman, Pagie,
   Bruggeman, Solovei, Brugman, Gr\"{a}f, Flicek, Kerkhoven
