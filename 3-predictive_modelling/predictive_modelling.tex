@@ -54,8 +54,7 @@ finding of this study was that mRNA half-life and microRNA mediated
 transcript degradation both had relatively minor influence on
 steady-state mRNA levels, with the authors concluding that ``the lion's
 share of regulatory contribution is at the level of mRNA synthesis and
-predictable from chromatin alone.''\cite{Tippmann2012} An independent study used a similar regression modelling approach to chromatin
-and transcription factor data and again
+predictable from chromatin alone.''\cite{Tippmann2012} An independent study used a similar regression modelling approach to explore chromatin and transcription factor data and again
 concluded that models built with histone modifications and chromatin
 accessibility data were almost as accurate as those which also
 included binding data for 12 transcription factors.\cite{McLeay2012a} 
@@ -96,14 +95,14 @@ approach. We can extend this idea to the related domain of nuclear architecture,
 We reimplemented the published modelling framework of \citet{Dong2012} to 
 replicate their results and analyse the strengths and caveats of their approach. 
 
-We were able to reproduce the reported results and generate highly accurate models of transcriptional output. An example is shown for a model of CAGE expression in the H1 hESC cell type (Fig. \ref{fig:dongres}). Note that not all variables used in \citet{Dong2012} were made available for this particular modelling scenario, however the Pearson correlation between predicted and observed expression ($0.87$) is above the study's median value ($0.83$), and in-line with other models predicting CAGE data (median $PCC \approx 0.87$).\cite{Dong2012}
+We were able to reproduce the reported results and generate highly accurate models of transcriptional output based on underlying chromatin features. An example is shown for a predictive model of CAGE transcriptional output in the H1 hESC cell type (Fig. \ref{fig:dongres}). Note that not all variables used in \citet{Dong2012} were made available for this particular modelling scenario, however the Pearson correlation between predicted and observed expression ($0.87$) is above the previous study's median value ($0.83$), and in-line with other models predicting CAGE data (median $PCC \approx 0.87$).\cite{Dong2012}
 
-We also re-calculated measures of variable importance for this model of transcription (Fig. \ref{fig:dongres}). We note some small variations from the example model shown in \citet{Dong2012} which was predicting cytosolic CAGE data recorded in K562 cells. This hints at some degree of some variability between cell type models, though broad similarities also exist such as both models ranking DNase I hypersensitivity as a relatively informative variable (Fig. \ref{fig:dongres}).
+We also re-calculated measures of variable importance for this model of transcription (Fig. \ref{fig:dongres}). We note some small variations from the example model shown in \citet{Dong2012} which aimed to predict cytosolic CAGE levels recorded in K562 cells. This hints at some degree of some variability between cell type models, though broad similarities also exist such as both models ranking DNase I hypersensitivity as a relatively informative variable (Fig. \ref{fig:dongres}).
 
 When replicating the modelling approach of \citet{Dong2012}, we were surprised to find that the two-step classification
 then regression (firstly assessing a gene as `on' or `off' and then
 predicting its expression level) added little additional accuracy relative to a simple
-linear regression model (Fig. \ref{fig:TwoStepvsSimple}). Indeed, it appears the ``best bin`` technique (Section \ref{sec:dongbestbin}) had much greater impact on overall predictive power than the addition of this classification step.
+linear regression model (Fig. \ref{fig:TwoStepvsSimple}). Indeed, it appears the ``best bin`` technique (explained below, Section \ref{sec:dongbestbin}) had much greater impact on overall predictive power than the addition of this classification step.
 
 % figure : results of Dong et al. reproduction
 
@@ -132,8 +131,8 @@ first bins normalised signal intensities into $40 \times 100$ bp bins
 encompassing 4 kb around the TSS, and adds an additional bin representing the remaining
 gene body. Then the correlation between
 the signal of a given mark and the expression of a TSS across all
-genes is measured, then the bin producing the highest correlation is
-designated as the `bestbin'. That bin's normalised ChIP-seq signal intensity is then
+genes is measured and the bin producing the highest correlation is
+designated as the `bestbin'. The normalised ChIP-seq signal intensity of this bestbin is then
 used as an input feature for training the model of transcription. This strategy was shown to increase model performance, measured in terms of
 the Pearson correlation between predicted and observed expression, by $0.1$ in
 the simple regression model, an increase of almost $13\%$
@@ -149,7 +148,7 @@ bins.\cite{Dong2012}
 \end{center}
 \end{figure} 
 
-The justification for such an approach hinges on the idea that the multitude of input features (mostly histone modifications and DNA binding proteins) have a variety of biological functions, and so the bestbin method is one way of learning these functions in an automated and unbiased way. For example, the histone modification H3K36me3 is understood to be painted across exons that are being actively-transcribed,\cite{Tippmann2012, Kolasinska-Zwierz2009, Schaft2003} thus the genome-wide summary statistic that best captures this function is likely the whole-gene measurement, rather than the level of H3k36me3 at a gene's TSS or upstream promoter. A re-analysis of ENCODE data used in \citet{Dong2012} highlights this kind of variability across input features (Fig. \ref{fig:dongtssprof}). Some marks clearly are enriched directly over TSS (CTCF, DNase; Fig. \ref{fig:dongtssprof}) while others show enrichments along the gene body (H3K36me3, H4K20me1; Fi.g \ref{fig:dongtssprof}) as well as more-complex, asymmetrical "shoulder" patterns (H3K27me3, H3K9ac; Fig. \ref{fig:dongtssprof}). Bestbin will therefore, to some degree, capture these spatial relationships without \emph{a priori} specification.
+The justification for such an approach hinges on the idea that the multitude of input features (mostly histone modifications and DNA binding proteins) have a variety of biological functions, and so the bestbin method is one way of learning these functions in an automated and unbiased way. For example, the histone modification H3K36me3 is understood to be painted across exons that are being actively-transcribed,\cite{Tippmann2012, Kolasinska-Zwierz2009, Schaft2003} thus the genome-wide summary statistic that best captures this function is likely the whole-gene measurement, rather than the level of H3k36me3 at a gene's TSS or upstream promoter. A re-analysis of ENCODE data used in \citet{Dong2012} highlights this kind of variability across input features (Fig. \ref{fig:dongtssprof}). Some features are clearly enriched directly over the TSS (CTCF, DNase; Fig. \ref{fig:dongtssprof}) while others show enrichments along the gene body (H3K36me3, H4K20me1; Fig. \ref{fig:dongtssprof}), and still others show well more complex, asymmetrical "shoulder" patterns (H3K27me3, H3K9ac; Fig. \ref{fig:dongtssprof}). Bestbin will therefore, to some degree, capture these spatial relationships without \emph{a priori} specification.
 
 % Dissection of best bin (bestbinDetermination.pdf ?)
 
@@ -173,24 +172,22 @@ regressors. While \citet{Dong2012} included broad coverage of different histone 
 they did not investigate the impact of higher order
 chromatin data. For this reason, we matched the TSS positions used in
 \citet{Dong2012} with previously-published genome-wide replication
-timing ratios measured in BG02 ESCs.\cite{Ryba2010} This data is of a different origin to the transcriptional data in this case (which was recorded in H1 hESC) but replication timing is thought to be largely conserved between cell types.\cite{Chambers2013} 
+timing ratios measured in BG02 ESCs.\cite{Ryba2010} This data is of a somewhat different origin to the transcriptional data in this case (which was recorded in H1 hESC) but replication timing is thought to be largely conserved between cell types, and in particular would be expected to be very similar between two ESC lines.\cite{Chambers2013} 
 
 We then used these values as an additional
 regressor in both the two-step classification regression model and the
 simple linear model but saw no significant improvement in either
-model's accuracy (\emph{data not shown}). The reasons for this are likely that the 
-data were relatively low-resolution (1 Mb), from a
-imperfectly matched cell line and also that
-the existing model is already achieving such accurate
-results that they must already be accounting for most of the maximal
+model's accuracy (\emph{data not shown}). Possible reasons for this include that the 
+data were relatively low-resolution (1 Mb) and derived from a
+imperfectly matched cell line. However, since the existing model is already achieving such accurate
+results that its original feature set must already be accounting for most of the maximal
 explainable variance in gene expression given experimental and
-biological noise. With this in mind, additional regressors would be
+biological noise. With this in mind, any additional regressors would be
 expected to yield diminishing returns. Even so, on closer examination,
 the replication timing data
 appeared only slightly more informative than the control ChIP-seq input
 measurements when evaluated with relative importance metrics
-(Fig. \ref{fig:relimp}), implying that large-scale chromatin domains
-and have relatively little influence on the expression of the genes resident within them. 
+(Fig. \ref{fig:relimp}), implying that large-scale chromatin domains have relatively little influence on the expression of the genes resident within them. 
 
 \section{Modelling FANTOM5 expression data}
 
@@ -215,7 +212,7 @@ cells. Applying this modelling strategy to a novel dataset will allow us to asse
 
 We retrieved a number of genome-wide ChIP-seq datasets measured in H1 hESC cells and produced by the ENCODE consortium\cite{Dunham2012} (Methods \ref{meth:fantom5}). These were matched to transcript annotations to build an input feature set for use in building a predictive model of transcriptional output.
 
-Due to the finding that a two-step (classification--regression) approach added little additional modelling accuracy (Fig. \ref{fig:TwoStepvsSimple}), we employed a single-step design using a Random Forest (RF) regression model.\cite{Breiman2001, Diaz2006} With a total of 14 predictors (10 histone modifications, HDAC6, H2A.Z, DNase I and an input control, listed in Methods \ref{meth:fantom5}), we were able to build a highly accurate predictive model of transcriptional output of around $11,000$ TSS (Fig. \ref{fig:model}).
+Due to the finding that a two-step (classification--regression) approach added little additional modelling accuracy (Fig. \ref{fig:TwoStepvsSimple}), we employed a single-step design using a Random Forest (RF) regression model.\cite{Breiman2001, Diaz2006} With a total of 14 predictors (10 histone modifications, HDAC6, H2A.Z, DNase I and an input control, listed in Methods \ref{meth:fantom5}), we were able to build a highly accurate predictive model of transcriptional output spanning around $11,000$ TSS (Fig. \ref{fig:model}).
 
 \begin{figure}
 \begin{center} 
@@ -239,7 +236,7 @@ but it is roughly equal to their median test set correlation of
 $0.83$.\cite{Dong2012}  Though the RMSEs of our predictions, when normalised by the range of
 observed values, compare more favourably ($0.11$, compared with Dong \emph{et al.}'s: $0.14$). 
 
-Our slightly lower predictive power could be explained by our streamlined model design. \citet{Dong2012} implemented a pseudocount optimisation step whereby an additional count added to each binned signal
+Our slightly lower predictive power could be explained by our streamlined model design. \citet{Dong2012} implemented a pseudocount optimisation step whereby an additional count was added to each binned signal
 intensity prior to log transformation to maximise expression correlation. In the model presented above, a fixed
 pseudocount of $1$ was used to avoid introducing an unwarranted positive bias towards higher correlation. We confirmed that a two-step classification--regression design did not improve our model performance metrics; indeed, the PCC and RMSE of a classification--regression framework with this data showed a slight decrease in prediction accuracy ($PCC = 0.834 \pm 0.007$, $\textrm{RMSE} = 1.77$ when applied to the same test and
 training data used in Fig. \ref{fig:model}).
@@ -276,10 +273,9 @@ representing approximately $8\%$ of the complete dataset. Distributions of chose
 \end{figure} 
 
 We find that bestbin selections are often highly consistent across sub-samples, indicating there are fairly static informative regions relative to a TSS for each chromatin feature. Furthermore, the selected
-bestbins match known biological mechanisms; for example the H3K36me3
-mark's bestbin is consistently the whole gene measurement (Fig. \ref{fig:bestbin}) and this
+bestbins match known biological mechanisms; for example the H3K36me3 bestbin is consistently the whole gene measurement (Fig. \ref{fig:bestbin}) and this
 mark is known to be enriched in actively transcribed
-exons.\cite{Tippmann2012, Kolasinska-Zwierz2009, Schaft2003} The negative control variable (ChIP-seq input) shows no strong location bias, as expected (Fig. \ref{fig:bestbin}). Other distributions are less easily explained, such as those features showing a tight distribution of informative regions slightly downstream of the TSS (H3K9ac, H4Kme2/3 and H3K79me2; Fig. \ref{fig:bestbin}). In the case of H3K9ac, we note that the selected bestbin appears to coincide with the highest summit of its bimodal average profile over all TSS (shown in Fig. \ref{fig:dongtssprof}).
+exons.\cite{Tippmann2012, Kolasinska-Zwierz2009, Schaft2003} The negative control variable (ChIP-seq input) shows no strong location bias, as expected (Fig. \ref{fig:bestbin}). Other distributions are intriguing but less easily explained, such as those features showing a tight distribution of informative regions slightly downstream of the TSS (H3K9ac, H4Kme2/3 and H3K79me2; Fig. \ref{fig:bestbin}). In the case of H3K9ac, we note that the selected bestbin appears to coincide with the highest summit of its bimodal average profile over all TSS (shown in Fig. \ref{fig:dongtssprof}).
 
 \section{Modelling higher order chromatin}\label{sec:modhoc}
 
@@ -311,9 +307,9 @@ This predictive performance underlines the strong connection between locus-level
 
 \subsection{Cross-application}\label{sec:xapp}
 
-High predictive accuracy on cell type specific models could be the result of ``overfitting". In machine-learning, overfitting refers to the point at which parameters are being optimised to capture the random errors of a particular sample, on top of any underlying relationship between inputs and predictions, thereby giving an overoptimistic model performance which would not generalise to another featureset with an independent noise profile.\cite{Babyak2004, Hawkins2004} Commonly Random Forest models are thought not to suffer from overfitting, but while it is true that this is not an issue when increasing the size of a forest, the technique itself can indeed overfit, particularly in the instance of fully-grown regression trees whose leaf nodes can contain a single case.\cite{Hastie2001}
+High predictive accuracy on cell type specific models could be the result of ``overfitting". In machine-learning, overfitting refers to the point at which parameters are being optimised to capture the random errors of a particular sample, on top of any underlying relationship between inputs and predictions, thereby giving an inflated estimate of model performance which would not translate to another feature set with an independent noise profile.\cite{Babyak2004, Hawkins2004} Commonly Random Forest models are thought not to suffer from overfitting, but while it is true that this is not an issue when increasing the size of a forest, the technique itself can indeed overfit, particularly in the instance of fully-grown regression trees whose leaf nodes can contain a single case.\cite{Hastie2001}
 
-To test if overfitting was responsible for our high modelling accuracy, we cross-applied models learnt in one cell type to unseen input data from each of the other two cell types under study. If predictive accuracy is a lot lower on unseen data, this lends evidence to the idea that our models may be overfit to their respective cell types. Conversely, it could be the case that biologically-distinct mechanisms are in place that differ between cell types, preventing a simple cross-application.
+To test if overfitting was responsible for our high modelling accuracy, we cross-applied models learnt in one cell type to unseen input data from each of the other two cell types under study. If predictive accuracy is a lot lower on unseen data, this lends evidence to the idea that our models may overfit to their respective cell types. Conversely, it could be the case that biologically-distinct mechanisms are in place that differ between cell types, preventing a simple cross-application.
 
 \begin{figure}
 \begin{center} 
@@ -325,7 +321,7 @@ To test if overfitting was responsible for our high modelling accuracy, we cross
 \end{center} 
 \end{figure} 
 
-We found cross-application between cell types was possible and resulted in similarly-high levels of accuracy to within cell-type cross-validation (Fig. \ref{fig:xapp}). This gives good evidence not only that are models are not overfitting to cell-type specific noise, but also that there exist broad rules linking chromatin conformation and locus-level features. Model performance under cross-application suggests there exists enough commonalities for compartment profile predictions to transcend the cell-type specific biology inherent to an embryonic stem cell or differentiated lymphoblast.
+We found cross-application between cell types was possible and resulted in similarly-high levels of accuracy to within cell-type cross-validation (Fig. \ref{fig:xapp}). This gives good evidence not only that these models are not overfitting to cell-type specific noise, but also that there exist broad rules linking chromatin conformation and locus-level features. Model performance under cross-application suggests that there are enough commonalities for compartment profile predictions to transcend the cell-type specific biology inherent to an embryonic stem cell or differentiated cell type.
 
 \subsection{Between-cell variability}\label{sec:varrfmod}
  
@@ -334,14 +330,14 @@ We found cross-application between cell types was possible and resulted in simil
 \includegraphics[width=3.5in]{stratmod.pdf}
 \captionsetup{width=\textwidth} 
 \caption[Genomic regions that vary across cell types are modelled less successfully than static regions.]{ {\bf Genomic regions that vary across cell types are modelled less successfully than static regions. }
-Genome-wide compartment eigenvectors were partitioned into thirds according to their median absolute deviation (MAD) across the three cell types under study (Methods \ref{sec:variable}). This bar chart compares the accuracy of models fit independently to each third, according to the Pearson correlation coefficient (PCC) between predicted and observed values.
+Genome-wide compartment eigenvectors were partitioned into thirds according to their median absolute deviation (MAD) across the three cell types under study (Methods \ref{sec:variable}). This bar chart compares the accuracy of models fitted independently to each third, according to the Pearson correlation coefficient (PCC) between predicted and observed values.
 }\label{fig:stratmod}
 \end{center} 
 \end{figure} 
  
 Given much of the higher order chromatin organisation is conserved between the three cell types used in this work (Fig. \ref{fig:compcor}), a testable hypothesis is that these conserved regions are drivers of cross-applicability between cell types. Under this hypothesis we might also expect those genomic regions which vary most across cell types to be more difficult to predict.
 
-Indeed we found the most variable regions across cell types were then most difficult to predict through our RF modelling framework (Fig. \ref{fig:stratmod}). In each cell type, the third of the genome with the most consistent compartment eigenvectors across cell types could then most accurately be modelled in each cell type, and conversely the most variable third shown significantly depleted predictability (Fig. \ref{fig:stratmod}). This result suggests these variable regions could either be those which are noisiest, where the eigenvector is least capturing compartment structure, or where cell-type specific biology is influencing compartment structure in ways not captured by our input feature set and low resolution modelling pipeline. Results presented in Section \ref{sec:variableregions}, showing that regions of variable structure are enriched for cell type specific enhancers and transcription, is suggestive of this latter explanation.
+Consistent with this we found the most variable regions across cell types were the most difficult to predict through our RF modelling framework (Fig. \ref{fig:stratmod}). In each cell type, the third of the genome with the most consistent compartment eigenvectors across cell types could then most accurately be modelled in each cell type, and conversely the most variable third showed significantly depleted predictability (Fig. \ref{fig:stratmod}). This result suggests these variable regions could either be those which are noisiest, where the eigenvector is least able to capture compartment structure, or where cell-type specific biology is influencing compartment structure in ways not captured by our input feature set and low resolution modelling pipeline. Results presented in Section \ref{sec:variableregions}, showing that regions of variable structure are enriched for cell type specific enhancers and transcription, is suggestive of this latter explanation.
 
 \subsection{Variable importance}\label{sec:varimp}
 
@@ -358,7 +354,7 @@ Variable importance for each Random Forest model was measured in terms of percen
 Having built accurate predictive models, we next dissect the relative variable contributions made from our range of input features and compare these across cell types. An overview of the top 10 most highly-ranked features in cell type specific models shows some agreement but also notable differences between cell types (Fig. \ref{fig:varimp})
 
 Only one input feature, H3k9me3, is present in the top 10 most important variables of each model (Fig. \ref{fig:top10venn}). H3k9me3 is one of the few features to be negatively correlated with compartment eigenvectors, hence offers orthogonal information to the majority of other, positively-correlated input variables (Fig. \ref{fig:h1feats}; Section \ref{sec:corrinputs}). Of those important variables shared between two cell type models, H3k27me3 is also a repressive mark and deposited by polycomb repressive complex 2 (PRC2)\cite{Vizan2014} while H2A.Z is a histone variant again linked to polycomb-regulated genes and essential for embryonic development.\cite{Creyghton2008} Furthermore EZH2, the catalytic subunit of PRC2,\cite{Deb2014} is also included in the feature set and is highly ranked in the GM12878 cell type model (Fig. \ref{fig:varimp}). Other interrelated and important variables include MYC and MAX, which are found in the top 10 influential variables in H1 hESC, and MXI1, found to be an informative variable in GM12878. Recent results suggest MYC binds open chromatin as a transcriptional amplifier in embryonic stem
-cells,\cite{Nie2012, Kieffer-Kwon2013a} with MAX and MXI1 acting as antagonistic co-regulators.\cite{Zervos1993} These biological relationships between variables may help explain the observed differences between models: different representatives of correlated clusters of input variables are likely being selected in each model (see Section \ref{sec:corrinputs}).
+cells,\cite{Nie2012, Kieffer-Kwon2013a} with MAX and MXI1 acting as antagonistic co-regulators.\cite{Zervos1993} These biological relationships between variables may help explain the observed differences between models: different representatives of correlated clusters of input variables are likely being selected in each model (this is explored in Section \ref{sec:corrinputs}).
 
 \begin{figure}
 \begin{center} 
@@ -370,7 +366,7 @@ Venn diagram showing the intersections between sets of ten most influential vari
 \end{center} 
 \end{figure} 
 
-To assess the significance of observed intersections (Fig. \ref{fig:top10venn}), the variable selection process could be modelled with, for example, a multivariate hypergeometric distribution or via simulation. Simulation was used here for simplicity: each intersection was calculated under $10,000$ variables draws with uniform distribution and empirical $p$-values were then calculated accordingly. Under the assumption that variables are ranked independently in each cell type, drawing at least one variable in all three cell types would be expected by chance ($p = 0.6$). Similarly, the overlaps between pairs of cell types is within the range of expectation (probability of 7 or more variables appearing in exactly two sets: $0.39$). Hence these data suggest the top 10 most influential variables are not significantly more alike across the three cell-type specific models than expected by chance, however ten is an arbitrary cutoff, and many of the rankings are based on small differences in variable importance, thus could be unstable between multiple generations of stochastic RF models.
+To assess the significance of observed intersections (Fig. \ref{fig:top10venn}), the variable selection process could be modelled with, for example, a multivariate hypergeometric distribution or via simulation. Simulation was used here for simplicity: each intersection was calculated under $10,000$ variables draws with uniform distribution and empirical $p$-values were then calculated accordingly. Under the assumption that variables are ranked independently in each cell type, drawing at least one variable in all three cell types would be expected by chance ($p = 0.6$). Similarly, the overlaps between pairs of cell types is within the range of expectation (probability of 7 or more variables appearing in exactly two sets: $0.39$). Hence these data suggest the top 10 most influential variables are not significantly more alike across the three cell-type specific models than expected by chance, however 10 is an arbitrary cutoff, and many of the rankings are based on small differences in variable importance, thus could be unstable between multiple generations of stochastic RF models.
 
 % figure showing e.g. how individual var regresses against eigen (Egr1compare.pdf)
 \begin{figure}
@@ -395,7 +391,7 @@ Variable importance for each Random Forest model was measured in terms of percen
 \end{center} 
 \end{figure} 
 
-In addition to rankings, raw variable importance metrics can also be compared between cell-type specific models (Fig. \ref{fig:varimp_diff}). Through this analysis we found that variables such as CTCF have a relatively small but highly consistent variable importance across the three cell type specific models, whereas other features like ATF3 are highly influential in one cell type but not the other two. Absolute differences in these figures should not be over interpreted and will be affected to some degree by data quality, eigenvector calculation and other sources of noise. Nevertheless there are observations which may reflect biological phenomena, such as the higher relative importance of P300 in both haematopoietic cell line models, potentially reflecting its activity as a histone acetyl transferase that regulates haematopoiesis,\cite{Sun2015} compared with the more consistent influence of CTCF in each model, a transcription factor widely known as a regulator of genome architecture (discussed in Section \ref{intro:loops}).
+In addition to rankings, raw variable importance metrics can also be compared between cell-type specific models (Fig. \ref{fig:varimp_diff}). Through this analysis we found that variables such as CTCF have a relatively small but highly consistent variable importance across the three cell type specific models, whereas other features like ATF3 are highly influential in one cell type but not the other two. Absolute differences in these figures should not be over interpreted and will be affected to some degree by data quality, eigenvector calculation and other sources of noise. Nevertheless there are observations which may reflect biological phenomena, such as the higher relative importance of P300 in both haematopoietic cell line models, potentially reflecting its activity as a histone acetyl transferase that regulates haematopoiesis,\cite{Sun2015} compared with the more consistent influence of CTCF in each model, an insulator and transcription factor widely known as a regulator of genome architecture (discussed in Section \ref{intro:loops}).
 
 % also consider looking at LOCAL variable importance
 
@@ -421,14 +417,14 @@ Outliers are also present. H3K9me3, noted for high variable importance in each m
 
 \subsection{Resolution}\label{sec:matres}
 
-Thus far models were built at 1 Mb resolution, but if we are capturing true biological relationships we would expect these to hold at higher or lower resolutions. To test this, models leaned at 1 Mb resolution were applied to feature sets binned at 100 kb, an order of magnitude higher resolution.
+Thus far models were built at 1 Mb resolution, but if we are capturing true biological relationships we would expect these to hold at higher or lower resolutions. To test this, models trained at 1 Mb resolution were applied to feature sets binned at 100 kb, an order of magnitude higher resolution.
 
 \begin{figure}
 \begin{center} 
 \includegraphics[width=3in]{100kb.pdf}
 \captionsetup{width=\textwidth} 
-\caption[Models learned at 1 Mb resolution can be applied to higher resolution datasets.]{ {\bf Models learned at 1 Mb resolution can be applied to higher resolution datasets. }
-Despite having been trained on low resolution training sets, the Random Forest models generated can successfully predict compartment eigenvectors at higher resolution (100 kb, a $10\times$ zoom). 
+\caption[Models trained at 1 Mb resolution can be applied to higher resolution datasets.]{ {\bf Models trained at 1 Mb resolution can be applied to higher resolution datasets. }
+Despite having been trained on lower resolution training sets, the Random Forest models generated can successfully predict compartment eigenvectors at higher resolution (100 kb, a $10\times$ zoom). 
 }\label{fig:100kb}
 \end{center} 
 \end{figure} 
@@ -439,7 +435,7 @@ Note however, there is some indirect leakage between test and training set when 
 
 \subsection{Other modelling approaches}\label{sec:lmpls}
 
-Random Forest (RF) was \emph{a priori} chosen as an appropriate and powerful modelling tool for this work. Other methods could have been used and should be compared. Here we compare our RF approach with two other options: multiple linear regression and partial least squares regression (Methods \ref{meth:othermodels}).
+Random Forest (RF) was \emph{a priori} chosen as an appropriate and powerful modelling tool for this work, but other methods could have been used and should be compared. Here we compare our RF approach with two other options: multiple linear regression and partial least squares regression (Methods \ref{meth:othermodels}).
 
 \begin{figure}
 \begin{center} 
@@ -455,7 +451,7 @@ Heatmaps show the Pearson correlation coefficient between predicted and observed
 
 Our results confirm RF as a suitable and powerful approach for modelling our relationships of interest in this work (Fig. \ref{fig:diffmethods}), with both the highest cell-type specific performance (PCC between predicted and observed $=0.790$) and on cross-applications (mean PCC $= 0.689$). 
 
-Multiple linear regression assumes linear relationships between model parameters and input features and allows for simple, normally-distributed errors. Surprisingly, this simple approach is capable of accurate cell-type specific predictions (mean PCC $= 0.787$; Table \ref{tab:diffmethods}), likely due to the high raw correlation between the inputs and dependent variable. However this simple approach fails to cross-apply between cell types (mean PCC $=0.139$; Table \ref{tab:diffmethods}) indicating a problems with overfitting. This can be remedied through variable selection procedures, however a strength of the RF approach is that this step is not necessary, and pre-selection of model variables may result in a sub-optimal end result.\cite{Diaz2006}
+Multiple linear regression assumes linear relationships between model parameters and input features and allows for simple, normally-distributed errors. Surprisingly, this simple approach is capable of accurate cell-type specific predictions (mean PCC $= 0.787$; Table \ref{tab:diffmethods}), likely due to the high raw correlation between the inputs and dependent variable. However this simple approach fails to cross-apply between cell types (mean PCC $=0.139$; Table \ref{tab:diffmethods}) indicating problems with overfitting. This can be remedied through variable selection procedures, however a strength of the RF approach is that this step is not necessary, and pre-selection of model variables may result in a sub-optimal end result.\cite{Diaz2006}
 
 \begin{table}
 \centering
@@ -473,7 +469,7 @@ Cross-application  & 0.139 & 0.689 & 0.641
 
 Partial least squares regression is a technique that uses dimensionality reduction to engineer a lower-dimension and orthogonal feature set. Hence this method is well-suited to collinear inputs, such as the set of variables used in this work (e.g. Fig. \ref{fig:featmap}). As expected, PLS regression provides highly accurate cell type specific predictions (mean PCC $=0.750$; Table \ref{tab:diffmethods}) and performs well during cross-application (mean PCC $=0.641$; Table \ref{tab:diffmethods}), though in both cases produces slightly inferior results to RF models (Fig. \ref{fig:diffmethods}).
 
-PLS uses a type of dimensionality reduction, which offers another way to explore the inter-relationships between our feature set. Plotting input features against these lower-dimension components can give a revelling insight beyond simple correlations (e.g. Fig. \ref{fig:featmap}). Figure \ref{fig:circor} shows a "circle of correlations", where features are plotted onto polar co-ordinates against the first two PLS components (Methods \ref{meth:othermodels}). Interpretation of this figure is that nearby variables in the scatterplot are positively correlated, and the vector length from the circle centre is proportional to said variable's representation in the model. Negatively correlated variables point in opposite directions while uncorrelated variables are orthogonal to each other.\cite{Abdi2010} We therefore see the known multicollinearity represented as groupings of overlapping variables in each cell type, with a smaller number of orthogonal and negatively correlated variables in each cell type (Fig. \ref{fig:circor}).
+PLS uses a type of dimensionality reduction, which offers another way to explore the inter-relationships between our feature set. Plotting input features against these lower-dimension components can give a revealing insight beyond simple correlations (e.g. Fig. \ref{fig:featmap}). Figure \ref{fig:circor} shows a "circle of correlations", where features are plotted onto polar co-ordinates against the first two PLS components (Methods \ref{meth:othermodels}). Nearby variables in the scatterplot are positively correlated, and the vector length from the circle centre is proportional to the variable's representation in the model. Negatively correlated variables point in opposite directions while uncorrelated variables are orthogonal to each other.\cite{Abdi2010} We therefore see the known multicollinearity represented as groupings of overlapping variables in each cell type, with a smaller number of orthogonal and negatively correlated variables in each cell type (Fig. \ref{fig:circor}).
 
 \begin{figure}
 \begin{center} 
@@ -482,7 +478,7 @@ PLS uses a type of dimensionality reduction, which offers another way to explore
 }
 \captionsetup{width=\textwidth} 
 \caption[ Circle of correlations of variables compared with PLS axes. ]{ {\bf Circle of correlations of variables compared with PLS axes.  }
-Model variables are plotted against the first two axes used in PLS regression models per cell type. $Y$ represents our compartment eigenvector.
+Model variables are plotted against the first two components used in PLS regression models per cell type. $Y$ represents our compartment eigenvector.
 }\label{fig:circor}
 \end{center} 
 \end{figure} 
@@ -491,7 +487,7 @@ Model variables are plotted against the first two axes used in PLS regression mo
 
 % use n-1, n-2, ... as predictors for bin N
 
-As recognised through our use of Hidden Markov Models (Methods \ref{sec:compartments}), consecutive bins along a chromosome are non-independent yet thus far predictive models have not considered this inter-dependence. 
+As recognised through our use of hidden Markov models (Methods \ref{sec:compartments}), eigenvector values for consecutive bins along a chromosome are non-independent yet thus far predictive models have not considered this inter-dependence. 
 
 This is for two reasons: firstly non independence could be thought of as an artefact of bin-sizing (we have elected to use regular, fixed binning beneath the scale of compartments themselves whereas another approach could use variable bin sizes, for example per compartment, TAD or restriction fragment); secondly using information of a bin's surroundings may obscure by proxy the chromatin features which would otherwise prove predictive. As an example, knowing that bin $x_{i-1}$ and bin $x_{i+1}$ are in compartment state A would allow us with high confidence to predict the state of bin $x_i$, but without learning anything of the region's relationship with its encompassed histone modifications and bound factors.
 
@@ -546,7 +542,7 @@ Those coefficients with the largest absolute standardised value are plotted for 
 
 Of those variables with a non-zero coefficient at the optimally-selected tuning parameter $\lambda$ (Methods \ref{meth:lasso}), the ten largest in each cell type are shown (Fig. \ref{fig:lassobar}). Similarities can be observed with variable importance from previous 35 input models (Fig. \ref{fig:top10venn}), including the large (negative) coefficient for EGR1 in the H1 hESC model as well as that of P300 in K562 (Fig. \ref{fig:lassobar}).
 
-Of interest is the appearance of group of factors known to collectively form the heterodimeric activator protein-1 (AP-1), these include c-Fos, c-Jun and ATF1--3; all are spread across the most highly-ranked variables in each model of chromatin organisation (Fig. \ref{fig:lassobar}). The AP-1 complex has been shown to have DNA bending properties,\cite{Kerppola1993} and recently FOS and JUN members were associated with long-range chromatin interactions\cite{Heidari2014} suggesting an under-explored role for this complex in genome organisation.
+Of interest is the appearance of a group of factors known to collectively form the heterodimeric activator protein-1 (AP-1), these include c-Fos, c-Jun and ATF1--3; all are spread across the most highly-ranked variables in each model of chromatin organisation (Fig. \ref{fig:lassobar}). The AP-1 complex has been shown to have DNA bending properties,\cite{Kerppola1993} and recently FOS and JUN members were associated with long-range chromatin interactions\cite{Heidari2014} suggesting an under-explored role for this complex in genome organisation.
 
 % XX
 
