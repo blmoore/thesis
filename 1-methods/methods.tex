@@ -361,8 +361,6 @@ Bonferonni-adjusted for multiple testing correction, and results with
 \emph{p}-values exceeding this threshold were deemed significantly
 enriched or depleted at a given boundary.
 
-To compare boundaries between cells, each TAD boundary called in K562 and GM12878 were compared with those called in H1 hESC. For each boundary, the minimum absolute difference to the nearest matching boundary in H1 hESC was recorded, and this was then compared with a null model of an equal number of boundaries randomly-placed along available bins. A Kolmogorov-Smirnov test was then used to compare the empirical cumulative distributions of these distances.
-
 \subsection{Compartments}\label{meth:compartments}
 
 Eigenvectors were calculated as described previously (Section \ref{sec:eigs}). A/B compartmentalisation has previously been called simply from the properly-orientated principle component eigenvector, with positive values representing a bin in an A compartment state, and negative values representing a bin in a B compartment state.\cite{Lieberman2009} Using this method, compartment boundaries occur whenever the eigenvector changes sign.
@@ -374,6 +372,9 @@ produced the observed values (Methods \ref{meth:hmm}). Justification for this ap
 
 The point at which transitions occurred between compartment states was taken as a compartment boundary which was then extended $\pm 1.5$~Mb to give a $3$~Mb window in which a boundary was though to occur. Boundary enrichments and alignments were tested in the same manner as TADs (Section \ref{meth:tadbounds}).
 
+\subsection{Boundary comparisons between cell types}\label{meth:boundcompare}
+
+To compare boundaries between cells, each TAD and compartment boundary called in K562 and GM12878 was compared with those called in H1 hESC. For each boundary, the minimum absolute difference to the nearest matching boundary in H1 hESC was recorded, and this was then compared with a null model of an equal number of boundaries randomly-placed along available bins (i.e. TAD boundaries were called at 40 kb, hence random boundaries could only be assigned to these same discrete bins). A Kolmogorov-Smirnov test was then used to compare the empirical cumulative distributions of these distances.
 
 \section{Predicting TAD boundaries}\label{meth:tadpred}
 
