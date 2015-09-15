@@ -32,8 +32,8 @@
 \BOOKMARK [1][-]{section.1.9}{1.9 Nuclear positioning}{chapter.1}% 32
 \BOOKMARK [1][-]{section.1.10}{1.10 Modelling transcriptional output}{chapter.1}% 33
 \BOOKMARK [2][-]{subsection.1.10.1}{1.10.1 Reproducing a published study}{section.1.10}% 34
-\BOOKMARK [2][-]{subsection.1.10.2}{1.10.2 Predicting FANTOM5 data}{section.1.10}% 35
-\BOOKMARK [1][-]{section.1.11}{1.11 4C analysis}{chapter.1}% 36
+\BOOKMARK [2][-]{subsection.1.10.2}{1.10.2 Predicting FANTOM5 expression levels}{section.1.10}% 35
+\BOOKMARK [1][-]{section.1.11}{1.11 4C data analysis}{chapter.1}% 36
 \BOOKMARK [2][-]{subsection.1.11.1}{1.11.1 Normalisation}{section.1.11}% 37
 \BOOKMARK [2][-]{subsection.1.11.2}{1.11.2 Significance estimation}{section.1.11}% 38
 \BOOKMARK [1][-]{section.1.12}{1.12 Scripts and other analyses}{chapter.1}% 39
