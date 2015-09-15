@@ -50,91 +50,92 @@
 \BOOKMARK [1][-]{section.2.5}{2.5 Boundaries}{chapter.2}% 50
 \BOOKMARK [2][-]{subsection.2.5.1}{2.5.1 TAD boundaries}{section.2.5}% 51
 \BOOKMARK [2][-]{subsection.2.5.2}{2.5.2 Compartments}{section.2.5}% 52
-\BOOKMARK [1][-]{section.2.6}{2.6 Predicting TAD boundaries}{chapter.2}% 53
-\BOOKMARK [2][-]{subsection.2.6.1}{2.6.1 AUC-RF}{section.2.6}% 54
-\BOOKMARK [2][-]{subsection.2.6.2}{2.6.2 Gini importance}{section.2.6}% 55
-\BOOKMARK [1][-]{section.2.7}{2.7 MetaTAD analysis}{chapter.2}% 56
-\BOOKMARK [2][-]{subsection.2.7.1}{2.7.1 Size selection}{section.2.7}% 57
-\BOOKMARK [2][-]{subsection.2.7.2}{2.7.2 Collaborator datasets}{section.2.7}% 58
-\BOOKMARK [2][-]{subsection.2.7.3}{2.7.3 LAD coincidence}{section.2.7}% 59
-\BOOKMARK [1][-]{section.2.8}{2.8 Giemsa band comparison}{chapter.2}% 60
-\BOOKMARK [1][-]{section.2.9}{2.9 Nuclear positioning}{chapter.2}% 61
-\BOOKMARK [1][-]{section.2.10}{2.10 Modelling transcriptional output}{chapter.2}% 62
-\BOOKMARK [2][-]{subsection.2.10.1}{2.10.1 Reproducing a published study}{section.2.10}% 63
-\BOOKMARK [2][-]{subsection.2.10.2}{2.10.2 Predicting FANTOM5 data}{section.2.10}% 64
-\BOOKMARK [1][-]{section.2.11}{2.11 4C analysis}{chapter.2}% 65
-\BOOKMARK [2][-]{subsection.2.11.1}{2.11.1 Normalisation}{section.2.11}% 66
-\BOOKMARK [2][-]{subsection.2.11.2}{2.11.2 Significance estimation}{section.2.11}% 67
-\BOOKMARK [1][-]{section.2.12}{2.12 Scripts and other analyses}{chapter.2}% 68
-\BOOKMARK [0][]{chapter.3}{3 Reanalysis of Hi-C datasets}{}% 69
-\BOOKMARK [1][-]{section.3.1}{3.1 Introduction}{chapter.3}% 70
-\BOOKMARK [1][-]{section.3.2}{3.2 Hi-C reprocessing}{chapter.3}% 71
-\BOOKMARK [1][-]{section.3.3}{3.3 Compartment profiles}{chapter.3}% 72
-\BOOKMARK [1][-]{section.3.4}{3.4 Domain calls}{chapter.3}% 73
-\BOOKMARK [2][-]{subsection.3.4.1}{3.4.1 Compartments}{section.3.4}% 74
-\BOOKMARK [2][-]{subsection.3.4.2}{3.4.2 TADs}{section.3.4}% 75
-\BOOKMARK [1][-]{section.3.5}{3.5 Domain epigenomics}{chapter.3}% 76
-\BOOKMARK [2][-]{subsection.3.5.1}{3.5.1 A/B compartments}{section.3.5}% 77
-\BOOKMARK [2][-]{subsection.3.5.2}{3.5.2 TAD classes}{section.3.5}% 78
-\BOOKMARK [1][-]{section.3.6}{3.6 Variable regions}{chapter.3}% 79
-\BOOKMARK [2][-]{subsection.3.6.1}{3.6.1 Chromatin state enrichment}{section.3.6}% 80
-\BOOKMARK [2][-]{subsection.3.6.2}{3.6.2 Gene ontology enrichment}{section.3.6}% 81
-\BOOKMARK [2][-]{subsection.3.6.3}{3.6.3 Contact changes}{section.3.6}% 82
-\BOOKMARK [1][-]{section.3.7}{3.7 Nuclear positioning}{chapter.3}% 83
-\BOOKMARK [0][]{chapter.4}{4 Integrative modelling as a tool to explore biological systems}{}% 84
-\BOOKMARK [1][-]{section.4.1}{4.1 Introduction}{chapter.4}% 85
-\BOOKMARK [1][-]{section.4.2}{4.2 Extending Dong et al. }{chapter.4}% 86
-\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Bestbin method}{section.4.2}% 87
-\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Model exploration}{section.4.2}% 88
-\BOOKMARK [1][-]{section.4.3}{4.3 Modelling FANTOM5 expression data}{chapter.4}% 89
-\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Bestbin location}{section.4.3}% 90
-\BOOKMARK [1][-]{section.4.4}{4.4 Modelling higher order chromatin}{chapter.4}% 91
-\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 Predictive model}{section.4.4}% 92
-\BOOKMARK [2][-]{subsection.4.4.2}{4.4.2 Cross-application}{section.4.4}% 93
-\BOOKMARK [2][-]{subsection.4.4.3}{4.4.3 Between-cell variability}{section.4.4}% 94
-\BOOKMARK [2][-]{subsection.4.4.4}{4.4.4 Variable importance}{section.4.4}% 95
-\BOOKMARK [2][-]{subsection.4.4.5}{4.4.5 Correlating input features}{section.4.4}% 96
-\BOOKMARK [1][-]{section.4.5}{4.5 Technical considerations}{chapter.4}% 97
-\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1 Resolution}{section.4.5}% 98
-\BOOKMARK [2][-]{subsection.4.5.2}{4.5.2 Other modelling approaches}{section.4.5}% 99
-\BOOKMARK [2][-]{subsection.4.5.3}{4.5.3 Non-independence}{section.4.5}% 100
-\BOOKMARK [1][-]{section.4.6}{4.6 Parsimonious models from expanded feature sets}{chapter.4}% 101
-\BOOKMARK [2][-]{subsection.4.6.1}{4.6.1 Stepwise regression}{section.4.6}% 102
-\BOOKMARK [2][-]{subsection.4.6.2}{4.6.2 LASSO regression}{section.4.6}% 103
-\BOOKMARK [2][-]{subsection.4.6.3}{4.6.3 Regularised Random Forest}{section.4.6}% 104
-\BOOKMARK [0][]{chapter.5}{5 Chromatin domain boundaries}{}% 105
-\BOOKMARK [1][-]{section.5.1}{5.1 Introduction}{chapter.5}% 106
-\BOOKMARK [1][-]{section.5.2}{5.2 Boundary analysis}{chapter.5}% 107
-\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 TAD boundaries}{section.5.2}% 108
-\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Compartment boundaries}{section.5.2}% 109
-\BOOKMARK [2][-]{subsection.5.2.3}{5.2.3 Significance testing of boundary associations}{section.5.2}% 110
-\BOOKMARK [2][-]{subsection.5.2.4}{5.2.4 CTCF and YY1}{section.5.2}% 111
-\BOOKMARK [2][-]{subsection.5.2.5}{5.2.5 Repeats}{section.5.2}% 112
-\BOOKMARK [1][-]{section.5.3}{5.3 TAD boundary prediction}{chapter.5}% 113
-\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Learning boundary classification}{section.5.3}% 114
-\BOOKMARK [1][-]{section.5.4}{5.4 MetaTAD boundaries}{chapter.5}% 115
-\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 MetaTAD boundary comparison}{section.5.4}% 116
-\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Lamina associated domains}{section.5.4}% 117
-\BOOKMARK [2][-]{subsection.5.4.3}{5.4.3 Boundaries over a time series}{section.5.4}% 118
-\BOOKMARK [1][-]{section.5.5}{5.5 Other boundaries}{chapter.5}% 119
-\BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 Giemsa bands}{section.5.5}% 120
-\BOOKMARK [0][]{chapter.6}{6 Local chromatin conformation}{}% 121
-\BOOKMARK [1][-]{section.6.1}{6.1 Introduction}{chapter.6}% 122
-\BOOKMARK [1][-]{section.6.2}{6.2 The SHH locus}{chapter.6}% 123
-\BOOKMARK [1][-]{section.6.3}{6.3 4C of the ZRS}{chapter.6}% 124
-\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 4C pipeline}{section.6.3}% 125
-\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 ZRS\205Shh interaction following TSA treatment}{section.6.3}% 126
-\BOOKMARK [2][-]{subsection.6.3.3}{6.3.3 Assay diagnostics}{section.6.3}% 127
-\BOOKMARK [1][-]{section.6.4}{6.4 Polymer modelling}{chapter.6}% 128
-\BOOKMARK [2][-]{subsection.6.4.1}{6.4.1 AutoChrom3D method}{section.6.4}% 129
-\BOOKMARK [2][-]{subsection.6.4.2}{6.4.2 Modelling the Shh region with 5C}{section.6.4}% 130
-\BOOKMARK [2][-]{subsection.6.4.3}{6.4.3 Repeat simulations}{section.6.4}% 131
-\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 132
-\BOOKMARK [1][-]{section.7.1}{7.1 Modelling higher order chromatin organisation}{chapter.7}% 133
-\BOOKMARK [1][-]{section.7.2}{7.2 Domain boundaries}{chapter.7}% 134
-\BOOKMARK [1][-]{section.7.3}{7.3 Domain evolution}{chapter.7}% 135
-\BOOKMARK [1][-]{section.7.4}{7.4 On causality}{chapter.7}% 136
-\BOOKMARK [1][-]{section.7.5}{7.5 Insights into genome organisation}{chapter.7}% 137
-\BOOKMARK [1][-]{section.7.6}{7.6 Summary}{chapter.7}% 138
-\BOOKMARK [0][]{chapter*.88}{Appendices}{}% 139
-\BOOKMARK [0][]{table.7.3}{references}{}% 140
+\BOOKMARK [2][-]{subsection.2.5.3}{2.5.3 Boundary comparisons between cell types}{section.2.5}% 53
+\BOOKMARK [1][-]{section.2.6}{2.6 Predicting TAD boundaries}{chapter.2}% 54
+\BOOKMARK [2][-]{subsection.2.6.1}{2.6.1 AUC-RF}{section.2.6}% 55
+\BOOKMARK [2][-]{subsection.2.6.2}{2.6.2 Gini importance}{section.2.6}% 56
+\BOOKMARK [1][-]{section.2.7}{2.7 MetaTAD analysis}{chapter.2}% 57
+\BOOKMARK [2][-]{subsection.2.7.1}{2.7.1 Size selection}{section.2.7}% 58
+\BOOKMARK [2][-]{subsection.2.7.2}{2.7.2 Collaborator datasets}{section.2.7}% 59
+\BOOKMARK [2][-]{subsection.2.7.3}{2.7.3 LAD coincidence}{section.2.7}% 60
+\BOOKMARK [1][-]{section.2.8}{2.8 Giemsa band comparison}{chapter.2}% 61
+\BOOKMARK [1][-]{section.2.9}{2.9 Nuclear positioning}{chapter.2}% 62
+\BOOKMARK [1][-]{section.2.10}{2.10 Modelling transcriptional output}{chapter.2}% 63
+\BOOKMARK [2][-]{subsection.2.10.1}{2.10.1 Reproducing a published study}{section.2.10}% 64
+\BOOKMARK [2][-]{subsection.2.10.2}{2.10.2 Predicting FANTOM5 expression levels}{section.2.10}% 65
+\BOOKMARK [1][-]{section.2.11}{2.11 4C data analysis}{chapter.2}% 66
+\BOOKMARK [2][-]{subsection.2.11.1}{2.11.1 Normalisation}{section.2.11}% 67
+\BOOKMARK [2][-]{subsection.2.11.2}{2.11.2 Significance estimation}{section.2.11}% 68
+\BOOKMARK [1][-]{section.2.12}{2.12 Scripts and other analyses}{chapter.2}% 69
+\BOOKMARK [0][]{chapter.3}{3 Reanalysis of Hi-C datasets}{}% 70
+\BOOKMARK [1][-]{section.3.1}{3.1 Introduction}{chapter.3}% 71
+\BOOKMARK [1][-]{section.3.2}{3.2 Hi-C reprocessing}{chapter.3}% 72
+\BOOKMARK [1][-]{section.3.3}{3.3 Compartment profiles}{chapter.3}% 73
+\BOOKMARK [1][-]{section.3.4}{3.4 Domain calls}{chapter.3}% 74
+\BOOKMARK [2][-]{subsection.3.4.1}{3.4.1 Compartments}{section.3.4}% 75
+\BOOKMARK [2][-]{subsection.3.4.2}{3.4.2 TADs}{section.3.4}% 76
+\BOOKMARK [1][-]{section.3.5}{3.5 Domain epigenomics}{chapter.3}% 77
+\BOOKMARK [2][-]{subsection.3.5.1}{3.5.1 A/B compartments}{section.3.5}% 78
+\BOOKMARK [2][-]{subsection.3.5.2}{3.5.2 TAD classes}{section.3.5}% 79
+\BOOKMARK [1][-]{section.3.6}{3.6 Variable regions}{chapter.3}% 80
+\BOOKMARK [2][-]{subsection.3.6.1}{3.6.1 Chromatin state enrichment}{section.3.6}% 81
+\BOOKMARK [2][-]{subsection.3.6.2}{3.6.2 Gene ontology enrichment}{section.3.6}% 82
+\BOOKMARK [2][-]{subsection.3.6.3}{3.6.3 Contact changes}{section.3.6}% 83
+\BOOKMARK [1][-]{section.3.7}{3.7 Nuclear positioning}{chapter.3}% 84
+\BOOKMARK [0][]{chapter.4}{4 Integrative modelling as a tool to explore biological systems}{}% 85
+\BOOKMARK [1][-]{section.4.1}{4.1 Introduction}{chapter.4}% 86
+\BOOKMARK [1][-]{section.4.2}{4.2 Extending Dong et al. }{chapter.4}% 87
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Bestbin method}{section.4.2}% 88
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Model exploration}{section.4.2}% 89
+\BOOKMARK [1][-]{section.4.3}{4.3 Modelling FANTOM5 expression data}{chapter.4}% 90
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Bestbin location}{section.4.3}% 91
+\BOOKMARK [1][-]{section.4.4}{4.4 Modelling higher order chromatin}{chapter.4}% 92
+\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 Predictive model}{section.4.4}% 93
+\BOOKMARK [2][-]{subsection.4.4.2}{4.4.2 Cross-application}{section.4.4}% 94
+\BOOKMARK [2][-]{subsection.4.4.3}{4.4.3 Between-cell variability}{section.4.4}% 95
+\BOOKMARK [2][-]{subsection.4.4.4}{4.4.4 Variable importance}{section.4.4}% 96
+\BOOKMARK [2][-]{subsection.4.4.5}{4.4.5 Correlating input features}{section.4.4}% 97
+\BOOKMARK [1][-]{section.4.5}{4.5 Technical considerations}{chapter.4}% 98
+\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1 Resolution}{section.4.5}% 99
+\BOOKMARK [2][-]{subsection.4.5.2}{4.5.2 Other modelling approaches}{section.4.5}% 100
+\BOOKMARK [2][-]{subsection.4.5.3}{4.5.3 Non-independence}{section.4.5}% 101
+\BOOKMARK [1][-]{section.4.6}{4.6 Parsimonious models from expanded feature sets}{chapter.4}% 102
+\BOOKMARK [2][-]{subsection.4.6.1}{4.6.1 Stepwise regression}{section.4.6}% 103
+\BOOKMARK [2][-]{subsection.4.6.2}{4.6.2 LASSO regression}{section.4.6}% 104
+\BOOKMARK [2][-]{subsection.4.6.3}{4.6.3 Regularised Random Forest}{section.4.6}% 105
+\BOOKMARK [0][]{chapter.5}{5 Chromatin domain boundaries}{}% 106
+\BOOKMARK [1][-]{section.5.1}{5.1 Introduction}{chapter.5}% 107
+\BOOKMARK [1][-]{section.5.2}{5.2 Boundary analysis}{chapter.5}% 108
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 TAD boundaries}{section.5.2}% 109
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Compartment boundaries}{section.5.2}% 110
+\BOOKMARK [2][-]{subsection.5.2.3}{5.2.3 Significance testing of boundary associations}{section.5.2}% 111
+\BOOKMARK [2][-]{subsection.5.2.4}{5.2.4 CTCF and YY1}{section.5.2}% 112
+\BOOKMARK [2][-]{subsection.5.2.5}{5.2.5 Repeats}{section.5.2}% 113
+\BOOKMARK [1][-]{section.5.3}{5.3 TAD boundary prediction}{chapter.5}% 114
+\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Learning boundary classification}{section.5.3}% 115
+\BOOKMARK [1][-]{section.5.4}{5.4 MetaTAD boundaries}{chapter.5}% 116
+\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 MetaTAD boundary comparison}{section.5.4}% 117
+\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Lamina associated domains}{section.5.4}% 118
+\BOOKMARK [2][-]{subsection.5.4.3}{5.4.3 Boundaries over a time series}{section.5.4}% 119
+\BOOKMARK [1][-]{section.5.5}{5.5 Other boundaries}{chapter.5}% 120
+\BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 Giemsa bands}{section.5.5}% 121
+\BOOKMARK [0][]{chapter.6}{6 Local chromatin conformation}{}% 122
+\BOOKMARK [1][-]{section.6.1}{6.1 Introduction}{chapter.6}% 123
+\BOOKMARK [1][-]{section.6.2}{6.2 The SHH locus}{chapter.6}% 124
+\BOOKMARK [1][-]{section.6.3}{6.3 4C of the ZRS}{chapter.6}% 125
+\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 4C pipeline}{section.6.3}% 126
+\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 ZRS\205Shh interaction following TSA treatment}{section.6.3}% 127
+\BOOKMARK [2][-]{subsection.6.3.3}{6.3.3 Assay diagnostics}{section.6.3}% 128
+\BOOKMARK [1][-]{section.6.4}{6.4 Polymer modelling}{chapter.6}% 129
+\BOOKMARK [2][-]{subsection.6.4.1}{6.4.1 AutoChrom3D method}{section.6.4}% 130
+\BOOKMARK [2][-]{subsection.6.4.2}{6.4.2 Modelling the Shh region with 5C}{section.6.4}% 131
+\BOOKMARK [2][-]{subsection.6.4.3}{6.4.3 Repeat simulations}{section.6.4}% 132
+\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 133
+\BOOKMARK [1][-]{section.7.1}{7.1 Modelling higher order chromatin organisation}{chapter.7}% 134
+\BOOKMARK [1][-]{section.7.2}{7.2 Domain boundaries}{chapter.7}% 135
+\BOOKMARK [1][-]{section.7.3}{7.3 Domain evolution}{chapter.7}% 136
+\BOOKMARK [1][-]{section.7.4}{7.4 On causality}{chapter.7}% 137
+\BOOKMARK [1][-]{section.7.5}{7.5 Insights into genome organisation}{chapter.7}% 138
+\BOOKMARK [1][-]{section.7.6}{7.6 Summary}{chapter.7}% 139
+\BOOKMARK [0][]{chapter*.88}{Appendices}{}% 140
+\BOOKMARK [0][]{table.7.3}{references}{}% 141

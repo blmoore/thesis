@@ -1,4 +1,4 @@
-\begin{thebibliography}{246}
+\begin{thebibliography}{248}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -823,6 +823,13 @@ Karolchik D, Barber GP, Casper J, Clawson H, Cline MS, Diekhans M, Dreszer TR,
   database: 2014 update}.
 \newblock \emph{Nucleic Acids Research}, \textbf{42}(D1): 764--770.
 
+\bibitem[{Luperchio \emph{et~al.}(2014)Luperchio, Wong and
+  Reddy}]{Luperchio2014}
+Luperchio TR, Wong X, Reddy KL (2014) {Genome regulation at the peripheral
+  zone: Lamina associated domains in development and disease}.
+\newblock \emph{Current Opinion in Genetics and Development}, \textbf{25}(1):
+  50--61.
+
 \bibitem[{Peric-Hupkes \emph{et~al.}(2010)Peric-Hupkes, Meuleman, Pagie,
   Bruggeman, Solovei, Brugman, Gr\"{a}f, Flicek, Kerkhoven
   \emph{et~al.}}]{Peric-Hupkes2010}
@@ -1020,6 +1027,12 @@ Huang DW, Sherman BT, Lempicki Ra (2009) {Bioinformatics enrichment tools:
 Lozzio BB, Lozzio CB, Bamberger EG, Feliu AS (1981) A multipotential leukemia
   cell line (k-562) of human origin.
 \newblock \emph{Experimental Biology and Medicine}, \textbf{166}(4): 546--550.
+
+\bibitem[{Edelman and Fraser(2012)}]{Edelman2012}
+Edelman LB, Fraser P (2012) {Transcription factories: Genetic programming in
+  three dimensions}.
+\newblock \emph{Current Opinion in Genetics and Development}, \textbf{22}(2):
+  110--114.
 
 \bibitem[{Bickmore(2013)}]{Bickmore2013}
 Bickmore Wa (2013) {The spatial organization of the human genome.}
