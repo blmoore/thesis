@@ -1,4 +1,4 @@
-\begin{thebibliography}{89}
+\begin{thebibliography}{90}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Barrett \emph{et~al.}(2013)Barrett, Wilhite, Ledoux, Evangelista,
@@ -274,6 +274,14 @@ Chen X, Ishwaran H (2012) {Random forests for genomic data analysis}.
   approaches Bayesian LASSO and AUC-RF to detect main effects of
   inflammatory-gene variants associated with bladder cancer risk}.
 \newblock \emph{PLoS ONE}, \textbf{8}(12).
+
+\bibitem[{Fraser \emph{et~al.}(2015)Fraser, Ferrai, Chiariello, Schueler, Rito,
+  Laudanno, Barbieri, Moore, Aitken \emph{et~al.}}]{fraser2015inrev}
+Fraser J, Ferrai C, Chiariello AM, Schueler M, Rito T, Laudanno G, Barbieri M,
+  Moore BL, Aitken S, \emph{et~al.} (2015) Hierarchical organization of
+  chromosome folding and its re-organization underlies transcriptional changes
+  in cellular differentiation.
+\newblock \emph{Under review}.
 
 \bibitem[{Consortium \emph{et~al.}(2014)Consortium, Pmi and Dgt}]{fantom5}
 Consortium TF, Pmi R, Dgt C (2014) {A promoter-level mammalian expression
