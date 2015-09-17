@@ -1,4 +1,4 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{43}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{ENCODE(2012)}]{Dunham2012}
@@ -196,6 +196,21 @@ Whittingham MJ, Stephens Pa, Bradbury RB, Freckleton RP (2006) {Why do we still
 
 \bibitem[{Tibshirani(1994)}]{Tibshirani1994}
 Tibshirani R (1994) {Regression Selection and Shrinkage via the Lasso}.
+
+\bibitem[{Bailey \emph{et~al.}(2015)Bailey, Zhang, Desai, Aid, Corradin,
+  Cowper-Sal·lari, Akhtar-Zaidi, Scacheri, Haibe-Kains and
+  Lupien}]{Bailey2015}
+Bailey SD, Zhang X, Desai K, Aid M, Corradin O, Cowper-Sal·lari R,
+  Akhtar-Zaidi B, Scacheri PC, Haibe-Kains B, Lupien M (2015) {ZNF143 provides
+  sequence specificity to secure chromatin interactions at gene promoters}.
+\newblock \emph{Nature Communications}, \textbf{2}: 6186.
+
+\bibitem[{Dixon \emph{et~al.}(2012)Dixon, Selvaraj, Yue, Kim, Li, Shen, Hu, Liu
+  and Ren}]{Dixon2012}
+Dixon JR, Selvaraj S, Yue F, Kim A, Li Y, Shen Y, Hu M, Liu JS, Ren B (2012)
+  {Topological domains in mammalian genomes identified by analysis of chromatin
+  interactions.}
+\newblock \emph{Nature}, \textbf{485}(7398): 376--80.
 
 \bibitem[{Kerppola and Curran(1993)}]{Kerppola1993}
 Kerppola TK, Curran T (1993) {Selective DNA bending by a variety of bZIP

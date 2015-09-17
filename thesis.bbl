@@ -1,4 +1,4 @@
-\begin{thebibliography}{248}
+\begin{thebibliography}{250}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Pombo and Dillon(2015)}]{Pombo2015}
@@ -7,10 +7,10 @@ Pombo A, Dillon N (2015) {Three-dimensional genome architecture: players and
 \newblock \emph{Nature Reviews Molecular Cell Biology}, \textbf{16}(4):
   245--257.
 
-\bibitem[{Fraser \emph{et~al.}(2015)Fraser, Williamson, Bickmore and
-  Dostie}]{Fraser2015}
-Fraser J, Williamson I, Bickmore Wa, Dostie J (2015) {An Overview of Genome
-  Organization and How We Got There: from FISH to Hi-C}.
+\bibitem[{Fraser \emph{et~al.}(2015{\natexlab{a}})Fraser, Williamson, Bickmore
+  and Dostie}]{Fraser2015}
+Fraser J, Williamson I, Bickmore Wa, Dostie J (2015{\natexlab{a}}) {An Overview
+  of Genome Organization and How We Got There: from FISH to Hi-C}.
 \newblock \emph{Microbiology and Molecular Biology Reviews}, \textbf{79}(3):
   347--372.
 
@@ -791,6 +791,15 @@ Chen X, Ishwaran H (2012) {Random forests for genomic data analysis}.
   inflammatory-gene variants associated with bladder cancer risk}.
 \newblock \emph{PLoS ONE}, \textbf{8}(12).
 
+\bibitem[{Fraser \emph{et~al.}(2015{\natexlab{b}})Fraser, Ferrai, Chiariello,
+  Schueler, Rito, Laudanno, Barbieri, Moore, Aitken
+  \emph{et~al.}}]{fraser2015inrev}
+Fraser J, Ferrai C, Chiariello AM, Schueler M, Rito T, Laudanno G, Barbieri M,
+  Moore BL, Aitken S, \emph{et~al.} (2015{\natexlab{b}}) Hierarchical
+  organization of chromosome folding and its re-organization underlies
+  transcriptional changes in cellular differentiation.
+\newblock \emph{Under review}.
+
 \bibitem[{Consortium \emph{et~al.}(2014)Consortium, Pmi and Dgt}]{fantom5}
 Consortium TF, Pmi R, Dgt C (2014) {A promoter-level mammalian expression
   atlas.}
@@ -1145,6 +1154,14 @@ Sun XJ, Man N, Tan Y, Nimer SD, Wang L (2015) {The Role of Histone
 Abdi H, Williams LJ (2010) {Principal component analysis}.
 \newblock \emph{Wiley Interdisciplinary Reviews: Computational Statistics},
   \textbf{2}(4): 433--459.
+
+\bibitem[{Bailey \emph{et~al.}(2015)Bailey, Zhang, Desai, Aid, Corradin,
+  Cowper-Sal·lari, Akhtar-Zaidi, Scacheri, Haibe-Kains and
+  Lupien}]{Bailey2015}
+Bailey SD, Zhang X, Desai K, Aid M, Corradin O, Cowper-Sal·lari R,
+  Akhtar-Zaidi B, Scacheri PC, Haibe-Kains B, Lupien M (2015) {ZNF143 provides
+  sequence specificity to secure chromatin interactions at gene promoters}.
+\newblock \emph{Nature Communications}, \textbf{2}: 6186.
 
 \bibitem[{Kerppola and Curran(1993)}]{Kerppola1993}
 Kerppola TK, Curran T (1993) {Selective DNA bending by a variety of bZIP

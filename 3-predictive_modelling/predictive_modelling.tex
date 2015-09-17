@@ -540,14 +540,9 @@ Those coefficients with the largest absolute standardised value are plotted for 
 \end{center} 
 \end{figure} 
 
-Of those variables with a non-zero coefficient at the optimally-selected tuning parameter $\lambda$ (Methods \ref{meth:lasso}), the ten largest in each cell type are shown (Fig. \ref{fig:lassobar}). Similarities can be observed with variable importance from previous 35 input models (Fig. \ref{fig:top10venn}), including the large (negative) coefficient for EGR1 in the H1 hESC model as well as that of P300 in K562 (Fig. \ref{fig:lassobar}).
+Of those variables with a non-zero coefficient at the optimally-selected tuning parameter $\lambda$ (Methods \ref{meth:lasso}), the ten largest in each cell type are shown (Fig. \ref{fig:lassobar}). Similarities can be observed with variable importance from previous 35 input models (Fig. \ref{fig:top10venn}), including the large (negative) coefficient for EGR1 in the H1 hESC model as well as that of P300 in K562 (Fig. \ref{fig:lassobar}). Also of note is that Zinc finger protein 143 (ZNF143) appears among the largest model coefficients in two of the three cases (Fig. \ref{fig:lassobar}). Recently ZNF143 was found to be a novel chromatin looping factor which connects promotors and \emph{cis}-regulatory elements\cite{Bailey2015} and previous studies have found it to be enriched over chromatin domain boundaries.\cite{Dixon2012, Lieberman2009} Here however, ZNF143 has a negative coefficient in models of compartment eigenvector, indicating some additional role in heterochromatin B compartments.
 
 Of interest is the appearance of a group of factors known to collectively form the heterodimeric activator protein-1 (AP-1), these include c-Fos, c-Jun and ATF1--3; all are spread across the most highly-ranked variables in each model of chromatin organisation (Fig. \ref{fig:lassobar}). The AP-1 complex has been shown to have DNA bending properties,\cite{Kerppola1993} and recently FOS and JUN members were associated with long-range chromatin interactions\cite{Heidari2014} suggesting an under-explored role for this complex in genome organisation.
-
-% XX
-
-% Too many coefficients remain in model for clear plots of coefficient trace
-%The LASSO is a tunable algorithm, thus we can gain additional insights of coefficient traces over varying the regularisation parameter, $\lambda$.
 
 \subsection{Regularised Random Forest}
 

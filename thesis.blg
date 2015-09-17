@@ -3,7 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: thesis.bst
 A level-1 auxiliary file: 0-intro/intro.aux
-Reallocated field_info (elt_size=4) to 11200 items from 5000.
+Reallocated field_info (elt_size=4) to 11250 items from 5000.
 Database file #1: /Users/benmoore/Documents/library.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Database file #2: /Users/benmoore/Documents/customrefs.bib
@@ -31,45 +31,45 @@ Warning--there's a number but no volume in Tarailo-Graovac2009
 Warning--empty journal in Hill2013a
 Warning--there's a number but no volume in Hill2013a
 Warning--there's a number but no volume in Lesne2014
-You've used 248 entries,
+You've used 250 entries,
             3024 wiz_defined-function locations,
-            2158 strings with 88603 characters,
-and the built_in function-call counts, 337198 in all, are:
-= -- 35370
-> -- 10054
+            2168 strings with 89414 characters,
+and the built_in function-call counts, 341742 in all, are:
+= -- 35861
+> -- 10214
 < -- 94
-+ -- 7231
-- -- 2573
-* -- 25318
-:= -- 36714
-add.period$ -- 493
-call.type$ -- 248
-change.case$ -- 1243
-chr.to.int$ -- 249
-cite$ -- 263
-duplicate$ -- 35180
-empty$ -- 24286
-format.name$ -- 3356
-if$ -- 69438
-int.to.chr$ -- 8
-int.to.str$ -- 249
-missing$ -- 2940
-newline$ -- 992
-num.names$ -- 743
-pop$ -- 16864
++ -- 7348
+- -- 2613
+* -- 25653
+:= -- 37170
+add.period$ -- 497
+call.type$ -- 250
+change.case$ -- 1253
+chr.to.int$ -- 251
+cite$ -- 265
+duplicate$ -- 35679
+empty$ -- 24590
+format.name$ -- 3402
+if$ -- 70381
+int.to.chr$ -- 9
+int.to.str$ -- 251
+missing$ -- 2972
+newline$ -- 1000
+num.names$ -- 749
+pop$ -- 17122
 preamble$ -- 1
-purify$ -- 992
+purify$ -- 1000
 quote$ -- 0
-skip$ -- 5982
+skip$ -- 6056
 stack$ -- 0
-substring$ -- 41697
-swap$ -- 7957
+substring$ -- 42307
+swap$ -- 8031
 text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1482
+type$ -- 1494
 warning$ -- 15
-while$ -- 2201
+while$ -- 2226
 width$ -- 0
-write$ -- 2950
+write$ -- 2973
 (There was 1 error message)
