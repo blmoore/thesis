@@ -346,138 +346,145 @@ My contributions: \\
 
 \end{frame}
 
+\begin{frame}{MetaTADs and LADs}{p100}
 
-\section{Collaborations}
-\begin{frame}{Side project}
-Collaborating with Adam Douglas (Bob Hill's group) in analysing his
-3C-seq (4C) data. Their hypothesis: \\
-
-\vspace{1em}
+Are lamin associated domains being captured as metaTADs?
 
 \centering
-
-\includegraphics[width=.8\textwidth]{figs/tsa.png}
-\end{frame}
-
-\begin{frame}{Side project}
-Initial results: \\
-
-\vspace{1em}
-
-\centering
-
-\includegraphics[width=.9\textwidth]{figs/shh.pdf} \\
-\end{frame}
-
-\begin{frame}{Side project}
-Zoomed: \\
-
-\vspace{1em}
-
-\centering
-
-\includegraphics[width=.9\textwidth]{figs/zoomSHH.pdf} \\
-
-Incoming: repeats, 5C / Capture-C (?), FAIRE-seq \dots
-\end{frame}
-
-\begin{frame}{Side project}
-All looks good except\dots \\
-
-\vspace{1em}
-
-\centering
-
-\includegraphics[width=.9\textwidth]{figs/csomeprop.pdf} \\
+\includegraphics[width=.55\textwidth]{../figs/mt_laminsummary.pdf}
 
 \end{frame}
 
-\section{Next project}
-\begin{frame}{Next project}
-  So far haven't looked at any expression data, but CAGE available for
-  each cell line. \\
+
+\section{Local chromatin conformation}
+{
+\usebackgroundtemplate{\includegraphics[width=.85\paperwidth]{figs/hicbg_3.png}}
+\begin{frame}{}
+\begin{tcolorbox}[colback=blue!40!black,colframe=blue!40!black]
+\begin{center}
+{\usebeamercolor[fg]{whitetext}
+{\small Results 4: } \\
+Local chromatin conformation }
+\end{center}
+\end{tcolorbox}
+\end{frame}
+}
+
+% ----- Begin Local chromatin conformation
+
+\begin{frame}{Local chromatin conformation}
+Collaboration w/ Adam Douglas (Bob Hill's group) in analysing his
+3C-seq (4C) data. Their experimental question: \\
 
 \vspace{1em}
 
-Initial idea:\\
+\centerline{
+\includegraphics[width=.65\textwidth]{figs/tsa.png}
+}
+
+My contribution: analysis of 4C, 5C data and inference of 3D chromatin trajectory
+
+\end{frame}
+
+\begin{frame}{Shh locus}
+
+ZRS-\emph{Shh} is a model system for long range \emph{cis}-regulation through an enhancer--promoter contact
 
 \vspace{1em}
 
+\centerline{
+\includegraphics[width=.7\textwidth]{../figs/shhtad.png} 
+} 
+
+The Hill lab has developed an \emph{Shh}-inducible system through TSA treatment, though exact mechanism unclear
+
+\end{frame}
+
+\begin{frame}{4C results}{p112}
+
+\centering
+\includegraphics[width=.55\textwidth]{../figs/shharc_full.pdf} 
+
+\end{frame}
+
+\begin{frame}{5C results}{p118}
+
+Used 5C data over the same region, passed to 3D reconstruction algorithm and measured distances \\
+
+\centerline{
+\includegraphics[width=.5\textwidth]{../figs/5c3d.pdf}
+}
+\vspace{1em}
+
+Contrary to expectations, little change in inducible cell line and large shift in control mandibular cell line (non-\emph{shh} expressing)
+
+\end{frame}
+
+\begin{frame}{5C results}{p121}
+
+Reconstructing TAD lends some credibility to the structures \\
+
+\vspace{1em}
+
+\centerline{
+\includegraphics[width=.5\textwidth]{../figs/decompaction.pdf}
+}
+\vspace{1em}
+
+HDAC causing some distension around ZRS in 14fp?
+
+\end{frame}
+
+\section{Discussion}
+
+{
+\usebackgroundtemplate{\includegraphics[width=.85\paperwidth]{figs/hicbg_3.png}}
+\begin{frame}{}
+\begin{tcolorbox}[colback=blue!40!black,colframe=blue!40!black]
+\begin{center}
+{\usebeamercolor[fg]{whitetext}
+Discussion and Summary }
+\end{center}
+\end{tcolorbox}
+\end{frame}
+}
+
+\begin{frame}{Discussion}{p123}
+
+I suggest some extensions and discuss some open questions:
 \begin{itemize}
-\item Investigate TADs as ``regulons''---new paper reports $~20\%$
-  domains act as ``discrete regulatory units'' with relatively
-  homogenous epigenetic states.\footnote{ {\tiny Le Dily \emph{et al.} (2014) Distinct structural transitions of chromatin correlate with
-  coordinated hormone-induced gene regulation. \emph{Genes and
-    Development}, {\bf 28}:2151-62.} } 
-\end{itemize}
+\item Could a multi-tiered model predict TADs, MetaTADs and compartments from epigenomic data?
+\item Are boundaries important or a side-effect of domains? (Likely something inbetween)
+\end{itemize} 
 
-\vspace{1em}
+\vspace{2em}
 
-Can I find evidence for this with my data?
+Ultimately our results agree with a model of genome organisation where large constitutive structures (compartments, LADs) anchor the genome but more local, cell-type specific interactions can then fine-tune transcriptional events at a local level
+
 \end{frame}
+%
 
-\begin{frame}{Next project}
-\centering
-\includegraphics[width=.3\textwidth]{figs/venn.pdf} \\
-\includegraphics[width=.5\textwidth]{figs/hgd.pdf}
-\includegraphics[width=.5\textwidth]{figs/hist.pdf} 
-\end{frame}
+\begin{frame}{Summary}
 
-\begin{frame}{Next project}
+\small
+
+Results presented in this thesis:
 \begin{itemize}
-\item Higher resolution Hi-C now available, better for identifying domains
-\item Improved methods of calling domains, where / why are some
-  well-conserved between cell types?
-\item Mouse data also available
+\item Chromosome compartments can be accurately predicted from epigenomic features alone
+\item This link between locus-level epigenomics and higher order structure is particularly evident at boundary regions
+\item Further evidence for combinatorial importance of CTCF, YY1, RAD21 in genome organisation
+\item MetaTADs appear a useful and biologically-relevant novel organisational strata
+\item TSA inducible \emph{Shh} expression intimately linked with chromosome conformation, through details still unclear
 \end{itemize}
+\vspace{.5em}
+More generally:
+\begin{itemize}
+\item Data recycling: most of this thesis done with publicly-available data from different sources
+\item Machine learning offers useful tools to dissect complex biological systems
+\end{itemize}
+ 
+ 
 \end{frame}
-
-
-% \section{Year summary}
-% \begin{frame}{Year summary}
-% \vspace{-1em}
-% \begin{enumerate}
-% \item Completed main project on integrating uniformly-processed Hi-C and
-%   ENCODE datasets (\emph{in review})
-% \includegraphics[width=.8\textwidth]{figs/inreview.png}
-% \item Presented related posters at ISMB (Boston) and Genome
-%   Informatics (Cambridge); spoke at Edinburgh Bioinformatics
-% \item Ongoing collaborations with wet-lab researchers (particularly
-%   Adam Douglas in Bob Hill's group)
-% \end{enumerate}
-% \end{frame}
-
-\section{Thesis plan}
-\begin{frame}{Thesis plan p1}
-\begin{enumerate}
-\item Introduction
-\item Methods
-\item {\bf Modelling transcription and chromatin} Replicating and
-  extending ENCODE project predicting txn output; adapt techniques to
-  genome organisation
-\item {\bf Model dissection} How the chromatin structure models
-  cross-apply; regularised models; variable importance
-\item {\bf Boundaries} Comparing TADs/compartments across boundaries;
-  ``super bounds''; Giemsa bands
-\item \dots
-\end{enumerate}
-
-\end{frame}
-
-\begin{frame}{Thesis plan p2}
-\begin{enumerate}
-\setcounter{enumi}{5}
-\item {\bf Investigating the function of self-interacting domains}
-  Work from future project (very early stages); possibly two chapters
-  from the next year
-\item {\bf C-methods collaborations} Write-up Hill lab collaborations,
-  possibly include other minor collabs
-\item Discussion
-\item End materials, code
-\end{enumerate}
-
-\end{frame}
-
 
 \section{Acknowledgements}
 
@@ -487,9 +494,16 @@ Can I find evidence for this with my data?
 \begin{tcolorbox}[colback=blue!40!black,colframe=blue!40!black]
 \begin{center}
 {\usebeamercolor[fg]{whitetext}
-{\small Thanks to supervisors:} \\ Colin Semple and
-Stuart Aitken
+{\small Thanks to supervisors:} \\ 
+Colin Semple and
+Stuart Aitken \\
+\vspace{1em}
+{\small Collaborators:} \\
+Hill lab (University of Edinburgh) \\ 
+Pombo lab (Max Delbr\"uck center)
+
 }
+
 \end{center}
 \end{tcolorbox}
 
