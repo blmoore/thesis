@@ -5,7 +5,6 @@
 \usepackage{multicol}
 \usepackage{amsmath}
 \usepackage[listings,theorems]{tcolorbox}
-
 \setbeamercolor*{title}{use=structure,fg=white,bg=black}
 \setbeamercolor*{author}{use=structure,fg=white}
 \setbeamercolor*{date}{use=structure,fg=white}
@@ -117,6 +116,19 @@ Related collaborative work:
 
 \section{Reanalysis of Hi-C datasets}
 
+{
+\usebackgroundtemplate{\includegraphics[width=.85\paperwidth]{figs/hicbg_3.png}}
+\begin{frame}{}
+\begin{tcolorbox}[colback=blue!40!black,colframe=blue!40!black]
+\begin{center}
+{\usebeamercolor[fg]{whitetext}
+{\small Results 1: } \\
+ Reanalysis of Hi-C data }
+\end{center}
+\end{tcolorbox}
+\end{frame}
+}
+
 \begin{frame}{Reanalysis of Hi-C datasets}
 Very different sequencing depths between the input datasets: \\
 
@@ -183,11 +195,26 @@ Some harbour genes with known cell type specific function
 
 % ----- End Reanalysis of Hi-C
 
-% ----- Begin Reanalysis of Hi-C
+\section{Integrative modelling}
 
+{
+\usebackgroundtemplate{\includegraphics[width=.85\paperwidth]{figs/hicbg_3.png}}
+\begin{frame}{}
+\begin{tcolorbox}[colback=blue!40!black,colframe=blue!40!black]
+\begin{center}
+{\usebeamercolor[fg]{whitetext}
+{\small Results 2: } \\
+ Integrative modelling as a tool \\ to explore biological systems}
+\end{center}
+\end{tcolorbox}
+\end{frame}
+}
 
-\begin{frame}{Main project}
-Can model compartments, cross-apply between cell types: \\
+% ----- Begin Integrative modelling
+
+\begin{frame}{Integrative modelling}{p67}
+
+Chromosome compartment profiles can be accurately predicted and models generalise across cell types: \\
 
 \vspace{2em}
 
@@ -197,25 +224,128 @@ Can model compartments, cross-apply between cell types: \\
 
 \end{frame}
 
-\begin{frame}{Main project}
-Lots of new boundary enrichments, quantitatively tested: \\
+\begin{frame}{Integrative modelling}
+
+Model dissection a focus of much of this chapter: \\
+
+\vspace{2em}
+
+\begin{itemize}
+\item Variable importance
+\begin{itemize}
+\item Varies between cell type models but multicollinearity in feature set
+\item In some cases interpretable (p70), many of the usual suspects of chromatin conformation
+\end{itemize}
+\item Comparing machine learning methods
+\item Regularised models
+\end{itemize}
 
 \vspace{1em}
 
+\end{frame}
+
+\begin{frame}{Integrative modelling}
+
+Most results in these two chapters were published:
+
+\vspace{2em}
 \centering
-\includegraphics[width=.75\textwidth]{figs/f6.png}
+\includegraphics[width=.9\textwidth]{../figs/paper_screenshot.png}
+\vspace{2em}
 
 \end{frame}
 
-\begin{frame}{Main project}
-Currently in review: \\
+\section{Boundaries}
 
-\vspace{1em}
+{
+\usebackgroundtemplate{\includegraphics[width=.85\paperwidth]{figs/hicbg_3.png}}
+\begin{frame}{}
+\begin{tcolorbox}[colback=blue!40!black,colframe=blue!40!black]
+\begin{center}
+{\usebeamercolor[fg]{whitetext}
+{\small Results 3: } \\
+ Chromatin domain boundaries}
+\end{center}
+\end{tcolorbox}
+\end{frame}
+}
+
+% ----- Begin boundaries
+
+\begin{frame}{Boundaries}
+
+TAD boundaries have been shown to be enriched for various epigenomic marks. \\
+
+\vspace{2em}
+
+\begin{itemize}
+\item Which of these boundary enrichments are statistically significant relative to a null model?
+\item Are the same features enriched at chromatin compartment boundaries?
+\item Are these enrichments shared across cell types?
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Boundary enrichment analysis}
 
 \centering
 
-\includegraphics[width=.8\textwidth]{figs/inreview.png}
+\includegraphics[width=.8\textwidth]{../figs/boundarysummary.pdf}
+
 \end{frame}
+
+\begin{frame}{Predicting TAD boundaries}{p96}
+
+Given these enrichments exist, can we predict TAD boundaries in lieu of Hi-C data using epigenomic features? \\
+
+\vspace{2em}
+
+\centering
+\includegraphics[width=.5\textwidth]{../figs/tadpred_auroc.pdf}
+
+
+\end{frame}
+
+\begin{frame}{Predicting TAD boundaries}
+
+In this case, more consistent and clear results from variable importance:
+
+\vspace{2em}
+
+\centering
+\includegraphics[width=\textwidth]{../figs/tadpred_varimp.pdf}
+
+\end{frame}
+
+
+\begin{frame}{MetaTADs}
+
+Collaborator's finding: \\
+\begin{quote}
+Neighbour joining of interacting TADs appears to 
+capture a novel layer of chromatin organisation: metaTADs. This attractive
+concept that offers a framework for fractal 3D structure and links TADs with compartments.
+ \end{quote}
+
+\vspace{2em}
+
+My contributions: \\
+\begin{itemize}
+\item Analysis of MetaTAD boundary enrichments as per TADs and compartments
+\item Analysis of the co-incidence of MetaTAD boundaries and LAD boundaries
+\end{itemize}
+
+\vspace{2em}
+
+\end{frame}
+
+\begin{frame}{MetaTAD boundary enrichments}{p100}
+
+\centering
+\includegraphics[width=.75\textwidth]{../figs/metatad_cutoffenrich.pdf}
+
+\end{frame}
+
 
 \section{Collaborations}
 \begin{frame}{Side project}
@@ -363,65 +493,8 @@ Stuart Aitken
 \end{center}
 \end{tcolorbox}
 
-% \vspace{48pt}
-
-% \begin{tcolorbox}[colback=blue!30,colframe=blue!40!black,title=Key references]
-% \begin{tiny}
-% \begin{itemize}
-% \setlength{\itemindent}{-2em}
-% \item[1.] Lieberman-Aiden, E. \emph{et al.} (2009) Comprehensive mapping
-%   of long-range interactions reveals folding principles of the human
-%   genome. \emph{Science}, {\bf 326}, p289-93.
-% \item[2.] Kalhor, R. \emph{et al.} (2012) Genome architectures
-%   revealed by tethered chromosome conformation capture and
-%   population-based modeling. \emph{Nature biotechnology}, {\bf 30}, p90-98.
-% \item[3.] Dixon, J.R. \emph{et al.} (2012) Topological domains in
-%   mammalian genomes identified by analysis of chromatin
-%   interactions. \emph{Nature}, {\bf 485}, p376-80.
-% \item[4.] Yaffe, E. and Tanay, A. (2011) Probabilistic modeling of
-%   Hi-C contact maps eliminates systematic biases to characterize
-%   global chromosomal architecture. \emph{Nature genetics}, {\bf
-%     43}:11, p1059-65.
-% \end{itemize}
-% \end{tiny}
-
-% \end{tcolorbox}
 \end{frame}
 }
 
-% \section{}
-% \begin{frame}{Chromosome selection}
-% \begin{figure}[H]
-% \begin{center}
-% \includegraphics[width=\textwidth]{figs/ChosenCsomes.png}
-% \end{center} 
-% \end{figure} 
-% \end{frame}
-
-% % \begin{frame}{Chromosomal compartments}
-% % \begin{figure}[H]
-% % \begin{center}
-% % \includegraphics[width=\textwidth]{figs/compartCharact.pdf}
-% % \end{center} 
-% % \end{figure} 
-% % \end{frame}
-
-% \begin{frame}{Just more ``stuff'' binding in open comparments?}
-% \begin{multicols}{3}
-% \begin{figure}[H]
-% \includegraphics[width=.33\textwidth]{figs/gshuff.pdf}
-% \end{figure} 
-% \columnbreak
-% \begin{figure}[H]
-% \includegraphics[width=.33\textwidth]{figs/hshuff.pdf}
-% \end{figure} 
-% \columnbreak
-% \begin{figure}[H]
-% \includegraphics[width=.33\textwidth]{figs/kshuff.pdf}
-% \end{figure} 
-% \end{multicols}
-
-% Here the eigenvector values are shuffled per compartment type.
-% \end{frame}
 
 \end{document}
