@@ -5,10 +5,10 @@
 \contentsline {chapter}{\nonumberline \spacedlowsmallcaps {Abstract}}{vii}{chapter*.3}
 \contentsline {chapter}{\nonumberline \spacedlowsmallcaps {Lay summary}}{ix}{chapter*.4}
 \contentsline {chapter}{\nonumberline \spacedlowsmallcaps {Contents}}{xi}{chapter*.5}
-\contentsline {chapter}{\nonumberline \spacedlowsmallcaps {List of figures}}{xv}{chapter*.6}
-\contentsline {chapter}{\nonumberline \spacedlowsmallcaps {List of tables}}{xix}{chapter*.7}
-\contentsline {chapter}{\nonumberline \spacedlowsmallcaps {List of acronyms}}{xxi}{chapter*.8}
-\contentsline {chapter}{\nonumberline \spacedlowsmallcaps {Published material}}{xxiii}{chapter*.9}
+\contentsline {chapter}{\nonumberline \spacedlowsmallcaps {List of figures}}{xiii}{chapter*.6}
+\contentsline {chapter}{\nonumberline \spacedlowsmallcaps {List of tables}}{xv}{chapter*.7}
+\contentsline {chapter}{\nonumberline \spacedlowsmallcaps {List of acronyms}}{xvii}{chapter*.8}
+\contentsline {chapter}{\nonumberline \spacedlowsmallcaps {Published material}}{xix}{chapter*.9}
 \contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Introduction}}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Genome organisation}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}C-methods and Hi-C}{1}{subsection.1.1.1}
