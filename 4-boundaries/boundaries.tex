@@ -114,6 +114,19 @@ of modest effect size can also be seen (Fig. \ref{fig:allcompartments}). In cont
 composition of compartment boundaries appears least complex in H1
 hESC, relative to the other two cell types (cf. Fig. \ref{fig:allcompartments}). 
 
+% new stuff here for thres Vs HMM boundaries
+These enrichments over compartment boundaries offer the opportunity to investigate the effects of the HMM boundary calling method used in this work with the previously-used simple thresholding approach.\cite{Lieberman2009} To this end we compared that subset of boundaries retained through HMM calling (for details see Section \ref{sec:compcalls}), with those that would have been called through simple thresholding when the compartment eigenvector changes sign. We find that boundary enrichments are largely reduced or absent in this latter set of boundaries (Fig. \ref{fig:hmmVthres}). This result suggests that the HMM boundary calling method is filtering noisy compartment boundary calls which would otherwise be present through a simple thresholding approach, however we note that the absence of boundary enrichment does not necessarily preclude the presence of a compartment boundary.
+
+\begin{figure}
+\begin{center} 
+\includegraphics[width=3in]{hmmVthres.pdf}
+\captionsetup{width=\textwidth}
+\caption[ Compartment boundary candidates filtered through HMM calling show reduced feature enrichments. ]{ {\bf Compartment boundary candidates filtered through HMM calling show reduced feature enrichments. }
+Boundary feature enrichments are compared for boundaries called via the HMM method described in this work (discussed in Section \ref{sec:compcalls}), and boundaries omitted through the HMM method but present if a simple thresholding approach is used to delimit compartment domains. Boundary profiles shown as in Figure \ref{fig:allcompartments}.
+}\label{fig:hmmVthres}
+\end{center}
+\end{figure} 
+
 \subsection{Significance testing of boundary associations}\label{sec:boundsignif}
 
 Domain boundary associations with other chromatin features are most frequently presented through the statistics-free "average-o-grams" similar to those presented in this work (Figs. \ref{fig:alltads}, \ref{fig:allcompartments}). We then went on to perform a quantitative test of the associations between these features with compartment and TAD boundaries. In brief, we compare the values for each normalised signal directly over a boundary bin with those peripheral bins in each $\approx 1$ Mb window (for TADs). We then perform a non-parametric, rank-based significance test to look for statistically significant enriched or depletions of each feature. Details of this procedure are given in Methods \ref{meth:tadbounds}.
