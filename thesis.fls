@@ -697,6 +697,9 @@ INPUT ./figs/alltads.pdf
 INPUT figs/allcompartments.pdf
 INPUT ./figs/allcompartments.pdf
 INPUT ./figs/allcompartments.pdf
+INPUT figs/hmmVthres.pdf
+INPUT ./figs/hmmVthres.pdf
+INPUT ./figs/hmmVthres.pdf
 INPUT figs/boundarysummary.pdf
 INPUT ./figs/boundarysummary.pdf
 INPUT ./figs/boundarysummary.pdf
