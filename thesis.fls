@@ -599,6 +599,9 @@ INPUT ./figs/compdist_v2.pdf
 INPUT figs/ntads.pdf
 INPUT ./figs/ntads.pdf
 INPUT ./figs/ntads.pdf
+INPUT figs/tadsizes.pdf
+INPUT ./figs/tadsizes.pdf
+INPUT ./figs/tadsizes.pdf
 INPUT figs/taddist_v2.pdf
 INPUT ./figs/taddist_v2.pdf
 INPUT ./figs/taddist_v2.pdf

@@ -76,13 +76,13 @@
 \contentsline {section}{\numberline {3.4}Domain calls}{39}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Compartments}{39}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}TADs}{44}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Domain epigenomics}{46}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}A/B compartments}{46}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}TAD classes}{47}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}Variable regions}{49}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Chromatin state enrichment}{52}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Gene ontology enrichment}{54}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Contact changes}{54}{subsection.3.6.3}
+\contentsline {section}{\numberline {3.5}Domain epigenomics}{47}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}A/B compartments}{47}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}TAD classes}{49}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Variable regions}{51}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Chromatin state enrichment}{51}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Gene ontology enrichment}{53}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Contact changes}{55}{subsection.3.6.3}
 \contentsline {section}{\numberline {3.7}Nuclear positioning}{55}{section.3.7}
 \contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Integrative modelling as a tool to explore biological systems}}{59}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{59}{section.4.1}
@@ -139,5 +139,5 @@
 \contentsline {section}{\numberline {7.4}On causality}{125}{section.7.4}
 \contentsline {section}{\numberline {7.5}Insights into genome organisation}{126}{section.7.5}
 \contentsline {section}{\numberline {7.6}Summary}{127}{section.7.6}
-\contentsline {chapter}{\nonumberline \spacedlowsmallcaps {Appendices}}{129}{chapter*.89}
+\contentsline {chapter}{\nonumberline \spacedlowsmallcaps {Appendices}}{129}{chapter*.90}
 \contentsline {chapter}{\sffamily \textls [80]{\scshape references}}{148}{table.7.3}

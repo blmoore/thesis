@@ -183,7 +183,18 @@ A greater number of TADs were called in H1 hESC ($2,897$ total) than in GM12878 
 \end{center} 
 \end{figure} 
 
-The \citet{Dixon2012} method of calling TADs relies on the detection of boundaries,\cite{Rao2014} thus it is affected by sequencing depth: experiments with sparser contact matrices may not contain enough for a sufficiently high degree of bias to allow a boundary call. This is evident in our datasets even after normalisation, with the deeply-sequenced H1 hESC cell type having approximately $50\%$ more TADs called than in the GM12878 cell type (Fig. \ref{fig:ntads}). This effect could have been mitigated by down-sampling reads in the H1 cell type, but at a cost of reducing the quality of the best dataset under study. Instead this disparity should just be noted as a potential cofounder in downstream TAD analysis; at lower-resolution such as that used to calculate compartment eigenvectors (1 Mb) this sensitivity to sequencing depth is not evident (Figs. \ref{fig:wiggles}, \ref{fig:compcor}).
+The \citet{Dixon2012} method of calling TADs relies on the detection of boundaries,\cite{Rao2014} thus it is affected by sequencing depth: experiments with sparser contact matrices may not contain enough for a sufficiently high degree of bias to allow a boundary call. This is evident in our datasets even after normalisation, with the deeply-sequenced H1 hESC cell type having approximately $50\%$ more TADs called than in the GM12878 cell type (Fig. \ref{fig:ntads}). The increased power to detect TAD boundaries also results in smaller domains, on average, in the H1 hESC cell line (Fig. \ref{fig:tadsizes}). This effect could have been mitigated by down-sampling reads in the H1 cell type, but at a cost of reducing the quality of the best dataset under study. Instead this disparity should just be noted as a potential cofounder in downstream TAD analysis; at lower-resolution such as that used to calculate compartment eigenvectors (1 Mb) this sensitivity to sequencing depth is not evident (Figs. \ref{fig:wiggles}, \ref{fig:compcor}).
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=3.1in]{tadsizes.pdf}
+\captionsetup{width=\textwidth}
+\caption[ Size distributions of TADs called in three human cell type. ]{
+{\bf Size distributions of TADs called in three human cell type. }
+Densities of TAD sizes called in each cell type under study. Vertical lines show the median TAD size in each cell type (Gm12878: $1.08$ Mb; H1 hESC: $0.72$ Mb; K562: $1.2$ Mb). Sizes distributions shown on a $\log_{10}$ scale.
+}\label{fig:tadsizes}
+\end{center}
+\end{figure} 
 
 Despite differing numbers, there is still detectable levels of conservation of TADs between cell types (Fig. \ref{fig:bounddist}). Genome-wide, $45\%$ of all H1 TAD boundaries have a matching boundary in GM12878 in the same or an adjacent 40 kb bin (K562: $41\%$, null model: $22\%$; K--S test: $D=0.2$, $p\approx0$). To illustrate this conservation with a real example, a 20 Mb region of chromosome 2 is pictured (Fig. \ref{fig:blowout}), highlighting the conservation between both TADs and compartment calls across the three cell types and at multiple scales: from chromosome-wide 1 Mb compartment eigenvectors, to TADs with individual boundaries resolved to 40 kb.
 
