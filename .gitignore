@@ -3,9 +3,12 @@ arsclassica/
 
 *.fdb_latexmk
 _theses/
-
+*.aux
 *.log
+*.toc
 *.rtf
+
+*.blg
 
 *.gz(busy)
 _papers/
