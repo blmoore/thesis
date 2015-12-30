@@ -1,29 +1,21 @@
+_theses/
+_papers/
+_adamstuff/
 
 arsclassica/
+word_v05/
 
 *.fdb_latexmk
-_theses/
 *.aux
 *.log
 *.toc
 *.rtf
-
+*.bbl
 *.blg
-
-*.gz(busy)
-_papers/
-_adamstuff/
-
-word_v05/
-
-_inkscape/RandomForest_10CV_50d.svg
-
 *.fls
-
 *.lof
-
 *.lot
-
 *.out
 
-*.toc
+*.gz(busy)
+_inkscape/RandomForest_10CV_50d.svg
