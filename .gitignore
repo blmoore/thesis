@@ -1,18 +1,21 @@
-
-arsclassica/
-
-*.fdb_latexmk
 _theses/
-
-*.log
-*.rtf
-
-*.gz(busy)
 _papers/
 _adamstuff/
 
+arsclassica/
 word_v05/
 
-_inkscape/RandomForest_10CV_50d.svg
-
+*.fdb_latexmk
+*.aux
+*.log
+*.toc
+*.rtf
+*.bbl
+*.blg
 *.fls
+*.lof
+*.lot
+*.out
+
+*.gz(busy)
+_inkscape/RandomForest_10CV_50d.svg

@@ -155,14 +155,14 @@ Kernel density estimates of compartment sizes (Open: A; Closed: B) are shown per
 \end{center}
 \end{figure} 
 
-Next we compare compartments between the three cell types under study. To do this, we calculate the minimum absolute distance from each boundary in one cell type against those in a designated comparison cell type (we used H1 hESC). The cumulative distribution of this boundary differences is shown (Fig. \ref{fig:compdist}) and compared to a null distribution of random compartment boundaries (Methods \ref{meth:boundcompare}). We find boundaries are significantly more closely aligned across  cell types than is expected by chance. For example, genome-wide approximately $37\%$ of compartment boundaries in H1 hESC have a corresponding boundary within $100$ kb in GM12878 (and $35\%$ in K562, but only $5\%$ in random boundaries). Comparisons of the cumulative boundary distance distributions yield statistically significant differences relative to the null model (K-S test, K562: $D = 0.47$; $p \approx 0$; GM12878: $D = 0.49$; $p \approx 0$; Fig. \ref{fig:compdist}).
+Next we compare compartments between the three cell types under study. To do this, we calculate the minimum absolute distance from each boundary in one cell type against those in a designated comparison cell type (we used H1 hESC). The cumulative distribution of these boundary differences is shown (Fig. \ref{fig:compdist}) and compared to a null distribution of random compartment boundaries (Methods \ref{meth:boundcompare}). We find boundaries are significantly more closely aligned across  cell types than is expected by chance. For example, genome-wide approximately $37\%$ of compartment boundaries in H1 hESC have a corresponding boundary within $100$ kb in GM12878 (and $35\%$ in K562, but only $5\%$ in random boundaries). Comparisons of the cumulative boundary distance distributions yield statistically significant differences relative to the null model (K-S test, K562: $D = 0.47$; $p \approx 0$; GM12878: $D = 0.49$; $p \approx 0$; Fig. \ref{fig:compdist}).
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=2.5in]{compdist_v2.pdf}
 \captionsetup{width=\textwidth}
 \caption[Compartment boundaries are shared between cell types. ]{ {\bf Compartment boundaries are shared between cell types. }
-The empirical cumulative density functions (ECDF) of distances between H1 compartments and those called in GM12878 and K562 are shown. Vertical lines mark distances of 0, 1 and 2 bins. Also plotted is the ECDF of a null model, where distances were calculated to shuffled boundaries at a matched resolution (Methods \ref{meth:boundcompare}).
+The empirical cumulative distribution functions (ECDF) of distances between H1 compartments and those called in GM12878 and K562 are shown. Vertical lines mark distances of 0, 1 and 2 bins. Also plotted is the ECDF of a null model, where distances were calculated to shuffled boundaries at a matched resolution (Methods \ref{meth:boundcompare}).
 }\label{fig:compdist}
 \end{center}
 \end{figure} 
@@ -183,7 +183,18 @@ A greater number of TADs were called in H1 hESC ($2,897$ total) than in GM12878 
 \end{center} 
 \end{figure} 
 
-The \citet{Dixon2012} method of calling TADs relies on the detection of boundaries,\cite{Rao2014} thus it is affected by sequencing depth: experiments with sparser contact matrices may not contain enough for a sufficiently high degree of bias to allow a boundary call. This is evident in our datasets even after normalisation, with the deeply-sequenced H1 hESC cell type having approximately $50\%$ more TADs called than in the GM12878 cell type (Fig. \ref{fig:ntads}). This effect could have been mitigated by down-sampling reads in the H1 cell type, but at a cost of reducing the quality of the best dataset under study. Instead this disparity should just be noted as a potential cofounder in downstream TAD analysis; at lower-resolution such as that used to calculate compartment eigenvectors (1 Mb) this sensitivity to sequencing depth is not evident (Figs. \ref{fig:wiggles}, \ref{fig:compcor}).
+The \citet{Dixon2012} method of calling TADs relies on the detection of boundaries,\cite{Rao2014} thus it is affected by sequencing depth: experiments with sparser contact matrices may not contain enough for a sufficiently high degree of bias to allow a boundary call. This is evident in our datasets even after normalisation, with the deeply-sequenced H1 hESC cell type having approximately $50\%$ more TADs called than in the GM12878 cell type (Fig. \ref{fig:ntads}). The increased power to detect TAD boundaries also results in smaller domains, on average, in the H1 hESC cell line (Fig. \ref{fig:tadsizes}). This effect could have been mitigated by down-sampling reads in the H1 cell type, but at a cost of reducing the quality of the best dataset under study. Instead this disparity should just be noted as a potential cofounder in downstream TAD analysis; at lower-resolution such as that used to calculate compartment eigenvectors (1 Mb) this sensitivity to sequencing depth is not evident (Figs. \ref{fig:wiggles}, \ref{fig:compcor}).
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=3.1in]{tadsizes.pdf}
+\captionsetup{width=\textwidth}
+\caption[ Size distributions of TADs called in three human cell type. ]{
+{\bf Size distributions of TADs called in three human cell type. }
+Densities of TAD sizes called in each cell type under study. Vertical lines show the median TAD size in each cell type (Gm12878: $1.08$ Mb; H1 hESC: $0.72$ Mb; K562: $1.2$ Mb). Sizes distributions shown on a $\log_{10}$ scale.
+}\label{fig:tadsizes}
+\end{center}
+\end{figure} 
 
 Despite differing numbers, there is still detectable levels of conservation of TADs between cell types (Fig. \ref{fig:bounddist}). Genome-wide, $45\%$ of all H1 TAD boundaries have a matching boundary in GM12878 in the same or an adjacent 40 kb bin (K562: $41\%$, null model: $22\%$; K--S test: $D=0.2$, $p\approx0$). To illustrate this conservation with a real example, a 20 Mb region of chromosome 2 is pictured (Fig. \ref{fig:blowout}), highlighting the conservation between both TADs and compartment calls across the three cell types and at multiple scales: from chromosome-wide 1 Mb compartment eigenvectors, to TADs with individual boundaries resolved to 40 kb.
 
@@ -348,12 +359,13 @@ shell and included chromosomes 2, 3, 4, 7, 8, 11, 13 and 18. The remaining
 chromosomes showed no significant preference to either inner or
 outer nuclear shells at $\alpha = 0.05$.\cite{Boyle2001} 
 
-We found that positive eigenvectors (reflecting A compartments) did show a modest relative enrichment in centrally-positioned chromosomes relative to those located at the nuclear periphery (Fig. \ref{fig:nucpos}). The significance
-of the difference in distribution of eigenvectors in the central
-and edge of the nucleus was determined by a two-sided Kolmogorov-Smirnov (K-S)
-test, with the null hypothesis that there is no difference between the empirical cumulative
-density functions of the central chromosome eigenvectors ($F_{central}$)
-and peripheral ($F_{edge}$). The difference was found to be statistically significant in each cell type ($H_0: F_{edge} = F_{central}$; GM12878: $D = 0.11$, $p < 6 \times 10^{-4}$; H1 hESC: $D = 0.12$, $p < 8 \times 10^{-8}$; K562: $D = 0.10$, $p < 5 \times 10^{-3}$)
+We found that positive eigenvectors (reflecting A compartments) did show a modest relative enrichment in centrally-positioned chromosomes relative to those located at the nuclear periphery (Fig. \ref{fig:nucpos}). The significance of this observation was determined by a two-sided Wilcoxon rank sum test on the median eigenvector values of each chromosome, comparing the medians of those chromosomes located in the nuclear periphery and centre (Methods \ref{methods:positioning}). The difference was found to be statistically significant in each case (GM12878: $p < 0.002$; H1 hESC: $p < 0.002$; K562: $p < 0.05$)
+%The significance
+%of the difference in distribution of eigenvectors in the central
+%and edge of the nucleus was determined by a two-sided Kolmogorov-Smirnov (K-S)
+%test, with the null hypothesis that there is no difference between the empirical cumulative
+%density functions of the central chromosome eigenvectors ($F_{central}$)
+%and peripheral ($F_{edge}$). The difference was found to be statistically significant in each cell type ($H_0: F_{edge} = F_{central}$; GM12878: $D = 0.11$, $p < 6 \times 10^{-4}$; H1 hESC: $D = 0.12$, $p < 8 \times 10^{-8}$; K562: $D = 0.10$, $p < 5 \times 10^{-3}$)
 
 \begin{figure}
 \begin{center} 

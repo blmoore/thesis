@@ -160,7 +160,7 @@ In the analysis of boundaries (Chapter \ref{chap:boundaries}), we also use a mea
 
 \subsection{Clustering input features}\label{meth:clustersig}
 
-To quantify collinearity of input features, correlation matrices built from genome-wide vectors of input feature measures were build and hierarchically clustered. The "significance" of observed clustering was assessed using sub- and super-sampled bootstrapping, with stable clusters across sample sizes deemed significant, as implemented in the \texttt{pvclust} R package.\cite{Suzuki2006a}
+To quantify collinearity of input features, correlation matrices of genome-wide vectors of input feature measures were hierarchically clustered. The "significance" of observed clustering was assessed using sub- and super-sampled bootstrapping, with stable clusters across sample sizes deemed significant, as implemented in the \texttt{pvclust} R package.\cite{Suzuki2006a}
 
 \section{Modelling compartment eigenvectors}\label{modelling}
 
@@ -216,8 +216,8 @@ units of mean squared error (MSE).\citep{Cutler2007, Dasgupta2012}
 The effectiveness of the RF modelling approach used to predict compartment eigenvectors (Section \ref{sec:modhoc}) was measured by four
 different metrics. Prediction accuracy was assessed by the Pearson
 correlation coefficient between the OOB predictions and observed eigenvectors, and the root mean-squared
-error (RMSE) of the same data. Classification error, when predictions
-where thresholded into $A \geq 0; B < 0$, was also calculated using
+error (RMSE) of the same data. Classification error, where predictions
+were thresholded into $A \geq 0; B < 0$, was also calculated using
 accuracy (\% correct classifications or True Positives) and area under
 the receiver operating characteristic (AUROC) curve. Together these give
 a comprehensive overview of the model performance, both in terms of
@@ -404,7 +404,7 @@ The input feature set for this model was made up of the same $35$ ENCODE feature
 
 Gini importance was the variable importance metric used to rank variables during the AUC-RF procedure (Section \ref{meth:aucrf}) and was also used in the analysis of a two-step model prediction transcriptional output (Section \ref{sec:reprodong}). This measure is calculated as follows.
 
-The Gini impurity, $G$, of a single node containing some proportions of $n$ classes of variable is calculated as shown (Eqn. \ref{eqn:gini}), and is observably related to the concept of entropy or information gain. 
+The Gini impurity, $G$, of a single node containing some proportions of $n$ classes is calculated as shown (Eqn. \ref{eqn:gini}), and is observably related to the concept of entropy or information gain. 
 
 \begin{equation}\label{eqn:gini}
 G = \sum_{i=1}^{n} p_i(1-p_i)
@@ -435,7 +435,7 @@ As can be seen through this derivation, the Gini importance captures information
 
 \section{MetaTAD analysis}\label{meth:meta}
 
-MetaTADs are a conceptual level of genome organisation proposed by collaborators in the Pombo lab (Max Delbr\"{u}ck Center, Berlin). Their method for calling metaTADs involve the constrained hierarchical clustering of those neighbouring TADs with the greatest inter-TAD contacts. This pairing was recursed up to the level of whole chromosomes, thus resulting in a tree of increasing metaTAD aggregation. Since the calculation of metaTADs was performed and designed by collaborators, finer details are omitted here but are discussed fully in the associated manuscript.\cite{fraser2015inrev} Our contribution to the analysis of metaTADs is discussed in Section \ref{sec:metatads}.
+MetaTADs are a conceptual level of genome organisation proposed by collaborators in the Pombo lab (Max Delbr\"{u}ck Center, Berlin). Their method for calling metaTADs involves the constrained hierarchical clustering of those neighbouring TADs with the greatest inter-TAD contacts. This pairing was recursed up to the level of whole chromosomes, thus resulting in a tree of increasing metaTAD aggregation. Since the calculation of metaTADs was performed and designed by collaborators, finer details are omitted here but are discussed fully in the associated manuscript.\cite{fraser2015inrev} Our contribution to the analysis of metaTADs is discussed in Section \ref{sec:metatads}.
 
 %Additionally our collaborators used an altered TAD calling method to that of \citet{Dixon2012} They used the directionality index (DI), as described in Section \ref{meth:tadcalling}), but replaced the subsequent steps with a simple thresholding method: when the DI crossed a threshold of standard deviation, $\sigma$, it was considered either an up- or downstream biased bin and TADs were called between
 
@@ -455,7 +455,7 @@ Gene density over metaTAD boundaries was calculated using UCSC \texttt{mm9} gene
 
 \subsection{LAD coincidence}\label{meth:metalad}
 
-Lamina associated domains (LADs) are genomic regions which are in contact lamin proteins A, B and C, found on the inner nuclear membrane (reviewed in \citenum{Luperchio2014}). To compare metaTAD boundaries with those of LADs, we made use of previously-published Lamin-B1 DamID microarray probe intensities.\cite{Peric-Hupkes2010} For analysis over boundaries, these values were averaged into the same boundary windows as used previously (50 kb bins $\pm450$ kb around boundary, as in Section \ref{meth:tadbounds}). 
+Lamina associated domains (LADs) are genomic regions which are in contact with lamin proteins A, B and C, found on the inner nuclear membrane (reviewed in \citenum{Luperchio2014}). To compare metaTAD boundaries with those of LADs, we made use of previously-published Lamin-B1 DamID microarray probe intensities.\cite{Peric-Hupkes2010} For analysis over boundaries, these values were averaged into the same boundary windows as used previously (50 kb bins $\pm450$ kb around boundary, as in Section \ref{meth:tadbounds}). 
 
 Transitions between high and low lamina association were detected by fitting a linear regression model across each series of consecutive boundary bins (i.e. $\textrm{Lamina assoc.}=\beta\cdot\textrm{bin} + c$). Linear models which had an absolute coefficient $|\beta| >.05$ were taken as crossing a LAD transition. This threshold is a heuristic which appears to perform well at conservatively selecting clear transitions. As a method of seriation for the $y$-axis of heatmap figures (e.g. Fig. \ref{fig:mtlamin}), boundaries were divided into those that coincided with a lamin transition and those that did not, and members within each group were then sorted by average intensity. 
 
@@ -486,8 +486,10 @@ shell and included chromosomes 2, 3, 11-13 and 18. Remaining chromosomes were as
 the ``middle'' group and showed no significant to either inner or
 outer nuclear shells ($p \geq 0.1$).\cite{Boyle2001} 
 
-The significance of the difference in distribution of eigenvectors in the inner
-versus outer shell was determined by a two-sided Kolmogorov-Smirnov test, with the alternative hypothesis that the empirical cumulative density function of the inner chromosome eigenvectors $F_{inner}$ was not equal to $F_{outer}$. This chromosomal positioning data was measured in lymphoblastoid cells, though this level of nuclear organisation is thought to be largely conserved
+%The significance of the difference in distribution of eigenvectors in the inner
+%versus outer shell was determined by a two-sided Kolmogorov-Smirnov test, with the alternative hypothesis that the empirical cumulative density function of the inner chromosome eigenvectors $F_{inner}$ was not equal to $F_{outer}$. 
+As the nuclear positioning data used in this work was recorded at the level of chromosomes, rather than at regular genomic bins, the significance of any difference in eigenvectors between chromosome locations was assessed through a two-sided Wilcoxon rank sum test on the median eigenvector values of each chromosome. Chromsomes enriched in the nuclear periphery were compared with those positioned in the central nucleus.
+This chromosomal positioning data was measured in lymphoblastoid cells, though this level of nuclear organisation is thought to be largely conserved
 between cell types\cite{Chambers2013, DeWit2013} and even among higher primates,\cite{Tanabe2002} so should be comparable across cell types for this purpose.
 
 \section{Modelling transcriptional output}
@@ -501,7 +503,7 @@ Input features for models of transcription were derived from the January 2011 EN
 
 We transferred this transcriptional modelling approach to what was at the time novel, unpublished CAGE data produced by the FANTOM consortium. This data has since been released in the FANTOM5 series of publications.\cite{fantom5}
 
-Specifically, we used H1 hESC $t_0$ CAGE data from a differentiation timecourse study. The consortium pre-processed raw CAGE tags into clusters using decomposition-based peak identification.\cite{fantom5} To filter for gene-associated CAGE clusters, we discarded those tag clusters centered on a point $>50$ bp from an Ensembl (\texttt{v69}) annotated TSS, thereby removing transcribed enhancers and other non-genic regions with detectable transcription. When multiple clusters were linked to the same TSS, that with the highest peak maxima was kept. Expression was matched with ENCODE ChIP-seq data for the H1 hESC cell type (processed as described in Section \ref{meth:dong}) and an additional measure of replication timing retrieved from \citet{Ryba2010} (Section \ref{sec:dongextend}).
+Specifically, we used H1 hESC $t_0$ CAGE data from a differentiation timecourse study. The consortium pre-processed raw CAGE tags into clusters using decomposition-based peak identification.\cite{fantom5} To filter for gene-associated CAGE clusters, we discarded those tag clusters centered on a point $>50$ bp from an Ensembl (\texttt{v69}) annotated TSS, thereby removing transcribed enhancers and other non-genic regions with detectable transcription. When multiple clusters were linked to the same TSS, that with the highest peak maximum was kept. Expression was matched with ENCODE ChIP-seq data for the H1 hESC cell type (processed as described in Section \ref{meth:dong}) and an additional measure of replication timing retrieved from \citet{Ryba2010} (Section \ref{sec:dongextend}).
 
 Input data for models of FANTOM5 CAGE are shown in Table \ref{tab:fantommodel}.
 
@@ -541,7 +543,7 @@ This package produces normalised interaction frequencies which are comparable be
 
 The normalisation procedure for 4C data is adapted from a previous method for normalising deepCAGE data between samples.\cite{Balwierz2009} In short, the reverse-cumulative distribution of read counts per restriction fragment is fitted to a power-law model; this effectively encodes the \emph{a priori} expectation of exponential decay of the number of contacts as distance increases from the viewpoint. Transformed read counts per million (RPM) can then be retrieved from a standardised reverse cumulative distribution, parametrised with an empirical coefficient for this power-law relationship ($\alpha = -1.35$).\cite{Thongjuea2013}
 
-This normalisation procedure has the effect of making the output RPM value independent of the original experiment's sequencing depth and, more importantly, acts to reduces the impact of artefacts and errors by enforcing the expected power-law relationship of restriction fragment read counts.
+This normalisation procedure has the effect of making the output RPM value independent of the original experiment's sequencing depth and, more importantly, acts to reduce the impact of artefacts and errors by enforcing the expected power-law relationship of restriction fragment read counts.
 
 \subsection{Significance estimation}\label{methods:4csignif}
 
