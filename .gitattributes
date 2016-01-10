@@ -1,0 +1,11 @@
+*.fdb_latexmk -diff
+*.aux -diff
+*.log -diff
+*.toc -diff
+*.rtf -diff
+*.bbl -diff
+*.blg -diff
+*.fls -diff
+*.lof -diff
+*.lot -diff
+*.out -diff
