@@ -1,8 +1,12 @@
-# Thesis
+# PhD thesis
 
-> Unravelling higher order chromatin organisation through statistical analysis
+Title:
+
+> Unravelling higher order chromatin organisation through statistical analysis [[PDF](thesis.pdf)]
 
 Submitted 2015, University of Edinburgh (accepted 2016). 
+
+Tags: bioinformatics, computational biology, Hi-C, chromosome conformation capture, machine learning
 
 ## Notes
 * 41,000 words
